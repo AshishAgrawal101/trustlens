@@ -1,0 +1,349 @@
+{
+  "status": "frozen before implementation read or execution",
+  "oracle": "Python stdlib fractions.Fraction from literal decimal strings; exact rational B-A and100*(B-A)/A; no application implementation invoked",
+  "spec_sha256": "f52cb196bc376f69ea96bd37ec0278b667514342bb3d4d097cb1aa684c0ef047",
+  "cases": [
+    {
+      "id": "typical",
+      "input": {
+        "percentageA": "1.2",
+        "percentageB": "1.8"
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "6",
+          "denominator": "5"
+        },
+        "rateB": {
+          "numerator": "9",
+          "denominator": "5"
+        },
+        "percentagePoints": {
+          "numerator": "3",
+          "denominator": "5"
+        },
+        "relativePercent": {
+          "numerator": "50",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "decline",
+      "input": {
+        "percentageA": "20",
+        "percentageB": "15"
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "20",
+          "denominator": "1"
+        },
+        "rateB": {
+          "numerator": "15",
+          "denominator": "1"
+        },
+        "percentagePoints": {
+          "numerator": "-5",
+          "denominator": "1"
+        },
+        "relativePercent": {
+          "numerator": "-25",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "swapped",
+      "input": {
+        "percentageA": "15",
+        "percentageB": "20"
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "15",
+          "denominator": "1"
+        },
+        "rateB": {
+          "numerator": "20",
+          "denominator": "1"
+        },
+        "percentagePoints": {
+          "numerator": "5",
+          "denominator": "1"
+        },
+        "relativePercent": {
+          "numerator": "100",
+          "denominator": "3"
+        }
+      }
+    },
+    {
+      "id": "both-zero",
+      "input": {
+        "percentageA": "0",
+        "percentageB": "0"
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "rateB": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "percentagePoints": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "relativePercent": null
+      }
+    },
+    {
+      "id": "zero-baseline",
+      "input": {
+        "percentageA": "0",
+        "percentageB": "1"
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "rateB": {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "percentagePoints": {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "relativePercent": null
+      }
+    },
+    {
+      "id": "to-zero",
+      "input": {
+        "percentageA": "1",
+        "percentageB": "0"
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "rateB": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "percentagePoints": {
+          "numerator": "-1",
+          "denominator": "1"
+        },
+        "relativePercent": {
+          "numerator": "-100",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "full-equal",
+      "input": {
+        "percentageA": "100",
+        "percentageB": "100"
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "100",
+          "denominator": "1"
+        },
+        "rateB": {
+          "numerator": "100",
+          "denominator": "1"
+        },
+        "percentagePoints": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "relativePercent": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "decimal-edge",
+      "input": {
+        "percentageA": ".5",
+        "percentageB": "1."
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "1",
+          "denominator": "2"
+        },
+        "rateB": {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "percentagePoints": {
+          "numerator": "1",
+          "denominator": "2"
+        },
+        "relativePercent": {
+          "numerator": "100",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "near-equal-64",
+      "input": {
+        "percentageA": "1.00000000000000000000000000000000000000000000000000000000000001",
+        "percentageB": "1.00000000000000000000000000000000000000000000000000000000000002"
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "100000000000000000000000000000000000000000000000000000000000001",
+          "denominator": "100000000000000000000000000000000000000000000000000000000000000"
+        },
+        "rateB": {
+          "numerator": "50000000000000000000000000000000000000000000000000000000000001",
+          "denominator": "50000000000000000000000000000000000000000000000000000000000000"
+        },
+        "percentagePoints": {
+          "numerator": "1",
+          "denominator": "100000000000000000000000000000000000000000000000000000000000000"
+        },
+        "relativePercent": {
+          "numerator": "100",
+          "denominator": "100000000000000000000000000000000000000000000000000000000000001"
+        }
+      },
+      "paired_swap_property": "Swapping A/B reverses exact percentagePoints sign; independently rendered rates may coincide."
+    },
+    {
+      "id": "smallest-64-to100",
+      "input": {
+        "percentageA": ".000000000000000000000000000000000000000000000000000000000000001",
+        "percentageB": "100"
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "1",
+          "denominator": "1000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "rateB": {
+          "numerator": "100",
+          "denominator": "1"
+        },
+        "percentagePoints": {
+          "numerator": "99999999999999999999999999999999999999999999999999999999999999999",
+          "denominator": "1000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "relativePercent": {
+          "numerator": "9999999999999999999999999999999999999999999999999999999999999999900",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "ascii-edge-space",
+      "input": {
+        "percentageA": " 1.2 ",
+        "percentageB": " 1.8 "
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "6",
+          "denominator": "5"
+        },
+        "rateB": {
+          "numerator": "9",
+          "denominator": "5"
+        },
+        "percentagePoints": {
+          "numerator": "3",
+          "denominator": "5"
+        },
+        "relativePercent": {
+          "numerator": "50",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "equivalent-decimals",
+      "input": {
+        "percentageA": "01.200",
+        "percentageB": "1.2"
+      },
+      "expected": {
+        "rateA": {
+          "numerator": "6",
+          "denominator": "5"
+        },
+        "rateB": {
+          "numerator": "6",
+          "denominator": "5"
+        },
+        "percentagePoints": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "relativePercent": {
+          "numerator": "0",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "invalid-syntax",
+      "values": [
+        "",
+        " ",
+        "-1",
+        "+1",
+        ".",
+        "1e2",
+        "1,2",
+        "1%",
+        "0x1",
+        "NaN",
+        "Infinity",
+        "1\u200b"
+      ],
+      "expected": "fixed private validation error; test each independently in A and B"
+    },
+    {
+      "id": "invalid-range",
+      "values": [
+        "100.01",
+        "100.000000000000000000000000000000000000000000000000000000000001"
+      ],
+      "expected": "fixed private range error independently of floating rounding"
+    },
+    {
+      "id": "invalid-length",
+      "values": [
+        ".0000000000000000000000000000000000000000000000000000000000000001"
+      ],
+      "expected": "65characters rejected despite positive value below100"
+    },
+    {
+      "id": "invalid-types",
+      "values": [
+        null,
+        1,
+        true,
+        [],
+        {}
+      ],
+      "expected": "strict string inputs only; no coercion"
+    }
+  ],
+  "compatibility": "Existing counts compare and its frozen fixtures unchanged; no denominator reconstruction",
+  "display": "six significant digits may coincide for nearby rates; point difference retains sign; no significance/causal/truth/data-quality conclusion",
+  "ambiguity_not_assumed": "Spec ordinary surrounding whitespace needs explicit ASCII-versus-Unicode/control definition before implementation; frozen accepted edge case uses only U+0020."
+}

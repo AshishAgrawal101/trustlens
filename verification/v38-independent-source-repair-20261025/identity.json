@@ -1,0 +1,6 @@
+{
+  "archive_sha256": "15059fa3389980e695f0851823c4db5e1357ee009c27ded9771c9047cde843e3",
+  "old_pure_sha256": "f4aaf8232ff179f6610af3196af80c05ef950622a6ac4059889dbdb45b921825",
+  "one_factory_three_throw_reversals_restore_entire_old_pure_prefix": true,
+  "shared_fixture_byte_equal_v37": true
+}

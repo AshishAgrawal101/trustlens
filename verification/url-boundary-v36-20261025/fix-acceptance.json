@@ -1,0 +1,20 @@
+{
+  "expectations": [
+    "Both endpoints reject outer/inner Cc,Cf with fixed inputfree400",
+    "URL/reference keep original 4096cap",
+    "OuterSP/NBSP accepted by existing parser",
+    "Main URL raw forwards, knownreference omitted ONLY empty/SP-only",
+    "Text/call/email and claimed_brand trim unchanged"
+  ],
+  "controls": [
+    "TAB",
+    "LF",
+    "BOM",
+    "interiorTAB",
+    "onlyTABreference",
+    "outerSPACE",
+    "outerNBSP",
+    "4096",
+    "4097"
+  ]
+}

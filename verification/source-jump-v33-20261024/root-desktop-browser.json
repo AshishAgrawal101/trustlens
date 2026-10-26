@@ -1,0 +1,65 @@
+{
+  "constructed": true,
+  "lastOf11": {
+    "buttons": [
+      {
+        "disabled": false,
+        "height": 49.09375,
+        "id": "source-first",
+        "width": 231
+      },
+      {
+        "disabled": false,
+        "height": 49.09375,
+        "id": "source-prev",
+        "width": 231
+      },
+      {
+        "disabled": true,
+        "height": 49.09375,
+        "id": "source-next",
+        "width": 231
+      },
+      {
+        "disabled": true,
+        "height": 49.09375,
+        "id": "source-last",
+        "width": 231
+      }
+    ],
+    "client": 305,
+    "focus": "source-page-status",
+    "matchCount": 1,
+    "qualification": true,
+    "range": "Matches 11–11 of 11",
+    "scroll": 305
+  },
+  "firstOf11": "Matches 1–5 of 11",
+  "maxLengthPassageLast": {
+    "buttons": [
+      {
+        "disabled": false,
+        "id": "source-first"
+      },
+      {
+        "disabled": false,
+        "id": "source-prev"
+      },
+      {
+        "disabled": true,
+        "id": "source-next"
+      },
+      {
+        "disabled": true,
+        "id": "source-last"
+      }
+    ],
+    "client": 305,
+    "error": "",
+    "focus": "source-page-status",
+    "lastTitle": "Match 30000 of 30000",
+    "matchCount": 5,
+    "range": "Matches 29996–30000 of 30000",
+    "scroll": 305
+  }
+}

@@ -1,0 +1,242 @@
+FFFFFFFF........FFFF....FFF                                              [100%]
+================================== FAILURES ===================================
+_ test_raw_controls_reach_both_producers_and_reject_privately[\thttps://example.org/-url-analyze] _
+
+endpoint = 'analyze', field = 'url', value = '\thttps://example.org/'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 200 == 400
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[\thttps://example.org/-url-inspect] _
+
+endpoint = 'inspect', field = 'url', value = '\thttps://example.org/'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 200 == 400
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[\thttps://example.org/-known_website-analyze] _
+
+endpoint = 'analyze', field = 'known_website', value = '\thttps://example.org/'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 200 == 400
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[\thttps://example.org/-known_website-inspect] _
+
+endpoint = 'inspect', field = 'known_website', value = '\thttps://example.org/'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 200 == 400
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[https://example.org/\n-url-analyze] _
+
+endpoint = 'analyze', field = 'url', value = 'https://example.org/\n'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 200 == 400
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[https://example.org/\n-url-inspect] _
+
+endpoint = 'inspect', field = 'url', value = 'https://example.org/\n'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 200 == 400
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[https://example.org/\n-known_website-analyze] _
+
+endpoint = 'analyze', field = 'known_website', value = 'https://example.org/\n'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 200 == 400
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[https://example.org/\n-known_website-inspect] _
+
+endpoint = 'inspect', field = 'known_website', value = 'https://example.org/\n'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 200 == 400
+E        +  where 200 = <Response [200 OK]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[\t-url-analyze] _
+
+endpoint = 'analyze', field = 'url', value = '\t'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 422 == 400
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[\t-url-inspect] _
+
+endpoint = 'inspect', field = 'url', value = '\t'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 422 == 400
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[\t-known_website-analyze] _
+
+endpoint = 'analyze', field = 'known_website', value = '\t'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 422 == 400
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_ test_raw_controls_reach_both_producers_and_reject_privately[\t-known_website-inspect] _
+
+endpoint = 'inspect', field = 'known_website', value = '\t'
+
+    @pytest.mark.parametrize('endpoint',['analyze','inspect'])
+    @pytest.mark.parametrize('field',['url','known_website'])
+    @pytest.mark.parametrize('value',['\thttps://example.org/','https://example.org/\n','\ufeffhttps://example.org/','https://exam\tple.org/','\t'])
+    def test_raw_controls_reach_both_producers_and_reject_privately(endpoint,field,value):
+        payload={'url':'https://example.org/',field:value}
+        response=request('POST','/api/'+endpoint+'/url',json=payload)
+>       assert response.status_code==400
+E       assert 422 == 400
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\test_url_raw_boundary.py:13: AssertionError
+_______________ test_raw_length_bound_counts_outer_spaces[url] ________________
+
+field = 'url'
+
+    @pytest.mark.parametrize('field',['url','known_website'])
+    def test_raw_length_bound_counts_outer_spaces(field):
+        value='https://example.org/'+' '*(4096-len('https://example.org/'))
+>       m=UrlRequest(**({'url':'example.org',field:value}));assert getattr(m,field)==value
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert 'https://example.org/' == 'https://exam...             '
+E         
+E         - https://example.org/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ...
+E         
+E         ...Full output truncated (2 lines hidden), use '-vv' to show
+
+tests\test_url_raw_boundary.py:26: AssertionError
+__________ test_raw_length_bound_counts_outer_spaces[known_website] ___________
+
+field = 'known_website'
+
+    @pytest.mark.parametrize('field',['url','known_website'])
+    def test_raw_length_bound_counts_outer_spaces(field):
+        value='https://example.org/'+' '*(4096-len('https://example.org/'))
+>       m=UrlRequest(**({'url':'example.org',field:value}));assert getattr(m,field)==value
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert 'https://example.org/' == 'https://exam...             '
+E         
+E         - https://example.org/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ...
+E         
+E         ...Full output truncated (2 lines hidden), use '-vv' to show
+
+tests\test_url_raw_boundary.py:26: AssertionError
+________________ test_only_url_fields_override_global_trimming ________________
+
+    def test_only_url_fields_override_global_trimming():
+        m=UrlRequest(url=' https://example.org/ ',known_website=' example.org ',claimed_brand=' Example ')
+>       assert (m.url,m.known_website,m.claimed_brand)==(' https://example.org/ ',' example.org ','Example')
+E       AssertionError: assert ('https://exa...g', 'Example') == (' https://ex... ', 'Example')
+E         
+E         At index 0 diff: 'https://example.org/' != ' https://example.org/ '
+E         Use -v to get more diff
+
+tests\test_url_raw_boundary.py:31: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[\thttps://example.org/-url-analyze]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[\thttps://example.org/-url-inspect]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[\thttps://example.org/-known_website-analyze]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[\thttps://example.org/-known_website-inspect]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[https://example.org/\n-url-analyze]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[https://example.org/\n-url-inspect]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[https://example.org/\n-known_website-analyze]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[https://example.org/\n-known_website-inspect]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[\t-url-analyze]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[\t-url-inspect]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[\t-known_website-analyze]
+FAILED tests/test_url_raw_boundary.py::test_raw_controls_reach_both_producers_and_reject_privately[\t-known_website-inspect]
+FAILED tests/test_url_raw_boundary.py::test_raw_length_bound_counts_outer_spaces[url]
+FAILED tests/test_url_raw_boundary.py::test_raw_length_bound_counts_outer_spaces[known_website]
+FAILED tests/test_url_raw_boundary.py::test_only_url_fields_override_global_trimming
+15 failed, 12 passed in 1.01s

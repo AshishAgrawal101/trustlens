@@ -1,0 +1,16 @@
+[
+  {
+    "invalidSide": "a",
+    "error": "Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.",
+    "errorFocused": true,
+    "sourcesOpen": true,
+    "resultHidden": true
+  },
+  {
+    "invalidSide": "b",
+    "error": "Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.",
+    "errorFocused": true,
+    "sourcesOpen": true,
+    "resultHidden": true
+  }
+]

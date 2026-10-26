@@ -1,0 +1,25 @@
+✔ four ordered typed buttons and hint expose jumps; pure matcher stays byte unchanged (1.8356ms)
+✔ eleven matches jump to actual last ordinal then first, preserve drafts and formatting, focus range at ends (6.9864ms)
+✔ maximum passage last5999 renders29996-30000 then Previous and Next remain correct (8.18ms)
+✔ all invalidation paths disable all four and stale jumps cannot revive output (18.753ms)
+✔ zero and short match sets hide navigation and disable all four (5.4164ms)
+✔ frozen v32 missing jump controls return real null and initially disabled Find enables (6.709ms)
+✔ legacy explicit Find and Previous/Next navigate true pages and endpoint focus without I/O (2.7832ms)
+✔ legacy edits native invalid Clear and lifecycle reset pages and stale navigation stays inert (14.569ms)
+✔ two-argument results and default page remain exactly compatible with frozen outputs (2.9901ms)
+✔ all pages retain exact offsets and literal windows with at most five matches (0.5625ms)
+✔ later-page surrogate boundaries and the maximum final page preserve existing window limits (1.4842ms)
+✔ page validation is bounded integer-only and missing pages reject with input-free errors (0.9876ms)
+✔ zero one and five matches do not offer unavailable page navigation (10.8528ms)
+✔ explicit navigation shows true ranges and ordinals with focus and disabled ends, retaining authenticity caveats (2.5875ms)
+✔ every invalidation erases paging and formatting while next Find starts at first match (16.1485ms)
+✔ shared Original native invalid clears later source windows and pager without erasing drafts or IO (8.9152ms)
+✔ Revised native invalid preserves independent later source page and formatting notice (2.6369ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 155.4196

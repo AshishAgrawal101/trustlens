@@ -1,0 +1,30 @@
+{
+  "entry": {
+    "claim": "These headphones last twice as long.",
+    "context": "Constructed sponsored headphone post. No comparison model or test settings are supplied, and no independent results are provided. Identify the comparison models, test conditions and relevant independent results before interpreting the claim. Sponsorship alone does not establish whether it is true or false.",
+    "focus": "claim-text",
+    "resultHidden": true,
+    "sourceValues": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sourcesOpen": false,
+    "url": "http://127.0.0.1:8766/static/claim-review.html"
+  },
+  "explicitReview": "Your context review\n\nYour supplied material and labels remain unverified.\n\nNext: locate an original source account before interpreting the claim.\n\nYour evidence labels\nSource A: no address or quotation was supplied. Its selected role is not counted as an account.\nSource B: no address or quotation was supplied. Its selected role is not counted as an account.\nObservations from what you supplied\nNo source addresses were supplied.\nQuestions still open\nSource A: find the original source address or record where this account came from.\nSource B: find the original source address or record where this account came from.\nThe supplied accounts have no support/challenge labels yet. They may add context or remain uncertain; no conclusion about the claim follows.\nSource roles are your judgments. The app has not checked relevance, reliability, factual support or source independence.\nA plan for checking independently\nFind the earliest original account and read its full context, including qualifications and corrections.\nTrace each account to its underlying evidence. Different websites may repeat one press release, witness or image.\nCheck publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.\nLook for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting.\nCopy checking plan\nDownload plan\n\nPlan exports contain fixed, input-free steps only. Your claim, context, source addresses, quotes and dates are omitted.",
+  "width320": {
+    "client": 305,
+    "scroll": 305
+  },
+  "afterClearReload": {
+    "claim": "",
+    "context": "",
+    "resultHidden": true,
+    "sourcesOpen": false,
+    "url": "http://127.0.0.1:8766/static/claim-review.html"
+  }
+}

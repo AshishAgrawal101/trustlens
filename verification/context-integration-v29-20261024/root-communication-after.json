@@ -1,0 +1,85 @@
+{
+  "source_sha256": "4b1d845c1b324ed39c544b35743a55dc45e41900bb612c7888de70904e8e4805",
+  "rows": [
+    {
+      "id": "later-same-code-semicolon",
+      "positive_ids": [
+        "request:code"
+      ],
+      "expected_positive_ids": [
+        "request:code"
+      ],
+      "matches": true,
+      "risk_index": null,
+      "model_ran": false
+    },
+    {
+      "id": "later-same-payment",
+      "positive_ids": [
+        "request:payment"
+      ],
+      "expected_positive_ids": [
+        "request:payment"
+      ],
+      "matches": true,
+      "risk_index": null,
+      "model_ran": false
+    },
+    {
+      "id": "nonterminal-refuse-nothing",
+      "positive_ids": [
+        "request:code"
+      ],
+      "expected_positive_ids": [
+        "request:code"
+      ],
+      "matches": true,
+      "risk_index": null,
+      "model_ran": false
+    },
+    {
+      "id": "later-same-remote-comma",
+      "positive_ids": [
+        "request:remote"
+      ],
+      "expected_positive_ids": [
+        "request:remote"
+      ],
+      "matches": true,
+      "risk_index": null,
+      "model_ran": false
+    },
+    {
+      "id": "nonterminal-refuse-to-refuse",
+      "positive_ids": [
+        "request:personal"
+      ],
+      "expected_positive_ids": [
+        "request:personal"
+      ],
+      "matches": true,
+      "risk_index": null,
+      "model_ran": false
+    },
+    {
+      "id": "protective-remote-only",
+      "positive_ids": [],
+      "expected_positive_ids": [],
+      "matches": true,
+      "risk_index": null,
+      "model_ran": false
+    },
+    {
+      "id": "active-remote-without-if",
+      "positive_ids": [
+        "request:remote"
+      ],
+      "expected_positive_ids": [
+        "request:remote"
+      ],
+      "matches": true,
+      "risk_index": null,
+      "model_ran": false
+    }
+  ]
+}

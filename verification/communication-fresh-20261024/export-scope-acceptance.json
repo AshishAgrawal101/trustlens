@@ -1,0 +1,13 @@
+{
+  "scope": "AddsinglefixedEnglishwordingline toshare_summary for text/call/email only; no languagedetection/score",
+  "fixed_line": "Wording rules cover English; other-language warning signs may be missed.",
+  "acceptance": [
+    "German/ordinary/riskyinputsameline",
+    "call/email/EML/APIpropagation",
+    "exactonce",
+    "inputfree",
+    "URL/imageexcluded",
+    "actions/evidence/risk/defaultlimitationsunchanged",
+    "coverage/countreasonsunchanged"
+  ]
+}

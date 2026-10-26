@@ -1,0 +1,156 @@
+[
+  {
+    "id": "ascii-space",
+    "field": "url",
+    "main": {
+      "url": "https://example.org/"
+    },
+    "anatomy": {
+      "url": " https://example.org/ "
+    }
+  },
+  {
+    "id": "ascii-space",
+    "field": "known_website",
+    "main": {
+      "url": "https://example.org/",
+      "known_website": "https://example.org/"
+    },
+    "anatomy": {
+      "url": "https://example.org/",
+      "known_website": " https://example.org/ "
+    }
+  },
+  {
+    "id": "leading-tab",
+    "field": "url",
+    "main": {
+      "url": "https://example.org/"
+    },
+    "anatomy": {
+      "url": "\thttps://example.org/"
+    }
+  },
+  {
+    "id": "leading-tab",
+    "field": "known_website",
+    "main": {
+      "url": "https://example.org/",
+      "known_website": "https://example.org/"
+    },
+    "anatomy": {
+      "url": "https://example.org/",
+      "known_website": "\thttps://example.org/"
+    }
+  },
+  {
+    "id": "trailing-newline",
+    "field": "url",
+    "main": {
+      "url": "https://example.org/"
+    },
+    "anatomy": {
+      "url": "https://example.org/\n"
+    }
+  },
+  {
+    "id": "trailing-newline",
+    "field": "known_website",
+    "main": {
+      "url": "https://example.org/",
+      "known_website": "https://example.org/"
+    },
+    "anatomy": {
+      "url": "https://example.org/",
+      "known_website": "https://example.org/\n"
+    }
+  },
+  {
+    "id": "leading-bom",
+    "field": "url",
+    "main": {
+      "url": "https://example.org/"
+    },
+    "anatomy": {
+      "url": "﻿https://example.org/"
+    }
+  },
+  {
+    "id": "leading-bom",
+    "field": "known_website",
+    "main": {
+      "url": "https://example.org/",
+      "known_website": "https://example.org/"
+    },
+    "anatomy": {
+      "url": "https://example.org/",
+      "known_website": "﻿https://example.org/"
+    }
+  },
+  {
+    "id": "leading-nbsp",
+    "field": "url",
+    "main": {
+      "url": "https://example.org/"
+    },
+    "anatomy": {
+      "url": " https://example.org/"
+    }
+  },
+  {
+    "id": "leading-nbsp",
+    "field": "known_website",
+    "main": {
+      "url": "https://example.org/",
+      "known_website": "https://example.org/"
+    },
+    "anatomy": {
+      "url": "https://example.org/",
+      "known_website": " https://example.org/"
+    }
+  },
+  {
+    "id": "interior-tab",
+    "field": "url",
+    "main": {
+      "url": "https://exam\tple.org/"
+    },
+    "anatomy": {
+      "url": "https://exam\tple.org/"
+    }
+  },
+  {
+    "id": "interior-tab",
+    "field": "known_website",
+    "main": {
+      "url": "https://example.org/",
+      "known_website": "https://exam\tple.org/"
+    },
+    "anatomy": {
+      "url": "https://example.org/",
+      "known_website": "https://exam\tple.org/"
+    }
+  },
+  {
+    "id": "interior-bom",
+    "field": "url",
+    "main": {
+      "url": "https://exam﻿ple.org/"
+    },
+    "anatomy": {
+      "url": "https://exam﻿ple.org/"
+    }
+  },
+  {
+    "id": "interior-bom",
+    "field": "known_website",
+    "main": {
+      "url": "https://example.org/",
+      "known_website": "https://exam﻿ple.org/"
+    },
+    "anatomy": {
+      "url": "https://example.org/",
+      "known_website": "https://exam﻿ple.org/"
+    }
+  }
+]

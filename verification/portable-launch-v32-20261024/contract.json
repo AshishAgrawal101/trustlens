@@ -1,0 +1,49 @@
+{
+  "purpose": "Launch the actual extracted v31 source with its normal serve.py and existing installed dependencies, without local-runtime.json or shipped weights; not a clean-device test.",
+  "expected": [
+    "own available loopback port while 8765/8766 remain occupied",
+    "ready announcement before browser use",
+    "health and main rendered page available",
+    "focused practice appears in packaged frontend",
+    "constructed text/call/email/URL checks work without a visual-model load",
+    "optional capability configuration is not asserted as successful inference",
+    "owned portable server stops without touching original/dev listeners"
+  ],
+  "cases": [
+    {
+      "endpoint": "text",
+      "payload": {
+        "text": "Read me your verification code."
+      },
+      "expected": "high"
+    },
+    {
+      "endpoint": "text",
+      "payload": {
+        "text": "Do not share your verification code."
+      },
+      "expected": "low"
+    },
+    {
+      "endpoint": "call",
+      "payload": {
+        "transcript": "Read me your verification code."
+      },
+      "expected": "high"
+    },
+    {
+      "endpoint": "email",
+      "payload": {
+        "raw_email": "Subject: Constructed check\n\nRead me your verification code."
+      },
+      "expected": "high"
+    },
+    {
+      "endpoint": "url",
+      "payload": {
+        "url": "https://bank.example@verify.example.test"
+      },
+      "expected": "high"
+    }
+  ]
+}

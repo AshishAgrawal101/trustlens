@@ -1,0 +1,35 @@
+✔ manual guidance is communication-only and requires explicit topics and submit (9.0766ms)
+✔ all four user-selected topics render fixed steps without changing report or detected evidence (4.4502ms)
+✔ manual copy and download export the exact fixed summary separately from original exports (6.2736ms)
+✔ manual topic edits invalidate pending copy and require rebuilding selected steps (3.6218ms)
+✔ manual clipboard timeout is actionable and source edits/mode/page exit erase selected guidance (32.3149ms)
+✔ manual markup identifies user choice, separates exports, and loads the shared local guide first (0.6264ms)
+✔ missing shared guide fails honestly without breaking the original report or exports (5.5784ms)
+✔ known-site comparison uses exact normalized hosts, not brand text or suffixes (3.2962ms)
+✔ invalid known routes never become trusted comparisons (0.4701ms)
+✔ comparison invalidates on edits and erases its known route on Clear and page exit (1.8064ms)
+✔ Pocket reports uninspected addresses without parsing or exposing them (3.454ms)
+✔ incomplete Pocket address notice clears on edits and is absent from fixed exports (5.4341ms)
+✔ reject malformed explicit reference https:/example.com (1.3842ms)
+✔ reject malformed explicit reference http:/example.com (0.2774ms)
+✔ reject malformed explicit reference https:///example.com (0.7438ms)
+✔ reject malformed explicit reference https:////example.com (0.1079ms)
+✔ reject malformed explicit reference https:example.com (0.1326ms)
+✔ reject malformed explicit reference http://?query (0.1115ms)
+✔ reject malformed explicit reference https://#fragment (0.1656ms)
+✔ raw reference Cc/Cf/Cs are rejected before trimming or normalization (0.597ms)
+✔ known references reject empty and nonempty raw userinfo syntax (0.3619ms)
+✔ formatted/control/surrogate literal tokens stay unreadable and later normal URLs remain inspected (1.408ms)
+✔ ordinary IDNA, complete schemes, bare references and astral pairs remain supported (0.4144ms)
+✔ browser numeric canonicalization remains deliberate and unchanged (0.1913ms)
+✔ coverage and input bounds remain unchanged including malformed first token (0.3239ms)
+✔ message userinfo shows actual destination without becoming reference syntax (0.2848ms)
+✔ desktop manual fallback and exports keep fixed topic-only contract (1.1298ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 157.8664

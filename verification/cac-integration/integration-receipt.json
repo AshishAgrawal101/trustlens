@@ -1,0 +1,67 @@
+{
+  "verified_utc": "2026-10-23T21:33:05.078258+00:00",
+  "status": "prototype_improved_not_submission_ready",
+  "district": "Illinois 11",
+  "phone_available": "iPhone (user reported; model/iOS not yet recorded)",
+  "python": {
+    "tests": 731,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "javascript": {
+    "tests": 133,
+    "passed": 133,
+    "failures": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "message_screenshot_primary": true,
+    "other_five_tools_reachable": true,
+    "constructed_code_request_to_evidence_and_plan": true,
+    "user_selected_plan_focus_and_no_completion_claim": true,
+    "plan_cleared_on_source_edit_and_Clear": true,
+    "ordinary_result_still_unverified": true,
+    "viewport320_no_horizontal_overflow": true,
+    "route_button_heights_at320": [
+      70.78125,
+      48.390625,
+      48.390625
+    ],
+    "screenshot_sample_passive": true,
+    "interactive_screenshot_file_selection_tested": false,
+    "native_clipboard_or_share_performed": false,
+    "viewport_restored": true
+  },
+  "native_OCR_smoke": "screenshot-native-smoke.json",
+  "evaluation": {
+    "authored_cases": 36,
+    "scam_pattern_warning_misses": 6,
+    "scam_pattern_cases": 9,
+    "ordinary_extra_concerns": 5,
+    "ordinary_cases": 9,
+    "ambiguous_unscored": 9,
+    "report": "../cac-evaluation/report.md",
+    "population_accuracy_claimed": false,
+    "analyzers_tuned_from_results": false
+  },
+  "readiness_gates": {
+    "physical_iPhone_test": false,
+    "independent_human_usability_sessions": 0,
+    "student_contributions_verified": false,
+    "eligibility_confirmed_by_organizer": false,
+    "video_recorded": false,
+    "public_upload_or_submission": false,
+    "trusted_phone_HTTPS_origin_configured": false
+  },
+  "preservation": "preservation.json",
+  "earlier_archives_unchanged": 8,
+  "original_source_entries_unchanged": 104,
+  "protected_files_unchanged_from_v6": 34,
+  "downloads": 0,
+  "gpu_jobs": 0,
+  "model_retries": 0,
+  "cloud_content_calls": 0,
+  "automation_changes": 0,
+  "external_messages": 0
+}

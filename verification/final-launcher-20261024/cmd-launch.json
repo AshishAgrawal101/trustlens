@@ -1,0 +1,14 @@
+{
+  "actual_entry": "Start-TrustLens.cmd",
+  "local_override_created": true,
+  "existing_explicit_python_override_preserved_by_condition": true,
+  "known_verified_environment_selected": true,
+  "no_default_python_runtime_failure_claim": true,
+  "ready_port": 8767,
+  "health": {
+    "status": "ok"
+  },
+  "frontend_ok": true,
+  "no_browser_auto_open": true,
+  "no_new_runtime_download": true
+}

@@ -1,0 +1,912 @@
+{
+  "purpose": "New post-fix regression replay; frozen before-results not overwritten",
+  "original12_evidence_risk_comparison": [
+    {
+      "id": "guidance-code-alone",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "guidance-payment-code",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "guidance-payment-overpayment-code",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "guidance-payment-overpayment-remote",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "html-absolute-mismatch",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "html-relative-scheme-mismatch",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "html-relative-path",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "html-unsupported-link",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "link-valid",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "link-malformed",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "link-malformed-live",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    },
+    {
+      "id": "link-malformed-call",
+      "evidence_and_risk_unchanged_from_frozen_before": true
+    }
+  ],
+  "source_sha256": {
+    "app/analyzers/text.py": "545340a128e93e431cdfb13b20afb339a212b3e0163c1979efb5e6014a1485b6",
+    "app/guidance.py": "0276343704bde27da0875f34ee4c7814430c0004ff5542599051816883af3111"
+  },
+  "rows": [
+    {
+      "id": "invalid-port",
+      "mode": "text",
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "low",
+        "confidence": "low",
+        "summary": "1 link address(es) could not be parsed. Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+        "evidence": [
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited.",
+          "1 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          },
+          {
+            "title": "Take time to check the request",
+            "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. 1 link address(es) could not be parsed. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "invalid-port",
+      "mode": "email",
+      "report": {
+        "kind": "email",
+        "risk_index": null,
+        "risk_level": "low",
+        "confidence": "low",
+        "summary": "1 link address(es) could not be parsed. Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+        "evidence": [
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "Pasted headers are supplied text, not a trusted mail-server connection.",
+          "Attachments are not scanned; message links are inspected as text without fetching them.",
+          "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+          "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+          "A passed mail-authentication check would not establish that a request is safe.",
+          "1 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          },
+          {
+            "title": "Take time to check the request",
+            "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. 1 link address(es) could not be parsed. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "invalid-port",
+      "mode": "call",
+      "report": {
+        "kind": "call",
+        "risk_index": null,
+        "risk_level": "low",
+        "confidence": "low",
+        "summary": "1 link address(es) could not be parsed. Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+        "evidence": [
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited.",
+          "1 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "End the call and call back independently",
+            "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          },
+          {
+            "title": "Take time to check the request",
+            "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. 1 link address(es) could not be parsed. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "invalid-bracket-live",
+      "mode": "text",
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "1 link address(es) could not be parsed. Link review is incomplete. Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited.",
+          "1 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. 1 link address(es) could not be parsed. 1 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "invalid-bracket-live",
+      "mode": "email",
+      "report": {
+        "kind": "email",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "1 link address(es) could not be parsed. Link review is incomplete. Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "Pasted headers are supplied text, not a trusted mail-server connection.",
+          "Attachments are not scanned; message links are inspected as text without fetching them.",
+          "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+          "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+          "A passed mail-authentication check would not establish that a request is safe.",
+          "1 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. 1 link address(es) could not be parsed. 1 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "invalid-bracket-live",
+      "mode": "call",
+      "report": {
+        "kind": "call",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "1 link address(es) could not be parsed. Link review is incomplete. Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited.",
+          "1 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "End the call and call back independently",
+            "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+          },
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. 1 link address(es) could not be parsed. 1 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "two-invalid",
+      "mode": "text",
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "low",
+        "confidence": "low",
+        "summary": "2 link address(es) could not be parsed. Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+        "evidence": [
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          },
+          {
+            "id": "url:malformed:1",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited.",
+          "2 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          },
+          {
+            "title": "Take time to check the request",
+            "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. 2 link address(es) could not be parsed. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "two-invalid",
+      "mode": "email",
+      "report": {
+        "kind": "email",
+        "risk_index": null,
+        "risk_level": "low",
+        "confidence": "low",
+        "summary": "2 link address(es) could not be parsed. Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+        "evidence": [
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          },
+          {
+            "id": "url:malformed:1",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "Pasted headers are supplied text, not a trusted mail-server connection.",
+          "Attachments are not scanned; message links are inspected as text without fetching them.",
+          "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+          "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+          "A passed mail-authentication check would not establish that a request is safe.",
+          "2 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          },
+          {
+            "title": "Take time to check the request",
+            "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. 2 link address(es) could not be parsed. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "two-invalid",
+      "mode": "call",
+      "report": {
+        "kind": "call",
+        "risk_index": null,
+        "risk_level": "low",
+        "confidence": "low",
+        "summary": "2 link address(es) could not be parsed. Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+        "evidence": [
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          },
+          {
+            "id": "url:malformed:1",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited.",
+          "2 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "End the call and call back independently",
+            "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          },
+          {
+            "title": "Take time to check the request",
+            "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. 2 link address(es) could not be parsed. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "invalid-plus-cap",
+      "mode": "text",
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "low",
+        "confidence": "low",
+        "summary": "Link review is incomplete. 1 link address(es) could not be parsed. Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+        "evidence": [
+          {
+            "id": "analysis:links_incomplete",
+            "evidence_class": "unknown",
+            "severity": "info",
+            "title": "Link review is incomplete",
+            "detail": "9 unique literal links found; only the first 8 were inspected. Remaining links not inspected: 1.",
+            "source": "Local bounded link coverage",
+            "weight": 0.0
+          },
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:1",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s0.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:2",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s1.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:3",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s2.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:4",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s3.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:5",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s4.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:6",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s5.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:7",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s6.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited.",
+          "1 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited.",
+          "Only the first 8 unique literal HTTP(S) links are inspected, in appearance order; duplicate matching text is counted once before trailing punctuation is trimmed. Remaining links were not inspected. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review the remaining links independently",
+            "detail": "Only the first 8 unique literal links were inspected. Other links remain unchecked; use a known official route rather than opening them to investigate."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          },
+          {
+            "title": "Take time to check the request",
+            "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. Only the first 8 unique literal links were inspected. Link review was incomplete. 1 link address(es) could not be parsed. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview the remaining links independently\nOnly the first 8 unique literal links were inspected. Other links remain unchecked; use a known official route rather than opening them to investigate.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "invalid-plus-cap",
+      "mode": "email",
+      "report": {
+        "kind": "email",
+        "risk_index": null,
+        "risk_level": "low",
+        "confidence": "low",
+        "summary": "Link review is incomplete. 1 link address(es) could not be parsed. Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+        "evidence": [
+          {
+            "id": "analysis:links_incomplete",
+            "evidence_class": "unknown",
+            "severity": "info",
+            "title": "Link review is incomplete",
+            "detail": "9 unique literal links found; only the first 8 were inspected. Remaining links not inspected: 1.",
+            "source": "Local bounded link coverage",
+            "weight": 0.0
+          },
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:1",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s0.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:2",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s1.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:3",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s2.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:4",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s3.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:5",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s4.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:6",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s5.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:7",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s6.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "Pasted headers are supplied text, not a trusted mail-server connection.",
+          "Attachments are not scanned; message links are inspected as text without fetching them.",
+          "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+          "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+          "A passed mail-authentication check would not establish that a request is safe.",
+          "1 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited.",
+          "Only the first 8 unique literal HTTP(S) links are inspected, in appearance order; duplicate matching text is counted once before trailing punctuation is trimmed. Remaining links were not inspected. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review the remaining links independently",
+            "detail": "Only the first 8 unique literal links were inspected. Other links remain unchecked; use a known official route rather than opening them to investigate."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          },
+          {
+            "title": "Take time to check the request",
+            "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. Only the first 8 unique literal links were inspected. Link review was incomplete. 1 link address(es) could not be parsed. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview the remaining links independently\nOnly the first 8 unique literal links were inspected. Other links remain unchecked; use a known official route rather than opening them to investigate.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "invalid-plus-cap",
+      "mode": "call",
+      "report": {
+        "kind": "call",
+        "risk_index": null,
+        "risk_level": "low",
+        "confidence": "low",
+        "summary": "Link review is incomplete. 1 link address(es) could not be parsed. Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+        "evidence": [
+          {
+            "id": "analysis:links_incomplete",
+            "evidence_class": "unknown",
+            "severity": "info",
+            "title": "Link review is incomplete",
+            "detail": "9 unique literal links found; only the first 8 were inspected. Remaining links not inspected: 1.",
+            "source": "Local bounded link coverage",
+            "weight": 0.0
+          },
+          {
+            "id": "url:malformed:0",
+            "evidence_class": "unknown",
+            "severity": "medium",
+            "title": "A link could not be parsed",
+            "detail": "Check the address independently before opening it.",
+            "source": "Local URL parser",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:1",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s0.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:2",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s1.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:3",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s2.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:4",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s3.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:5",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s4.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:6",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s5.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          },
+          {
+            "id": "url:host:7",
+            "evidence_class": "verified",
+            "severity": "info",
+            "title": "The address points to this host",
+            "detail": "s6.example",
+            "source": "Parsed address, not a live reputation check",
+            "weight": 0.0
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited.",
+          "1 link address(es) could not be parsed; their destination hosts remain unchecked. No links were visited.",
+          "Only the first 8 unique literal HTTP(S) links are inspected, in appearance order; duplicate matching text is counted once before trailing punctuation is trimmed. Remaining links were not inspected. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "End the call and call back independently",
+            "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Review the remaining links independently",
+            "detail": "Only the first 8 unique literal links were inspected. Other links remain unchecked; use a known official route rather than opening them to investigate."
+          },
+          {
+            "title": "Review unreadable link addresses independently",
+            "detail": "Some supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety."
+          },
+          {
+            "title": "Take time to check the request",
+            "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\nLink review was incomplete. Only the first 8 unique literal links were inspected. Link review was incomplete. 1 link address(es) could not be parsed. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview the remaining links independently\nOnly the first 8 unique literal links were inspected. Other links remain unchecked; use a known official route rather than opening them to investigate.\n\nReview unreadable link addresses independently\nSome supplied link addresses could not be parsed. Do not open them to investigate; use an official app or an address you already trust instead. A parse failure does not establish fraud or safety.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    }
+  ]
+}

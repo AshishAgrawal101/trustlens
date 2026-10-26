@@ -1,0 +1,95 @@
+{
+  "scope": "Actual Edge320 constructed customA/BURLerrors; alertrole/focus/Tab→button→field; dataretention/editreset/separateReview/nativeinvalid/Clear/reload. No actual screenreader/sourcevisit/upload.",
+  "sourceErrorB38": {
+    "aria": "true",
+    "button": "Correct Source B address",
+    "buttonHidden": false,
+    "clientWidth": 305,
+    "describedby": "source-url-help claim-error",
+    "error": "Source B address: Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.",
+    "field": "https://user:PRIVATE@repost.example/article",
+    "focus": "claim-error",
+    "resultHidden": true,
+    "scrollWidth": 305,
+    "sourceOpen": true
+  },
+  "correctionFocusB38": {
+    "field": "https://user:PRIVATE@repost.example/article",
+    "focus": "source-b-url",
+    "resultHidden": true
+  },
+  "afterEditB38": {
+    "aria": null,
+    "buttonHidden": true,
+    "describedby": "source-url-help",
+    "error": "",
+    "resultHidden": true
+  },
+  "repairedReview38": {
+    "a": "https://news.example/article",
+    "b": "https://repost.example/article",
+    "claim": "This post describes the same local event.",
+    "quotes": [
+      "Constructed first account.",
+      "Constructed second account."
+    ],
+    "resultVisible": true,
+    "status": "Next: compare what the accounts actually establish, keeping the claim unresolved."
+  },
+  "sourceErrorA38": {
+    "aria": "true",
+    "button": "Correct Source A address",
+    "error": "Source A address: Use a complete HTTP or HTTPS source address. No source was opened.",
+    "focus": "claim-error",
+    "resultHidden": true
+  },
+  "correctionFocusA38": "source-a-url",
+  "nativeInvalid38": {
+    "aAria": null,
+    "buttonHidden": true,
+    "errorHidden": true,
+    "focus": "source-b-url",
+    "resultHidden": true,
+    "sourceOpen": true,
+    "typeMismatch": true
+  },
+  "clearRepair38": {
+    "aria": [
+      null,
+      null
+    ],
+    "buttonHidden": true,
+    "buttonText": "",
+    "describedby": [
+      "source-url-help",
+      "source-url-help"
+    ],
+    "fields": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "resultHidden": true
+  },
+  "reloadRepair38": {
+    "buttonHidden": true,
+    "fields": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "resultHidden": true
+  }
+}

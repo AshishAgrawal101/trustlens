@@ -1,0 +1,406 @@
+..........FFFF.FFFFFFFFFFFF.F                                            [100%]
+================================== FAILURES ===================================
+_ test_actual_communication_api_has_explicit_english_scope[/api/analyze/text] _
+
+path = '/api/analyze/text'
+
+    @pytest.mark.parametrize('path',['/api/analyze/text','/api/analyze/call','/api/analyze/email','/api/analyze/email-file'])
+    def test_actual_communication_api_has_explicit_english_scope(path):
+        async def run():
+            async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app),base_url='http://127.0.0.1') as client:
+                body='Send me your verification code. PRIVATE-API'
+                if path.endswith('/email-file'):
+                    m=EmailMessage();m.set_content(body)
+                    return await client.post(path,files={'file':('constructed.eml',m.as_bytes(),'message/rfc822')})
+                key='transcript' if path.endswith('/call') else 'raw_email' if path.endswith('/email') else 'text'
+                return await client.post(path,json={key:body})
+        response=asyncio.run(run());assert response.status_code==200
+        result=response.json();assert result['limitations'][0]==SCOPE
+        assert result['risk_level']=='high' and result['risk_index'] is None
+        assert 'PRIVATE' not in result['share_summary']
+>       assert result['share_summary'].splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D34A8F00>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D34A8F00> = ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...] = <built-in method splitlines of str object at 0x00000247D1487240>()
+E        +        where <built-in method splitlines of str object at 0x00000247D1487240> = 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+
+tests\test_communication_scope.py:68: AssertionError
+_ test_actual_communication_api_has_explicit_english_scope[/api/analyze/call] _
+
+path = '/api/analyze/call'
+
+    @pytest.mark.parametrize('path',['/api/analyze/text','/api/analyze/call','/api/analyze/email','/api/analyze/email-file'])
+    def test_actual_communication_api_has_explicit_english_scope(path):
+        async def run():
+            async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app),base_url='http://127.0.0.1') as client:
+                body='Send me your verification code. PRIVATE-API'
+                if path.endswith('/email-file'):
+                    m=EmailMessage();m.set_content(body)
+                    return await client.post(path,files={'file':('constructed.eml',m.as_bytes(),'message/rfc822')})
+                key='transcript' if path.endswith('/call') else 'raw_email' if path.endswith('/email') else 'text'
+                return await client.post(path,json={key:body})
+        response=asyncio.run(run());assert response.status_code==200
+        result=response.json();assert result['limitations'][0]==SCOPE
+        assert result['risk_level']=='high' and result['risk_index'] is None
+        assert 'PRIVATE' not in result['share_summary']
+>       assert result['share_summary'].splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D345AC80>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D345AC80> = ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.', '', ...] = <built-in method splitlines of str object at 0x00000247D16DC4A0>()
+E        +        where <built-in method splitlines of str object at 0x00000247D16DC4A0> = 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+
+tests\test_communication_scope.py:68: AssertionError
+_ test_actual_communication_api_has_explicit_english_scope[/api/analyze/email] _
+
+path = '/api/analyze/email'
+
+    @pytest.mark.parametrize('path',['/api/analyze/text','/api/analyze/call','/api/analyze/email','/api/analyze/email-file'])
+    def test_actual_communication_api_has_explicit_english_scope(path):
+        async def run():
+            async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app),base_url='http://127.0.0.1') as client:
+                body='Send me your verification code. PRIVATE-API'
+                if path.endswith('/email-file'):
+                    m=EmailMessage();m.set_content(body)
+                    return await client.post(path,files={'file':('constructed.eml',m.as_bytes(),'message/rfc822')})
+                key='transcript' if path.endswith('/call') else 'raw_email' if path.endswith('/email') else 'text'
+                return await client.post(path,json={key:body})
+        response=asyncio.run(run());assert response.status_code==200
+        result=response.json();assert result['limitations'][0]==SCOPE
+        assert result['risk_level']=='high' and result['risk_index'] is None
+        assert 'PRIVATE' not in result['share_summary']
+>       assert result['share_summary'].splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D34B5000>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D34B5000> = ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...] = <built-in method splitlines of str object at 0x00000247D16E05A0>()
+E        +        where <built-in method splitlines of str object at 0x00000247D16E05A0> = 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+
+tests\test_communication_scope.py:68: AssertionError
+_ test_actual_communication_api_has_explicit_english_scope[/api/analyze/email-file] _
+
+path = '/api/analyze/email-file'
+
+    @pytest.mark.parametrize('path',['/api/analyze/text','/api/analyze/call','/api/analyze/email','/api/analyze/email-file'])
+    def test_actual_communication_api_has_explicit_english_scope(path):
+        async def run():
+            async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app),base_url='http://127.0.0.1') as client:
+                body='Send me your verification code. PRIVATE-API'
+                if path.endswith('/email-file'):
+                    m=EmailMessage();m.set_content(body)
+                    return await client.post(path,files={'file':('constructed.eml',m.as_bytes(),'message/rfc822')})
+                key='transcript' if path.endswith('/call') else 'raw_email' if path.endswith('/email') else 'text'
+                return await client.post(path,json={key:body})
+        response=asyncio.run(run());assert response.status_code==200
+        result=response.json();assert result['limitations'][0]==SCOPE
+        assert result['risk_level']=='high' and result['risk_index'] is None
+        assert 'PRIVATE' not in result['share_summary']
+>       assert result['share_summary'].splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D3458E80>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D3458E80> = ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...] = <built-in method splitlines of str object at 0x00000247D1332F50>()
+E        +        where <built-in method splitlines of str object at 0x00000247D1332F50> = 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+
+tests\test_communication_scope.py:68: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[text-Bitte sende mir dein Passwort. PRIVATE-DE] _
+
+body = 'Bitte sende mir dein Passwort. PRIVATE-DE', mode = 'text'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D353B780>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D353B780> = ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...] = <built-in method splitlines of str object at 0x00000247D114F280>()
+E        +        where <built-in method splitlines of str object at 0x00000247D114F280> = 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='text', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs matc...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[text-Meeting tomorrow. PRIVATE-NOTES] _
+
+body = 'Meeting tomorrow. PRIVATE-NOTES', mode = 'text'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D35395C0>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D35395C0> = ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...] = <built-in method splitlines of str object at 0x00000247D114E760>()
+E        +        where <built-in method splitlines of str object at 0x00000247D114E760> = 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='text', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs matc...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[text-Send me your verification code. PRIVATE-CODE] _
+
+body = 'Send me your verification code. PRIVATE-CODE', mode = 'text'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D352EDC0>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D352EDC0> = ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...] = <built-in method splitlines of str object at 0x00000247D114ECF0>()
+E        +        where <built-in method splitlines of str object at 0x00000247D114ECF0> = 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='text', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. Th...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[call-Bitte sende mir dein Passwort. PRIVATE-DE] _
+
+body = 'Bitte sende mir dein Passwort. PRIVATE-DE', mode = 'call'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D352E6C0>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D352E6C0> = ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.', '', ...] = <built-in method splitlines of str object at 0x00000247D1487240>()
+E        +        where <built-in method splitlines of str object at 0x00000247D1487240> = 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='call', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs matc...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[call-Meeting tomorrow. PRIVATE-NOTES] _
+
+body = 'Meeting tomorrow. PRIVATE-NOTES', mode = 'call'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D35209C0>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D35209C0> = ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.', '', ...] = <built-in method splitlines of str object at 0x00000247D1332F50>()
+E        +        where <built-in method splitlines of str object at 0x00000247D1332F50> = 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='call', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs matc...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[call-Send me your verification code. PRIVATE-CODE] _
+
+body = 'Send me your verification code. PRIVATE-CODE', mode = 'call'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D3476F00>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D3476F00> = ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.', '', ...] = <built-in method splitlines of str object at 0x00000247D16E35C0>()
+E        +        where <built-in method splitlines of str object at 0x00000247D16E35C0> = 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='call', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. Th...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[email-paste-Bitte sende mir dein Passwort. PRIVATE-DE] _
+
+body = 'Bitte sende mir dein Passwort. PRIVATE-DE', mode = 'email-paste'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D34F26C0>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D34F26C0> = ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...] = <built-in method splitlines of str object at 0x00000247D114E1D0>()
+E        +        where <built-in method splitlines of str object at 0x00000247D114E1D0> = 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[email-paste-Meeting tomorrow. PRIVATE-NOTES] _
+
+body = 'Meeting tomorrow. PRIVATE-NOTES', mode = 'email-paste'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D34A8800>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D34A8800> = ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...] = <built-in method splitlines of str object at 0x00000247D114F280>()
+E        +        where <built-in method splitlines of str object at 0x00000247D114F280> = 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[email-paste-Send me your verification code. PRIVATE-CODE] _
+
+body = 'Send me your verification code. PRIVATE-CODE', mode = 'email-paste'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D35578C0>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D35578C0> = ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...] = <built-in method splitlines of str object at 0x00000247D16C5E60>()
+E        +        where <built-in method splitlines of str object at 0x00000247D16C5E60> = 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[eml-Bitte sende mir dein Passwort. PRIVATE-DE] _
+
+body = 'Bitte sende mir dein Passwort. PRIVATE-DE', mode = 'eml'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D353B280>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D353B280> = ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...] = <built-in method splitlines of str object at 0x00000247D16C63F0>()
+E        +        where <built-in method splitlines of str object at 0x00000247D16C63F0> = 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[eml-Meeting tomorrow. PRIVATE-NOTES] _
+
+body = 'Meeting tomorrow. PRIVATE-NOTES', mode = 'eml'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D3555B40>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D3555B40> = ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '0 wording or address warning sign(s) matched. This does not prove fraud or...revious school, service-provider or organization record. Do not use contact details supplied in the message.', '', ...] = <built-in method splitlines of str object at 0x00000247D16C58D0>()
+E        +        where <built-in method splitlines of str object at 0x00000247D16C58D0> = 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+_ test_export_scope_is_fixed_for_every_communication_input[eml-Send me your verification code. PRIVATE-CODE] _
+
+body = 'Send me your verification code. PRIVATE-CODE', mode = 'eml'
+
+    @pytest.mark.parametrize('body',['Bitte sende mir dein Passwort. PRIVATE-DE','Meeting tomorrow. PRIVATE-NOTES','Send me your verification code. PRIVATE-CODE'])
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_export_scope_is_fixed_for_every_communication_input(body,mode):
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(body)
+        else:report=analyze_text(body,mode)
+        before=report.model_dump(exclude={'actions','share_summary'})
+        result=add_guidance(report)
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D356AD40>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D356AD40> = ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', '1 wording or address warning sign(s) matched. This does not prove fraud or...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...] = <built-in method splitlines of str object at 0x00000247D16C4820>()
+E        +        where <built-in method splitlines of str object at 0x00000247D16C4820> = 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:88: AssertionError
+__________ test_coverage_and_count_export_reasons_survive_scope_line __________
+
+    def test_coverage_and_count_export_reasons_survive_scope_line():
+        from app.models import Evidence
+        items=analyze_text('Send me your verification code.').evidence
+        for eid in ['email:links_incomplete','analysis:links_incomplete','url:malformed:0','email:incomplete']:
+            items.append(Evidence(id=eid,evidence_class='unknown',severity='info',title='PRIVATE',detail='PRIVATE',source='test'))
+        result=add_guidance(communication_report('email',items))
+>       assert result.share_summary.splitlines().count(EXPORT_SCOPE)==1
+E       AssertionError: assert 0 == 1
+E        +  where 0 = <built-in method count of list object at 0x00000247D3554900>('Wording rules cover English; other-language warning signs may be missed.')
+E        +    where <built-in method count of list object at 0x00000247D3554900> = ['TrustLens — private-input-free summary', 'HTML link review was incomplete; some supplied HTML link targets were not ...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...].count
+E        +      where ['TrustLens — private-input-free summary', 'HTML link review was incomplete; some supplied HTML link targets were not ...nt through the app or address you already know. Do not reply with a code or read it to an unexpected caller.', '', ...] = <built-in method splitlines of str object at 0x00000247D17BAC30>()
+E        +        where <built-in method splitlines of str object at 0x00000247D17BAC30> = 'TrustLens — private-input-free summary\nHTML link review was incomplete; some supplied HTML link targets were not ins...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'.splitlines
+E        +          where 'TrustLens — private-input-free summary\nHTML link review was incomplete; some supplied HTML link targets were not ins...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Link review is incomplete....General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_communication_scope.py:106: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_communication_scope.py::test_actual_communication_api_has_explicit_english_scope[/api/analyze/text]
+FAILED tests/test_communication_scope.py::test_actual_communication_api_has_explicit_english_scope[/api/analyze/call]
+FAILED tests/test_communication_scope.py::test_actual_communication_api_has_explicit_english_scope[/api/analyze/email]
+FAILED tests/test_communication_scope.py::test_actual_communication_api_has_explicit_english_scope[/api/analyze/email-file]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[text-Bitte sende mir dein Passwort. PRIVATE-DE]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[text-Meeting tomorrow. PRIVATE-NOTES]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[text-Send me your verification code. PRIVATE-CODE]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[call-Bitte sende mir dein Passwort. PRIVATE-DE]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[call-Meeting tomorrow. PRIVATE-NOTES]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[call-Send me your verification code. PRIVATE-CODE]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[email-paste-Bitte sende mir dein Passwort. PRIVATE-DE]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[email-paste-Meeting tomorrow. PRIVATE-NOTES]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[email-paste-Send me your verification code. PRIVATE-CODE]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[eml-Bitte sende mir dein Passwort. PRIVATE-DE]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[eml-Meeting tomorrow. PRIVATE-NOTES]
+FAILED tests/test_communication_scope.py::test_export_scope_is_fixed_for_every_communication_input[eml-Send me your verification code. PRIVATE-CODE]
+FAILED tests/test_communication_scope.py::test_coverage_and_count_export_reasons_survive_scope_line
+17 failed, 12 passed in 0.85s

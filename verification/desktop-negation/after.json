@@ -1,0 +1,186 @@
+[
+  {
+    "id": "decimal-advice",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "decimal-direct",
+    "expected": [
+      "payment"
+    ],
+    "actual": [
+      "payment"
+    ]
+  },
+  {
+    "id": "domain-advice",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "domain-direct",
+    "expected": [
+      "remote"
+    ],
+    "actual": [
+      "remote"
+    ]
+  },
+  {
+    "id": "honorific-advice",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "honorific-direct",
+    "expected": [
+      "code"
+    ],
+    "actual": [
+      "code"
+    ]
+  },
+  {
+    "id": "sentence-live",
+    "expected": [
+      "remote"
+    ],
+    "actual": [
+      "remote"
+    ]
+  },
+  {
+    "id": "newline-live",
+    "expected": [
+      "remote"
+    ],
+    "actual": [
+      "remote"
+    ]
+  },
+  {
+    "id": "but-live",
+    "expected": [
+      "payment"
+    ],
+    "actual": [
+      "payment"
+    ]
+  },
+  {
+    "id": "semicolon-live",
+    "expected": [
+      "remote"
+    ],
+    "actual": [
+      "remote"
+    ]
+  },
+  {
+    "id": "question-live",
+    "expected": [
+      "remote"
+    ],
+    "actual": [
+      "remote"
+    ]
+  },
+  {
+    "id": "exclamation-live",
+    "expected": [
+      "remote"
+    ],
+    "actual": [
+      "remote"
+    ]
+  },
+  {
+    "id": "comma-live",
+    "expected": [
+      "remote"
+    ],
+    "actual": [
+      "remote"
+    ]
+  },
+  {
+    "id": "quote-live",
+    "expected": [
+      "code"
+    ],
+    "actual": [
+      "code"
+    ]
+  },
+  {
+    "id": "quoted-negative-then-live",
+    "expected": [
+      "remote"
+    ],
+    "actual": [
+      "remote"
+    ]
+  },
+  {
+    "id": "reference-unchanged",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "secrecy-unchanged",
+    "expected": [
+      "secrecy"
+    ],
+    "actual": [
+      "secrecy"
+    ]
+  },
+  {
+    "id": "http-domain-advice",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "doctor-advice",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "doctor-direct",
+    "expected": [
+      "code"
+    ],
+    "actual": [
+      "code"
+    ]
+  },
+  {
+    "id": "different-family-chain",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "long-chain",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "decimal-second-sentence",
+    "expected": [
+      "payment"
+    ],
+    "actual": [
+      "payment"
+    ]
+  },
+  {
+    "id": "honorific-second-sentence",
+    "expected": [
+      "code"
+    ],
+    "actual": [
+      "code"
+    ]
+  }
+]

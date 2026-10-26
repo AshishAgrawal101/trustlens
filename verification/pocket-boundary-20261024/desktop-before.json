@@ -1,0 +1,247 @@
+{
+  "source_sha256": "c2f010034262795f5f85499ee2c1f7b1f917f95ecef1f0ec6fcb08b48de10819",
+  "rows": [
+    {
+      "id": "canonical-control",
+      "message": {
+        "host": "example.com",
+        "error": null
+      },
+      "known": {
+        "host": "example.com",
+        "error": null
+      }
+    },
+    {
+      "id": "missing-slash-known",
+      "message": {
+        "host": "example.com",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter a complete HTTP(S) address with // followed by its host."
+      }
+    },
+    {
+      "id": "extra-slash-known",
+      "message": {
+        "host": "example.com",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter a complete HTTP(S) address with // followed by its host."
+      }
+    },
+    {
+      "id": "extra-slashes-known",
+      "message": {
+        "host": "example.com",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter a complete HTTP(S) address with // followed by its host."
+      }
+    },
+    {
+      "id": "missing-host-known",
+      "message": {
+        "host": "https",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter a complete HTTP(S) address with // followed by its host."
+      }
+    },
+    {
+      "id": "soft-hyphen-host",
+      "message": {
+        "host": "example.com",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter an address without hidden control or formatting characters."
+      }
+    },
+    {
+      "id": "zero-width-host",
+      "message": {
+        "host": "example.com",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter an address without hidden control or formatting characters."
+      }
+    },
+    {
+      "id": "bidi-path-known",
+      "message": {
+        "host": "example.com",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter an address without hidden control or formatting characters."
+      }
+    },
+    {
+      "id": "leading-tab-known",
+      "message": {
+        "host": "example.com",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter an address without hidden control or formatting characters."
+      }
+    },
+    {
+      "id": "empty-userinfo-known",
+      "message": {
+        "host": "example.com",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Known reference userinfo is not allowed."
+      }
+    },
+    {
+      "id": "short-ip-known",
+      "message": {
+        "host": "127.0.0.1",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter a canonical dotted IPv4 address or an unambiguous domain name; numeric host shorthand is not supported."
+      }
+    },
+    {
+      "id": "hex-ip-known",
+      "message": {
+        "host": "127.0.0.1",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter a canonical dotted IPv4 address or an unambiguous domain name; numeric host shorthand is not supported."
+      }
+    },
+    {
+      "id": "octal-ip-known",
+      "message": {
+        "host": "127.0.0.1",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter a canonical dotted IPv4 address or an unambiguous domain name; numeric host shorthand is not supported."
+      }
+    },
+    {
+      "id": "escaped-host-known",
+      "message": {
+        "host": "example.com",
+        "error": null
+      },
+      "known": {
+        "host": null,
+        "error": "Enter an address without escaped or scoped host syntax; use a plain domain or canonical IP address."
+      }
+    },
+    {
+      "id": "soft-hyphen-message",
+      "message": {
+        "host": null,
+        "error": "Enter an address without hidden control or formatting characters."
+      },
+      "known": {
+        "host": "example.com",
+        "error": null
+      }
+    },
+    {
+      "id": "zero-width-message",
+      "message": {
+        "host": null,
+        "error": "Enter an address without hidden control or formatting characters."
+      },
+      "known": {
+        "host": "example.com",
+        "error": null
+      }
+    },
+    {
+      "id": "bidi-path-message",
+      "message": {
+        "host": null,
+        "error": "Enter an address without hidden control or formatting characters."
+      },
+      "known": {
+        "host": "example.com",
+        "error": null
+      }
+    },
+    {
+      "id": "short-ip-message",
+      "message": {
+        "host": null,
+        "error": "Enter a canonical dotted IPv4 address or an unambiguous domain name; numeric host shorthand is not supported."
+      },
+      "known": {
+        "host": "127.0.0.1",
+        "error": null
+      }
+    },
+    {
+      "id": "userinfo-destination-control",
+      "message": {
+        "host": "other.test",
+        "error": null
+      },
+      "known": {
+        "host": "example.com",
+        "error": null
+      }
+    },
+    {
+      "id": "numeric-canonical-control",
+      "message": {
+        "host": "127.0.0.1",
+        "error": null
+      },
+      "known": {
+        "host": "127.0.0.1",
+        "error": null
+      }
+    },
+    {
+      "id": "idna-control",
+      "message": {
+        "host": "xn--fa-hia.de",
+        "error": null
+      },
+      "known": {
+        "host": "xn--fa-hia.de",
+        "error": null
+      }
+    },
+    {
+      "id": "subdomain-control",
+      "message": {
+        "host": "sub.example.com",
+        "error": null
+      },
+      "known": {
+        "host": "example.com",
+        "error": null
+      }
+    }
+  ]
+}

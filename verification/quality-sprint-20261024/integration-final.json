@@ -1,0 +1,61 @@
+{
+  "source_tests": {
+    "python": 950,
+    "javascript": 343,
+    "skips": 0,
+    "native_ocr_enabled": true
+  },
+  "browser": {
+    "routes": [
+      "email",
+      "screenshot",
+      "text"
+    ],
+    "route_focus": "workspace; Tab reached next link",
+    "privacy_dom": {
+      "named_fields": 0,
+      "autocomplete": "off",
+      "initialized_submit_enabled": true
+    },
+    "advice": "NBSP/should-not no pattern concern",
+    "direct": "six-U+2011digit and bank-NBSP personal evidence, original excerpts retained",
+    "shortcut": "Ctrl+Enter observed",
+    "clear": "observed",
+    "practice": {
+      "all8reviewed": true,
+      "one_item_retry": true,
+      "reopen_zero": true,
+      "close_and_escape_focus": "Practice opener",
+      "narrow": {
+        "viewport": 320,
+        "dialog_width": 273,
+        "client_width": 256,
+        "scroll_width": 256,
+        "scenario_font": "17px"
+      }
+    },
+    "public_page": "all7 outcomes visible; about link observed",
+    "directory_narrow": {
+      "viewport": 320,
+      "body": 305,
+      "document": 305
+    },
+    "public_narrow": {
+      "viewport": 320,
+      "body": 305,
+      "document": 305
+    },
+    "viewport_restored": true
+  },
+  "goal": {
+    "objective": "keep improving the app for 2-3 hrs",
+    "started_utc": "2026-10-24 01:22 UTC",
+    "status": "active; this is a checkpoint"
+  },
+  "known_limits": [
+    "Native browser image upload and disabled-JS profile behavior not tested.",
+    "Actual clipboard/download/phone/screen-reader/human study unverified.",
+    "Conditional refusal/comma-and scope/secrecy formatting/wrappedOCR remain.",
+    "No model admission or improved accuracy claim."
+  ]
+}

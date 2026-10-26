@@ -1,0 +1,1 @@
+{"case":"Immutable v37 Claim HTML plus current v38 Claim controller","expectation":"Determine whether missing new node throws before enabling Review; do not infer actual update occurrence","scope":"deterministic DOM fixture only; read actual SW update policy separately"}

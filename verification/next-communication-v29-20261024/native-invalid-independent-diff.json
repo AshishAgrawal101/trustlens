@@ -1,0 +1,20 @@
+{
+  "archive": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-passage-navigation-v28-review.zip",
+  "archive_sha256": "64c887f5f3a7a97dd7fb19c63937dab97c19226a2c765f5fb12e394cab909254",
+  "rows": [
+    {
+      "path": "static/quote-context.js",
+      "v28_sha256": "ddf2d8bbe5b19f883249b5992d328b5e8b9cf739a66b825c17d2aa2a20ea33ba",
+      "current_sha256": "ae94f8cbb613766784585d445c3f6f1a6a6f594d7e3cf37b35539a9837297bbe",
+      "only_change": "one capturing native invalid listener using existing invalidate",
+      "remove_one_listener_restores_exact_v28_bytes": true
+    },
+    {
+      "path": "static/media-context.js",
+      "v28_sha256": "05c12fa061d8e7d26b3ffe6a16ad54e84b085bd3e449ac967277a404ff511f7e",
+      "current_sha256": "5a148e68b96f45365e706af2ce5623fbc9acbc8e96eed667e84d740812d5ed14",
+      "only_change": "one capturing native invalid listener using existing invalidate",
+      "remove_one_listener_restores_exact_v28_bytes": true
+    }
+  ]
+}

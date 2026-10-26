@@ -1,0 +1,113 @@
+{
+  "scope": "Actual320desktop native keyboard new-tab actions with constructed input. Parent DOM remains populated; child fields blank. No foreground-selection or discard guarantee. An initial harness assertion compared JSON key order and was corrected to compare field values; no app failure or source fix followed.",
+  "numbersHeld37": {
+    "facts": "Group A rateAbout 20% (20 of 100)Group B rateAbout 15% (30 of 200)Rate difference · B minus AAbout -5 percentage pointsRelative rate change · compared with AAbout -25%",
+    "resultVisible": true,
+    "values": [
+      "20",
+      "100",
+      "30",
+      "200"
+    ]
+  },
+  "initialClaim37": {
+    "fields": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "resultHidden": true
+  },
+  "claimHeld37": {
+    "claim": "Group B had more reports, so its share must be higher.",
+    "clientWidth": 305,
+    "context": "Constructed comparison: Group A 20 of 100; Group B 30 of 200. Check definitions and collection methods.",
+    "resultVisible": true,
+    "scrollWidth": 305,
+    "status": "Next: locate an original source account before interpreting the claim."
+  },
+  "clearedClaim37": {
+    "fields": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "resultHidden": true
+  },
+  "reloadedClaim37": {
+    "fields": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "resultHidden": true
+  },
+  "clearedNumbers37": {
+    "resultHidden": true,
+    "values": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "quoteBefore37": {
+    "diff": "The park will close [Removed] for repairs on Monday.[Removed]  Most paths remain open.",
+    "original": "The park will close for repairs on Monday. Most paths remain open.",
+    "resultVisible": true,
+    "revised": "The park will close on Monday."
+  },
+  "quoteHeld37": {
+    "clientWidth": 305,
+    "diff": "The park will close [Removed] for repairs on Monday.[Removed]  Most paths remain open.",
+    "original": "The park will close for repairs on Monday. Most paths remain open.",
+    "resultVisible": true,
+    "revised": "The park will close on Monday.",
+    "scrollWidth": 305
+  },
+  "quoteChildBlank37": {
+    "fields": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "resultHidden": true
+  },
+  "quoteClear37": {
+    "diff": "",
+    "original": "",
+    "resultHidden": true,
+    "revised": ""
+  },
+  "quoteReload37": {
+    "original": "",
+    "resultHidden": true,
+    "revised": ""
+  }
+}

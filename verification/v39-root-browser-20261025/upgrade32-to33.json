@@ -1,0 +1,13 @@
+{
+  "scope": "Actual ordinary Prepare/versionnotice/explicitkeyboardReload atsameexisting8837origin. No cachepurge, no mid-navigationraceclaim.",
+  "upgradeBefore39": {
+    "message": "Constructed final-upgrade draft, clear only on explicit reload.",
+    "status": "A different companion version is prepared. Reload to use it; this clears the message in this page. Copy anything you need first.",
+    "version": "trustlens-pocket-v32"
+  },
+  "upgradeAfter39": {
+    "message": "",
+    "status": "Offline shell prepared. Installation and receiving shares still depend on this browser and device. No message is cached.",
+    "version": "trustlens-pocket-v33"
+  }
+}

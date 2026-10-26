@@ -1,0 +1,51 @@
+{
+  "scope": "Remove only fixed matched-action truncation; no evidence/risk/model changes. Frozen before implementation.",
+  "cases": [
+    {
+      "id": "matched-code",
+      "input": "Send $50. Return the overpayment. Send me your verification code.",
+      "expected_action_keys": [
+        "payment",
+        "overpayment",
+        "code"
+      ]
+    },
+    {
+      "id": "matched-remote",
+      "input": "Send $50. Return the overpayment. Install TeamViewer.",
+      "expected_action_keys": [
+        "payment",
+        "overpayment",
+        "remote"
+      ]
+    },
+    {
+      "id": "matched-personal",
+      "input": "Send $50. Return the overpayment. Send your card number.",
+      "expected_action_keys": [
+        "payment",
+        "overpayment",
+        "personal"
+      ]
+    },
+    {
+      "id": "matched-secrecy",
+      "input": "Send $50. Return the overpayment. Do not tell your family.",
+      "expected_action_keys": [
+        "payment",
+        "overpayment",
+        "secrecy"
+      ]
+    }
+  ],
+  "required_invariants": [
+    "dictionary order preserved",
+    "deduplicate payment/balance and repeated evidence",
+    "call-back first and VERIFY last",
+    "incomplete email manual action never displaced",
+    "fixed link-mismatch action never displaced",
+    "private-input-free export",
+    "evidence/risk/confidence/model fields unchanged",
+    "finite all-topic bound"
+  ]
+}

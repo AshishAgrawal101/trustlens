@@ -1,0 +1,22 @@
+{
+  "process": {
+    "executable": "C:\\Users\\round\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "private_bytes": 41500672,
+    "peak_working_set_bytes": 57024512,
+    "working_set_bytes": 52248576,
+    "command_line": "\"C:\\Users\\round\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" serve.py"
+  },
+  "available_ram_bytes": 5249679360,
+  "image_requests": 0,
+  "health": {
+    "status": "ok"
+  },
+  "native_load_admission": null,
+  "listener": {
+    "address": "127.0.0.1",
+    "port": 8765,
+    "pid": 48848
+  },
+  "at_utc": "2026-10-23T15:58:59.1896671Z",
+  "reason": "Low process memory establishes no warmed two-backbone native runtime. Health alone does not establish source working directory, environment, model load, CPU execution or containment admission."
+}

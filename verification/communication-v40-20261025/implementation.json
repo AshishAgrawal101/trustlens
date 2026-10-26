@@ -1,0 +1,63 @@
+{
+  "original_contract_sha256": "e16974c7f994b85d6260a5373d2a99c690cde4b5dc9ce717586bf8fb13e1bd46",
+  "replay": [
+    {
+      "id": "eight-distinct",
+      "mode": "paste",
+      "weighted_risk_actions_unchanged": true,
+      "full_report_unchanged": true
+    },
+    {
+      "id": "eight-distinct",
+      "mode": "eml",
+      "weighted_risk_actions_unchanged": true,
+      "full_report_unchanged": true
+    },
+    {
+      "id": "nine-distinct",
+      "mode": "paste",
+      "weighted_risk_actions_unchanged": true,
+      "full_report_unchanged": false
+    },
+    {
+      "id": "nine-distinct",
+      "mode": "eml",
+      "weighted_risk_actions_unchanged": true,
+      "full_report_unchanged": false
+    },
+    {
+      "id": "ninth-duplicate",
+      "mode": "paste",
+      "weighted_risk_actions_unchanged": true,
+      "full_report_unchanged": true
+    },
+    {
+      "id": "ninth-duplicate",
+      "mode": "eml",
+      "weighted_risk_actions_unchanged": true,
+      "full_report_unchanged": true
+    },
+    {
+      "id": "eight-equal-then-different",
+      "mode": "paste",
+      "weighted_risk_actions_unchanged": true,
+      "full_report_unchanged": true
+    },
+    {
+      "id": "eight-equal-then-different",
+      "mode": "eml",
+      "weighted_risk_actions_unchanged": true,
+      "full_report_unchanged": true
+    }
+  ],
+  "source": {
+    "app/analyzers/email.py": {
+      "before": "004d3a8c3c1c58696bd52765f176e87b846fa6e9ff81dd686008dede5594ba62",
+      "after": "3806b654c9cc82ea93e76c08181f87fa229b61b3fc05140d09d89ae7639533b2"
+    },
+    "app/guidance.py": {
+      "before": "ec23edb17ab9431429ca70f13811b4e1b5ca28f759dfd66218422dfc7d288ec6",
+      "after": "985f7cff5c7fd3166cb54d43de556ec77c9e51c823cc940e9a2e22c9d8c256e1"
+    }
+  }
+}

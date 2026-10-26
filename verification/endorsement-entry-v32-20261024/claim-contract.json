@@ -1,0 +1,11 @@
+{
+  "pureSHA": "1e85f59806d77139bbf4a417bca8d551dc0b5367c71aa25771f4bf48e5abff3c",
+  "oldExamples": "    caption:{claim:'This photo shows the town square after the storm on 15 June 2024.',context:'Constructed example: a cropped image was reposted without its original caption. The event date below is supplied for this example, not inferred or verified.',eventDate:'2024-06-15',aUrl:'https://archive.example/photo',aQuote:'Town square following a storm.',aDate:'2020-06-15',bUrl:'https://repost.example/post',bQuote:'Town square following a storm.'},\n    headline:{claim:'The library is permanently closing next month.',context:'Constructed example: a forwarded headline omits the article body.',aUrl:'https://news.example/library',aQuote:'The library building will close for renovation.',bUrl:'https://library.example/notice',bQuote:'Services continue at the temporary branch.'}",
+  "claim": "These headphones last twice as long.",
+  "fields": [
+    "claim",
+    "context"
+  ],
+  "noAutoReview": true,
+  "closedFragment": "#example=endorsement"
+}

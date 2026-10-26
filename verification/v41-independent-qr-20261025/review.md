@@ -1,0 +1,11 @@
+# Independent alpha-QR normalization review
+
+Read-only source/resource/pixel audit. Protected image.py SHA19ba25ed5e3b1ba331c90b9d4f2ef776336bc8da4810115998ce0bc0c6a8fe1f and Screenshot/Media/QRworker match immutable v39 bytes (identity.json). No model/inference/nativeworker retry by reviewer, app/test edits or externalcontent.
+
+No concrete defect found. New QR-only helper first calls frozen decode_image, retaining supportedformat/64MiB/20megapixel gates and EXIFvalidation. It reads a separate header to detect alpha/tRNS; opaque files return the exact validatedRGB object unchanged. Transparent branch closes that validatedRGB BEFORE opening/loading secondalpha source. Source, EXIFtransposed copy, RGBA and A-mask use explicitclosing contexts. WhiteRGBcanvas is returned owned by existing QR caller, closed on pastefailure; outer exceptions close validatedRGB and fixed InvalidImage on decodeerrors. Seconddecode is bounded by firstvalidation and sameimmutablebytes; admitted allocation tradeoff, not claimed as zeroextra RAM.
+
+RGBA zero/partialalpha, LA, palettePNGtRNS and EXIForientation covered by12focusedpassingtests. Independent 2pixelprobes add truecolourRGBPNG tRNS and losslessWebPalpha: transparentblack becomes white and opaquered remains exact (additional-pixels.json). OpaquePNG/JPEG/WebP identity, existingbyte/pixel gates, firstRGBclosedbeforesecondload and failureclosure all pass. No genericOCRbenefit inferred.
+
+qr.py aliases newhelper as decode_image, preserving existing testpatch surface and caller closing. Existing thumbnail/grayscale/tempdir/lock/admission/15secondworker/networkrestrictions unchanged; no worker/model inputoriginclaims introduced. New notice and QR-only help disclose whitepolicy and loss-of-contrast opaquealternative, reviewrequired and creatorunverified. White/invertedtransparentcontrols were separately retained byowner; white-background policy can erase white-ontransparent contrast and is not a universaldecoder fix. Owner nativeblacktransparent/opaquecontrol result is software fixture evidence, not QRpopulationaccuracy; not rerun here.
+
+12focusedtests passed0skip plus2independentpixelchecks. Actualrootbrowser QRhelp/review and ownernative receipts remain separate. No changes to Screenshot,Media,frozenimagepreprocessing/weights or imageorigin decisions.

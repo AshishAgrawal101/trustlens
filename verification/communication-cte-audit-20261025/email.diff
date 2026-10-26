@@ -1,0 +1,34 @@
+--- email-before.py
++++ app/analyzers/email.py
+@@ -131,13 +131,20 @@
+     return evidence,max(0,len(targets)-8)
+ 
+ 
+-def body_parts(message, checked_parts=None):
++def body_parts(message, checked_parts=None, incomplete=None):
+     if message.get_content_disposition() == 'attachment':
+         return
++    if message.get_content_maintype() == 'multipart' or message.get_content_type() in ('text/plain', 'text/html'):
++        encodings = message.get_all('Content-Transfer-Encoding', [])
++        if any(str(value).strip(' \t\r\n').lower() not in ('7bit', '8bit', 'binary', 'base64', 'quoted-printable') for value in encodings):
++            if checked_parts is not None and message not in checked_parts: checked_parts.append(message)
++            if incomplete is not None:
++                incomplete.append('A message body uses an unsupported Content-Transfer-Encoding and was not interpreted; its content remains unknown.')
++            return
+     if message.get_content_maintype() == 'multipart':
+         if checked_parts is not None and message not in checked_parts: checked_parts.append(message)
+         for part in message.iter_parts():
+-            yield from body_parts(part, checked_parts)
++            yield from body_parts(part, checked_parts, incomplete)
+     elif message.get_content_type() in ('text/plain', 'text/html'):
+         if checked_parts is not None and message not in checked_parts: checked_parts.append(message)
+         yield message
+@@ -192,7 +199,7 @@
+     for name in ('From','Reply-To'):
+         if len(message.get_all(name,[]))>1:
+             incomplete.append(f'Multiple {name} headers were supplied; no single address can be assumed.')
+-    for part in body_parts(message, checked_parts):
++    for part in body_parts(message, checked_parts, incomplete):
+         if part is message and _decoded_body is not None:
+             content=_decoded_body
+         else:

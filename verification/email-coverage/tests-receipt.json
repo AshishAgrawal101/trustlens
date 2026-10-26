@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "path": "app/analyzers/email.py",
+      "sha256": "0bd6be120a07420b49f3c535dfb3173b1b3a2e27dcc02b0aca6eb79b58648159"
+    },
+    {
+      "path": "tests/test_email_coverage.py",
+      "sha256": "1c93c1a65b7d36777e7daf8bddcdfeb20eba8ec24a5b228648364817626e7acb"
+    },
+    {
+      "path": "verification/email-coverage/REPORT.md",
+      "sha256": "f3f3b449ed6a7ade3047c1d731c256a5801c9b247899a3ef5c36b9697dad8683"
+    }
+  ],
+  "inventory_fraud_weight": 0,
+  "body_parts_behavior_unchanged": true,
+  "failed": 0,
+  "targeted_tests": 154,
+  "attachment_content_decoded": false,
+  "elapsed_seconds": 5.57,
+  "attachment_filename_recorded": false,
+  "at_utc": "2026-10-23T17:43:54.9556540Z",
+  "new_email_coverage_tests": 10
+}

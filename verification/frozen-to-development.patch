@@ -1,0 +1,262 @@
+--- frozen/app/guidance.py
++++ development/app/guidance.py
+@@ -1,56 +1,56 @@
+-"""Fixed action text makes the share summary independent of private input."""
+-from app.models import Action, AnalysisReport
+-
+-VERIFY = Action(title='Verify through a separate route', detail='Open the official app you already use, or use a number from your bank card or a previous statement. Do not use the contact details in the suspicious message.')
+-
+-REQUEST_ACTIONS = {
+-    'payment': Action(title='Pause the payment', detail='Do not move money because a message or caller says it will protect your account. Contact your bank independently and ask about the specific request.'),
+-    'overpayment': Action(title='Do not return the difference yet', detail='An available check balance does not establish that the check is genuine. Ask your bank to review the situation before sending money back.'),
+-    'advance_fee': Action(title='Verify the offer before paying a fee', detail='Independently check the supposed grant, prize or loan provider. Do not pay through details supplied in this request.'),
+-    'code': Action(title='Keep security codes and passwords private', detail='Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.'),
+-    'remote': Action(title='Keep control of your device', detail='Do not install or enable remote access for an unexpected caller. Contact support through a known official route.'),
+-    'personal': Action(title='Hold back sensitive details', detail='Confirm the organization and why the information is needed through a separate trusted route before sharing it.'),
+-    'secrecy': Action(title='Bring in someone you trust', detail='Pause the conversation and talk privately with a trusted person. A request to hide a payment or account problem deserves independent checking.'),
+-}
+-
+-# Fixed guidance; opening this guide sends no personal incident details.
+-RECOVERY_PLANS = [
+-    {'id':'paid', 'label':'I sent money', 'title':'Contact the payment provider promptly',
+-     'steps':['Use your bank’s app or a known number. Explain what happened and ask whether the transfer can be stopped or reversed.',
+-              'Keep transaction records. Do not pay someone who promises to recover the money for a fee. Recovery is not guaranteed.']},
+-    {'id':'account', 'label':'I shared a code or password', 'title':'Secure the affected account',
+-     'steps':['Contact the account provider through its official app or a known address.',
+-              'Change exposed and reused passwords from a trusted device. Review account activity and unfamiliar sessions.']},
+-    {'id':'device', 'label':'I allowed device access', 'title':'End the remote-access session',
+-     'steps':['Disconnect the device from the internet to end remote access. Use another trusted device to contact relevant providers.',
+-              'Update security software and run a scan before using the affected device for sensitive accounts.']},
+-    {'id':'clicked', 'label':'I opened a link', 'title':'Stop before entering information',
+-     'steps':['Close the page. Do not install its downloads or enter personal information.',
+-              'If you entered credentials, use the account guide. If you installed software, use the device-access guide. Update security software and scan.']},
+-]
+-
+-
+-def add_guidance(report: AnalysisReport) -> AnalysisReport:
+-    if report.kind=='image':
+-        report.actions=[Action(title='Verify the story around the image',detail='Check the original publisher and context independently before acting on an offer or sharing the image.'),
+-            Action(title='Treat provenance as one piece of evidence',detail='AI-generated does not mean fraudulent. A camera photograph does not make a message safe. Missing Content Credentials do not establish either origin.')]
+-        outcome='Image-origin and Content Credentials review. This is not a scam verdict.'
+-    else:
+-        keys = {e.id.removeprefix('request:') for e in report.evidence if e.id.startswith('request:')}
+-        relevant = [action for key, action in REQUEST_ACTIONS.items() if key in keys]
+-        if any(e.id.startswith(('email:link_mismatch:', 'url:userinfo')) for e in report.evidence):
+-            relevant.append(Action(title='Use a known address instead of this link', detail='The displayed address may differ from the destination. Open the organization’s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.'))
+-        incomplete=any(e.id=='email:incomplete' for e in report.evidence)
+-        if incomplete:
+-            relevant.append(Action(title='Review the original email', detail='Open the original message in a trusted mail app. Parts of this pasted email could not be interpreted reliably; do not treat missing findings as reassurance.'))
+-        if (len(relevant) < 2 and REQUEST_ACTIONS['code'] not in relevant
+-                and any(e.id == 'reference:code' and e.evidence_class == 'unknown' and e.weight == 0 for e in report.evidence)):
+-            relevant.append(REQUEST_ACTIONS['code'])
+-        report.actions=([Action(title='End the call and call back independently',detail='Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.')] if report.kind=='call' else [])+relevant[:2]+[VERIFY]
+-        if not relevant:
+-            report.actions.append(Action(title='Take time to check the request', detail='If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.'))
+-        count=sum(e.weight>0 for e in report.evidence)
+-        outcome=f'{count} wording or address warning sign(s) matched. This does not prove fraud or safety.'
+-        if incomplete: outcome='This email check was incomplete. '+outcome
+-    report.share_summary='TrustLens — private-input-free summary\n'+outcome+'\n\n'+'\n\n'.join(a.title+'\n'+a.detail for a in report.actions)+'\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'
+-    return report
++"""Fixed action text makes the share summary independent of private input."""
++from app.models import Action, AnalysisReport
++
++VERIFY = Action(title='Verify through a separate route', detail='Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.')
++
++REQUEST_ACTIONS = {
++    'payment': Action(title='Pause the payment', detail='Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message.'),
++    'overpayment': Action(title='Do not return the difference yet', detail='An available check balance does not establish that the check is genuine. Ask your bank to review the situation before sending money back.'),
++    'advance_fee': Action(title='Verify the offer before paying a fee', detail='Independently check the supposed grant, prize or loan provider. Do not pay through details supplied in this request.'),
++    'code': Action(title='Keep security codes and passwords private', detail='Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.'),
++    'remote': Action(title='Keep control of your device', detail='Do not install or enable remote access for an unexpected caller. Contact support through a known official route.'),
++    'personal': Action(title='Hold back sensitive details', detail='Confirm the organization and why the information is needed through a separate trusted route before sharing it.'),
++    'secrecy': Action(title='Bring in someone you trust', detail='Pause the conversation and talk privately with a trusted person. A request to hide a payment or account problem deserves independent checking.'),
++}
++
++# Fixed guidance; opening this guide sends no personal incident details.
++RECOVERY_PLANS = [
++    {'id':'paid', 'label':'I sent money', 'title':'Contact the payment provider promptly',
++     'steps':['Use your bank’s app or a known number. Explain what happened and ask whether the transfer can be stopped or reversed.',
++              'Keep transaction records. Do not pay someone who promises to recover the money for a fee. Recovery is not guaranteed.']},
++    {'id':'account', 'label':'I shared a code or password', 'title':'Secure the affected account',
++     'steps':['Contact the account provider through its official app or a known address.',
++              'Change exposed and reused passwords from a trusted device. Review account activity and unfamiliar sessions.']},
++    {'id':'device', 'label':'I allowed device access', 'title':'End the remote-access session',
++     'steps':['Disconnect the device from the internet to end remote access. Use another trusted device to contact relevant providers.',
++              'Update security software and run a scan before using the affected device for sensitive accounts.']},
++    {'id':'clicked', 'label':'I opened a link', 'title':'Stop before entering information',
++     'steps':['Close the page. Do not install its downloads or enter personal information.',
++              'If you entered credentials, use the account guide. If you installed software, use the device-access guide. Update security software and scan.']},
++]
++
++
++def add_guidance(report: AnalysisReport) -> AnalysisReport:
++    if report.kind=='image':
++        report.actions=[Action(title='Verify the story around the image',detail='Check the original publisher and context independently before acting on an offer or sharing the image.'),
++            Action(title='Treat provenance as one piece of evidence',detail='AI-generated does not mean fraudulent. A camera photograph does not make a message safe. Missing Content Credentials do not establish either origin.')]
++        outcome='Image-origin and Content Credentials review. This is not a scam verdict.'
++    else:
++        keys = {e.id.removeprefix('request:') for e in report.evidence if e.id.startswith('request:')}
++        relevant = [action for key, action in REQUEST_ACTIONS.items() if key in keys]
++        if any(e.id.startswith(('email:link_mismatch:', 'url:userinfo')) for e in report.evidence):
++            relevant.append(Action(title='Use a known address instead of this link', detail='The displayed address may differ from the destination. Open the organization’s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.'))
++        incomplete=any(e.id=='email:incomplete' for e in report.evidence)
++        if incomplete:
++            relevant.append(Action(title='Review the original email', detail='Open the original message in a trusted mail app. Parts of this pasted email could not be interpreted reliably; do not treat missing findings as reassurance.'))
++        if (len(relevant) < 2 and REQUEST_ACTIONS['code'] not in relevant
++                and any(e.id == 'reference:code' and e.evidence_class == 'unknown' and e.weight == 0 for e in report.evidence)):
++            relevant.append(REQUEST_ACTIONS['code'])
++        report.actions=([Action(title='End the call and call back independently',detail='Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.')] if report.kind=='call' else [])+relevant[:2]+[VERIFY]
++        if not relevant:
++            report.actions.append(Action(title='Take time to check the request', detail='If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.'))
++        count=sum(e.weight>0 for e in report.evidence)
++        outcome=f'{count} wording or address warning sign(s) matched. This does not prove fraud or safety.'
++        if incomplete: outcome='This email check was incomplete. '+outcome
++    report.share_summary='TrustLens — private-input-free summary\n'+outcome+'\n\n'+'\n\n'.join(a.title+'\n'+a.detail for a in report.actions)+'\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'
++    return report
+--- frozen/README.md
++++ development/README.md
+@@ -87,3 +87,7 @@
+ - `submission/EVALUATION.md`: actual model evidence and limits.
+ 
+ The local build is not a submitted or accepted hackathon entry. A public repository, recorded narration, actual community observations and an eligibility determination for reused components remain outside this package. Do not claim the older project was created entirely during the event.
++
++## October 23 development continuation
++
++This is a separate review candidate, not a frozen-entry replacement. See [verified development handoff](docs/CONTINUATION-20261023.md) for current browser checks, 463 Python and 17 controller passes, new constructed diagnostics and remaining upload checks. `scripts/package.py` writes only the separately named development review ZIP.
+--- frozen/scripts/package.py
++++ development/scripts/package.py
+@@ -6,7 +6,7 @@
+ import zipfile
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+-DIRECTORIES = ('app', 'ai_detector', 'models', 'static', 'tests', 'docs', 'submission', 'tasks', 'scripts', 'experiments/results/external_cf1006')
++DIRECTORIES = ('app', 'ai_detector', 'models', 'static', 'tests', 'docs', 'submission', 'tasks', 'scripts', 'verification', 'experiments/results/external_cf1006')
+ ROOT_FILES = ('README.md', '.gitignore', 'frontend.py', 'serve.py', 'Start-TrustLens.cmd', 'requirements.txt', 'requirements-ai.txt', 'requirements-credentials.txt')
+ 
+ 
+@@ -17,7 +17,7 @@
+                      and '__pycache__' not in p.parts and '.pytest_cache' not in p.parts
+                      and p.suffix != '.pyc' and p != ROOT / 'static/index.html')
+     files = sorted(set(files))
+-    destination = ROOT.parent / 'TrustLens-Neighborhood-Hacks-source.zip'
++    destination = ROOT.parent / 'TrustLens-development-20261023-review.zip'
+     manifest = {'created_utc': datetime.now(timezone.utc).isoformat(), 'files': [
+         {'path': p.relative_to(ROOT).as_posix(), 'bytes': p.stat().st_size,
+          'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]}
+--- frozen/static/index.template.html
++++ development/static/index.template.html
+@@ -42,7 +42,7 @@
+ <dialog id="about-dialog" aria-labelledby="about-title"><button class="dialog-close quiet" data-close="about-dialog" aria-label="Close how it works">×</button><p class="eyebrow">UNDER THE LENS</p><h2 id="about-title">Useful signals.<br>Honest limits.</h2><p>Messages, calls, links and emails use inspectable English-language rules. We look for risky requests and address structure. We don’t visit links, authenticate pasted email headers, or identify a caller from their voice.</p>
+ <h3>A link can say one thing and point elsewhere</h3><p>For HTML emails, we compare a displayed web address with the link’s actual host. A difference is observable, but legitimate tracking links can differ too. Plain pasted text and screenshots can hide the underlying link. We do not follow redirects or inspect a website’s reputation.</p>
+ <h3>Screenshots: read, then review</h3><p>Windows OCR extracts English text locally. Review and correct it before analysis. It can miss or misread words and links, especially small text. It does not establish who sent the message.</p>
+-<h3>Images: two separate checks</h3><p>Content Credentials checks a file’s signed C2PA declarations against a local trust snapshot. A valid signature binds a statement to the file; it does not make everything depicted true. Missing credentials don’t prove anything about origin.</p><p>The optional local image detector examines visual patterns. Its output is experimental. AI-origin evidence is not a fraud verdict.</p><h3>What has actually been measured?</h3><p>This app retains the existing CLIP / CommunityForensics runtime. Its older 670-image benchmark reported 95.07% binary classification accuracy; that is not 95% useful definite answers or a real-world guarantee.</p><p>A separate experimental model reached 99.24% / 98.74% on examined development data, then 95.40% / 95.85% on fresh OpenFake and 92.46% / 92.12% on Arena (original / JPEG60, correct definite answers divided by all sources). It failed the release rules and is <strong>not installed here</strong>.</p><p>No accuracy claim is made for scam detection. The practice examples are educational scenarios, not an independent benchmark.</p><h3>Your data</h3><p>Checks run on the local server on this computer. Uploads may use temporary files, removed after processing. The app does not retain inputs or call a remote analysis service. Clearing removes the input and result from this page. A selected download saves only the generic, input-free action summary.</p><button class="primary" data-close="about-dialog">Back to the checker</button></dialog>
++<h3>Images: two separate checks</h3><p>Content Credentials checks a file’s signed C2PA declarations against a local trust snapshot. A valid signature binds a statement to the file; it does not make everything depicted true. Missing credentials don’t prove anything about origin.</p><p>The optional local image detector examines visual patterns. Its output is experimental. AI-origin evidence is not a fraud verdict.</p><h3>What has actually been measured?</h3><p>The optional CLIP / CommunityForensics image detector has not passed our release requirements. Historical evaluations of its decision policy left many images inconclusive and fell well below the required rate of correct definite answers. Its older 670-image binary score does not describe today's useful answer rate or real-world accuracy.</p><p>Use image results as limited clues. Verify the publisher, context and any payment request independently. No replacement model passed all release requirements; none was installed.</p><p>No accuracy claim is made for scam detection. The practice examples are educational scenarios, not an independent benchmark. Detailed historical results and their limitations are in the bundled evaluation notes.</p><h3>Your data</h3><p>Checks run on the local server on this computer. Uploads may use temporary files, removed after processing. The app does not retain inputs or call a remote analysis service. Clearing removes the input and result from this page. A selected download saves only the generic, input-free action summary.</p><button class="primary" data-close="about-dialog">Back to the checker</button></dialog>
+ <dialog id="recovery-dialog" aria-labelledby="recovery-title"><button class="dialog-close quiet" data-close="recovery-dialog" aria-label="Close recovery guide">×</button><p class="eyebrow">ONE STEP AT A TIME</p><h2 id="recovery-title">What happened?</h2><p>You don’t need to enter any personal details. Choose the closest situation for general U.S. guidance.</p><div id="recovery-options" class="recovery-options"></div><p id="recovery-status" role="status"></p><section id="recovery-plan" hidden><h3 id="recovery-heading" tabindex="-1"></h3><ol id="recovery-steps"></ol><button id="recovery-copy" class="secondary">Copy this checklist</button><p id="recovery-copy-status" role="status"></p></section><p class="source-note">Use contact details you already trust. <a href="https://consumer.ftc.gov/articles/what-do-if-you-were-scammed" target="_blank" rel="noopener noreferrer">Read the FTC recovery guide ↗</a></p><p class="small">This is a checklist, not a recovery service. If someone is in immediate danger, contact local emergency services.</p></dialog>
+ <dialog id="practice-dialog" aria-labelledby="practice-title"><button class="dialog-close quiet" data-close="practice-dialog" aria-label="Close practice">×</button><p class="eyebrow">THE PAUSE PRACTICE</p><h2 id="practice-title">Spot the request.<br>Choose your next step.</h2><p class="hint">Three constructed scenarios. Learn the tactic, not just the label.</p><p id="practice-count" class="number"></p><blockquote id="scenario"></blockquote><div id="choices"></div><div id="practice-answer" role="status" hidden></div><button id="practice-next" class="primary" hidden>Next scenario →</button></dialog>
+ <script src="/static/app.js"></script>
+--- frozen/submission/DEMO.md
++++ development/submission/DEMO.md
+@@ -19,3 +19,5 @@
+ **3:25–4:00 — Evidence and limits.** Open How it works briefly. Explain local processing, lack of saved history, English rule limits, and the difference between development accuracy and independent release performance. Close with actual usability observations if collected; otherwise say the next step is testing with the proposed community. End with the running app and repository link.
+ 
+ Preparation: launch once, use browser zoom 100%, close unrelated tabs, and record at a readable width. The portable source ZIP excludes large model weights and machine-specific launch configuration; optional image paths are not ready by default. If those components are configured, use a permitted image check to confirm availability and warm the model; otherwise use the fallback above. Do not imply the warm response represents cold startup speed.
++
++Development rehearsal note (October 23): the three built-in communication examples, call guidance, recovery and practice work through ordinary browser control. File upload automation remains blocked by the extension file-access setting; manually verify screenshot review and optional images before recording. If unavailable, use Message and state the limitation. In How it works, explain that the installed image detector has not passed release requirements. Do not narrate historical binary or rejected-candidate scores as app accuracy.
+--- frozen/submission/DEVPOST.md
++++ development/submission/DEVPOST.md
+@@ -34,7 +34,7 @@
+ 
+ ## What was tested
+ 
+-The current build passed 450 Python tests, including native OCR and actual C2PA signatures/tampering, and retains 17 offline JavaScript controller test passes from the unchanged frontend. The checks cover displayed-link/mailbox mismatches, malformed mail, explicit incomplete results, preserving drafts, private-data clearing, evidence grouping and input-free exports. Constructed wording cases informed rule changes and are not an independent accuracy benchmark; contextual false warnings and missed requests remain documented. Final browser visual checks remain unverified because of a saved permission block. See `docs/SPRINT48-CONTEXT-WAVE.md` and the preserved earlier verification records for exact scope. See `EVALUATION.md` for separate experimental image results and failed release criteria.
++The separate October 23 development build passed 463 Python tests (454 app tests plus nine detector-policy checks), including native OCR and actual C2PA signatures/tampering, plus 17 offline JavaScript controller checks. Ordinary browser checks cover messages, email, links, call transcripts, recovery, practice, limited keyboard behavior and responsive widths. Interactive screenshot and image upload remain unverified because the extension requires file-access permission. A newly frozen ten-case constructed diagnostic had no specified false warnings or request omissions and all expected actions; this small examined set is not population accuracy or a user study. See `docs/CONTINUATION-20261023.md` and `EVALUATION.md` for exact limits and failed image release criteria.
+ 
+ ## Challenges and limitations
+ 
+--- frozen/submission/EVALUATION.md
++++ development/submission/EVALUATION.md
+@@ -1,26 +1,32 @@
+-# What the evidence supports
+-
+-## Shipping runtime
+-
+-The image path retains `clip_community_v1`, classifier cutoff 0.35, and its existing model-disagreement abstention policy. Model metadata SHA256: `b2edf1191d09e6fd27fe97187f100de9e1f2cb6158495ceb127435b86d0f3860`. This is the same runtime as the earlier installed app. This build improves the product workflow, not its trained parameters.
+-
+-Its historical 670-image clean benchmark reported 95.0746% **binary classifier** accuracy. The result predates the inconclusive display policy, uses known generator groups and is not a guarantee for arbitrary images. The UI's limitations disclose this distinction. The source package retains its metadata and JPEG60 robustness report.
+-
+-## Separate experimental candidate, not installed
+-
+-PE_adapted_71401 measured 99.24% original and 98.74% JPEG60 correct definite/all on 6,038 examined development sources. Those development numbers are not independent release performance.
+-
+-| Frozen independent evaluation | Original correct definite/all | JPEG60 correct definite/all |
+-|---|---:|---:|
+-| Fresh balanced OpenFake, 6,068 sources | 5,789 / 6,068 = 95.40% | 5,816 / 6,068 = 95.85% |
+-| Fixed Arena, 2,030 sources | 1,877 / 2,030 = 92.46% | 1,870 / 2,030 = 92.12% |
+-
+-Only two of the four required example views passed. The candidate failed acceptance, was not installed, and was not retried on another supposedly fresh allocation in this build. Historical report identifier: `training-v2-generalization-20261013/release-request-20261016/REPORT.md`.
+-
+-## This product build
+-
+-Software tests check known behavior, error cases, trust boundaries and privacy. Actual native C2PA signing/tampering tests establish verification behavior for constructed fixtures. A real CPU image request establishes that the frozen runtime loads and executes. It uses a constructed geometric image and establishes no accuracy.
+-
+-Scam-text rules have **no measured population accuracy**, calibrated probability, or real-world false-positive-rate claim. Unit tests include ordinary code notifications and warnings because false accusations matter, but a small hand-written set cannot establish generalization. No user study has been completed. English is the only supported rule language.
+-
+-Do not advertise “99% accurate,” “fraud-proof,” “detects all AI,” “verifies a caller,” or “C2PA proves a transaction safe.” Useful future evaluation would measure safe next-step selection and false reassurance in a consent-based community pilot, followed by an independently labeled corpus with clear scope and uncertainty.
++# What the evidence supports
++
++## Shipping runtime
++
++The image path retains `clip_community_v1`, classifier cutoff 0.35, and its existing model-disagreement abstention policy. Model metadata SHA256: `b2edf1191d09e6fd27fe97187f100de9e1f2cb6158495ceb127435b86d0f3860`. This is the same runtime as the earlier installed app. This build improves the product workflow, not its trained parameters.
++
++Its historical 670-image clean benchmark reported 95.0746% **binary classifier** accuracy. The result predates the inconclusive display policy, uses known generator groups and is not a guarantee for arbitrary images. The UI's limitations disclose this distinction. The source package retains its metadata and JPEG60 robustness report.
++
++## Separate experimental candidate, not installed
++
++PE_adapted_71401 measured 99.24% original and 98.74% JPEG60 correct definite/all on 6,038 examined development sources. Those development numbers are not independent release performance.
++
++| Frozen independent evaluation | Original correct definite/all | JPEG60 correct definite/all |
++|---|---:|---:|
++| Fresh balanced OpenFake, 6,068 sources | 5,789 / 6,068 = 95.40% | 5,816 / 6,068 = 95.85% |
++| Fixed Arena, 2,030 sources | 1,877 / 2,030 = 92.46% | 1,870 / 2,030 = 92.12% |
++
++Only two of the four required example views passed. The candidate failed acceptance, was not installed, and was not retried on another supposedly fresh allocation in this build. Historical report identifier: `training-v2-generalization-20261013/release-request-20261016/REPORT.md`.
++
++## This product build
++
++Software tests check known behavior, error cases, trust boundaries and privacy. Actual native C2PA signing/tampering tests establish verification behavior for constructed fixtures. A real CPU image request establishes that the frozen runtime loads and executes. It uses a constructed geometric image and establishes no accuracy.
++
++Scam-text rules have **no measured population accuracy**, calibrated probability, or real-world false-positive-rate claim. Unit tests include ordinary code notifications and warnings because false accusations matter, but a small hand-written set cannot establish generalization. No user study has been completed. English is the only supported rule language.
++
++Do not advertise “99% accurate,” “fraud-proof,” “detects all AI,” “verifies a caller,” or “C2PA proves a transaction safe.” Useful future evaluation would measure safe next-step selection and false reassurance in a consent-based community pilot, followed by an independently labeled corpus with clear scope and uncertainty.
++
++## October 23 installed-policy audit
++
++The read-only audit completed under `accuracy-request-20261023` in the original project's sprint artifacts. Historical cached-feature reconstructions explicitly linked to the installed metadata and disagreement policy recorded only 51.80% original and 48.59% JPEG60 correct definite/all on one examined 6,942-source OpenFake cohort; its saved Arena report recorded 33.40% and 20.30% on 2,030 sources. Many cases were inconclusive. These were historical reconstructions, not newly verified native Torch inference or representative population estimates. Other historical cohorts also fell well below the release target. The older binary score above must not be used as today's useful-answer rate.
++
++No eligible installed-v1 release freeze or approved native evaluation runner was identified. No sealed final was opened or recomputed. Before any new evaluation, review fitting/calibration overlap, admitted licenses and roles, exact runtime parity, prior exposure and resource guards. Failed replacement candidates remain rejected and the language pilot's development split remains unscored.
+--- frozen/submission/JUDGE-GUIDE.md
++++ development/submission/JUDGE-GUIDE.md
+@@ -19,11 +19,11 @@
+ | Communication checks | Local rules, MIME parsing, displayed vs linked hostname, strict URL parsing; no destination fetch | Tracking differences can be legitimate; plain text may omit the link destination |
+ | Action selection | Different advice for codes, remote access, payments and overpayment | General guidance, not a recovery service |
+ | C2PA and image model | Cryptographic declaration verification alongside frozen visual inference | Origin is distinct from fraud; absent credentials prove neither |
+-| Privacy and resilience | No retained input history; safe summaries; timeouts and stale-response rejection | Local-server deployment; final browser checks still require permission settings to allow access |
++| Privacy and resilience | No retained input history; safe summaries; timeouts and stale-response rejection | Local-server deployment; browser screenshot/image upload remains unverified |
+ 
+ ## Evidence available
+ 
+-221 passing Python tests, including real native OCR and signed/tampered credentials; 17 retained offline JavaScript controller tests; constructed request-rule regressions; original model/runtime identity checks. See `docs/SPRINT48-CONTEXT-WAVE.md` for measured improvements, contextual failures and unverified checks. None of these numbers is a real-world scam accuracy claim.
++463 passing Python tests (454 app plus nine detector-policy checks), including native OCR and signed/tampered credentials; 17 offline controller passes. Ordinary browser checks now cover the communication demo, recovery and practice, with limited keyboard and responsive checks. Screenshot/image browser upload remains blocked by the extension file-access permission. See `docs/CONTINUATION-20261023.md`. These are software checks and constructed diagnostics, not real-world accuracy.
+ 
+ ## Before entering
+ 
+--- frozen/tasks/todo.md
++++ development/tasks/todo.md
+@@ -74,3 +74,7 @@
+ - [ ] Produce immutable submission archive and human handoff before October 23, 8 p.m. Chicago.
+ - [ ] Keep post-freeze work separate; at 48-hour end produce factual report and pause schedule.
+ - [ ] Actual browser visual/keyboard checks remain blocked by saved policy; no workaround or invented pass.
++
++## October 23 separate development continuation
++
++Earlier checkboxes and test totals are historical. Current receipts: `docs/CONTINUATION-20261023.md` and `verification/continuation-results.json`. Guidance copy adopted in this development copy only; image disclosure clarified; 463 Python and 17 controller checks passed. Communication browser flows, limited keyboard checks and 320/768/1440 overflow checks completed. File-upload/OCR-review/image browser flows, full assistive-technology audit and clean-machine installation remain open. Original frozen entry and paused automation preserved. No new model evaluation or release acceptance.

@@ -1,0 +1,36 @@
+✔ numbers require explicit submit; construction and typing send nothing (21.5691ms)
+✔ all four edits remove old facts/questions and errors while retaining drafts (6.0932ms)
+✔ Clear, exit and persisted Back remove every supplied number and result (4.1659ms)
+✔ loading constructed example clears previous output and waits for submit (2.7024ms)
+✔ bad or native-invalid values cannot retain a previous calculation (8.8134ms)
+✔ zero baseline is an undefined relative change rather than an infinity or causal claim (1.4712ms)
+✔ empty guidance follows the explicit comparison lifecycle (1.6222ms)
+✔ qualified rounded calculated facts: near-total-reported (21.9714ms)
+✔ qualified rounded calculated facts: smallest-reported (1.5578ms)
+✔ qualified rounded calculated facts: near-total-counts (1.6787ms)
+✔ qualified rounded calculated facts: conventional-counts (1.5004ms)
+✔ undefined baseline is unchanged and rounding note is adjacent to calculated facts (1.8438ms)
+✔ both pure calculation function bodies remain byte-identical (0.7557ms)
+✔ swap is initially disabled native button and preserves pure math bytes and mobile target layout (7.4936ms)
+✔ count reversal swaps pairs clears old result and recalculates asymmetric baseline only on explicit Compare (19.1902ms)
+✔ double swap preserves raw count strings and partial invalid drafts without silently validating (4.5178ms)
+✔ percentage swap preserves exact strings active method and hidden inactive fields without denominator invention (2.17ms)
+✔ browser unparsed numeric entry is kept in place rather than assigning an unreadable empty value over it (1.5823ms)
+✔ swapping the zero baseline changes orientation without changing Undefined arithmetic policy (2.6185ms)
+✔ status readiness and stale results reset on every normal boundary without changing lifecycle defaults (8.8084ms)
+✔ defaults enable counts and disable every hidden percentage input (5.2968ms)
+✔ method change wipes every draft/result and leaves select focus without calculating (18.227ms)
+✔ reported rates show no invented counts and preserve heading scroll/fixed limits (1.9817ms)
+✔ active methods use explicit examples without auto comparison (2.5711ms)
+✔ Clear keeps percentage mode; lifecycle resets default and erases all (4.8033ms)
+✔ edits invalidate output, keep drafts and active mode (3.7541ms)
+✔ zero and invalid/native-invalid results do not retain stale/private output (1.9044ms)
+✔ mode copy follows input/empty/caveat with count caveat restored (1.3781ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 154.0766

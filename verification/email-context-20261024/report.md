@@ -1,0 +1,21 @@
+# Bounded email robustness replay — frozen before predictions
+
+Contract: robustness-contract.json, SHA256 92115e8aa5a735129a796163a7fe2c4b8224743e0a7129d423ec71fd391fca6d. Sixteen authored synthetic cases, each under250,000bytes, replayed sequentially through both in-process ASGI paste and .eml routes:32results. No sockets/external source requests, native browser upload, private input, attachment execution, broad fuzzing or load test.
+
+Original results.json is a pre-fix receipt and must remain unchanged. All32responses were200: zero server failures and no supplied marker echoes in share summaries. Because no error response occurred, this run does not independently establish error-body leak handling. Evidence/details in successful reports can intentionally contain supplied text; that is not classified as an export leak. Cases and conservative partial-result expectations were frozen before invocation; these are robustness assertions, not an accuracy benchmark.
+
+Concrete findings (both routes): header-only/whitespace declared body returned low complete-looking reports; a nested multipart missing its declared boundary returned low without incomplete because its container defect was omitted from checked_parts; invalidUTF8 encoded Subject decoded to a replacement character without incomplete. A follow-up parser probe confirmed the nested StartBoundaryNotFoundDefect. The public Subject header.defects was empty for the invalid encoded-word case; strict decoding of encoded bytes is required rather than assuming header.defects covers it.
+
+Other conservative contract gaps: duplicate/invalid Content-Disposition and malformed quoted-printable =GG retained readable high warnings but lacked incomplete flags. These do not establish loss of warning content in this contract. Root explicitly deferred these interpretation-policy questions; no speculative disposition/QP change is authorized in this slice.
+
+Root subsequently assigned minimal fixes for the three concrete missing-body/nested-container/invalid-subject classes, with regression first and preserved valid body-only pastes, attachment skipping and readable warnings. Those changes/retests will be recorded separately below; historical predictions will not be rewritten. No claim of full MIME support, factual classification accuracy or real-email robustness follows from these tiny cases.
+
+## Assigned fix and post-fix replay
+
+New tests/test_email_incomplete_context.py initially produced12failures/3passes. Authorized minimal changes in email.py: track visited checked multipart containers alongside readable body leaves (attachments still excluded); require some nonblank decoded visible body independently of a subject; validate raw Subject encoded-word byte decoding strictly with public decode_header before retaining its display text. Errors contribute fixed incomplete reasons, not exception/subject text. Existing parser, readable evidence and risk handling are retained; no alternate interpretation decoder was added.
+
+Focused combined email tests:98passed, zero failures. Fifteen new tests cover both entry functions for missing/whitespace/HTML-hidden body, nested malformed container with and without readable warning, invalid encoded Subject with and without readable warning, valid body-only/encoded Subject baselines and defective attached-subtree skip.
+
+Replayed the identical frozen contract through32ASGIroute calls. Saved post-fix-results.json separately; original results.json and contract bytes unchanged. Runner now uses exclusive output creation and accepts a separate result filename, preventing accidental receipt replacement. Post-fix: zero5xx/zero selected summary marker echoes; all assigned low-complete cases now incomplete. Six remaining conservative contract gaps are exactly three deferred disposition/QP cases on two routes; all retain high readable password warnings. No claim that all frozen expectations passed is made. No actual error-response leak case occurred, so error-body safety remains outside this run's evidence.
+
+App scope was only email.py plus new dedicated test file. Root owns independent review, full suite and packaging after these changes. No browser, remote source, attachment execution, historical rewrite or model run occurred.

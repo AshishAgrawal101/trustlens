@@ -1,0 +1,13 @@
+# Reported percentages — actual local-browser verification
+
+Desktop development8766, Edge tab1793492838. At390px selectedReportedpercentages andkeyboardEntercomputed1.2%vs1.8%,0.6points,+50%relative, explicitunknowncounts/totals. Zero0vs1 returnedundefinedrelative; literal100.0000000000000000001 failedfixedrangevalidationandhidoldresult. At320px smallest64charpositivevs100 yieldedfiniteoutput,client/scroll305/305; rate/detailcolumn231px,91charrelativevaluewrapped. The firstlive-extreme-320.png capturedtheinputpanelandisnotusedasresultproof. live-result-confirmed-390.png wasvisuallyinspectedandshowscorrecttypicalfacts/caveat.
+
+Clear retainedpercentagemethod,emptiedbothfields andfocusedpercentage-a. Methodswitchtocountscleareddataand20/100vs30/200 returned20%,15%,-5points,-25%relativewithoutunknown-totalfact. Inputcleared; mainappnormalviewportrestored.
+
+Phonev23exportSHA b22bb416b590d5a448b1f0a4c0d3acd342ba68cffb3f2acba8af5b00ec075cdf contains32entries/31manifestfiles. ExtractedTrustLens-Pocket-v23-static-check; temporaryHTTP8823parent11800/child70440verified29canonicalSHELL200responses/properHTML-JS-CSSMIMEandall31filehashes. FreshEdge1793492905displayedmatchingcachev19preparedstatus. Stoppedexactknownprocessesandconnection-refusedproberesultbeforeofflineworkspaces.
+
+Withserverstopped, Pocketnumbersaliasloadedand1.2vs1.8 againcomputed0.6points/50%relativewithunknownsampletotals. At390client/scroll375/375,heading~0(firstfact210px). Reloadresetdefaultcounts/emptypercentfields/disabledpercentfieldset; builtin1/1000vs2/1000 computed0.1%/0.2%,0.1points,100%relative. ContextnavigationthenBackerasedall6inputs. ArrowDownonmethodselectchangedtopercentages,keptselectfocus,enabledpercentfields/disabledcountsandleftresulthidden(noautomaticcheck).
+
+No nativeShare/clipboard/download/fileupload used. No physicalphone/browserJS-setting/screenreader/humanstudy claim. Original8765process48848untouched; temporary8823stopped. Four-hourgoalcontinues.
+
+Final offline extreme-value check at320px:91charrelativevalue rendered in231pxwidth/81.5625pxheight,documentclient/scroll305/305. offline-extreme-confirmed-320.png visuallyinspectedandshowswrappedfiniteoutputandexplicitunknowncounts/totals. Initial input-panel screenshot remains onlyaninput-statecapture, notresultproof.

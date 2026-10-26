@@ -1,0 +1,13 @@
+# Independent v37 connected-workflow review
+
+Read-only against immutable TrustLens-professional-20261025-url-boundaries-v36-review.zip. identity.json pins archive/source facts. No source/test edits, backend rerun, browser or physical-device claim. Initial identity checks revealed line-ending differences: header/footer comparison normalized HTML CRLF; renderer has one adjacent line-ending change in addition to its single added mapping. Normalized renderer reversal equals v36 exactly; no false raw-byte identity claimed.
+
+No concrete correctness/privacy regression found. Four canonical HTML pages each have exactly one native target=_blank rel=noopener action, visibly labelled “(new tab)”. Claim opens fixed /static/tools.html; Numbers/Quote/Media open fixed /static/claim-review.html. No query/fragment/field interpolation, inline handler, form submission, transfer API or storage added. Browser settings may choose a tab/window; entered worksheet fields are not transmitted. noopener prevents opener access. Header/footer original navigation remains text-identical and still normal same-page links.
+
+Help accurately distinguishes keeping this tab open and returning via browser tabs from closing/reloading/leaving, which clears entries under existing lifecycle reset. It promises neither durable draft retention nor transfer into the new worksheet. Browser discard can lose tab memory; no new persistence guarantee introduced. Existing no-saved-history/no-truth boundaries remain. Targets start independently; no automatic Review or privileged connection added.
+
+All five relevant JS modules (Claim,Numbers,Quote,Source,Media) are byte-identical to v36, including arithmetic, validators, reset/abort/stale-output and input-free exports. No stylesheet change belongs to this slice. Native browser controls focus; no new JS steals original-draft focus.
+
+Pocket renderer adds one exact text-label rewrite; existing href rewrites map Tools to /phone/context.html and Claim to /phone/workspace/claims.html. No desktop tool link leaks through these new actions. They use canonical cached guide/workspace paths, not a second copy. Current-version shell preparation/cache release remains root responsibility, not established by static review. Media stays desktop-only and is not represented as a new Pocket tool.
+
+Inspected owner's seven-case tests/test_connected_workflow.py and ready report (40relatedPythonpasses), without repeating backend tests as requested. Independent checks verify fixed anchors/newtab labels/noopener, unchanged navigation/controllers and bounded renderer scope. Actual browser multi-tab/mobile behavior remains root verification, not markup evidence.

@@ -1,0 +1,105 @@
+.....F..FF..FF.                                                          [100%]
+================================== FAILURES ===================================
+_ test_custom_limitations_keep_order_without_mutation_and_no_other_report_change _
+
+    def test_custom_limitations_keep_order_without_mutation_and_no_other_report_change():
+        custom=['First supplied MIME limitation.','Second supplied attachment limitation.'];before=list(custom)
+        evidence=analyze_text('Send me your verification code.').evidence
+        report=communication_report('email',evidence,custom)
+>       assert report.limitations==[SCOPE]+before and custom==before
+E       AssertionError: assert (['First suppl... limitation.'] == ['English-lan... limitation.']
+E         
+E         At index 0 diff: 'First supplied MIME limitation.' != 'English-language rules identify wording and link structure, not intent or sender identity.'
+E         Right contains one more item: 'Second supplied attachment limitation.'
+E         Use -v to get more diff)
+
+tests\test_communication_scope.py:33: AssertionError
+_ test_all_communication_modes_disclose_scope_without_input_in_export[email-paste] _
+
+mode = 'email-paste'
+
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_all_communication_modes_disclose_scope_without_input_in_export(mode):
+        body='Please send me your verification code. PRIVATE-INCIDENT'
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body);r=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':r=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+body)
+        else:r=analyze_text(body,mode)
+>       assert r.limitations[0]==SCOPE and r.limitations.count(SCOPE)==1
+E       AssertionError: assert ('Pasted heade...r connection.' == 'English-lang...der identity.'
+E         
+E         - English-language rules identify wording and link structure, not intent or sender identity.
+E         + Pasted headers are supplied text, not a trusted mail-server connection.)
+
+tests\test_communication_scope.py:48: AssertionError
+__ test_all_communication_modes_disclose_scope_without_input_in_export[eml] ___
+
+mode = 'eml'
+
+    @pytest.mark.parametrize('mode',['text','call','email-paste','eml'])
+    def test_all_communication_modes_disclose_scope_without_input_in_export(mode):
+        body='Please send me your verification code. PRIVATE-INCIDENT'
+        if mode=='eml':
+            m=EmailMessage();m.set_content(body);r=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':r=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+body)
+        else:r=analyze_text(body,mode)
+>       assert r.limitations[0]==SCOPE and r.limitations.count(SCOPE)==1
+E       AssertionError: assert ('Pasted heade...r connection.' == 'English-lang...der identity.'
+E         
+E         - English-language rules identify wording and link structure, not intent or sender identity.
+E         + Pasted headers are supplied text, not a trusted mail-server connection.)
+
+tests\test_communication_scope.py:48: AssertionError
+_ test_actual_communication_api_has_explicit_english_scope[/api/analyze/email] _
+
+path = '/api/analyze/email'
+
+    @pytest.mark.parametrize('path',['/api/analyze/text','/api/analyze/call','/api/analyze/email','/api/analyze/email-file'])
+    def test_actual_communication_api_has_explicit_english_scope(path):
+        async def run():
+            async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app),base_url='http://127.0.0.1') as client:
+                body='Send me your verification code. PRIVATE-API'
+                if path.endswith('/email-file'):
+                    m=EmailMessage();m.set_content(body)
+                    return await client.post(path,files={'file':('constructed.eml',m.as_bytes(),'message/rfc822')})
+                key='transcript' if path.endswith('/call') else 'raw_email' if path.endswith('/email') else 'text'
+                return await client.post(path,json={key:body})
+        response=asyncio.run(run());assert response.status_code==200
+>       result=response.json();assert result['limitations'][0]==SCOPE
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert 'Pasted heade...r connection.' == 'English-lang...der identity.'
+E         
+E         - English-language rules identify wording and link structure, not intent or sender identity.
+E         + Pasted headers are supplied text, not a trusted mail-server connection.
+
+tests\test_communication_scope.py:65: AssertionError
+_ test_actual_communication_api_has_explicit_english_scope[/api/analyze/email-file] _
+
+path = '/api/analyze/email-file'
+
+    @pytest.mark.parametrize('path',['/api/analyze/text','/api/analyze/call','/api/analyze/email','/api/analyze/email-file'])
+    def test_actual_communication_api_has_explicit_english_scope(path):
+        async def run():
+            async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app),base_url='http://127.0.0.1') as client:
+                body='Send me your verification code. PRIVATE-API'
+                if path.endswith('/email-file'):
+                    m=EmailMessage();m.set_content(body)
+                    return await client.post(path,files={'file':('constructed.eml',m.as_bytes(),'message/rfc822')})
+                key='transcript' if path.endswith('/call') else 'raw_email' if path.endswith('/email') else 'text'
+                return await client.post(path,json={key:body})
+        response=asyncio.run(run());assert response.status_code==200
+>       result=response.json();assert result['limitations'][0]==SCOPE
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert 'Pasted heade...r connection.' == 'English-lang...der identity.'
+E         
+E         - English-language rules identify wording and link structure, not intent or sender identity.
+E         + Pasted headers are supplied text, not a trusted mail-server connection.
+
+tests\test_communication_scope.py:65: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_communication_scope.py::test_custom_limitations_keep_order_without_mutation_and_no_other_report_change
+FAILED tests/test_communication_scope.py::test_all_communication_modes_disclose_scope_without_input_in_export[email-paste]
+FAILED tests/test_communication_scope.py::test_all_communication_modes_disclose_scope_without_input_in_export[eml]
+FAILED tests/test_communication_scope.py::test_actual_communication_api_has_explicit_english_scope[/api/analyze/email]
+FAILED tests/test_communication_scope.py::test_actual_communication_api_has_explicit_english_scope[/api/analyze/email-file]
+5 failed, 10 passed in 0.79s

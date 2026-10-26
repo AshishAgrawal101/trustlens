@@ -1,0 +1,57 @@
+{
+  "cases": [
+    {
+      "id": "A-only",
+      "values": [
+        "101",
+        "100",
+        "30",
+        "200"
+      ],
+      "invalidCounts": [
+        "count-a"
+      ]
+    },
+    {
+      "id": "B-only",
+      "values": [
+        "20",
+        "100",
+        "201",
+        "200"
+      ],
+      "invalidCounts": [
+        "count-b"
+      ]
+    },
+    {
+      "id": "both",
+      "values": [
+        "101",
+        "100",
+        "201",
+        "200"
+      ],
+      "invalidCounts": [
+        "count-a",
+        "count-b"
+      ]
+    }
+  ],
+  "proposedOrder": [
+    "native required/min/max/step",
+    "existing digits-only parse",
+    "crossfield count<=total native custom validity",
+    "unchanged pure compare"
+  ],
+  "reset": [
+    "any input",
+    "method",
+    "Swap",
+    "Clear",
+    "example",
+    "pagehide",
+    "persisted pageshow"
+  ],
+  "pureSHA256": "0ed042bc431f853ca8e0a80a02844cfe212c81ad99197c3089bd314936bb2ca2"
+}

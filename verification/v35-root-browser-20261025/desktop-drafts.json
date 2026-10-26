@@ -1,0 +1,54 @@
+{
+  "scope": "Actual desktop browser, constructed counts/percentages,390 then320width; no model/network analysis or phone device.",
+  "countResult35": {
+    "facts": "Group A rateAbout 20% (20 of 100)Group B rateAbout 15% (30 of 200)Rate difference · B minus AAbout -5 percentage pointsRelative rate change · compared with AAbout -25%",
+    "resultHidden": false
+  },
+  "percentResult35": {
+    "facts": "Group A rateAbout 1.2%Group B rateAbout 1.8%Rate difference · B minus AAbout 0.6 percentage pointsRelative rate change · compared with AAbout 50%Underlying counts and totalsNot supplied; not inferred from reported percentages.",
+    "resultHidden": false
+  },
+  "returnedCounts35": {
+    "facts": "",
+    "resultHidden": true,
+    "values": [
+      "20",
+      "100",
+      "30",
+      "200"
+    ]
+  },
+  "returnedPercent35": {
+    "facts": "",
+    "help": "Changing method keeps each method’s separate entries on this page and clears the previous result. No values are converted and no comparison runs automatically. Clear, loading an example or leaving this page removes both drafts.",
+    "resultHidden": true,
+    "values": [
+      "1.20",
+      "1.80"
+    ]
+  },
+  "clearDrafts35": {
+    "all": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "focus": "percentage-a",
+    "resultHidden": true
+  },
+  "reloadDrafts35": {
+    "all": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "method": "counts",
+    "resultHidden": true
+  }
+}

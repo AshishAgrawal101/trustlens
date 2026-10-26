@@ -1,0 +1,234 @@
+{
+  "cases": 24,
+  "exact": 18,
+  "rows": [
+    {
+      "id": "money-gift",
+      "expected": [
+        "money"
+      ],
+      "actual": [
+        "money"
+      ],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "money-transfer",
+      "expected": [
+        "money"
+      ],
+      "actual": [
+        "money"
+      ],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "code-read",
+      "expected": [
+        "code"
+      ],
+      "actual": [
+        "code"
+      ],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "code-password",
+      "expected": [
+        "code"
+      ],
+      "actual": [
+        "code"
+      ],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "device-brand",
+      "expected": [
+        "device"
+      ],
+      "actual": [
+        "device"
+      ],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "device-access",
+      "expected": [
+        "device"
+      ],
+      "actual": [
+        "device"
+      ],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "secret",
+      "expected": [
+        "secret"
+      ],
+      "actual": [
+        "secret"
+      ],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "urgent",
+      "expected": [
+        "secret"
+      ],
+      "actual": [
+        "secret"
+      ],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "negation-code",
+      "expected": [],
+      "actual": [],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "negation-money",
+      "expected": [],
+      "actual": [],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "advice",
+      "expected": [],
+      "actual": [],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "history",
+      "expected": [],
+      "actual": [],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "teaching",
+      "expected": [],
+      "actual": [],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "quotation",
+      "expected": [],
+      "actual": [],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "code-source",
+      "expected": [],
+      "actual": [],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "ordinary",
+      "expected": [],
+      "actual": [],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "code-notification",
+      "expected": [],
+      "actual": [],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "legitimate-payment",
+      "expected": [
+        "money"
+      ],
+      "actual": [
+        "money"
+      ],
+      "missing": [],
+      "extra": []
+    },
+    {
+      "id": "paraphrase-code",
+      "expected": [
+        "code"
+      ],
+      "actual": [],
+      "missing": [
+        "code"
+      ],
+      "extra": []
+    },
+    {
+      "id": "indirect-money",
+      "expected": [
+        "money"
+      ],
+      "actual": [],
+      "missing": [
+        "money"
+      ],
+      "extra": []
+    },
+    {
+      "id": "negation-with-live-request",
+      "expected": [
+        "code"
+      ],
+      "actual": [],
+      "missing": [
+        "code"
+      ],
+      "extra": []
+    },
+    {
+      "id": "past-plus-live",
+      "expected": [
+        "device"
+      ],
+      "actual": [],
+      "missing": [
+        "device"
+      ],
+      "extra": []
+    },
+    {
+      "id": "quoted-live",
+      "expected": [
+        "code"
+      ],
+      "actual": [],
+      "missing": [
+        "code"
+      ],
+      "extra": []
+    },
+    {
+      "id": "secrecy-negative-wording",
+      "expected": [
+        "secret"
+      ],
+      "actual": [],
+      "missing": [
+        "secret"
+      ],
+      "extra": []
+    }
+  ]
+}

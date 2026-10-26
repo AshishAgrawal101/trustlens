@@ -1,0 +1,12 @@
+{
+  "frozen_before_reading_new_implementation": true,
+  "scope": "v18 local offline workspace integration; no accuracy, source authentication or physical-phone execution claim",
+  "cases": [
+    {"id":"numbers","constructed_input":{"countA":20,"totalA":100,"countB":30,"totalB":200},"expected":"20percent versus15percent; BminusA=-5percentagepoints; descriptive only, no significance/causation/data quality/truth inference"},
+    {"id":"quote","constructed_input":{"original":"The site may close for repairs.","revised":"The site will close permanently.","source":"A notice says: The site may close for repairs. Read the next update."},"expected":"Literal version changes and exact source-context match; both supplied versions/source remain unauthenticated; no meaning/intent/factual-truth decision"},
+    {"id":"claim","constructed_input":{"claim":"The site is closing permanently.","aRole":"supports","aQuote":"The site may close for repairs.","bRole":"challenges","bQuote":"Services will continue."},"expected":"Manual user labels separate from observations; source independence/reliability/truth unverified; a checking plan does not perform verification"}
+  ],
+  "integration_acceptance": ["closed tool-name renderer mapping only", "canonical /phone/workspace/{tool}.html routes before generic phone mount", "no user-controlled markup/source/input interpolation", "local exact assets and navigation compatible with /phone/ cache scope", "CSP does not require unsafe source execution or remote resources", "exports/caches omit private inputs; offline readiness must include all necessary assets"],
+  "review_process":"Wait for owner/root ready notice; no repeated polling. Read actual implementation then record pass/partial/pending without altering this freeze.",
+  "preservation":"v17 immutable archive remains unchanged; no app edits by reviewer"
+}

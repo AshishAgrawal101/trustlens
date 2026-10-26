@@ -1,0 +1,12 @@
+[
+  {
+    "header": "From: \"",
+    "status": 400,
+    "response": "{\"detail\":\"This email structure could not be read. Paste only the visible message body instead.\"}"
+  },
+  {
+    "header": "Reply-To: a@[",
+    "status": 400,
+    "response": "{\"detail\":\"This email structure could not be read. Paste only the visible message body instead.\"}"
+  }
+]

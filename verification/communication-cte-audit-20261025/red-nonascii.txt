@@ -1,0 +1,68 @@
+..........................................FFFF....                       [100%]
+================================== FAILURES ===================================
+___ test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes[before-\xa0] ___
+
+space = '\xa0', position = 'before'
+
+    @pytest.mark.parametrize('space',['\u00a0','\u2003'])
+    @pytest.mark.parametrize('position',['before','after'])
+    def test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes(space,position):
+        cte=(space+'base64') if position=='before' else ('base64'+space)
+        raw=message(cte,base64.b64encode(b'Send me your verification code.').decode())
+        for report in [analyze_email(raw),analyze_email_bytes(raw.encode('utf-8'))]:
+>           assert 'email:incomplete' in ids(report)
+E           AssertionError: assert 'email:incomplete' in {'request:code'}
+E            +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T... a request is safe.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary=''))
+
+tests\test_email_unknown_cte.py:64: AssertionError
+__ test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes[before-\u2003] __
+
+space = '\u2003', position = 'before'
+
+    @pytest.mark.parametrize('space',['\u00a0','\u2003'])
+    @pytest.mark.parametrize('position',['before','after'])
+    def test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes(space,position):
+        cte=(space+'base64') if position=='before' else ('base64'+space)
+        raw=message(cte,base64.b64encode(b'Send me your verification code.').decode())
+        for report in [analyze_email(raw),analyze_email_bytes(raw.encode('utf-8'))]:
+>           assert 'email:incomplete' in ids(report)
+E           AssertionError: assert 'email:incomplete' in {'request:code'}
+E            +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T... a request is safe.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary=''))
+
+tests\test_email_unknown_cte.py:64: AssertionError
+___ test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes[after-\xa0] ____
+
+space = '\xa0', position = 'after'
+
+    @pytest.mark.parametrize('space',['\u00a0','\u2003'])
+    @pytest.mark.parametrize('position',['before','after'])
+    def test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes(space,position):
+        cte=(space+'base64') if position=='before' else ('base64'+space)
+        raw=message(cte,base64.b64encode(b'Send me your verification code.').decode())
+        for report in [analyze_email(raw),analyze_email_bytes(raw.encode('utf-8'))]:
+>           assert 'email:incomplete' in ids(report)
+E           AssertionError: assert 'email:incomplete' in {'request:code'}
+E            +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T... a request is safe.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary=''))
+
+tests\test_email_unknown_cte.py:64: AssertionError
+__ test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes[after-\u2003] ___
+
+space = '\u2003', position = 'after'
+
+    @pytest.mark.parametrize('space',['\u00a0','\u2003'])
+    @pytest.mark.parametrize('position',['before','after'])
+    def test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes(space,position):
+        cte=(space+'base64') if position=='before' else ('base64'+space)
+        raw=message(cte,base64.b64encode(b'Send me your verification code.').decode())
+        for report in [analyze_email(raw),analyze_email_bytes(raw.encode('utf-8'))]:
+>           assert 'email:incomplete' in ids(report)
+E           AssertionError: assert 'email:incomplete' in {'request:code'}
+E            +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T... a request is safe.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary=''))
+
+tests\test_email_unknown_cte.py:64: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_email_unknown_cte.py::test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes[before-\xa0]
+FAILED tests/test_email_unknown_cte.py::test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes[before-\u2003]
+FAILED tests/test_email_unknown_cte.py::test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes[after-\xa0]
+FAILED tests/test_email_unknown_cte.py::test_nonascii_cte_whitespace_is_opaque_for_paste_and_bytes[after-\u2003]
+4 failed, 46 passed in 0.52s

@@ -1,0 +1,283 @@
+{
+  "dual": {
+    "custom": [
+      true,
+      true
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "count-a",
+    "messages": [
+      "Group A count cannot be larger than Group A total.",
+      "Group B count cannot be larger than Group B total."
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "2",
+      "1",
+      "3",
+      "2",
+      "",
+      ""
+    ]
+  },
+  "editedA": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "count-a",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "1",
+      "1",
+      "3",
+      "2",
+      "",
+      ""
+    ]
+  },
+  "bOnly": {
+    "custom": [
+      false,
+      true
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "count-b",
+    "messages": [
+      "",
+      "Group B count cannot be larger than Group B total."
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "1",
+      "1",
+      "3",
+      "2",
+      "",
+      ""
+    ]
+  },
+  "editedTotal": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "total-b",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "1",
+      "1",
+      "3",
+      "3",
+      "",
+      ""
+    ]
+  },
+  "valid": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "Group A rateAbout 100% (1 of 1)Group B rateAbout 100% (3 of 3)Rate difference · B minus AAbout 0 percentage pointsRelative rate change · compared with AAbout 0%",
+    "focus": "numbers-result-title",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "counts",
+    "resultHidden": false,
+    "values": [
+      "1",
+      "1",
+      "3",
+      "3",
+      "",
+      ""
+    ]
+  },
+  "overflow": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "count-b",
+    "messages": [
+      "",
+      "Value must be less than or equal to 9007199254740991."
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "2",
+      "1",
+      "9007199254740992",
+      "10",
+      "",
+      ""
+    ],
+    "nativeOverflow": true
+  },
+  "exponent": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "Enter counts and totals using whole-number digits only.",
+    "facts": "",
+    "focus": "numbers-error",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "1e2",
+      "1",
+      "0",
+      "10",
+      "",
+      ""
+    ]
+  },
+  "switched": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "percentages",
+    "resultHidden": true,
+    "values": [
+      "2",
+      "1",
+      "3",
+      "2",
+      "",
+      ""
+    ]
+  },
+  "percent": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "Group A rateAbout 1.2%Group B rateAbout 1.8%Rate difference · B minus AAbout 0.6 percentage pointsRelative rate change · compared with AAbout 50%Underlying counts and totalsNot supplied; not inferred from reported percentages.",
+    "focus": "numbers-result-title",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "percentages",
+    "resultHidden": false,
+    "values": [
+      "2",
+      "1",
+      "3",
+      "2",
+      "1.2",
+      "1.8"
+    ]
+  },
+  "returned": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "2",
+      "1",
+      "3",
+      "2",
+      "1.2",
+      "1.8"
+    ]
+  },
+  "swapped": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "numbers-swap",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "3",
+      "2",
+      "2",
+      "1",
+      "1.2",
+      "1.8"
+    ]
+  },
+  "clearReload": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "",
+    "messages": [
+      "Please fill out this field.",
+      "Please fill out this field."
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "constructedOnly": true,
+  "focusConfirmedByDOMAndAX": true,
+  "nativeBubbleNotCapturedInScreenshot": true,
+  "screenReader": false
+}

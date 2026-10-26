@@ -1,0 +1,12 @@
+{
+  "frozen_before_test_inspection":true,
+  "scope":"read-only controller and actual local producer response boundary; no network URLs visited or server-compromise assumption",
+  "probes":[
+    {"id":"partial-invalid-response","expect":"invalid response field cannot leave partial old/new anatomy presented as completed"},
+    {"id":"stale-input","expect":"input edit/Clear/mode/exit invalidates pending response and old detail"},
+    {"id":"error-echo","expect":"ordinary fetch/JSON error cannot expose private raw input through error.message; compare actual producer fixed error contract"},
+    {"id":"bounded-producer","expect":"actual host/count/port limits agree with accepted response contract; distinguish missing validation hardening from reproducible producer bug"},
+    {"id":"numeric-controls","expect":"nonfinite/negative/oversized counts or host controls not silently presented as real inspected components; malformed-response tests are robustness, not a compromise claim"}
+  ],
+  "limits":"tiny local mocks/constructed requests only; no browserupload, models, privatefiles or remote fetch"
+}

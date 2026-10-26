@@ -1,0 +1,95 @@
+FFF.FFF                                                                  [100%]
+================================== FAILURES ===================================
+_ test_eight_vs_nine_preserves_original_rows_and_adds_count_only_notice[mailto] _
+
+kind = 'mailto'
+
+    @pytest.mark.parametrize('kind',['mailto','web','relative'])
+    def test_eight_vs_nine_preserves_original_rows_and_adds_count_only_notice(kind):
+        eight=link_label_evidence(anchors(8,kind));nine=link_label_evidence(anchors(9,kind))
+        assert isinstance(nine,list) and weighted(nine)==weighted(eight)
+        assert len(eight)==8 and not any(e.id=='email:label_limit' for e in eight)
+>       notice=[e for e in nine if e.id=='email:label_limit'];assert len(notice)==1
+                                                              ^^^^^^^^^^^^^^^^^^^^^
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+tests\test_email_label_limit.py:18: AssertionError
+_ test_eight_vs_nine_preserves_original_rows_and_adds_count_only_notice[web] __
+
+kind = 'web'
+
+    @pytest.mark.parametrize('kind',['mailto','web','relative'])
+    def test_eight_vs_nine_preserves_original_rows_and_adds_count_only_notice(kind):
+        eight=link_label_evidence(anchors(8,kind));nine=link_label_evidence(anchors(9,kind))
+        assert isinstance(nine,list) and weighted(nine)==weighted(eight)
+        assert len(eight)==8 and not any(e.id=='email:label_limit' for e in eight)
+>       notice=[e for e in nine if e.id=='email:label_limit'];assert len(notice)==1
+                                                              ^^^^^^^^^^^^^^^^^^^^^
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+tests\test_email_label_limit.py:18: AssertionError
+_ test_eight_vs_nine_preserves_original_rows_and_adds_count_only_notice[relative] _
+
+kind = 'relative'
+
+    @pytest.mark.parametrize('kind',['mailto','web','relative'])
+    def test_eight_vs_nine_preserves_original_rows_and_adds_count_only_notice(kind):
+        eight=link_label_evidence(anchors(8,kind));nine=link_label_evidence(anchors(9,kind))
+        assert isinstance(nine,list) and weighted(nine)==weighted(eight)
+        assert len(eight)==8 and not any(e.id=='email:label_limit' for e in eight)
+>       notice=[e for e in nine if e.id=='email:label_limit'];assert len(notice)==1
+                                                              ^^^^^^^^^^^^^^^^^^^^^
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+tests\test_email_label_limit.py:18: AssertionError
+_ test_report_exports_fixed_display_reason_without_scoring_actions_or_private_echo[paste] _
+
+mode = 'paste'
+
+    @pytest.mark.parametrize('mode',['paste','eml'])
+    def test_report_exports_fixed_display_reason_without_scoring_actions_or_private_echo(mode):
+        run=lambda items:add_guidance(analyze_email(raw(items)) if mode=='paste' else analyze_email_bytes(raw(items).encode()))
+        before=run(anchors(8));after=run(anchors(10))
+        assert after.risk_level==before.risk_level=='guarded' and after.actions==before.actions
+        assert weighted(after.evidence)==weighted(before.evidence)
+>       assert NOTICE in after.share_summary and NOTICE not in before.share_summary
+E       AssertionError: assert ('Only the first 8 distinct HTML address differences were displayed; additional differences were omitted.' in 'TrustLens — private-input-free summary\n8 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.')
+E        +  where 'TrustLens — private-input-free summary\n8 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='guarded', confidence='low', summary='Check the context befor...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_email_label_limit.py:34: AssertionError
+_ test_report_exports_fixed_display_reason_without_scoring_actions_or_private_echo[eml] _
+
+mode = 'eml'
+
+    @pytest.mark.parametrize('mode',['paste','eml'])
+    def test_report_exports_fixed_display_reason_without_scoring_actions_or_private_echo(mode):
+        run=lambda items:add_guidance(analyze_email(raw(items)) if mode=='paste' else analyze_email_bytes(raw(items).encode()))
+        before=run(anchors(8));after=run(anchors(10))
+        assert after.risk_level==before.risk_level=='guarded' and after.actions==before.actions
+        assert weighted(after.evidence)==weighted(before.evidence)
+>       assert NOTICE in after.share_summary and NOTICE not in before.share_summary
+E       AssertionError: assert ('Only the first 8 distinct HTML address differences were displayed; additional differences were omitted.' in 'TrustLens — private-input-free summary\n8 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.')
+E        +  where 'TrustLens — private-input-free summary\n8 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='guarded', confidence='low', summary='Check the context befor...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_email_label_limit.py:34: AssertionError
+_ test_multipart_dedup_is_global_and_independent_coverage_high_request_survives _
+
+    def test_multipart_dedup_is_global_and_independent_coverage_high_request_survives():
+        first=raw(anchors(8));second=raw(anchors(8)+anchors(10)[8:])+'<a href="relative-path">Account</a><p>Send me your verification code.</p>'
+        message='Content-Type: multipart/alternative; boundary=p\n\n--p\n'+first+'\n--p\n'+second+'\n--p--\n'
+>       r=add_guidance(analyze_email(message));notice=next(e for e in r.evidence if e.id=='email:label_limit')
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       StopIteration
+
+tests\test_email_label_limit.py:42: StopIteration
+=========================== short test summary info ===========================
+FAILED tests/test_email_label_limit.py::test_eight_vs_nine_preserves_original_rows_and_adds_count_only_notice[mailto]
+FAILED tests/test_email_label_limit.py::test_eight_vs_nine_preserves_original_rows_and_adds_count_only_notice[web]
+FAILED tests/test_email_label_limit.py::test_eight_vs_nine_preserves_original_rows_and_adds_count_only_notice[relative]
+FAILED tests/test_email_label_limit.py::test_report_exports_fixed_display_reason_without_scoring_actions_or_private_echo[paste]
+FAILED tests/test_email_label_limit.py::test_report_exports_fixed_display_reason_without_scoring_actions_or_private_echo[eml]
+FAILED tests/test_email_label_limit.py::test_multipart_dedup_is_global_and_independent_coverage_high_request_survives
+6 failed, 1 passed in 0.38s

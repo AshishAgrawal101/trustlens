@@ -1,0 +1,241 @@
+{
+  "purpose": "Read-only selected communication diagnostic; warning means useful verification prompt, never a binary fraud label. No tuning on outcomes.",
+  "source_access_date": "2026-10-23",
+  "case_origin": "All message wording newly authored and adapted, not real received user messages or verbatim FTC transcripts. Sources justify scenarios and advice, not empirical labels for these exact texts.",
+  "expectations_frozen_before_predictions": true,
+  "metrics": "Report each warning presence versus expectation, evidence, action usefulness, unresolved cases and per-case local latency. No population accuracy or spam-as-fraud claim.",
+  "sources": {
+    "delivery": {
+      "url": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+      "basis": "Impersonated delivery notices lead to lookalike pages requesting payment or personal information; verify through original order records."
+    },
+    "toll": {
+      "url": "https://consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+      "basis": "Unexpected toll demands use payment pressure and supplied links; independently contact the toll agency."
+    },
+    "bank": {
+      "url": "https://consumer.ftc.gov/consumer-alerts/2024/06/got-call-about-fraud-activity-your-bank-account-it-could-be-scammer",
+      "basis": "Impersonators seek a transfer supposedly for protection or an account verification code; contact the institution independently."
+    },
+    "job": {
+      "url": "https://consumer.ftc.gov/articles/job-scams",
+      "basis": "Recruiters may require money for work or send a fake check and direct onward payment; independently research the employer and check with trusted people."
+    },
+    "task": {
+      "url": "https://consumer.ftc.gov/consumer-alerts/2025/08/how-spot-avoid-task-scams",
+      "basis": "Task platforms display imaginary earnings then demand deposits, often crypto, to continue or withdraw; do not pay to get paid."
+    },
+    "gift": {
+      "url": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
+      "basis": "Impersonators demand gift cards and card numbers/PIN; gift cards also have ordinary gift uses, and card issuers may help after fraud."
+    },
+    "family": {
+      "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+      "basis": "An apparent relative in trouble demands fast payment and secrecy; a familiar voice can be faked; call a saved contact and another trusted person."
+    },
+    "code": {
+      "url": "https://consumer.ftc.gov/consumer-alerts/2024/03/whats-verification-code-why-would-someone-ask-me-it",
+      "basis": "Account codes can be legitimate login notifications; do not disclose them to unexpected contacts."
+    }
+  },
+  "cases": [
+    {
+      "id": "delivery-fee",
+      "mode": "text",
+      "source": "delivery",
+      "label": "adapted_ftc_pattern",
+      "text": "Your parcel is being held. Pay the redelivery charge at https://parcel-help.example/fee to release it.",
+      "expected_warning": true,
+      "intended_action": "Check the original retailer or carrier through an independently known route; pause supplied-link payment."
+    },
+    {
+      "id": "delivery-details",
+      "mode": "email",
+      "source": "delivery",
+      "label": "adapted_ftc_pattern",
+      "text": "We could not complete delivery. Confirm your address and debit card details at https://delivery-help.example/update.",
+      "expected_warning": true,
+      "intended_action": "Do not submit card details through the notice; independently check order tracking."
+    },
+    {
+      "id": "toll-urgent",
+      "mode": "text",
+      "source": "toll",
+      "label": "adapted_ftc_pattern",
+      "text": "An unpaid road toll remains on your vehicle. Pay immediately at https://toll-pay.example/notice.",
+      "expected_warning": true,
+      "intended_action": "Pause payment and verify through the toll agency using a known website or number."
+    },
+    {
+      "id": "toll-balance",
+      "mode": "email",
+      "source": "toll",
+      "label": "adapted_ftc_pattern",
+      "text": "Settle your outstanding balance at https://toll-notice.example/pay to prevent extra charges.",
+      "expected_warning": true,
+      "intended_action": "Verify the supposed toll independently before paying."
+    },
+    {
+      "id": "bank-protection",
+      "mode": "call",
+      "source": "bank",
+      "label": "adapted_ftc_pattern",
+      "text": "This is the bank fraud team. Move your savings to a secure account to protect the money.",
+      "expected_warning": true,
+      "intended_action": "End the call; independently contact the bank and pause the transfer."
+    },
+    {
+      "id": "bank-code",
+      "mode": "call",
+      "source": "bank",
+      "label": "adapted_ftc_pattern",
+      "text": "I can stop the suspicious login. Read me your verification code so I can help.",
+      "expected_warning": true,
+      "intended_action": "Keep the code private; contact the bank through a known route."
+    },
+    {
+      "id": "job-onward-check",
+      "mode": "email",
+      "source": "job",
+      "label": "adapted_ftc_pattern",
+      "text": "Deposit our equipment check, keep your wages, and send the remainder to our supplier.",
+      "expected_warning": true,
+      "intended_action": "Ask the bank about the check before sending funds; verify employer independently."
+    },
+    {
+      "id": "job-entry-fee",
+      "mode": "text",
+      "source": "job",
+      "label": "adapted_ftc_pattern",
+      "text": "You have the position. A starter registration payment is required before we can put you on payroll.",
+      "expected_warning": true,
+      "intended_action": "Do not pay to obtain work; verify the employer and offer independently."
+    },
+    {
+      "id": "task-deposit",
+      "mode": "text",
+      "source": "task",
+      "label": "adapted_ftc_pattern",
+      "text": "Your rating work earned a commission. Deposit crypto to unlock your next round and withdraw the earnings.",
+      "expected_warning": true,
+      "intended_action": "Pause the deposit; do not pay to release supposed wages."
+    },
+    {
+      "id": "task-topup",
+      "mode": "email",
+      "source": "task",
+      "label": "adapted_ftc_pattern",
+      "text": "The task wallet is below its required balance. Add your own funds to finish the set and collect your pay.",
+      "expected_warning": true,
+      "intended_action": "Do not add personal funds to obtain task earnings; independently verify the offer."
+    },
+    {
+      "id": "gift-demand",
+      "mode": "call",
+      "source": "gift",
+      "label": "adapted_ftc_pattern",
+      "text": "I am collecting a government fine. Buy Apple gift cards and read me the card numbers.",
+      "expected_warning": true,
+      "intended_action": "Pause the payment; do not disclose gift-card numbers; independently check the agency."
+    },
+    {
+      "id": "gift-number-only",
+      "mode": "text",
+      "source": "gift",
+      "label": "adapted_ftc_pattern",
+      "text": "The cards are ready. Photograph the numbers and PINs on the backs and send the pictures here.",
+      "expected_warning": true,
+      "intended_action": "Hold back gift-card credentials and verify the request independently."
+    },
+    {
+      "id": "family-wire",
+      "mode": "call",
+      "source": "family",
+      "label": "adapted_ftc_pattern",
+      "text": "I am your grandson and need bail money. Wire the payment immediately and do not tell your family.",
+      "expected_warning": true,
+      "intended_action": "End the call; call the relative through a saved contact and talk to another trusted person before paying."
+    },
+    {
+      "id": "family-courier",
+      "mode": "call",
+      "source": "family",
+      "label": "adapted_ftc_pattern",
+      "text": "Your niece had an accident. A driver will collect the cash at your door; keep this secret.",
+      "expected_warning": true,
+      "intended_action": "Verify the relative through a known contact and another trusted person; pause the cash handover."
+    },
+    {
+      "id": "control-code-notification",
+      "mode": "text",
+      "source": "code",
+      "label": "constructed_control_informed_by_ftc",
+      "text": "Your login verification code is 847261. Do not share it with anyone.",
+      "expected_warning": false,
+      "intended_action": "Keep the code private; if unexpected, verify account activity independently."
+    },
+    {
+      "id": "control-bank-advice",
+      "mode": "email",
+      "source": "bank",
+      "label": "constructed_control_informed_by_ftc",
+      "text": "Never move your money to a secure account for an unexpected caller. Contact your bank through its official app.",
+      "expected_warning": false,
+      "intended_action": "Preserve the independent-contact safety advice without presenting it as a current transfer demand."
+    },
+    {
+      "id": "control-toll-check",
+      "mode": "text",
+      "source": "toll",
+      "label": "constructed_control_informed_by_ftc",
+      "text": "Review toll activity using the agency website you already know; ignore contact details from unexpected messages.",
+      "expected_warning": false,
+      "intended_action": "Independently review the account; no new payment demand is present."
+    },
+    {
+      "id": "control-delivery-tracking",
+      "mode": "email",
+      "source": "delivery",
+      "label": "constructed_control_informed_by_ftc",
+      "text": "Your order tracking is available in the retailer account you used at checkout.",
+      "expected_warning": false,
+      "intended_action": "No current sensitive request; sender identity remains unverified."
+    },
+    {
+      "id": "control-task-advice",
+      "mode": "text",
+      "source": "task",
+      "label": "constructed_control_informed_by_ftc",
+      "text": "Do not deposit crypto to withdraw wages. Check an unfamiliar recruiter independently.",
+      "expected_warning": false,
+      "intended_action": "Preserve advice to avoid paying for wages."
+    },
+    {
+      "id": "control-gift-birthday",
+      "mode": "text",
+      "source": "gift",
+      "label": "constructed_control_informed_by_ftc",
+      "text": "Please buy a gift card for your sister as her birthday present.",
+      "expected_warning": false,
+      "intended_action": "Ordinary gift context should not be called fraud; any prompt should acknowledge legitimate gifts."
+    },
+    {
+      "id": "control-family-check",
+      "mode": "call",
+      "source": "family",
+      "label": "constructed_control_informed_by_ftc",
+      "text": "Call your grandson at his saved number before reacting to any unexpected story about an emergency.",
+      "expected_warning": false,
+      "intended_action": "Retain the useful independent family verification advice."
+    },
+    {
+      "id": "legitimate-sensitive-lunch",
+      "mode": "text",
+      "source": "bank",
+      "label": "constructed_legitimate_sensitive_request",
+      "text": "Please send $20 for your share of the lunch we ordered together.",
+      "expected_warning": true,
+      "intended_action": "A mild pause and trusted-contact verification is useful; do not imply this legitimate request is proven fraud."
+    }
+  ]
+}

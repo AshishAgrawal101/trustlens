@@ -1,0 +1,15 @@
+{
+  "frozen_before_guard_implementation_read":true,
+  "scope":"read-only independent paired guard review; old residual labels/outputs remain unchanged",
+  "cases":[
+    {"id":"advice-code","text":"Remember not to share your password.","expected_weighted":[]},
+    {"id":"advice-remote","text":"Remember not to install AnyDesk.","expected_weighted":[]},
+    {"id":"positive-remember","text":"Remember to send me your password.","expected_weighted":["request:code"]},
+    {"id":"later-live-code","text":"Remember not to share your password. Send me your verification code.","expected_weighted":["request:code"]},
+    {"id":"later-live-remote","text":"Remember not to install AnyDesk. Install AnyDesk now.","expected_weighted":["request:remote"]},
+    {"id":"unrelated-remember","text":"Remember the meeting. Send me your password.","expected_weighted":["request:code"]},
+    {"id":"conditional-live","text":"If you remember, send me your password.","expected_weighted":["request:code"]},
+    {"id":"same-line-but-live","text":"Remember not to share your password, but send me your verification code.","expected_weighted":["request:code"]}
+  ],
+  "invariants":"No general remember/quote/history/conditional skipping, no weights/schema/accuracy claim; no app edits"
+}

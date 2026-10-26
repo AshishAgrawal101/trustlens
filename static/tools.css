@@ -1,0 +1,11 @@
+.tool-groups{display:grid;gap:24px;margin-bottom:32px}.tool-group{border:1px solid #b4c5bb;background:#fffef9;border-radius:18px;padding:30px}.tool-group h2{font-size:25px;line-height:1.3;margin:8px 0 16px}.tool-group>p{max-width:850px;line-height:1.8}.tool-group>.primary,.tool-group>.secondary{display:inline-flex;min-height:44px;align-items:center;margin:8px 0}.tool-limit{border-left:3px solid #738c80;padding:8px 0 8px 16px;color:#40594d;font-size:14px}.context-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.context-tools article{border-top:1px solid #d5dfd7;padding-top:14px;min-width:0}.context-tools h3{font-size:19px;line-height:1.5;margin:0 0 8px}.context-tools a{display:inline-block;min-height:44px;overflow-wrap:anywhere}.context-tools p{font-size:15px;line-height:1.8;margin-top:0}.tools-note{padding:24px 0 40px;max-width:850px}.tools-note h2{font-size:22px}.tools-note p{line-height:1.8}.tool-groups:focus{outline:none}@media(max-width:600px){.tool-group{padding:22px 18px}.tool-group h2{font-size:22px}.context-tools{grid-template-columns:1fr;gap:10px}}@media print{.tool-group{break-inside:avoid}}
+.tool-group{color:var(--ink)}.tool-group .eyebrow{color:#125c50}.tool-group .hint{color:#40594d}.context-tools h3 a{color:#125c50}.context-tools h3 a:hover{color:#0b453b}
+
+.tool-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0}.tool-shortcuts a{display:flex;align-items:center;min-height:50px;padding:12px 16px;border:1px solid #9fb5a8;border-radius:9px;color:#125c50;background:#edf4e9;font-weight:650;text-decoration:none}.tool-shortcuts a:hover{background:#dcebd8}@media(max-width:600px){.tool-shortcuts{grid-template-columns:1fr}}
+/* v50 indigo theme (higher-specificity overrides; original rules kept above) */
+.tool-groups .tool-group{border-color:#d6d9ee;background:#fcfcff;box-shadow:0 20px 60px #0000004d}
+.tool-groups .tool-limit{border-left-color:#8f94c8;color:#45486a}
+.tool-groups .tool-group .eyebrow{color:#4348c4}
+.tool-groups .tool-group .hint{color:#45486a}
+.tool-groups .tool-shortcuts a{border-color:#c9cdea;color:#3d41b3;background:#f1f2fc;transition:background .2s,border-color .2s,transform .2s}
+.tool-groups .tool-shortcuts a:hover{background:#e4e7fb;border-color:#6366f1;transform:translateY(-1px)}

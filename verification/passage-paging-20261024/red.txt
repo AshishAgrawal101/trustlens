@@ -1,0 +1,97 @@
+✔ two-argument results and default page remain exactly compatible with frozen outputs (2.8258ms)
+✖ all pages retain exact offsets and literal windows with at most five matches (1.2565ms)
+✖ later-page surrogate boundaries and the maximum final page preserve existing window limits (4.2532ms)
+✖ page validation is bounded integer-only and missing pages reject with input-free errors (0.3126ms)
+✖ explicit navigation shows true ranges and ordinals with focus and disabled ends, retaining authenticity caveats (4.2873ms)
+✖ every invalidation erases paging and formatting while next Find starts at first match (1.5845ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 1
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 91.4452
+
+✖ failing tests:
+
+test at tests\source_paging.test.cjs:6:1
+✖ all pages retain exact offsets and literal windows with at most five matches (1.2565ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+  +   8,
+  +   25,
+  +   42,
+  +   59,
+  +   76
+  -   93
+    ]
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\source_paging.test.cjs:8:80)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 8, 25, 42, 59, 76 ],
+    expected: [ 93 ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\source_paging.test.cjs:13:1
+✖ later-page surrogate boundaries and the maximum final page preserve existing window limits (4.2532ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(row.before.startsWith('😀'))
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\source_paging.test.cjs:14:141)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\source_paging.test.cjs:17:1
+✖ page validation is bounded integer-only and missing pages reject with input-free errors (0.3126ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\source_paging.test.cjs:18:71)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\source_paging.test.cjs:25:1
+✖ explicit navigation shows true ranges and ordinals with focus and disabled ends, retaining authenticity caveats (4.2873ms)
+  TypeError: Cannot read properties of undefined (reading 'textContent')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\source_paging.test.cjs:26:84)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests\source_paging.test.cjs:31:1
+✖ every invalidation erases paging and formatting while next Find starts at first match (1.5845ms)
+  TypeError: Cannot read properties of undefined (reading 'fire')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\source_paging.test.cjs:33:72)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

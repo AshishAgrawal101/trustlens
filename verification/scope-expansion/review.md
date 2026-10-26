@@ -1,0 +1,15 @@
+# Claim and context worksheet adversarial acceptance
+
+Read-only design; no app edits or worksheet predictions. The 25 authored cases and four interaction scenarios in acceptance.json are frozen before evaluation. SHA256: 36f3edc43e31e6e476ee6e13d5e4d420ceb1e546c42879da09fea5b166b18e65. Input adapter maps nested source fields to root's flat aUrl/aQuote/aDate and b equivalents without changing content. required_ids use root's planned stable structural IDs, while semantic requirements and global invariants govern wording.
+
+This is an evidence-organizing worksheet, not a fact-checking engine. It can observe that the user supplied two URLs, dates or quotes; it cannot observe what those sources actually publish. Its strongest useful output is the missing-check plan: open the original source independently, inspect the relevant full passage/date and determine whether the two reports share an underlying source. Fixed output strings and fixed plan exports make privacy and interpretation substantially easier to verify.
+
+Acceptance covers same hostname with different paths/case/ports, literal trailing-dot spelling, related subdomains and unrelated hosts. Same and different hosts both leave editorial independence unresolved. Root intentionally uses literal parsed hostnames: a trailing dot may produce hosts:different, which is acceptable only because the fixed statement explicitly denies an independence conclusion. No ownership/public-suffix/network lookup is required or claimed.
+
+Missing quote/link/date cases test gaps independently. Unsafe protocols, userinfo, relative links and impossible dates expect fixed validation errors without echoing private input, preserving editable input and withholding a completed result/export. Dates compare as strict calendar YYYY-MM-DD strings against explicit date-only now; today is not future. Future metadata is a discrepancy to check, never proof a claim is false. The event-date prose case deliberately forbids parsing a fact out of freeform claim.
+
+The quote pair differs only by 09:00 versus 10:00; another pair has identical quotations. Both remain user-supplied, unvisited and unattributed beyond their supplied URL. The worksheet should ask the user to compare full context, rather than resolve contradiction, select a trusted source or call identical wording corroboration. No political or medical truth claims are included.
+
+Adversarial markup/private markers test text-only rendering and input-free copy/download/print. A source URL query includes a private token; no output/export should repeat it. Clear, each field edit and page lifecycle must invalidate stale output and export state, with no storage, autoanalysis or fetching. These interaction requirements need controller tests; pure-function passing cannot establish erasure or network behavior.
+
+No execution result, success rate, credibility metric or accuracy claim is made by this artifact. Root should retain the contract bytes and save actual worksheet results separately. If implementation differs, record the mismatch or explicitly version the contract; do not silently relabel expected results after execution.

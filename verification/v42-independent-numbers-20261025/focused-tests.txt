@@ -1,0 +1,38 @@
+✔ numbers require explicit submit; construction and typing send nothing (30.9772ms)
+✔ all four edits remove old facts/questions and errors while retaining drafts (8.2335ms)
+✔ Clear, exit and persisted Back remove every supplied number and result (6.64ms)
+✔ loading constructed example clears previous output and waits for submit (1.9689ms)
+✔ bad or native-invalid values cannot retain a previous calculation (11.355ms)
+✔ zero baseline is an undefined relative change rather than an infinity or causal claim (1.7957ms)
+✔ empty guidance follows the explicit comparison lifecycle (2.0141ms)
+✔ A-only B-only and both attach fixed count messages before native reporting; invalid capture preserves them (13.2918ms)
+✔ fixing A leaves B for next Compare; editing totals clears stale errors without calculating (19.8696ms)
+✔ native overflow and existing digits-only errors precede relationship messages (3.173ms)
+✔ method retention percentage comparison Swap Clear examples and lifecycle clear stale count validity (14.8941ms)
+✔ raw count and precise percentage drafts survive both method roundtrips without conversion or Compare (9.1549ms)
+✔ method change clears result errors and status, keeps selection focus and validates only active fields (28.3881ms)
+✔ Swap acts only on active draft and does not change retained other-method values (3.2277ms)
+✔ Clear and lifecycle wipe both drafts; constructed examples replace all rather than retaining inactive values (8.2794ms)
+✔ swap is initially disabled native button and preserves pure math bytes and mobile target layout (8.8119ms)
+✔ count reversal swaps pairs clears old result and recalculates asymmetric baseline only on explicit Compare (28.548ms)
+✔ double swap preserves raw count strings and partial invalid drafts without silently validating (6.9005ms)
+✔ percentage swap preserves exact strings active method and hidden inactive fields without denominator invention (3.3905ms)
+✔ browser unparsed numeric entry is kept in place rather than assigning an unreadable empty value over it (1.9352ms)
+✔ swapping the zero baseline changes orientation without changing Undefined arithmetic policy (3.7677ms)
+✔ status readiness and stale results reset on every normal boundary without changing lifecycle defaults (13.4307ms)
+✔ defaults enable counts and disable every hidden percentage input (7.4877ms)
+✔ method change keeps drafts invalidates result and leaves select focus without calculating (24.567ms)
+✔ reported rates show no invented counts and preserve heading scroll/fixed limits (3.3334ms)
+✔ active methods use explicit examples without auto comparison (2.9525ms)
+✔ Clear keeps percentage mode; lifecycle resets default and erases all (7.1686ms)
+✔ edits invalidate output, keep drafts and active mode (5.8038ms)
+✔ zero and invalid/native-invalid results do not retain stale/private output (3.1601ms)
+✔ mode copy follows input/empty/caveat with count caveat restored (1.8671ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 212.815

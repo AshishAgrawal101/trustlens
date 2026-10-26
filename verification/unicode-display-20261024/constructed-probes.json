@@ -1,0 +1,75 @@
+{
+  "purpose": "Read-only literal/display interpretability audit; no browser pixel equivalence claim",
+  "probes": [
+    {
+      "id": "zwsp-inserted",
+      "family": "zero_width_space",
+      "original": "We can open today.",
+      "revised_and_source": "We can\u200b open today.",
+      "legitimate_context": "Intentional line-break opportunities and copied formatting may contain ZWSP."
+    },
+    {
+      "id": "soft-hyphen-inserted",
+      "family": "soft_hyphen",
+      "original": "verification code",
+      "revised_and_source": "veri\u00adfication code",
+      "legitimate_context": "Discretionary hyphenation is ordinary publishing metadata."
+    },
+    {
+      "id": "word-joiner-inserted",
+      "family": "word_joiner",
+      "original": "open today",
+      "revised_and_source": "open\u2060 today",
+      "legitimate_context": "Word joiner intentionally prevents a line break."
+    },
+    {
+      "id": "bidi-override-added",
+      "family": "bidi_controls",
+      "original": "ABC 123",
+      "revised_and_source": "ABC \u202e123\u202c",
+      "legitimate_context": "Directional controls can legitimately set mixed-direction display order; an override is not an intent verdict."
+    },
+    {
+      "id": "bidi-isolate-context",
+      "family": "bidi_controls",
+      "original": "Report: ABC",
+      "revised_and_source": "Report: \u2066ABC\u2069",
+      "legitimate_context": "Isolates can be appropriate for legible embedded left-to-right text."
+    },
+    {
+      "id": "direction-mark-added",
+      "family": "bidi_controls",
+      "original": "ABC: 123",
+      "revised_and_source": "ABC:\u200f 123",
+      "legitimate_context": "Direction marks are used in legitimate mixed Arabic/Hebrew and Latin text."
+    },
+    {
+      "id": "identical-hidden",
+      "family": "same_with_formatting",
+      "original": "co\u00adoperate",
+      "revised_and_source": "co\u00adoperate",
+      "legitimate_context": "Exact identity can coexist with invisible formatting; identity does not explain the characters."
+    },
+    {
+      "id": "emoji-zwj-legitimate",
+      "family": "joiner_legitimate",
+      "original": "\ud83d\udc69\u200d\ud83d\udcbb",
+      "revised_and_source": "\ud83d\udc69\u200d\ud83d\udcbb",
+      "legitimate_context": "ZWJ is part of many legitimate emoji sequences; do not label it malicious."
+    },
+    {
+      "id": "zwnj-legitimate",
+      "family": "joiner_legitimate",
+      "original": "\u0645\u06cc\u200c\u0631\u0648\u0645",
+      "revised_and_source": "\u0645\u06cc\u200c\u0631\u0648\u0645",
+      "legitimate_context": "ZWNJ controls joining in legitimate orthographic text; do not delete it."
+    },
+    {
+      "id": "ordinary-control",
+      "family": "none",
+      "original": "The park opens.",
+      "revised_and_source": "The park opens.",
+      "legitimate_context": "Ordinary baseline without target formatting characters."
+    }
+  ]
+}

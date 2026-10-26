@@ -1,0 +1,53 @@
+{
+  "verified_utc": "2026-10-23T17:46:15.772120+00:00",
+  "python": {
+    "tests": 603,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "javascript": {
+    "tests": 86,
+    "failures": 0,
+    "skips": 0
+  },
+  "browser": {
+    "desktop_known_host_comparison": true,
+    "manual_guidance_keeps_miss_unchanged": true,
+    "desktop_Back_erases_private_state": true,
+    "viewport320_no_horizontal_overflow_and_unbroken_controls": true,
+    "pocket_v8_cached_reload_with_server_stopped": true,
+    "offline_practice_feedback": true,
+    "offline_topic_suggestion_advice_and_direct_pair": true,
+    "offline_explicit_apply_and_fixed_guidance": true,
+    "offline_Clear_and_reload_empty": true,
+    "thirteenth_address_incomplete_notice": true,
+    "practice_shortcut_panel_and_reload_focus": true,
+    "attachment_only_email_explicit_incomplete": true,
+    "viewport_restored": true,
+    "server_restarted": true,
+    "physical_Android_install_share_launcher_tested": false,
+    "interactive_file_selection_tested": false,
+    "interactive_print_preview_verified": false
+  },
+  "native_diagnostics": {
+    "qr_labeled_expectations_met": 11,
+    "qr_labeled_cases": 12,
+    "qr_ordinary_photos_ground_truth_unknown": 2,
+    "qr_retained_occlusion_failure": true,
+    "FTC_patterns_warned": 8,
+    "FTC_patterns_total": 14,
+    "FTC_control_extra_concern": 1,
+    "FTC_controls_total": 7,
+    "population_accuracy_claimed": false
+  },
+  "preservation_receipt": "preservation.json",
+  "protected_files_unchanged": 34,
+  "original_live_files_unchanged": 104,
+  "downloads": 0,
+  "gpu_jobs": 0,
+  "model_retries": 0,
+  "automation_changes": 0,
+  "external_messages": 0,
+  "publications_or_submissions": 0
+}

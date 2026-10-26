@@ -1,0 +1,16 @@
+✔ exact v37 markup lacks correction button and initializes previously disabled Review with native null lookup (7.5859ms)
+✔ legacy source B custom failure preserves fields and accessible error; edit repairs with separate Review (1.9228ms)
+✔ legacy Clear and lifecycle reset complete without missing-control errors or private retained output (3.8213ms)
+✔ correction is initially hidden native non-submit control and repeated errors associate only current field (7.5173ms)
+✔ pure custom URL errors retain fixed messages and identify only their source URL field (1.0688ms)
+✔ A/B errors announce fixed source and correction opens/focuses matching field without changing any draft or Review (3.7158ms)
+✔ edit repair success and every replacement/lifecycle reset erase correction and ARIA state; stale click inert (10.1765ms)
+✔ native invalid keeps existing opening/focus semantics and clears prior custom action (1.5695ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 134.3811

@@ -1,0 +1,7 @@
+# Independent focused advertising Practice review
+
+No issue requiring a fix found. Compared both current case arrays by clean CommonJS VM evaluation against actual immutable v30 ZIP snapshots saved under focused-old-*.txt: all desktop 10 and Pocket 12 case objects retain exact data and order. Focused queues select the existing paid-comparison and selected-quotation cases in that order; no new detector or accuracy claim is introduced.
+
+Desktop focused completion/retry uses its two-case queue; explicit Restart all situations resets all ten and matches its label. Pocket Practice again loops the selected two-case session, while the separate full-start action restores all twelve. Progress is reviewed count, not ability or accuracy. Session replacement increments epoch, making detached old choices inert; close, reopen, pagehide and restored pages clear state. Explicit desktop close restores its actual opener; lifecycle exits do not manually steal focus. Initially disabled launchers fail closed before setup. No message fields, uploads, persistence, requests or export APIs are added.
+
+20 targeted tests passed, zero failures/skips: focused desktop/Pocket, preserved ads cases, full desktop learning practice and Pocket practice. Checks cover full10/12 journeys, focused order, retry scope, stale callbacks, no-JS initial controls and lifecycle. This is source/DOM-double evidence; root owns actual keyboard/mobile browser checks. No app changes by reviewer.

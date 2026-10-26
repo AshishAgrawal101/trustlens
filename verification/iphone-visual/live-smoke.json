@@ -1,0 +1,14 @@
+{
+  "/health": 200,
+  "/": 200,
+  "/phone/": 200,
+  "/phone/ios.html": 200,
+  "/phone/manifest.webmanifest": 200,
+  "inspector_private_values_omitted": true,
+  "validation_private_input_not_reflected": true,
+  "foreign_origin_post_rejected": true,
+  "/api/analyze/text": 200,
+  "/api/analyze/call": 200,
+  "/api/analyze/email": 200,
+  "/api/analyze/url": 200
+}

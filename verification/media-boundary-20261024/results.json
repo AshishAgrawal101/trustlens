@@ -1,0 +1,297 @@
+{
+  "protocol_sha256": "6510d7215e40dbb6cb23507dcd163a97794b157f3591912ff92e610ff9aa40ed",
+  "rows": [
+    {
+      "id": "plain_png",
+      "bytes": 68,
+      "sha256": "7998a64c8a417048cc0f12d5b82a5e3529843df87ba58da6d69f9ab38fbe187a",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 68,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "truncated_png_12bytes",
+      "bytes": 12,
+      "sha256": "218ad85a233eff829618a6865ab681222b734c62d35a32b3eabd5c37d8945f86",
+      "warnings": [],
+      "error_type": "InvalidImage",
+      "error": "This file could not be read as an image."
+    },
+    {
+      "id": "software_120",
+      "bytes": 228,
+      "sha256": "7cbf224cab96ffba0a02f7d3233b6c21ca77380fb8d8ecc17cde7d48927afc82",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 228,
+        "capture_time": null,
+        "software": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "software_121",
+      "bytes": 228,
+      "sha256": "1a896b8991a077cabe8229370f6f58da37801cbcdbbb0b3a6d1d0ff856b0921b",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 228,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "software_bidi",
+      "bytes": 114,
+      "sha256": "40e8a74782d7ac7eeb63dde389c06d48b17f7a6626ab484d7021591ec26cb7f7",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 114,
+        "capture_time": null,
+        "software": "Editor?",
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "valid_leap_time",
+      "bytes": 144,
+      "sha256": "b3ce5070354fb4bccf51136ad69ef8629476f5d7e96653b44c54da31e0f37cb5",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 144,
+        "capture_time": "2024:02:29 12:00:00",
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "invalid_leap_time",
+      "bytes": 144,
+      "sha256": "fe1b4728783d4a52a4b246f2d9334a753b9aaa26e968efd1b66df41c3d3a7f0b",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 144,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "empty_GPS_IFD",
+      "bytes": 112,
+      "sha256": "35607fa86f90bcf1dc28adb93d6b7a9e7ff4c406af38714d6ec73300b753e821",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 112,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": true,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "orientation6_GPS",
+      "bytes": 172,
+      "sha256": "90112fe68606caabbcce489ea043c78c7e4579498e02f968474a9ecd2aa6702e",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 3,
+        "display_height": 2,
+        "bytes": 172,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": true,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "raw_EXIF_orientation_ASCII",
+      "bytes": 106,
+      "sha256": "8373b6e9a11838472ce8db944750e7b5d722a09bbe0b418435c27979d36b7536",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 106,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "raw_EXIF_orientation_rational",
+      "bytes": 114,
+      "sha256": "21f253f2f140e2c06b9f8e98c87b5c630147b6a25a3a64ca5ac3f66f8c2c0f68",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 114,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "raw_EXIF_orientation_short_tuple",
+      "bytes": 106,
+      "sha256": "b8e5a557725f04c07ea28673246b1b580e36412da03ba10284379f378d3903db",
+      "warnings": [
+        "Metadata Warning, tag 274 had too many entries: 2, expected 1"
+      ],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 3,
+        "display_height": 2,
+        "bytes": 106,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "raw_EXIF_GPS_invalid_offset",
+      "bytes": 106,
+      "sha256": "617b2d5f5832a93bf8cdc6649cd4c42332616c92b5ab4d35be73e88e56eec60c",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 106,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": true,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "raw_EXIF_ExifIFD_invalid_offset",
+      "bytes": 106,
+      "sha256": "777762e0e56db18aa13e8cae3f5e288d5733fb403597678b6ac6a84ff7d56128",
+      "warnings": [],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 106,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    },
+    {
+      "id": "raw_EXIF_make_invalid_offset",
+      "bytes": 106,
+      "sha256": "2de2899f1cbd6df994de4802ded0174a867b40d998ed9592f4026c08a0571980",
+      "warnings": [
+        "Truncated File Read"
+      ],
+      "result": {
+        "format": "PNG",
+        "width": 2,
+        "height": 3,
+        "display_width": 2,
+        "display_height": 3,
+        "bytes": 106,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Metadata can be edited or removed. Its presence or absence proves neither authenticity nor AI origin. These fields do not verify the depicted story, capture date or location. No sources were visited."
+      }
+    }
+  ]
+}

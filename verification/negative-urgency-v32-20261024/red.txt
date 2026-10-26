@@ -1,0 +1,199 @@
+.FF..FFF........FF.FFFFF                                                 [100%]
+================================== FAILURES ===================================
+___ test_exact_declarative_scope_and_adversarial_controls[direct-negative] ____
+
+case = {'id': 'direct-negative', 'text': 'This is not urgent.', 'expected_positive_ids': [], 'context': True}
+
+    @pytest.mark.parametrize('case',SPEC['cases'],ids=lambda c:c['id'])
+    def test_exact_declarative_scope_and_adversarial_controls(case):
+        rows=request_evidence(case['text'])
+>       assert set(e.id for e in rows if e.weight>0)==set(case['expected_positive_ids'])
+E       AssertionError: assert {'request:urgency'} == set()
+E         
+E         Extra items in the left set:
+E         'request:urgency'
+E         Use -v to get more diff
+
+tests\test_negative_urgency_context.py:23: AssertionError
+_____ test_exact_declarative_scope_and_adversarial_controls[negative-eof] _____
+
+case = {'id': 'negative-eof', 'text': 'This is not urgent', 'expected_positive_ids': [], 'context': True}
+
+    @pytest.mark.parametrize('case',SPEC['cases'],ids=lambda c:c['id'])
+    def test_exact_declarative_scope_and_adversarial_controls(case):
+        rows=request_evidence(case['text'])
+>       assert set(e.id for e in rows if e.weight>0)==set(case['expected_positive_ids'])
+E       AssertionError: assert {'request:urgency'} == set()
+E         
+E         Extra items in the left set:
+E         'request:urgency'
+E         Use -v to get more diff
+
+tests\test_negative_urgency_context.py:23: AssertionError
+____ test_exact_declarative_scope_and_adversarial_controls[later-act-now] _____
+
+case = {'id': 'later-act-now', 'text': 'This is not urgent, act now.', 'expected_positive_ids': ['request:urgency'], 'context': True}
+
+    @pytest.mark.parametrize('case',SPEC['cases'],ids=lambda c:c['id'])
+    def test_exact_declarative_scope_and_adversarial_controls(case):
+        rows=request_evidence(case['text'])
+        assert set(e.id for e in rows if e.weight>0)==set(case['expected_positive_ids'])
+        context=[e for e in rows if e.id=='context:negative_urgency']
+>       assert bool(context)==case['context']
+E       assert False == True
+E        +  where False = bool([])
+
+tests\test_negative_urgency_context.py:25: AssertionError
+____ test_exact_declarative_scope_and_adversarial_controls[later-urgency] _____
+
+case = {'id': 'later-urgency', 'text': 'This is not urgent. This is urgent.', 'expected_positive_ids': ['request:urgency'], 'context': True}
+
+    @pytest.mark.parametrize('case',SPEC['cases'],ids=lambda c:c['id'])
+    def test_exact_declarative_scope_and_adversarial_controls(case):
+        rows=request_evidence(case['text'])
+        assert set(e.id for e in rows if e.weight>0)==set(case['expected_positive_ids'])
+        context=[e for e in rows if e.id=='context:negative_urgency']
+>       assert bool(context)==case['context']
+E       assert False == True
+E        +  where False = bool([])
+
+tests\test_negative_urgency_context.py:25: AssertionError
+______ test_exact_declarative_scope_and_adversarial_controls[later-code] ______
+
+case = {'id': 'later-code', 'text': 'This is not urgent; send me your verification code.', 'expected_positive_ids': ['request:code'], 'context': True}
+
+    @pytest.mark.parametrize('case',SPEC['cases'],ids=lambda c:c['id'])
+    def test_exact_declarative_scope_and_adversarial_controls(case):
+        rows=request_evidence(case['text'])
+>       assert set(e.id for e in rows if e.weight>0)==set(case['expected_positive_ids'])
+E       AssertionError: assert {'request:cod...uest:urgency'} == {'request:code'}
+E         
+E         Extra items in the left set:
+E         'request:urgency'
+E         Use -v to get more diff
+
+tests\test_negative_urgency_context.py:23: AssertionError
+___ test_exact_declarative_scope_and_adversarial_controls[hardbreak-later] ____
+
+case = {'id': 'hardbreak-later', 'text': 'This is not urgent\nAct now.', 'expected_positive_ids': ['request:urgency'], 'context': True}
+
+    @pytest.mark.parametrize('case',SPEC['cases'],ids=lambda c:c['id'])
+    def test_exact_declarative_scope_and_adversarial_controls(case):
+        rows=request_evidence(case['text'])
+        assert set(e.id for e in rows if e.weight>0)==set(case['expected_positive_ids'])
+        context=[e for e in rows if e.id=='context:negative_urgency']
+>       assert bool(context)==case['context']
+E       assert False == True
+E        +  where False = bool([])
+
+tests\test_negative_urgency_context.py:25: AssertionError
+_____ test_exact_declarative_scope_and_adversarial_controls[shy-excerpt] ______
+
+case = {'id': 'shy-excerpt', 'text': 'This is not ur\xadgent; send me your verification code.', 'expected_positive_ids': ['request:code'], 'context': True}
+
+    @pytest.mark.parametrize('case',SPEC['cases'],ids=lambda c:c['id'])
+    def test_exact_declarative_scope_and_adversarial_controls(case):
+        rows=request_evidence(case['text'])
+>       assert set(e.id for e in rows if e.weight>0)==set(case['expected_positive_ids'])
+E       AssertionError: assert {'request:cod...uest:urgency'} == {'request:code'}
+E         
+E         Extra items in the left set:
+E         'request:urgency'
+E         Use -v to get more diff
+
+tests\test_negative_urgency_context.py:23: AssertionError
+_ test_existing_horizontal_space_and_case_policy[This\xa0is\t not\u2009urgent\xa0; send me your verification code.] _
+
+text = 'This\xa0is\t not\u2009urgent\xa0; send me your verification code.'
+
+    @pytest.mark.parametrize('text',['This\u00a0is\t not\u2009urgent\u00a0; send me your verification code.','  THIS  IS  NOT  URGENT  '])
+    def test_existing_horizontal_space_and_case_policy(text):
+>       rows=request_evidence(text);assert any(e.id=='context:negative_urgency' for e in rows)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       assert False
+E        +  where False = any(<generator object test_existing_horizontal_space_and_case_policy.<locals>.<genexpr> at 0x0000024DD7E712F0>)
+
+tests\test_negative_urgency_context.py:36: AssertionError
+__ test_existing_horizontal_space_and_case_policy[  THIS  IS  NOT  URGENT  ] __
+
+text = '  THIS  IS  NOT  URGENT  '
+
+    @pytest.mark.parametrize('text',['This\u00a0is\t not\u2009urgent\u00a0; send me your verification code.','  THIS  IS  NOT  URGENT  '])
+    def test_existing_horizontal_space_and_case_policy(text):
+>       rows=request_evidence(text);assert any(e.id=='context:negative_urgency' for e in rows)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       assert False
+E        +  where False = any(<generator object test_existing_horizontal_space_and_case_policy.<locals>.<genexpr> at 0x0000024DD7E43D30>)
+
+tests\test_negative_urgency_context.py:36: AssertionError
+_ test_representative_shared_callers_keep_live_code_and_input_free_exports[call] _
+
+mode = 'call'
+
+    @pytest.mark.parametrize('mode',['call','email-paste','eml'])
+    def test_representative_shared_callers_keep_live_code_and_input_free_exports(mode):
+        text='This is not ur\u00adgent. Send me your verification code. PRIVATE-NOTE'
+        if mode=='eml':
+            m=EmailMessage();m.set_content(text,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(text)
+        else:report=analyze_text(text,mode)
+>       assert {e.id for e in report.evidence if e.weight>0}=={'request:code'}
+E       AssertionError: assert {'request:cod...uest:urgency'} == {'request:code'}
+E         
+E         Extra items in the left set:
+E         'request:urgency'
+E         Use -v to get more diff
+
+tests\test_negative_urgency_context.py:47: AssertionError
+_ test_representative_shared_callers_keep_live_code_and_input_free_exports[email-paste] _
+
+mode = 'email-paste'
+
+    @pytest.mark.parametrize('mode',['call','email-paste','eml'])
+    def test_representative_shared_callers_keep_live_code_and_input_free_exports(mode):
+        text='This is not ur\u00adgent. Send me your verification code. PRIVATE-NOTE'
+        if mode=='eml':
+            m=EmailMessage();m.set_content(text,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(text)
+        else:report=analyze_text(text,mode)
+>       assert {e.id for e in report.evidence if e.weight>0}=={'request:code'}
+E       AssertionError: assert {'request:cod...uest:urgency'} == {'request:code'}
+E         
+E         Extra items in the left set:
+E         'request:urgency'
+E         Use -v to get more diff
+
+tests\test_negative_urgency_context.py:47: AssertionError
+_ test_representative_shared_callers_keep_live_code_and_input_free_exports[eml] _
+
+mode = 'eml'
+
+    @pytest.mark.parametrize('mode',['call','email-paste','eml'])
+    def test_representative_shared_callers_keep_live_code_and_input_free_exports(mode):
+        text='This is not ur\u00adgent. Send me your verification code. PRIVATE-NOTE'
+        if mode=='eml':
+            m=EmailMessage();m.set_content(text,charset='utf-8');report=analyze_email_bytes(m.as_bytes())
+        elif mode=='email-paste':report=analyze_email(text)
+        else:report=analyze_text(text,mode)
+>       assert {e.id for e in report.evidence if e.weight>0}=={'request:code'}
+E       AssertionError: assert {'request:cod...uest:urgency'} == {'request:code'}
+E         
+E         Extra items in the left set:
+E         'request:urgency'
+E         Use -v to get more diff
+
+tests\test_negative_urgency_context.py:47: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_negative_urgency_context.py::test_exact_declarative_scope_and_adversarial_controls[direct-negative]
+FAILED tests/test_negative_urgency_context.py::test_exact_declarative_scope_and_adversarial_controls[negative-eof]
+FAILED tests/test_negative_urgency_context.py::test_exact_declarative_scope_and_adversarial_controls[later-act-now]
+FAILED tests/test_negative_urgency_context.py::test_exact_declarative_scope_and_adversarial_controls[later-urgency]
+FAILED tests/test_negative_urgency_context.py::test_exact_declarative_scope_and_adversarial_controls[later-code]
+FAILED tests/test_negative_urgency_context.py::test_exact_declarative_scope_and_adversarial_controls[hardbreak-later]
+FAILED tests/test_negative_urgency_context.py::test_exact_declarative_scope_and_adversarial_controls[shy-excerpt]
+FAILED tests/test_negative_urgency_context.py::test_existing_horizontal_space_and_case_policy[This\xa0is\t not\u2009urgent\xa0; send me your verification code.]
+FAILED tests/test_negative_urgency_context.py::test_existing_horizontal_space_and_case_policy[  THIS  IS  NOT  URGENT  ]
+FAILED tests/test_negative_urgency_context.py::test_representative_shared_callers_keep_live_code_and_input_free_exports[call]
+FAILED tests/test_negative_urgency_context.py::test_representative_shared_callers_keep_live_code_and_input_free_exports[email-paste]
+FAILED tests/test_negative_urgency_context.py::test_representative_shared_callers_keep_live_code_and_input_free_exports[eml]
+12 failed, 12 passed in 0.43s

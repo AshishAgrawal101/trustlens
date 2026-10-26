@@ -1,0 +1,34 @@
+[
+  {
+    "id": "adapted-ftc-bank-code",
+    "label": "Adapted FTC pattern \u2014 newly written educational scenario, not a real user message",
+    "mode": "call",
+    "text": "I can stop the suspicious login. Read me your verification code so I can help.",
+    "teaching_note": "Account access: keep the code private and call the institution independently. The app currently warns on this adaptation.",
+    "source": "https://consumer.ftc.gov/consumer-alerts/2024/06/got-call-about-fraud-activity-your-bank-account-it-could-be-scammer"
+  },
+  {
+    "id": "adapted-ftc-family-wire",
+    "label": "Adapted FTC pattern \u2014 newly written educational scenario, not a real user message",
+    "mode": "call",
+    "text": "I am your grandson and need bail money. Wire the payment immediately and do not tell your family.",
+    "teaching_note": "A familiar voice does not settle identity. Reach the relative through a saved contact. The app currently warns on this adaptation.",
+    "source": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money"
+  },
+  {
+    "id": "adapted-ftc-task-deposit",
+    "label": "Adapted FTC pattern \u2014 newly written educational scenario, not a real user message",
+    "mode": "text",
+    "text": "Your rating work earned a commission. Deposit crypto to unlock your next round and withdraw the earnings.",
+    "teaching_note": "A deposit demanded to obtain supposed wages deserves independent checking. The app currently warns on this adaptation.",
+    "source": "https://consumer.ftc.gov/consumer-alerts/2025/08/how-spot-avoid-task-scams"
+  },
+  {
+    "id": "adapted-ftc-delivery-fee",
+    "label": "Adapted FTC pattern \u2014 newly written educational scenario, not a real user message",
+    "mode": "text",
+    "text": "Your parcel is being held. Pay the redelivery charge at https://parcel-help.example/fee to release it.",
+    "teaching_note": "Check the original order or carrier through a known route. Current rules miss this adaptation; use it to explain the limit, not as a successful detector demo.",
+    "source": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam"
+  }
+]

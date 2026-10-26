@@ -1,0 +1,47 @@
+{
+  "frozen_utc": "2026-10-23T21:57:21.704602+00:00",
+  "purpose": "Same constructed sentence, line layout only; native OCR and downstream rules, not scam accuracy",
+  "cases": [
+    {
+      "id": "single_line",
+      "image": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\desktop-next-intake\\single_line.png",
+      "sha256": "57b64937ae9734ed13f56c989b418ab3fa670efed791ee5dc64a6a5231100f27",
+      "constructed_text": "Send us the verification code.",
+      "expected_request_warning": true
+    },
+    {
+      "id": "wrapped_line",
+      "image": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\desktop-next-intake\\wrapped_line.png",
+      "sha256": "0cbce020c2c86d6eea528bce99982524f500c99901eaef7b22904eb058e65f87",
+      "constructed_text": "Send us the\nverification code.",
+      "expected_request_warning": true
+    }
+  ],
+  "source_pins": [
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\screenshot.py",
+      "sha256": "0c42ca077ed3b04c32e6357f1767969dfb2290654d08e19a4e6bdf12ae1dd0bc"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\ocr_worker.ps1",
+      "sha256": "6a0c5574ddf38d654d206406b47afe0b508b2e57f8afad8496d7522f477f0426"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\text.py",
+      "sha256": "3464346b23390c330fcc7beb51dcb9d25be9a0f771d19b90f085cb5ba8b14795"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\image.py",
+      "sha256": "b92bffafacd442ac4081ad27beac1a7e385291caec2c474ea6184f3b5664ba1c"
+    }
+  ],
+  "budget": {
+    "native_OCR_calls": 2,
+    "seconds_each": 30,
+    "image_pixels_each": 180000,
+    "model": false,
+    "GPU": false,
+    "downloads": false
+  },
+  "original_source_or_archive_edits": false
+}

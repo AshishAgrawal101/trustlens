@@ -1,0 +1,67 @@
+{
+  "component": "native production C2PA worker main; in-process stdio transport under external supervisor, not read_credentials subprocess transport",
+  "results": [
+    {
+      "id": "coco2017:100202",
+      "sha256": "25049cc76fad218a900e30686ff522ca396f5d61d4931f75d7af3887d3e0ff98",
+      "elapsed_seconds": 0.015999999945051968,
+      "result": {
+        "status": "absent",
+        "detail": "No embedded Content Credentials were found. This does not establish whether the image is real or AI-generated."
+      },
+      "memory": {
+        "private": 18227200,
+        "ws": 32456704,
+        "peak_ws": 304308224,
+        "peak_private": 296013824
+      }
+    },
+    {
+      "id": "coco2017:100331",
+      "sha256": "83924cad55f6b7ad33a222e759357a7f14b154b67790d8ef17b7713db9fc56c6",
+      "elapsed_seconds": 0.0,
+      "result": {
+        "status": "absent",
+        "detail": "No embedded Content Credentials were found. This does not establish whether the image is real or AI-generated."
+      },
+      "memory": {
+        "private": 18440192,
+        "ws": 32526336,
+        "peak_ws": 304308224,
+        "peak_private": 296013824
+      }
+    },
+    {
+      "id": "core/train-00001-of-00032-00014.parquet:openfake-00abb50acfb1f09e80ed6d6d2203d68e",
+      "sha256": "64615e8239bafe5ac65f147ccc860101f5d3b0bd9b98bc6abd48c29e4f3e2afe",
+      "elapsed_seconds": 0.0,
+      "result": {
+        "status": "absent",
+        "detail": "No embedded Content Credentials were found. This does not establish whether the image is real or AI-generated."
+      },
+      "memory": {
+        "private": 20271104,
+        "ws": 34488320,
+        "peak_ws": 304308224,
+        "peak_private": 296013824
+      }
+    },
+    {
+      "id": "core/train-00001-of-00032-00014.parquet:openfake-05b2417ac63c4a0213fa683edaf4c2e9",
+      "sha256": "ef274205aa44259c9b2309affd75a3057fcb9d37493bcb9852737dad1ddcb680",
+      "elapsed_seconds": 0.01600000006146729,
+      "result": {
+        "status": "absent",
+        "detail": "No embedded Content Credentials were found. This does not establish whether the image is real or AI-generated."
+      },
+      "memory": {
+        "private": 18464768,
+        "ws": 32731136,
+        "peak_ws": 304308224,
+        "peak_private": 296013824
+      }
+    }
+  ],
+  "visual_model_ran": false,
+  "image_origin_or_fraud_scores": null
+}

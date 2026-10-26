@@ -1,0 +1,230 @@
+{
+  "source_sha256": "3464346b23390c330fcc7beb51dcb9d25be9a0f771d19b90f085cb5ba8b14795",
+  "rows": [
+    {
+      "id": "lf-ordinary",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "id": "lf-direct",
+      "expected": [
+        "request:code"
+      ],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "lf-independent-live",
+      "expected": [
+        "request:remote"
+      ],
+      "actual": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "lf-advice",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "id": "cr-ordinary",
+      "expected": [],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "cr-direct",
+      "expected": [
+        "request:code"
+      ],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "cr-independent-live",
+      "expected": [
+        "request:remote"
+      ],
+      "actual": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "cr-advice",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "id": "crlf-ordinary",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "id": "crlf-direct",
+      "expected": [
+        "request:code"
+      ],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "crlf-independent-live",
+      "expected": [
+        "request:remote"
+      ],
+      "actual": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "crlf-advice",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "id": "formfeed-ordinary",
+      "expected": [],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "formfeed-direct",
+      "expected": [
+        "request:code"
+      ],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "formfeed-independent-live",
+      "expected": [
+        "request:remote"
+      ],
+      "actual": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "formfeed-advice",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "id": "nel-ordinary",
+      "expected": [],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "nel-direct",
+      "expected": [
+        "request:code"
+      ],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "nel-independent-live",
+      "expected": [
+        "request:remote"
+      ],
+      "actual": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "nel-advice",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "id": "line-separator-ordinary",
+      "expected": [],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "line-separator-direct",
+      "expected": [
+        "request:code"
+      ],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "line-separator-independent-live",
+      "expected": [
+        "request:remote"
+      ],
+      "actual": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "line-separator-advice",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "id": "paragraph-separator-ordinary",
+      "expected": [],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "paragraph-separator-direct",
+      "expected": [
+        "request:code"
+      ],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "paragraph-separator-independent-live",
+      "expected": [
+        "request:remote"
+      ],
+      "actual": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "paragraph-separator-advice",
+      "expected": [],
+      "actual": []
+    },
+    {
+      "id": "soft-hyphen-direct",
+      "expected": [
+        "request:code"
+      ],
+      "actual": []
+    },
+    {
+      "id": "soft-hyphen-advice",
+      "expected": [],
+      "actual": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "soft-hyphen-ordinary",
+      "expected": [],
+      "actual": []
+    }
+  ]
+}

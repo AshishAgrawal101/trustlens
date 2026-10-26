@@ -1,0 +1,13 @@
+✔ busy503 has fixed retry guidance without blaming file or dropping draft (7.4803ms)
+✔ caption planning preserves completed file facts questions preview and status without reinspection (30.3095ms)
+✔ caption planning keeps pending file-only request and accepts its independent result (3.3372ms)
+✔ file replacement Clear Cancel native invalid and lifecycle still reject late reports after caption edit (8.5629ms)
+✔ caption edit clears Cancel acknowledgment without restarting or admitting the canceled response (1.9539ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 154.5837

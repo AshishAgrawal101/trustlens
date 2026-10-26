@@ -1,0 +1,33 @@
+{
+  "serverStopped": true,
+  "constructedOnly": true,
+  "repair": {
+    "claim": "Constructed claim: this photograph shows today’s event.",
+    "error": "Source B address: Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.",
+    "focus": "source-b-url",
+    "invalid": "true",
+    "quote": "Constructed account retained during repair.",
+    "scroll": 305,
+    "width": 305
+  },
+  "edited": {
+    "correctionHidden": true,
+    "errorHidden": true,
+    "invalid": null,
+    "resultHidden": true
+  },
+  "reviewed": {
+    "claim": "Constructed claim: this photograph shows today’s event.",
+    "quote": "Constructed account retained during repair.",
+    "resultVisible": true
+  },
+  "cleared": {
+    "claim": "",
+    "correctionHidden": true,
+    "invalid": null,
+    "quote": "",
+    "resultHidden": true,
+    "url": ""
+  },
+  "physicalPhone": false
+}

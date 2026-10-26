@@ -1,0 +1,25 @@
+{
+  "source_tests": {
+    "python": 860,
+    "javascript": 258,
+    "skips": 0
+  },
+  "review_closures": {
+    "gps": "Pillow can parse GPS internally during orientation. Output promises coordinates are not displayed or returned; no location lookup.",
+    "server_errors": "500/503 preserve draft and give fixed launcher/retry guidance; regression first failed then passed."
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8766/static/media-context.html",
+    "caption_typing_and_clear": "observed",
+    "clear_focus": "file selector",
+    "narrow": {
+      "viewport": 320,
+      "body_scroll_width": 305,
+      "document_scroll_width": 305
+    },
+    "viewport_restored": true,
+    "native_file_upload": "not attempted; previous approval denied"
+  },
+  "models": "unchanged; no new accuracy claim",
+  "live_page_status": 200
+}

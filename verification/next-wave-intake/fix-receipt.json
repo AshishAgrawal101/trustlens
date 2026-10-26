@@ -1,0 +1,41 @@
+{
+  "verified_utc": "2026-10-23T21:01:40.8783553Z",
+  "new_regressions": 7,
+  "reviewed_decoder_exception": 1,
+  "protected_unchanged": 33,
+  "actual_routes_reject_400": [
+    "/api/analyze/image",
+    "/api/extract/screenshot",
+    "/api/extract/qr"
+  ],
+  "seconds": 5.7,
+  "files": [
+    {
+      "sha256": "b92bffafacd442ac4081ad27beac1a7e385291caec2c474ea6184f3b5664ba1c",
+      "path": "app/analyzers/image.py"
+    },
+    {
+      "sha256": "00379b67d636b07e15fd6e868989103d2ebf4014c5782e94a3586999f0a01256",
+      "path": "tests/test_png_metadata_limits.py"
+    },
+    {
+      "sha256": "5a60b3a204b5ec54e2e04297e570d58a16c5dba6da85f7e01eacf460b6c51f13",
+      "path": "verification/next-wave-intake/png-metadata-reproduction.json"
+    },
+    {
+      "sha256": "4724ab4970d07cc97979c4814f9bc87b41a459b9dc2cff1267fed546831c1131",
+      "path": "verification/next-wave-intake/decoder-fix-preservation.json"
+    },
+    {
+      "sha256": "694e33a1a17d4bdef6bd82498325d5371631ac1d6fb066fac0c25db834946a5a",
+      "path": "verification/next-wave-intake/AUDIT.md"
+    }
+  ],
+  "Pillow_limits_unchanged": true,
+  "visual_runtime_or_subprocess_calls_for_fixture": false,
+  "tests_passed": 141,
+  "immutable_archives_unchanged": 7,
+  "original_source_unchanged": 104,
+  "tests_skipped": 11,
+  "failures": 0
+}

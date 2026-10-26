@@ -1,0 +1,18 @@
+✔ Cancel acknowledges stopped waiting while preserving file preview caption and focus (6.8372ms)
+✔ late cancelled failure cannot replace acknowledgment or focus an error (2.1246ms)
+✔ edit replacement Clear retry exit and persisted Back erase the old acknowledgment (35.5935ms)
+✔ caption planning preserves completed file facts questions preview and status without reinspection (27.3234ms)
+✔ caption planning keeps pending file-only request and accepts its independent result (3.555ms)
+✔ file replacement Clear Cancel native invalid and lifecycle still reject late reports after caption edit (10.4854ms)
+✔ caption edit clears Cancel acknowledgment without restarting or admitting the canceled response (3.405ms)
+✔ native invalid without submit clears completed media output and keeps selection/caption (25.8847ms)
+✔ native invalid aborts pending client wait and stale completion cannot restore output (4.0818ms)
+✔ screenshot-only help explains faithful manual wrap correction without changing shared QR review (2.5089ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 156.7395

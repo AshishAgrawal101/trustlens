@@ -1,0 +1,1 @@
+{"case":"Media native-invalid event without submit after completed metadata report","expected":"Old facts/status hidden, pending client request invalidated if any, selection and caption retained; no extra request","scope":"existing DOM mock only, no actual image or backend"}

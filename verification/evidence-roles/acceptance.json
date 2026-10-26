@@ -1,0 +1,483 @@
+{
+  "version": 1,
+  "status": "frozen_before_role_implementation_predictions",
+  "now": "2026-10-23",
+  "purpose": "Independent authored acceptance of explicit human source labels; not claim correctness evaluation.",
+  "role_enum": [
+    "unsure",
+    "supports",
+    "challenges",
+    "context"
+  ],
+  "global_invariants": [
+    "Labels describe the user interpretation; no model or automated support/contradiction classification is claimed.",
+    "Support/challenge selection never verifies quotation, source identity, factual meaning, independence or truth.",
+    "Having both support and challenge labels does not establish balance, resolution or sufficient evidence.",
+    "Gap prompts invite looking for disconfirming/supporting evidence without requiring equal numbers or equivalent evidentiary weight.",
+    "Only nonempty trimmed URL or quote makes a source active; date or selected role alone is not an account.",
+    "URL-less quotations remain unattributed even when a human labels them.",
+    "Changing a role invalidates prior result/export state like changing any field. Clear/page lifecycle resets role controls to unsure.",
+    "Fixed plan exports do not contain private input or imply an automated judgment; no network or storage."
+  ],
+  "cases": [
+    {
+      "id": "defaults-omitted",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed."
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:unsure",
+        "labels:b:unsure"
+      ],
+      "required_question_ids": [
+        "labels:unresolved",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_challenge",
+        "coverage:no_support"
+      ]
+    },
+    {
+      "id": "all-unsure",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "unsure",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "unsure"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:unsure",
+        "labels:b:unsure"
+      ],
+      "required_question_ids": [
+        "labels:unresolved",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_challenge",
+        "coverage:no_support"
+      ]
+    },
+    {
+      "id": "all-context",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "context",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "context"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:context",
+        "labels:b:context"
+      ],
+      "required_question_ids": [
+        "labels:unresolved",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_challenge",
+        "coverage:no_support"
+      ]
+    },
+    {
+      "id": "supports-plus-unsure",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "supports",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "unsure"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports",
+        "labels:b:unsure"
+      ],
+      "required_question_ids": [
+        "coverage:no_challenge",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_support",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "challenges-plus-unsure",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "challenges",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "unsure"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:challenges",
+        "labels:b:unsure"
+      ],
+      "required_question_ids": [
+        "coverage:no_support",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_challenge",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "supports-plus-context",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "supports",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "context"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports",
+        "labels:b:context"
+      ],
+      "required_question_ids": [
+        "coverage:no_challenge",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_support",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "challenges-plus-context",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "context",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "challenges"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:context",
+        "labels:b:challenges"
+      ],
+      "required_question_ids": [
+        "coverage:no_support",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_challenge",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "support-and-challenge",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "supports",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "challenges"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports",
+        "labels:b:challenges"
+      ],
+      "required_question_ids": [
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_challenge",
+        "coverage:no_support",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "two-supports",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "supports",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "supports"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports",
+        "labels:b:supports"
+      ],
+      "required_question_ids": [
+        "coverage:no_challenge",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_support",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "two-challenges",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "challenges",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "challenges"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:challenges",
+        "labels:b:challenges"
+      ],
+      "required_question_ids": [
+        "coverage:no_support",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_challenge",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "inactive-role-does-not-close-gap",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "supports",
+        "bUrl": "",
+        "bQuote": "",
+        "bRole": "challenges"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports"
+      ],
+      "required_question_ids": [
+        "coverage:no_challenge",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_support",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "both-inactive-roles",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "",
+        "aQuote": "",
+        "aRole": "supports",
+        "bUrl": "",
+        "bQuote": "",
+        "bRole": "challenges"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [],
+      "required_question_ids": [
+        "labels:unresolved",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_challenge",
+        "coverage:no_support"
+      ]
+    },
+    {
+      "id": "date-only-is-not-account",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "",
+        "aQuote": "",
+        "aRole": "supports",
+        "bUrl": "",
+        "bQuote": "",
+        "bRole": "challenges",
+        "aDate": "2026-10-20",
+        "bDate": "2026-10-21"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [],
+      "required_question_ids": [
+        "labels:unresolved",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_challenge",
+        "coverage:no_support"
+      ]
+    },
+    {
+      "id": "quote-without-url-is-active-user-label",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "supports",
+        "bUrl": "",
+        "bQuote": "",
+        "bRole": "challenges"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports"
+      ],
+      "required_question_ids": [
+        "coverage:no_challenge",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_support",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "whitespace-account-is-inactive",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "supports",
+        "bUrl": " \t ",
+        "bQuote": "\n ",
+        "bRole": "challenges"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports"
+      ],
+      "required_question_ids": [
+        "coverage:no_challenge",
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_support",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "same-host-opposed-roles",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "supports",
+        "bUrl": "https://library.example/other",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "challenges"
+      },
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports",
+        "labels:b:challenges"
+      ],
+      "required_question_ids": [
+        "labels:human_judgment"
+      ],
+      "forbidden_question_ids": [
+        "coverage:no_challenge",
+        "coverage:no_support",
+        "labels:unresolved"
+      ]
+    },
+    {
+      "id": "invalid-role",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": "verified",
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "unsure"
+      },
+      "expected_outcome": "fixed_validation_error",
+      "expected_label_ids": [],
+      "required_question_ids": [],
+      "forbidden_question_ids": []
+    },
+    {
+      "id": "invalid-role-type",
+      "input": {
+        "claim": "The library exhibition opens at nine.",
+        "context": "A forwarded timetable.",
+        "aUrl": "https://library.example/schedule",
+        "aQuote": "Exhibition opens at nine.",
+        "aRole": true,
+        "bUrl": "https://news.example/events",
+        "bQuote": "Exhibition opening time changed.",
+        "bRole": "unsure"
+      },
+      "expected_outcome": "fixed_validation_error",
+      "expected_label_ids": [],
+      "required_question_ids": [],
+      "forbidden_question_ids": []
+    }
+  ],
+  "interaction_cases": [
+    {
+      "id": "role-change-invalidates",
+      "steps": [
+        "Analyze active supports/challenges pair",
+        "Change only role A to unsure"
+      ],
+      "expected": "Old result hidden and exports disabled until explicit review."
+    },
+    {
+      "id": "clear-and-lifecycle-defaults",
+      "steps": [
+        "Select supports/challenges",
+        "Clear or pagehide/persisted pageshow"
+      ],
+      "expected": "Role controls reset to unsure; all private source fields/result cleared."
+    }
+  ]
+}

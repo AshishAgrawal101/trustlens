@@ -1,0 +1,57 @@
+{
+  "method": "WCAG sRGB relative luminance; bounded CSS-color calculation, not pixel measurement",
+  "backgroundEndpoint": {
+    "base": "#09191f",
+    "maximumRadialComposite": "#0d282c"
+  },
+  "originalFinding": {
+    "source": "root actual browser computed colors and screenshot",
+    "demoText": "#566970",
+    "demoContrastAtLightest": 2.6899691937122436,
+    "heroText": "#205b4a",
+    "heroAlphaBackground": "#4e6164",
+    "heroContrastAtLightest": 1.211201604603685
+  },
+  "resolved": [
+    {
+      "label": "demo new light text",
+      "foreground": "#c3d8cd",
+      "background": "#0d282c",
+      "ratio": 10.334802046128551,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "label": "hero new normal",
+      "foreground": "#c8e7bb",
+      "background": "#18392f",
+      "ratio": 9.37089043352476,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "label": "hero new hover",
+      "foreground": "#c8e7bb",
+      "background": "#214a3a",
+      "ratio": 7.411763911796738,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "label": "hero border vs page",
+      "foreground": "#7caf78",
+      "background": "#0d282c",
+      "ratio": 6.087119677083346,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "label": "focus vs hover",
+      "foreground": "#b5ee96",
+      "background": "#214a3a",
+      "ratio": 7.426564112911558,
+      "minimum": 3,
+      "pass": true
+    }
+  ]
+}

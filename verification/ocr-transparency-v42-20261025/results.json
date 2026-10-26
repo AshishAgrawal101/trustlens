@@ -1,0 +1,53 @@
+{
+  "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+  "results": [
+    {
+      "case": "black_transparent",
+      "bytes": 5804,
+      "sha256": "a81a123344a4e628a0b56a4d7affe16fa69fcb6006042f9faac19f5a4222cc51",
+      "output": {
+        "text": "",
+        "language": "en-US",
+        "review_required": true,
+        "notice": "Review and correct the text before checking it. OCR may miss words, punctuation or links. This does not check image origin."
+      },
+      "seconds": 0.5339735000161454
+    },
+    {
+      "case": "black_transparent_opaque_reference",
+      "bytes": 8040,
+      "sha256": "91fdea7654e420eae4ac37fc17713d1c372b65c105fc5e6f6c2d5c6e73440570",
+      "output": {
+        "text": "Send me your verification code.",
+        "language": "en-US",
+        "review_required": true,
+        "notice": "Review and correct the text before checking it. OCR may miss words, punctuation or links. This does not check image origin."
+      },
+      "seconds": 0.5434785999823362
+    },
+    {
+      "case": "white_transparent",
+      "bytes": 6446,
+      "sha256": "54714f7a0b7f202d29273a96411c24f8dc2173a6087897cdd4c8d93df4d92012",
+      "output": {
+        "text": "Send me your verification code.",
+        "language": "en-US",
+        "review_required": true,
+        "notice": "Review and correct the text before checking it. OCR may miss words, punctuation or links. This does not check image origin."
+      },
+      "seconds": 0.5494669999461621
+    },
+    {
+      "case": "white_transparent_opaque_reference",
+      "bytes": 7517,
+      "sha256": "52b1e2f528c07a8da695a591261c446834257fa2d659801a84377b44538b4deb",
+      "output": {
+        "text": "Send me your verification code.",
+        "language": "en-US",
+        "review_required": true,
+        "notice": "Review and correct the text before checking it. OCR may miss words, punctuation or links. This does not check image origin."
+      },
+      "seconds": 0.5407050000503659
+    }
+  ]
+}

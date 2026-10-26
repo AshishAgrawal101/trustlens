@@ -1,0 +1,16 @@
+{
+  "scope": "Exact passive if-you-are-asked-to boundedrequest comma refuse only; no contractions/extraadvicephrases",
+  "request_span": "1..180normalizedcharacters excludescomma/semicolon; contextonlywhollycontainedexisting7sensitivefamilies",
+  "cue": "bare refuse followed onlybywhitespace then comma/semicolon/endofsentence",
+  "marker": "context:passive_refusal:<existingkey>, unknown/info/0; newaccurateconditionalrefusalcopy/originalexcerpt",
+  "invariants": [
+    "existingactiveifperson/hangupframeandcopybyteexact",
+    "laterlive samefamily aftercomma/semicolon/period/hardbreak positive",
+    "refuse to refuse/nothing notaccepted",
+    "hardlinesnotjoined",
+    "request180boundary",
+    "UnicodeSHYoffsetspreserved/noothernormalization",
+    "oldfresh12filesunchanged",
+    "quotedreport/urgencyfailuresretained"
+  ]
+}

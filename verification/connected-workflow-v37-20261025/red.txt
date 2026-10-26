@@ -1,0 +1,165 @@
+FFFFFFF                                                                  [100%]
+================================== FAILURES ===================================
+_ test_desktop_continuations_are_explicit_native_safe_links[quote-context.html] _
+
+page = 'quote-context.html'
+
+    @pytest.mark.parametrize('page',['quote-context.html','numbers-context.html','media-context.html'])
+    def test_desktop_continuations_are_explicit_native_safe_links(page):
+>    check((STATIC/page).read_text(),'/static/claim-review.html','Open Claim & context (new tab)')
+
+tests\test_connected_workflow.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initia...ipt><script src="/static/source-context.js"></script><script src="/static/unicode-notice.js"></script></body></html>\n'
+href = '/static/claim-review.html', label = 'Open Claim & context (new tab)'
+
+    def check(html,href,label):
+     links=Links(html).links
+     actions=[a for a in links if a['attrs'].get('target')=='_blank']
+>    assert len(actions)==1
+E    assert 0 == 1
+E     +  where 0 = len([])
+
+tests\test_connected_workflow.py:20: AssertionError
+_ test_desktop_continuations_are_explicit_native_safe_links[numbers-context.html] _
+
+page = 'numbers-context.html'
+
+    @pytest.mark.parametrize('page',['quote-context.html','numbers-context.html','media-context.html'])
+    def test_desktop_continuations_are_explicit_native_safe_links(page):
+>    check((STATIC/page).read_text(),'/static/claim-review.html','Open Claim & context (new tab)')
+
+tests\test_connected_workflow.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initia...c/tools.html">Explore all local tools →</a></footer><script src="/static/numbers-context.js"></script></body></html>\n'
+href = '/static/claim-review.html', label = 'Open Claim & context (new tab)'
+
+    def check(html,href,label):
+     links=Links(html).links
+     actions=[a for a in links if a['attrs'].get('target')=='_blank']
+>    assert len(actions)==1
+E    assert 0 == 1
+E     +  where 0 = len([])
+
+tests\test_connected_workflow.py:20: AssertionError
+_ test_desktop_continuations_are_explicit_native_safe_links[media-context.html] _
+
+page = 'media-context.html'
+
+    @pytest.mark.parametrize('page',['quote-context.html','numbers-context.html','media-context.html'])
+    def test_desktop_continuations_are_explicit_native_safe_links(page):
+>    check((STATIC/page).read_text(),'/static/claim-review.html','Open Claim & context (new tab)')
+
+tests\test_connected_workflow.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initia...tic/tools.html">Explore all local tools →</a></footer><script src="/static/media-context.js"></script></body></html>\n'
+href = '/static/claim-review.html', label = 'Open Claim & context (new tab)'
+
+    def check(html,href,label):
+     links=Links(html).links
+     actions=[a for a in links if a['attrs'].get('target')=='_blank']
+>    assert len(actions)==1
+E    assert 0 == 1
+E     +  where 0 = len([])
+
+tests\test_connected_workflow.py:20: AssertionError
+__________ test_claim_separate_tools_action_keeps_normal_navigation ___________
+
+    def test_claim_separate_tools_action_keeps_normal_navigation():
+>    check((STATIC/'claim-review.html').read_text(),'/static/tools.html','Open other tools (new tab)')
+
+tests\test_connected_workflow.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+html = '<!doctype html>\n<html lang="en">\n<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,init...ic/tools.html">Explore all local tools →</a></footer><script src="/static/claim-review.js"></script>\n</body></html>\n'
+href = '/static/tools.html', label = 'Open other tools (new tab)'
+
+    def check(html,href,label):
+     links=Links(html).links
+     actions=[a for a in links if a['attrs'].get('target')=='_blank']
+>    assert len(actions)==1
+E    assert 0 == 1
+E     +  where 0 = len([])
+
+tests\test_connected_workflow.py:20: AssertionError
+__ test_shared_pocket_render_keeps_canonical_destinations_and_labels[claims] __
+
+tool = 'claims'
+
+    @pytest.mark.parametrize('tool',['claims','numbers','quotes'])
+    def test_shared_pocket_render_keeps_canonical_destinations_and_labels(tool):
+>    check(render_pocket_workspace(tool),'/phone/context.html' if tool=='claims' else '/phone/workspace/claims.html',
+           'Open context guide (new tab)' if tool=='claims' else 'Open Claim & context (new tab)')
+
+tests\test_connected_workflow.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+html = '<!doctype html>\n<html lang="en">\n<head><meta http-equiv="Content-Security-Policy" content="connect-src \'none\'; fo...one/context.html">Pocket context guide →</a></footer><script src="/static/claim-review.js"></script>\n</body></html>\n'
+href = '/phone/context.html', label = 'Open context guide (new tab)'
+
+    def check(html,href,label):
+     links=Links(html).links
+     actions=[a for a in links if a['attrs'].get('target')=='_blank']
+>    assert len(actions)==1
+E    assert 0 == 1
+E     +  where 0 = len([])
+
+tests\test_connected_workflow.py:20: AssertionError
+_ test_shared_pocket_render_keeps_canonical_destinations_and_labels[numbers] __
+
+tool = 'numbers'
+
+    @pytest.mark.parametrize('tool',['claims','numbers','quotes'])
+    def test_shared_pocket_render_keeps_canonical_destinations_and_labels(tool):
+>    check(render_pocket_workspace(tool),'/phone/context.html' if tool=='claims' else '/phone/workspace/claims.html',
+           'Open context guide (new tab)' if tool=='claims' else 'Open Claim & context (new tab)')
+
+tests\test_connected_workflow.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+html = '<!doctype html>\n<html lang="en"><head><meta http-equiv="Content-Security-Policy" content="connect-src \'none\'; form...ne/context.html">Pocket context guide →</a></footer><script src="/static/numbers-context.js"></script></body></html>\n'
+href = '/phone/workspace/claims.html', label = 'Open Claim & context (new tab)'
+
+    def check(html,href,label):
+     links=Links(html).links
+     actions=[a for a in links if a['attrs'].get('target')=='_blank']
+>    assert len(actions)==1
+E    assert 0 == 1
+E     +  where 0 = len([])
+
+tests\test_connected_workflow.py:20: AssertionError
+__ test_shared_pocket_render_keeps_canonical_destinations_and_labels[quotes] __
+
+tool = 'quotes'
+
+    @pytest.mark.parametrize('tool',['claims','numbers','quotes'])
+    def test_shared_pocket_render_keeps_canonical_destinations_and_labels(tool):
+>    check(render_pocket_workspace(tool),'/phone/context.html' if tool=='claims' else '/phone/workspace/claims.html',
+           'Open context guide (new tab)' if tool=='claims' else 'Open Claim & context (new tab)')
+
+tests\test_connected_workflow.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+html = '<!doctype html>\n<html lang="en"><head><meta http-equiv="Content-Security-Policy" content="connect-src \'none\'; form...ipt><script src="/static/source-context.js"></script><script src="/static/unicode-notice.js"></script></body></html>\n'
+href = '/phone/workspace/claims.html', label = 'Open Claim & context (new tab)'
+
+    def check(html,href,label):
+     links=Links(html).links
+     actions=[a for a in links if a['attrs'].get('target')=='_blank']
+>    assert len(actions)==1
+E    assert 0 == 1
+E     +  where 0 = len([])
+
+tests\test_connected_workflow.py:20: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_connected_workflow.py::test_desktop_continuations_are_explicit_native_safe_links[quote-context.html]
+FAILED tests/test_connected_workflow.py::test_desktop_continuations_are_explicit_native_safe_links[numbers-context.html]
+FAILED tests/test_connected_workflow.py::test_desktop_continuations_are_explicit_native_safe_links[media-context.html]
+FAILED tests/test_connected_workflow.py::test_claim_separate_tools_action_keeps_normal_navigation
+FAILED tests/test_connected_workflow.py::test_shared_pocket_render_keeps_canonical_destinations_and_labels[claims]
+FAILED tests/test_connected_workflow.py::test_shared_pocket_render_keeps_canonical_destinations_and_labels[numbers]
+FAILED tests/test_connected_workflow.py::test_shared_pocket_render_keeps_canonical_destinations_and_labels[quotes]
+7 failed in 0.21s

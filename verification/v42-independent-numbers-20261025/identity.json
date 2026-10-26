@@ -1,0 +1,7 @@
+{
+  "pure_prefix_byte_equal_v41": true,
+  "pure_sha256": "0ed042bc431f853ca8e0a80a02844cfe212c81ad99197c3089bd314936bb2ca2",
+  "digits_parse_loop_byte_equal": true,
+  "entire_numbers_html_byte_equal": true,
+  "shared_fixture_only_standard_setCustomValidity_added": true
+}

@@ -1,0 +1,96 @@
+{
+  "purpose": "Preimplementation paired U+00AD-only parser equivalence acceptance; not population accuracy",
+  "cases": [
+    {
+      "id": "direct-word",
+      "text": "Send me your veri\u00adfication code.",
+      "expected_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "direct-verb",
+      "text": "Se\u00adnd me your verification code.",
+      "expected_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "negative-word",
+      "text": "Do n\u00adot share your password.",
+      "expected_ids": []
+    },
+    {
+      "id": "negative-verb",
+      "text": "Never sha\u00adre your password.",
+      "expected_ids": []
+    },
+    {
+      "id": "ordinary-source",
+      "text": "Please share the source co\u00adde.",
+      "expected_ids": []
+    },
+    {
+      "id": "history",
+      "text": "At last week's safety class, the instructor displayed the example, 'Se\u00adnd me your veri\u00adfication code.'",
+      "expected_ids": [
+        "context:code"
+      ]
+    },
+    {
+      "id": "conditional",
+      "text": "If someone asks you to se\u00adnd a veri\u00adfication code, hang up.",
+      "expected_ids": [
+        "context:code"
+      ]
+    },
+    {
+      "id": "independent-live",
+      "text": "Do n\u00adot share your password. Install TeamViewer.",
+      "expected_ids": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "unicode-boundary",
+      "text": "Please se\u00adnd the meeting notes\u2028Your verification code is 847261.",
+      "expected_ids": []
+    },
+    {
+      "id": "newline-stays",
+      "text": "Se\u00adnd us the\nverification code.",
+      "expected_ids": []
+    },
+    {
+      "id": "leading-soft",
+      "text": "\u00adSend me your verification code.",
+      "expected_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "trailing-soft",
+      "text": "Send me your verification code\u00ad.",
+      "expected_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "punctuation-soft",
+      "text": "Send\u00ad, me your verification code.",
+      "expected_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "repeated-soft",
+      "text": "Send me your veri\u00ad\u00adfication code.",
+      "expected_ids": []
+    },
+    {
+      "id": "literal-url",
+      "text": "Meeting notes https://exa\u00admple.test/account",
+      "expected_ids": []
+    }
+  ]
+}

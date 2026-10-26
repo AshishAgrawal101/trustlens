@@ -1,0 +1,215 @@
+{
+  "scope": "Read-only HTTP crawl from seven current desktop entry pages, following local anchor/script/stylesheet paths without queries. No POST, input, upload, external URL or phone-device action. Not browser interaction or accessibility verification.",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 132808
+    },
+    {
+      "path": "/static/tools.html",
+      "status": 200,
+      "bytes": 5459
+    },
+    {
+      "path": "/static/claim-review.html",
+      "status": 200,
+      "bytes": 10440
+    },
+    {
+      "path": "/static/numbers-context.html",
+      "status": 200,
+      "bytes": 8656
+    },
+    {
+      "path": "/static/quote-context.html",
+      "status": 200,
+      "bytes": 10350
+    },
+    {
+      "path": "/static/media-context.html",
+      "status": 200,
+      "bytes": 6700
+    },
+    {
+      "path": "/context-guide.html",
+      "status": 200,
+      "bytes": 8486
+    },
+    {
+      "path": "/static/demo-message.png",
+      "status": 200,
+      "bytes": 17000
+    },
+    {
+      "path": "/static/demo-qr.png",
+      "status": 200,
+      "bytes": 2080
+    },
+    {
+      "path": "/static/demo-email.eml",
+      "status": 200,
+      "bytes": 1046
+    },
+    {
+      "path": "/phone/",
+      "status": 200,
+      "bytes": 11504
+    },
+    {
+      "path": "/phone/ios.html",
+      "status": 200,
+      "bytes": 8724
+    },
+    {
+      "path": "/static/public-examples.html",
+      "status": 200,
+      "bytes": 12186
+    },
+    {
+      "path": "/static/communication-evaluation.html",
+      "status": 200,
+      "bytes": 46125
+    },
+    {
+      "path": "/static/claim-review.css",
+      "status": 200,
+      "bytes": 8648
+    },
+    {
+      "path": "/static/tools.css",
+      "status": 200,
+      "bytes": 1727
+    },
+    {
+      "path": "/static/claim-review.js",
+      "status": 200,
+      "bytes": 17767
+    },
+    {
+      "path": "/static/numbers-context.css",
+      "status": 200,
+      "bytes": 1562
+    },
+    {
+      "path": "/static/numbers-context.js",
+      "status": 200,
+      "bytes": 10830
+    },
+    {
+      "path": "/static/quote-context.css",
+      "status": 200,
+      "bytes": 3395
+    },
+    {
+      "path": "/static/quote-context.js",
+      "status": 200,
+      "bytes": 3607
+    },
+    {
+      "path": "/static/source-context.js",
+      "status": 200,
+      "bytes": 5742
+    },
+    {
+      "path": "/static/unicode-notice.js",
+      "status": 200,
+      "bytes": 3987
+    },
+    {
+      "path": "/static/media-context.css",
+      "status": 200,
+      "bytes": 9527
+    },
+    {
+      "path": "/static/media-context.js",
+      "status": 200,
+      "bytes": 9069
+    },
+    {
+      "path": "/phone/phone.css",
+      "status": 200,
+      "bytes": 9136
+    },
+    {
+      "path": "/phone/context.html",
+      "status": 200,
+      "bytes": 8408
+    },
+    {
+      "path": "/phone/icon-192.png",
+      "status": 200,
+      "bytes": 1191
+    },
+    {
+      "path": "/phone/manifest.webmanifest",
+      "status": 200,
+      "bytes": 1496
+    },
+    {
+      "path": "/phone/icon.svg",
+      "status": 200,
+      "bytes": 315
+    },
+    {
+      "path": "/phone/share-demo.html",
+      "status": 200,
+      "bytes": 1754
+    },
+    {
+      "path": "/phone/guide.js",
+      "status": 200,
+      "bytes": 4655
+    },
+    {
+      "path": "/phone/phone.js",
+      "status": 200,
+      "bytes": 15092
+    },
+    {
+      "path": "/phone/compare.js",
+      "status": 200,
+      "bytes": 2008
+    },
+    {
+      "path": "/phone/suggestions.js",
+      "status": 200,
+      "bytes": 4490
+    },
+    {
+      "path": "/phone/practice.js",
+      "status": 200,
+      "bytes": 9395
+    },
+    {
+      "path": "/phone/ios.js",
+      "status": 200,
+      "bytes": 4261
+    },
+    {
+      "path": "/phone/ios.css",
+      "status": 200,
+      "bytes": 3054
+    },
+    {
+      "path": "/phone/workspace/claims.html",
+      "status": 200,
+      "bytes": 10609
+    },
+    {
+      "path": "/phone/workspace/quotes.html",
+      "status": 200,
+      "bytes": 10559
+    },
+    {
+      "path": "/phone/workspace/numbers.html",
+      "status": 200,
+      "bytes": 8841
+    },
+    {
+      "path": "/phone/share-demo.js",
+      "status": 200,
+      "bytes": 1268
+    }
+  ]
+}

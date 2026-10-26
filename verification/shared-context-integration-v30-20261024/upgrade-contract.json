@@ -1,0 +1,11 @@
+{
+  "baseline":"Existing prepared v29/cache25 origin http://127.0.0.1:8829, temporary server stopped after v29 test; no cache or worker is manually removed.",
+  "target":"New static v30 export/cache26 served at the same origin.",
+  "checks":[
+    "Record the actual initial DOM version/status after reopening the old prepared origin against the new server.",
+    "If old DOM version25 receives a ready different version26 shell, it must show not-ready plus explicit reload guidance, not current-version readiness.",
+    "Explicit reload clears a constructed upgrade draft as warned and loads DOM version26 with matching ready status.",
+    "Stop only the owned temporary server; new version reload and target-aware quotation checks work from the prepared shell."
+  ],
+  "limits":["no worker/cache clearing or bypass","no physical-device installation","no clipboard/share","constructed message only","record seamless update if initial old DOM is not observed"]
+}

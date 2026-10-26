@@ -1,0 +1,296 @@
+[
+  {
+    "id": "century-leap-valid",
+    "expectation_matches": true,
+    "result": {
+      "observations": [
+        {
+          "id": "dates:a:after",
+          "text": "Source A: its supplied publication date is 2 calendar days after the supplied event date. Both dates remain unverified. This ordering does not establish what happened or whether the claim is true."
+        },
+        {
+          "id": "sources:zero",
+          "text": "No source addresses were supplied."
+        },
+        {
+          "id": "dates:event_supplied",
+          "text": "An event date was supplied by you; it was not independently verified."
+        }
+      ],
+      "questions": [
+        {
+          "id": "source:a:missing_url",
+          "text": "Source A: find the original source address or record where this account came from."
+        },
+        {
+          "id": "source:a:quote_unattributed",
+          "text": "Source A: a supplied quotation without an address cannot be traced here."
+        },
+        {
+          "id": "source:b:missing_url",
+          "text": "Source B: find the original source address or record where this account came from."
+        },
+        {
+          "id": "context:missing",
+          "text": "Record where the claim appeared and what came before or after it. The setting and original context remain unresolved."
+        },
+        {
+          "id": "dates:context",
+          "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+        },
+        {
+          "id": "dates:event_context",
+          "text": "Check what the supplied event and publication dates each describe, using the original accounts. A calendar-day difference does not authenticate a source, establish independence or settle the claim."
+        },
+        {
+          "id": "labels:unresolved",
+          "text": "The supplied accounts have no support/challenge labels yet. They may add context or remain uncertain; no conclusion about the claim follows."
+        },
+        {
+          "id": "labels:human_judgment",
+          "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+        }
+      ],
+      "labels": [
+        {
+          "id": "labels:a:unsure",
+          "text": "Source A: you labelled this account as unsure. This records your interpretation, not a detected finding."
+        },
+        {
+          "id": "labels:b:missing",
+          "text": "Source B: no address or quotation was supplied. Its selected role is not counted as an account."
+        }
+      ],
+      "nextStep": "Next: locate an original source account before interpreting the claim.",
+      "steps": [
+        "Find the earliest original account and read its full context, including qualifications and corrections.",
+        "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+        "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+        "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+      ]
+    }
+  },
+  {
+    "id": "century-common-year",
+    "expectation_matches": true,
+    "result": {
+      "observations": [
+        {
+          "id": "dates:a:after",
+          "text": "Source A: its supplied publication date is 1 calendar day after the supplied event date. Both dates remain unverified. This ordering does not establish what happened or whether the claim is true."
+        },
+        {
+          "id": "sources:zero",
+          "text": "No source addresses were supplied."
+        },
+        {
+          "id": "dates:event_supplied",
+          "text": "An event date was supplied by you; it was not independently verified."
+        }
+      ],
+      "questions": [
+        {
+          "id": "source:a:missing_url",
+          "text": "Source A: find the original source address or record where this account came from."
+        },
+        {
+          "id": "source:a:quote_unattributed",
+          "text": "Source A: a supplied quotation without an address cannot be traced here."
+        },
+        {
+          "id": "source:b:missing_url",
+          "text": "Source B: find the original source address or record where this account came from."
+        },
+        {
+          "id": "context:missing",
+          "text": "Record where the claim appeared and what came before or after it. The setting and original context remain unresolved."
+        },
+        {
+          "id": "dates:context",
+          "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+        },
+        {
+          "id": "dates:event_context",
+          "text": "Check what the supplied event and publication dates each describe, using the original accounts. A calendar-day difference does not authenticate a source, establish independence or settle the claim."
+        },
+        {
+          "id": "labels:unresolved",
+          "text": "The supplied accounts have no support/challenge labels yet. They may add context or remain uncertain; no conclusion about the claim follows."
+        },
+        {
+          "id": "labels:human_judgment",
+          "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+        }
+      ],
+      "labels": [
+        {
+          "id": "labels:a:unsure",
+          "text": "Source A: you labelled this account as unsure. This records your interpretation, not a detected finding."
+        },
+        {
+          "id": "labels:b:missing",
+          "text": "Source B: no address or quotation was supplied. Its selected role is not counted as an account."
+        }
+      ],
+      "nextStep": "Next: locate an original source account before interpreting the claim.",
+      "steps": [
+        "Find the earliest original account and read its full context, including qualifications and corrections.",
+        "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+        "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+        "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+      ]
+    }
+  },
+  {
+    "id": "role-with-date-only",
+    "expectation_matches": true,
+    "result": {
+      "observations": [
+        {
+          "id": "sources:zero",
+          "text": "No source addresses were supplied."
+        }
+      ],
+      "questions": [
+        {
+          "id": "source:a:missing_url",
+          "text": "Source A: find the original source address or record where this account came from."
+        },
+        {
+          "id": "source:b:missing_url",
+          "text": "Source B: find the original source address or record where this account came from."
+        },
+        {
+          "id": "source:b:quote_unattributed",
+          "text": "Source B: a supplied quotation without an address cannot be traced here."
+        },
+        {
+          "id": "source:b:missing_date",
+          "text": "Source B: publication date is missing. Check it against the date of the event or image."
+        },
+        {
+          "id": "context:missing",
+          "text": "Record where the claim appeared and what came before or after it. The setting and original context remain unresolved."
+        },
+        {
+          "id": "dates:context",
+          "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+        },
+        {
+          "id": "labels:unresolved",
+          "text": "The supplied accounts have no support/challenge labels yet. They may add context or remain uncertain; no conclusion about the claim follows."
+        },
+        {
+          "id": "labels:human_judgment",
+          "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+        }
+      ],
+      "labels": [
+        {
+          "id": "labels:a:missing",
+          "text": "Source A: no address or quotation was supplied. Its selected role is not counted as an account."
+        },
+        {
+          "id": "labels:b:context",
+          "text": "Source B: you labelled this account as adding context. This records your interpretation, not a detected finding."
+        }
+      ],
+      "nextStep": "Next: locate an original source account before interpreting the claim.",
+      "steps": [
+        "Find the earliest original account and read its full context, including qualifications and corrections.",
+        "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+        "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+        "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+      ]
+    }
+  },
+  {
+    "id": "same-rate-scaled-groups",
+    "expectation_matches": true,
+    "result": {
+      "rateA": 37,
+      "rateB": 37,
+      "percentagePoints": 0,
+      "relativePercent": 0
+    }
+  },
+  {
+    "id": "rounded-input-near-tie",
+    "expectation_matches": true,
+    "result": {
+      "rateA": 50,
+      "rateB": 50,
+      "percentagePoints": 1.9999999999999998e-18,
+      "relativePercent": 4e-18
+    }
+  },
+  {
+    "id": "quote-whitespace-reconstruction",
+    "expectation_matches": true,
+    "result": {
+      "parts": [
+        {
+          "type": "same",
+          "text": "The library opens"
+        },
+        {
+          "type": "removed",
+          "text": "\n"
+        },
+        {
+          "type": "added",
+          "text": " "
+        },
+        {
+          "type": "same",
+          "text": "Saturday. "
+        },
+        {
+          "type": "removed",
+          "text": "<b>Most"
+        },
+        {
+          "type": "added",
+          "text": "Most"
+        },
+        {
+          "type": "same",
+          "text": " rooms remain "
+        },
+        {
+          "type": "removed",
+          "text": "open.</b>"
+        },
+        {
+          "type": "added",
+          "text": "open."
+        }
+      ],
+      "identical": false
+    }
+  },
+  {
+    "id": "literal-overlap-omission",
+    "expectation_matches": true,
+    "result": {
+      "total": 2,
+      "matches": [
+        {
+          "start": 0,
+          "end": 3,
+          "before": "",
+          "text": "aba",
+          "after": "ba aba"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "before": "ababa ",
+          "text": "aba",
+          "after": ""
+        }
+      ],
+      "truncated": false
+    }
+  }
+]

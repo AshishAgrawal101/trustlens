@@ -1,0 +1,46 @@
+'use strict';
+const PocketPractice = (() => {
+  const cases = [
+    {title:'A changed invoice', text:'The supplier emails: Our bank details changed today. Pay this invoice to the new account before 4 p.m.', best:1, choices:['Pay using the new details.', 'Call the supplier using an established contact record.', 'Reply asking whether the email is real.'], why:'Confirm changed payment instructions through a contact route you already trust. A reply stays in the same possibly compromised conversation.'},
+    {title:'An unexpected code request', text:'A caller says they are from your bank and asks you to read the sign-in code that just arrived.', best:0, choices:['End the call and contact the bank through its official app.', 'Read the code because the caller knows your name.', 'Ask the caller for their employee number, then read the code.'], why:'A name or employee number does not establish identity. A security code can grant account access; keep it private.'},
+    {title:'A familiar-looking address', text:'A message says to sign in at https://bank.example@verify.example.test to prevent suspension.', best:2, choices:['Trust it because bank.example appears first.', 'Open it to see whether the page looks familiar.', 'Open the bank through an address or app already known to you.'], why:'The destination hostname is verify.example.test. Text before @ is not the destination, and appearance does not verify a site.'},
+    {title:'A routine appointment', text:'Your calendar shows a dentist appointment tomorrow. A reminder says to arrive ten minutes early and bring your insurance card.', best:1, choices:['Treat every reminder as proven fraud.', 'Check your own calendar; use a known number if the details differ.', 'Send your insurance details to any number that asks.'], why:'Routine wording alone does not prove fraud or authenticity. Verify unexpected changes independently and share only what is needed through a known route.'},
+    {title:'Unexpected remote support', text:'Someone claiming to be technical support says: Install this remote-control app so I can fix an urgent security problem.', best:0, choices:['Pause and contact support through an official route you already know.', 'Install it because the caller sounds professional.', 'Allow access briefly and watch the screen.'], why:'Remote access can expose your device and accounts. A confident voice is not proof of identity; verify the request before installing anything.'},
+    {title:'Pressure to stay silent', text:'A caller claims a family member needs money immediately and tells you not to contact anyone else.', best:2, choices:['Pay quickly to avoid making things worse.', 'Ask the same caller for more proof.', 'Pause and reach your family through a saved contact or trusted person.'], why:'Urgency and secrecy make independent checking harder. Verify the situation outside the unexpected conversation before sending money.'},
+    {title:'Two reports, one source', text:'Two websites repeat the same press release about a local policy. A post calls them two independent confirmations.', best:1, choices:['Count the website addresses as independent evidence.', 'Trace the original account and what evidence each report adds.', 'Declare the policy claim false because the reports share a source.'], why:'Different websites can repeat one underlying account. That does not make the claim true or false. Trace the evidence and look for relevant independent sources.'},
+    {title:'A caption and an editable clock', text:'A reposted image says today’s storm, while an editable file field contains an older date.', best:2, choices:['Declare the caption false from the file date alone.', 'Accept the caption if location metadata is missing.', 'Find the earliest full account and compare publication and event context.'], why:'An embedded clock, publication date and event date can describe different things. Metadata can be edited or removed; neither a file date nor missing location data settles the caption.'},
+    {title:'A quotation loses a qualification', text:'One supplied version says the site may close for repairs. A repost says the site will close permanently.', best:0, choices:['Compare the exact words, then read the full source and surrounding context.', 'Prefer the shorter version because it is easier to read.', 'Decide which author is dishonest from the wording change alone.'], why:'The supplied wording differs. A literal change is something to inspect, not proof of authenticity, intent or factual meaning. Check the fuller account before interpreting the revision.'},
+    {title:'A count needs its total', text:'Group A has 20 cases among 100 people. Group B has 30 among 200. A report calls Group B’s rate higher because its count is larger.', best:1, choices:['Accept the higher rate because 30 is larger than 20.', 'Compare the proportions, then check whether the groups are comparable.', 'Conclude that being in Group B causes fewer cases.'], why:'20/100 is 20%; 30/200 is 15%. Group A’s rate is 5 percentage points higher in these supplied counts. This does not establish data quality, statistical significance, comparability or cause.'},
+    {"title":"A paid comparison without its method","text":"Constructed sponsored post: “These headphones last twice as long.” The post names no comparison model or test settings. What is the useful next check?","best":1,"choices":["Treat the claim as false because the creator was paid.","Find the comparison models, test conditions and relevant independent results.","Accept the claim because the post says sponsored."],"why":"The comparison lacks a stated baseline and test conditions. Identify which models and settings were compared; a payment label alone cannot answer that measurement question."},
+    {"title":"A selected customer quotation","text":"A constructed product page highlights one customer saying “Best value anywhere.” No price comparison or selection method is supplied. What should you check?","best":2,"choices":["Treat one enthusiastic quotation as a representative price comparison.","Decide whether the customer is genuine from the writing style alone.","Check value criteria, comparable prices and how the quoted accounts were selected."],"why":"“Best value” needs criteria: price, included features and what was compared. One selected quotation does not supply those measurements or a defined sample."}
+  ];
+  if (typeof document !== 'undefined') {
+    const get = id => document.getElementById(id), panel = get('practice');
+    let index = -1, answered = false, epoch = 0;
+    const node = (tag, text) => {const element=document.createElement(tag); element.textContent=text; return element;};
+    function show() {
+      const token=++epoch,item=cases[index]; answered=false;
+      get('practice-progress').textContent='Constructed scenario '+(index+1)+' of '+cases.length+' · practice, not a real message';
+      get('practice-title').textContent=item.title;get('practice-text').textContent=item.text;
+      get('practice-feedback').textContent='';get('practice-options').replaceChildren();get('practice-next').hidden=true;
+      for (const [choice,text] of item.choices.entries()) {
+        const button=node('button',text);button.type='button';button.setAttribute('aria-describedby','practice-text');
+        button.addEventListener('click',()=>{
+          if(token!==epoch||answered||index<0||!panel.open||get('practice-session').hidden)return;
+          answered=true;get('practice-feedback').textContent=(choice===item.best?'That is a useful next check. ':'A useful next check: '+item.choices[item.best]+' ')+item.why;
+          for(const option of get('practice-options').children)option.disabled=true;
+          get('practice-next').hidden=false;get('practice-next').textContent=index===cases.length-1?'Practice again':'Next scenario';get('practice-feedback').focus();
+        });
+        get('practice-options').append(button);
+      }
+      get('practice-title').focus();
+    }
+    function reset(){epoch++;index=-1;answered=false;get('practice-session').hidden=true;get('practice-next').hidden=true;get('practice-next').textContent='Next scenario';get('practice-options').replaceChildren();for(const id of ['practice-progress','practice-title','practice-text','practice-feedback'])get(id).textContent='';}
+    get('practice-start').addEventListener('click',()=>{if(!panel.open)return;reset();index=0;get('practice-session').hidden=false;show();});
+    get('practice-next').addEventListener('click',()=>{if(!panel.open||index<0||!answered||get('practice-session').hidden)return;index=(index+1)%cases.length;show();});
+    panel.addEventListener('toggle',()=>{if(!panel.open)reset();});
+    window.addEventListener('pagehide',reset);window.addEventListener('pageshow',event=>{if(event.persisted)reset();});reset();
+  }
+  return {cases};
+})();
+if(typeof module!=='undefined')module.exports=PocketPractice;

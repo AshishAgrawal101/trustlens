@@ -1,0 +1,22 @@
+{
+  "app/analyzers/image.py": {
+    "byte_equal_v41": true,
+    "sha256": "19ba25ed5e3b1ba331c90b9d4f2ef776336bc8da4810115998ce0bc0c6a8fe1f"
+  },
+  "app/analyzers/screenshot.py": {
+    "byte_equal_v41": true,
+    "sha256": "40c0589ac31a1a7b152185756184e2bccd5bcfb731d74657ce12e5d59adc6062"
+  },
+  "app/ocr_worker.ps1": {
+    "byte_equal_v41": true,
+    "sha256": "6a0c5574ddf38d654d206406b47afe0b508b2e57f8afad8496d7522f477f0426"
+  },
+  "app/analyzers/qr.py": {
+    "byte_equal_v41": true,
+    "sha256": "7e5205edb23f23de325d42806e73ec68c620c2cf46916f3c0a9328caad0e18a5"
+  },
+  "app/analyzers/qr_pixels.py": {
+    "byte_equal_v41": true,
+    "sha256": "b7a7df29839fb40820522c6dc104485bc59ed852f5c5032d8da4ad10986a157a"
+  }
+}

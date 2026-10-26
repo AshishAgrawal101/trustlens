@@ -1,0 +1,58 @@
+{
+  "scope": "Local request_evidence only;3 runs/shape at30000chars; no latency guarantee",
+  "maxinput": [
+    {
+      "shape": "decimal-negative",
+      "characters": 30000,
+      "samples_ms": [
+        58.71270003262907,
+        57.38380004186183,
+        52.15900007169694
+      ],
+      "median_ms": 57.38380004186183,
+      "weighted_findings": 0
+    },
+    {
+      "shape": "domain-negative",
+      "characters": 30000,
+      "samples_ms": [
+        54.30720001459122,
+        57.039699982851744,
+        53.043600055389106
+      ],
+      "median_ms": 54.30720001459122,
+      "weighted_findings": 0
+    },
+    {
+      "shape": "honorific-negative",
+      "characters": 30000,
+      "samples_ms": [
+        45.21699994802475,
+        45.08169996552169,
+        49.11669995635748
+      ],
+      "median_ms": 45.21699994802475,
+      "weighted_findings": 0
+    }
+  ],
+  "unsupported": [
+    {
+      "text": "Do not visit example.com?x=1 and install AnyDesk.",
+      "evidence_ids": [
+        "request:remote"
+      ]
+    },
+    {
+      "text": "Do not visit example.com and please install AnyDesk.",
+      "evidence_ids": [
+        "request:remote"
+      ]
+    },
+    {
+      "text": "Never ask St. John to share your password.",
+      "evidence_ids": [
+        "request:code"
+      ]
+    }
+  ]
+}

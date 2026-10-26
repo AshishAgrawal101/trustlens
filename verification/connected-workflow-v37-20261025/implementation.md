@@ -1,0 +1,11 @@
+# Four explicit separate-tab actions
+
+Changed only canonical `static/claim-review.html`, `static/quote-context.html`, `static/numbers-context.html`, `static/media-context.html`, `app/pocket_workspaces.py` and new `tests/test_connected_workflow.py`. No existing test assertion needed editing. All five relevant controllers are byte-identical (`controller-before.json`, `controller-preservation.json`); no styles/scripts/clipboard/storage/automatic transfer or opener channel were added.
+
+The existing three result-side Claim continuation links now visibly say **Open Claim & context (new tab)** and use ordinary `target="_blank" rel="noopener"` anchors. Claim has one **Open other tools (new tab)** action near its introduction using existing secondary/share-row styling. Brief adjacent guidance says no input transfers, keep the current worksheet open, return using browser tabs, and closing/reloading/leaving clears entries. Unrelated Home/Back/footer navigation remains same-tab. This provides an intentional second browsing context, not saved drafts or a guarantee against browser discard.
+
+Pocket uses the existing fixed href rewrites; one exact additional label rewrite changes the Claim action to **Open context guide (new tab)**. Claims/numbers/quotes therefore retain canonical Pocket paths and no offline desktop-directory advertisement. Media remains desktop-only. Root owns version/cache/export refresh.
+
+Tests were added before source edits: `red.txt` captures seven missing-action contract failures; `green.txt` records **40/40 Python** new/old renderer and directory tests passing. `node-markup.txt` records **19/19** related markup regressions passing, zero failures/skips. Assertions cover native fixed links, visible labels, noopener, explanatory copy, exactly one intentional new-tab action per template, ordinary nav preservation and canonical Pocket destinations/labels. Existing native-form/no-JS/private-print safeguards remain covered.
+
+Root owns actual two-tab keyboard/focus/layout and offline observations. This implementation evidence alone does not establish browser foreground-tab behavior, physical-phone use, preserved drafts after tab discard, source verification or human usability outcomes. Clear/exit privacy handlers were deliberately unchanged.

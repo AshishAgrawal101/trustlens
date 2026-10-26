@@ -1,0 +1,66 @@
+✖ exact v37 markup lacks correction button and initializes previously disabled Review with native null lookup (5.8636ms)
+✖ legacy source B custom failure preserves fields and accessible error; edit repairs with separate Review (1.4004ms)
+✖ legacy Clear and lifecycle reset complete without missing-control errors or private retained output (1.2589ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 103.0443
+
+✖ failing tests:
+
+test at tests\claim_legacy_dom.test.cjs:7:1
+✖ exact v37 markup lacks correction button and initializes previously disabled Review with native null lookup (5.8636ms)
+  evalmachine.<anonymous>:125
+    get('claim-correct-source').addEventListener('click',()=>{if(!correction||get('claim-correct-source').hidden||get('claim-error').hidden)return;get('claim-sources').open=true;get(correction.id).focus();});
+                               ^
+  
+  TypeError: Cannot read properties of null (reading 'addEventListener')
+      at evalmachine.<anonymous>:125:30
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at setup (evalmachine.<anonymous>:53:70)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_legacy_dom.test.cjs:7:420)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at tests\claim_legacy_dom.test.cjs:8:1
+✖ legacy source B custom failure preserves fields and accessible error; edit repairs with separate Review (1.4004ms)
+  evalmachine.<anonymous>:125
+    get('claim-correct-source').addEventListener('click',()=>{if(!correction||get('claim-correct-source').hidden||get('claim-error').hidden)return;get('claim-sources').open=true;get(correction.id).focus();});
+                               ^
+  
+  TypeError: Cannot read properties of null (reading 'addEventListener')
+      at evalmachine.<anonymous>:125:30
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at setup (evalmachine.<anonymous>:53:70)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_legacy_dom.test.cjs:8:130)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+
+test at tests\claim_legacy_dom.test.cjs:9:1
+✖ legacy Clear and lifecycle reset complete without missing-control errors or private retained output (1.2589ms)
+  evalmachine.<anonymous>:125
+    get('claim-correct-source').addEventListener('click',()=>{if(!correction||get('claim-correct-source').hidden||get('claim-error').hidden)return;get('claim-sources').open=true;get(correction.id).focus();});
+                               ^
+  
+  TypeError: Cannot read properties of null (reading 'addEventListener')
+      at evalmachine.<anonymous>:125:30
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at setup (evalmachine.<anonymous>:53:70)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_legacy_dom.test.cjs:9:179)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)

@@ -1,0 +1,54 @@
+{
+  "scope": "Four predeclared constructed browser URL checks after fresh server restart. No destination is visited; no population or exploit claim.",
+  "viewport": 320,
+  "rows": [
+    {
+      "id": "plain-control",
+      "clientWidth": 305,
+      "error": "",
+      "errorHidden": true,
+      "evidence": "Observed factsObserved / verifiedThe address points to this hostexample.orgParsed address, not a live reputation checkObserved / verifiedExact hostname matches your referenceChecked host: example.org. Reference host: example.org. Exact spelling comparison only; sender and safety remain unverified. Legitimate subdomains can differ.Local comparison with a user-supplied reference; ownership not verified",
+      "focus": "verdict",
+      "input": "https://example.org/path?demo=1",
+      "reference": "example.org",
+      "resultHidden": false,
+      "scrollWidth": 305
+    },
+    {
+      "id": "tab-only-reference",
+      "clientWidth": 305,
+      "error": "Enter a known HTTP(S) website without login details or text before @.",
+      "errorHidden": false,
+      "evidence": "",
+      "focus": "error",
+      "input": "https://example.org/",
+      "reference": "\t",
+      "resultHidden": true,
+      "scrollWidth": 305
+    },
+    {
+      "id": "space-only-reference",
+      "clientWidth": 305,
+      "error": "",
+      "errorHidden": true,
+      "evidence": "Observed factsObserved / verifiedThe address points to this hostexample.orgParsed address, not a live reputation check",
+      "focus": "verdict",
+      "input": "https://example.org/",
+      "reference": "   ",
+      "resultHidden": false,
+      "scrollWidth": 305
+    },
+    {
+      "id": "leading-bom",
+      "clientWidth": 305,
+      "error": "Enter an address without hidden control or formatting characters.",
+      "errorHidden": false,
+      "evidence": "",
+      "focus": "error",
+      "input": "﻿https://example.org/path?demo=1",
+      "reference": "",
+      "resultHidden": true,
+      "scrollWidth": 305
+    }
+  ]
+}

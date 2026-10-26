@@ -1,0 +1,17 @@
+# Claim worksheet input audit
+
+Read-only independent audit, 2026-10-23. Small constructed strings only; no images, model work, large files, URLs visited or app edits. Root is concurrently adding user-supplied evidence roles, so this review does not treat temporarily unmatched role markup/controller revisions as a finding.
+
+## Findings
+
+1. **Address spelling is silently repaired before acceptance.** In the audited `ClaimReview.analyze`, `https:example.org/story`, `https:/example.org/story` and `https:///example.org/story` all pass and become the parsed hostname `example.org`. Node's actual WHATWG URL canonicalizes all three to `https://example.org/story`. This is independent of the old unsafe-scheme/credential test cases. The worksheet asks for a complete HTTP(S) address and otherwise produces a validation error, yet these malformed authority forms produce source-count/hostname observations. No request is sent and this is not an SSRF or truth-verdict finding. Recommend a literal, complete authority prefix guard before URL parsing, preserving valid IPv6/ports/Unicode host handling; test all three repaired forms. Native input type=url may also use browser URL validity, so helper rejection should establish the contract consistently.
+
+2. **Quotation equality wording overstates raw equality.** Input `aQuote: ' Quote '` and `bQuote: 'Quote'` produces “identical as entered,” because all fields are trimmed before equality. The actual raw entries differ. Recommend “identical after trimming surrounding whitespace,” or explicitly compare raw fields if literal equality is intended. This finding does not imply semantic comparison should be added: case, internal spacing, punctuation, quotation marks, Unicode normalization and factual meaning remain unchecked. The existing explicit non-corroboration caveat is appropriate.
+
+## Date and privacy boundaries
+
+Leap-day and month-overflow validation uses an ISO round-trip, preventing Date.parse rollover from admitting 1900-02-29 or 2026-02-30. 2000-02-29 is valid. A publication date equal to local today is not future; tomorrow receives a qualified future-date question without declaring the claim false. Year0000 is accepted by the pure helper's four-digit proleptic calendar, although native date inputs use their own constraints; this is a low practical domain mismatch, not demonstrated privacy or correctness harm. Dates are publication labels, not inferred event dates.
+
+The controller reads local calendar components, avoiding UTC-midnight conversion for today's date. No automatic date timer exists; a new explicit submit recomputes today. Clipboard timeout and stale generation checks prevent delayed completion from restoring cleared status. Download revocation uses a bounded one-second timer and fixed input-free plan. Clear/pagehide/persisted pageshow erase field values/results; input changes invalidate exports. Fixed result text and errors do not echo private claim/URL/quote values, and list rendering uses textContent. No network, storage or source-opening behavior was observed in these paths.
+
+Existing focused claim helper/controller/markup/contract tests were run; results are in the task output. These are Node helpers/minimal DOM doubles, not an actual-browser, device, clipboard-permission or OS-history guarantee. The audit does not certify factual claims, source independence, current website content or detector accuracy.

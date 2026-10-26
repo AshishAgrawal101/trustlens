@@ -1,0 +1,91 @@
+{
+  "scope": "16 concurrent local constructed text checks, not a load capacity/SLA or accuracy study. No files, models or external destination requests.",
+  "origin": "http://127.0.0.1:8766",
+  "cases": [
+    {
+      "id": "CASE-TL-0000",
+      "characters": 30000,
+      "sha256": "f40ec1620fd7bc8aa876aa3f79083b0fc84425cb9596a8bf1d8ba9614873333e"
+    },
+    {
+      "id": "CASE-TL-0001",
+      "characters": 30000,
+      "sha256": "29d4f1eaeaa01049d3e0993de8f797cae6f152da597958ddec583a186d68b59a"
+    },
+    {
+      "id": "CASE-TL-0002",
+      "characters": 30000,
+      "sha256": "81585aed4c4c782a6f07b08c28d67653d2ae6588d29ba323e36336de27e82167"
+    },
+    {
+      "id": "CASE-TL-0003",
+      "characters": 30000,
+      "sha256": "aa5bf5477e166445219d6ceda8aede24e760fecd4bd4128bae0c1468125b2479"
+    },
+    {
+      "id": "CASE-TL-0004",
+      "characters": 30000,
+      "sha256": "a2d2a3c8e878d0c426c595abb03d820ddb088a2beab921f9df79367dec7db91b"
+    },
+    {
+      "id": "CASE-TL-0005",
+      "characters": 30000,
+      "sha256": "2fde1951831bf85e95d72661491532d2ae3cfb6fdba583870b96c4b66e138152"
+    },
+    {
+      "id": "CASE-TL-0006",
+      "characters": 30000,
+      "sha256": "7745e71bd4bba8f37c7417bee143168acac50b6ac6b19b4a0033aaf06a663f7a"
+    },
+    {
+      "id": "CASE-TL-0007",
+      "characters": 30000,
+      "sha256": "26c9e658a2707bc82c6ae9e2a9062406f556370a734e6d18a2907379e58c0481"
+    },
+    {
+      "id": "CASE-TL-0008",
+      "characters": 30000,
+      "sha256": "b7ea5177ed985de48b0501702800a15cb5459c47b2b1f476d718e20579afbdc4"
+    },
+    {
+      "id": "CASE-TL-0009",
+      "characters": 30000,
+      "sha256": "cf19e8e57523bf18676a87977fd9994a31aaeea986993cc4aab0a8a55edece8f"
+    },
+    {
+      "id": "CASE-TL-0010",
+      "characters": 30000,
+      "sha256": "7fed18bd017ec1152faadacd68eab1e381f885224026efe28181380c964dda61"
+    },
+    {
+      "id": "CASE-TL-0011",
+      "characters": 30000,
+      "sha256": "903e8e50bf556cc6128cf7c48db2557e04e178162bb4b2ed6206dcf67d090718"
+    },
+    {
+      "id": "CASE-TL-0012",
+      "characters": 30000,
+      "sha256": "0ec1da180247dae558f8239c81407588939b5c20c9335ace821a5be875c7f11d"
+    },
+    {
+      "id": "CASE-TL-0013",
+      "characters": 30000,
+      "sha256": "925cdf82ea4af3c1caf78516bd1fc53da5869010df8aeb729b780ecc467c92b0"
+    },
+    {
+      "id": "CASE-TL-0014",
+      "characters": 30000,
+      "sha256": "7b8c8bf0f1b7cc8d7f3495c86cf410c77ecaac9d77c124153bb82210f86351eb"
+    },
+    {
+      "id": "CASE-TL-0015",
+      "characters": 30000,
+      "sha256": "d1c5d7802682a0a879b5a9c145b771d858be2d8f4787d99b62b8f4851274b1a5"
+    }
+  ],
+  "expected": [
+    "own marker in quoted evidence; no other case marker",
+    "risk_index null/model_ran false",
+    "security-code warning and input-free fixed summary"
+  ]
+}

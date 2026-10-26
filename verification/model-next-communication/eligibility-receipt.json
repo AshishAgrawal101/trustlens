@@ -1,0 +1,66 @@
+{
+  "source": "..\\neighborhood_hacks_20261021\\artifacts\\sprint48\\session-calibration-null.json",
+  "sha256": "bec5343fd6d64ab2e039f164edf506ceb0725e2442995f4a36b86db77ce719d3",
+  "decision": "retain_null_no_production_integration_no_development_run",
+  "calibration_passages": 16,
+  "best_correct_covered_of14": 1,
+  "required_correct_covered": 8,
+  "development_scored": false,
+  "operating_points": [
+    {
+      "point": [
+        0.75,
+        0.15
+      ],
+      "correct_covered": 1,
+      "wrong_confident": 0,
+      "uncertain_abstained": 2
+    },
+    {
+      "point": [
+        0.75,
+        0.25
+      ],
+      "correct_covered": 1,
+      "wrong_confident": 0,
+      "uncertain_abstained": 2
+    },
+    {
+      "point": [
+        0.85,
+        0.15
+      ],
+      "correct_covered": 1,
+      "wrong_confident": 0,
+      "uncertain_abstained": 2
+    },
+    {
+      "point": [
+        0.85,
+        0.25
+      ],
+      "correct_covered": 1,
+      "wrong_confident": 0,
+      "uncertain_abstained": 2
+    },
+    {
+      "point": [
+        0.95,
+        0.15
+      ],
+      "correct_covered": 0,
+      "wrong_confident": 0,
+      "uncertain_abstained": 2
+    },
+    {
+      "point": [
+        0.95,
+        0.25
+      ],
+      "correct_covered": 0,
+      "wrong_confident": 0,
+      "uncertain_abstained": 2
+    }
+  ],
+  "new_inference": false
+}

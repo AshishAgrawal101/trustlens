@@ -1,0 +1,114 @@
+{
+  "label": "Post-fix new parser regressions; not a fresh model evaluation",
+  "source_sha256": "ff1e610d2d8d95fde3160544c68a865cdbe44a340878e99c48891cee2362c0a7",
+  "contract_sha256": "e76d58b3fa0c010033c1b7da6a223638c243e9ca38c78891d02e16d478c3fda2",
+  "rows": [
+    {
+      "id": "direct-word",
+      "expected_ids": [
+        "request:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "direct-verb",
+      "expected_ids": [
+        "request:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "negative-word",
+      "expected_ids": [],
+      "actual_ids": []
+    },
+    {
+      "id": "negative-verb",
+      "expected_ids": [],
+      "actual_ids": []
+    },
+    {
+      "id": "ordinary-source",
+      "expected_ids": [],
+      "actual_ids": []
+    },
+    {
+      "id": "history",
+      "expected_ids": [
+        "context:code"
+      ],
+      "actual_ids": [
+        "context:code"
+      ]
+    },
+    {
+      "id": "conditional",
+      "expected_ids": [
+        "context:code"
+      ],
+      "actual_ids": [
+        "context:code"
+      ]
+    },
+    {
+      "id": "independent-live",
+      "expected_ids": [
+        "request:remote"
+      ],
+      "actual_ids": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "unicode-boundary",
+      "expected_ids": [],
+      "actual_ids": []
+    },
+    {
+      "id": "newline-stays",
+      "expected_ids": [],
+      "actual_ids": []
+    },
+    {
+      "id": "leading-soft",
+      "expected_ids": [
+        "request:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "trailing-soft",
+      "expected_ids": [
+        "request:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "punctuation-soft",
+      "expected_ids": [
+        "request:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "repeated-soft",
+      "expected_ids": [],
+      "actual_ids": []
+    },
+    {
+      "id": "literal-url",
+      "expected_ids": [],
+      "actual_ids": []
+    }
+  ]
+}

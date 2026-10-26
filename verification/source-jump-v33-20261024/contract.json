@@ -1,0 +1,10 @@
+{
+  "pureSHA256": "bd1691a2a781b0dbf3656b92695536171c3e0adca0dc7bf8e301111b224ff606",
+  "acceptance": [
+    "11 matches last ordinal11 then first1-5",
+    "30000 last page5999, Previous and Next exact",
+    "reset disables four buttons and stale clicks inert",
+    "zero/short hidden disabled; formatting notice unchanged on navigation",
+    "no input mutation or I/O"
+  ]
+}

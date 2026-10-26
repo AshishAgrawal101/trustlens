@@ -1,0 +1,123 @@
+.FFFFFF............FF........                                            [100%]
+================================== FAILURES ===================================
+_ test_header_free_paste_preserves_unicode_and_supported_wording[nbsp-advice] _
+
+case = {'id': 'nbsp-advice', 'text': 'You must\xa0not share your password.', 'expected_weighted_ids': []}
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    def test_header_free_paste_preserves_unicode_and_supported_wording(case):
+        parsed=Parser(policy=policy.default).parsestr(case['text']);assert not parsed.keys()
+        report=analyze_email(case['text'])
+>       assert weighted(report)==case['expected_weighted_ids']
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_email_decoded_paste.py:26: AssertionError
+_ test_header_free_paste_preserves_unicode_and_supported_wording[shy-request] _
+
+case = {'id': 'shy-request', 'text': 'Send me your verifi\xadcation code.', 'expected_weighted_ids': ['request:code']}
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    def test_header_free_paste_preserves_unicode_and_supported_wording(case):
+        parsed=Parser(policy=policy.default).parsestr(case['text']);assert not parsed.keys()
+        report=analyze_email(case['text'])
+>       assert weighted(report)==case['expected_weighted_ids']
+E       AssertionError: assert [] == ['request:code']
+E         
+E         Right contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_email_decoded_paste.py:26: AssertionError
+_ test_header_free_paste_preserves_unicode_and_supported_wording[ordinary-unicode] _
+
+case = {'id': 'ordinary-unicode', 'text': 'Réunion au café à six heures.', 'expected_weighted_ids': []}
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    def test_header_free_paste_preserves_unicode_and_supported_wording(case):
+        parsed=Parser(policy=policy.default).parsestr(case['text']);assert not parsed.keys()
+        report=analyze_email(case['text'])
+        assert weighted(report)==case['expected_weighted_ids']
+>       assert not incomplete(report)
+E       AssertionError: assert not True
+E        +  where True = incomplete(AnalysisReport(kind='email', risk_index=None, risk_level='guarded', confidence='low', summary='This email could not be... a request is safe.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary=''))
+
+tests\test_email_decoded_paste.py:27: AssertionError
+_ test_header_free_paste_preserves_unicode_and_supported_wording[later-colon] _
+
+case = {'id': 'later-colon', 'text': 'Hello\nSubject: Send me your verifi\xadcation code.', 'expected_weighted_ids': ['request:code']}
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    def test_header_free_paste_preserves_unicode_and_supported_wording(case):
+        parsed=Parser(policy=policy.default).parsestr(case['text']);assert not parsed.keys()
+        report=analyze_email(case['text'])
+>       assert weighted(report)==case['expected_weighted_ids']
+E       AssertionError: assert [] == ['request:code']
+E         
+E         Right contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_email_decoded_paste.py:26: AssertionError
+_ test_header_free_paste_preserves_unicode_and_supported_wording[leading-blank] _
+
+case = {'id': 'leading-blank', 'text': '\nYou must\xa0not share your password.', 'expected_weighted_ids': []}
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    def test_header_free_paste_preserves_unicode_and_supported_wording(case):
+        parsed=Parser(policy=policy.default).parsestr(case['text']);assert not parsed.keys()
+        report=analyze_email(case['text'])
+>       assert weighted(report)==case['expected_weighted_ids']
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_email_decoded_paste.py:26: AssertionError
+_ test_header_free_paste_preserves_unicode_and_supported_wording[colon-invalid-header] _
+
+case = {'id': 'colon-invalid-header', 'text': ': Send me your verifi\xadcation code.', 'expected_weighted_ids': ['request:code']}
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    def test_header_free_paste_preserves_unicode_and_supported_wording(case):
+        parsed=Parser(policy=policy.default).parsestr(case['text']);assert not parsed.keys()
+        report=analyze_email(case['text'])
+>       assert weighted(report)==case['expected_weighted_ids']
+E       AssertionError: assert [] == ['request:code']
+E         
+E         Right contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_email_decoded_paste.py:26: AssertionError
+_ test_lone_surrogate_paste_rejects_without_echo_or_silent_sanitization[\ud800] _
+
+surrogate = '\ud800'
+
+    @pytest.mark.parametrize('surrogate',['\ud800','\udfff'])
+    def test_lone_surrogate_paste_rejects_without_echo_or_silent_sanitization(surrogate):
+>       with pytest.raises(ValueError) as error:analyze_email('PRIVATE '+surrogate+' Send me your password.')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests\test_email_decoded_paste.py:60: Failed
+_ test_lone_surrogate_paste_rejects_without_echo_or_silent_sanitization[\udfff] _
+
+surrogate = '\udfff'
+
+    @pytest.mark.parametrize('surrogate',['\ud800','\udfff'])
+    def test_lone_surrogate_paste_rejects_without_echo_or_silent_sanitization(surrogate):
+>       with pytest.raises(ValueError) as error:analyze_email('PRIVATE '+surrogate+' Send me your password.')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests\test_email_decoded_paste.py:60: Failed
+=========================== short test summary info ===========================
+FAILED tests/test_email_decoded_paste.py::test_header_free_paste_preserves_unicode_and_supported_wording[nbsp-advice]
+FAILED tests/test_email_decoded_paste.py::test_header_free_paste_preserves_unicode_and_supported_wording[shy-request]
+FAILED tests/test_email_decoded_paste.py::test_header_free_paste_preserves_unicode_and_supported_wording[ordinary-unicode]
+FAILED tests/test_email_decoded_paste.py::test_header_free_paste_preserves_unicode_and_supported_wording[later-colon]
+FAILED tests/test_email_decoded_paste.py::test_header_free_paste_preserves_unicode_and_supported_wording[leading-blank]
+FAILED tests/test_email_decoded_paste.py::test_header_free_paste_preserves_unicode_and_supported_wording[colon-invalid-header]
+FAILED tests/test_email_decoded_paste.py::test_lone_surrogate_paste_rejects_without_echo_or_silent_sanitization[\ud800]
+FAILED tests/test_email_decoded_paste.py::test_lone_surrogate_paste_rejects_without_echo_or_silent_sanitization[\udfff]
+8 failed, 21 passed in 0.41s

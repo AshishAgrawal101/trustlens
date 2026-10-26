@@ -1,0 +1,1 @@
+{"scope":"Read-only cross-tool keyboard/native validation/privacy review","probes":["context-page required form validity vs stale outputs","Pocket rendered workspaces preserve local native validation and assets","result focus/invalid error focus target semantics","literal private inputs absent from network/storage/export unless explicitly supported"]}

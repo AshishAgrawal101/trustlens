@@ -1,0 +1,266 @@
+{
+  "purpose": "Post-fix focused regression replay only; old diagnostic before-results unchanged",
+  "guidance_sha256": "aebbf3085f1ba887ea3584f1b09754e31ce2b252e8287f6fad9e10f5ca912122",
+  "rows": [
+    {
+      "id": "matched-code",
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:payment",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Payment request to verify",
+            "detail": "Matched wording: \u201cSend $50\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "request:overpayment",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to return an excess payment",
+            "detail": "Matched wording: \u201cReturn the overpayment\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Pause the payment",
+            "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Do not return the difference yet",
+            "detail": "An available check balance does not establish that the check is genuine. Ask your bank to review the situation before sending money back."
+          },
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n3 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nPause the payment\nPause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message.\n\nDo not return the difference yet\nAn available check balance does not establish that the check is genuine. Ask your bank to review the situation before sending money back.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "matched-remote",
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:payment",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Payment request to verify",
+            "detail": "Matched wording: \u201cSend $50\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "request:overpayment",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to return an excess payment",
+            "detail": "Matched wording: \u201cReturn the overpayment\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "request:remote",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request for remote access",
+            "detail": "Matched wording: \u201cInstall TeamViewer\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Pause the payment",
+            "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Do not return the difference yet",
+            "detail": "An available check balance does not establish that the check is genuine. Ask your bank to review the situation before sending money back."
+          },
+          {
+            "title": "Keep control of your device",
+            "detail": "Do not install or enable remote access for an unexpected caller. Contact support through a known official route."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n3 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nPause the payment\nPause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message.\n\nDo not return the difference yet\nAn available check balance does not establish that the check is genuine. Ask your bank to review the situation before sending money back.\n\nKeep control of your device\nDo not install or enable remote access for an unexpected caller. Contact support through a known official route.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "matched-personal",
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:payment",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Payment request to verify",
+            "detail": "Matched wording: \u201cSend $50\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "request:overpayment",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to return an excess payment",
+            "detail": "Matched wording: \u201cReturn the overpayment\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "request:personal",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request for sensitive personal details",
+            "detail": "Matched wording: \u201cSend your card number\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Pause the payment",
+            "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Do not return the difference yet",
+            "detail": "An available check balance does not establish that the check is genuine. Ask your bank to review the situation before sending money back."
+          },
+          {
+            "title": "Hold back sensitive details",
+            "detail": "Confirm the organization and why the information is needed through a separate trusted route before sharing it."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n3 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nPause the payment\nPause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message.\n\nDo not return the difference yet\nAn available check balance does not establish that the check is genuine. Ask your bank to review the situation before sending money back.\n\nHold back sensitive details\nConfirm the organization and why the information is needed through a separate trusted route before sharing it.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "matched-secrecy",
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:payment",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Payment request to verify",
+            "detail": "Matched wording: \u201cSend $50\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "request:overpayment",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to return an excess payment",
+            "detail": "Matched wording: \u201cReturn the overpayment\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          },
+          {
+            "id": "request:secrecy",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to keep this secret",
+            "detail": "Matched wording: \u201cDo not tell your family\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Pause the payment",
+            "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+          },
+          {
+            "title": "Do not return the difference yet",
+            "detail": "An available check balance does not establish that the check is genuine. Ask your bank to review the situation before sending money back."
+          },
+          {
+            "title": "Bring in someone you trust",
+            "detail": "Pause the conversation and talk privately with a trusted person. A request to hide a payment or account problem deserves independent checking."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n3 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nPause the payment\nPause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message.\n\nDo not return the difference yet\nAn available check balance does not establish that the check is genuine. Ask your bank to review the situation before sending money back.\n\nBring in someone you trust\nPause the conversation and talk privately with a trusted person. A request to hide a payment or account problem deserves independent checking.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    }
+  ]
+}

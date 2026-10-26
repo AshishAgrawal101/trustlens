@@ -1,0 +1,17 @@
+{
+  "planCount": [
+    1,
+    4
+  ],
+  "id": "nonblank ASCII identifier <=32, unique",
+  "labelMax": 80,
+  "titleMax": 160,
+  "stepCount": [
+    1,
+    8
+  ],
+  "stepMax": 1000,
+  "cacheAdmission": "whole response valid AND current token/open dialog",
+  "noPartialRenderOrSelection": true,
+  "preserveFixedErrorAndFTC": true
+}

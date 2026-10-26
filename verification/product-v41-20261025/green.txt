@@ -1,0 +1,43 @@
+✔ ordinary pageshow preserves the draft and report; persisted Back clears all private output (26.5005ms)
+✔ page exit revokes previews and clears file inputs, OCR review and filenames (5.1822ms)
+✔ page exit aborts a pending content check and late results cannot return on Back (4.0832ms)
+✔ page exit erases recovery selection and prevents delayed checklist loading from reopening it (6.9445ms)
+✔ main clipboard prompt times out with download fallback and late completion cannot label a new report (3.5073ms)
+✔ recovery clipboard timeout offers text fallback; reselecting the same plan invalidates old status (4.2526ms)
+✔ page exit invalidates both pending clipboard statuses (2.9469ms)
+✔ manual guidance is communication-only and requires explicit topics and submit (8.9826ms)
+✔ all four user-selected topics render fixed steps without changing report or detected evidence (3.304ms)
+✔ manual copy and download export the exact fixed summary separately from original exports (4.0271ms)
+✔ manual topic edits invalidate pending copy and require rebuilding selected steps (3.4601ms)
+✔ manual clipboard timeout is actionable and source edits/mode/page exit erase selected guidance (28.5892ms)
+✔ manual markup identifies user choice, separates exports, and loads the shared local guide first (0.5459ms)
+✔ missing shared guide fails honestly without breaking the original report or exports (5.4835ms)
+✔ screenshot requires a separate reviewed-text submission and clears safely (27.2203ms)
+✔ blank OCR invites manual text and editing requires review again (3.008ms)
+✔ response after Clear cannot repopulate private content or results (3.0722ms)
+✔ failed requests and explicit timeout recover controls (2.9439ms)
+✔ clipboard denial is actionable and copies only report summary (3.7192ms)
+✔ recovery is available without analysis and exports a fixed checklist (2.6352ms)
+✔ invalid image selection clears the preview and reports its limit (2.8259ms)
+✔ demo choices change mode but never submit without Check (3.146ms)
+✔ results distinguish concerns, observations and unknowns without hiding evidence (2.4873ms)
+✔ Clear erases private result nodes as well as input, and disables stale exports (2.354ms)
+✔ download contains only the safe summary and releases its temporary URL (3.1454ms)
+✔ reselecting the active mode preserves drafts, results and active requests (2.4704ms)
+✔ reselecting Screenshot preserves corrected text and its review state (2.5724ms)
+✔ same-mode demo replacement clears results and rejects the earlier response (2.7656ms)
+✔ preview cleanup erases filenames on Clear, mode changes and invalid replacement (2.7232ms)
+✔ image heading distinguishes unavailable checks from usable partial results (2.6385ms)
+✔ incomplete email is explicit while retaining detected warnings and actions (2.0319ms)
+✔ malformed successful responses never cache/render/enable copying and corrected reopen actually retries (36.826ms)
+✔ response admission bounds every record and never displays a valid prefix of an invalid list (11.7105ms)
+✔ valid plans cache once; fixed clipboard summary remains separate from input and normal close resets selection (1.9953ms)
+✔ closed or exited stale response cannot seed cache; reopened dialog fetches current plans (23.9676ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 191.2333

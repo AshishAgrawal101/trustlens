@@ -1,0 +1,21 @@
+{
+  "before": {
+    "values": [
+      "20",
+      "100",
+      "30",
+      "200"
+    ],
+    "resultVisible": true
+  },
+  "afterOrdinaryMethodRoundTrip": {
+    "values": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "resultVisible": false
+  },
+  "requests": 0
+}

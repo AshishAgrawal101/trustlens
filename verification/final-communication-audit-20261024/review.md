@@ -1,0 +1,20 @@
+# Final communication/action scope audit
+
+Read-only review, 24 October 2026. Inspected current README, v32 checkpoint, submission/EVALUATION.md, current iPhone instructions, public-excerpt report/static transparency page, NLI/model comparison null report, v31/v32 authored-regression closure and retained native OCR layout reports. No app/test changes, new inference, external source visit, frozen-diagnostic rerun or old final access.
+
+## One actionable documentation mismatch
+
+Low severity: README.md Verify paragraph labels docs/EVIDENCE-V11-20261023.md “the current handoff” and directs readers there for verified results and remaining checks. The same README header correctly identifies docs/ENDORSEMENT-CONTEXT-V32-20261024.md as current. Trigger: a reviewer following Verify reaches historical v11 evidence and may mistake its totals/remaining checks for the present release. Smallest fix: point that Verify link to the existing v32 checkpoint, or explicitly call v11 historical. No runtime/security implication established. Older notes inside README's explicitly historical disclosure are not this finding.
+
+## Evidence distinctions checked
+
+- v32 checkpoint explicitly calls its eight authored probes examined development evidence: 4 to 6 expected outcomes after the selected correction, other six full reports unchanged across four modes; reported-pressure and nonadjacent negative-urgency false warnings remain. This is not described as independent validation or accuracy. The 24 new tests are implementation regressions, not 24 new real scams.
+- Public diagnostic report freezes seven exact excerpts, identifies four official educational illustrations and three advice/policy statements, excludes victim logs, distinguishes the ambiguous fragment, and retains two warning-label misses. Three warning excerpts produce one concern and two misses; three advice excerpts produce none. It ran request_evidence only, not end-to-end actions/email/URL review. Static transparency page retains those distinctions. No spam-equals-fraud or corpus-license claim found.
+- Native OCR/C2PA test counts are described as constructed software/cryptographic fixture checks. Optional native execution is opt-in in Verify; Node doubles and actual browser observations are distinguished. Historical image binary accuracy is separated from current inconclusive-policy useful-answer rates and rejected candidates. NLI calibration abstention/null is preserved, development remains unscored, and zero wrong-confident outputs is explicitly not general safety.
+- iPhone instructions explicitly state physical installation/Messages sharing/clipboard prompts are untested, reachable HTTPS is required, desktop loopback is not reachable from the phone, and no automatic SMS read/native sharing support is promised. Current v32 offline observations identify desktop browser evidence rather than physical-phone testing.
+- Native OCR wrapped-request miss remains honestly retained: recognition can be exact while a verb/object split across lines yields no wording warning. Review/correction does not guarantee repair; hard-separator closure explicitly leaves continuation grammar unresolved. No new remediation claim was found.
+- Current action scope remains protective English wording/address guidance rather than sender, factual-truth, transaction-safety, recovery or general scam determination. Fixed exports omit supplied wording/addresses; scope correction now includes fixed English-rule notice for text/call/email. No new action-displacement/runtime failure was established by this documentation inspection.
+
+## Conclusion and limits
+
+No new substantive misinformation, false-assurance claim or runtime defect beyond already retained nulls was demonstrated. The stale Verify handoff is the sole concrete cleanup recommendation. This audit is source/document review, not a new full test run, independent population evaluation, assistive-technology assessment, source authenticity check or real-device test. Historical diagnostic records and unsupported contexts remain unchanged.

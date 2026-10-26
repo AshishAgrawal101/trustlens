@@ -1,0 +1,34 @@
+{
+  "pipeline": "clip_community_v1",
+  "threshold": 0.35,
+  "clip_weight": 0.5,
+  "classifier_sha256": "3b23eb9e67933115136ba62e3bc445ead3165c0587416dc772e716211b791ed8",
+  "clip_weights_sha256": "9ce2e8a8ebfff3793d7d375ad6d3c35cb9aebf3de7ace0fc7308accab7cd207e",
+  "community_weights_sha256": "b89f36275f3bf5e2b040eee36597a8f19db051bff9a473a9cf7b2466284fb387",
+  "community_revision": "6076002bf0d9dd37537f965ee2f06f826c333b61",
+  "evaluation": {
+    "n": 670,
+    "accuracy": 0.9507462686567164,
+    "balanced_accuracy": 0.9506879098944967,
+    "auc": 0.9905100513259196,
+    "false_positive_rate": 0.0688622754491018,
+    "ai_recall": 0.9702380952380952,
+    "tn": 311,
+    "fp": 23,
+    "fn": 10,
+    "tp": 326,
+    "accuracy_wilson_95_interval": [
+      0.9316369725040858,
+      0.9647163048040137
+    ]
+  },
+  "calibration_images": 336,
+  "evaluation_report": "experiments/results/external_cf1006/test_results.json",
+  "frozen_experiment_sha256": "7f0f879ea96f87536f52ccf3249ba6da7ea8abe5e500a8b6beb2093d748fce37",
+  "fit_on_test_images": false,
+  "generator_disjoint": false,
+  "score_is_not_probability": true,
+  "monkey_used_for_release_acceptance": true,
+  "monkey_excluded_from_classifier_fitting": true,
+  "monkey_excluded_from_reported_test_accuracy": true
+}

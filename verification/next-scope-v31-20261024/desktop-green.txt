@@ -1,0 +1,19 @@
+✔ focused launcher is disabled in markup then enabled after setup; cases remain byte-identical (18.7045ms)
+✔ two exact cases, reviewed progress, completion and scoped missed retry (2.3124ms)
+✔ replacement invalidates old answer callbacks; explicit restart all restores ten (1.0765ms)
+✔ close/reopen and exit/Back clear focused session without lifecycle focus theft (2.828ms)
+✔ ten bounded constructed cases retain three existing situations and cover context habits (1.0053ms)
+✔ answer locks, feedback focus and reviewed progress survive duplicate and stale activations (2.1875ms)
+✔ completion is reviewed count not accuracy; retry selects only missed cases then restart resets all (1.3812ms)
+✔ all-best run has no retry prompt and reopening never restores a prior answer (1.1384ms)
+✔ explicit close restores opener; page exit and Back reset without manually stealing focus (2.8599ms)
+✔ module and controller never access checker input, fetch, persistence or export APIs (0.3643ms)
+✔ initially disabled launcher is enabled only after controller setup and answers reference the scenario (7.6787ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 119.9848

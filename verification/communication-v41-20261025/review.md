@@ -1,0 +1,13 @@
+# v41 first-run / wire-failure audit: no justified new defect
+
+Read-only current source; no source/test/model/frozen changes or externalcontent. Inspected launcher configuration/listener announcement, cheap capabilities, shared request validation/privacy middleware, upload closure/limits and optional extraction error mappings. Earlier CTE, rawURL, surrogate extraction and label-display findings reviewed to avoid re-reporting fixes.
+
+Six small wire cases frozen beforeexecution SHAaae98d15be7374858c1c0697cd9e568f403569fd45200b5f1c7a7f5605ff02bf. Actual in-process ASGI with exceptions converted to responses, no native processing: lone-surrogate text/email, wrong URLfieldshape, malformedJSON,1100nestedJSON all422fixed generic errors; ordinary appointment text200 with no-safety/Englishrules limits. No500 or private-marker error reflection. Fullbeforeoutputs retained. This is software boundary evidence, not a new representative communication evaluation.
+
+Health/capabilities both200. Health declares server liveness only. Capability output explicitly reports configuration, not readiness/accuracy/fileverification; OCR Englishavailability and QR decoding deferred until requested, image integrity/loading/inference not promised. Optional imageabsence says message/linkchecks stillwork. No model loaded by the configuration call. Current environment results retained separately, not proof of recipient-machine availability.
+
+File handlers read boundedbytes and close UploadFile in finally before analysis; invalidimages and optional OCR/QR/media failures map fixed400/503. Existing extraction-worker transport tests cover nativefailure categories; none repeated or inferred from a fakefresh modelattempt. Local listener startup opens only after actualserver.started, and notes alternateport rather than opening an occupied oldapp. No new stale readiness/success path was found through sourceinspection.
+
+No concrete new correctness regression or missingcoverage demonstrated. Extremely malformed optional configuration files could fail launcher startup, but this slice did not reproduce an ordinarily permitted configuration failure and does not promote hypothetical config exceptions into a finding. Deliberate cheap package/asset presence checks may not prove imports; their copy already says so. No arbitrary rule/policy patch is recommended.
+
+Limits: no physicalphone/cleanmachine install/browser/native inference/resource stress test; no proof allmalformed MIME/JSON cases work. Six authored outcomes are narrow contract checks, not populationaccuracy. Historical failures/nulls remain unchanged. Root may prioritize independently reproduced work elsewhere rather than inflate this null audit into a feature.

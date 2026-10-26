@@ -1,0 +1,153 @@
+{
+  "cache": "trustlens-pocket-v30",
+  "shell_paths": 29,
+  "all_http200_hash_matched": true,
+  "all_manifest_files": 31,
+  "rows": [
+    {
+      "url": "/phone/",
+      "status": 200,
+      "sha256": "3f94acf8abf2e2c13d8a8eefda5c5442d01cdc605b8aff0bbdbd3a2dd951de28"
+    },
+    {
+      "url": "/phone/phone.css",
+      "status": 200,
+      "sha256": "4fbc4fb11bba6f41d5b5becc09487b647955dd72c618e99b6367c5fb9e63457b"
+    },
+    {
+      "url": "/phone/guide.js",
+      "status": 200,
+      "sha256": "c63d16fdd33179199e826daa20947592cf343286401d90baf87aa444ff2b2208"
+    },
+    {
+      "url": "/phone/phone.js",
+      "status": 200,
+      "sha256": "62a3fa2dbdb6a26d4709a0535cf70881691808640478730ae9167a43b040a035"
+    },
+    {
+      "url": "/phone/share.js",
+      "status": 200,
+      "sha256": "cb86ad4180c2f86ce1c3c39c4f911451c34afba56f6ef0ed6f012d00df38f02f"
+    },
+    {
+      "url": "/phone/manifest.webmanifest",
+      "status": 200,
+      "sha256": "4c469ff0e5f3929551e7cef225d1b1df09fe93611af74c1d5a1022e306d3d473"
+    },
+    {
+      "url": "/phone/icon.svg",
+      "status": 200,
+      "sha256": "324042d609c8841df070489c97ce53bfdd66abf95ceb5bb4c313217c5dac95c5"
+    },
+    {
+      "url": "/phone/icon-192.png",
+      "status": 200,
+      "sha256": "a57a364e8b05881a8a77562300a331192beea59e60a45f6d57db3077909be079"
+    },
+    {
+      "url": "/phone/icon-512.png",
+      "status": 200,
+      "sha256": "60bd566cd25fcd41c4e005c9e790be651d1c2c25c693fb8fcd3713d0ce02f1af"
+    },
+    {
+      "url": "/phone/share-demo.html",
+      "status": 200,
+      "sha256": "f3fece34994e16fba5f8c5a89cbe2d57e85a3350bcd7f3c284b9ed5b37951dfd"
+    },
+    {
+      "url": "/phone/share-demo.js",
+      "status": 200,
+      "sha256": "5eab5d61b4974507435abe18bf1e14e37c39cdb6ec5ff209e29efb7681bec087"
+    },
+    {
+      "url": "/phone/compare.js",
+      "status": 200,
+      "sha256": "a89ac902d27e46ea56e277a933a02d995c6d844644dfea4b7f758e0cc9a40494"
+    },
+    {
+      "url": "/phone/suggestions.js",
+      "status": 200,
+      "sha256": "57f9d82a321555a1912220d961e7d8323f1defa85c64adb8a370e3202cbf37dc"
+    },
+    {
+      "url": "/phone/practice.js",
+      "status": 200,
+      "sha256": "8496c165d73beb3cbcb66cfa4ba93b38cf6c50579507056a2322f3d8d34fbdfa"
+    },
+    {
+      "url": "/phone/ios.js",
+      "status": 200,
+      "sha256": "6c6324dc42f54dd55a74a3e65249fa2d6205e0f87acdc5051d6965f8f8773839"
+    },
+    {
+      "url": "/phone/ios.html",
+      "status": 200,
+      "sha256": "2210867be854cd3f5aef412243b26b96d6521061a8b3bf346287d72809d4122b"
+    },
+    {
+      "url": "/phone/ios.css",
+      "status": 200,
+      "sha256": "373de0e307f284452f9113f2880db997cfd3b786308a9d1ac9aac5ae2c3f7b01"
+    },
+    {
+      "url": "/phone/context.html",
+      "status": 200,
+      "sha256": "7c8dc1ced553c975a04a3b0688e1f7fe12857aa36bdf0c09d7ceab4a3c0c71d5"
+    },
+    {
+      "url": "/phone/workspace/claims.html",
+      "status": 200,
+      "sha256": "4af3110939e83f235720191d6d55c2f26c85e08e753fb74b412f7cc38ae6fd57"
+    },
+    {
+      "url": "/phone/workspace/numbers.html",
+      "status": 200,
+      "sha256": "47b582efce483cecbff824a8507499006ae158fcbf5d77cd41db654420f9bb54"
+    },
+    {
+      "url": "/phone/workspace/quotes.html",
+      "status": 200,
+      "sha256": "a06905e2864864fa6b0813d70d226600698efb99d2b9ec50ffdfe95e83369180"
+    },
+    {
+      "url": "/static/claim-review.css",
+      "status": 200,
+      "sha256": "799cf0472dd85f53b394518c71747648bb4c83ff937f86c4c9b159efbc5531a3"
+    },
+    {
+      "url": "/static/claim-review.js",
+      "status": 200,
+      "sha256": "6a88f726a6d13a7c61e0a8c99170140a2b9e5a73234515e0c9179172db35dc87"
+    },
+    {
+      "url": "/static/numbers-context.css",
+      "status": 200,
+      "sha256": "a8417f3a3c1e6c6aa834239d253cc92b17f15d4ef1cb8c2b87e46394fd8cb87a"
+    },
+    {
+      "url": "/static/numbers-context.js",
+      "status": 200,
+      "sha256": "6b455aed8fdb80f9d01fa854d9a74a828019617184e71dad92d620d89ce833e5"
+    },
+    {
+      "url": "/static/quote-context.css",
+      "status": 200,
+      "sha256": "8363ed7c0242d1044950c1834a0c4302b79915106cd6d0ad2ba173ba43ba35cd"
+    },
+    {
+      "url": "/static/quote-context.js",
+      "status": 200,
+      "sha256": "ae94f8cbb613766784585d445c3f6f1a6a6f594d7e3cf37b35539a9837297bbe"
+    },
+    {
+      "url": "/static/source-context.js",
+      "status": 200,
+      "sha256": "367ed24373b33bfae2a21300f6c2300bf240aaa0467e84eda502278535c08c56"
+    },
+    {
+      "url": "/static/unicode-notice.js",
+      "status": 200,
+      "sha256": "a4a70808b5e88b22395144c774fc7fd0adddfade665dcfaf0bdf172e0c883c41"
+    }
+  ]
+}

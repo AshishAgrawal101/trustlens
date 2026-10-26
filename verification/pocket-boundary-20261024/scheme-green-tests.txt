@@ -1,0 +1,45 @@
+✔ manual guidance is communication-only and requires explicit topics and submit (10.4626ms)
+✔ all four user-selected topics render fixed steps without changing report or detected evidence (6.1234ms)
+✔ manual copy and download export the exact fixed summary separately from original exports (7.5313ms)
+✔ manual topic edits invalidate pending copy and require rebuilding selected steps (4.7547ms)
+✔ manual clipboard timeout is actionable and source edits/mode/page exit erase selected guidance (34.1776ms)
+✔ manual markup identifies user choice, separates exports, and loads the shared local guide first (0.5601ms)
+✔ missing shared guide fails honestly without breaking the original report or exports (6.366ms)
+✔ known-site comparison uses exact normalized hosts, not brand text or suffixes (3.3497ms)
+✔ invalid known routes never become trusted comparisons (0.477ms)
+✔ comparison invalidates on edits and erases its known route on Clear and page exit (1.9218ms)
+✔ Pocket reports uninspected addresses without parsing or exposing them (4.8341ms)
+✔ incomplete Pocket address notice clears on edits and is absent from fixed exports (7.5553ms)
+✔ reject malformed explicit reference https:/example.com (2.0482ms)
+✔ reject malformed explicit reference http:/example.com (0.3934ms)
+✔ reject malformed explicit reference https:///example.com (1.1471ms)
+✔ reject malformed explicit reference https:////example.com (0.1573ms)
+✔ reject malformed explicit reference https:example.com (0.1479ms)
+✔ reject malformed explicit reference http://?query (0.1076ms)
+✔ reject malformed explicit reference https://#fragment (0.1087ms)
+✔ raw reference Cc/Cf/Cs are rejected before trimming or normalization (0.6543ms)
+✔ known references reject empty and nonempty raw userinfo syntax (0.5154ms)
+✔ formatted/control/surrogate literal tokens stay unreadable and later normal URLs remain inspected (1.5601ms)
+✔ ordinary IDNA, complete schemes, bare references and astral pairs remain supported (0.4716ms)
+✔ browser numeric canonicalization remains deliberate and unchanged (0.1988ms)
+✔ coverage and input bounds remain unchanged including malformed first token (0.3572ms)
+✔ message userinfo shows actual destination without becoming reference syntax (0.5308ms)
+✔ desktop manual fallback and exports keep fixed topic-only contract (1.7876ms)
+✔ unsupported malformed scheme rejected: ftp:/example.com (2.6195ms)
+✔ unsupported malformed scheme rejected: file:/example.com (0.4145ms)
+✔ unsupported malformed scheme rejected: foo:/example.com (0.1347ms)
+✔ unsupported malformed scheme rejected: ftp: (0.1274ms)
+✔ unsupported malformed scheme rejected: foo:PRIVATE (1.0099ms)
+✔ unsupported malformed scheme rejected: mailto:PRIVATE@example.com (0.179ms)
+✔ decimal hostname ports, paths and queries remain bare-site references (1.3355ms)
+✔ ambiguous scheme-shaped decimal port is explicitly interpreted as hostname port (0.2257ms)
+✔ proper unsupported protocols reject and bracketed IPv6 stays supported (0.5786ms)
+✔ existing malformed HTTP guard and fixed guidance behavior stay intact (0.8478ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 206.5701

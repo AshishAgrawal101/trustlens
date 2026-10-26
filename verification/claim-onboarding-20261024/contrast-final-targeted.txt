@@ -1,0 +1,17 @@
+✔ main has one ordinary constructed-claim link with explicit separate Review and replacement wording (1.373ms)
+✔ static initial Message help exactly matches the current configured English scope (1.6083ms)
+✔ both exact startup choices load existing constructed fields open Sources focus claim and consume the fragment without Review (8.7806ms)
+✔ same-document choices reuse replacement and invalidation while preserving current path/query without including fields (4.377ms)
+✔ unknown encoded partial private and newline-bearing fragments do not touch drafts result focus or history (18.1942ms)
+✔ Clear and persisted Back stay blank and closed after a consumed example; pure code and PLAN remain unchanged (4.4119ms)
+✔ demo link and direct explanatory paragraphs explicitly use light text on both dark background endpoints (3.4954ms)
+✔ dark hero secondary links have opaque contrast-safe normal and hover surfaces (0.3435ms)
+✔ existing light focus color stays visible against normal and hovered hero buttons (0.282ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 121.1249

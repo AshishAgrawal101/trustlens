@@ -1,0 +1,42 @@
+[
+  {
+    "scenario": "“This is your bank. Read me the six-digit code we just sent to stop a fraudulent payment.”",
+    "reviewed": "1 of 8 situations reviewed",
+    "feedback": "A useful next check: Hang up and contact the bank using a known number. A request to disclose a security code deserves a pause. A caller can invent an employee ID. Verify through your banking app or the number on your card."
+  },
+  {
+    "scenario": "“Your one-time code is 123456. Do not share it with anyone. We will never call to ask for it.”",
+    "reviewed": "2 of 8 situations reviewed",
+    "feedback": "That’s a useful next check. A code notification is different from a request to disclose the code. Keywords alone are not enough to accuse a sender. An unexpected code is a reason to check your account independently."
+  },
+  {
+    "scenario": "A local seller shows you a photograph with valid Content Credentials and asks you to pay a deposit before you can view the item.",
+    "reviewed": "3 of 8 situations reviewed",
+    "feedback": "That’s a useful next check. Signed provenance describes the file’s history. It cannot verify the seller, the existence of an item, or whether a transaction is safe."
+  },
+  {
+    "scenario": "Two websites repeat the same press release about a local policy. A post calls them “two independent confirmations.” What should you check next?",
+    "reviewed": "4 of 8 situations reviewed",
+    "feedback": "That’s a useful next check. Different websites can repeat one underlying source. That does not make the claim true or false. Read the original account and check what evidence each report adds."
+  },
+  {
+    "scenario": "A reposted image is captioned “today’s storm,” but an editable file field contains an older date. What is the best next check?",
+    "reviewed": "5 of 8 situations reviewed",
+    "feedback": "That’s a useful next check. An embedded clock, publication date and event date can describe different things. Metadata can be edited, copied or removed. The file date or missing location data cannot settle the caption."
+  },
+  {
+    "scenario": "Group A has 20 cases among 100 people; Group B has 30 among 200. A report says the larger count means Group B has a higher rate. What should you check?",
+    "reviewed": "6 of 8 situations reviewed",
+    "feedback": "That’s a useful next check. 20/100 is 20%; 30/200 is 15%. The larger count has the smaller proportion in these supplied numbers. This does not establish data quality, significance, group comparability or cause."
+  },
+  {
+    "scenario": "One supplied version says “The site may close for repairs.” A repost says “The site will close permanently.” What is the best next check?",
+    "reviewed": "7 of 8 situations reviewed",
+    "feedback": "That’s a useful next check. The supplied wording differs, including qualifications. Literal comparison can show changes; it cannot authenticate either version, determine intent or settle factual meaning. Check the fuller account before interpreting the revision."
+  },
+  {
+    "scenario": "A forwarded headline says “Library closing next month.” The article body is not included. What should you do before sharing it as a permanent closure?",
+    "reviewed": "8 of 8 situations reviewed",
+    "feedback": "That’s a useful next check. A headline can omit a location, duration or qualification. Read the full account and check the relevant notice and dates. This practice situation does not establish what any real library is doing."
+  }
+]

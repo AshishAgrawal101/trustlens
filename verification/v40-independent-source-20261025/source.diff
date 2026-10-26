@@ -1,0 +1,32 @@
+--- v39/source-context.js
++++ source-context.js
+@@ -24,9 +24,9 @@
+ })();
+ if(typeof module==='object'&&module.exports)module.exports=SourceContext;
+ if(typeof document!=='undefined'){
+-  const get=id=>document.getElementById(id);
++  const get=id=>document.getElementById(id),firstButton=get('source-first'),lastButton=get('source-last');
+   let pageIndex=0,lastPage=0;
+-  function invalidate(){pageIndex=0;lastPage=0;get('source-paging').hidden=true;get('source-first').disabled=true;get('source-prev').disabled=true;get('source-next').disabled=true;get('source-last').disabled=true;get('source-formatting').hidden=true;get('source-formatting').replaceChildren();get('source-window-note').hidden=true;get('source-result').hidden=true;get('source-error').hidden=true;['source-page-status','source-status','source-matches','source-error'].forEach(id=>get(id).replaceChildren());}
++  function invalidate(){pageIndex=0;lastPage=0;get('source-paging').hidden=true;if(firstButton)firstButton.disabled=true;get('source-prev').disabled=true;get('source-next').disabled=true;if(lastButton)lastButton.disabled=true;get('source-formatting').hidden=true;get('source-formatting').replaceChildren();get('source-window-note').hidden=true;get('source-result').hidden=true;get('source-error').hidden=true;['source-page-status','source-status','source-matches','source-error'].forEach(id=>get(id).replaceChildren());}
+   function clear(){invalidate();get('source-passage').value='';}
+   ['quote-original','source-passage'].forEach(id=>get(id).addEventListener('input',invalidate));
+   get('quote-clear').addEventListener('click',clear);
+@@ -39,7 +39,7 @@
+       get('source-status').textContent=result.total===0?'No exact match was found in this supplied passage. Case, spacing, punctuation, excerpts or revisions can differ; this does not prove a quotation is fabricated.'
+         :result.total+' non-overlapping exact '+(result.total===1?'match':'matches')+' found in the supplied passage. A wording match does not authenticate the source or establish meaning or truth.';
+       get('source-page-status').textContent=result.total?'Matches '+(pageIndex*5+1)+'–'+(pageIndex*5+result.matches.length)+' of '+result.total:'';
+-      get('source-paging').hidden=result.total<=5;get('source-first').disabled=pageIndex===0;get('source-prev').disabled=pageIndex===0;get('source-next').disabled=pageIndex===lastPage;get('source-last').disabled=pageIndex===lastPage;
++      get('source-paging').hidden=result.total<=5;if(firstButton)firstButton.disabled=pageIndex===0;get('source-prev').disabled=pageIndex===0;get('source-next').disabled=pageIndex===lastPage;if(lastButton)lastButton.disabled=pageIndex===lastPage;
+       for(const [index,row]of result.matches.entries()){
+         const item=document.createElement('article'),title=document.createElement('h4'),context=document.createElement('p'),mark=document.createElement('mark');
+         title.textContent='Match '+(pageIndex*5+index+1)+' of '+result.total;context.className='source-window';mark.textContent=row.text;
+@@ -55,6 +55,7 @@
+     event.preventDefault();invalidate();if(!get('source-form').reportValidity())return;renderPage(0);
+   });
+   for(const [id,direction]of [['source-prev',-1],['source-next',1]])get(id).addEventListener('click',()=>{if(get('source-result').hidden||get(id).disabled)return;renderPage(pageIndex+direction,get(id));});
+-  for(const id of ['source-first','source-last'])get(id).addEventListener('click',()=>{if(get('source-result').hidden||get(id).disabled)return;renderPage(id==='source-first'?0:lastPage,get(id));});
++  firstButton?.addEventListener('click',()=>{if(get('source-result').hidden||firstButton.disabled)return;renderPage(0,firstButton);});
++  lastButton?.addEventListener('click',()=>{if(get('source-result').hidden||lastButton.disabled)return;renderPage(lastPage,lastButton);});
+   window.addEventListener('pagehide',clear);window.addEventListener('pageshow',event=>{if(event.persisted)clear();});clear();get('source-submit').disabled=false;
+ }

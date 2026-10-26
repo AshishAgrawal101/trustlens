@@ -1,0 +1,113 @@
+{
+  "scope": "Extracted static ZIP through loopback stdlib HTTP server, no desktop backend. Physical device/deployment untested.",
+  "rows": [
+    {
+      "path": "/phone/",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 11154
+    },
+    {
+      "path": "/phone/phone.css",
+      "status": 200,
+      "content_type": "text/css",
+      "bytes": 9136
+    },
+    {
+      "path": "/phone/guide.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "bytes": 4655
+    },
+    {
+      "path": "/phone/phone.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "bytes": 15092
+    },
+    {
+      "path": "/phone/share.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "bytes": 1975
+    },
+    {
+      "path": "/phone/manifest.webmanifest",
+      "status": 200,
+      "content_type": "application/manifest+json",
+      "bytes": 1496
+    },
+    {
+      "path": "/phone/icon.svg",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "bytes": 315
+    },
+    {
+      "path": "/phone/icon-192.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 1191
+    },
+    {
+      "path": "/phone/icon-512.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 3425
+    },
+    {
+      "path": "/phone/share-demo.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 1761
+    },
+    {
+      "path": "/phone/share-demo.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "bytes": 1268
+    },
+    {
+      "path": "/phone/compare.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "bytes": 2008
+    },
+    {
+      "path": "/phone/suggestions.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "bytes": 4490
+    },
+    {
+      "path": "/phone/practice.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "bytes": 7710
+    },
+    {
+      "path": "/phone/ios.js",
+      "status": 200,
+      "content_type": "application/javascript",
+      "bytes": 4261
+    },
+    {
+      "path": "/phone/ios.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 8724
+    },
+    {
+      "path": "/phone/ios.css",
+      "status": 200,
+      "content_type": "text/css",
+      "bytes": 3054
+    },
+    {
+      "path": "/phone/context.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 6545
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "node": "v24.19.0",
+  "platform": "win32",
+  "purePrefixHashes": {
+    "quote-context.js": "64129320378d3ffa0487057edb9bac44f0a712b714b628f5bdbec7c829ff480d",
+    "source-context.js": "bd1691a2a781b0dbf3656b92695536171c3e0adca0dc7bf8e301111b224ff606"
+  },
+  "rows": [
+    {
+      "id": "quote-800-segments",
+      "milliseconds": [
+        7.220100000000002,
+        3.0243000000000038,
+        2.8446,
+        6.8115999999999985
+      ],
+      "maxMilliseconds": 7.220100000000002,
+      "flagOver500ms": false,
+      "assertionsPassed": true
+    },
+    {
+      "id": "source-30000-last-group",
+      "milliseconds": [
+        0.7021999999999977,
+        0.527000000000001,
+        0.7088999999999999,
+        0.3716000000000008
+      ],
+      "maxMilliseconds": 0.7088999999999999,
+      "flagOver500ms": false,
+      "assertionsPassed": true
+    }
+  ]
+}

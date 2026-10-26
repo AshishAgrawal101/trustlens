@@ -1,0 +1,1020 @@
+{
+  "label": "Frozen authored structural acceptance, not truth-detection accuracy",
+  "contract_sha256": "36f3edc43e31e6e476ee6e13d5e4d420ceb1e546c42879da09fea5b166b18e65",
+  "source_sha256": "54dce62b1f9e3a201d1b06bc186da3c1ff2ad911a29628a826d4e4d29fc134e1",
+  "network_calls": 0,
+  "rows": [
+    {
+      "id": "different-hosts",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:identical",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "same-host-paths",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:same",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:same",
+        "quotes:identical",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:same",
+            "text": "The supplied addresses have the same parsed hostname. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "same-host-case",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:same",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:same",
+        "quotes:identical",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:same",
+            "text": "The supplied addresses have the same parsed hostname. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "same-host-trailing-dot",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:identical",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "related-subdomain",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:identical",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "different-ports",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:same",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:same",
+        "quotes:identical",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:same",
+            "text": "The supplied addresses have the same parsed hostname. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "missing-first-quote",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "source:a:missing_quote"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "source:a:missing_quote",
+        "sources:independence",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_quote",
+            "text": "Source A: inspect the full account and record the words or evidence relevant to this specific claim."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "whitespace-second-quote",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "source:b:missing_quote"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "source:b:missing_quote",
+        "sources:independence",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:b:missing_quote",
+            "text": "Source B: inspect the full account and record the words or evidence relevant to this specific claim."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "missing-first-link",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:one",
+        "source:a:missing_url",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:one",
+        "quotes:identical",
+        "source:a:missing_url",
+        "source:a:quote_unattributed",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:one",
+            "text": "One source address was supplied; its content was not checked."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_url",
+            "text": "Source A: find the original source address or record where this account came from."
+          },
+          {
+            "id": "source:a:quote_unattributed",
+            "text": "Source A: a supplied quotation without an address cannot be traced here."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "quote-only-neither-link",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:zero",
+        "source:a:missing_url",
+        "source:b:missing_url",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:zero",
+        "quotes:identical",
+        "source:a:missing_url",
+        "source:a:quote_unattributed",
+        "source:b:missing_url",
+        "source:b:quote_unattributed",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:zero",
+            "text": "No source addresses were supplied."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_url",
+            "text": "Source A: find the original source address or record where this account came from."
+          },
+          {
+            "id": "source:a:quote_unattributed",
+            "text": "Source A: a supplied quotation without an address cannot be traced here."
+          },
+          {
+            "id": "source:b:missing_url",
+            "text": "Source B: find the original source address or record where this account came from."
+          },
+          {
+            "id": "source:b:quote_unattributed",
+            "text": "Source B: a supplied quotation without an address cannot be traced here."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "unsafe-javascript",
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "required_ids": [],
+      "actual_ids": [],
+      "result": null,
+      "error": "Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.",
+      "failures": []
+    },
+    {
+      "id": "unsafe-data",
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "required_ids": [],
+      "actual_ids": [],
+      "result": null,
+      "error": "Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.",
+      "failures": []
+    },
+    {
+      "id": "unsafe-file",
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "required_ids": [],
+      "actual_ids": [],
+      "result": null,
+      "error": "Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.",
+      "failures": []
+    },
+    {
+      "id": "userinfo-lookalike",
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "required_ids": [],
+      "actual_ids": [],
+      "result": null,
+      "error": "Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.",
+      "failures": []
+    },
+    {
+      "id": "userinfo-password",
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "required_ids": [],
+      "actual_ids": [],
+      "result": null,
+      "error": "Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.",
+      "failures": []
+    },
+    {
+      "id": "nonabsolute-link",
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "required_ids": [],
+      "actual_ids": [],
+      "result": null,
+      "error": "Use a complete HTTP or HTTPS source address. No source was opened.",
+      "failures": []
+    },
+    {
+      "id": "future-date",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "source:b:future_date",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:identical",
+        "source:b:future_date",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:b:future_date",
+            "text": "Source B: the supplied publication date is later than today. Check for a typo, scheduled publication or missing context; this does not disprove the claim."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "today-date",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:identical",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "impossible-date",
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "required_ids": [],
+      "actual_ids": [],
+      "result": null,
+      "error": "Use a valid calendar date for each supplied publication date.",
+      "failures": []
+    },
+    {
+      "id": "missing-date",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "source:b:missing_date",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:identical",
+        "source:b:missing_date",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "after-event-chronology",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:identical",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "opposed-quote-wording",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "identical-quote-wording",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:identical",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          },
+          {
+            "id": "quotes:identical",
+            "text": "The two quotations are identical as entered. Repeated wording does not corroborate truth or establish independent evidence."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "markup-and-private-input",
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ],
+      "actual_ids": [
+        "sources:two",
+        "hosts:different",
+        "sources:independence",
+        "quotes:compare",
+        "dates:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          }
+        ],
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "blank-claim",
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "required_ids": [],
+      "actual_ids": [],
+      "result": null,
+      "error": "Enter one specific claim before reviewing its context.",
+      "failures": []
+    }
+  ],
+  "failures": 0,
+  "plan": "TrustLens — independent claim-checking plan\nThis is not a truth verdict. No source was visited or verified.\n\n1. Find the earliest original account and read its full context, including qualifications and corrections.\n\n2. Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.\n\n3. Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.\n\n4. Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting.\n\nYour claim, context, source addresses, quotations and dates are omitted."
+}

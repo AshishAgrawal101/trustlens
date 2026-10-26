@@ -1,0 +1,259 @@
+{
+  "label": "Frozen exact supplied-source location acceptance, not authenticity or meaning",
+  "contract_sha256": "7554de40b53410337188c9deb769303dbce0ea99e1d8299fef721ccee72c274a",
+  "source_sha256": "17c53f0b09f6c8dc338dd25780e63a1fcaceeeb430a0829258fbdca03b4e11a9",
+  "network_calls": 0,
+  "rows": [
+    {
+      "id": "ordinary",
+      "result": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 9,
+            "end": 14,
+            "before": "The park ",
+            "text": "opens",
+            "after": " today."
+          }
+        ],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "repeat-capped",
+      "result": {
+        "total": 6,
+        "matches": [
+          {
+            "start": 0,
+            "end": 1,
+            "before": "",
+            "text": "x",
+            "after": " x x x x x"
+          },
+          {
+            "start": 2,
+            "end": 3,
+            "before": "x ",
+            "text": "x",
+            "after": " x x x x"
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "before": "x x ",
+            "text": "x",
+            "after": " x x x"
+          },
+          {
+            "start": 6,
+            "end": 7,
+            "before": "x x x ",
+            "text": "x",
+            "after": " x x"
+          },
+          {
+            "start": 8,
+            "end": 9,
+            "before": "x x x x ",
+            "text": "x",
+            "after": " x"
+          }
+        ],
+        "truncated": true
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "overlap-not-counted",
+      "result": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 0,
+            "end": 2,
+            "before": "",
+            "text": "aa",
+            "after": "a"
+          }
+        ],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "case-sensitive",
+      "result": {
+        "total": 0,
+        "matches": [],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "whitespace-sensitive",
+      "result": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 4,
+            "end": 7,
+            "before": "a\tb ",
+            "text": "a b",
+            "after": ""
+          }
+        ],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "punctuation-sensitive",
+      "result": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 11,
+            "end": 16,
+            "before": "open, then ",
+            "text": "open.",
+            "after": ""
+          }
+        ],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "literal-ellipsis",
+      "result": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 5,
+            "end": 8,
+            "before": "a b; ",
+            "text": "a…b",
+            "after": ""
+          }
+        ],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "literal-html",
+      "result": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 0,
+            "end": 3,
+            "before": "",
+            "text": "<b>",
+            "after": "text</b>"
+          }
+        ],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "unicode-offsets",
+      "result": {
+        "total": 2,
+        "matches": [
+          {
+            "start": 1,
+            "end": 3,
+            "before": "A",
+            "text": "😀",
+            "after": "B 😀"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "before": "A😀B ",
+            "text": "😀",
+            "after": ""
+          }
+        ],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "at-source-edges",
+      "result": {
+        "total": 2,
+        "matches": [
+          {
+            "start": 0,
+            "end": 4,
+            "before": "",
+            "text": "Edge",
+            "after": " middle Edge"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "before": "Edge middle ",
+            "text": "Edge",
+            "after": ""
+          }
+        ],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "before-surrogate-boundary",
+      "result": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 162,
+            "end": 163,
+            "before": "😀xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "text": "Q",
+            "after": ""
+          }
+        ],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "after-surrogate-boundary",
+      "result": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 0,
+            "end": 1,
+            "before": "",
+            "text": "Q",
+            "after": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx😀"
+          }
+        ],
+        "truncated": false
+      },
+      "error": null,
+      "failures": []
+    }
+  ],
+  "failures": 0
+}

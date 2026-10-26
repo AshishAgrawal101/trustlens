@@ -1,0 +1,35 @@
+✔ review is explicit, fixed output receives focus, and no network request occurs (7.9416ms)
+✔ every input change invalidates prior output and disables exports (11.3164ms)
+✔ validation preserves drafts, suppresses private error text and cannot export a completed review (1.8714ms)
+✔ Clear, page exit and persisted Back erase all private fields and prior output (4.6899ms)
+✔ copy and download export a fixed plan; late copy completion cannot revive cleared output (1.9815ms)
+✔ clipboard timeout offers download without exposing input (1.3832ms)
+✔ omitted and blank event date preserve frozen old outputs and PLAN bytes (5.3348ms)
+✔ event chronology observes leap-year year-boundary same-day and after without a truth judgment (17.5133ms)
+✔ missing publication and date-only inputs never create dated source accounts or invented gaps (0.3447ms)
+✔ invalid event dates reject with fixed private feedback (0.6267ms)
+✔ event field is optional unnamed and bounded; explicit review renders then exports only the existing fixed plan (6.1306ms)
+✔ event edits examples Clear exit and persisted Back invalidate and erase as appropriate (8.2011ms)
+✔ event date change prevents pending copy feedback from reviving after invalidation (1.4468ms)
+✔ claim workspace exposes unique labelled constrained fields and initially hidden accessible output (1.5505ms)
+✔ page states no verdict or source verification and export omission, with local script only (0.3024ms)
+✔ print cannot expose private workspace and sizing supports narrow layouts (0.1786ms)
+✔ script failure cannot submit named private fields through native GET fallback (0.2137ms)
+✔ select change alone invalidates labels, priority feedback and exports without network (10.5753ms)
+✔ Clear, page exit and persisted Back reset both source roles and wipe label/status content (3.912ms)
+✔ late copy after a role change cannot label a new review as copied (2.3286ms)
+✔ roles do not change PLAN bytes and private source details never enter labels or exports (2.6369ms)
+✔ unknown injected role fails closed without exposing its value or enabling exports (1.4162ms)
+✔ one initially closed native disclosure keeps enabled optional fields and unchanged pure code PLAN and print privacy (8.0275ms)
+✔ closing sources retains every draft role and date and includes them in explicit review (4.0016ms)
+✔ date-only and role-only presence is descriptive and edits invalidate without counting a source (2.7834ms)
+✔ native invalid source opens before default focus and custom source rejection also reveals correction fields (2.2664ms)
+✔ examples reveal populated sources while Clear exit and persisted Back collapse and erase (3.6994ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 144.0774

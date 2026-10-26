@@ -1,0 +1,9 @@
+{
+  "pureSHA": "0ed042bc431f853ca8e0a80a02844cfe212c81ad99197c3089bd314936bb2ca2",
+  "acceptance": [
+    "independent raw method drafts survive roundtrip",
+    "method change invalidates output and enables only active controls",
+    "inactive invalid fields excluded",
+    "Swap active only; Clear/example/exit wipe all"
+  ]
+}

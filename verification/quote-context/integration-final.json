@@ -1,0 +1,40 @@
+{
+  "source_tests": {
+    "python": 860,
+    "javascript": 320,
+    "skips": 0
+  },
+  "browser": {
+    "home_directory_link": "observed and followed",
+    "directory_quote_link": "observed and followed",
+    "example": "loaded without autorun; explicit comparison produced two removed spans",
+    "addition": "manual constructed revision rendered added permanently and removed for repairs",
+    "keyboard": "Tab moved original to revised",
+    "edit": "invalidated and removed old comparison",
+    "error": "801segments fixed error/focus, no old result",
+    "clear": "bothtextareas/result/error emptied, original focused",
+    "quote_narrow": {
+      "viewport": 320,
+      "body": 305,
+      "document": 305
+    },
+    "directory_narrow": {
+      "viewport": 320,
+      "body": 305,
+      "document": 305
+    },
+    "directory_contrast": {
+      "cards_background": "rgb(255, 254, 249)",
+      "text": "rgb(20, 60, 56)",
+      "visually_rechecked": true
+    },
+    "viewport_restored": true,
+    "left_open": "directory"
+  },
+  "review_closures": [
+    "Browser found inherited light card text; dark card colors fixed and regression added.",
+    "Root made change labels visible chips and removed unused hidden-label CSS."
+  ],
+  "models": "unchanged",
+  "limits": "Literal text comparison only; no authenticity, semantic, intent or truth conclusion."
+}

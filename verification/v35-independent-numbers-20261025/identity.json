@@ -1,0 +1,6 @@
+{
+  "archive_sha256": "6e2b14ae16b0c43fdcdc03e0f0af0b51fab70b79ca9cd2215d427b070f8752e3",
+  "single_handler_reversal_restores_entire_v34_js": true,
+  "pure_prefix_sha256": "0ed042bc431f853ca8e0a80a02844cfe212c81ad99197c3089bd314936bb2ca2",
+  "swap_body_byte_equal": true
+}

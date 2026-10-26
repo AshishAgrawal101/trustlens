@@ -1,0 +1,8 @@
+{
+  "app/models.py": "6a33a9420b7d515d5da3631221739dcc2836208cd9509dc696e0c3b35da0429a",
+  "app/main.py": "21ba77291ed7bd8bc1caa1a61c1c884171c393f9005f1447659c608296263ed9",
+  "app/analyzers/url.py": "559afd50228266a7da2f3b9de6626d0ced1cfe3b0084820ae6d64c0ca5844bfe",
+  "app/analyzers/url_details.py": "5880a71b65f60371b5e27986a280b44f0ebcfafdc02a72480b22bd118a93387e",
+  "static/app.js": "5b1cd1a3948e12256a915a6a113556a4bd0530e83d44888022a5f3581693815c",
+  "static/link-details.js": "08876d3e38bcd46d784dda3cd3c12961d2e7a4105e325b8033d195099ceb0d3b"
+}

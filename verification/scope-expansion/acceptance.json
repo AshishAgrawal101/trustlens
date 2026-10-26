@@ -1,0 +1,820 @@
+{
+  "contract_version": 1,
+  "status": "frozen_before_any_worksheet_predictions_schema_aligned",
+  "now": "2026-10-23",
+  "purpose": "Authored adversarial acceptance, not accuracy benchmark or factual verification. Observation names are semantic requirements, not API field names.",
+  "schema_assumption": "analyze(input, nowISODate) -> observations/questions with stable {id,text}, fixed steps; field names may be mapped. Invalid present URLs/dates throw fixed validation error preserving inputs. Claim required<=4000 trimmed characters, context/quotes<=4000, URL<=4096; date strict YYYY-MM-DD calendar. Fixed PLAN export omits all private fields.",
+  "global_invariants": [
+    "No source URL is fetched or opened by analysis.",
+    "No truth verdict, credibility score, safe verdict, verified quote or factual confidence is generated.",
+    "Distinct hostnames do not establish editorial or evidentiary independence; identical quotes do not corroborate truth.",
+    "Quoted text and dates are user-supplied assertions, not authenticated observations of a source.",
+    "Contradictory wording remains unresolved; chronology does not establish factual truth or falsehood.",
+    "All user strings rendered via textContent or equivalent escaping; no input HTML/URL becomes active content.",
+    "Copy/download/print plan contains fixed input-free guidance only; excludes claim/context/source URLs/queries/userinfo/quotes/dates.",
+    "Clear/edit/mode/page lifecycle invalidates prior output and pending completion; no storage or content API.",
+    "Invalid URL/date or missing field must not remove existing valid fields or produce reassuring complete state."
+  ],
+  "cases": [
+    {
+      "id": "different-hosts",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "two_distinct_parsed_hosts",
+        "two_supplied_quotes",
+        "dates_not_future"
+      ],
+      "required_missing_checks": [
+        "source_content_unvisited",
+        "quote_accuracy_unverified",
+        "source_independence_unverified",
+        "claim_truth_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "same-host-paths",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://library.example.test/announcement",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "same_parsed_host"
+      ],
+      "required_missing_checks": [
+        "source_independence_unverified",
+        "claim_truth_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:same",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "same-host-case",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://LIBRARY.example.test/other",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "same_parsed_host"
+      ],
+      "required_missing_checks": [
+        "source_independence_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:same",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "same-host-trailing-dot",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://library.example.test./other",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "same_parsed_host_or_explicit_distinct_literal_hostname_note_neither_establishes_independence"
+      ],
+      "required_missing_checks": [
+        "source_independence_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "related-subdomain",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://events.library.example.test/page",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "distinct_parsed_hosts"
+      ],
+      "required_missing_checks": [
+        "source_independence_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "different-ports",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://library.example.test:8443/other",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "same_parsed_host"
+      ],
+      "required_missing_checks": [
+        "source_independence_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:same",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "missing-first-quote",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "one_quote_missing"
+      ],
+      "required_missing_checks": [
+        "quote_accuracy_unverified",
+        "claim_support_not_established"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "source:a:missing_quote"
+      ]
+    },
+    {
+      "id": "whitespace-second-quote",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": " \t\n ",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "one_quote_missing"
+      ],
+      "required_missing_checks": [
+        "claim_support_not_established"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "source:b:missing_quote"
+      ]
+    },
+    {
+      "id": "missing-first-link",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "one_link_missing"
+      ],
+      "required_missing_checks": [
+        "quote_attribution_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:one",
+        "source:a:missing_url",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "quote-only-neither-link",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "two_links_missing"
+      ],
+      "required_missing_checks": [
+        "quote_attribution_unverified",
+        "claim_truth_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:zero",
+        "source:a:missing_url",
+        "source:b:missing_url",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "unsafe-javascript",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "javascript:alert(1)",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [],
+      "required_missing_checks": [],
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "error_constraints": [
+        "fixed_error_without_input_echo",
+        "no_network",
+        "no_completed_result_or_export"
+      ]
+    },
+    {
+      "id": "unsafe-data",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "data:text/html,<script>alert(1)</script>",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [],
+      "required_missing_checks": [],
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "error_constraints": [
+        "fixed_error_without_input_echo",
+        "no_network",
+        "no_completed_result_or_export"
+      ]
+    },
+    {
+      "id": "unsafe-file",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "file:///C:/private.txt",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [],
+      "required_missing_checks": [],
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "error_constraints": [
+        "fixed_error_without_input_echo",
+        "no_network",
+        "no_completed_result_or_export"
+      ]
+    },
+    {
+      "id": "userinfo-lookalike",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test@unrelated.example.test/page",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [],
+      "required_missing_checks": [],
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "error_constraints": [
+        "fixed_error_without_input_echo",
+        "no_network",
+        "no_completed_result_or_export"
+      ]
+    },
+    {
+      "id": "userinfo-password",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://reader:PRIVATE_PASSWORD@library.example.test/page",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [],
+      "required_missing_checks": [],
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "error_constraints": [
+        "fixed_error_without_input_echo",
+        "no_network",
+        "no_completed_result_or_export"
+      ]
+    },
+    {
+      "id": "nonabsolute-link",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [],
+      "required_missing_checks": [],
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "error_constraints": [
+        "fixed_error_without_input_echo",
+        "no_network",
+        "no_completed_result_or_export"
+      ]
+    },
+    {
+      "id": "future-date",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-24"
+          }
+        ]
+      },
+      "required_observations": [
+        "supplied_date_after_now"
+      ],
+      "required_missing_checks": [
+        "date_accuracy_unverified",
+        "claim_truth_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "source:b:future_date",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "today-date",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-23"
+          }
+        ]
+      },
+      "required_observations": [
+        "supplied_date_not_after_now"
+      ],
+      "required_missing_checks": [
+        "date_accuracy_unverified",
+        "claim_truth_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "impossible-date",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-02-30"
+          }
+        ]
+      },
+      "required_observations": [],
+      "required_missing_checks": [],
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "error_constraints": [
+        "fixed_error_without_input_echo",
+        "no_network",
+        "no_completed_result_or_export"
+      ]
+    },
+    {
+      "id": "missing-date",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": ""
+          }
+        ]
+      },
+      "required_observations": [
+        "one_date_missing"
+      ],
+      "required_missing_checks": [
+        "publication_timing_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "source:b:missing_date",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "after-event-chronology",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-23"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-23"
+          }
+        ]
+      },
+      "required_observations": [
+        "dates_not_future"
+      ],
+      "required_missing_checks": [
+        "date_accuracy_unverified",
+        "claim_truth_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "note": "Do not parse an event date out of freeform claim. Supplied source date order is not factual verification.",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "opposed-quote-wording",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 10:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "two_supplied_quotes"
+      ],
+      "required_missing_checks": [
+        "contradiction_unresolved",
+        "quote_accuracy_unverified",
+        "claim_truth_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "note": "Literal comparison optional; no semantic contradiction resolution required. Must not select true source or infer claim truth.",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "identical-quote-wording",
+      "input": {
+        "claim": "The town library exhibition opens at 09:00 on 2026-10-22.",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "two_supplied_quotes"
+      ],
+      "required_missing_checks": [
+        "source_independence_unverified",
+        "claim_truth_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "note": "Literal comparison optional; identical text is not independent corroboration.",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "markup-and-private-input",
+      "input": {
+        "claim": "<img src=x onerror=alert(1)> PRIVATE_CLAIM",
+        "context": "PRIVATE_CONTEXT",
+        "sources": [
+          {
+            "url": "https://library.example.test/?token=PRIVATE_TOKEN",
+            "quote": "<script>PRIVATE_QUOTE</script>",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/",
+            "quote": "Other text",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [
+        "display_as_text_only"
+      ],
+      "required_missing_checks": [
+        "source_content_unvisited",
+        "claim_truth_unverified"
+      ],
+      "expected_outcome": "worksheet",
+      "required_ids": [
+        "sources:two",
+        "hosts:different",
+        "quotes:compare"
+      ]
+    },
+    {
+      "id": "blank-claim",
+      "input": {
+        "claim": " \n ",
+        "context": "A forwarded schedule; I want to identify what still needs checking.",
+        "sources": [
+          {
+            "url": "https://library.example.test/schedule",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-20"
+          },
+          {
+            "url": "https://news.example.test/events",
+            "quote": "The exhibition opens at 09:00 on 2026-10-22.",
+            "date": "2026-10-21"
+          }
+        ]
+      },
+      "required_observations": [],
+      "required_missing_checks": [],
+      "expected_outcome": "fixed_validation_error_preserving_input",
+      "error_constraints": [
+        "fixed_error_without_input_echo",
+        "no_network",
+        "no_completed_result_or_export"
+      ]
+    }
+  ],
+  "interaction_acceptance": [
+    {
+      "id": "edit-invalidates",
+      "steps": [
+        "Analyze inputs",
+        "Change each field individually"
+      ],
+      "expected": "Previous worksheet result/export state is invalidated until explicit analysis."
+    },
+    {
+      "id": "clear-erases",
+      "steps": [
+        "Analyze private marker case",
+        "Clear"
+      ],
+      "expected": "All input fields, result text, URLs, quote/date state and export handles clear."
+    },
+    {
+      "id": "page-lifecycle-erases",
+      "steps": [
+        "Analyze private marker case",
+        "pagehide then persisted pageshow"
+      ],
+      "expected": "No old worksheet/private results restored; no automatic analysis or URL visit."
+    },
+    {
+      "id": "export-private-marker-omission",
+      "steps": [
+        "Analyze private marker case",
+        "Copy/download/print plan"
+      ],
+      "expected": "Only fixed plan content; no PRIVATE_ marker or original source data."
+    }
+  ],
+  "input_adapter": "Map sources[0].url/quote/date to aUrl/aQuote/aDate, sources[1] to bUrl/bQuote/bDate; claim/context unchanged. No case content is rewritten.",
+  "stable_output_assertion": "required_ids may occur in observations or questions. Global semantic constraints apply even where no dedicated ID exists. IDs test structural coverage, not truth."
+}

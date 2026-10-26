@@ -1,0 +1,30 @@
+{
+  "scope": "Synthetic in-memory/source probes, not browserJSdisabled proof",
+  "named_controls": [
+    {
+      "name": "request",
+      "value": "money"
+    },
+    {
+      "name": "request",
+      "value": "code"
+    },
+    {
+      "name": "request",
+      "value": "device"
+    },
+    {
+      "name": "request",
+      "value": "secret"
+    }
+  ],
+  "synthetic_two_topic_query": "request=money&request=code",
+  "message_is_named_or_in_guideform": false,
+  "missing_helper": {
+    "submit_prevented": true,
+    "error_type": "ReferenceError",
+    "visible_result": false,
+    "notice": ""
+  },
+  "service_worker_intercepts_topic_query": false
+}

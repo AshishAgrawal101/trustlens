@@ -1,0 +1,96 @@
+[
+  {
+    "cte": " base64 ",
+    "mode": "paste",
+    "risk": "high",
+    "ids": [
+      "request:code"
+    ],
+    "share": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+  },
+  {
+    "cte": " base64 ",
+    "mode": "eml",
+    "risk": "high",
+    "ids": [
+      "request:code"
+    ],
+    "share": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+  },
+  {
+    "cte": "\tbase64\t",
+    "mode": "paste",
+    "risk": "high",
+    "ids": [
+      "request:code"
+    ],
+    "share": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+  },
+  {
+    "cte": "\tbase64\t",
+    "mode": "eml",
+    "risk": "high",
+    "ids": [
+      "request:code"
+    ],
+    "share": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+  },
+  {
+    "cte": "\r\n base64\r\n\t",
+    "mode": "paste",
+    "risk": "high",
+    "ids": [
+      "request:code"
+    ],
+    "share": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+  },
+  {
+    "cte": "\r\n base64\r\n\t",
+    "mode": "eml",
+    "risk": "high",
+    "ids": [
+      "request:code"
+    ],
+    "share": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+  },
+  {
+    "cte": "\u00a0base64\u00a0",
+    "mode": "paste",
+    "risk": "guarded",
+    "ids": [
+      "text:none",
+      "email:incomplete"
+    ],
+    "share": "TrustLens \u2014 private-input-free summary\nThis email check was incomplete. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nReview the original email\nOpen the original message in a trusted mail app. Parts of this pasted email could not be interpreted reliably; do not treat missing findings as reassurance.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+  },
+  {
+    "cte": "\u00a0base64\u00a0",
+    "mode": "eml",
+    "risk": "guarded",
+    "ids": [
+      "text:none",
+      "email:incomplete"
+    ],
+    "share": "TrustLens \u2014 private-input-free summary\nThis email check was incomplete. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nReview the original email\nOpen the original message in a trusted mail app. Parts of this pasted email could not be interpreted reliably; do not treat missing findings as reassurance.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+  },
+  {
+    "cte": "base64\u2003",
+    "mode": "paste",
+    "risk": "guarded",
+    "ids": [
+      "text:none",
+      "email:incomplete"
+    ],
+    "share": "TrustLens \u2014 private-input-free summary\nThis email check was incomplete. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nReview the original email\nOpen the original message in a trusted mail app. Parts of this pasted email could not be interpreted reliably; do not treat missing findings as reassurance.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+  },
+  {
+    "cte": "base64\u2003",
+    "mode": "eml",
+    "risk": "guarded",
+    "ids": [
+      "text:none",
+      "email:incomplete"
+    ],
+    "share": "TrustLens \u2014 private-input-free summary\nThis email check was incomplete. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nReview the original email\nOpen the original message in a trusted mail app. Parts of this pasted email could not be interpreted reliably; do not treat missing findings as reassurance.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+  }
+]

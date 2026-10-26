@@ -1,0 +1,30 @@
+{
+  "component": "C2PA-only production worker main",
+  "production_subprocess_wrapper_exercised": false,
+  "status": "completed",
+  "result_counts": {
+    "absent": 4
+  },
+  "worker_reaped": true,
+  "files": [
+    {
+      "sha256": "3e5fe6a026d9e3d70fee70125bec210c8edc540d3d7615fc5ec5c9b7f63c9e19",
+      "path": "c2pa-protocol.json"
+    },
+    {
+      "sha256": "fac5f88fe7fe0e3aef4bd253fccd122b0facc36d4518c26ae851fc433a9a8fad",
+      "path": "c2pa-attempt/prelaunch.json"
+    },
+    {
+      "sha256": "0fff8ea263a1e9522889fc4ec94a282e2dfc3d7270ef347c5c33776c5a4385c5",
+      "path": "c2pa-attempt/results.json"
+    },
+    {
+      "sha256": "eb5a0cd55a58a00a72085fe59f536f95701042a2feb6a58fffdae977d34aab86",
+      "path": "c2pa-attempt/supervisor-result.json"
+    }
+  ],
+  "visual_model_retry": false,
+  "fraud_scores": null,
+  "visual_scores": null
+}

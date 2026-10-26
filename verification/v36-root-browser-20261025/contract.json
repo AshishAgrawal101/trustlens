@@ -1,0 +1,10 @@
+{
+  "scope": "Four predeclared constructed browser URL checks after fresh server restart. No destination is visited; no population or exploit claim.",
+  "cases": [
+    {"id":"plain-control","url":"https://example.org/path?demo=1","reference":"example.org","expect":"visible normal address report and exact-host comparison"},
+    {"id":"leading-bom","url":"\ufeffhttps://example.org/path?demo=1","reference":"","expect":"fixed input error, original address retained, no visible or copyable result"},
+    {"id":"tab-only-reference","url":"https://example.org/","reference":"\t","expect":"reference input error, reference retained, no visible or copyable result"},
+    {"id":"space-only-reference","url":"https://example.org/","reference":"   ","expect":"normal address report, no reference comparison"}
+  ],
+  "reset": "Clear/reload must erase both fields and results."
+}

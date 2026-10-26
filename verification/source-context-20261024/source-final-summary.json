@@ -1,0 +1,21 @@
+{
+  "python": {
+    "passed": 1094,
+    "skipped": 0,
+    "seconds": 18.39,
+    "report": "pytest-final.xml",
+    "native_ocr": true,
+    "credentials_python_configured": true
+  },
+  "javascript": {
+    "passed": 382,
+    "skipped": 0,
+    "report": "node-final.txt"
+  },
+  "live_http": {
+    "passed": 9,
+    "report": "live-final.json"
+  },
+  "scope": "Software checks, not accuracy or human study. Portable checks require matching external receipt.",
+  "goal": "Active2\u20133hourwindow continues after checkpoint."
+}

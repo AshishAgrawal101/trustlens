@@ -1,0 +1,164 @@
+FFF..FFF.......FFFFF..                                                   [100%]
+================================== FAILURES ===================================
+________________ test_source_wording_and_context[direct-word] _________________
+
+case = {'id': 'direct-word', 'text': 'Send me your veri\xadfication code.', 'expected_ids': ['request:code']}
+
+    @pytest.mark.parametrize("case",CASES,ids=lambda c:c["id"])
+    def test_source_wording_and_context(case):
+>       assert sorted(e.id for e in request_evidence(case["text"]))==case["expected_ids"]
+E       AssertionError: assert [] == ['request:code']
+E         
+E         Right contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_soft_hyphen_wording.py:15: AssertionError
+________________ test_source_wording_and_context[direct-verb] _________________
+
+case = {'id': 'direct-verb', 'text': 'Se\xadnd me your verification code.', 'expected_ids': ['request:code']}
+
+    @pytest.mark.parametrize("case",CASES,ids=lambda c:c["id"])
+    def test_source_wording_and_context(case):
+>       assert sorted(e.id for e in request_evidence(case["text"]))==case["expected_ids"]
+E       AssertionError: assert [] == ['request:code']
+E         
+E         Right contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_soft_hyphen_wording.py:15: AssertionError
+_______________ test_source_wording_and_context[negative-word] ________________
+
+case = {'id': 'negative-word', 'text': 'Do n\xadot share your password.', 'expected_ids': []}
+
+    @pytest.mark.parametrize("case",CASES,ids=lambda c:c["id"])
+    def test_source_wording_and_context(case):
+>       assert sorted(e.id for e in request_evidence(case["text"]))==case["expected_ids"]
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_soft_hyphen_wording.py:15: AssertionError
+__________________ test_source_wording_and_context[history] ___________________
+
+case = {'id': 'history', 'text': "At last week's safety class, the instructor displayed the example, 'Se\xadnd me your veri\xadfication code.'", 'expected_ids': ['context:code']}
+
+    @pytest.mark.parametrize("case",CASES,ids=lambda c:c["id"])
+    def test_source_wording_and_context(case):
+>       assert sorted(e.id for e in request_evidence(case["text"]))==case["expected_ids"]
+E       AssertionError: assert [] == ['context:code']
+E         
+E         Right contains one more item: 'context:code'
+E         Use -v to get more diff
+
+tests\test_soft_hyphen_wording.py:15: AssertionError
+________________ test_source_wording_and_context[conditional] _________________
+
+case = {'id': 'conditional', 'text': 'If someone asks you to se\xadnd a veri\xadfication code, hang up.', 'expected_ids': ['context:code']}
+
+    @pytest.mark.parametrize("case",CASES,ids=lambda c:c["id"])
+    def test_source_wording_and_context(case):
+>       assert sorted(e.id for e in request_evidence(case["text"]))==case["expected_ids"]
+E       AssertionError: assert [] == ['context:code']
+E         
+E         Right contains one more item: 'context:code'
+E         Use -v to get more diff
+
+tests\test_soft_hyphen_wording.py:15: AssertionError
+______________ test_source_wording_and_context[independent-live] ______________
+
+case = {'id': 'independent-live', 'text': 'Do n\xadot share your password. Install TeamViewer.', 'expected_ids': ['request:remote']}
+
+    @pytest.mark.parametrize("case",CASES,ids=lambda c:c["id"])
+    def test_source_wording_and_context(case):
+>       assert sorted(e.id for e in request_evidence(case["text"]))==case["expected_ids"]
+E       AssertionError: assert ['request:cod...quest:remote'] == ['request:remote']
+E         
+E         At index 0 diff: 'request:code' != 'request:remote'
+E         Left contains one more item: 'request:remote'
+E         Use -v to get more diff
+
+tests\test_soft_hyphen_wording.py:15: AssertionError
+_ test_displayed_excerpt_is_exact_original_slice[Se\xadnd me your veri\xadfication code.] _
+
+text = 'Se\xadnd me your veri\xadfication code.'
+
+    @pytest.mark.parametrize("text",[
+        "Se\u00adnd me your veri\u00adfication code.",
+        "If someone asks you to se\u00adnd a veri\u00adfication code, hang up.",
+    ])
+    def test_displayed_excerpt_is_exact_original_slice(text):
+>       item=request_evidence(text)[0]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       IndexError: list index out of range
+
+tests\test_soft_hyphen_wording.py:22: IndexError
+_ test_displayed_excerpt_is_exact_original_slice[If someone asks you to se\xadnd a veri\xadfication code, hang up.] _
+
+text = 'If someone asks you to se\xadnd a veri\xadfication code, hang up.'
+
+    @pytest.mark.parametrize("text",[
+        "Se\u00adnd me your veri\u00adfication code.",
+        "If someone asks you to se\u00adnd a veri\u00adfication code, hang up.",
+    ])
+    def test_displayed_excerpt_is_exact_original_slice(text):
+>       item=request_evidence(text)[0]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       IndexError: list index out of range
+
+tests\test_soft_hyphen_wording.py:22: IndexError
+_____ test_normalized_negation_propagates_without_confidence_change[text] _____
+
+kind = 'text'
+
+    @pytest.mark.parametrize("kind",["text","call","email"])
+    def test_normalized_negation_propagates_without_confidence_change(kind):
+        text="Do n\u00adot share your password."
+        message=EmailMessage(); message["Subject"]="Advice"; message.set_content(text)
+        report=analyze_email(message.as_string()) if kind=="email" else analyze_text(text,kind)
+>       assert not any(e.weight>0 for e in report.evidence)
+E       assert not True
+E        +  where True = any(<generator object test_normalized_negation_propagates_without_confidence_change.<locals>.<genexpr> at 0x000001DFB9A30EE0>)
+
+tests\test_soft_hyphen_wording.py:32: AssertionError
+_____ test_normalized_negation_propagates_without_confidence_change[call] _____
+
+kind = 'call'
+
+    @pytest.mark.parametrize("kind",["text","call","email"])
+    def test_normalized_negation_propagates_without_confidence_change(kind):
+        text="Do n\u00adot share your password."
+        message=EmailMessage(); message["Subject"]="Advice"; message.set_content(text)
+        report=analyze_email(message.as_string()) if kind=="email" else analyze_text(text,kind)
+>       assert not any(e.weight>0 for e in report.evidence)
+E       assert not True
+E        +  where True = any(<generator object test_normalized_negation_propagates_without_confidence_change.<locals>.<genexpr> at 0x000001DFB9A5C2B0>)
+
+tests\test_soft_hyphen_wording.py:32: AssertionError
+____ test_normalized_negation_propagates_without_confidence_change[email] _____
+
+kind = 'email'
+
+    @pytest.mark.parametrize("kind",["text","call","email"])
+    def test_normalized_negation_propagates_without_confidence_change(kind):
+        text="Do n\u00adot share your password."
+        message=EmailMessage(); message["Subject"]="Advice"; message.set_content(text)
+        report=analyze_email(message.as_string()) if kind=="email" else analyze_text(text,kind)
+>       assert not any(e.weight>0 for e in report.evidence)
+E       assert not True
+E        +  where True = any(<generator object test_normalized_negation_propagates_without_confidence_change.<locals>.<genexpr> at 0x000001DFB9A50E10>)
+
+tests\test_soft_hyphen_wording.py:32: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_soft_hyphen_wording.py::test_source_wording_and_context[direct-word]
+FAILED tests/test_soft_hyphen_wording.py::test_source_wording_and_context[direct-verb]
+FAILED tests/test_soft_hyphen_wording.py::test_source_wording_and_context[negative-word]
+FAILED tests/test_soft_hyphen_wording.py::test_source_wording_and_context[history]
+FAILED tests/test_soft_hyphen_wording.py::test_source_wording_and_context[conditional]
+FAILED tests/test_soft_hyphen_wording.py::test_source_wording_and_context[independent-live]
+FAILED tests/test_soft_hyphen_wording.py::test_displayed_excerpt_is_exact_original_slice[Se\xadnd me your veri\xadfication code.]
+FAILED tests/test_soft_hyphen_wording.py::test_displayed_excerpt_is_exact_original_slice[If someone asks you to se\xadnd a veri\xadfication code, hang up.]
+FAILED tests/test_soft_hyphen_wording.py::test_normalized_negation_propagates_without_confidence_change[text]
+FAILED tests/test_soft_hyphen_wording.py::test_normalized_negation_propagates_without_confidence_change[call]
+FAILED tests/test_soft_hyphen_wording.py::test_normalized_negation_propagates_without_confidence_change[email]
+11 failed, 11 passed in 0.42s

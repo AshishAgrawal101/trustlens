@@ -1,0 +1,590 @@
+{
+  "label": "Post-fix regressions; original baselines unchanged",
+  "source_sha256": "162b2e993c3e769799f6b1ea88124137c7d5ab7fd96472532bb198b05797f598",
+  "sets": {
+    "frozen-cases": [
+      {
+        "id": "lf-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "lf-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "lf-independent-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "lf-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "cr-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "cr-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "cr-independent-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "cr-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "crlf-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "crlf-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "crlf-independent-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "crlf-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "formfeed-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "formfeed-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "formfeed-independent-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "formfeed-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "nel-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "nel-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "nel-independent-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "nel-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "line-separator-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "line-separator-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "line-separator-independent-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "line-separator-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "paragraph-separator-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "paragraph-separator-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "paragraph-separator-independent-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "paragraph-separator-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "soft-hyphen-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": []
+      },
+      {
+        "id": "soft-hyphen-advice",
+        "expected": [],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "soft-hyphen-ordinary",
+        "expected": [],
+        "actual": []
+      }
+    ],
+    "hard-separator-acceptance": [
+      {
+        "id": "lf-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "lf-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "lf-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "lf-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "cr-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "cr-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "cr-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "cr-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "crlf-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "crlf-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "crlf-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "crlf-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "vt-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "vt-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "vt-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "vt-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "ff-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "ff-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "ff-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "ff-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "fs-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "fs-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "fs-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "fs-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "gs-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "gs-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "gs-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "gs-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "rs-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "rs-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "rs-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "rs-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "nel-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "nel-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "nel-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "nel-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "ls-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "ls-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "ls-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "ls-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      },
+      {
+        "id": "ps-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "ps-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "ps-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "ps-live",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": [
+          "request:remote"
+        ]
+      }
+    ],
+    "layout-cases": [
+      {
+        "id": "wrapped-direct",
+        "expected": [
+          "request:code"
+        ],
+        "actual": []
+      },
+      {
+        "id": "wrapped-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "wrapped-ordinary",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "paragraph-direct",
+        "expected": null,
+        "actual": []
+      },
+      {
+        "id": "wrapped-sensitive",
+        "expected": [
+          "request:code"
+        ],
+        "actual": []
+      },
+      {
+        "id": "wrapped-sensitive-advice",
+        "expected": [],
+        "actual": []
+      },
+      {
+        "id": "wrapped-independent",
+        "expected": [
+          "request:code"
+        ],
+        "actual": [
+          "request:code"
+        ]
+      },
+      {
+        "id": "wrapped-remote",
+        "expected": [
+          "request:remote"
+        ],
+        "actual": []
+      },
+      {
+        "id": "wrapped-remote-advice",
+        "expected": [],
+        "actual": []
+      }
+    ]
+  }
+}

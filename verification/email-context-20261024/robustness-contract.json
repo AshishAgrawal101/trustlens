@@ -1,0 +1,172 @@
+{
+  "purpose": "Bounded robustness assertions, not factual detection accuracy. Cases frozen before ASGI predictions. Constructed data only.",
+  "max_case_bytes": 250000,
+  "no_external_requests": true,
+  "checks": [
+    "No unhandled500",
+    "Error responses and share summaries do not echo designated supplied marker",
+    "Known missing/unusable body or malformed interpretation must not look like complete low report"
+  ],
+  "cases": [
+    {
+      "id": "header-only",
+      "raw": "From: office@example.org\nSubject: Constructed meeting\n\n",
+      "usable_body_expected": false,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "empty-declared-body",
+      "raw": "Content-Type: text/plain; charset=utf-8\nSubject: Constructed meeting\n\n   ",
+      "usable_body_expected": false,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "nested-mixed-readable",
+      "raw": "Content-Type: multipart/mixed; boundary=a\n\n--a\nContent-Type: multipart/alternative; boundary=b\n\n--b\nContent-Type: text/plain\n\nSend your password.\n--b--\n--a--\n",
+      "usable_body_expected": true,
+      "incomplete_expected_if_report": false,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "empty-plain-readable-html",
+      "raw": "Content-Type: multipart/alternative; boundary=a\n\n--a\nContent-Type: text/plain\n\n\n--a\nContent-Type: text/html\n\n<p>Send your password.</p>\n--a--\n",
+      "usable_body_expected": true,
+      "incomplete_expected_if_report": false,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "missing-boundary",
+      "raw": "Content-Type: multipart/mixed; boundary=missing\n\nConstructed preamble only.",
+      "usable_body_expected": false,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "nested-missing-boundary",
+      "raw": "Content-Type: multipart/mixed; boundary=a\n\n--a\nContent-Type: multipart/alternative; boundary=absent\n\nConstructed preamble only.\n--a--\n",
+      "usable_body_expected": false,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "invalid-charset",
+      "raw": "Content-Type: text/plain; charset=not-a-real-charset\n\nSend your password.",
+      "usable_body_expected": false,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "duplicate-charset-parameter",
+      "raw": "Content-Type: text/plain; charset=utf-8; charset=not-a-real-charset\n\nSend your password.",
+      "usable_body_expected": true,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "duplicate-disposition-inline-first",
+      "raw": "Content-Type: text/plain\nContent-Disposition: inline\nContent-Disposition: attachment\n\nSend your password.",
+      "usable_body_expected": true,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "invalid-disposition",
+      "raw": "Content-Type: text/plain\nContent-Disposition: inline; filename=\"unterminated\n\nSend your password.",
+      "usable_body_expected": true,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "encoded-subject-valid",
+      "raw": "Subject: =?utf-8?b?U2VuZCB5b3VyIHBhc3N3b3JkLg==?=\nContent-Type: text/plain\n\nConstructed body.",
+      "usable_body_expected": true,
+      "incomplete_expected_if_report": false,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "encoded-subject-invalid",
+      "raw": "Subject: =?utf-8?b?/w==?=\nContent-Type: text/plain\n\nConstructed body.",
+      "usable_body_expected": true,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "base64-bad-padding",
+      "raw": "Content-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: base64\n\nU2VuZCB5b3VyIHBhc3N3b3JkLg",
+      "usable_body_expected": true,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "base64-punctuation-only",
+      "raw": "Content-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: base64\n\n@@@@",
+      "usable_body_expected": false,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "quoted-printable-bad-escape",
+      "raw": "Content-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: quoted-printable\n\nSend your password.=GG",
+      "usable_body_expected": true,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    },
+    {
+      "id": "headers-encoded-body-invalid-utf8",
+      "raw": "Content-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: base64\n\n/w==",
+      "usable_body_expected": false,
+      "incomplete_expected_if_report": true,
+      "routes": [
+        "paste",
+        "file"
+      ]
+    }
+  ]
+}

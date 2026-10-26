@@ -1,0 +1,17 @@
+{
+  "qr_seconds": 0.44388480007182807,
+  "qr_review_only": true,
+  "email_mime_link_mismatch": true,
+  "upload_privacy_headers": true,
+  "negative_advice_cases": 3,
+  "known_website_mismatch": true,
+  "deep_email_actionable_400": true,
+  "actual_http_oversize_413": true,
+  "cross_origin_blocked": true,
+  "qr_configured": true,
+  "static/demo-qr.png_sha256": "51c169587d95d8b2e29e33352e0cfd0cb8bc0b5772ce01c5bde509558f8b8451",
+  "static/demo-email.eml_sha256": "1aa619047b331183470d6cdf4ef6519b9272a491d384cd3a2af16b11c9a1151f",
+  "final_attachment_only_incomplete": true,
+  "unscanned_limit_in_export": true,
+  "server_restarted_after_final_code": true
+}

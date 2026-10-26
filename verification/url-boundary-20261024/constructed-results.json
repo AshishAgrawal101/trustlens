@@ -1,0 +1,54 @@
+{
+  "network_calls": 0,
+  "model_calls": 0,
+  "rows": [
+    {
+      "input": "https:/example.org/path",
+      "status": "accepted",
+      "verified_host": "https",
+      "risk_level": "low"
+    },
+    {
+      "input": "http:/example.org",
+      "status": "accepted",
+      "verified_host": "http",
+      "risk_level": "low"
+    },
+    {
+      "input": "https://0x7f000001/",
+      "status": "accepted",
+      "verified_host": "0x7f000001",
+      "risk_level": "low"
+    },
+    {
+      "input": "https://0x7f.0.0.1/",
+      "status": "accepted",
+      "verified_host": "0x7f.0.0.1",
+      "risk_level": "low"
+    },
+    {
+      "input": "https://example.0x1/",
+      "status": "accepted",
+      "verified_host": "example.0x1",
+      "risk_level": "low"
+    },
+    {
+      "input": "https://[fe80::1%25eth0]/",
+      "status": "accepted",
+      "verified_host": "fe80::1%25eth0",
+      "risk_level": "guarded"
+    },
+    {
+      "input": "https://example.org/\u202e",
+      "status": "rejected",
+      "message": "Enter an address without hidden control or formatting characters."
+    }
+  ],
+  "whatwg_node_observations": {
+    "https:/example.org/path": "example.org",
+    "http:/example.org": "example.org",
+    "https://0x7f000001/": "127.0.0.1",
+    "https://0x7f.0.0.1/": "127.0.0.1",
+    "https://example.0x1/": "rejected"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "observed": {
+    "button": "Read QR code→",
+    "file": "",
+    "resultHidden": true,
+    "text": "Download a constructed QR image. Choose the downloaded file above, then select Read QR code and review its text. Nothing is checked automatically. Transparent areas in QR images are read against white. If the code loses contrast, use an opaque copy with a contrasting background.",
+    "visible": true
+  },
+  "fileUploadAttempted": false,
+  "normalNewTabAfterExistingTabFocusTimeout": true
+}

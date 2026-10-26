@@ -1,0 +1,317 @@
+{
+  "same_frozen_workloads": true,
+  "results": [
+    {
+      "id": "email-parts-1000",
+      "method": "cProfile enabled, tracemalloc disabled",
+      "analysis_wall_seconds": 0.9703426999039948,
+      "status": "report",
+      "incomplete": false,
+      "focused_functions": [
+        {
+          "function": "email.py:51:link_label_evidence",
+          "calls": 1,
+          "own_seconds": 9.000000000000001e-07,
+          "cumulative_seconds": 9.000000000000001e-07
+        },
+        {
+          "function": "email.py:92:unscanned_parts_count",
+          "calls": 1,
+          "own_seconds": 0.0023344,
+          "cumulative_seconds": 0.1183724
+        },
+        {
+          "function": "feedparser.py:182:close",
+          "calls": 1,
+          "own_seconds": 4.5e-06,
+          "cumulative_seconds": 0.00014560000000000002
+        },
+        {
+          "function": "email.py:113:analyze_email_bytes",
+          "calls": 1,
+          "own_seconds": 0.00021490000000000002,
+          "cumulative_seconds": 0.9702905000000001
+        },
+        {
+          "function": "email.py:126:analyze_message",
+          "calls": 1,
+          "own_seconds": 0.0039067,
+          "cumulative_seconds": 0.5705680000000001
+        },
+        {
+          "function": "text.py:180:analyze_text",
+          "calls": 1,
+          "own_seconds": 3.9800000000000005e-05,
+          "cumulative_seconds": 0.039787100000000006
+        },
+        {
+          "function": "email.py:80:body_parts",
+          "calls": 3001,
+          "own_seconds": 0.0057873,
+          "cumulative_seconds": 0.11581240000000001
+        },
+        {
+          "function": "parser.py:110:parsebytes",
+          "calls": 1,
+          "own_seconds": 3.1000000000000004e-06,
+          "cumulative_seconds": 0.3995002
+        },
+        {
+          "function": "feedparser.py:69:close",
+          "calls": 1,
+          "own_seconds": 5.4e-06,
+          "cumulative_seconds": 9.3e-06
+        },
+        {
+          "function": "feedparser.py:216:_parsegen",
+          "calls": 1005,
+          "own_seconds": 0.0126044,
+          "cumulative_seconds": 0.39881950000000005
+        },
+        {
+          "function": "text.py:83:request_evidence",
+          "calls": 1,
+          "own_seconds": 0.006956100000000001,
+          "cumulative_seconds": 0.0394404
+        },
+        {
+          "function": "feedparser.py:171:feed",
+          "calls": 4,
+          "own_seconds": 1.3100000000000002e-05,
+          "cumulative_seconds": 0.3992638
+        }
+      ],
+      "top_own_time": [
+        {
+          "function": "headerregistry.py:590:__getitem__",
+          "calls": 14009,
+          "own_seconds": 0.10374710000000001,
+          "cumulative_seconds": 0.10841700000000001
+        },
+        {
+          "function": "_header_value_parser.py:2657:parse_content_type_header",
+          "calls": 14009,
+          "own_seconds": 0.0490461,
+          "cumulative_seconds": 0.3177397
+        },
+        {
+          "function": "~:0:<method 'join' of 'str' objects>",
+          "calls": 91103,
+          "own_seconds": 0.0461864,
+          "cumulative_seconds": 0.1195592
+        },
+        {
+          "function": "_header_value_parser.py:2272:get_ttext",
+          "calls": 28018,
+          "own_seconds": 0.0368263,
+          "cumulative_seconds": 0.1105262
+        },
+        {
+          "function": "_header_value_parser.py:2291:get_token",
+          "calls": 28018,
+          "own_seconds": 0.030638600000000002,
+          "cumulative_seconds": 0.15988760000000002
+        },
+        {
+          "function": "_header_value_parser.py:142:<genexpr>",
+          "calls": 114090,
+          "own_seconds": 0.0281636,
+          "cumulative_seconds": 0.0685853
+        },
+        {
+          "function": "_header_value_parser.py:154:<genexpr>",
+          "calls": 129225,
+          "own_seconds": 0.0279818,
+          "cumulative_seconds": 0.0694565
+        },
+        {
+          "function": "headerregistry.py:446:parse",
+          "calls": 14009,
+          "own_seconds": 0.027473300000000003,
+          "cumulative_seconds": 0.5455365
+        },
+        {
+          "function": "headerregistry.py:190:__new__",
+          "calls": 14009,
+          "own_seconds": 0.027467000000000002,
+          "cumulative_seconds": 0.6515302000000001
+        },
+        {
+          "function": "_header_value_parser.py:898:__new__",
+          "calls": 47072,
+          "own_seconds": 0.026597500000000003,
+          "cumulative_seconds": 0.036517400000000005
+        },
+        {
+          "function": "_header_value_parser.py:137:__init__",
+          "calls": 48081,
+          "own_seconds": 0.0264716,
+          "cumulative_seconds": 0.0264716
+        },
+        {
+          "function": "~:0:<built-in method builtins.sum>",
+          "calls": 48081,
+          "own_seconds": 0.025144000000000003,
+          "cumulative_seconds": 0.0806162
+        }
+      ],
+      "process_wall_seconds": 1.3146006999304518
+    },
+    {
+      "id": "email-parts-6000",
+      "method": "cProfile enabled, tracemalloc disabled",
+      "analysis_wall_seconds": 7.337507799966261,
+      "status": "report",
+      "incomplete": false,
+      "focused_functions": [
+        {
+          "function": "email.py:51:link_label_evidence",
+          "calls": 1,
+          "own_seconds": 1.5e-06,
+          "cumulative_seconds": 1.5e-06
+        },
+        {
+          "function": "feedparser.py:216:_parsegen",
+          "calls": 6025,
+          "own_seconds": 0.0798795,
+          "cumulative_seconds": 2.5653635
+        },
+        {
+          "function": "email.py:92:unscanned_parts_count",
+          "calls": 1,
+          "own_seconds": 0.0151269,
+          "cumulative_seconds": 0.9716113000000001
+        },
+        {
+          "function": "feedparser.py:182:close",
+          "calls": 1,
+          "own_seconds": 5.600000000000001e-06,
+          "cumulative_seconds": 0.00015690000000000002
+        },
+        {
+          "function": "email.py:113:analyze_email_bytes",
+          "calls": 1,
+          "own_seconds": 0.002078,
+          "cumulative_seconds": 7.3374484
+        },
+        {
+          "function": "email.py:126:analyze_message",
+          "calls": 1,
+          "own_seconds": 0.033202800000000005,
+          "cumulative_seconds": 4.7669889
+        },
+        {
+          "function": "email.py:80:body_parts",
+          "calls": 18001,
+          "own_seconds": 0.1391397,
+          "cumulative_seconds": 1.069601
+        },
+        {
+          "function": "parser.py:110:parsebytes",
+          "calls": 1,
+          "own_seconds": 3.5000000000000004e-06,
+          "cumulative_seconds": 2.5683257000000004
+        },
+        {
+          "function": "feedparser.py:69:close",
+          "calls": 1,
+          "own_seconds": 5e-06,
+          "cumulative_seconds": 8.7e-06
+        },
+        {
+          "function": "text.py:180:analyze_text",
+          "calls": 1,
+          "own_seconds": 0.0001353,
+          "cumulative_seconds": 0.21498240000000002
+        },
+        {
+          "function": "text.py:83:request_evidence",
+          "calls": 1,
+          "own_seconds": 0.0506122,
+          "cumulative_seconds": 0.2143383
+        },
+        {
+          "function": "feedparser.py:171:feed",
+          "calls": 24,
+          "own_seconds": 7.31e-05,
+          "cumulative_seconds": 2.56761
+        }
+      ],
+      "top_own_time": [
+        {
+          "function": "headerregistry.py:590:__getitem__",
+          "calls": 84009,
+          "own_seconds": 0.8465836000000001,
+          "cumulative_seconds": 0.8846940000000001
+        },
+        {
+          "function": "_header_value_parser.py:2657:parse_content_type_header",
+          "calls": 84009,
+          "own_seconds": 0.3661354,
+          "cumulative_seconds": 2.3800522
+        },
+        {
+          "function": "~:0:<method 'join' of 'str' objects>",
+          "calls": 546103,
+          "own_seconds": 0.34336160000000004,
+          "cumulative_seconds": 0.8723812000000001
+        },
+        {
+          "function": "_header_value_parser.py:2272:get_ttext",
+          "calls": 168018,
+          "own_seconds": 0.2779438,
+          "cumulative_seconds": 0.8495771000000001
+        },
+        {
+          "function": "_header_value_parser.py:2291:get_token",
+          "calls": 168018,
+          "own_seconds": 0.22882010000000003,
+          "cumulative_seconds": 1.2245287
+        },
+        {
+          "function": "headerregistry.py:190:__new__",
+          "calls": 84009,
+          "own_seconds": 0.21811250000000001,
+          "cumulative_seconds": 4.8847234
+        },
+        {
+          "function": "_header_value_parser.py:142:<genexpr>",
+          "calls": 684090,
+          "own_seconds": 0.21692820000000002,
+          "cumulative_seconds": 0.49898600000000004
+        },
+        {
+          "function": "headerregistry.py:446:parse",
+          "calls": 84009,
+          "own_seconds": 0.2050449,
+          "cumulative_seconds": 4.0589982000000004
+        },
+        {
+          "function": "_header_value_parser.py:137:__init__",
+          "calls": 288081,
+          "own_seconds": 0.20221470000000002,
+          "cumulative_seconds": 0.20221470000000002
+        },
+        {
+          "function": "_header_value_parser.py:154:<genexpr>",
+          "calls": 774225,
+          "own_seconds": 0.1980163,
+          "cumulative_seconds": 0.5195723
+        },
+        {
+          "function": "_header_value_parser.py:898:__new__",
+          "calls": 282072,
+          "own_seconds": 0.1971372,
+          "cumulative_seconds": 0.2726312
+        },
+        {
+          "function": "~:0:<built-in method builtins.sum>",
+          "calls": 288081,
+          "own_seconds": 0.1822573,
+          "cumulative_seconds": 0.6000839
+        }
+      ],
+      "process_wall_seconds": 7.677098399959505
+    }
+  ]
+}

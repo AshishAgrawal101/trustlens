@@ -1,0 +1,31 @@
+{
+  "/health": {
+    "status": 200,
+    "response": {
+      "status": "ok"
+    }
+  },
+  "/api/capabilities": {
+    "status": 200,
+    "response": {
+      "message_rules": true,
+      "qr_reader": {
+        "configured": true,
+        "detail": "OpenCV is installed; successful decoding is checked only when you read a QR image. No destination is opened."
+      },
+      "screenshot_ocr": {
+        "configured": true,
+        "detail": "Windows OCR worker is configured; installed English language support and recognition are checked only when you read a screenshot."
+      },
+      "image_detector": {
+        "configured": false,
+        "detail": "Required local image assets or dependencies were not found. Message and link checks still work."
+      },
+      "content_credentials": {
+        "configured": false,
+        "detail": "Verifier configuration only; a file must be checked before any provenance result is available."
+      },
+      "notice": "Configuration is not readiness, accuracy or verification of a file. No model was loaded and no content was sent."
+    }
+  }
+}

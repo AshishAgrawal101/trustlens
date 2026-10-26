@@ -1,0 +1,16 @@
+{
+  "scope": "Actual320px planning help/type/Clear only. No file selected or uploaded. Completed/pending preservation tested with controller doubles separately.",
+  "mediaView34": {
+    "caption": "Constructed planning note: verify the original caption and event date.",
+    "clientWidth": 305,
+    "help": "Up to 4,000 characters for your own planning. This caption stays on this page: it is not uploaded, parsed or verified. Editing these notes keeps the independent file inspection and its results. File details cannot establish whether its claim is true.",
+    "resultHidden": true,
+    "scrollWidth": 305
+  },
+  "mediaClear34": {
+    "caption": "",
+    "facts": "",
+    "focus": "media-file",
+    "resultHidden": true
+  }
+}

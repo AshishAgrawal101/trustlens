@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');const root=process.cwd(),testDir=path.join(root,'tests');const old=fs.readFileSync('verification/pocket-upgrade-integrity-v38-20261025/v37-claim.html.txt','utf8');
+assert.match(old,/<button[^>]*id="claim-review-submit"[^>]*\bdisabled/);assert.doesNotMatch(old,/id="claim-correct-source"/);
+const shim={...fs,readFileSync(p,...args){return String(p).replaceAll('\\','/').endsWith('/static/claim-review.html')?old:fs.readFileSync(p,...args);}};const customRequire=id=>id==='node:fs'?shim:require(id);
+const pre=fs.readFileSync(path.join(testDir,'claim_controller.test.cjs'),'utf8').split('const fixture=')[0];const meta={require:customRequire,__dirname:testDir,AbortController,AbortSignal,Blob};vm.runInNewContext(pre+'\nthis.harness=harness;',meta);
+let harness=meta.harness.replace('assert.ok(ids[id],`Missing element ${id}`);return ids[id];','return ids[id]??null;').replace('e.hidden=/','e.disabled=/\\bdisabled\\b/.test(attrs);e.hidden=/');
+harness=harness.replace('vm.runInContext(source,context);',"assert.equal(ids['claim-review-submit'].disabled,true);vm.runInContext(source,context);");
+const fixture={require:customRequire,__dirname:testDir,AbortController,AbortSignal,Blob};vm.runInNewContext(harness+'\nthis.setup=setup;',fixture);
+(async()=>{const x=fixture.setup();assert.equal(x.ids['claim-correct-source'],undefined);assert.equal(x.ids['claim-review-submit'].disabled,false);
+x.ids['claim-text'].value='A constructed claim';await x.ids['claim-form'].fire('submit');assert.equal(x.ids['claim-result'].hidden,false);
+x.ids['source-a-url'].value='javascript:PRIVATE';await x.ids['source-a-url'].fire('input');await x.ids['claim-form'].fire('submit');assert.equal(x.ids['claim-error'].hidden,false);assert.doesNotMatch(x.ids['claim-error'].textContent,/PRIVATE/);assert.equal(x.ids['claim-sources'].open,true);
+x.ids['source-a-url'].value='https://example.org';await x.ids['source-a-url'].fire('input');assert.equal(x.ids['claim-error'].hidden,true);await x.ids['claim-form'].fire('submit');assert.equal(x.ids['claim-result'].hidden,false);
+await x.ids['claim-clear'].fire('click');assert.equal(x.ids['claim-text'].value,'');assert.equal(x.ids['claim-result'].hidden,true);
+for(const event of ['pagehide','pageshow']){x.ids['claim-text'].value='temporary';for(const fn of x.windowEvents[event])fn({persisted:true});assert.equal(x.ids['claim-text'].value,'');}
+assert.equal(x.requests.length,0);const result={oldHtmlSha256:require('crypto').createHash('sha256').update(old).digest('hex'),initialDisabledAsserted:true,missingNodeRemainedAbsent:true,reviewEnabled:true,validReview:true,privateCustomError:true,editRepair:true,clearAndLifecycle:true,requests:0,browserRaceGuaranteed:false};fs.writeFileSync('verification/pocket-upgrade-integrity-v38-20261025/after-results.json',JSON.stringify(result,null,2));console.log(result);})();

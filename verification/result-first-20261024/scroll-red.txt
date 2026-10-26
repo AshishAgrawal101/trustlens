@@ -1,0 +1,85 @@
+✖ review is explicit, fixed output receives focus, and no network request occurs (8.9533ms)
+✔ every input change invalidates prior output and disables exports (13.4382ms)
+✔ validation preserves drafts, suppresses private error text and cannot export a completed review (1.7947ms)
+✔ Clear, page exit and persisted Back erase all private fields and prior output (6.1238ms)
+✔ copy and download export a fixed plan; late copy completion cannot revive cleared output (1.878ms)
+✔ clipboard timeout offers download without exposing input (1.3508ms)
+✖ numbers require explicit submit; construction and typing send nothing (26.5224ms)
+✔ all four edits remove old facts/questions and errors while retaining drafts (6.5825ms)
+✔ Clear, exit and persisted Back remove every supplied number and result (5.2725ms)
+✔ loading constructed example clears previous output and waits for submit (2.3623ms)
+✔ bad or native-invalid values cannot retain a previous calculation (11.5619ms)
+✔ zero baseline is an undefined relative change rather than an infinity or causal claim (2.6819ms)
+✔ empty guidance follows the explicit comparison lifecycle (1.8285ms)
+✖ explicit comparison labels changes with literal text and sends or exports nothing (7.8796ms)
+✔ edits invalidate old diff and Clear/exit/Back remove both versions and output (6.6445ms)
+✔ invalid retry never retains partial or old comparison; fixed error focuses without input echo (7.2708ms)
+✔ constructed example replaces drafts but waits for explicit comparison (1.7456ms)
+✔ identical supplied versions are described without authenticating their source (1.3206ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 15
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 188.3193
+
+✖ failing tests:
+
+test at tests\claim_controller.test.cjs:12:1
+✖ review is explicit, fixed output receives focus, and no network request occurs (8.9533ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'start'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_controller.test.cjs:14:92)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'start',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\numbers_controller.test.cjs:13:1
+✖ numbers require explicit submit; construction and typing send nothing (26.5224ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'start'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_controller.test.cjs:16:172)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'start',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\quote_controller.test.cjs:10:1
+✖ explicit comparison labels changes with literal text and sends or exports nothing (7.8796ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'start'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\quote_controller.test.cjs:12:260)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'start',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "missing_label_aria_targets": []
+  },
+  {
+    "path": "/static/tools.html",
+    "status": 200,
+    "missing_label_aria_targets": []
+  },
+  {
+    "path": "/static/claim-review.html",
+    "status": 200,
+    "missing_label_aria_targets": []
+  },
+  {
+    "path": "/static/numbers-context.html",
+    "status": 200,
+    "missing_label_aria_targets": []
+  },
+  {
+    "path": "/static/quote-context.html",
+    "status": 200,
+    "missing_label_aria_targets": []
+  },
+  {
+    "path": "/static/media-context.html",
+    "status": 200,
+    "missing_label_aria_targets": []
+  },
+  {
+    "path": "/context-guide.html",
+    "status": 200,
+    "missing_label_aria_targets": []
+  },
+  {
+    "path": "/phone/context.html",
+    "status": 200,
+    "missing_label_aria_targets": []
+  }
+]

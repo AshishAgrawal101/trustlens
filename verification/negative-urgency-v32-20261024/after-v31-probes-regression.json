@@ -1,0 +1,1569 @@
+{
+  "purpose": "Newpostfixregressionreplay, oldv31before/nulls notoverwritten",
+  "rows": [
+    {
+      "id": "direct-nonurgent",
+      "outputs": {
+        "text": {
+          "positive_ids": [],
+          "expectation_matches": true,
+          "report": {
+            "kind": "text",
+            "risk_index": null,
+            "risk_level": "low",
+            "confidence": "low",
+            "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+            "evidence": [
+              {
+                "id": "context:negative_urgency",
+                "evidence_class": "unknown",
+                "severity": "info",
+                "title": "Explicit wording: not urgent",
+                "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not urgent\u201d. That wording does not verify the sender or establish safety.",
+                "source": "Local wording and context rules",
+                "weight": 0.0
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "call": {
+          "positive_ids": [],
+          "expectation_matches": true,
+          "report": {
+            "kind": "call",
+            "risk_index": null,
+            "risk_level": "low",
+            "confidence": "low",
+            "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+            "evidence": [
+              {
+                "id": "context:negative_urgency",
+                "evidence_class": "unknown",
+                "severity": "info",
+                "title": "Explicit wording: not urgent",
+                "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not urgent\u201d. That wording does not verify the sender or establish safety.",
+                "source": "Local wording and context rules",
+                "weight": 0.0
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "End the call and call back independently",
+                "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "email-paste": {
+          "positive_ids": [],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "low",
+            "confidence": "low",
+            "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+            "evidence": [
+              {
+                "id": "context:negative_urgency",
+                "evidence_class": "unknown",
+                "severity": "info",
+                "title": "Explicit wording: not urgent",
+                "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not urgent\u201d. That wording does not verify the sender or establish safety.",
+                "source": "Local wording and context rules",
+                "weight": 0.0
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "eml": {
+          "positive_ids": [],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "low",
+            "confidence": "low",
+            "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+            "evidence": [
+              {
+                "id": "context:negative_urgency",
+                "evidence_class": "unknown",
+                "severity": "info",
+                "title": "Explicit wording: not urgent",
+                "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not urgent\u201d. That wording does not verify the sender or establish safety.",
+                "source": "Local wording and context rules",
+                "weight": 0.0
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        }
+      }
+    },
+    {
+      "id": "affirmative-urgent",
+      "outputs": {
+        "text": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "text",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is urgent; please reply today\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "call": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "call",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is urgent; please reply today\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "End the call and call back independently",
+                "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "email-paste": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is urgent; please reply today\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "eml": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is urgent; please reply today\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        }
+      }
+    },
+    {
+      "id": "nonurgent-plus-code",
+      "outputs": {
+        "text": {
+          "positive_ids": [
+            "request:code"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "text",
+            "risk_index": null,
+            "risk_level": "high",
+            "confidence": "low",
+            "summary": "Pause before responding. This contains a request worth verifying independently.",
+            "evidence": [
+              {
+                "id": "context:negative_urgency",
+                "evidence_class": "unknown",
+                "severity": "info",
+                "title": "Explicit wording: not urgent",
+                "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not urgent\u201d. That wording does not verify the sender or establish safety.",
+                "source": "Local wording and context rules",
+                "weight": 0.0
+              },
+              {
+                "id": "request:code",
+                "evidence_class": "inferred",
+                "severity": "high",
+                "title": "Request to share a security code",
+                "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.8
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Keep security codes and passwords private",
+                "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "call": {
+          "positive_ids": [
+            "request:code"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "call",
+            "risk_index": null,
+            "risk_level": "high",
+            "confidence": "low",
+            "summary": "Pause before responding. This contains a request worth verifying independently.",
+            "evidence": [
+              {
+                "id": "context:negative_urgency",
+                "evidence_class": "unknown",
+                "severity": "info",
+                "title": "Explicit wording: not urgent",
+                "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not urgent\u201d. That wording does not verify the sender or establish safety.",
+                "source": "Local wording and context rules",
+                "weight": 0.0
+              },
+              {
+                "id": "request:code",
+                "evidence_class": "inferred",
+                "severity": "high",
+                "title": "Request to share a security code",
+                "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.8
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "End the call and call back independently",
+                "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+              },
+              {
+                "title": "Keep security codes and passwords private",
+                "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "email-paste": {
+          "positive_ids": [
+            "request:code"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "high",
+            "confidence": "low",
+            "summary": "Pause before responding. This contains a request worth verifying independently.",
+            "evidence": [
+              {
+                "id": "context:negative_urgency",
+                "evidence_class": "unknown",
+                "severity": "info",
+                "title": "Explicit wording: not urgent",
+                "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not urgent\u201d. That wording does not verify the sender or establish safety.",
+                "source": "Local wording and context rules",
+                "weight": 0.0
+              },
+              {
+                "id": "request:code",
+                "evidence_class": "inferred",
+                "severity": "high",
+                "title": "Request to share a security code",
+                "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.8
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Keep security codes and passwords private",
+                "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "eml": {
+          "positive_ids": [
+            "request:code"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "high",
+            "confidence": "low",
+            "summary": "Pause before responding. This contains a request worth verifying independently.",
+            "evidence": [
+              {
+                "id": "context:negative_urgency",
+                "evidence_class": "unknown",
+                "severity": "info",
+                "title": "Explicit wording: not urgent",
+                "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not urgent\u201d. That wording does not verify the sender or establish safety.",
+                "source": "Local wording and context rules",
+                "weight": 0.0
+              },
+              {
+                "id": "request:code",
+                "evidence_class": "inferred",
+                "severity": "high",
+                "title": "Request to share a security code",
+                "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.8
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Keep security codes and passwords private",
+                "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        }
+      }
+    },
+    {
+      "id": "not-only-urgent",
+      "outputs": {
+        "text": {
+          "positive_ids": [
+            "request:code",
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "text",
+            "risk_index": null,
+            "risk_level": "high",
+            "confidence": "low",
+            "summary": "Pause before responding. This contains a request worth verifying independently.",
+            "evidence": [
+              {
+                "id": "request:code",
+                "evidence_class": "inferred",
+                "severity": "high",
+                "title": "Request to share a security code",
+                "detail": "Matched wording: \u201cThis is not only urgent; send me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.8
+              },
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is not only urgent; send me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Keep security codes and passwords private",
+                "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n2 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "call": {
+          "positive_ids": [
+            "request:code",
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "call",
+            "risk_index": null,
+            "risk_level": "high",
+            "confidence": "low",
+            "summary": "Pause before responding. This contains a request worth verifying independently.",
+            "evidence": [
+              {
+                "id": "request:code",
+                "evidence_class": "inferred",
+                "severity": "high",
+                "title": "Request to share a security code",
+                "detail": "Matched wording: \u201cThis is not only urgent; send me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.8
+              },
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is not only urgent; send me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "End the call and call back independently",
+                "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+              },
+              {
+                "title": "Keep security codes and passwords private",
+                "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n2 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "email-paste": {
+          "positive_ids": [
+            "request:code",
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "high",
+            "confidence": "low",
+            "summary": "Pause before responding. This contains a request worth verifying independently.",
+            "evidence": [
+              {
+                "id": "request:code",
+                "evidence_class": "inferred",
+                "severity": "high",
+                "title": "Request to share a security code",
+                "detail": "Matched wording: \u201cThis is not only urgent; send me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.8
+              },
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is not only urgent; send me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Keep security codes and passwords private",
+                "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n2 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "eml": {
+          "positive_ids": [
+            "request:code",
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "high",
+            "confidence": "low",
+            "summary": "Pause before responding. This contains a request worth verifying independently.",
+            "evidence": [
+              {
+                "id": "request:code",
+                "evidence_class": "inferred",
+                "severity": "high",
+                "title": "Request to share a security code",
+                "detail": "Matched wording: \u201cThis is not only urgent; send me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.8
+              },
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is not only urgent; send me your verification code\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Keep security codes and passwords private",
+                "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n2 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        }
+      }
+    },
+    {
+      "id": "later-positive-pressure",
+      "outputs": {
+        "text": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "text",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is not urgent for the group\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "call": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "call",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is not urgent for the group\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "End the call and call back independently",
+                "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "email-paste": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is not urgent for the group\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "eml": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThis is not urgent for the group\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        }
+      }
+    },
+    {
+      "id": "reported-pressure-advice",
+      "outputs": {
+        "text": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": false,
+          "report": {
+            "kind": "text",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cIgnore anyone calling this urgent; verify through a known number\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "call": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": false,
+          "report": {
+            "kind": "call",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cIgnore anyone calling this urgent; verify through a known number\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "End the call and call back independently",
+                "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "email-paste": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": false,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cIgnore anyone calling this urgent; verify through a known number\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "eml": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": false,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cIgnore anyone calling this urgent; verify through a known number\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        }
+      }
+    },
+    {
+      "id": "nonadjacent-nonurgent",
+      "outputs": {
+        "text": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": false,
+          "report": {
+            "kind": "text",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThe appointment is not an urgent matter; reply next week\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "call": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": false,
+          "report": {
+            "kind": "call",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThe appointment is not an urgent matter; reply next week\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "End the call and call back independently",
+                "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "email-paste": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": false,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThe appointment is not an urgent matter; reply next week\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "eml": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": false,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cThe appointment is not an urgent matter; reply next week\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        }
+      }
+    },
+    {
+      "id": "quoted-negative-plus-active",
+      "outputs": {
+        "text": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "text",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cDo not call this 'not urgent'; act now\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "call": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "call",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cDo not call this 'not urgent'; act now\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "End the call and call back independently",
+                "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+              },
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nEnd the call and call back independently\nHang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "email-paste": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cDo not call this 'not urgent'; act now\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        },
+        "eml": {
+          "positive_ids": [
+            "request:urgency"
+          ],
+          "expectation_matches": true,
+          "report": {
+            "kind": "email",
+            "risk_index": null,
+            "risk_level": "guarded",
+            "confidence": "low",
+            "summary": "Check the context before you act. Some warning signs need a closer look.",
+            "evidence": [
+              {
+                "id": "request:urgency",
+                "evidence_class": "inferred",
+                "severity": "medium",
+                "title": "Pressure to act quickly",
+                "detail": "Matched wording: \u201cDo not call this 'not urgent'; act now\u201d. Context may change its meaning.",
+                "source": "Local request-pattern rules",
+                "weight": 0.35
+              }
+            ],
+            "limitations": [
+              "English-language rules identify wording and link structure, not intent or sender identity.",
+              "Pasted headers are supplied text, not a trusted mail-server connection.",
+              "Attachments are not scanned; message links are inspected as text without fetching them.",
+              "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+              "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+              "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+              "A passed mail-authentication check would not establish that a request is safe."
+            ],
+            "content_credentials": null,
+            "model_ran": false,
+            "decision_basis": "rules",
+            "actions": [
+              {
+                "title": "Verify through a separate route",
+                "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+              },
+              {
+                "title": "Take time to check the request",
+                "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+              }
+            ],
+            "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+          }
+        }
+      }
+    }
+  ]
+}

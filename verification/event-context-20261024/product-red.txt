@@ -1,0 +1,84 @@
+✔ omitted and blank event date preserve frozen old outputs and PLAN bytes (5.0976ms)
+✖ event chronology observes leap-year year-boundary same-day and after without a truth judgment (0.7594ms)
+✔ missing publication and date-only inputs never create dated source accounts or invented gaps (0.2803ms)
+✖ invalid event dates reject with fixed private feedback (0.345ms)
+✖ event field is optional unnamed and bounded; explicit review renders then exports only the existing fixed plan (8.5772ms)
+✖ event edits examples Clear exit and persisted Back invalidate and erase as appropriate (3.7873ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 2
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 108.4949
+
+✖ failing tests:
+
+test at tests\claim_event_date.test.cjs:9:1
+✖ event chronology observes leap-year year-boundary same-day and after without a truth judgment (0.7594ms)
+  AssertionError [ERR_ASSERTION]: before
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_event_date.test.cjs:12:82)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\claim_event_date.test.cjs:22:1
+✖ invalid event dates reject with fixed private feedback (0.345ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_event_date.test.cjs:23:118)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\claim_event_date.test.cjs:29:1
+✖ event field is optional unnamed and bounded; explicit review renders then exports only the existing fixed plan (8.5772ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(tag)
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_event_date.test.cjs:30:152)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\claim_event_date.test.cjs:34:1
+✖ event edits examples Clear exit and persisted Back invalidate and erase as appropriate (3.7873ms)
+  TypeError: Cannot set properties of undefined (setting 'value')
+      at review (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_event_date.test.cjs:28:104)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_event_date.test.cjs:36:35)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

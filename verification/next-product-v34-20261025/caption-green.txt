@@ -1,0 +1,47 @@
+✔ Cancel acknowledges stopped waiting while preserving file preview caption and focus (10.6335ms)
+✔ late cancelled failure cannot replace acknowledgment or focus an error (3.5875ms)
+✔ edit replacement Clear retry exit and persisted Back erase the old acknowledgment (46.5639ms)
+✔ caption planning preserves completed file facts questions preview and status without reinspection (39.6639ms)
+✔ caption planning keeps pending file-only request and accepts its independent result (5.1708ms)
+✔ file replacement Clear Cancel native invalid and lifecycle still reject late reports after caption edit (14.194ms)
+✔ caption edit clears Cancel acknowledgment without restarting or admitting the canceled response (4.7599ms)
+✔ metadata yields file facts and explicit limits, not origin or scene conclusions (34.4225ms)
+✔ consumed fields and display orientation are validated before rendering (1.1484ms)
+✔ file selection only previews; explicit inspection posts file only and never uploads caption (9.79ms)
+✔ invalid selection clears prior image pixels and rejects unsupported files before fetch (4.4948ms)
+✔ Clear, replacement, exit and Back cannot restore old previews or late results (8.5887ms)
+✔ Cancel preserves draft while rejecting late results (2.5239ms)
+✔ malformed success and unreadable JSON preserve the draft without showing a partial result (5.0618ms)
+✔ server failures preserve drafts and give retry guidance instead of blaming the image (4.7779ms)
+✔ timeout aborts actual request signal, preserves local draft and restores controls with fixed feedback (11.2623ms)
+✔ Clear aborts signal and late failure cannot focus or repaint an error (5.6746ms)
+✔ unknown/missing schema fields and HTML-like metadata cannot execute markup or produce partial output (39.7411ms)
+✔ native invalid without submit clears completed media output and keeps selection/caption (46.3871ms)
+✔ native invalid aborts pending client wait and stale completion cannot restore output (7.2587ms)
+✔ media page exposes required controller hooks, named labels and no native private GET fields (1.8981ms)
+✔ original preview is single full aspect with disclosure and keyboard scroll region (0.3325ms)
+✔ privacy and interpretation limits remain visible, controller is external and print hides private content (0.2614ms)
+✔ frozen media semantic contract: no-exif (1.6884ms)
+✔ frozen media semantic contract: camera-present (0.286ms)
+✔ frozen media semantic contract: camera-absent (0.1577ms)
+✔ frozen media semantic contract: editor-software (0.146ms)
+✔ frozen media semantic contract: capture-software (0.2185ms)
+✔ frozen media semantic contract: date-past (0.174ms)
+✔ frozen media semantic contract: date-future (0.1778ms)
+✔ frozen media semantic contract: date-invalid (0.1583ms)
+✔ frozen media semantic contract: gps-present (0.1973ms)
+✔ frozen media semantic contract: gps-absent (0.431ms)
+✔ frozen media semantic contract: orientation (0.1868ms)
+✔ frozen media semantic contract: caption-not-analyzed (0.0981ms)
+✔ frozen case lineage, no network and omitted caption are explicit (0.4293ms)
+✔ camera, software and missing fields cannot establish origin (0.5229ms)
+✔ GPS reports presence only and does not prove privacy or scene location (0.4439ms)
+✔ future time and display orientation remain file context, never caption truth (0.4338ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 272.2935

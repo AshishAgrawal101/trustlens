@@ -1,0 +1,65 @@
+{
+  "groups": {
+    "ordinary": {
+      "n": 9,
+      "warnings": 5,
+      "specific_action_proxies": {
+        "not_requested": 9
+      }
+    },
+    "advice": {
+      "n": 9,
+      "warnings": 0,
+      "specific_action_proxies": {
+        "generic_only": 8,
+        "not_requested": 1
+      }
+    },
+    "scam_pattern": {
+      "n": 9,
+      "warnings": 3,
+      "specific_action_proxies": {
+        "all_desired_themes_present": 2,
+        "generic_only": 5,
+        "partial_specific_guidance": 2
+      }
+    },
+    "ambiguous": {
+      "n": 9,
+      "warnings": 3,
+      "specific_action_proxies": {
+        "all_desired_themes_present": 2,
+        "generic_only": 6,
+        "not_requested": 1
+      }
+    }
+  },
+  "uncertainty_contract_passes": 36,
+  "unresolved_ids": [
+    "cac-ambiguous-01",
+    "cac-ambiguous-02",
+    "cac-ambiguous-03",
+    "cac-ambiguous-04",
+    "cac-ambiguous-05",
+    "cac-ambiguous-06",
+    "cac-ambiguous-07",
+    "cac-ambiguous-08",
+    "cac-ambiguous-09"
+  ],
+  "missed_warning_ids": [
+    "cac-scam_pattern-03",
+    "cac-scam_pattern-05",
+    "cac-scam_pattern-06",
+    "cac-scam_pattern-07",
+    "cac-scam_pattern-08",
+    "cac-scam_pattern-09"
+  ],
+  "extra_concern_ids": [
+    "cac-ordinary-01",
+    "cac-ordinary-03",
+    "cac-ordinary-06",
+    "cac-ordinary-08",
+    "cac-ordinary-09"
+  ],
+  "no_pooled_accuracy_score": "Balanced authored development diagnostic is selected and examined; counts are not field accuracy."
+}

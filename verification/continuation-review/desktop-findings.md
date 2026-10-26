@@ -1,0 +1,27 @@
+# Targeted desktop image/privacy/recovery review — 2026-10-23
+
+Read-only review. Runtime, protected files and image/final payloads were not opened or changed. No model attempt, browser, network request, download or additional worker was used. Sources: app/analyzers/image.py, provenance.py, content_credentials_worker.py, app/main.py, app/guidance.py, static/app.js, static/index.template.html, README.md, docs/PROFESSIONAL-UPGRADE-20261023.md, tests/test_content_credentials.py, tests/frontend_state.test.cjs, and the existing professional-image/product reports and integration receipt.
+
+## 1. Put the failed-release limitation beside every model result
+
+Trigger: a successful installed visual-model result in Image mode. The result summary calls detected patterns experimental, but its collapsed limitations start with historical binary accuracy and statistical interval. The explicit statement that this detector failed release requirements exists in the separate How it works dialog, not in the result itself. A user who reads the answer and its first accuracy number can miss the more relevant unresolved/incorrect definite-answer outcome. This is an information-placement weakness, not a fabricated score: image.py correctly labels its binary metric as predating the inconclusive display policy.
+
+Evidence: image.py default ensemble limitations around lines 99–106; static/app.js showReport displays report.summary and puts limitations in a details element; index.template.html How it works contains the failed-release explanation. professional-images/REPORT.md confirms installed-v1 release failures remain and the new visual attempt never reached inference. The integration receipt explicitly keeps visual scores null.
+
+Shortest fix: add one visible fixed sentence whenever report.kind is image and model_ran is true: “This experimental detector has not passed release requirements; this result cannot establish image origin.” Reuse the existing result-safety paragraph rather than add a new component or change model scoring. A controller test should check visibility for model results and avoid claiming this for a provenance-only result. No model/runtime change or new image evaluation is warranted.
+
+## 2. Provenance fallback evidence promises a detector run that can fail
+
+Trigger: external credentials or a verifier error, followed by ImageModelUnavailable. content_credentials_worker.py emits detail strings saying the detector “will analyze the image”; analyze_image_with_credentials catches model unavailability and returns model_ran=false while preserving those same credential details. The UI then simultaneously says “Only the Content Credentials check is shown” and displays the promise of analysis in the credential box/evidence. Both optional components failing can likewise pair an unavailable summary with the worker’s promised fallback. This is a concrete contradictory branch, not evidence that either unavailable outcome establishes safety.
+
+Evidence: content_credentials_worker.verify RemoteManifest/generic-error branches and main exception fallback; provenance.analyze_image_with_credentials catches ImageModelUnavailable and appends credentials.detail unchanged; showReport renders credentials.detail literally. Existing native signing/tampering and actual-worker tests validate verifier status handling, but do not establish that this future-tense claim is true when the model is unavailable. The four real-source C2PA parses returned absent, so they did not exercise this particular branch.
+
+Shortest fix: make worker details describe only the completed provenance outcome (“External Content Credentials were not fetched” / “Content Credentials verification is unavailable”). The controller already reports whether the detector actually ran. A mocked external/error + unavailable-model regression can verify no promise of a completed/future model check; no image payload or model attempt is necessary.
+
+## Privacy/recovery conclusions and evidence limits
+
+No additional actionable contradiction found in reviewed clearing, input-free exports or recovery content. The desktop Clear handler removes input, preview object URL, rendered private evidence and currentReport; existing controller regressions reject late responses and stale exports. Client abort dismisses the check, but server threadpool work is not guaranteed to stop immediately; current loading copy accurately says dismiss rather than promise server cancellation. Temporary upload closure is explicit in both API endpoints. The privacy wording describes application retention, not guaranteed browser/OS forensic erasure.
+
+Recovery fetch sends no incident input and handles failed loading with a visible FTC fallback. Copy uses fixed plan steps; contact routes are independent and money recovery is not guaranteed. Existing controller/native evidence is appropriately bounded: 474 Python passes and 31 Node passes in the integration receipt are implementation evidence, while interactive image/OCR upload remains unverified. C2PA worker evidence covers four absent-credential outcomes, not visual-model readiness or fraud detection.
+
+Skipped new runtime tests because this was requested as a read-only review and the two findings follow directly from deterministic UI/branch composition. Risk: users may overvalue a historical binary metric or be confused by an unavailable fallback promise; neither justifies a new model attempt.

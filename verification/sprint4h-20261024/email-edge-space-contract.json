@@ -1,0 +1,29 @@
+{
+  "purpose": "Frozen pre-probe HTML href normalization contract, no network or accuracy claim",
+  "cases": [
+    {
+      "id": "nbsp",
+      "raw": "\u00a0//bank.example/",
+      "expected_kind": "unsupported",
+      "reason": "Non-ASCII leading space is not an ASCII URL-edge trim and must not create a protocol-relative authority."
+    },
+    {
+      "id": "em-space",
+      "raw": "\u2003//bank.example/",
+      "expected_kind": "unsupported",
+      "reason": "Non-ASCII leading space is not an ASCII URL-edge trim and must not create a protocol-relative authority."
+    },
+    {
+      "id": "ideographic",
+      "raw": "\u3000//bank.example/",
+      "expected_kind": "unsupported",
+      "reason": "Non-ASCII leading space is not an ASCII URL-edge trim and must not create a protocol-relative authority."
+    },
+    {
+      "id": "line-separator",
+      "raw": "\u2028//bank.example/",
+      "expected_kind": "unsupported",
+      "reason": "Non-ASCII leading space is not an ASCII URL-edge trim and must not create a protocol-relative authority."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+--- before/app/analyzers/email.py
++++ app/analyzers/email.py
+@@ -87,7 +87,7 @@
+ def link_label_evidence(anchors):
+     # shortcut: compare literal hosts/primary mailbox domains; CSS, redirects and extra mailto recipients need separate handling.
+     evidence=[]
+-    seen=set()
++    seen=set(); omitted=0
+     for href, label in anchors:
+         kind,destination=href_target(href)
+         if kind not in ('web','mailto','relative_host'): continue
+@@ -105,12 +105,19 @@
+         if shown==destination or (shown,destination) in seen:
+             continue
+         seen.add((shown,destination))
++        if len(evidence)>=8:
++            omitted+=1
++            continue
+         evidence.append(Evidence(id=f'email:link_mismatch:{len(evidence)}',evidence_class='verified',severity='medium',
+             title='The displayed address and link destination differ',
+             detail=(f'Displayed mailbox domain: {shown}. Primary recipient domain: {destination}. Different addresses can be legitimate; verify through a known contact before sending.' if mailto else
+                     f'Displayed host: {shown}. Link host: {destination}. Legitimate tracking can also cause this; verify through a known address.'),
+             source='Compared text and href in supplied HTML; neither destination was visited',weight=.3))
+-        if len(evidence)==8: break
++    if omitted:
++        evidence.append(Evidence(id='email:label_limit',evidence_class='unknown',severity='info',weight=0,
++            title='Additional HTML address differences are not displayed',
++            detail=f'{omitted} additional distinct displayed-address and destination-host difference(s) were found but not displayed. Only the first 8 differences are shown.',
++            source='Bounded local comparison of supplied HTML labels and targets; no destination visited'))
+     return evidence
+ 
+ 
+@@ -281,6 +288,8 @@
+         'Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.',
+         'For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.',
+         'A passed mail-authentication check would not establish that a request is safe.'])
++    if any(e.id=='email:label_limit' for e in evidence):
++        result.limitations.append('Additional distinct HTML address differences were found but not displayed; only the first 8 differences are shown. All supplied comparable labels were checked locally; no destination was visited.')
+     if unscanned:
+         result.summary='Only readable subject and message-body content was checked; other parts were not scanned. '+result.summary
+     if incomplete:

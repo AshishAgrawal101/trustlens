@@ -1,0 +1,1455 @@
+{
+  "contract_sha256": "8e6125b637a6a5acc5f1d37eec63ed48ad3f72ef7bd0c631960773fdb47d2927",
+  "source_sha256": {
+    "app/analyzers/text.py": "3464346b23390c330fcc7beb51dcb9d25be9a0f771d19b90f085cb5ba8b14795",
+    "app/analyzers/email.py": "da155ad87db8a8a1d03e339a017f6de9295035ce948a9df264a8b69215d7e945",
+    "app/analyzers/url.py": "344ef31a726f6c94ab15fc6bd81b3befdb770d93c9148e7d2c9162b82c532a64",
+    "app/guidance.py": "cb6af6af0870b6df5d93a65799837a7f1719734bf766622642927a805a451d06",
+    "app/models.py": "6a33a9420b7d515d5da3631221739dcc2836208cd9509dc696e0c3b35da0429a"
+  },
+  "source_unchanged_during_run": true,
+  "repeatability_identical_excluding_timing": true,
+  "median_ms": 0.16954995226114988,
+  "max_ms": 5.106500000692904,
+  "rows": [
+    {
+      "id": "cac-ordinary-01",
+      "group": "ordinary",
+      "mode": "text",
+      "expected_warning": false,
+      "warning": true,
+      "warning_alignment": false,
+      "expected_specific_actions": [],
+      "present_action_themes": [
+        "payment"
+      ],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:payment"
+      ],
+      "actions": [
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 5.106500000692904
+    },
+    {
+      "id": "cac-ordinary-02",
+      "group": "ordinary",
+      "mode": "email",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [],
+      "present_action_themes": [],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.6880000000819564
+    },
+    {
+      "id": "cac-ordinary-03",
+      "group": "ordinary",
+      "mode": "call",
+      "expected_warning": false,
+      "warning": true,
+      "warning_alignment": false,
+      "expected_specific_actions": [],
+      "present_action_themes": [
+        "payment",
+        "callback"
+      ],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:payment"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.0969000393524766
+    },
+    {
+      "id": "cac-ordinary-04",
+      "group": "ordinary",
+      "mode": "text",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [],
+      "present_action_themes": [],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.07339997682720423
+    },
+    {
+      "id": "cac-ordinary-05",
+      "group": "ordinary",
+      "mode": "email",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [],
+      "present_action_themes": [],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.23880007211118937
+    },
+    {
+      "id": "cac-ordinary-06",
+      "group": "ordinary",
+      "mode": "call",
+      "expected_warning": false,
+      "warning": true,
+      "warning_alignment": false,
+      "expected_specific_actions": [],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "guarded",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence_ids": [
+        "request:urgency"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.12390001211315393
+    },
+    {
+      "id": "cac-ordinary-07",
+      "group": "ordinary",
+      "mode": "text",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [],
+      "present_action_themes": [],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.06710004527121782
+    },
+    {
+      "id": "cac-ordinary-08",
+      "group": "ordinary",
+      "mode": "email",
+      "expected_warning": false,
+      "warning": true,
+      "warning_alignment": false,
+      "expected_specific_actions": [],
+      "present_action_themes": [],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "guarded",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence_ids": [
+        "request:threat"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.18660002388060093
+    },
+    {
+      "id": "cac-ordinary-09",
+      "group": "ordinary",
+      "mode": "call",
+      "expected_warning": false,
+      "warning": true,
+      "warning_alignment": false,
+      "expected_specific_actions": [],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "guarded",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence_ids": [
+        "request:threat"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.10740000288933516
+    },
+    {
+      "id": "cac-advice-01",
+      "group": "advice",
+      "mode": "text",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "code"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.2937000244855881
+    },
+    {
+      "id": "cac-advice-02",
+      "group": "advice",
+      "mode": "email",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.19719998817890882
+    },
+    {
+      "id": "cac-advice-03",
+      "group": "advice",
+      "mode": "call",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "remote"
+      ],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [
+        "remote"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.06989995017647743
+    },
+    {
+      "id": "cac-advice-04",
+      "group": "advice",
+      "mode": "text",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "code"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "context:code"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.1729999203234911
+    },
+    {
+      "id": "cac-advice-05",
+      "group": "advice",
+      "mode": "email",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.25670009199529886
+    },
+    {
+      "id": "cac-advice-06",
+      "group": "advice",
+      "mode": "call",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.1238000113517046
+    },
+    {
+      "id": "cac-advice-07",
+      "group": "advice",
+      "mode": "text",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.11200003791600466
+    },
+    {
+      "id": "cac-advice-08",
+      "group": "advice",
+      "mode": "email",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "code"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "context:code"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.25400007143616676
+    },
+    {
+      "id": "cac-advice-09",
+      "group": "advice",
+      "mode": "call",
+      "expected_warning": false,
+      "warning": false,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.38680003490298986
+    },
+    {
+      "id": "cac-scam_pattern-01",
+      "group": "scam_pattern",
+      "mode": "text",
+      "expected_warning": true,
+      "warning": true,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "present_action_themes": [
+        "code"
+      ],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "all_desired_themes_present",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:code"
+      ],
+      "actions": [
+        {
+          "title": "Keep security codes and passwords private",
+          "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.09900005534291267
+    },
+    {
+      "id": "cac-scam_pattern-02",
+      "group": "scam_pattern",
+      "mode": "email",
+      "expected_warning": true,
+      "warning": true,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [
+        "payment"
+      ],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "all_desired_themes_present",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:payment"
+      ],
+      "actions": [
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.21570001263171434
+    },
+    {
+      "id": "cac-scam_pattern-03",
+      "group": "scam_pattern",
+      "mode": "call",
+      "expected_warning": true,
+      "warning": false,
+      "warning_alignment": false,
+      "expected_specific_actions": [
+        "personal"
+      ],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [
+        "personal"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.10930001735687256
+    },
+    {
+      "id": "cac-scam_pattern-04",
+      "group": "scam_pattern",
+      "mode": "text",
+      "expected_warning": true,
+      "warning": true,
+      "warning_alignment": true,
+      "expected_specific_actions": [
+        "payment",
+        "secrecy"
+      ],
+      "present_action_themes": [
+        "secrecy"
+      ],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "partial_specific_guidance",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:secrecy"
+      ],
+      "actions": [
+        {
+          "title": "Bring in someone you trust",
+          "detail": "Pause the conversation and talk privately with a trusted person. A request to hide a payment or account problem deserves independent checking."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.16609998419880867
+    },
+    {
+      "id": "cac-scam_pattern-05",
+      "group": "scam_pattern",
+      "mode": "email",
+      "expected_warning": true,
+      "warning": false,
+      "warning_alignment": false,
+      "expected_specific_actions": [
+        "overpayment"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "overpayment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.21839991677552462
+    },
+    {
+      "id": "cac-scam_pattern-06",
+      "group": "scam_pattern",
+      "mode": "call",
+      "expected_warning": true,
+      "warning": false,
+      "warning_alignment": false,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.08009991142898798
+    },
+    {
+      "id": "cac-scam_pattern-07",
+      "group": "scam_pattern",
+      "mode": "text",
+      "expected_warning": true,
+      "warning": false,
+      "warning_alignment": false,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "url:host:0"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.4542999668046832
+    },
+    {
+      "id": "cac-scam_pattern-08",
+      "group": "scam_pattern",
+      "mode": "email",
+      "expected_warning": true,
+      "warning": false,
+      "warning_alignment": false,
+      "expected_specific_actions": [
+        "personal"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "personal"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "url:host:0"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.3252000315114856
+    },
+    {
+      "id": "cac-scam_pattern-09",
+      "group": "scam_pattern",
+      "mode": "call",
+      "expected_warning": true,
+      "warning": false,
+      "warning_alignment": false,
+      "expected_specific_actions": [
+        "remote",
+        "callback"
+      ],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [
+        "remote"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "partial_specific_guidance",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.08370005525648594
+    },
+    {
+      "id": "cac-ambiguous-01",
+      "group": "ambiguous",
+      "mode": "text",
+      "expected_warning": null,
+      "warning": true,
+      "warning_alignment": null,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "present_action_themes": [
+        "code"
+      ],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "all_desired_themes_present",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:code"
+      ],
+      "actions": [
+        {
+          "title": "Keep security codes and passwords private",
+          "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.1265000319108367
+    },
+    {
+      "id": "cac-ambiguous-02",
+      "group": "ambiguous",
+      "mode": "email",
+      "expected_warning": null,
+      "warning": false,
+      "warning_alignment": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.20530004985630512
+    },
+    {
+      "id": "cac-ambiguous-03",
+      "group": "ambiguous",
+      "mode": "call",
+      "expected_warning": null,
+      "warning": true,
+      "warning_alignment": null,
+      "expected_specific_actions": [],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "not_requested",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "guarded",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence_ids": [
+        "request:threat"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.1767000649124384
+    },
+    {
+      "id": "cac-ambiguous-04",
+      "group": "ambiguous",
+      "mode": "text",
+      "expected_warning": null,
+      "warning": false,
+      "warning_alignment": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.09139999747276306
+    },
+    {
+      "id": "cac-ambiguous-05",
+      "group": "ambiguous",
+      "mode": "email",
+      "expected_warning": null,
+      "warning": false,
+      "warning_alignment": null,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "code"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.23930007591843605
+    },
+    {
+      "id": "cac-ambiguous-06",
+      "group": "ambiguous",
+      "mode": "call",
+      "expected_warning": null,
+      "warning": false,
+      "warning_alignment": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.09089999366551638
+    },
+    {
+      "id": "cac-ambiguous-07",
+      "group": "ambiguous",
+      "mode": "text",
+      "expected_warning": null,
+      "warning": false,
+      "warning_alignment": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.08800008799880743
+    },
+    {
+      "id": "cac-ambiguous-08",
+      "group": "ambiguous",
+      "mode": "email",
+      "expected_warning": null,
+      "warning": true,
+      "warning_alignment": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [
+        "payment"
+      ],
+      "missing_action_themes": [],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "all_desired_themes_present",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:payment"
+      ],
+      "actions": [
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.21660001948475838
+    },
+    {
+      "id": "cac-ambiguous-09",
+      "group": "ambiguous",
+      "mode": "call",
+      "expected_warning": null,
+      "warning": false,
+      "warning_alignment": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "present_action_themes": [
+        "callback"
+      ],
+      "missing_action_themes": [
+        "payment"
+      ],
+      "generic_verify_present": true,
+      "action_usefulness_proxy": "generic_only",
+      "uncertainty_contract": {
+        "null_risk_index": true,
+        "low_confidence": true,
+        "no_model": true,
+        "rules_basis": true
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.10599999222904444
+    }
+  ]
+}

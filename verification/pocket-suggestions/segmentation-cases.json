@@ -1,0 +1,10 @@
+[
+ {"id":"decimal-advice","text":"Do not send $1.00 or buy gift cards.","topics":[]},
+ {"id":"decimal-direct","text":"Send $1.00 or buy gift cards.","topics":["money"]},
+ {"id":"domain-advice","text":"Do not visit example.com and install AnyDesk.","topics":[]},
+ {"id":"domain-direct","text":"Visit example.com and install AnyDesk.","topics":["device"]},
+ {"id":"abbreviation-advice","text":"Never ask Mr. Smith to share your password.","topics":[]},
+ {"id":"abbreviation-direct","text":"Ask Mr. Smith to share your password.","topics":["code"]},
+ {"id":"same-line-independent","text":"Never share your password. Install AnyDesk.","topics":["device"]},
+ {"id":"new-line-independent","text":"Never share your password.\nInstall AnyDesk.","topics":["device"]}
+]

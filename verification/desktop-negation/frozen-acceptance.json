@@ -1,0 +1,154 @@
+[
+  {
+    "id": "decimal-advice",
+    "text": "Do not send $1.00 or buy gift cards.",
+    "expected_requests": []
+  },
+  {
+    "id": "decimal-direct",
+    "text": "Send $1.00 or buy gift cards.",
+    "expected_requests": [
+      "payment"
+    ]
+  },
+  {
+    "id": "domain-advice",
+    "text": "Do not visit example.com and install AnyDesk.",
+    "expected_requests": []
+  },
+  {
+    "id": "domain-direct",
+    "text": "Visit example.com and install AnyDesk.",
+    "expected_requests": [
+      "remote"
+    ]
+  },
+  {
+    "id": "honorific-advice",
+    "text": "Never ask Mr. Smith to share your password.",
+    "expected_requests": []
+  },
+  {
+    "id": "honorific-direct",
+    "text": "Ask Mr. Smith to share your password.",
+    "expected_requests": [
+      "code"
+    ]
+  },
+  {
+    "id": "sentence-live",
+    "text": "Never share your password. Install AnyDesk.",
+    "expected_requests": [
+      "remote"
+    ]
+  },
+  {
+    "id": "newline-live",
+    "text": "Never share your password.\nInstall AnyDesk.",
+    "expected_requests": [
+      "remote"
+    ]
+  },
+  {
+    "id": "but-live",
+    "text": "Do not send $1.00, but buy gift cards.",
+    "expected_requests": [
+      "payment"
+    ]
+  },
+  {
+    "id": "semicolon-live",
+    "text": "Do not visit example.com; install AnyDesk.",
+    "expected_requests": [
+      "remote"
+    ]
+  },
+  {
+    "id": "question-live",
+    "text": "Do not visit example.com? Install AnyDesk.",
+    "expected_requests": [
+      "remote"
+    ]
+  },
+  {
+    "id": "exclamation-live",
+    "text": "Do not visit example.com! Install AnyDesk.",
+    "expected_requests": [
+      "remote"
+    ]
+  },
+  {
+    "id": "comma-live",
+    "text": "Do not visit example.com, install AnyDesk.",
+    "expected_requests": [
+      "remote"
+    ]
+  },
+  {
+    "id": "quote-live",
+    "text": "Never ask Mr. Smith to stop. Someone says \"Share your password.\"",
+    "expected_requests": [
+      "code"
+    ]
+  },
+  {
+    "id": "quoted-negative-then-live",
+    "text": "Our completed poster includes the fake example 'Never share your password.' Now install AnyDesk.",
+    "expected_requests": [
+      "remote"
+    ]
+  },
+  {
+    "id": "reference-unchanged",
+    "text": "A login code should arrive by text. Tell me those six numbers.",
+    "expected_requests": []
+  },
+  {
+    "id": "secrecy-unchanged",
+    "text": "Do not tell your family.",
+    "expected_requests": [
+      "secrecy"
+    ]
+  },
+  {
+    "id": "http-domain-advice",
+    "text": "Do not visit https://example.com and install TeamViewer.",
+    "expected_requests": []
+  },
+  {
+    "id": "doctor-advice",
+    "text": "Never ask Dr. Green to share your password.",
+    "expected_requests": []
+  },
+  {
+    "id": "doctor-direct",
+    "text": "Ask Dr. Green to share your password.",
+    "expected_requests": [
+      "code"
+    ]
+  },
+  {
+    "id": "different-family-chain",
+    "text": "Do not send $1.00 or share your password.",
+    "expected_requests": []
+  },
+  {
+    "id": "long-chain",
+    "text": "Do not visit example.com and buy gift cards or install AnyDesk.",
+    "expected_requests": []
+  },
+  {
+    "id": "decimal-second-sentence",
+    "text": "Do not send $1.00. Buy gift cards.",
+    "expected_requests": [
+      "payment"
+    ]
+  },
+  {
+    "id": "honorific-second-sentence",
+    "text": "Never ask Mr. Smith for directions. Share your password.",
+    "expected_requests": [
+      "code"
+    ]
+  }
+]

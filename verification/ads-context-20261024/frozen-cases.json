@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "id": "sponsored-comparison",
+      "topic": "Ads · examine the comparison",
+      "title": "A paid comparison without its method",
+      "text": "Constructed sponsored post: “These headphones last twice as long.” The post names no comparison model or test settings. What is the useful next check?",
+      "choices": [
+        "Treat the claim as false because the creator was paid.",
+        "Find the comparison models, test conditions and relevant independent results.",
+        "Accept the claim because the post says sponsored."
+      ],
+      "answer": 1,
+      "why": "The comparison lacks a stated baseline and test conditions. Identify which models and settings were compared; a payment label alone cannot answer that measurement question."
+    },
+    {
+      "id": "selected-testimonial",
+      "topic": "Endorsements · separate opinion and measurement",
+      "title": "A selected customer quotation",
+      "text": "A constructed product page highlights one customer saying “Best value anywhere.” No price comparison or selection method is supplied. What should you check?",
+      "choices": [
+        "Treat one enthusiastic quotation as a representative price comparison.",
+        "Decide whether the customer is genuine from the writing style alone.",
+        "Check value criteria, comparable prices and how the quoted accounts were selected."
+      ],
+      "answer": 2,
+      "why": "“Best value” needs criteria: price, included features and what was compared. One selected quotation does not supply those measurements or a defined sample."
+    }
+  ],
+  "preservation": {
+    "desktop": {
+      "count": 8,
+      "sha256": "b1bef27443bdc5670c82f26110b62fb6c47b2e3c0abd61f226ffbe9b0bf02f50"
+    },
+    "pocket": {
+      "count": 10,
+      "sha256": "42a034a5b2a9df4958185acb77378d7161b7a54543465e76fadb2eee68597b33"
+    }
+  }
+}

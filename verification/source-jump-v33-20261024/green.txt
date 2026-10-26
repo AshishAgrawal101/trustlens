@@ -1,0 +1,31 @@
+✔ source finding is explicit, literal text including markup and never sends or exports input (19.353ms)
+✔ editing either dependency removes old matches; revised wording is independent of source finding (4.4515ms)
+✔ source-only Clear preserves supplied versions while main Clear erases every private field/result (1.6835ms)
+✔ constructed example replacement clears old source text and its result (1.4485ms)
+✔ exit and persisted Back cannot restore long passage or source match context (3.0182ms)
+✔ errors cannot leave old or partial output, echo inputs or destroy drafts (3.9514ms)
+✔ no-match remains unresolved and long repetitive passage renders only five windows with the full count (3.2387ms)
+✔ cropped context windows visibly disclose omissions at their edges (1.5376ms)
+✔ four ordered typed buttons and hint expose jumps; pure matcher stays byte unchanged (25.0742ms)
+✔ eleven matches jump to actual last ordinal then first, preserve drafts and formatting, focus range at ends (7.2318ms)
+✔ maximum passage last5999 renders29996-30000 then Previous and Next remain correct (7.437ms)
+✔ all invalidation paths disable all four and stale jumps cannot revive output (17.1517ms)
+✔ zero and short match sets hide navigation and disable all four (4.7631ms)
+✔ optional finder is separate from comparison and keeps no-script private-form safeguards (1.1082ms)
+✔ shared original hint, exact-match limits and scoped clear behavior are explicit (0.2128ms)
+✔ context snippet styling preserves whitespace and contrast-labelled highlights without source links (0.2232ms)
+✔ two-argument results and default page remain exactly compatible with frozen outputs (2.5353ms)
+✔ all pages retain exact offsets and literal windows with at most five matches (0.5313ms)
+✔ later-page surrogate boundaries and the maximum final page preserve existing window limits (1.6065ms)
+✔ page validation is bounded integer-only and missing pages reject with input-free errors (0.7381ms)
+✔ zero one and five matches do not offer unavailable page navigation (9.5999ms)
+✔ explicit navigation shows true ranges and ordinals with focus and disabled ends, retaining authenticity caveats (2.6852ms)
+✔ every invalidation erases paging and formatting while next Find starts at first match (15.3871ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 157.1673

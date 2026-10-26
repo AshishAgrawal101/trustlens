@@ -1,0 +1,277 @@
+{
+  "label": "Frozen literal text-comparison acceptance; no semantic or source-verification evaluation",
+  "contract_sha256": "e55b261b24e56254c25e0b8dae498e230830570fb8b1af80cf2c6cc93f07c55d",
+  "source_sha256": "0cacbd5a87911090f6f7a9876401914711ff05d94e8ee8f14836e3e3cde30967",
+  "network_calls": 0,
+  "rows": [
+    {
+      "id": "identical",
+      "result": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "The library opens at nine."
+          }
+        ],
+        "identical": true
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "case-sensitive",
+      "result": {
+        "parts": [
+          {
+            "type": "removed",
+            "text": "Open"
+          },
+          {
+            "type": "added",
+            "text": "open"
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "space-versus-tab",
+      "result": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "A"
+          },
+          {
+            "type": "removed",
+            "text": " "
+          },
+          {
+            "type": "added",
+            "text": "\t"
+          },
+          {
+            "type": "same",
+            "text": "B"
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "html-literal",
+      "result": {
+        "parts": [
+          {
+            "type": "removed",
+            "text": "<b>Open</b>"
+          },
+          {
+            "type": "added",
+            "text": "<script>Open</script>"
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "duplicate-alignment",
+      "result": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "one "
+          },
+          {
+            "type": "removed",
+            "text": "one "
+          },
+          {
+            "type": "same",
+            "text": "two"
+          },
+          {
+            "type": "added",
+            "text": " one"
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "qualifier-change",
+      "result": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "It "
+          },
+          {
+            "type": "removed",
+            "text": "may"
+          },
+          {
+            "type": "added",
+            "text": "will"
+          },
+          {
+            "type": "same",
+            "text": " open."
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "negation-removed",
+      "result": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "It will "
+          },
+          {
+            "type": "removed",
+            "text": "not "
+          },
+          {
+            "type": "same",
+            "text": "open."
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "word-added",
+      "result": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "Open "
+          },
+          {
+            "type": "added",
+            "text": "right "
+          },
+          {
+            "type": "same",
+            "text": "now"
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "all-replaced",
+      "result": {
+        "parts": [
+          {
+            "type": "removed",
+            "text": "alpha"
+          },
+          {
+            "type": "added",
+            "text": "beta"
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "unicode-exact",
+      "result": {
+        "parts": [
+          {
+            "type": "removed",
+            "text": "café"
+          },
+          {
+            "type": "added",
+            "text": "café"
+          },
+          {
+            "type": "same",
+            "text": " 😀"
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "newline-versus-space",
+      "result": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "First"
+          },
+          {
+            "type": "removed",
+            "text": "\n"
+          },
+          {
+            "type": "added",
+            "text": " "
+          },
+          {
+            "type": "same",
+            "text": "second"
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "outer-whitespace",
+      "result": {
+        "parts": [
+          {
+            "type": "removed",
+            "text": "  "
+          },
+          {
+            "type": "added",
+            "text": " "
+          },
+          {
+            "type": "same",
+            "text": "Open"
+          },
+          {
+            "type": "removed",
+            "text": "\t"
+          },
+          {
+            "type": "added",
+            "text": "\n"
+          }
+        ],
+        "identical": false
+      },
+      "error": null,
+      "failures": []
+    }
+  ],
+  "failures": 0
+}

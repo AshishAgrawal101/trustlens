@@ -1,0 +1,13 @@
+# Claim Sources disclosure implementation
+
+Changed only static/claim-review.html/css/js, added tests/claim_sources_disclosure.test.cjs and these verification receipts. Wrapped the existing source introduction, both unchanged source fieldsets and address hint in one native details#claim-sources. Claim/context/event remain visible. No nested disclosures, new data fields or new required controls.
+
+The initial source section is closed. A fixed “Entries present · included in Review” indicator appears for any source URL/quotation/date or non-default role, without echoing values or treating those entries as source counts. Closing neither disables inputs nor changes drafts, computed results or export eligibility. Existing explicit Review still reads all fields. Examples open their populated sources; Clear, initialization, pagehide and persisted Back erase and collapse.
+
+Source edits use existing invalidation/generation/export guards. A capturing invalid listener opens the section for its source control before native default focus and invalidates old output. Custom review validation errors reopen populated sources before focusing the existing outside error. This also conservatively reveals populated sources for another custom error; no validation is removed or changed. No toggle listener alters user data.
+
+Scoped CSS uses existing colors,16px native summary text/minimum48px target, focus outline, responsive wrapping and existing print privacy. All existing IDs, unnamed/no-script form safeguards, result-first layout and h3 focus remain. The complete pure-code prefix and fixed PLAN hashes match the pre-edit baseline exactly.
+
+Evidence: spec.md/source-before.json frozen before edits; root's existing browser-before.json provides geometry, not user-study evidence. New5tests first allfailed (red.txt), then passed. Focused old/new Claim suite **27 passed** (green.txt); current full Node checkpoint **514 passed,0 failed/skipped** (node.txt). New tests cover native markup/enabled fields, all draft retention across closing and Review, date/role-only presence without source counting, invalid/custom correction reopening, examples/Clear/exit/Back, pure and PLAN preservation, and no network. The new test harness extends its existing URL blob double with the native URL constructor to test a real valid HTTP source; no old harness/test was edited and no production fallback was added for a test double.
+
+Root owns actual browser geometry, keyboard Tab/summary activation/native invalid-focus behavior and next Pocket cache/export version. These are controller/source tests; native focus timing and the measured after-state are not independently claimed here. No phone/cache/export/package or general docs changed; existing archives remain immutable.

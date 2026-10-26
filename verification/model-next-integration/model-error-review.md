@@ -1,0 +1,7 @@
+# Image model output/error boundary
+
+Before the fix, 15 of 16 new constructed failure probes failed: invalid output or runtime failures could escape as server errors and lose otherwise available signed-history evidence. No actual model was loaded by these tests. Independent review then reproduced three additional failures (IndexError, AttributeError, OSError); their red run failed all three, followed by 21/21 focused passes after repair.
+
+The public analyze_image boundary preserves InvalidImage and ImageModelUnavailable. Expected runtime/resource/numeric/interface/I/O failures become a fixed ImageModelUnavailable message. Existing provenance fallback retains its separate C2PA result and omits all pattern-model evidence. It does not retry another model or turn failure into a photograph conclusion. Tests cover absence, a verified edited declaration through the HTTP endpoint, private error suppression, invalid/missing/nonfinite/bool scores and invalid thresholds. This improves failure behavior, not inference accuracy or out-of-process containment.
+
+The frozen decision policy validates component values before report construction. Shared scalar/threshold validation covers the legacy result path too. Valid scores, thresholds, weights, decision-policy source and C2PA source are unchanged. The image analyzer is the sole reviewed protected-file exception relative to v8; no model weights are changed or promoted. AssertionError/SystemExit and unrelated unexpected programming failures are not silently swallowed.

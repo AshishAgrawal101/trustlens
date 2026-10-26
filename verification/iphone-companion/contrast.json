@@ -1,0 +1,50 @@
+[
+  {
+    "element": "body",
+    "foreground": "#edf7f5",
+    "background": "#081e28",
+    "contrast": 15.671417300034014
+  },
+  {
+    "element": "card-body",
+    "foreground": "#edf7f5",
+    "background": "#10303a",
+    "contrast": 12.765516837992696
+  },
+  {
+    "element": "muted",
+    "foreground": "#adc5c6",
+    "background": "#10303a",
+    "contrast": 7.6888979032358185
+  },
+  {
+    "element": "secondary",
+    "foreground": "#c0d3d3",
+    "background": "#10303a",
+    "contrast": 8.964430475038252
+  },
+  {
+    "element": "link",
+    "foreground": "#c2eee5",
+    "background": "#10303a",
+    "contrast": 11.05982740993737
+  },
+  {
+    "element": "primary",
+    "foreground": "#102c28",
+    "background": "#bce97b",
+    "contrast": 10.672638886904027
+  },
+  {
+    "element": "recipe",
+    "foreground": "#c9e0dc",
+    "background": "#071d25",
+    "contrast": 12.529339264291657
+  },
+  {
+    "element": "button",
+    "foreground": "#d9f4df",
+    "background": "#173f47",
+    "contrast": 9.767164435978383
+  }
+]

@@ -1,0 +1,1 @@
+{"checks":["pure finder exact vs v32","zero5 hide and6/11/30000 page edges correct","derived lastPage resets on all invalidations including sharedOriginal/nativeinvalid","FirstPrevNextLast disabled/hidden guards and endpoint status focus","no private input persistence/network/export; existing wrapped target CSS"]}

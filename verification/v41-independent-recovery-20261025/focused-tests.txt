@@ -1,0 +1,12 @@
+✔ malformed successful responses never cache/render/enable copying and corrected reopen actually retries (32.7234ms)
+✔ response admission bounds every record and never displays a valid prefix of an invalid list (10.9819ms)
+✔ valid plans cache once; fixed clipboard summary remains separate from input and normal close resets selection (1.8041ms)
+✔ closed or exited stale response cannot seed cache; reopened dialog fetches current plans (23.3188ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 157.2759

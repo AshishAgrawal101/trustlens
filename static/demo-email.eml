@@ -1,0 +1,26 @@
+From: Community updates <updates@community.example>
+To: Demo reader <reader@example.org>
+Subject: Constructed example: review an unexpected link
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============4796838842095088500=="
+
+--===============4796838842095088500==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+This is a constructed training email. The displayed website and HTML link des=
+tination differ. Verify any unexpected request through a known route. No real=
+ person sent this message.
+
+--===============4796838842095088500==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Constructed training email: please review your account.</p><p>=
+<a href=3D"https://account-review.example/sign-in">https://community.example<=
+/a></p><p>This is an educational fixture, not a real message. No destination =
+should be opened.</p></body></html>
+
+--===============4796838842095088500==--

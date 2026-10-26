@@ -1,0 +1,11 @@
+# v42 tool/help/error audit: bounded null
+
+Read-only current v41 app. No app/test/docs/frozen changes, model or privatecontent. Predeclared eight-route/navigation/help contract SHA60fc07593d1259f71f50036f96ccbf35e98714a04a7cdece79351d9065591437; route/label and currentREADME link results adjacent.
+
+No concrete new userproblem reproduced. ActualASGI eight fixed desktop/Pocketguide destinations all200; HTML labels/aria-describedby/aria-labelledby targets allresolve. CurrentREADME prehistoricaldisclosure relativefilelinks all exist, including v41 checkpoint. Tools directory modefragments map to existing mode-route.js allowlist; its startup/navigation tests confirm correctexplicitmode, unsupported/privatefragments ignored, no autoanalysis/inputserialization and currentmode preserves drafts rather than unnecessary reset. A preliminary suspicion of missing mainhashhandling was rejected after locating separate mode-route.js; no falsefinding promoted.
+
+Source URL native controls remain typeurl/optional with sharedhelp. Customerror repair targets fixedA/B fields and resets; nativeinvalid opens disclosure and preserves drafts. Numbers inactive requiredfields are disabled, methoddrafts separated; activecode validates digits/exactpercentages with honest formats. Its strict customsyntax can reject exponentnotation acceptedbybrowsernumberinput, but fixed feedback requests digits and no incorrect arithmeticresult was found. No claim to infer sourcefacts/date/truth.
+
+Main report success validation and extraction response admission already reject malformed200objects/unreadableJSON before visiblepartialresults/exports. Focused tests keepinput and permitretry with fixedprivatefeedback. This review doesnot re-report previously fixed recoveryadmission, MIME, URLrawboundaries or mismatchdisplaycaps as new work.
+
+27focusedexisting Nodecases passed0skip (mode routes/navigation, frontendresponse, Numbersdrafts, sourceURLrepair). No new appregression module warranted without demonstrated defect. DOMtests/HTTPmarkup are not actualbrowser nativevalidity/screenreader/mobilelayout or oldcacheupdate proof; rootbrowser plan remains separate. Humanphone/model/accuracy/finaldataset limits unchanged. No generic feature list or speculative repair recommended.

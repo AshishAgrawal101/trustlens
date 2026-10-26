@@ -1,0 +1,239 @@
+{
+  "at_utc": "2026-10-23T15:58:16.541826+00:00",
+  "status": "frozen_for_root_review_not_authorized_to_score",
+  "selection": "first two validation rows by lexical id per label, before payload reads or scores; examined development only",
+  "cohort": [
+    {
+      "id": "coco2017:100202",
+      "official_split": "train",
+      "label": 0,
+      "prompt": "",
+      "generator": "",
+      "real_source": "coco2017",
+      "image_type": "photograph",
+      "category": "real:coco2017",
+      "dataset_license": "http://creativecommons.org/licenses/by/2.0/",
+      "original_landing_url": "http://farm3.staticflickr.com/2303/2245897841_c68715faae_z.jpg",
+      "collection_role": "whole-source development holdout, never fitting",
+      "original_bytes_sha256": "25049cc76fad218a900e30686ff522ca396f5d61d4931f75d7af3887d3e0ff98",
+      "width": 500,
+      "height": 375,
+      "pixel_sha256": "d0f7ab4248b900037dfafc1d4e2a881749cef7b8cebb8d5023dbf2ae8807bffb",
+      "phash": "3c8a4343ed7ca293",
+      "image_path": "images/25/25049cc76fad218a900e30686ff522ca396f5d61d4931f75d7af3887d3e0ff98.jpg",
+      "group": "34a21d9f01750e34bc2a0f615973afd2d88ead2989f475c3002b36388cee1f4b",
+      "partition": "validation",
+      "sampling_family": "coco2017",
+      "absolute_image_path": "D:\\TrustLensData\\images\\25\\25049cc76fad218a900e30686ff522ca396f5d61d4931f75d7af3887d3e0ff98.jpg",
+      "file_exists_metadata_only": true,
+      "original_digest_verified_now": false,
+      "license_scope": "http://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "id": "coco2017:100331",
+      "official_split": "train",
+      "label": 0,
+      "prompt": "",
+      "generator": "",
+      "real_source": "coco2017",
+      "image_type": "photograph",
+      "category": "real:coco2017",
+      "dataset_license": "http://creativecommons.org/licenses/by/2.0/",
+      "original_landing_url": "http://farm8.staticflickr.com/7442/9240116107_348ab2dbbc_z.jpg",
+      "collection_role": "whole-source development holdout, never fitting",
+      "original_bytes_sha256": "83924cad55f6b7ad33a222e759357a7f14b154b67790d8ef17b7713db9fc56c6",
+      "width": 640,
+      "height": 480,
+      "pixel_sha256": "ef0d76bf830abcfa8d9ca15169d87e5fd9010e773582a66bb366016856229f7d",
+      "phash": "24248cb43d8be2df",
+      "image_path": "images/83/83924cad55f6b7ad33a222e759357a7f14b154b67790d8ef17b7713db9fc56c6.jpg",
+      "group": "df0d66ba43589a52c40640da5aae96c0fbe89d9bfb27896a3146519b4d26c2da",
+      "partition": "validation",
+      "sampling_family": "coco2017",
+      "absolute_image_path": "D:\\TrustLensData\\images\\83\\83924cad55f6b7ad33a222e759357a7f14b154b67790d8ef17b7713db9fc56c6.jpg",
+      "file_exists_metadata_only": true,
+      "original_digest_verified_now": false,
+      "license_scope": "http://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "id": "core/train-00001-of-00032-00014.parquet:openfake-00abb50acfb1f09e80ed6d6d2203d68e",
+      "row": 3250,
+      "official_split": "train",
+      "label": 1,
+      "prompt": "A photograph captures two women walking on a bustling New York City street, one holding a pink shopping bag while the other carries a black one, with a food truck and parked cars in the background.",
+      "generator": "imagen-4.0",
+      "real_source": "",
+      "published_image_sha256": "64615e8239bafe5ac65f147ccc860101f5d3b0bd9b98bc6abd48c29e4f3e2afe",
+      "image_type": "base",
+      "release_date": "2025-05",
+      "category": "ai:imagen-4.0",
+      "original_bytes_sha256": "64615e8239bafe5ac65f147ccc860101f5d3b0bd9b98bc6abd48c29e4f3e2afe",
+      "width": 1280,
+      "height": 896,
+      "pixel_sha256": "7000f4d5363022c00793e52bc1567e40e1e77be982a5b5d60754601e716e4014",
+      "phash": "708bfc06a8f33ac4",
+      "image_path": "images/64/64615e8239bafe5ac65f147ccc860101f5d3b0bd9b98bc6abd48c29e4f3e2afe.png",
+      "group": "6aa0c102a905e62b1888f5f7a9bb74f7179e6326b9c738905c4148540906d271",
+      "partition": "validation",
+      "sampling_family": "imagen",
+      "dataset_license": "existing pinned OpenFake admission",
+      "absolute_image_path": "D:\\TrustLensData\\images\\64\\64615e8239bafe5ac65f147ccc860101f5d3b0bd9b98bc6abd48c29e4f3e2afe.png",
+      "file_exists_metadata_only": true,
+      "original_digest_verified_now": false,
+      "license_scope": "CC-BY-NC-4.0 per locally pinned OpenFake README; underlying image rights not independently reverified"
+    },
+    {
+      "id": "core/train-00001-of-00032-00014.parquet:openfake-05b2417ac63c4a0213fa683edaf4c2e9",
+      "row": 2644,
+      "official_split": "train",
+      "label": 1,
+      "prompt": "This high-contrast black-and-white close-up captures a human eye gazing upward, with long eyelashes and a glossy tear or moisture visible on the lower eyelid. The surrounding skin is textured and shadowed, emphasizing the contours of the nose and cheekbone, while scattered droplets\u2014possibly sweat or water\u2014glisten along the bridge of the nose and cheek. The composition is tightly framed, focusing almost entirely on the facial features, with deep shadows dominating the right side and soft highlights accentuating the eye and moisture. No text or identifiable branding appears; the style evokes dramatic, emotive portraiture through stark chiaroscuro lighting and grainy film-like texture.",
+      "generator": "sd-turbo",
+      "real_source": "",
+      "published_image_sha256": "ef274205aa44259c9b2309affd75a3057fcb9d37493bcb9852737dad1ddcb680",
+      "image_type": "Base",
+      "release_date": "2023-11-27",
+      "category": "ai:sd-turbo",
+      "original_bytes_sha256": "ef274205aa44259c9b2309affd75a3057fcb9d37493bcb9852737dad1ddcb680",
+      "width": 512,
+      "height": 512,
+      "pixel_sha256": "32c672e9a45359b6acaa2642d98e64305d7b09e8c2c5c81e996b7ffe9d6186fc",
+      "phash": "4ff1b0138e1cb0f8",
+      "image_path": "images/ef/ef274205aa44259c9b2309affd75a3057fcb9d37493bcb9852737dad1ddcb680.jpg",
+      "group": "b284feb27ded79c13263b05774ec9cb3b6fbd8b15b0be4ff3191a44adaba3ddc",
+      "partition": "validation",
+      "sampling_family": "sd-turbo",
+      "dataset_license": "existing pinned OpenFake admission",
+      "absolute_image_path": "D:\\TrustLensData\\images\\ef\\ef274205aa44259c9b2309affd75a3057fcb9d37493bcb9852737dad1ddcb680.jpg",
+      "file_exists_metadata_only": true,
+      "original_digest_verified_now": false,
+      "license_scope": "CC-BY-NC-4.0 per locally pinned OpenFake README; underlying image rights not independently reverified"
+    }
+  ],
+  "source_manifest": {
+    "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-generalization-20261013\\data\\admitted.json",
+    "sha256": "91dc9b6ddca57204b456f0bc2cae8aab1ce1df87e594c593f7b93f2928ca6135",
+    "bytes": 76334922
+  },
+  "runtime": {
+    "pipeline": "clip_community_v1",
+    "threshold": 0.35,
+    "clip_weight": 0.5,
+    "classifier_sha256": "3b23eb9e67933115136ba62e3bc445ead3165c0587416dc772e716211b791ed8",
+    "clip_weights_sha256": "9ce2e8a8ebfff3793d7d375ad6d3c35cb9aebf3de7ace0fc7308accab7cd207e",
+    "community_weights_sha256": "b89f36275f3bf5e2b040eee36597a8f19db051bff9a473a9cf7b2466284fb387",
+    "community_revision": "6076002bf0d9dd37537f965ee2f06f826c333b61",
+    "evaluation": {
+      "n": 670,
+      "accuracy": 0.9507462686567164,
+      "balanced_accuracy": 0.9506879098944967,
+      "auc": 0.9905100513259196,
+      "false_positive_rate": 0.0688622754491018,
+      "ai_recall": 0.9702380952380952,
+      "tn": 311,
+      "fp": 23,
+      "fn": 10,
+      "tp": 326,
+      "accuracy_wilson_95_interval": [
+        0.9316369725040858,
+        0.9647163048040137
+      ]
+    },
+    "calibration_images": 336,
+    "evaluation_report": "experiments/results/external_cf1006/test_results.json",
+    "frozen_experiment_sha256": "7f0f879ea96f87536f52ccf3249ba6da7ea8abe5e500a8b6beb2093d748fce37",
+    "fit_on_test_images": false,
+    "generator_disjoint": false,
+    "score_is_not_probability": true,
+    "monkey_used_for_release_acceptance": true,
+    "monkey_excluded_from_classifier_fitting": true,
+    "monkey_excluded_from_reported_test_accuracy": true
+  },
+  "source_pins": [
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\models\\image_pipeline.json",
+      "sha256": "b2edf1191d09e6fd27fe97187f100de9e1f2cb6158495ceb127435b86d0f3860",
+      "bytes": 1305
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\models\\clip_external_probe.joblib",
+      "sha256": "3b23eb9e67933115136ba62e3bc445ead3165c0587416dc772e716211b791ed8",
+      "bytes": 4109
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\ai_detector\\image_ensemble.py",
+      "sha256": "04e555d999c7a0f1761fade2327210331a81f708f50233a4b6f886cf29983734",
+      "bytes": 6479
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\ai_detector\\decision_policy.py",
+      "sha256": "b116da00dca29b5cff7315b693ff15f229077e2d32ec7bafc021a870cad1b8bd",
+      "bytes": 895
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\image.py",
+      "sha256": "0e737e47a80e8530b315c6e3d15d87c8518f3d879b7d606e13dff9b7a056ee69",
+      "bytes": 12247
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\main.py",
+      "sha256": "2325920bb35cfdd68345f6f9f9c66f4c186a1226ec4ee76cb4520b77e920dd2a",
+      "bytes": 4895
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\serve.py",
+      "sha256": "7b75fa417a941403db3bde6861bc47e6554f37ab57db3b25c8e1907040c9f879",
+      "bytes": 3103
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\local-runtime.json",
+      "sha256": "40a4427b16d58a1476179b3f6d61c40f0914ff856774570c0e0108e4c1f474b2",
+      "bytes": 378
+    },
+    {
+      "path": "D:\\TrustLensData\\pinned_README.md",
+      "sha256": "eead1cf63953a850e2e0e9b724c6589aea33a75082b24a6ddb4306c385fa26e3",
+      "bytes": 15586
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-generalization-20261013\\data\\admitted.json",
+      "sha256": "91dc9b6ddca57204b456f0bc2cae8aab1ce1df87e594c593f7b93f2928ca6135",
+      "bytes": 76334922
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\neighborhood_hacks_20261021\\artifacts\\sprint48\\accuracy-request-20261023\\AUDIT.md",
+      "sha256": "4a0369d384e0012f1d3e095a3f08b57460c0fc9f252ecb47d87955cb286748dc",
+      "bytes": 8658
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\neighborhood_hacks_20261021\\artifacts\\sprint48\\accuracy-request-20261023\\evidence.json",
+      "sha256": "4d38866abb904d48651364002aae76fbc63238c567b7d660be745400c439a324",
+      "bytes": 11278
+    }
+  ],
+  "native_entry": "ImageEnsemble.score_details plus is_inconclusive; ordinary local POST /api/analyze/image only if separately admitted and endpoint source/process proven",
+  "views": [
+    "original",
+    "EXIF-transpose then RGB JPEG quality=60, no resize, Pillow version and output hash to be pinned before scoring"
+  ],
+  "budget": {
+    "cpu_threads": 6,
+    "gpu": false,
+    "network_external_bytes": 0,
+    "new_D_bytes": 0,
+    "max_output_bytes": 10000000,
+    "max_seconds": 600,
+    "combined_private_and_resident_abort_bytes": 1879048192,
+    "import_admission_bytes": 1342177280,
+    "supervisor_reserve_bytes": 268435456
+  },
+  "missing_proof": [
+    "Current native scientific import/load admission under reviewed containment; prior smoke failed import/metadata admission",
+    "Full installed fitting/calibration/exact/near/prompt overlap lineage for these four rows; manifest admission is not installed-v1 independence proof",
+    "Root approval and scoped preservation of historical STOP",
+    "Proof endpoint process source directory/environment identity and CPU setting; listener is lazy, not warmed"
+  ],
+  "scores": null,
+  "population_accuracy": null,
+  "release_acceptance": false
+}

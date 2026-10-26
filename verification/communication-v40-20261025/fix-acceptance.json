@@ -1,0 +1,13 @@
+{
+  "contract": "Continue all local label comparisons; first8weighted mismatch rows unchanged; additional unique pairs counted as notdisplayed, never uninspected",
+  "cases": [
+    "8distinct",
+    "9distinct",
+    "duplicate9",
+    "8equalthenmismatch",
+    "multipartdedup",
+    "web/mailto/relative",
+    "combinedcoverage",
+    "privacy/action/weightstable"
+  ]
+}

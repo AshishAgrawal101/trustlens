@@ -1,0 +1,29 @@
+{
+  "purpose": "Read-only post-fix boundary follow-up; expectations frozen before execution",
+  "cases": [
+    {
+      "id": "absolute-userinfo-neutral-label",
+      "mode": "email",
+      "input": "Content-Type: text/html\n\n<a href=\"https://bank.example@other.example/pay\">Open statement</a>",
+      "expected": "Actual destination and text-before-at warning observable; no source visit"
+    },
+    {
+      "id": "scheme-relative-userinfo-neutral-label",
+      "mode": "email",
+      "input": "Content-Type: text/html\n\n<a href=\"//bank.example@other.example/pay\">Open statement</a>",
+      "expected": "Do not silently lose actual host/userinfo observation merely because scheme absent; or disclose partial target inspection"
+    },
+    {
+      "id": "scheme-relative-ip-neutral-label",
+      "mode": "email",
+      "input": "Content-Type: text/html\n\n<a href=\"//127.0.0.1/pay\">Open statement</a>",
+      "expected": "Literal host can be observed without transport assumption; do not imply fully inspected destination"
+    },
+    {
+      "id": "absolute-ip-neutral-label",
+      "mode": "email",
+      "input": "Content-Type: text/html\n\n<a href=\"https://127.0.0.1/pay\">Open statement</a>",
+      "expected": "Same host structure observation as scheme-relative, transport distinct"
+    }
+  ]
+}

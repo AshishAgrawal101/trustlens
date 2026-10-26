@@ -1,0 +1,82 @@
+✖ screenshot withdrawing review clears completed output and all export/plan state but retains the draft and original (28.9531ms)
+✖ screenshot withdrawing review aborts a pending check and rejects its late success even after rechecking (5.7993ms)
+✖ qr withdrawing review clears completed output and all export/plan state but retains the draft and original (5.3153ms)
+✖ qr withdrawing review aborts a pending check and rejects its late success even after rechecking (6.3069ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 147.8866
+
+✖ failing tests:
+
+test at tests\review_revocation.test.cjs:26:3
+✖ screenshot withdrawing review clears completed output and all export/plan state but retains the draft and original (28.9531ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\review_revocation.test.cjs:31:12)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\review_revocation.test.cjs:38:3
+✖ screenshot withdrawing review aborts a pending check and rejects its late success even after rechecking (5.7993ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\review_revocation.test.cjs:41:77)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\review_revocation.test.cjs:26:3
+✖ qr withdrawing review clears completed output and all export/plan state but retains the draft and original (5.3153ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\review_revocation.test.cjs:31:12)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\review_revocation.test.cjs:38:3
+✖ qr withdrawing review aborts a pending check and rejects its late success even after rechecking (6.3069ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\review_revocation.test.cjs:41:77)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

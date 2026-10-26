@@ -1,0 +1,251 @@
+{
+  "protocol_sha256": "f425616db5bd03c4fc50dd22c246e2003196bd23cf534d09e8e81a350f8d5e25",
+  "cases": [
+    {
+      "status": "decoded",
+      "codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "review_required": true,
+      "id": "clean",
+      "elapsed_seconds": 0.36234600003808737,
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 37257216,
+        "peak_private": 798810112
+      }
+    },
+    {
+      "status": "decoded",
+      "codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "review_required": true,
+      "id": "rotate90",
+      "elapsed_seconds": 0.31740980001632124,
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 37183488,
+        "peak_private": 798748672
+      }
+    },
+    {
+      "status": "decoded",
+      "codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "review_required": true,
+      "id": "rotate17",
+      "elapsed_seconds": 0.33961100003216416,
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 37699584,
+        "peak_private": 799305728
+      }
+    },
+    {
+      "status": "decoded",
+      "codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "review_required": true,
+      "id": "halfsize",
+      "elapsed_seconds": 0.3210374000482261,
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 36352000,
+        "peak_private": 797921280
+      }
+    },
+    {
+      "status": "decoded",
+      "codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "review_required": true,
+      "id": "doublesize",
+      "elapsed_seconds": 0.39083099993877113,
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 42725376,
+        "peak_private": 804990976
+      }
+    },
+    {
+      "status": "decoded",
+      "codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "review_required": true,
+      "id": "blur1",
+      "elapsed_seconds": 0.32069149997550994,
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 36835328,
+        "peak_private": 798261248
+      }
+    },
+    {
+      "status": "decoded",
+      "codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "review_required": true,
+      "id": "blur3",
+      "elapsed_seconds": 0.34008709993213415,
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 37363712,
+        "peak_private": 799051776
+      }
+    },
+    {
+      "status": "decoded",
+      "codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "review_required": true,
+      "id": "perspective",
+      "elapsed_seconds": 0.33454189996700734,
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 36896768,
+        "peak_private": 798568448
+      }
+    },
+    {
+      "status": "decoded",
+      "codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "review_required": true,
+      "id": "jpeg45",
+      "elapsed_seconds": 0.34784189995843917,
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 37314560,
+        "peak_private": 798871552
+      }
+    },
+    {
+      "status": "no_decode",
+      "detail": "No readable QR code was found. Try a clear, close crop, or type the printed address.",
+      "codes": [],
+      "id": "center_occlusion",
+      "elapsed_seconds": 0.3454022000078112,
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "matches_frozen_payloads": false,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 37642240,
+        "peak_private": 798838784
+      }
+    },
+    {
+      "status": "decoded",
+      "codes": [
+        "https://example.org/qr-review-only",
+        "Library meeting: bring your notes."
+      ],
+      "review_required": true,
+      "id": "multiple",
+      "elapsed_seconds": 0.3648554999381304,
+      "expected_codes": [
+        "https://example.org/qr-review-only",
+        "Library meeting: bring your notes."
+      ],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 42156032,
+        "peak_private": 802668544
+      }
+    },
+    {
+      "status": "no_decode",
+      "detail": "No readable QR code was found. Try a clear, close crop, or type the printed address.",
+      "codes": [],
+      "id": "blank",
+      "elapsed_seconds": 0.33851999999023974,
+      "expected_codes": [],
+      "matches_frozen_payloads": true,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 36245504,
+        "peak_private": 798736384
+      }
+    },
+    {
+      "status": "no_decode",
+      "detail": "No readable QR code was found. Try a clear, close crop, or type the printed address.",
+      "codes": [],
+      "id": "coco2017:100202",
+      "elapsed_seconds": 0.36870079999789596,
+      "expected_codes": null,
+      "matches_frozen_payloads": null,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 36868096,
+        "peak_private": 798818304
+      }
+    },
+    {
+      "status": "no_decode",
+      "detail": "No readable QR code was found. Try a clear, close crop, or type the printed address.",
+      "codes": [],
+      "id": "coco2017:100331",
+      "elapsed_seconds": 0.3694344999967143,
+      "expected_codes": null,
+      "matches_frozen_payloads": null,
+      "worker_reaped": true,
+      "worker_retained_memory": {
+        "peak_ws": 37240832,
+        "peak_private": 799227904
+      }
+    }
+  ],
+  "max_worker_retained_bytes": {
+    "peak_ws": 42725376,
+    "peak_private": 804990976
+  },
+  "aggregate_scam_or_origin_accuracy": null,
+  "max_latency_seconds": 0.39083099993877113
+}

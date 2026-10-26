@@ -1,0 +1,18 @@
+{
+  "invalidation": {
+    "client": 305,
+    "passageRetained": true,
+    "range": "",
+    "resultHidden": true,
+    "scroll": 305
+  },
+  "afterClearReload": {
+    "range": "",
+    "resultHidden": true,
+    "values": [
+      "",
+      "",
+      ""
+    ]
+  }
+}

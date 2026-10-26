@@ -1,0 +1,884 @@
+[
+  {
+    "id": "html-entity-target",
+    "mode": "paste",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "url:host:0",
+          "evidence_class": "verified",
+          "severity": "info",
+          "title": "The address points to this host",
+          "detail": "known.example",
+          "source": "Parsed address, not a live reputation check",
+          "weight": 0.0
+        },
+        {
+          "id": "url:host:1",
+          "evidence_class": "verified",
+          "severity": "info",
+          "title": "The address points to this host",
+          "detail": "other.example",
+          "source": "Parsed address, not a live reputation check",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed host: known.example. Link host: other.example. Legitimate tracking can also cause this; verify through a known address.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-entity-target",
+    "mode": "eml",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "url:host:0",
+          "evidence_class": "verified",
+          "severity": "info",
+          "title": "The address points to this host",
+          "detail": "known.example",
+          "source": "Parsed address, not a live reputation check",
+          "weight": 0.0
+        },
+        {
+          "id": "url:host:1",
+          "evidence_class": "verified",
+          "severity": "info",
+          "title": "The address points to this host",
+          "detail": "other.example",
+          "source": "Parsed address, not a live reputation check",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed host: known.example. Link host: other.example. Legitimate tracking can also cause this; verify through a known address.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-relative-with-base",
+    "mode": "paste",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "low",
+      "confidence": "low",
+      "summary": "HTML link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:links_incomplete",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Some email link targets were not inspected",
+          "detail": "1 visible HTML link target(s) were not inspected because their address syntax or scheme is unsupported, or a bounded review limit was reached. No target was visited.",
+          "source": "Count of uninspected targets in supplied HTML; no addresses or query values included",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe.",
+        "Some supplied HTML link targets could not be inspected locally. Review the original message in a trusted mail app; use an app or address you already trust instead of opening unknown links."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Review unsupported email links in the original message",
+          "detail": "Review the original email in a trusted mail app. Some supplied HTML link targets were not inspected; use an official app or an address you already trust instead of opening unknown links."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\nHTML link review was incomplete; some supplied HTML link targets were not inspected. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unsupported email links in the original message\nReview the original email in a trusted mail app. Some supplied HTML link targets were not inspected; use an official app or an address you already trust instead of opening unknown links.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-relative-with-base",
+    "mode": "eml",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "low",
+      "confidence": "low",
+      "summary": "HTML link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:links_incomplete",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Some email link targets were not inspected",
+          "detail": "1 visible HTML link target(s) were not inspected because their address syntax or scheme is unsupported, or a bounded review limit was reached. No target was visited.",
+          "source": "Count of uninspected targets in supplied HTML; no addresses or query values included",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe.",
+        "Some supplied HTML link targets could not be inspected locally. Review the original message in a trusted mail app; use an app or address you already trust instead of opening unknown links."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Review unsupported email links in the original message",
+          "detail": "Review the original email in a trusted mail app. Some supplied HTML link targets were not inspected; use an official app or an address you already trust instead of opening unknown links."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\nHTML link review was incomplete; some supplied HTML link targets were not inspected. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unsupported email links in the original message\nReview the original email in a trusted mail app. Some supplied HTML link targets were not inspected; use an official app or an address you already trust instead of opening unknown links.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-scheme-relative-neutral",
+    "mode": "paste",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "low",
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:relative_host:0",
+          "evidence_class": "verified",
+          "severity": "info",
+          "title": "The scheme-relative link points to this host",
+          "detail": "other.example",
+          "source": "Local scheme-independent address rules for supplied scheme-relative HTML target; transport and ownership remain unknown",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-scheme-relative-neutral",
+    "mode": "eml",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "low",
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:relative_host:0",
+          "evidence_class": "verified",
+          "severity": "info",
+          "title": "The scheme-relative link points to this host",
+          "detail": "other.example",
+          "source": "Local scheme-independent address rules for supplied scheme-relative HTML target; transport and ownership remain unknown",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-fragment-only",
+    "mode": "paste",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "low",
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-fragment-only",
+    "mode": "eml",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "low",
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "mailto-primary-mismatch",
+    "mode": "paste",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: known.example. Primary recipient domain: other.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "mailto-primary-mismatch",
+    "mode": "eml",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: known.example. Primary recipient domain: other.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "multipart-inline-and-attachment",
+    "mode": "paste",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "high",
+      "confidence": "low",
+      "summary": "Only readable subject and message-body content was checked; other parts were not scanned. Pause before responding. This contains a request worth verifying independently.",
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        },
+        {
+          "id": "email:unscanned",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Some email parts were not checked",
+          "detail": "1 attachment or unsupported MIME part(s) were not scanned. Only readable subject and message-body content was checked; this does not establish attachment safety.",
+          "source": "Local MIME part headers only; attached-message subtrees skipped; no filenames or attachment contents inspected",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Keep security codes and passwords private",
+          "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\nAttachment or unsupported MIME content was not scanned. 1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "multipart-inline-and-attachment",
+    "mode": "eml",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "high",
+      "confidence": "low",
+      "summary": "Only readable subject and message-body content was checked; other parts were not scanned. Pause before responding. This contains a request worth verifying independently.",
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        },
+        {
+          "id": "email:unscanned",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Some email parts were not checked",
+          "detail": "1 attachment or unsupported MIME part(s) were not scanned. Only readable subject and message-body content was checked; this does not establish attachment safety.",
+          "source": "Local MIME part headers only; attached-message subtrees skipped; no filenames or attachment contents inspected",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Keep security codes and passwords private",
+          "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\nAttachment or unsupported MIME content was not scanned. 1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-br-advice",
+    "mode": "paste",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "low",
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-br-advice",
+    "mode": "eml",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "low",
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-unsupported-target",
+    "mode": "paste",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "low",
+      "confidence": "low",
+      "summary": "HTML link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:links_incomplete",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Some email link targets were not inspected",
+          "detail": "1 visible HTML link target(s) were not inspected because their address syntax or scheme is unsupported, or a bounded review limit was reached. No target was visited.",
+          "source": "Count of uninspected targets in supplied HTML; no addresses or query values included",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe.",
+        "Some supplied HTML link targets could not be inspected locally. Review the original message in a trusted mail app; use an app or address you already trust instead of opening unknown links."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Review unsupported email links in the original message",
+          "detail": "Review the original email in a trusted mail app. Some supplied HTML link targets were not inspected; use an official app or an address you already trust instead of opening unknown links."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\nHTML link review was incomplete; some supplied HTML link targets were not inspected. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unsupported email links in the original message\nReview the original email in a trusted mail app. Some supplied HTML link targets were not inspected; use an official app or an address you already trust instead of opening unknown links.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "html-unsupported-target",
+    "mode": "eml",
+    "matches_declared_expectations": true,
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "low",
+      "confidence": "low",
+      "summary": "HTML link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:links_incomplete",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Some email link targets were not inspected",
+          "detail": "1 visible HTML link target(s) were not inspected because their address syntax or scheme is unsupported, or a bounded review limit was reached. No target was visited.",
+          "source": "Count of uninspected targets in supplied HTML; no addresses or query values included",
+          "weight": 0.0
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe.",
+        "Some supplied HTML link targets could not be inspected locally. Review the original message in a trusted mail app; use an app or address you already trust instead of opening unknown links."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Review unsupported email links in the original message",
+          "detail": "Review the original email in a trusted mail app. Some supplied HTML link targets were not inspected; use an official app or an address you already trust instead of opening unknown links."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\nHTML link review was incomplete; some supplied HTML link targets were not inspected. 0 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nReview unsupported email links in the original message\nReview the original email in a trusted mail app. Some supplied HTML link targets were not inspected; use an official app or an address you already trust instead of opening unknown links.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  }
+]

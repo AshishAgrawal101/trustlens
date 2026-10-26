@@ -1,0 +1,146 @@
+{
+  "purpose": "Constructed local source/controller verification for a rehearsal draft, not recording/timing/accuracy evidence",
+  "quote": {
+    "original": "The park will close for repairs on Monday. Most paths remain open.",
+    "revised": "The park will close on Monday.",
+    "output": {
+      "parts": [
+        {
+          "type": "same",
+          "text": "The park will close "
+        },
+        {
+          "type": "removed",
+          "text": "for repairs "
+        },
+        {
+          "type": "same",
+          "text": "on Monday."
+        },
+        {
+          "type": "removed",
+          "text": " Most paths remain open."
+        }
+      ],
+      "identical": false
+    }
+  },
+  "numbers": {
+    "input": {
+      "countA": 20,
+      "totalA": 100,
+      "countB": 30,
+      "totalB": 200
+    },
+    "result": {
+      "rateA": 20,
+      "rateB": 15,
+      "percentagePoints": -5,
+      "relativePercent": -25
+    },
+    "actualControllerFacts": [
+      {
+        "tag": "dt",
+        "text": "Group A rate"
+      },
+      {
+        "tag": "dd",
+        "text": "About 20% (20 of 100)"
+      },
+      {
+        "tag": "dt",
+        "text": "Group B rate"
+      },
+      {
+        "tag": "dd",
+        "text": "About 15% (30 of 200)"
+      },
+      {
+        "tag": "dt",
+        "text": "Rate difference · B minus A"
+      },
+      {
+        "tag": "dd",
+        "text": "About -5 percentage points"
+      },
+      {
+        "tag": "dt",
+        "text": "Relative rate change · compared with A"
+      },
+      {
+        "tag": "dd",
+        "text": "About -25%"
+      }
+    ],
+    "optionalReverse": {
+      "rateA": 15,
+      "rateB": 20,
+      "percentagePoints": 5,
+      "relativePercent": 33.33333333333333
+    }
+  },
+  "claim": {
+    "input": {
+      "claim": "The park will close on Monday. Group B has a higher access-problem rate because it has 30 reports versus Group A’s 20.",
+      "context": "Constructed forwarded post. Supplied comparison: Group A has 20 reports among 100 visits; Group B has 30 among 200. Source accounts have not been supplied."
+    },
+    "result": {
+      "observations": [
+        {
+          "id": "sources:zero",
+          "text": "No source addresses were supplied."
+        }
+      ],
+      "questions": [
+        {
+          "id": "source:a:missing_url",
+          "text": "Source A: find the original source address or record where this account came from."
+        },
+        {
+          "id": "source:b:missing_url",
+          "text": "Source B: find the original source address or record where this account came from."
+        },
+        {
+          "id": "labels:unresolved",
+          "text": "The supplied accounts have no support/challenge labels yet. They may add context or remain uncertain; no conclusion about the claim follows."
+        },
+        {
+          "id": "labels:human_judgment",
+          "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+        }
+      ],
+      "labels": [
+        {
+          "id": "labels:a:missing",
+          "text": "Source A: no address or quotation was supplied. Its selected role is not counted as an account."
+        },
+        {
+          "id": "labels:b:missing",
+          "text": "Source B: no address or quotation was supplied. Its selected role is not counted as an account."
+        }
+      ],
+      "nextStep": "Next: locate an original source account before interpreting the claim.",
+      "steps": [
+        "Find the earliest original account and read its full context, including qualifications and corrections.",
+        "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+        "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+        "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+      ]
+    }
+  },
+  "labels": {
+    "quote-example": "Load a constructed example",
+    "quote-submit": "Compare the wording →",
+    "quote-result-title": "The supplied wording, compared",
+    "numbers-submit": "Compare proportions →",
+    "numbers-swap": "Swap A and B",
+    "numbers-result-title": "Your descriptive comparison",
+    "claim-review-submit": "Review the claim’s context →",
+    "claim-result-title": "Your context review"
+  },
+  "sourceHashes": {
+    "static/quote-context.js": "ae94f8cbb613766784585d445c3f6f1a6a6f594d7e3cf37b35539a9837297bbe",
+    "static/numbers-context.js": "f197f0888da853eef842a9bd1606bef06649969ddae63ad0893e06c49cf12cf8",
+    "static/claim-review.js": "1ceed67df96dfa7ab612245a78030b732efb9fbfb4ea27ce545664376364936f"
+  }
+}

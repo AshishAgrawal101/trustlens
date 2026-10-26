@@ -1,0 +1,29 @@
+{
+  "fetched_at": "2026-10-09T23:46:17.161080+00:00",
+  "sources": [
+    {
+      "name": "c2pa-trust-list.pem",
+      "url": "https://raw.githubusercontent.com/c2pa-org/conformance-public/refs/heads/main/trust-list/C2PA-TRUST-LIST.pem",
+      "bytes": 37911,
+      "sha256": "75cacc98b79ecac33713c7ecfb58d4a0ef383f3c1f886e7409f9e37e8664aea5"
+    },
+    {
+      "name": "interim-anchors.pem",
+      "url": "https://contentcredentials.org/trust/anchors.pem",
+      "bytes": 44078,
+      "sha256": "db57e50b9bd4e4c786cbb91f38fd85e2af6a9d5412438a8cddcc42688df07ae5"
+    },
+    {
+      "name": "interim-allowed.txt",
+      "url": "https://contentcredentials.org/trust/allowed.sha256.txt",
+      "bytes": 8237,
+      "sha256": "3597b20c9c20a0daadc7fab0d8c63534bd333ec6a715ef7117c7a4588caa15bb"
+    },
+    {
+      "name": "interim-config.txt",
+      "url": "https://contentcredentials.org/trust/store.cfg",
+      "bytes": 258,
+      "sha256": "1044c30a906b0c9cbe28b4a4c0002ca56a718f0ae22b9af83238543a07d0e718"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "verified_utc": "2026-10-23T21:05:54.199840+00:00",
+  "python": {
+    "tests": 728,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "javascript": {
+    "tests": 121,
+    "passed": 121,
+    "failures": 0,
+    "skipped": 0
+  },
+  "new_regressions": {
+    "python": 38,
+    "javascript": 10
+  },
+  "browser": {
+    "explicit_draft_transfer_exact_wording": true,
+    "transfer_does_not_analyze": true,
+    "transfer_320_no_overflow": true,
+    "duplicate_subject_390_no_overflow": true,
+    "inline_HTML_advice_not_false_warning": true,
+    "duplicate_subject_incomplete_with_code_guidance": true,
+    "practice_feedback_focus_and_Tab_Enter_progression": true,
+    "interactive_file_upload": false,
+    "physical_phone": false,
+    "native_share_delivery": false,
+    "viewport_restored": true,
+    "app_left_open_empty": true
+  },
+  "live_smoke": "live-smoke.json",
+  "preservation": "../next-wave-intake/decoder-fix-preservation.json",
+  "archives_unchanged": 7,
+  "original_files_unchanged": 104,
+  "protected_unchanged": 33,
+  "reviewed_protected_decoder_exception": "app/analyzers/image.py: only normalize proven Pillow ValueError, preserve existing InvalidImage messages. No runtime, weights, thresholds or inference change.",
+  "downloads": 0,
+  "cloud_content_calls": 0,
+  "gpu_jobs": 0,
+  "model_retries": 0,
+  "automation_changes": 0,
+  "external_messages": 0,
+  "published_or_submitted": false,
+  "population_accuracy_claimed": false,
+  "pocket_assets_unchanged_from_v5": 18,
+  "pocket_offline_rehearsal": "Historical v5 server-stopped receipt; no new offline/device claim for unchanged assets."
+}

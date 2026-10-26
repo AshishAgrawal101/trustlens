@@ -1,0 +1,694 @@
+{
+  "contract_sha256": "6b16221db34d3046bffad030a8284145588f07349090d5d19381b9617327a767",
+  "wall_seconds": 0.6025651000672951,
+  "rows": [
+    {
+      "id": "CASE-TL-0000",
+      "status": 200,
+      "seconds": 0.487892699893564,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0000: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0001",
+      "status": 200,
+      "seconds": 0.39260539994575083,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0001: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0002",
+      "status": 200,
+      "seconds": 0.5870417000260204,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0002: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0003",
+      "status": 200,
+      "seconds": 0.5557374000782147,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0003: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0004",
+      "status": 200,
+      "seconds": 0.5835366999963298,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0004: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0005",
+      "status": 200,
+      "seconds": 0.5850471999729052,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0005: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0006",
+      "status": 200,
+      "seconds": 0.4143637000815943,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0006: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0007",
+      "status": 200,
+      "seconds": 0.5799252000870183,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0007: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0008",
+      "status": 200,
+      "seconds": 0.5791857000440359,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0008: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0009",
+      "status": 200,
+      "seconds": 0.4981000000843778,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0009: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0010",
+      "status": 200,
+      "seconds": 0.5263164000352845,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0010: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0011",
+      "status": 200,
+      "seconds": 0.40075430006254464,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0011: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0012",
+      "status": 200,
+      "seconds": 0.47326380002778023,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0012: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0013",
+      "status": 200,
+      "seconds": 0.46557030000258237,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0013: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0014",
+      "status": 200,
+      "seconds": 0.4632022000150755,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0014: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    },
+    {
+      "id": "CASE-TL-0015",
+      "status": 200,
+      "seconds": 0.46542509994469583,
+      "own_evidence_only": true,
+      "input_free_summary": true,
+      "report": {
+        "kind": "text",
+        "risk_index": null,
+        "risk_level": "high",
+        "confidence": "low",
+        "summary": "Pause before responding. This contains a request worth verifying independently.",
+        "evidence": [
+          {
+            "id": "request:code",
+            "evidence_class": "inferred",
+            "severity": "high",
+            "title": "Request to share a security code",
+            "detail": "Matched wording: \u201cCASE-TL-0015: Read me your verification code\u201d. Context may change its meaning.",
+            "source": "Local request-pattern rules",
+            "weight": 0.8
+          }
+        ],
+        "limitations": [
+          "English-language rules identify wording and link structure, not intent or sender identity.",
+          "A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited."
+        ],
+        "content_credentials": null,
+        "model_ran": false,
+        "decision_basis": "rules",
+        "actions": [
+          {
+            "title": "Keep security codes and passwords private",
+            "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+          },
+          {
+            "title": "Verify through a separate route",
+            "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+          }
+        ],
+        "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+      }
+    }
+  ]
+}

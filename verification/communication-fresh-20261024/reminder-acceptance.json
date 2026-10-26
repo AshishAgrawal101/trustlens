@@ -1,0 +1,18 @@
+{
+  "scope": "Only adjacent remember+horizontalspace+not+horizontalspace+to immediately before existing sensitive action; no generic not-to/quote/conditional/history rule",
+  "protected_pairs": [
+    "Remember not to share your password. vs Remember to share your password.",
+    "Remember not to share your password. Send me your verification code.",
+    "Remember not only to share your password.",
+    "Remember not to hesitate to share your password.",
+    "Remember not to call support; share your password.",
+    "The words \"remember not to\" are quoted; share your password."
+  ],
+  "wording_policy": "Existing intra-letter U+00AD normalization/offsets retained; Unicodehorizontalspace accepted; hardlinebreaks and U+200B not joined/removed",
+  "other_invariants": [
+    "no weights/risk/model changes",
+    "all sharedtext/email/call callers",
+    "English-only scope remains",
+    "oldfresh12beforeoutcomes immutable; other3falsewarnings retained"
+  ]
+}

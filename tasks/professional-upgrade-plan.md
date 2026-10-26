@@ -1,0 +1,19 @@
+# Professional-app upgrade plan
+
+Scope: a stronger local safety prototype with measured behavior, a polished mobile-friendly workflow, and a bounded offline phone companion. “1000x” is an aspiration, not a measurable promise. Preserve the frozen entry and earlier review ZIP; no public deployment, messages, paid services, cloud content APIs, automation resume, training or final-data access.
+
+## Ordered execution and acceptance
+
+1. Freeze this plan and dispatch three exclusive workers using GPT-6.1 Sol / low. Root coordinates integration, phone companion, packaging and final validation.
+2. Communication quality: inspect every caller of changed analyzers; freeze source-attributed public scam wording and benign controls before scoring; retain baseline failures. Improve only demonstrated gaps with targeted regressions. Public examples have selection/copyright/privacy limits and are not population accuracy. Owner: app/analyzers/text.py, app/guidance.py, dedicated tests/test_professional_requests.py and verification/professional-communication/. Do not change shared models or frontend.
+3. Product quality: improve intake guidance, component availability display, mobile results, keyboard behavior and error recovery using existing components. Owner: static/app.js, static/index.template.html, static/styles.css, dedicated tests/frontend_professional.test.cjs, verification/professional-product/. Coordinate any backend requirement with root. Do not add phone companion files.
+4. Image evaluation: read-only eligibility/asset/resource/STOP/lock/license audit, then propose a tiny frozen diagnostic of already admitted development photographs/generated images. No sealed finals, final retries, user examples, downloads, model fitting, GPU work or runtime edits. Root must review protocol before execution. Owner: verification/professional-images/ only. Record each input's lineage/digest, native runtime identity, original versus transformed views, definite errors, inconclusives, runtime and memory if measurable. Nulls remain nulls.
+5. Root: implement a separately labeled offline-capable phone companion for shared text using standard web app/share-target APIs. It must review before checking, use conservative explicitly scoped local checks, never visit supplied links or persist shared message text, and make its limits visible. Main desktop backend remains loopback-only. Do not expose it to the LAN to make phone access appear ready. Installation requires a supported browser and trustworthy secure origin; do not claim Android installation/device testing without evidence.
+6. Integrate completed work, run native app/controller tests, exercise browser communication/recovery/mobile flows through ordinary permitted access. Do not bypass the extension file-upload denial. Check the companion offline with bounded tests and browser flows where permitted. Preserve still-unverified Android device/file-upload/screen-reader checks.
+7. Update capability/evaluation/demo notes, inspect the final diff and protected hashes, create a separately named source archive/manifest/checksum and review receipt. Leave original frozen entry and original live source untouched. Finish when additional work lacks justified benefit.
+
+## Risks and definition of done
+
+Rules can falsely accuse or reassure, and public scam examples cannot establish generalization. Image-origin signals cannot establish fraud; the installed detector has failed release requirements. Offline phone checks are a distinct limited capability, not the desktop image/OCR pipeline. Shared content must stay out of URLs, caches, logs and exports. No automatic SMS access, notification monitoring or overlay permission is requested.
+
+Done means useful working improvements, reproducible tests and an honest handoff. Any missing SDK/device/secure-origin setup is recorded rather than represented as a working installed Android app.

@@ -1,0 +1,13 @@
+{
+  "scope": "AlwaysprependexistingEnglishfirstline in communication_report; customcalleremail preservesownorder; defaults2linesbyteexact",
+  "acceptance": [
+    "defaulttext/call2linesexact",
+    "customemailEnglishfirst+customorder",
+    "customlistnotmutated",
+    "emptycustomfallback unchanged",
+    "text/call/emailpaste/emlfileAPIEnglishscope",
+    "fixedexportsunchanged/inputfree",
+    "URLonlyunchanged/noEnglishclaim",
+    "evidence/risk/actions/parserunchanged"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "static/claim-review.js": true,
+  "static/quote-context.js": true,
+  "static/source-context.js": true,
+  "static/numbers-context.js": true,
+  "static/media-context.js": true
+}

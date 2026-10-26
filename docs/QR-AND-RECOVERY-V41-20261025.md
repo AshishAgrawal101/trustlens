@@ -1,0 +1,25 @@
+# Transparent QR reading and transactional recovery v41
+
+QR extraction now uses a **QR-only white-background policy** for transparent images. The new helper first performs the existing image validation, then detects alpha/tRNS. Opaque images return the original validated RGB object. Transparent images release that first RGB allocation before a second bounded alpha decode and white compositing pass. Returned images remain owned/closed by the existing QR extraction path. This adds bounded decoding/allocation work for transparent files; it is not a throughput, memory-containment or accuracy benchmark.
+
+The whole frozen `app/analyzers/image.py` SHA is unchanged: `19ba25ed5e3b1ba331c90b9d4f2ef776336bc8da4810115998ce0bc0c6a8fe1f`. Screenshot, Media and the native QR worker remain byte-identical. Existing byte/pixel validation, orientation, worker timeout/admission, review gate and no-destination-opening policy remain. A native constructed 264px black-on-transparent QR now decodes to its expected text, with paired reference controls. The helper suite has thirteen tests including native API coverage. White compositing can remove white-on-transparent contrast; an opaque contrasting image/crop remains an alternative. This does not improve arbitrary codes, OCR or image-origin inference.
+
+## Recovery response failure handling
+
+The main recovery dialog now validates the entire nonempty bounded plan list before rendering or caching it. Required strings, unique bounded IDs, counts and lengths match the fixed local endpoint’s shape. Invalid/empty/partial successful responses retain the fixed error and FTC fallback; close/reopen actually retries. A response arriving after close/exit cannot seed the cache. Valid responses still cache once. Selection, heading focus, input-free copying and no-recovery-guarantee wording are unchanged. This validates structure, not the truth or effectiveness of arbitrary recovery advice.
+
+Root used an **isolated constructed-response server** on loopback 8767: initial empty HTTP200 produced the fixed fallback, closing/reopening fetched a second response with the actual four plans, selection focused the heading, and a third open used the validated cache without a third request. This is not a claim that the production API emitted malformed data. Separately, the real local server on 8766 was stopped/restarted to verify same-input retry and Clear. Records are distinct in `verification/v41-root-browser-20261025/recovery-fault.json`, `recovery-server-off.json` and `server-recovery.json`; fixtures/contracts are retained alongside them.
+
+## Verification and release state
+
+Final source suites: **1,616 Python and 611 JavaScript passes, zero skips**, with native OCR, local signing and QR environments configured. Independent QR/resource and recovery-admission reviews pass in `verification/v41-independent-qr-20261025/` and `verification/v41-independent-recovery-20261025/`. Reproductions, red/green and full Node checkpoint are preserved in `verification/product-v41-20261025/`; QR implementation/native evidence is in `verification/media-v41-20261025/`. Test counts and constructed native/browser fixtures are not population accuracy, usability or physical-phone evidence.
+
+Pocket remains **v40/cache34**, unchanged, SHA-256 **048eb7ddc9068e9d05fc4073d011a45d86f241f37266654c2bde2d105735444a**. These changes are desktop QR/recovery paths; no new Pocket export or cache bump is needed. The v40 external receipt closes its historical pending row: **1,471 manifest files**, source/extracted **1,603 Python / 607 JavaScript passes**, zero skips, with prior artifacts preserved.
+
+The new source archive destination is `TrustLens-professional-20261025-qr-recovery-v41-review.zip`. Packaging, extracted suites, preservation and external receipt remain pending at this documentation checkpoint; this note did not create an archive. Root owns final current QR-help/UI review. No browser upload permission was changed or bypassed, and native API fixture testing is distinct from a browser file-picker recording.
+
+All broader workspaces, source-address repair, explicit separate-tab actions and privacy resets remain. No new source fetching, automatic analysis/transfer, stored history, model promotion, external service or recovery promise was introduced. Physical-phone/native sharing, consented users/outcomes, timed/recorded demo, student contribution/eligibility, deployment and submission remain open/deferred. The broader park-post script remains a rehearsal draft.
+
+## Final browser integration
+
+The refreshed development app exposes the QR-only white-background policy and contrasting opaque-copy alternative before any file is selected; no browser upload was attempted. Its normal recovery endpoint renders all four validated plans. Root left Message empty and ready. The formerly bound main tab was missing after interruption and its observed replacement timed out twice on focus; a normal new tab in the same Edge browser worked. No alternate browser or upload workaround was used. See `verification/v41-root-browser-20261025/qr-help.json` and `live-recovery.json`.

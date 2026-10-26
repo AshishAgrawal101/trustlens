@@ -1,0 +1,10 @@
+{
+  "phase": "import_admission",
+  "memory": {
+    "private": 1037221888,
+    "ws": 537743360,
+    "peak_ws": 537743360,
+    "peak_private": 1037221888
+  },
+  "reserve": 268435456
+}

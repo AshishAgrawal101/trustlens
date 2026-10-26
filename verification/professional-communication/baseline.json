@@ -1,0 +1,86 @@
+[
+  {
+    "id": "fbi-toll-excerpt",
+    "label": "public_scam_excerpt",
+    "expected_warning": true,
+    "warning": false,
+    "evidence_ids": [
+      "url:host:0"
+    ],
+    "risk_level": "low",
+    "risk_index": null,
+    "confidence": "low"
+  },
+  {
+    "id": "ftc-usps-excerpt",
+    "label": "public_scam_excerpt",
+    "expected_warning": true,
+    "warning": false,
+    "evidence_ids": [
+      "text:none"
+    ],
+    "risk_level": "low",
+    "risk_index": null,
+    "confidence": "low"
+  },
+  {
+    "id": "ordinary-delivery",
+    "label": "constructed_benign",
+    "expected_warning": false,
+    "warning": false,
+    "evidence_ids": [
+      "text:none"
+    ],
+    "risk_level": "low",
+    "risk_index": null,
+    "confidence": "low"
+  },
+  {
+    "id": "ordinary-invoice",
+    "label": "constructed_benign",
+    "expected_warning": false,
+    "warning": false,
+    "evidence_ids": [
+      "text:none"
+    ],
+    "risk_level": "low",
+    "risk_index": null,
+    "confidence": "low"
+  },
+  {
+    "id": "negated-balance",
+    "label": "constructed_benign",
+    "expected_warning": false,
+    "warning": false,
+    "evidence_ids": [
+      "text:none"
+    ],
+    "risk_level": "low",
+    "risk_index": null,
+    "confidence": "low"
+  },
+  {
+    "id": "safety-advice",
+    "label": "constructed_benign",
+    "expected_warning": false,
+    "warning": false,
+    "evidence_ids": [
+      "text:none"
+    ],
+    "risk_level": "low",
+    "risk_index": null,
+    "confidence": "low"
+  },
+  {
+    "id": "legitimate-payment-request",
+    "label": "constructed_legitimate_sensitive_request",
+    "expected_warning": true,
+    "warning": false,
+    "evidence_ids": [
+      "text:none"
+    ],
+    "risk_level": "low",
+    "risk_index": null,
+    "confidence": "low"
+  }
+]

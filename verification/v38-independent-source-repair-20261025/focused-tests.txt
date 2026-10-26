@@ -1,0 +1,24 @@
+✔ review is explicit, fixed output receives focus, and no network request occurs (7.3551ms)
+✔ every input change invalidates prior output and disables exports (11.0711ms)
+✔ validation preserves drafts, suppresses private error text and cannot export a completed review (1.8275ms)
+✔ Clear, page exit and persisted Back erase all private fields and prior output (4.3103ms)
+✔ copy and download export a fixed plan; late copy completion cannot revive cleared output (1.7888ms)
+✔ clipboard timeout offers download without exposing input (2.223ms)
+✔ correction is initially hidden native non-submit control and repeated errors associate only current field (7.3205ms)
+✔ pure custom URL errors retain fixed messages and identify only their source URL field (1.1708ms)
+✔ A/B errors announce fixed source and correction opens/focuses matching field without changing any draft or Review (3.8833ms)
+✔ edit repair success and every replacement/lifecycle reset erase correction and ARIA state; stale click inert (10.1729ms)
+✔ native invalid keeps existing opening/focus semantics and clears prior custom action (1.5013ms)
+✔ one initially closed native disclosure keeps enabled optional fields and unchanged pure code PLAN and print privacy (7.57ms)
+✔ closing sources retains every draft role and date and includes them in explicit review (4.3272ms)
+✔ date-only and role-only presence is descriptive and edits invalidate without counting a source (3.2696ms)
+✔ native invalid source opens before default focus and custom source rejection also reveals correction fields (2.1473ms)
+✔ examples reveal populated sources while Clear exit and persisted Back collapse and erase (4.0827ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 121.982

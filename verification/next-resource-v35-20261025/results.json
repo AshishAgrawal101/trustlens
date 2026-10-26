@@ -1,0 +1,17 @@
+{
+  "concurrent_decoded_rgb_peak": 2,
+  "remaining_owned_images": 0,
+  "reports": 2,
+  "dimensions": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "input_bytes": 69,
+  "no_model_execution": true
+}

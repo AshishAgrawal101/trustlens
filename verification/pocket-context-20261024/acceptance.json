@@ -1,0 +1,12 @@
+{
+  "frozen_before_reading_target":true,
+  "target":"static/phone/context.html",
+  "cases":[
+    {"id":"sources","input_situation":"Two sites repeat one press release","accept":"Trace underlying evidence; website count does not establish independence or truth","reject":"Automatic credibility or fact verdict"},
+    {"id":"imagecaption","input_situation":"A repost pairs an image with today's event and editable older metadata","accept":"Separate original caption, publication/event/capture dates; neither editable metadata nor signed history verifies depicted story","reject":"AI/camera/truth/location verdict or phone image-inspection claim"},
+    {"id":"quote","input_situation":"A short quotation omits surrounding qualifications","accept":"Read full original wording and surrounding context; literal differences alone do not establish meaning/intent/truth","reject":"Semantic detection or authenticated-source claim"},
+    {"id":"numbers","input_situation":"A20of100 versusB30of200","accept":"A20percent B15percent; larger raw count can have lower rate; check comparability/denominators","reject":"Causality, significance, data quality or claim-truth conclusion"}
+  ],
+  "cross_cutting":"Guide/manual practice, not desktop analyzers. Browser-local /phone/ cache scope; no external source fetching, automatic image/quote verification, model or online fact checking. Offline availability only after actual cache installation, no device/offline execution claim from markup review.",
+  "execution":"read-only afterfreeze; no browser/model/upload work"
+}

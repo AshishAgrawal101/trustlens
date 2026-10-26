@@ -1,0 +1,245 @@
+{
+  "purpose": "Frozen read-only pasted Unicode boundary probes; decoded-text equivalence versus correctly encoded MIME, not fraud truth",
+  "cases": [
+    {
+      "id": "ascii-none",
+      "body": "Send me your verification code.",
+      "subtype": "plain",
+      "headers": "none",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ascii-utf8",
+      "body": "Send me your verification code.",
+      "subtype": "plain",
+      "headers": "utf8",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ascii-latin1",
+      "body": "Send me your verification code.",
+      "subtype": "plain",
+      "headers": "latin1",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ascii-ascii",
+      "body": "Send me your verification code.",
+      "subtype": "plain",
+      "headers": "ascii",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ascii-utf8-8bit",
+      "body": "Send me your verification code.",
+      "subtype": "plain",
+      "headers": "utf8-8bit",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ascii-utf8-qp",
+      "body": "Send me your verification code.",
+      "subtype": "plain",
+      "headers": "utf8-qp",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ascii-utf8-base64",
+      "body": "Send me your verification code.",
+      "subtype": "plain",
+      "headers": "utf8-base64",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ordinary-unicode-none",
+      "body": "Réunion au café à six heures.",
+      "subtype": "plain",
+      "headers": "none",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ordinary-unicode-utf8",
+      "body": "Réunion au café à six heures.",
+      "subtype": "plain",
+      "headers": "utf8",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ordinary-unicode-latin1",
+      "body": "Réunion au café à six heures.",
+      "subtype": "plain",
+      "headers": "latin1",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ordinary-unicode-ascii",
+      "body": "Réunion au café à six heures.",
+      "subtype": "plain",
+      "headers": "ascii",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ordinary-unicode-utf8-8bit",
+      "body": "Réunion au café à six heures.",
+      "subtype": "plain",
+      "headers": "utf8-8bit",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ordinary-unicode-utf8-qp",
+      "body": "Réunion au café à six heures.",
+      "subtype": "plain",
+      "headers": "utf8-qp",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "ordinary-unicode-utf8-base64",
+      "body": "Réunion au café à six heures.",
+      "subtype": "plain",
+      "headers": "utf8-base64",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "nbsp-advice-none",
+      "body": "You must not share your password.",
+      "subtype": "plain",
+      "headers": "none",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "nbsp-advice-utf8",
+      "body": "You must not share your password.",
+      "subtype": "plain",
+      "headers": "utf8",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "nbsp-advice-latin1",
+      "body": "You must not share your password.",
+      "subtype": "plain",
+      "headers": "latin1",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "nbsp-advice-ascii",
+      "body": "You must not share your password.",
+      "subtype": "plain",
+      "headers": "ascii",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "nbsp-advice-utf8-8bit",
+      "body": "You must not share your password.",
+      "subtype": "plain",
+      "headers": "utf8-8bit",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "nbsp-advice-utf8-qp",
+      "body": "You must not share your password.",
+      "subtype": "plain",
+      "headers": "utf8-qp",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "nbsp-advice-utf8-base64",
+      "body": "You must not share your password.",
+      "subtype": "plain",
+      "headers": "utf8-base64",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "soft-hyphen-request-none",
+      "body": "Send me your verifi­cation code.",
+      "subtype": "plain",
+      "headers": "none",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "soft-hyphen-request-utf8",
+      "body": "Send me your verifi­cation code.",
+      "subtype": "plain",
+      "headers": "utf8",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "soft-hyphen-request-latin1",
+      "body": "Send me your verifi­cation code.",
+      "subtype": "plain",
+      "headers": "latin1",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "soft-hyphen-request-ascii",
+      "body": "Send me your verifi­cation code.",
+      "subtype": "plain",
+      "headers": "ascii",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "soft-hyphen-request-utf8-8bit",
+      "body": "Send me your verifi­cation code.",
+      "subtype": "plain",
+      "headers": "utf8-8bit",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "soft-hyphen-request-utf8-qp",
+      "body": "Send me your verifi­cation code.",
+      "subtype": "plain",
+      "headers": "utf8-qp",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "soft-hyphen-request-utf8-base64",
+      "body": "Send me your verifi­cation code.",
+      "subtype": "plain",
+      "headers": "utf8-base64",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "idna-html-utf8",
+      "body": "<a href=\"//bücher.example/pay\">Open statement</a>",
+      "subtype": "html",
+      "headers": "utf8",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "idna-html-latin1",
+      "body": "<a href=\"//bücher.example/pay\">Open statement</a>",
+      "subtype": "html",
+      "headers": "latin1",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "idna-html-ascii",
+      "body": "<a href=\"//bücher.example/pay\">Open statement</a>",
+      "subtype": "html",
+      "headers": "ascii",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "idna-html-utf8-8bit",
+      "body": "<a href=\"//bücher.example/pay\">Open statement</a>",
+      "subtype": "html",
+      "headers": "utf8-8bit",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "idna-html-utf8-qp",
+      "body": "<a href=\"//bücher.example/pay\">Open statement</a>",
+      "subtype": "html",
+      "headers": "utf8-qp",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    },
+    {
+      "id": "idna-html-utf8-base64",
+      "body": "<a href=\"//bücher.example/pay\">Open statement</a>",
+      "subtype": "html",
+      "headers": "utf8-base64",
+      "intent": "Compare decoded text/evidence with correctly encoded MIME reference; invalid CTE/charset must be explicit, not silently trusted"
+    }
+  ],
+  "reference": "EmailMessage.set_content(body,subtype,charset=utf-8).as_bytes() (proper CTE chosen by library)",
+  "policy": "Declared QP/base64 with raw Unicode is intentionally invalid transfer payload; do not treat as valid reference or normalize it into acceptance."
+}

@@ -1,0 +1,247 @@
+.FFFFFFFFFFFF......FFF....                                               [100%]
+================================== FAILURES ===================================
+_ test_failed_links_propagate_partial_coverage_without_risk_change[text-invalid-port] _
+
+case = {'id': 'invalid-port', 'text': 'Review https://private.example:bad/SECRET', 'parse_failures': 1, 'over_limit': False}
+kind = 'text'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'No strong warning signs matched. That does not verify who sent this or make it safe.'
+E        +  where 'No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='text', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs matc...links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[text-invalid-bracket-live] _
+
+case = {'id': 'invalid-bracket-live', 'text': 'Send me your verification code. Review https://[PRIVATE/SECRET', 'parse_failures': 1, 'over_limit': False}
+kind = 'text'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'Pause before responding. This contains a request worth verifying independently.'
+E        +  where 'Pause before responding. This contains a request worth verifying independently.' = AnalysisReport(kind='text', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. Th...links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[text-two-invalid] _
+
+case = {'id': 'two-invalid', 'text': 'https://private.example:bad/SECRET https://[PRIVATE/OTHER', 'parse_failures': 2, 'over_limit': False}
+kind = 'text'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'No strong warning signs matched. That does not verify who sent this or make it safe.'
+E        +  where 'No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='text', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs matc...links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[text-invalid-plus-cap] _
+
+case = {'id': 'invalid-plus-cap', 'text': 'https://private.example:bad/SECRET https://s0.example/path https://s1.example/path...path https://s5.example/path https://s6.example/path https://s7.example/path', 'parse_failures': 1, 'over_limit': True}
+kind = 'text'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.'
+E        +  where 'Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='text', risk_index=None, risk_level='low', confidence='low', summary='Link review is incomplete. N...links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[email-invalid-port] _
+
+case = {'id': 'invalid-port', 'text': 'Review https://private.example:bad/SECRET', 'parse_failures': 1, 'over_limit': False}
+kind = 'email'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'No strong warning signs matched. That does not verify who sent this or make it safe.'
+E        +  where 'No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat... a request is safe.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[email-invalid-bracket-live] _
+
+case = {'id': 'invalid-bracket-live', 'text': 'Send me your verification code. Review https://[PRIVATE/SECRET', 'parse_failures': 1, 'over_limit': False}
+kind = 'email'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'Pause before responding. This contains a request worth verifying independently.'
+E        +  where 'Pause before responding. This contains a request worth verifying independently.' = AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T... a request is safe.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[email-two-invalid] _
+
+case = {'id': 'two-invalid', 'text': 'https://private.example:bad/SECRET https://[PRIVATE/OTHER', 'parse_failures': 2, 'over_limit': False}
+kind = 'email'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'No strong warning signs matched. That does not verify who sent this or make it safe.'
+E        +  where 'No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat... a request is safe.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[email-invalid-plus-cap] _
+
+case = {'id': 'invalid-plus-cap', 'text': 'https://private.example:bad/SECRET https://s0.example/path https://s1.example/path...path https://s5.example/path https://s6.example/path https://s7.example/path', 'parse_failures': 1, 'over_limit': True}
+kind = 'email'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.'
+E        +  where 'Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='Link review is incomplete. ...links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[call-invalid-port] _
+
+case = {'id': 'invalid-port', 'text': 'Review https://private.example:bad/SECRET', 'parse_failures': 1, 'over_limit': False}
+kind = 'call'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'No strong warning signs matched. That does not verify who sent this or make it safe.'
+E        +  where 'No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='call', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs matc...links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[call-invalid-bracket-live] _
+
+case = {'id': 'invalid-bracket-live', 'text': 'Send me your verification code. Review https://[PRIVATE/SECRET', 'parse_failures': 1, 'over_limit': False}
+kind = 'call'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'Pause before responding. This contains a request worth verifying independently.'
+E        +  where 'Pause before responding. This contains a request worth verifying independently.' = AnalysisReport(kind='call', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. Th...links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[call-two-invalid] _
+
+case = {'id': 'two-invalid', 'text': 'https://private.example:bad/SECRET https://[PRIVATE/OTHER', 'parse_failures': 2, 'over_limit': False}
+kind = 'call'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'No strong warning signs matched. That does not verify who sent this or make it safe.'
+E        +  where 'No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='call', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs matc...links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+_ test_failed_links_propagate_partial_coverage_without_risk_change[call-invalid-plus-cap] _
+
+case = {'id': 'invalid-plus-cap', 'text': 'https://private.example:bad/SECRET https://s0.example/path https://s1.example/path...path https://s5.example/path https://s6.example/path https://s7.example/path', 'parse_failures': 1, 'over_limit': True}
+kind = 'call'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_failed_links_propagate_partial_coverage_without_risk_change(case,kind):
+        report=analyze_email('Subject: PRIVATE\n\n'+case['text']) if kind=='email' else analyze_text(case['text'],kind)
+        bad=malformed(report);assert len(bad)==case['parse_failures']
+        assert all(e.evidence_class=='unknown' and e.weight==0 for e in bad)
+>       assert 'could not be parsed' in report.summary
+E       AssertionError: assert 'could not be parsed' in 'Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.'
+E        +  where 'Link review is incomplete. No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='call', risk_index=None, risk_level='low', confidence='low', summary='Link review is incomplete. N...links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_malformed_link_coverage.py:32: AssertionError
+___ test_ambiguous_email_keeps_failed_parse_reason_when_summary_overridden ____
+
+    def test_ambiguous_email_keeps_failed_parse_reason_when_summary_overridden():
+        result=add_guidance(analyze_email('From: PRIVATE-A@example.org\nFrom: PRIVATE-B@example.org\n\nhttps://private.example:bad/SECRET'))
+        assert result.summary.startswith('This email could not be fully interpreted.')
+>       assert any('1 link address(es) could not be parsed' in x for x in result.limitations)
+E       assert False
+E        +  where False = any(<generator object test_ambiguous_email_keeps_failed_parse_reason_when_summary_overridden.<locals>.<genexpr> at 0x00000263D65E7100>)
+
+tests\test_malformed_link_coverage.py:68: AssertionError
+_ test_only_authoritative_exact_or_colon_prefix_ids_trigger_notice[url:malformed-True] _
+
+eid = 'url:malformed', expected = True
+
+    @pytest.mark.parametrize('eid,expected',[('url:malformed',True),('url:malformed:0',True),('url:malformedness',False),('noturl:malformed:0',False)])
+    def test_only_authoritative_exact_or_colon_prefix_ids_trigger_notice(eid,expected):
+        evidence=[Evidence(id=eid,evidence_class='unknown',severity='medium',title='PRIVATE',detail='PRIVATE',source='test')]
+        result=add_guidance(communication_report('text',evidence))
+>       assert ('could not be parsed' in result.summary)==expected
+E       AssertionError: assert ('could not be parsed' in 'No strong warning signs matched. That does not verify who sent this or make it safe.') == True
+E        +  where 'No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='text', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs matc...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').summary
+
+tests\test_malformed_link_coverage.py:79: AssertionError
+_ test_only_authoritative_exact_or_colon_prefix_ids_trigger_notice[url:malformed:0-True] _
+
+eid = 'url:malformed:0', expected = True
+
+    @pytest.mark.parametrize('eid,expected',[('url:malformed',True),('url:malformed:0',True),('url:malformedness',False),('noturl:malformed:0',False)])
+    def test_only_authoritative_exact_or_colon_prefix_ids_trigger_notice(eid,expected):
+        evidence=[Evidence(id=eid,evidence_class='unknown',severity='medium',title='PRIVATE',detail='PRIVATE',source='test')]
+        result=add_guidance(communication_report('text',evidence))
+>       assert ('could not be parsed' in result.summary)==expected
+E       AssertionError: assert ('could not be parsed' in 'No strong warning signs matched. That does not verify who sent this or make it safe.') == True
+E        +  where 'No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='text', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs matc...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').summary
+
+tests\test_malformed_link_coverage.py:79: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[text-invalid-port]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[text-invalid-bracket-live]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[text-two-invalid]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[text-invalid-plus-cap]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[email-invalid-port]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[email-invalid-bracket-live]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[email-two-invalid]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[email-invalid-plus-cap]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[call-invalid-port]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[call-invalid-bracket-live]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[call-two-invalid]
+FAILED tests/test_malformed_link_coverage.py::test_failed_links_propagate_partial_coverage_without_risk_change[call-invalid-plus-cap]
+FAILED tests/test_malformed_link_coverage.py::test_ambiguous_email_keeps_failed_parse_reason_when_summary_overridden
+FAILED tests/test_malformed_link_coverage.py::test_only_authoritative_exact_or_colon_prefix_ids_trigger_notice[url:malformed-True]
+FAILED tests/test_malformed_link_coverage.py::test_only_authoritative_exact_or_colon_prefix_ids_trigger_notice[url:malformed:0-True]
+15 failed, 11 passed in 0.43s

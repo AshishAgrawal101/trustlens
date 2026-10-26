@@ -1,0 +1,15 @@
+# Browser integration rehearsal — iPhone and visual wave
+
+Ordinary Edge extension control used the existing local development tab at http://127.0.0.1:8766/. No browser file-access denial was bypassed. All typed examples were constructed; no system clipboard was read and no native share was invoked.
+
+- At 1280px, reviewed the dark hero, local CSS lens, bright workstation, four primary modes, expandable visual tools, input/result panels and phone support links. Saved desktop-1280.png.
+- At 320px and 390px, document scroll width stayed within viewport width. Reviewed visible input and result text/buttons; saved link-result-320.png and message-result-390.png. Ctrl+Enter submitted a constructed security-code request; count showed 82/30,000, and the report gave code-protection/independent-verification steps.
+- Expanded all three visual modes through ordinary UI earlier in this wave. File upload was not attempted after the saved extension denial; backend/native and controller checks remain separate evidence.
+- Explicit URL inspection showed xn--strae-oqa.example for the constructed sharp-s hostname, matching the browser URL parser. It distinguished strasse.example, displayed port8443/user-info presence/counts, and omitted private path/query/fragment values. After completion, focus returned to the Inspect button. Editing the source erased details before another request.
+- At320px, reproduced repeated same-hash Recover navigation leaving a manually closed panel closed. The final v11 shell now reopens/focuses it. Repeated Shortcut navigation on the iPhone page also reopens/focuses its summary. Narrow-page width was305px inside320px in those checks.
+- Verified the v11 marker through the page DOM, then stopped only this development server's verified parent/child processes. With no listener on8766, reloaded /phone/ios.html#shortcut successfully, followed Back to Pocket, generated fixed steps from user-selected topics, cleared message/topics/result, and answered an offline practice scenario with its explanation. Cache preparation/readiness status remained available. No claim of physical-device installation is made.
+- Restarted the development server, loaded both phone guides at390px, and saved pocket-390.png/iphone-390.png. Restored the original browser viewport and left the main app open with an empty draft. The original8765 listener was not stopped.
+
+Live backend smoke separately confirmed all four communication endpoints, inspector omission, fixed422error without reflected input, foreign-Origin POST rejection and no-store pages. See live-smoke.json. The full suites, preservation and bounded contrast audit have separate receipts.
+
+Not checked: physical iPhone/Android installation, Shortcuts execution, actual clipboard permission UI, native share delivery, browser file selection, native print preview, full assistive-technology behavior or clean dependency installation. Extension-injected Course Hero/Zotero content is outside the app; no zero-console-error claim is made.

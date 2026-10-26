@@ -1,0 +1,528 @@
+{
+  "previous_artifacts": 63,
+  "original_files": 104,
+  "protected_files_unchanged_relative_v33": 34,
+  "historical_protected_accounting": {
+    "unchanged": 33,
+    "reviewed_resource_cleanup": 1
+  },
+  "image_entire_sha256": "19ba25ed5e3b1ba331c90b9d4f2ef776336bc8da4810115998ce0bc0c6a8fe1f",
+  "explicit_runtime_unchanged_relative_v41": [
+    {
+      "path": "app/analyzers/image.py",
+      "sha256": "19ba25ed5e3b1ba331c90b9d4f2ef776336bc8da4810115998ce0bc0c6a8fe1f",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/qr.py",
+      "sha256": "7e5205edb23f23de325d42806e73ec68c620c2cf46916f3c0a9328caad0e18a5",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/qr_pixels.py",
+      "sha256": "b7a7df29839fb40820522c6dc104485bc59ed852f5c5032d8da4ad10986a157a",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/qr_worker.py",
+      "sha256": "5d9cce287b7641ea6883083b8aa104933719f0a81773e671617a6fb1ae46a1f5",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/screenshot.py",
+      "sha256": "40c0589ac31a1a7b152185756184e2bccd5bcfb731d74657ce12e5d59adc6062",
+      "matches": true
+    },
+    {
+      "path": "app/ocr_worker.ps1",
+      "sha256": "6a0c5574ddf38d654d206406b47afe0b508b2e57f8afad8496d7522f477f0426",
+      "matches": true
+    }
+  ],
+  "v41_manifest_entries": 1519,
+  "unchanged_entries": 1506,
+  "intentional_existing_changes": [
+    "README.md",
+    "scripts/export_phone.py",
+    "scripts/package.py",
+    "static/app.js",
+    "static/index.template.html",
+    "static/numbers-context.js",
+    "static/phone/index.html",
+    "static/phone/share-demo.html",
+    "static/phone/sw.js",
+    "tasks/todo.md",
+    "tests/frontend_state.test.cjs",
+    "tests/phone_companion.test.cjs",
+    "tests/pocket_context_cache.test.cjs"
+  ],
+  "permitted_existing_changes": [
+    "README.md",
+    "scripts/export_phone.py",
+    "scripts/package.py",
+    "static/app.js",
+    "static/index.template.html",
+    "static/numbers-context.js",
+    "static/phone/index.html",
+    "static/phone/share-demo.html",
+    "static/phone/sw.js",
+    "tasks/todo.md",
+    "tests/frontend_state.test.cjs",
+    "tests/phone_companion.test.cjs",
+    "tests/pocket_context_cache.test.cjs"
+  ],
+  "ongoing_documentation_exclusions": [
+    "README.md",
+    "tasks/todo.md",
+    "scripts/package.py"
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-entry-freeze-20261023T0840Z\\TrustLens-Neighborhood-Hacks-entry.zip",
+      "sha256": "18cfcb73f3691deeb3c81fff3aea4b9bf593ed57ed4f2870800283f5e73fb105",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023-review.zip",
+      "sha256": "7c6870b4ed2abecd871708b93fb75d28ac1591a138e784eb4360fb6b48a35cee",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-review.zip",
+      "sha256": "b30b94d9bb3d0e15c6261b7fbc09ad40f87359030cd69602196622e0737975ac",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-pocket-v2-review.zip",
+      "sha256": "89781c1a818646ae844ff718b85a47543c072eaa04dc302b7e94d15d695446cd",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-pocket-v3-review.zip",
+      "sha256": "5e39e91cd80a5a87b15d81c71952892ab5095ee727adfed6a0964ed1e14ec04d",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-intake-v4-review.zip",
+      "sha256": "11bcb1f1a611f2305b4643566c0337e962a0ca0642a582c441d5a5b6458f5be7",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-iphone-v5-review.zip",
+      "sha256": "d3a3f383be5bacaf271278b3495efcf582f94da9c7e05df2c907ce0fcbec95ae",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-reliability-v6-review.zip",
+      "sha256": "8a03946510c6e900e6c5d05600dde91f069b716a0d34d48cdbd55cb6e162da8f",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-cac-v7-review.zip",
+      "sha256": "e9c6cfc857e78fba5971ec54e9300fbaf442eb6aabe873870662a643b1aadb61",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-desktop-v8-review.zip",
+      "sha256": "4046c4cb806756e91cbe6c74099a5643e10b09c4acf073dab112a57242e1d4ec",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v7.zip",
+      "sha256": "415a91178e3699022be15b11a9d0d1ace4fe236fdcd433c59a645b1773662635",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-crosschecks-v9-review.zip",
+      "sha256": "a115e2ce57a578eb13eab61f90a4cefaeb74f7997e07f247e549a368a789207a",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-context-v10-review.zip",
+      "sha256": "acfe23d42014b5d85917de7c575c716686bb47c908e8732942ae57999abfc57e",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-evidence-v11-review.zip",
+      "sha256": "bbbed87964b1390bec3ed83cb3fb5cde99f589097049bc6b26bc4fa5c77f0133",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-media-v12-review.zip",
+      "sha256": "cec82cae9049406d9022d50a83a77cca7bd8a760682a134a5149fd70acc5c622",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-numbers-v13-review.zip",
+      "sha256": "f0d09d062d772bb0c8e6042f06c1ef689e3188f577b5dfd455911caf7a5a6c37",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-quotes-v14-review.zip",
+      "sha256": "93da147d2e8409dac5ad6692e15dbd5a9992e2064fb7da37a16aed33c79530f5",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-quality-v15-review.zip",
+      "sha256": "6ce00a8b6b801a4489c23e921bd9363863e63e6192c5f245155421646f1db8b3",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-source-v16-review.zip",
+      "sha256": "b3ba0745eaf47b5df05c7a70e1e704da66349f074ffe13a04cae4aca45a4e97d",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v17.zip",
+      "sha256": "b507755101ae54c23ec1571373d1e8dd761a6628c679d3389005a003238157c3",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-pocket-v17-review.zip",
+      "sha256": "1669aa08f4506301298ec9e3fed6ce18b416c18e1b1a9a8460c0e27e62b3040c",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v18.zip",
+      "sha256": "e1e137b6de1e952aadd9a03cec697e522f78942a966fe159be18b0e25bf64656",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-offline-v18-final-review.zip",
+      "sha256": "e1eaeca9805c2004cf70d99151b9e6a91263e302c4f5111c4db3c20e25b1b0f0",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-offline-v18-review.zip",
+      "sha256": "c40d96a916d6a55fd146eb250b6a7baef30ce121e536dacfde7fcd51f409562b",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v19.zip",
+      "sha256": "0104930915857aac9853b7838cc3f07980086dedbbb47ea2ef1d5f96a8040bcd",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v20.zip",
+      "sha256": "84221cc6d9c825130cc6b91ba5da0a394f90a955fadcb92732698fe6f41fc8e2",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v21.zip",
+      "sha256": "e78d0451cb151468f2e6f04a4905786d557c6ea2899d9ffac4e0a76fc0c10e0d",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-polish-v21-review.zip",
+      "sha256": "6bcb843e6f5bc71b5cbf26462c99b384c986ce99643a619dd9a66c5f8beb61b1",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-coverage-v22-review.zip",
+      "sha256": "2ad373a1a1ee9f6360e892181d3165cb43d8e5655c7985fbe8eb0600e65c8947",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v23.zip",
+      "sha256": "b22bb416b590d5a448b1f0a4c0d3acd342ba68cffb3f2acba8af5b00ec075cdf",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-percentages-v23-review.zip",
+      "sha256": "8203aa16c2572f2fb3fdeac2a3c1f1b33b88300809f5e54c1bddda0c2960c97e",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v24.zip",
+      "sha256": "4699b60e7cbdd92845ee55f41c7130cc99b376f880d5fe1bbebaca1a852825be",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-event-context-v24-review.zip",
+      "sha256": "705f72ec240b83907c665d28715867a5f9f8aaf81470300247b52da51620af8a",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v25.zip",
+      "sha256": "c270625ae74a05cfebeddc9c3453db904ab69f5d06f8c3a4f14a1bbeb3c3112f",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-ads-context-v25-review.zip",
+      "sha256": "1d35c4fdf27741d52b26bf9daf9b32e17f4e56e12abf06dd7026c48a7d1a9123",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v26.zip",
+      "sha256": "a7ed149a79685ae343edc8df3c9ac682e4840153caf7fbae4e41e7248b7a19d6",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-context-polish-v26-review.zip",
+      "sha256": "515449ba37997ca65bf0d181d568eb588ba401be684d1675c9527bc3263e0a28",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v27.zip",
+      "sha256": "dc8409e59ee4f8006b3ee8fd0edb64d56f96ce168c9804ac4a6486100876b091",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-intake-clarity-v27-review.zip",
+      "sha256": "270b2b263bd55b115d0bf18d0678447cd3f5175bf1441e812f646dbc784a5884",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v28.zip",
+      "sha256": "5c0d499be57da06ec7e06f3891b5791d4e0211c16fbeac00aa66c24bdab60a82",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-passage-navigation-v28-review.zip",
+      "sha256": "64c887f5f3a7a97dd7fb19c63937dab97c19226a2c765f5fb12e394cab909254",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v29.zip",
+      "sha256": "4f500b4d0c73da452b1a45f9607b57fe5be7fa3791cbb2a8425bec672cded303",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-comparison-context-v29-review.zip",
+      "sha256": "8f8febc2afdc7fe404f50a19d669503732ff2a64c9e518631105981fb72e7013",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v30.zip",
+      "sha256": "ce7a3a82cf294b9003bfeb5a65fc44e0666af98e71d6eb7b51c78de8810e28f5",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-shared-context-v30-review.zip",
+      "sha256": "1beb896d5ed31666dcbdd3b81f2eeefba838056602b7d5aff2cbf6296b761235",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v31.zip",
+      "sha256": "7ce559ff33db4ff761da9e7672d188f0820756fefd6c8352a8f1763d73b1d209",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-focused-practice-v31-review.zip",
+      "sha256": "653c9cb44e0dc9946a4bac5384b64c1d0f7b96743fd3aef753d0dd306497f591",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v32.zip",
+      "sha256": "d120772437a3d47aa98546a71dc4a012f3c0a50652574a1ffb4b36947e683431",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-endorsement-context-v32-review.zip",
+      "sha256": "5813be2d4a6f838d216a0773b59a256fdb615e3c605c288e33e9e3d1a5854624",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v33.zip",
+      "sha256": "e12a7d4318341ec9df675945e5b3f079404d0d586cc19fa877cb5a81f662bed9",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-passage-jumps-v33-review.zip",
+      "sha256": "0e474b6478ac98e32032ed8701ab559d87309b39127c3aec74935adfad21f1e3",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261025-email-media-v34-review.zip",
+      "sha256": "6e2b14ae16b0c43fdcdc03e0f0af0b51fab70b79ca9cd2215d427b070f8752e3",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v35.zip",
+      "sha256": "0775eae01a5351ca6639408f2795be895f5cc912579b7ca3225cc32faf2289b4",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261025-drafts-resource-v35-review.zip",
+      "sha256": "f0496d4a42b22be3868e39c3a99104867c787f6a837d43102414540e23c83e5f",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261025-url-boundaries-v36-review.zip",
+      "sha256": "04c8998161f19219df4557226995c7ba9637c72ce20f83110741a4348fdac1ef",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261025-connected-workflows-v37-review.zip",
+      "sha256": "15059fa3389980e695f0851823c4db5e1357ee009c27ded9771c9047cde843e3",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v37.zip",
+      "sha256": "b45940325d515170f20ddd0b8af5bdc15aceefd75ca2501b1bf3f96d03d1a3ea",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v38.zip",
+      "sha256": "1cd3cafafc721278ccfac051c360aea062f9b82e2313e0616beacceea4dec0ff",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261025-source-repair-v39-review.zip",
+      "sha256": "f4bba3350acd60a1d19c39a0f5d45136135c1b163ef93aff99f97902e565231e",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v39.zip",
+      "sha256": "9339040772bd8f246b1208eba73b4f59101602069d17cbd6a64c64d164e2cd31",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261025-email-coverage-v40-review.zip",
+      "sha256": "295c25bf6801f3428d144355d3bbe35514b72966d92443a6a759247ea1cfcef4",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v40.zip",
+      "sha256": "048eb7ddc9068e9d05fc4073d011a45d86f241f37266654c2bde2d105735444a",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261025-qr-recovery-v41-review.zip",
+      "sha256": "4a17322d08d62170c3e338c60d7151230d07fa8fa08140040ff70cea3727d691",
+      "matches": true
+    }
+  ],
+  "current_phone_v42": {
+    "sha256": "7f4704d7bcbaefa7ae2cff5b37efbd4b68dab030a8a61b0552bd2f41cff6f345",
+    "manifest_source_entries": 31,
+    "all_source_and_archive_entries_match": true,
+    "entries": [
+      {
+        "path": "phone/index.html",
+        "matches": true
+      },
+      {
+        "path": "phone/phone.css",
+        "matches": true
+      },
+      {
+        "path": "phone/phone.js",
+        "matches": true
+      },
+      {
+        "path": "phone/guide.js",
+        "matches": true
+      },
+      {
+        "path": "phone/compare.js",
+        "matches": true
+      },
+      {
+        "path": "phone/suggestions.js",
+        "matches": true
+      },
+      {
+        "path": "phone/practice.js",
+        "matches": true
+      },
+      {
+        "path": "phone/share.js",
+        "matches": true
+      },
+      {
+        "path": "phone/share-demo.html",
+        "matches": true
+      },
+      {
+        "path": "phone/share-demo.js",
+        "matches": true
+      },
+      {
+        "path": "phone/ios.html",
+        "matches": true
+      },
+      {
+        "path": "phone/ios.css",
+        "matches": true
+      },
+      {
+        "path": "phone/ios.js",
+        "matches": true
+      },
+      {
+        "path": "phone/manifest.webmanifest",
+        "matches": true
+      },
+      {
+        "path": "phone/icon.svg",
+        "matches": true
+      },
+      {
+        "path": "phone/icon-192.png",
+        "matches": true
+      },
+      {
+        "path": "phone/icon-512.png",
+        "matches": true
+      },
+      {
+        "path": "phone/sw.js",
+        "matches": true
+      },
+      {
+        "path": "phone/context.html",
+        "matches": true
+      },
+      {
+        "path": "phone/workspace/claims.html",
+        "matches": true
+      },
+      {
+        "path": "phone/workspace/numbers.html",
+        "matches": true
+      },
+      {
+        "path": "phone/workspace/quotes.html",
+        "matches": true
+      },
+      {
+        "path": "static/claim-review.css",
+        "matches": true
+      },
+      {
+        "path": "static/claim-review.js",
+        "matches": true
+      },
+      {
+        "path": "static/numbers-context.css",
+        "matches": true
+      },
+      {
+        "path": "static/numbers-context.js",
+        "matches": true
+      },
+      {
+        "path": "static/quote-context.css",
+        "matches": true
+      },
+      {
+        "path": "static/quote-context.js",
+        "matches": true
+      },
+      {
+        "path": "static/source-context.js",
+        "matches": true
+      },
+      {
+        "path": "static/unicode-notice.js",
+        "matches": true
+      },
+      {
+        "path": "README-IPHONE-TEST.md",
+        "matches": true
+      }
+    ]
+  },
+  "scope": "New helper/tests/evidence outside prior manifest; no source packaging performed."
+}

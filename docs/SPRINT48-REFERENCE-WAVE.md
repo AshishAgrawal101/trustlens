@@ -1,0 +1,9 @@
+# Bounded code-reference context increment
+
+Finite adjacent English delivery/disclosure templates now yield an input-free, zero-weight “Possible security-code reference” item. The relationship and currentness remain unknown. Existing code-protection advice is added only if a spare action slot exists; definite payment, remote-access, address or incomplete-email protections keep their priority. Independent positive warnings continue normally.
+
+Root verified 422 app tests, zero skips, including native Windows OCR and actual C2PA signing/tampering. All eight protected image/C2PA runtime files remain byte-identical. On the same already examined 24-case development set, all 24 contracts pass, with zero unwanted present-request warnings. The two repaired cases explicitly permit targeted uncertainty plus code-protection advice; they are not declared proven live requests. A new evaluator version maps only the exact unknown/zero-weight reference item to that family and still requires the matching protective action. Raw outputs and all earlier results remain preserved.
+
+These are tuned constructed regressions, not representative accuracy. Finite templates miss unfamiliar references. At action saturation the precaution stays in evidence text rather than displacing definite protections. The unchanged frontend retains its previous 17 offline controller test passes; real-browser visuals and keyboard checks remain unverified.
+
+The separate local language candidate ran successfully but failed its frozen calibration coverage requirement: best 1/14 determinate cases versus at least 8/14 required. It was not integrated, and development scoring was not run. Image comparison remains unscored after bounded resource admissions stopped its attempts. Existing detector performance and release status are unchanged.

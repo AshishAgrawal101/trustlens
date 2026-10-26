@@ -1,0 +1,52 @@
+{
+  "scope": "analyze_email(str), parsed headers empty, default text/plain only: use original parser string payload; never infer original bytes",
+  "cases": [
+    {
+      "id": "nbsp-advice",
+      "text": "You must not share your password.",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "shy-request",
+      "text": "Send me your verifi­cation code.",
+      "expected_weighted_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "ordinary-unicode",
+      "text": "Réunion au café à six heures.",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "later-colon",
+      "text": "Hello\nSubject: Send me your verifi­cation code.",
+      "expected_weighted_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "leading-blank",
+      "text": "\nYou must not share your password.",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "colon-invalid-header",
+      "text": ": Send me your verifi­cation code.",
+      "expected_weighted_ids": [
+        "request:code"
+      ]
+    }
+  ],
+  "invariants": [
+    "parsed Note:/Subject: headers keep existing MIME path",
+    "blank body remains incomplete",
+    "string lone surrogate fixed ValueError no echo",
+    "byteentry strictASCIIdecode unchanged",
+    "headerful raw Unicode incomplete unchanged",
+    "proper UTF8/Latin1 QP/base64/8bit unchanged",
+    "invalidtransferencoding incomplete",
+    "evidence excerpts preserve originalUnicode",
+    "input-freeexports"
+  ]
+}

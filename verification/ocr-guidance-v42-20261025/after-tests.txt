@@ -1,0 +1,45 @@
+✔ QR extraction requires separate review and checks all edited text without opening destinations (34.3915ms)
+✔ QR clear or mode change rejects stale extraction and malformed success cannot bypass review (6.3951ms)
+✔ email file selection waits for explicit analysis, preserves paste alternative, and uses multipart (7.2057ms)
+✔ invalid email files fail locally and file clear or mode replacement rejects stale reports (7.3537ms)
+✔ print checklist uses only safe summary, clears on edits, and cannot print a stale report (4.5141ms)
+✔ print stylesheet hides every body child except the dedicated input-free checklist (0.7366ms)
+✔ optional known website stays scoped to Link and clears private comparison drafts (5.445ms)
+✔ QR capability shows configuration only and treats older responses as unknown (4.1827ms)
+✔ constructed fixture links remain passive downloads scoped to their intake modes (4.332ms)
+✔ ordinary pageshow preserves the draft and report; persisted Back clears all private output (33.9109ms)
+✔ page exit revokes previews and clears file inputs, OCR review and filenames (7.6747ms)
+✔ page exit aborts a pending content check and late results cannot return on Back (5.9626ms)
+✔ page exit erases recovery selection and prevents delayed checklist loading from reopening it (9.133ms)
+✔ main clipboard prompt times out with download fallback and late completion cannot label a new report (4.722ms)
+✔ recovery clipboard timeout offers text fallback; reselecting the same plan invalidates old status (6.1525ms)
+✔ page exit invalidates both pending clipboard statuses (4.0781ms)
+✔ screenshot requires a separate reviewed-text submission and clears safely (31.4902ms)
+✔ blank OCR invites manual text and editing requires review again (3.675ms)
+✔ response after Clear cannot repopulate private content or results (5.2608ms)
+✔ failed requests and explicit timeout recover controls (4.54ms)
+✔ clipboard denial is actionable and copies only report summary (5.5003ms)
+✔ recovery is available without analysis and exports a fixed checklist (3.175ms)
+✔ invalid image selection clears the preview and reports its limit (3.4848ms)
+✔ demo choices change mode but never submit without Check (3.8516ms)
+✔ results distinguish concerns, observations and unknowns without hiding evidence (3.0813ms)
+✔ Clear erases private result nodes as well as input, and disables stale exports (3.0073ms)
+✔ download contains only the safe summary and releases its temporary URL (4.6609ms)
+✔ reselecting the active mode preserves drafts, results and active requests (2.6903ms)
+✔ reselecting Screenshot preserves corrected text and its review state (2.7668ms)
+✔ same-mode demo replacement clears results and rejects the earlier response (3.2965ms)
+✔ preview cleanup erases filenames on Clear, mode changes and invalid replacement (3.9322ms)
+✔ image heading distinguishes unavailable checks from usable partial results (3.43ms)
+✔ incomplete email is explicit while retaining detected warnings and actions (2.8072ms)
+✔ blank Screenshot extraction offers contrast recovery without changing text or running analysis (32.2905ms)
+✔ manual transparency advice stays in Screenshot help and preserves existing wrap advice (0.8231ms)
+✔ readable Screenshot notice and QR blank fallback remain separate (4.786ms)
+✔ screenshot-only help explains faithful manual wrap correction without changing shared QR review (1.5454ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 254.7844

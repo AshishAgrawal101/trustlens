@@ -1,0 +1,9 @@
+{
+  "pureSHA": "13755691e88183c35f911156a9fcba6cf61e3461649c950a1a46531d3feeb841",
+  "acceptance": [
+    "caption completed facts stay same",
+    "caption pending signal not aborted; response accepted; file-only request",
+    "Cancel ack clears on edit without restarting",
+    "file/Clear/Cancel/nativeinvalid/lifecycle still invalidate"
+  ]
+}

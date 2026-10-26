@@ -1,0 +1,7 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const fs=require('node:fs');const path=require('node:path');
+const html=fs.readFileSync(path.join(__dirname,'../static/claim-review.html'),'utf8');
+test('source relation controls are explicit user labels with neutral default and no submitted name',()=>{
+ for(const key of ['a','b']){const id='source-'+key+'-role';assert.match(html,new RegExp('<label for="'+id+'">How does this account relate to the claim\\?</label>'));const select=html.match(new RegExp('<select id="'+id+'"[^>]*>(.*?)</select>'))[0];assert.doesNotMatch(select,/name=/);assert.match(select,/<option value="unsure" selected>Unsure/);for(const value of ['supports','challenges','context'])assert.ok(select.includes('value="'+value+'"'));assert.ok(html.includes('id="'+id+'-help"'));}
+ assert.match(html,/These are your labels, not detected findings/);assert.match(html,/not automatically reliable or independent/);
+});
+test('review labels and live status live inside result after its heading',()=>{const start=html.indexOf('<section id="claim-result"');const result=html.slice(start,html.indexOf('</section>',start));assert.match(result,/Your context review<\/h3><p class="hint">Your supplied material and labels remain unverified\.<\/p><p id="claim-review-status" class="status" role="status"><\/p><h4>Your evidence labels<\/h4><ul id="claim-labels"><\/ul>/);});

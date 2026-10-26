@@ -1,0 +1,284 @@
+.FFFFFFFF.......F.FFFFFFF..........FFFF                                  [100%]
+================================== FAILURES ===================================
+__ test_direct_protective_and_active_reminder_pair[share your password-code] __
+
+action = 'share your password', key = 'code'
+
+    @pytest.mark.parametrize('action,key',ACTIONS)
+    def test_direct_protective_and_active_reminder_pair(action,key):
+>       assert positive('Please remember not to '+action+'.')==[]
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:19: AssertionError
+_ test_direct_protective_and_active_reminder_pair[send your verification code-code] _
+
+action = 'send your verification code', key = 'code'
+
+    @pytest.mark.parametrize('action,key',ACTIONS)
+    def test_direct_protective_and_active_reminder_pair(action,key):
+>       assert positive('Please remember not to '+action+'.')==[]
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:19: AssertionError
+___ test_direct_protective_and_active_reminder_pair[buy gift cards-payment] ___
+
+action = 'buy gift cards', key = 'payment'
+
+    @pytest.mark.parametrize('action,key',ACTIONS)
+    def test_direct_protective_and_active_reminder_pair(action,key):
+>       assert positive('Please remember not to '+action+'.')==[]
+E       AssertionError: assert ['request:payment'] == []
+E         
+E         Left contains one more item: 'request:payment'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:19: AssertionError
+_ test_direct_protective_and_active_reminder_pair[settle your balance-balance] _
+
+action = 'settle your balance', key = 'balance'
+
+    @pytest.mark.parametrize('action,key',ACTIONS)
+    def test_direct_protective_and_active_reminder_pair(action,key):
+>       assert positive('Please remember not to '+action+'.')==[]
+E       AssertionError: assert ['request:balance'] == []
+E         
+E         Left contains one more item: 'request:balance'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:19: AssertionError
+_ test_direct_protective_and_active_reminder_pair[return the overpayment-overpayment] _
+
+action = 'return the overpayment', key = 'overpayment'
+
+    @pytest.mark.parametrize('action,key',ACTIONS)
+    def test_direct_protective_and_active_reminder_pair(action,key):
+>       assert positive('Please remember not to '+action+'.')==[]
+E       AssertionError: assert ['request:overpayment'] == []
+E         
+E         Left contains one more item: 'request:overpayment'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:19: AssertionError
+_ test_direct_protective_and_active_reminder_pair[pay the fee to receive the prize-advance_fee] _
+
+action = 'pay the fee to receive the prize', key = 'advance_fee'
+
+    @pytest.mark.parametrize('action,key',ACTIONS)
+    def test_direct_protective_and_active_reminder_pair(action,key):
+>       assert positive('Please remember not to '+action+'.')==[]
+E       AssertionError: assert ['request:advance_fee'] == []
+E         
+E         Left contains one more item: 'request:advance_fee'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:19: AssertionError
+_ test_direct_protective_and_active_reminder_pair[provide your card number-personal] _
+
+action = 'provide your card number', key = 'personal'
+
+    @pytest.mark.parametrize('action,key',ACTIONS)
+    def test_direct_protective_and_active_reminder_pair(action,key):
+>       assert positive('Please remember not to '+action+'.')==[]
+E       AssertionError: assert ['request:personal'] == []
+E         
+E         Left contains one more item: 'request:personal'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:19: AssertionError
+_ test_direct_protective_and_active_reminder_pair[install TeamViewer-remote] __
+
+action = 'install TeamViewer', key = 'remote'
+
+    @pytest.mark.parametrize('action,key',ACTIONS)
+    def test_direct_protective_and_active_reminder_pair(action,key):
+>       assert positive('Please remember not to '+action+'.')==[]
+E       AssertionError: assert ['request:remote'] == []
+E         
+E         Left contains one more item: 'request:remote'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:19: AssertionError
+______________ test_later_independent_live_request_survives[. ] _______________
+
+separator = '. '
+
+    @pytest.mark.parametrize('separator',['. ','; ','! ','\n'])
+    def test_later_independent_live_request_survives(separator):
+        text='Remember not to share your password'+separator+'Send me your verification code.'
+        assert positive(text)==['request:code']
+        row=next(e for e in request_evidence(text) if e.id=='request:code')
+>       assert 'Send me your verification code' in row.detail
+E       AssertionError: assert 'Send me your verification code' in 'Matched wording: “Remember not to share your password”. Context may change its meaning.'
+E        +  where 'Matched wording: “Remember not to share your password”. Context may change its meaning.' = Evidence(id='request:code', evidence_class='inferred', severity='high', title='Request to share a security code', deta...member not to share your password”. Context may change its meaning.', source='Local request-pattern rules', weight=0.8).detail
+
+tests\test_remember_not_to_context.py:41: AssertionError
+______________ test_later_independent_live_request_survives[! ] _______________
+
+separator = '! '
+
+    @pytest.mark.parametrize('separator',['. ','; ','! ','\n'])
+    def test_later_independent_live_request_survives(separator):
+        text='Remember not to share your password'+separator+'Send me your verification code.'
+        assert positive(text)==['request:code']
+        row=next(e for e in request_evidence(text) if e.id=='request:code')
+>       assert 'Send me your verification code' in row.detail
+E       AssertionError: assert 'Send me your verification code' in 'Matched wording: “Remember not to share your password”. Context may change its meaning.'
+E        +  where 'Matched wording: “Remember not to share your password”. Context may change its meaning.' = Evidence(id='request:code', evidence_class='inferred', severity='high', title='Request to share a security code', deta...member not to share your password”. Context may change its meaning.', source='Local request-pattern rules', weight=0.8).detail
+
+tests\test_remember_not_to_context.py:41: AssertionError
+______________ test_later_independent_live_request_survives[\n] _______________
+
+separator = '\n'
+
+    @pytest.mark.parametrize('separator',['. ','; ','! ','\n'])
+    def test_later_independent_live_request_survives(separator):
+        text='Remember not to share your password'+separator+'Send me your verification code.'
+        assert positive(text)==['request:code']
+        row=next(e for e in request_evidence(text) if e.id=='request:code')
+>       assert 'Send me your verification code' in row.detail
+E       AssertionError: assert 'Send me your verification code' in 'Matched wording: “Remember not to share your password”. Context may change its meaning.'
+E        +  where 'Matched wording: “Remember not to share your password”. Context may change its meaning.' = Evidence(id='request:code', evidence_class='inferred', severity='high', title='Request to share a security code', deta...member not to share your password”. Context may change its meaning.', source='Local request-pattern rules', weight=0.8).detail
+
+tests\test_remember_not_to_context.py:41: AssertionError
+____________ test_horizontal_whitespace_follows_existing_policy[ ] ____________
+
+space = ' '
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0','\u2009'])
+    def test_horizontal_whitespace_follows_existing_policy(space):
+>       assert positive('Remember'+space+'not'+space+'to'+space+'share your password.')==[]
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:46: AssertionError
+___________ test_horizontal_whitespace_follows_existing_policy[  ] ____________
+
+space = '  '
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0','\u2009'])
+    def test_horizontal_whitespace_follows_existing_policy(space):
+>       assert positive('Remember'+space+'not'+space+'to'+space+'share your password.')==[]
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:46: AssertionError
+___________ test_horizontal_whitespace_follows_existing_policy[\t] ____________
+
+space = '\t'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0','\u2009'])
+    def test_horizontal_whitespace_follows_existing_policy(space):
+>       assert positive('Remember'+space+'not'+space+'to'+space+'share your password.')==[]
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:46: AssertionError
+__________ test_horizontal_whitespace_follows_existing_policy[\xa0] ___________
+
+space = '\xa0'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0','\u2009'])
+    def test_horizontal_whitespace_follows_existing_policy(space):
+>       assert positive('Remember'+space+'not'+space+'to'+space+'share your password.')==[]
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:46: AssertionError
+_________ test_horizontal_whitespace_follows_existing_policy[\u2009] __________
+
+space = '\u2009'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0','\u2009'])
+    def test_horizontal_whitespace_follows_existing_policy(space):
+>       assert positive('Remember'+space+'not'+space+'to'+space+'share your password.')==[]
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:46: AssertionError
+______ test_only_existing_soft_hyphen_normalization_and_offsets_are_used ______
+
+    def test_only_existing_soft_hyphen_normalization_and_offsets_are_used():
+>       assert positive('Remem\u00adber not to share your password.')==[]
+E       AssertionError: assert ['request:code'] == []
+E         
+E         Left contains one more item: 'request:code'
+E         Use -v to get more diff
+
+tests\test_remember_not_to_context.py:55: AssertionError
+______________ test_shared_callers_and_input_free_guidance[text] ______________
+
+mode = 'text'
+
+    @pytest.mark.parametrize('mode',['text','call','email'])
+    def test_shared_callers_and_input_free_guidance(mode):
+        text='Please remember not to share your password with anyone. PRIVATE-NOTE'
+        r=analyze_email(text) if mode=='email' else analyze_text(text,mode)
+>       assert not any(e.weight>0 for e in r.evidence)
+E       assert not True
+E        +  where True = any(<generator object test_shared_callers_and_input_free_guidance.<locals>.<genexpr> at 0x000001C202714380>)
+
+tests\test_remember_not_to_context.py:66: AssertionError
+______________ test_shared_callers_and_input_free_guidance[call] ______________
+
+mode = 'call'
+
+    @pytest.mark.parametrize('mode',['text','call','email'])
+    def test_shared_callers_and_input_free_guidance(mode):
+        text='Please remember not to share your password with anyone. PRIVATE-NOTE'
+        r=analyze_email(text) if mode=='email' else analyze_text(text,mode)
+>       assert not any(e.weight>0 for e in r.evidence)
+E       assert not True
+E        +  where True = any(<generator object test_shared_callers_and_input_free_guidance.<locals>.<genexpr> at 0x000001C202714D40>)
+
+tests\test_remember_not_to_context.py:66: AssertionError
+_____________ test_shared_callers_and_input_free_guidance[email] ______________
+
+mode = 'email'
+
+    @pytest.mark.parametrize('mode',['text','call','email'])
+    def test_shared_callers_and_input_free_guidance(mode):
+        text='Please remember not to share your password with anyone. PRIVATE-NOTE'
+        r=analyze_email(text) if mode=='email' else analyze_text(text,mode)
+>       assert not any(e.weight>0 for e in r.evidence)
+E       assert not True
+E        +  where True = any(<generator object test_shared_callers_and_input_free_guidance.<locals>.<genexpr> at 0x000001C202716DC0>)
+
+tests\test_remember_not_to_context.py:66: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_remember_not_to_context.py::test_direct_protective_and_active_reminder_pair[share your password-code]
+FAILED tests/test_remember_not_to_context.py::test_direct_protective_and_active_reminder_pair[send your verification code-code]
+FAILED tests/test_remember_not_to_context.py::test_direct_protective_and_active_reminder_pair[buy gift cards-payment]
+FAILED tests/test_remember_not_to_context.py::test_direct_protective_and_active_reminder_pair[settle your balance-balance]
+FAILED tests/test_remember_not_to_context.py::test_direct_protective_and_active_reminder_pair[return the overpayment-overpayment]
+FAILED tests/test_remember_not_to_context.py::test_direct_protective_and_active_reminder_pair[pay the fee to receive the prize-advance_fee]
+FAILED tests/test_remember_not_to_context.py::test_direct_protective_and_active_reminder_pair[provide your card number-personal]
+FAILED tests/test_remember_not_to_context.py::test_direct_protective_and_active_reminder_pair[install TeamViewer-remote]
+FAILED tests/test_remember_not_to_context.py::test_later_independent_live_request_survives[. ]
+FAILED tests/test_remember_not_to_context.py::test_later_independent_live_request_survives[! ]
+FAILED tests/test_remember_not_to_context.py::test_later_independent_live_request_survives[\n]
+FAILED tests/test_remember_not_to_context.py::test_horizontal_whitespace_follows_existing_policy[ ]
+FAILED tests/test_remember_not_to_context.py::test_horizontal_whitespace_follows_existing_policy[  ]
+FAILED tests/test_remember_not_to_context.py::test_horizontal_whitespace_follows_existing_policy[\t]
+FAILED tests/test_remember_not_to_context.py::test_horizontal_whitespace_follows_existing_policy[\xa0]
+FAILED tests/test_remember_not_to_context.py::test_horizontal_whitespace_follows_existing_policy[\u2009]
+FAILED tests/test_remember_not_to_context.py::test_only_existing_soft_hyphen_normalization_and_offsets_are_used
+FAILED tests/test_remember_not_to_context.py::test_shared_callers_and_input_free_guidance[text]
+FAILED tests/test_remember_not_to_context.py::test_shared_callers_and_input_free_guidance[call]
+FAILED tests/test_remember_not_to_context.py::test_shared_callers_and_input_free_guidance[email]
+20 failed, 19 passed in 0.46s

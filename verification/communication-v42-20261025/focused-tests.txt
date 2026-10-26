@@ -1,0 +1,35 @@
+✔ correction is initially hidden native non-submit control and repeated errors associate only current field (10.5039ms)
+✔ pure custom URL errors retain fixed messages and identify only their source URL field (1.3747ms)
+✔ A/B errors announce fixed source and correction opens/focuses matching field without changing any draft or Review (6.924ms)
+✔ edit repair success and every replacement/lifecycle reset erase correction and ARIA state; stale click inert (15.4077ms)
+✔ native invalid keeps existing opening/focus semantics and clears prior custom action (2.338ms)
+✔ malformed reports never expose partial results, exports or private decoder errors (45.3421ms)
+✔ unreadable success and error responses use fixed feedback and can be retried (8.4016ms)
+✔ malformed extraction notice cannot enter editable review or be stringified (26.1398ms)
+✔ practice moves focus from a disabled answer to readable feedback (3.2192ms)
+✔ a result without matched concerns leads with unresolved verification (3.5675ms)
+✔ directory entry selects text without submitting or importing text (13.4278ms)
+✔ directory entry selects url without submitting or importing text (58.4512ms)
+✔ directory entry selects email without submitting or importing text (7.3533ms)
+✔ directory entry selects call without submitting or importing text (8.2617ms)
+✔ directory entry selects screenshot without submitting or importing text (8.8052ms)
+✔ directory entry selects qr without submitting or importing text (7.8494ms)
+✔ directory entry selects image without submitting or importing text (6.3876ms)
+✔ unknown, partial, encoded or content-bearing fragments are ignored (39.5269ms)
+✔ repeating the selected route retains the edited draft without another mode click (5.9791ms)
+✔ same-document tool fragments select all seven modes through the normal controller without requests (62.8275ms)
+✔ same-mode explicit route retains a completed result draft and exports without resubmitting or clicking (9.1218ms)
+✔ same-mode route preserves pending work while a different valid mode aborts it and rejects stale output (8.2844ms)
+✔ unknown partial encoded and input-bearing fragments leave drafts mode focus and requests untouched (8.8889ms)
+✔ raw count and precise percentage drafts survive both method roundtrips without conversion or Compare (10.351ms)
+✔ method change clears result errors and status, keeps selection focus and validates only active fields (29.6864ms)
+✔ Swap acts only on active draft and does not change retained other-method values (1.9781ms)
+✔ Clear and lifecycle wipe both drafts; constructed examples replace all rather than retaining inactive values (7.3388ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 290.0183

@@ -1,0 +1,13 @@
+{
+  "evidence_id": "email:links_incomplete",
+  "match": "exact only",
+  "class": "unknown",
+  "weight": 0,
+  "prose_detail_policy": "never parse counts or echo detail into fixed export",
+  "summary": "HTML link review is incomplete.",
+  "action": "Review unsupported email links in the original message",
+  "export_reason": "HTML link review was incomplete; some supplied HTML link targets were not inspected.",
+  "tests_sha256": "0f323a1d5cd5491c583e63a1aa3ddddcb0de06a995e4751fb5420edfa6325e09",
+  "status": "Integrated producer+consumer358passed,zero skipped",
+  "tests_sha256_final": "7d7ed5f259437d083dde389d66dd846ac9c6075e7802f0b9b03bae136813156c"
+}

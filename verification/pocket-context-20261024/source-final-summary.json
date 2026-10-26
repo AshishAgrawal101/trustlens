@@ -1,0 +1,29 @@
+{
+  "python": {
+    "passed": 1113,
+    "skipped": 0,
+    "seconds": 16.2,
+    "report": "pytest-final-with-export.xml",
+    "native_ocr": true,
+    "credentials_python_configured": true
+  },
+  "javascript": {
+    "passed": 420,
+    "skipped": 0,
+    "report": "node-final.txt"
+  },
+  "browser": "v13-browser-closure.md",
+  "scope": "Software and constructed desktop-browser evidence, not population accuracy/physical phone/human learning. Portable requires external matching receipt.",
+  "goal": "Active2\u20133hourwindow continues.",
+  "final_cache": "trustlens-pocket-v14",
+  "startup_fallback": "../pocket-fallback-20261024/audit.md",
+  "phone_export": {
+    "path": "../TrustLens-Pocket-iphone-test-v17.zip",
+    "sha256": "b507755101ae54c23ec1571373d1e8dd761a6628c679d3389005a003238157c3",
+    "zip_entries": 21,
+    "manifest_entries": 20,
+    "deployed": false,
+    "physical_device_tested": false
+  },
+  "browser_final_cache": "portable-browser-closure.md"
+}

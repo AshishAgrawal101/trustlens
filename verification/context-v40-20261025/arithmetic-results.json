@@ -1,0 +1,82 @@
+[
+  {
+    "input": {
+      "countA": 9007199254740990,
+      "totalA": 9007199254740991,
+      "countB": 9007199254740989,
+      "totalB": 9007199254740990
+    },
+    "actual": {
+      "rateA": 99.99999999999999,
+      "rateB": 99.99999999999999,
+      "percentagePoints": -1.2325951644078315e-30,
+      "relativePercent": -1.2325951644078315e-30
+    },
+    "rational_expected": {
+      "rateA": "900719925474099000/9007199254740991",
+      "rateB": "90071992547409890/900719925474099",
+      "percentagePoints": "-10/8112963841460665467419124092109",
+      "relativePercent": "-1/811296384146066456669919861801"
+    }
+  },
+  {
+    "input": {
+      "countA": 1,
+      "totalA": 9007199254740991,
+      "countB": 2,
+      "totalB": 9007199254740991
+    },
+    "actual": {
+      "rateA": 1.1102230246251569e-14,
+      "rateB": 2.2204460492503137e-14,
+      "percentagePoints": 1.1102230246251569e-14,
+      "relativePercent": 100
+    },
+    "rational_expected": {
+      "rateA": "100/9007199254740991",
+      "rateB": "200/9007199254740991",
+      "percentagePoints": "100/9007199254740991",
+      "relativePercent": "100"
+    }
+  },
+  {
+    "input": {
+      "countA": 3,
+      "totalA": 9,
+      "countB": 7,
+      "totalB": 21
+    },
+    "actual": {
+      "rateA": 33.33333333333333,
+      "rateB": 33.33333333333333,
+      "percentagePoints": 0,
+      "relativePercent": 0
+    },
+    "rational_expected": {
+      "rateA": "100/3",
+      "rateB": "100/3",
+      "percentagePoints": "0",
+      "relativePercent": "0"
+    }
+  },
+  {
+    "input": {
+      "countA": 0,
+      "totalA": 1,
+      "countB": 1,
+      "totalB": 1
+    },
+    "actual": {
+      "rateA": 0,
+      "rateB": 100,
+      "percentagePoints": 100,
+      "relativePercent": null
+    },
+    "rational_expected": {
+      "rateA": "0",
+      "rateB": "100",
+      "percentagePoints": "100",
+      "relativePercent": "None"
+    }
+  }
+]

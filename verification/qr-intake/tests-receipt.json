@@ -1,0 +1,46 @@
+{
+  "frozen_QR_pins_unchanged": true,
+  "python": "C:/Users/round/Documents/Codex/2026-10-05/con/work/venv/Scripts/python.exe",
+  "elapsed_seconds": 5.85,
+  "at_utc": "2026-10-23T17:27:34.2756991Z",
+  "distribution": "opencv-python-headless==5.0.0.93",
+  "cv2_version": "5.0.0",
+  "files": [
+    {
+      "sha256": "1b43981a0b3edbc4367b88d9fd5390d4bfaaa0b166d30442b60205f38e746c78",
+      "path": "app/intake.py"
+    },
+    {
+      "sha256": "d9b4a44c2c371b4ea31bc1caa147744823d09ecdaed4afe6cac875b49593bf6c",
+      "path": "app/analyzers/qr.py"
+    },
+    {
+      "sha256": "5d9cce287b7641ea6883083b8aa104933719f0a81773e671617a6fb1ae46a1f5",
+      "path": "app/analyzers/qr_worker.py"
+    },
+    {
+      "sha256": "e5f03abf964e0c346e1f3a9d7dce80e51c1d10e30cf955b9e52fd1f9a7c3216e",
+      "path": "app/analyzers/email.py"
+    },
+    {
+      "sha256": "ef9b741984df511e745601112a3f63b7738880ba0f767ac60815f4546f1a4875",
+      "path": "tests/test_file_intake.py"
+    },
+    {
+      "sha256": "472c3ff4310d918d427372e12e05896ce17ece7c62d945ad619102597e4b19c5",
+      "path": "requirements-qr.txt"
+    },
+    {
+      "sha256": "f425616db5bd03c4fc50dd22c246e2003196bd23cf534d09e8e81a350f8d5e25",
+      "path": "verification/qr-intake/protocol.json"
+    },
+    {
+      "sha256": "7d0319552d5e4e529adab35f31730edee32809df9f2e760d5df07eee44ba66ad",
+      "path": "verification/qr-intake/results.json"
+    }
+  ],
+  "failed": 0,
+  "no_decode_tuning_after_results": true,
+  "passed": 117,
+  "tests": "tests/test_file_intake.py tests/test_sprint_email.py tests/test_link_evidence.py tests/test_sprint_mailto.py tests/test_community.py"
+}

@@ -1,0 +1,9 @@
+# One optional Sources disclosure: pre-edit contract
+
+Measured root390px baseline (browser-before.json): form2386.375px, claim-to-Review2225.1875px, each optional source group607.3125px. This is browser geometry, not a human study. One native disclosure around existing Source intro/A/B groups/urlhelp; claim/context/event and explicit Review stay visible. No nested source disclosures or new required input.
+
+IDs claim-sources details (initially closed), claim-sources-state span (initially hidden) with fixed “Entries present · included in Review” when anysource URL/quote/date or non-unsure role exists. No private values echoed. Existing8 source fields stay enabled and included when closed. Toggle alone preserves draft/result and never submits; source edits retain existing invalidation. Source entries are not newly validated or counted.
+
+Clear/init/pagehide/persistedBack clear all data/results and collapse. Examples replace drafts then open if populated. Captured invalid event invalidates old output and opens disclosure only for a source control before native focus. Custom validation catch reopens populated source fields before existing outside error focus. Pure functions and PLAN bytes unchanged; noJS/unnamed/print/resultfirst preserved. CSS uses existing contrast palette,48pxsummary, nativefocus, narrowwrap. Root owns browser geometry/keyboard/validation and refreshed Pocketversion/export.
+
+Frozen acceptance: initialclosed +8 enabledcontrols; collapseexactretention/result/noI/O; nonprivatepresenceindicatorincludingdateonly/roleonlywithoutaccountcountchange; input/rolechangeinvalidates; nativeinvalidopensonlysources; customHTTPschemeerroropenspopulatedsource; examplesopen/Clear+exit+Backcollapse; pendingcopyfeedbackstaysinvalidated; pureprefix+PLANhashsame; noJS/printprivacyunchanged.

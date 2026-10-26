@@ -1,0 +1,83 @@
+{
+  "scope": "Constructed local HTTP checks, not accuracy; development parent68472. Original8765 untouched.",
+  "results": [
+    {
+      "case": "privacy advice",
+      "status": 200,
+      "risk_level": "low",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "error": null
+    },
+    {
+      "case": "independent request",
+      "status": 200,
+      "risk_level": "high",
+      "evidence_ids": [
+        "request:code"
+      ],
+      "error": null
+    },
+    {
+      "case": "explicit refusal",
+      "status": 200,
+      "risk_level": "low",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "error": null
+    },
+    {
+      "case": "empty body",
+      "status": 200,
+      "risk_level": "guarded",
+      "evidence_ids": [
+        "text:none",
+        "email:incomplete"
+      ],
+      "error": null
+    },
+    {
+      "case": "duplicate encoding",
+      "status": 200,
+      "risk_level": "guarded",
+      "evidence_ids": [
+        "text:none",
+        "email:incomplete"
+      ],
+      "error": null
+    },
+    {
+      "case": "malformed header",
+      "status": 400,
+      "risk_level": null,
+      "evidence_ids": [],
+      "error": "This email structure could not be read. Paste only the visible message body instead."
+    },
+    {
+      "case": "numeric spelling",
+      "status": 400,
+      "risk_level": null,
+      "evidence_ids": [],
+      "error": "Enter a canonical dotted IPv4 address or an unambiguous domain name; numeric host shorthand is not supported."
+    },
+    {
+      "case": "incomplete scheme",
+      "status": 400,
+      "risk_level": null,
+      "evidence_ids": [],
+      "error": "Enter a complete HTTP(S) address with // followed by its host."
+    },
+    {
+      "case": "canonical IP",
+      "status": 200,
+      "risk_level": "guarded",
+      "evidence_ids": [
+        "url:host",
+        "url:ip"
+      ],
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+--- before/app/models.py
++++ app/models.py
+@@ -1,7 +1,7 @@
+ from __future__ import annotations
+ 
+-from typing import Literal
+-from pydantic import BaseModel, Field, ConfigDict
++from typing import Annotated, Literal
++from pydantic import BaseModel, Field, ConfigDict, StringConstraints
+ 
+ EvidenceClass = Literal["verified", "inferred", "unknown"]
+ Severity = Literal["info", "low", "medium", "high"]
+@@ -58,9 +58,9 @@
+ 
+ 
+ class UrlRequest(InputRequest):
+-    url: str = Field(min_length=1, max_length=4096)
++    url: Annotated[str, StringConstraints(strip_whitespace=False)] = Field(min_length=1, max_length=4096)
+     claimed_brand: str | None = Field(default=None, max_length=100)
+-    known_website: str | None = Field(default=None, min_length=1, max_length=4096)
++    known_website: Annotated[str, StringConstraints(strip_whitespace=False)] | None = Field(default=None, min_length=1, max_length=4096)
+ 
+ 
+ class EmailRequest(InputRequest):

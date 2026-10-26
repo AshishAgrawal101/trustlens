@@ -1,0 +1,43 @@
+{
+  "scope": "Existing unknown zero-weight malformed-link evidence propagates coverage; no parse/risk/evidence changes",
+  "ids": [
+    "url:malformed",
+    "url:malformed:N"
+  ],
+  "cases": [
+    {
+      "id": "invalid-port",
+      "text": "Review https://private.example:bad/SECRET",
+      "parse_failures": 1,
+      "over_limit": false
+    },
+    {
+      "id": "invalid-bracket-live",
+      "text": "Send me your verification code. Review https://[PRIVATE/SECRET",
+      "parse_failures": 1,
+      "over_limit": false
+    },
+    {
+      "id": "two-invalid",
+      "text": "https://private.example:bad/SECRET https://[PRIVATE/OTHER",
+      "parse_failures": 2,
+      "over_limit": false
+    },
+    {
+      "id": "invalid-plus-cap",
+      "text": "https://private.example:bad/SECRET https://s0.example/path https://s1.example/path https://s2.example/path https://s3.example/path https://s4.example/path https://s5.example/path https://s6.example/path https://s7.example/path",
+      "parse_failures": 1,
+      "over_limit": true
+    }
+  ],
+  "invariants": [
+    "text/email/call propagation",
+    "valid one/eight unchanged",
+    "email incomplete may override summary, preserves reason in limits/export",
+    "exact id/colon prefix only",
+    "directURL strict rejection unchanged",
+    "risk/evidence/high code retained",
+    "private export count only no URL",
+    "combined parse/cap reasons accurately distinct"
+  ]
+}

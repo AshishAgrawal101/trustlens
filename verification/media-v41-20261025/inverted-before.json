@@ -1,0 +1,10 @@
+{
+  "black_transparent": {
+    "error": "InvalidImage",
+    "detail": "No readable QR code was found. Try a clear, close crop, or type the printed address."
+  },
+  "white_transparent": {
+    "error": "InvalidImage",
+    "detail": "No readable QR code was found. Try a clear, close crop, or type the printed address."
+  }
+}

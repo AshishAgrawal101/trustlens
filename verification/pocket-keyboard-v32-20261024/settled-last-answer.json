@@ -1,0 +1,26 @@
+{
+  "client": 305,
+  "focus": "Accept the claim because the post says sponsored.",
+  "focusedRect": {
+    "bottom": 521.5,
+    "height": 65.1875,
+    "left": 38,
+    "right": 267,
+    "top": 456.3125,
+    "width": 229,
+    "x": 38,
+    "y": 456.3125
+  },
+  "height": 780,
+  "nav": {
+    "bottom": 768,
+    "height": 71,
+    "left": 12,
+    "right": 293,
+    "top": 697,
+    "width": 281,
+    "x": 12,
+    "y": 697
+  },
+  "scroll": 305
+}

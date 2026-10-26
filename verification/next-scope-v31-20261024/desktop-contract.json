@@ -1,0 +1,17 @@
+{
+  "scope": "Desktop only; explicit focused-session button inside existing dialog",
+  "ids": [
+    "practice-ads",
+    "sponsored-comparison",
+    "selected-testimonial"
+  ],
+  "casesPrefixSHA256": "d7d4a4db05b5c08d33bcd51e84d23134592b5d88e621854c171393f043c86b67",
+  "acceptance": [
+    "existing case bytes/order unchanged",
+    "exact two-item queue with progress and scoped missed retry",
+    "restart all and header reopen cover ten",
+    "replacement resets answers; stale callbacks ignored",
+    "close/pagehide/persisted Back erase session; opener focus preserved",
+    "no private input, I/O, storage or exports"
+  ]
+}

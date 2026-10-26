@@ -1,0 +1,107 @@
+[
+  {
+    "quote": "x",
+    "source": "x",
+    "result": {
+      "total": 1,
+      "matches": [
+        {
+          "start": 0,
+          "end": 1,
+          "before": "",
+          "text": "x",
+          "after": ""
+        }
+      ],
+      "truncated": false
+    }
+  },
+  {
+    "quote": "x",
+    "source": "xxxxxx",
+    "result": {
+      "total": 6,
+      "matches": [
+        {
+          "start": 0,
+          "end": 1,
+          "before": "",
+          "text": "x",
+          "after": "xxxxx"
+        },
+        {
+          "start": 1,
+          "end": 2,
+          "before": "x",
+          "text": "x",
+          "after": "xxxx"
+        },
+        {
+          "start": 2,
+          "end": 3,
+          "before": "xx",
+          "text": "x",
+          "after": "xxx"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "before": "xxx",
+          "text": "x",
+          "after": "xx"
+        },
+        {
+          "start": 4,
+          "end": 5,
+          "before": "xxxx",
+          "text": "x",
+          "after": "x"
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "quote": "aa",
+    "source": "aaa",
+    "result": {
+      "total": 1,
+      "matches": [
+        {
+          "start": 0,
+          "end": 2,
+          "before": "",
+          "text": "aa",
+          "after": "a"
+        }
+      ],
+      "truncated": false
+    }
+  },
+  {
+    "quote": "Q",
+    "source": "😀aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaQbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb😀",
+    "result": {
+      "total": 1,
+      "matches": [
+        {
+          "start": 161,
+          "end": 162,
+          "before": "😀aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "text": "Q",
+          "after": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb😀"
+        }
+      ],
+      "truncated": false
+    }
+  },
+  {
+    "quote": "missing",
+    "source": "A real supplied passage.",
+    "result": {
+      "total": 0,
+      "matches": [],
+      "truncated": false
+    }
+  }
+]

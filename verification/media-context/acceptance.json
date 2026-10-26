@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "status": "frozen_before_media_context_predictions",
+  "now": "2026-10-23",
+  "purpose": "Semantic caveat acceptance for local image metadata; not file authenticity or truth accuracy. Inputs are illustrative metadata, not actual image files. Root must map to real fixtures or declared output schema without rewriting expectations.",
+  "global_invariants": [
+    "Metadata is editable/removable and is not authenticated merely because a decoder returns it.",
+    "No camera/software/date/GPS/dimension field independently establishes AI generation, photographic origin, scene truth or caption accuracy.",
+    "No reverse-image search, source visit, location lookup, content API or uploaded caption is implied.",
+    "GPS output is presence only: no coordinates, derived location, altitude or private raw EXIF dump.",
+    "Caption stays local in the page; no automatic semantic parsing or truth verdict.",
+    "Fixed questions ask original caption, capture/event/publication date and location separately, and signed provenance where available.",
+    "Metadata inspection is separate from signed provenance and pattern classification; no agreement vote or confidence boost.",
+    "Exports omit caption, filename, device identifiers, timestamps/software strings and other private metadata; fixed plan only.",
+    "Clear/edit/file replacement/page lifecycle invalidate results; no caption storage or late-response revival."
+  ],
+  "cases": [
+    {
+      "id": "no-exif",
+      "illustrative_metadata": {
+        "format": "PNG",
+        "width": 800,
+        "height": 600
+      },
+      "required_observations": [
+        "format_dimensions_observed",
+        "metadata_may_be_missing_or_removed"
+      ],
+      "required_caveats": [
+        "no_camera_does_not_imply_ai",
+        "no_origin_or_scene_verdict"
+      ]
+    },
+    {
+      "id": "camera-present",
+      "illustrative_metadata": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "camera": "Example Camera"
+      },
+      "required_observations": [
+        "camera_tag_supplied_not_authenticated"
+      ],
+      "required_caveats": [
+        "camera_tag_does_not_prove_camera_origin"
+      ]
+    },
+    {
+      "id": "camera-absent",
+      "illustrative_metadata": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600
+      },
+      "required_observations": [
+        "camera_tag_missing"
+      ],
+      "required_caveats": [
+        "no_camera_does_not_imply_ai"
+      ]
+    },
+    {
+      "id": "editor-software",
+      "illustrative_metadata": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "software": "Example Image Editor"
+      },
+      "required_observations": [
+        "software_tag_present"
+      ],
+      "required_caveats": [
+        "software_tag_does_not_imply_ai_or_fraud"
+      ]
+    },
+    {
+      "id": "capture-software",
+      "illustrative_metadata": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "software": "Example Camera Firmware"
+      },
+      "required_observations": [
+        "software_tag_present"
+      ],
+      "required_caveats": [
+        "software_tag_does_not_prove_unedited_origin"
+      ]
+    },
+    {
+      "id": "date-past",
+      "illustrative_metadata": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "date": "2020:06:15 12:30:00"
+      },
+      "required_observations": [
+        "timestamp_tag_present_not_authenticated"
+      ],
+      "required_caveats": [
+        "timestamp_not_verified_event_date_or_timezone"
+      ]
+    },
+    {
+      "id": "date-future",
+      "illustrative_metadata": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "date": "2027:06:15 12:30:00"
+      },
+      "required_observations": [
+        "future_timestamp_if_calendar_parsed_otherwise_raw_unverified"
+      ],
+      "required_caveats": [
+        "future_tag_does_not_disprove_scene_or_caption"
+      ]
+    },
+    {
+      "id": "date-invalid",
+      "illustrative_metadata": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "date": "2026:02:30 12:30:00"
+      },
+      "required_observations": [
+        "malformed_timestamp_unverified_not_silently_normalized"
+      ],
+      "required_caveats": [
+        "no_event_date_inference"
+      ]
+    },
+    {
+      "id": "gps-present",
+      "illustrative_metadata": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "gps_present": true
+      },
+      "required_observations": [
+        "gps_metadata_presence_only"
+      ],
+      "required_caveats": [
+        "no_coordinates_exposed",
+        "gps_not_proof_of_scene_location"
+      ]
+    },
+    {
+      "id": "gps-absent",
+      "illustrative_metadata": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "gps_present": false
+      },
+      "required_observations": [
+        "gps_metadata_absence_only"
+      ],
+      "required_caveats": [
+        "gps_absence_not_location_or_origin_evidence"
+      ]
+    },
+    {
+      "id": "orientation",
+      "illustrative_metadata": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "orientation": 6
+      },
+      "required_observations": [
+        "dimensions_are_encoded_or_explicitly_orientation_adjusted"
+      ],
+      "required_caveats": [
+        "dimensions_orientation_do_not_verify_scene"
+      ]
+    },
+    {
+      "id": "caption-not-analyzed",
+      "illustrative_metadata": {
+        "format": "PNG",
+        "width": 800,
+        "height": 600,
+        "caption": "PRIVATE_CAPTION: This shows the town square after today\u2019s storm."
+      },
+      "required_observations": [
+        "caption_user_context_only"
+      ],
+      "required_caveats": [
+        "caption_not_parsed_uploaded_or_verified",
+        "source_caption_date_location_unverified"
+      ]
+    }
+  ]
+}

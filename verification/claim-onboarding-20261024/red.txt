@@ -1,0 +1,146 @@
+✖ main has one ordinary constructed-claim link with explicit separate Review and replacement wording (1.8619ms)
+✖ static initial Message help exactly matches the current configured English scope (1.512ms)
+✖ both exact startup choices load existing constructed fields open Sources focus claim and consume the fragment without Review (4.7562ms)
+✖ same-document choices reuse replacement and invalidation while preserving current path/query without including fields (3.5678ms)
+✔ unknown encoded partial private and newline-bearing fragments do not touch drafts result focus or history (17.1472ms)
+✖ Clear and persisted Back stay blank and closed after a consumed example; pure code and PLAN remain unchanged (2.2432ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 1
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 111.7771
+
+✖ failing tests:
+
+test at tests\claim_example_route.test.cjs:12:1
+✖ main has one ordinary constructed-claim link with explicit separate Review and replacement wording (1.8619ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /<a\b[^>]*href="\/static\/claim-review.html#example=caption"[^>]*>Open a constructed photo-claim example/. Input:
+  
+  '<!doctype html>\r\n' +
+    '<html lang="en">\r\n' +
+    '<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\r\n' +
+    '<meta name="description" content="A local second look at messages, claims, image context and sources. Rule-based request checks and a manual claim-review worksheet.">\r\n' +
+    '<title>TrustLens — A second look, before you act</title>\r\n' +
+    `<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect rx='16' width='64' height='64' fill='%231a4d3f'/%3E%3Ccircle cx='28' cy='28' r='15' fill='none' stroke='%23f6f5ec' stroke-width='5'/%3E%3Cpath d='m39 39 12 12' stroke='%23f6f5ec' stroke-width='5'/%3E%3C/svg%3E">\r\n` +
+    '<link rel="stylesheet" href="/static/styles.css" />\r\n' +
+    '<link rel="stylesheet" href="/static/learning-practice.css" />\r\n' +
+    '</head>\r\n' +
+    '<body>\r\n' +
+    '<a class="skip" href="#workspace">Skip to checker</a>\r\n' +
+    '<header class="header wrap"><a class="brand" href="/" aria-label="TrustLens home"><span class="lens" aria-hidden="true"></span>TrustLens<span class="brand-note">LOCAL EDITION</span></a>\r\n' +
+    '<nav aria-label="Main"><a class="quiet" href="/static/tools.html">Explore all tools</a><button class="quiet" data-recovery>Already acted?</button><button class="quiet" id="practice-open" disabled>Practice <span aria-hidden="true">↗</span></button><button class="quiet" id="about-open">How it works</button></nav></header>\r\n' +
+    '<main class="wrap">\r\n' +
+    '<section class="intro" aria-labelledby="headline"><div class="intro-copy"><p class="eyebrow"><span class="dot"></span> A SECOND LOOK AT CONTENT AND CONTEXT</p><h1 id="headline">Pause. Check.<br><em>Act with context.</em></h1><p class="lede">Look more closely at messages, claims, image context and sources. Check a request for rule-based warning signs, or organize a claim and its supporting evidence in a manual worksheet. You decide what to verify next.</p><div class="hero-facts"><span>No account</span><span>No cloud analysis</span><span>You stay in control</span></div><p class="quick-start"><a class="primary" href="#workspace">Check a message <span aria-hidden="true">↘</span></a> <a class="secondary" href="/static/claim-review.html">Review a claim &amp; its context</a> <a class="secondary" href="/static/tools.html">Explore media, numbers &amp; quotes</a></p><p class="hint">Claim review organizes evidence you supply. Media context inspects local image metadata and offers context questions. Neither tool searches for matching images, establishes truth or verifies a source. Numbers &amp; context calculates two rates and their changes locally; arithmetic does not establish significance or cause.</p></div><div class="lens-stage" aria-hidden="true"><div class="lens-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="lens-core"><span></span></div><div class="lens-caption"><span>THE TRUSTLENS APPROACH</span><strong>Observe. Question. Verify.</strong></div><span class="lens-coordinate coordinate-one">01 / CONTENT</span><span class="lens-coordinate coordinate-two">02 / CONTEXT</span><span class="lens-spark spark-one"></span><span class="lens-spark spark-two"></span></div></section>\r\n' +
+    '<details class="demo-bar"><summary>New here? Try a constructed practice check <span aria-hidden="true">↗</span></summary><div class="demo-content"><div><h2 id="demo-title">Try a practice check</h2><p>Constructed examples. Load one, then check it.</p></div><div class="demo-options"><button type="button" data-demo="code"><span>01 · MESSAGE</span>A caller wants your code <span aria-hidden="true">↗</span></button><button type="button" data-demo="link"><span>02 · EMAIL</span>A link hiding in plain sight <span aria-hidden="true">↗</span></button><button type="button" data-demo="ordinary"><span>03 · CONTEXT</span>A normal safety reminder <span aria-hidden="true">↗</span></button></div></div></details>\r\n' +
+    '<section id="workspace" tabindex="-1" class="workspace" aria-label="Content checker">\r\n' +
+    '<div class="workspace-bar"><div><p class="eyebrow">THE CHECKER</p><h2>A second look starts here.</h2></div><p class="workspace-local"><span class="dot" aria-hidden="true"></span> Content stays on this computer</p></div>\r\n' +
+    '<div class="input-panel">\r\n' +
+    '<p class="hint"><a href="/static/claim-review.html">Review a claim &amp; its context</a> — a separate manual worksheet for sources, missing context and alternative explanations. The tools below check requests and image-origin signals.</p>\r\n' +
+    '<div class="section-top"><h2>Bring the request</h2><span class="step">01 / INPUT</span></div>\r\n' +
+    '<div class="modes" role="group" aria-label="Content type"><div class="communication-modes primary-modes"><button type="button" data-mode="text" aria-pressed="true"><span aria-hidden="true">✉</span> Message</button><button type="button" data-mode="screenshot" aria-pressed="false"><span aria-hidden="true">▣</span> Screenshot</button></div><details id="visual-modes" class="visual-modes more-tools"><summary>More tools: link, email, call, QR &amp; image origin <span aria-hidden="true">＋</span></summary><div class="visual-mode-row"><button type="button" data-mode="url" aria-pressed="false">Link</button><button type="button" data-mode="email" aria-pressed="false">Email</button><button type="button" data-mode="call" aria-pressed="false">Call</button><button type="button" data-mode="qr" aria-pressed="false">QR code</button><button type="button" data-mode="image" aria-pressed="false">Image origin</button></div></details></div>\r\n' +
+    '<p class="mode-guide" id="mode-guide">Paste the exact request, or read a screenshot. Review the evidence before choosing your next step.</p>\r\n' +
+    '<form id="check-form" aria-busy="false" autocomplete="off"><noscript><p class="error">This local checker requires JavaScript. Your input is not submitted while the controller is unavailable. Checks are disabled; enable JavaScript and keep the local launcher open, or return when the checker is available.</p></noscript>\r\n' +
+    '<div class="field-top"><label id="input-label" for="content">Paste the message</label><button id="example" type="button" class="text-button">Try an example ↗</button></div>\r\n' +
+    '<p id="input-help" class="hint">Texts, direct messages, or a request someone sent you. Remove details you don’t need to share.</p>\r\n' +
+    '<textarea id="content" autocapitalize="off" rows="8" maxlength="30000" required aria-describedby="input-help input-count shortcut-hint" placeholder="Paste the exact wording here…" spellcheck="false"></textarea>\r\n' +
+    '<div id="input-meta" class="input-meta"><span id="input-count">0 / 30,000 characters</span><span id="shortcut-hint"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Enter</kbd> to check</span></div>\r\n' +
+    '<div id="draft-transfer" class="draft-transfer" hidden><button id="transfer-draft" type="button" class="text-button">Use as call transcript</button><span class="small">Move this wording between Message and Call without checking it.</span></div><p id="transfer-status" class="small" role="status"></p>\r\n' +
+    '<div id="known-website-wrap" class="known-website-wrap" hidden><label for="known-website">Known official website (optional)</label><input id="known-website" type="text" maxlength="4096" autocapitalize="off" autocomplete="off" spellcheck="false" placeholder="bank.example" aria-describedby="known-website-help"><p id="known-website-help" class="hint">Use a website you already know independently. We compare exact hostnames without visiting either address. A match does not verify the sender or make the link safe; legitimate subdomains can differ.</p><details id="link-anatomy" class="link-anatomy"><summary>Understand this address</summary><p class="hint">Structure only. No destination is visited and ownership is not verified. Counts omit private path and query values.</p><button type="button" id="link-details-open" class="secondary">Inspect address structure</button><p id="link-details-status" class="small" role="status"></p><dl id="link-details-result" hidden></dl></details></div>\r\n' +
+    '<div id="image-input" hidden><label class="upload" for="file"><span class="upload-icon" aria-hidden="true">＋</span><strong>Choose an image</strong><span>PNG, JPEG or WebP · up to 64 MiB / 20 megapixels</span><input id="file" type="file" accept="image/png,image/jpeg,image/webp" aria-describedby="input-help"></label><div id="preview-wrap" hidden><span id="file-name"></span><details id="original-preview" class="original-preview"><summary>Compare with the original image</summary><p id="original-help" class="hint">Inspect the full image. For screenshots and QR codes, compare it with the extracted text above. Check amounts, code requests and visible addresses. Hidden link destinations cannot be recovered.</p><div class="original-controls" role="group" aria-label="Original image size"><button type="button" id="original-fit" class="secondary" aria-pressed="true">Fit width</button><button type="button" id="original-150" class="secondary" aria-pressed="false">150%</button><button type="button" id="original-200" class="secondary" aria-pressed="false">200%</button></div><p id="original-status" class="small" role="status">Fit to frame width.</p><div id="original-frame" class="original-frame" role="region" aria-label="Original image; use arrow keys to scroll" aria-describedby="original-help" tabindex="0"><img id="preview" alt="Original selected image for comparison with recognized text"></div></details></div></div>\r\n' +
+    '<p id="screenshot-sample-help" class="hint" hidden><a id="screenshot-sample-download" href="/static/demo-message.png" download="trustlens-constructed-screenshot.png">Download a constructed screenshot</a>. Choose the downloaded file above, select Read screenshot, then review and confirm the text before checking. Nothing is checked automatically.</p>\r\n' +
+    '<p id="qr-sample-help" class="hint" hidden><a id="qr-sample-download" href="/static/demo-qr.png" download="trustlens-constructed-qr.png">Download a constructed QR image</a>. Choose the downloaded file above, then select Read QR code and review its text. Nothing is checked automatically.</p>\r\n' +
+    '<div id="em'... 17571 more characters
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_example_route.test.cjs:13:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: `<!doctype html>\r\n<html lang="en">\r\n<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\r\n<meta name="description" content="A local second look at messages, claims, image context and sources. Rule-based request checks and a manual claim-review worksheet.">\r\n<title>TrustLens — A second look, before you act</title>\r\n<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect rx='16' width='64' height='64' fill='%231a4d3f'/%3E%3Ccircle cx='28' cy='28' r='15' fill='none' stroke='%23f6f5ec' stroke-width='5'/%3E%3Cpath d='m39 39 12 12' stroke='%23f6f5ec' stroke-width='5'/%3E%3C/svg%3E">\r\n<link rel="stylesheet" href="/static/styles.css" />\r\n<link rel="stylesheet" href="/static/learning-practice.css" />\r\n</head>\r\n<body>\r\n<a class="skip" href="#workspace">Skip to checker</a>\r\n<header class="header wrap"><a class="brand" href="/" aria-label="TrustLens home"><span class="lens" aria-hidden="true"></span>TrustLens<span class="brand-note">LOCAL EDITION</span></a>\r\n<nav aria-label="Main"><a class="quiet" href="/static/tools.html">Explore all tools</a><button class="quiet" data-recovery>Already acted?</button><button class="quiet" id="practice-open" disabled>Practice <span aria-hidden="true">↗</span></button><button class="quiet" id="about-open">How it works</button></nav></header>\r\n<main class="wrap">\r\n<section class="intro" aria-labelledby="headline"><div class="intro-copy"><p class="eyebrow"><span class="dot"></span> A SECOND LOOK AT CONTENT AND CONTEXT</p><h1 id="headline">Pause. Check.<br><em>Act with context.</em></h1><p class="lede">Look more closely at messages, claims, image context and sources. Check a request for rule-based warning signs, or organize a claim and its supporting evidence in a manual worksheet. You decide what to verify next.</p><div class="hero-facts"><span>No account</span><span>No cloud analysis</span><span>You stay in control</span></div><p class="quick-start"><a class="primary" href="#workspace">Check a message <span aria-hidden="true">↘</span></a> <a class="secondary" href="/static/claim-review.html">Review a claim &amp; its context</a> <a class="secondary" href="/static/tools.html">Explore media, numbers &amp; quotes</a></p><p class="hint">Claim review organizes evidence you supply. Media context inspects local image metadata and offers context questions. Neither tool searches for matching images, establishes truth or verifies a source. Numbers &amp; context calculates two rates and their changes locally; arithmetic does not establish significance or cause.</p></div><div class="lens-stage" aria-hidden="true"><div class="lens-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="lens-core"><span></span></div><div class="lens-caption"><span>THE TRUSTLENS APPROACH</span><strong>Observe. Question. Verify.</strong></div><span class="lens-coordinate coordinate-one">01 / CONTENT</span><span class="lens-coordinate coordinate-two">02 / CONTEXT</span><span class="lens-spark spark-one"></span><span class="lens-spark spark-two"></span></div></section>\r\n<details class="demo-bar"><summary>New here? Try a constructed practice check <span aria-hidden="true">↗</span></summary><div class="demo-content"><div><h2 id="demo-title">Try a practice check</h2><p>Constructed examples. Load one, then check it.</p></div><div class="demo-options"><button type="button" data-demo="code"><span>01 · MESSAGE</span>A caller wants your code <span aria-hidden="true">↗</span></button><button type="button" data-demo="link"><span>02 · EMAIL</span>A link hiding in plain sight <span aria-hidden="true">↗</span></button><button type="button" data-demo="ordinary"><span>03 · CONTEXT</span>A normal safety reminder <span aria-hidden="true">↗</span></button></div></div></details>\r\n<section id="workspace" tabindex="-1" class="workspace" aria-label="Content checker">\r\n<div class="workspace-bar"><div><p class="eyebrow">THE CHECKER</p><h2>A second look starts here.</h2></div><p class="workspace-local"><span class="dot" aria-hidden="true"></span> Content stays on this computer</p></div>\r\n<div class="input-panel">\r\n<p class="hint"><a href="/static/claim-review.html">Review a claim &amp; its context</a> — a separate manual worksheet for sources, missing context and alternative explanations. The tools below check requests and image-origin signals.</p>\r\n<div class="section-top"><h2>Bring the request</h2><span class="step">01 / INPUT</span></div>\r\n<div class="modes" role="group" aria-label="Content type"><div class="communication-modes primary-modes"><button type="button" data-mode="text" aria-pressed="true"><span aria-hidden="true">✉</span> Message</button><button type="button" data-mode="screenshot" aria-pressed="false"><span aria-hidden="true">▣</span> Screenshot</button></div><details id="visual-modes" class="visual-modes more-tools"><summary>More tools: link, email, call, QR &amp; image origin <span aria-hidden="true">＋</span></summary><div class="visual-mode-row"><button type="button" data-mode="url" aria-pressed="false">Link</button><button type="button" data-mode="email" aria-pressed="false">Email</button><button type="button" data-mode="call" aria-pressed="false">Call</button><button type="button" data-mode="qr" aria-pressed="false">QR code</button><button type="button" data-mode="image" aria-pressed="false">Image origin</button></div></details></div>\r\n<p class="mode-guide" id="mode-guide">Paste the exact request, or read a screenshot. Review the evidence before choosing your next step.</p>\r\n<form id="check-form" aria-busy="false" autocomplete="off"><noscript><p class="error">This local checker requires JavaScript. Your input is not submitted while the controller is unavailable. Checks are disabled; enable JavaScript and keep the local launcher open, or return when the checker is available.</p></noscript>\r\n<div class="field-top"><label id="input-label" for="content">Paste the message</label><button id="example" type="button" class="text-button">Try an example ↗</button></div>\r\n<p id="input-help" class="hint">Texts, direct messages, or a request someone sent you. Remove details you don’t need to share.</p>\r\n<textarea id="content" autocapitalize="off" rows="8" maxlength="30000" required aria-describedby="input-help input-count shortcut-hint" placeholder="Paste the exact wording here…" spellcheck="false"></textarea>\r\n<div id="input-meta" class="input-meta"><span id="input-count">0 / 30,000 characters</span><span id="shortcut-hint"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Enter</kbd> to check</span></div>\r\n<div id="draft-transfer" class="draft-transfer" hidden><button id="transfer-draft" type="button" class="text-button">Use as call transcript</button><span class="small">Move this wording between Message and Call without checking it.</span></div><p id="transfer-status" class="small" role="status"></p>\r\n<div id="known-website-wrap" class="known-website-wrap" hidden><label for="known-website">Known official website (optional)</label><input id="known-website" type="text" maxlength="4096" autocapitalize="off" autocomplete="off" spellcheck="false" placeholder="bank.example" aria-describedby="known-website-help"><p id="known-website-help" class="hint">Use a website you already know independently. We compare exact hostnames without visiting either address. A match does not verify the sender or make the link safe; legitimate subdomains can differ.</p><details id="link-anatomy" class="link-anatomy"><summary>Understand this address</summary><p class="hint">Structure only. No destination is visited and ownership is not verified. Counts omit private path and query values.</p><button type="button" id="link-details-open" class="secondary">Inspect address structure</button><p id="link-details-status" class="small" role="status"></p><dl id="link-details-result" hidden></dl></details></div>\r\n<div id="image-input" hidden><label class="upload" for="file"><span class="upload-icon" aria-hidden="true">＋</span><strong>Choose an image</strong><span>PNG, JPEG or WebP · up to 64 MiB / 20 megapixels</span><input id="file" type="file" accept="image/png,image/jpeg,image/webp" aria-describedby="input-help"></label><div id="preview-wrap" hidden><span id="file-name"></span><details id="original-preview" class="original-preview"><summary>Compare with the original image</summary><p id="original-help" class="hint">Inspect the full image. For screenshots and QR codes, compare it with the extracted text above. Check amounts, code requests and visible addresses. Hidden link destinations cannot be recovered.</p><div class="original-controls" role="group" aria-label="Original image size"><button type="button" id="original-fit" class="secondary" aria-pressed="true">Fit width</button><button type="button" id="original-150" class="secondary" aria-pressed="false">150%</button><button type="button" id="original-200" class="secondary" aria-pressed="false">200%</button></div><p id="original-status" class="small" role="status">Fit to frame width.</p><div id="original-frame" class="original-frame" role="region" aria-label="Original image; use arrow keys to scroll" aria-describedby="original-help" tabindex="0"><img id="preview" alt="Original selected image for comparison with recognized text"></div></details></div></div>\r\n<p id="screenshot-sample-help" class="hint" hidden><a id="screenshot-sample-download" href="/static/demo-message.png" download="trustlens-constructed-screenshot.png">Download a constructed screenshot</a>. Choose the downloaded file above, select Read screenshot, then review and confirm the text before checking. Nothing is checked automatically.</p>\r\n<p id="qr-sample-help" class="hint" hidden><a id="qr-sample-download" href="/static/demo-qr.png" download="trustlens-constructed-qr.png">Download a constructed QR image</a>. Choose the downloaded file above, then select Read QR code and review its text. Nothing is checked automatically.</p>\r\n<div id="em`... 17571 more characters,
+    expected: /<a\b[^>]*href="\/static\/claim-review.html#example=caption"[^>]*>Open a constructed photo-claim example/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests\claim_example_route.test.cjs:16:1
+✖ static initial Message help exactly matches the current configured English scope (1.512ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'Texts, direct messages, or a request someone sent you. Remove details you don’t need to share.'
+  - 'Texts, direct messages, or a request someone sent you. Remove details you don’t need to share. Wording rules cover English; other-language warning signs may be missed.'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_example_route.test.cjs:19:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'Texts, direct messages, or a request someone sent you. Remove details you don’t need to share.',
+    expected: 'Texts, direct messages, or a request someone sent you. Remove details you don’t need to share. Wording rules cover English; other-language warning signs may be missed.',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\claim_example_route.test.cjs:21:1
+✖ both exact startup choices load existing constructed fields open Sources focus claim and consume the fragment without Review (4.7562ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /15 June 2024/. Input:
+  
+  ''
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_example_route.test.cjs:23:43)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '',
+    expected: /15 June 2024/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests\claim_example_route.test.cjs:27:1
+✖ same-document choices reuse replacement and invalidation while preserving current path/query without including fields (3.5678ms)
+  AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /PRIVATE/. Input:
+  
+  'PRIVATE draftPRIVATE source'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_example_route.test.cjs:29:44)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PRIVATE draftPRIVATE source',
+    expected: /PRIVATE/,
+    operator: 'doesNotMatch',
+    diff: 'simple'
+  }
+
+test at tests\claim_example_route.test.cjs:38:1
+✖ Clear and persisted Back stay blank and closed after a consumed example; pure code and PLAN remain unchanged (2.2432ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_example_route.test.cjs:39:330)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

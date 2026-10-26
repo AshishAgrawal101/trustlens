@@ -1,0 +1,28 @@
+✔ focused launcher is disabled in markup then enabled after setup; cases remain byte-identical (3.4081ms)
+✔ two exact cases, reviewed progress, completion and scoped missed retry (2.4064ms)
+✔ replacement invalidates old answer callbacks; explicit restart all restores ten (1.2214ms)
+✔ close/reopen and exit/Back clear focused session without lifecycle focus theft (3.7265ms)
+✔ previous cases retain exact order and bytes while two frozen constructed cases are added to both practice flows (2.1866ms)
+✔ desktop complete ten-case journey includes ads feedback and retry/reset without stale callbacks or I/O (4.007ms)
+✔ Pocket twelve-case journey reaches both constructed examples and clears on close and Back (2.901ms)
+✔ new guide card uses native disclosure fixed checks and only passive internal worksheet navigation (0.4966ms)
+✔ malformed reports never expose partial results, exports or private decoder errors (33.8042ms)
+✔ unreadable success and error responses use fixed feedback and can be retried (5.0154ms)
+✔ malformed extraction notice cannot enter editable review or be stringified (17.9164ms)
+✔ practice moves focus from a disabled answer to readable feedback (2.1602ms)
+✔ a result without matched concerns leads with unresolved verification (2.1487ms)
+✔ ten bounded constructed cases retain three existing situations and cover context habits (1.1775ms)
+✔ answer locks, feedback focus and reviewed progress survive duplicate and stale activations (2.7575ms)
+✔ completion is reviewed count not accuracy; retry selects only missed cases then restart resets all (1.6563ms)
+✔ all-best run has no retry prompt and reopening never restores a prior answer (1.4436ms)
+✔ explicit close restores opener; page exit and Back reset without manually stealing focus (3.6517ms)
+✔ module and controller never access checker input, fetch, persistence or export APIs (0.4158ms)
+✔ initially disabled launcher is enabled only after controller setup and answers reference the scenario (1.8233ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 164.4128

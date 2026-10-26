@@ -1,0 +1,17 @@
+{
+  "preserved_artifacts": 48,
+  "artifacts_match": true,
+  "original_source_entries": 104,
+  "original_match": true,
+  "protected_relative_v31": 34,
+  "protected_match": true,
+  "historical_protected": {
+    "unchanged": 33,
+    "reviewed_resource_only_exception": 1
+  },
+  "v32_sha256": "5813be2d4a6f838d216a0773b59a256fdb615e3c605c288e33e9e3d1a5854624",
+  "v32_manifest_entries": 1217,
+  "manifest_match": true,
+  "receipt_model_promoted": false,
+  "no_model_execution": true
+}

@@ -1,0 +1,8 @@
+{
+  "port": 8835,
+  "listenerAbsent": true,
+  "stoppedPids": [
+    79140,
+    74620
+  ]
+}

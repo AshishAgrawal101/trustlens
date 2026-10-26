@@ -1,0 +1,10 @@
+{
+  "ordinary_v39_reports_exact": 3,
+  "unique_mismatches": 1000,
+  "repeated_additional_pairs": 992,
+  "displayed_weighted": 8,
+  "additional_distinct": 992,
+  "total_rows": 9,
+  "seconds": 0.2407997000264004,
+  "scope": "direct helper constructed inputs, no URL visits"
+}

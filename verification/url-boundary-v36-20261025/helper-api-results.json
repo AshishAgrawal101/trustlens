@@ -1,0 +1,675 @@
+[
+  {
+    "id": "ascii-space",
+    "helpers": {
+      "parse_address": {
+        "accepted": true,
+        "host": "example.org"
+      },
+      "inspect_url": {
+        "accepted": true,
+        "host": "example.org"
+      }
+    },
+    "api": {
+      "url:analyze": {
+        "status": 200,
+        "response": {
+          "kind": "url",
+          "risk_index": null,
+          "risk_level": "low",
+          "confidence": "low",
+          "summary": "Check the destination through a source you already trust.",
+          "evidence": [
+            {
+              "id": "url:host",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "The address points to this host",
+              "detail": "example.org",
+              "source": "Parsed address, not a live reputation check",
+              "weight": 0.0
+            }
+          ],
+          "limitations": [
+            "No page, redirect, domain registry or reputation service was contacted.",
+            "HTTPS protects the connection; it does not prove that a site or offer is legitimate."
+          ],
+          "content_credentials": null,
+          "model_ran": false,
+          "decision_basis": "rules",
+          "actions": [
+            {
+              "title": "Verify through a separate route",
+              "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+            },
+            {
+              "title": "Take time to check the request",
+              "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+            }
+          ],
+          "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+        }
+      },
+      "url:inspect": {
+        "status": 200,
+        "response": {
+          "scheme": "https",
+          "scheme_assumed": false,
+          "ascii_host": "example.org",
+          "display_unicode_host": "example.org",
+          "port": 443,
+          "username_present": false,
+          "path_segment_count": 0,
+          "query_parameter_count": 0,
+          "fragment_present": false,
+          "reference_comparison": null,
+          "notice": "Literal inspection only: no site, DNS or reputation lookup. ASCII host uses nontransitional UTS #46 IDNA normalization; Unicode spelling is a display aid, not the original spelling or browser validation. An omitted port shows the scheme default. Path segments split on literal /; query count is nonempty &-delimited fields, not unique keys. Percent escapes are not decoded. Credentials, paths, query names/values and fragment content are omitted. HTTPS or matching components do not establish safety or ownership."
+        }
+      },
+      "known_website:analyze": {
+        "status": 200,
+        "response": {
+          "kind": "url",
+          "risk_index": null,
+          "risk_level": "low",
+          "confidence": "low",
+          "summary": "Check the destination through a source you already trust.",
+          "evidence": [
+            {
+              "id": "url:host",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "The address points to this host",
+              "detail": "example.org",
+              "source": "Parsed address, not a live reputation check",
+              "weight": 0.0
+            },
+            {
+              "id": "url:comparison",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "Exact hostname matches your reference",
+              "detail": "Checked host: example.org. Reference host: example.org. Exact spelling comparison only; sender and safety remain unverified. Legitimate subdomains can differ.",
+              "source": "Local comparison with a user-supplied reference; ownership not verified",
+              "weight": 0.0
+            }
+          ],
+          "limitations": [
+            "No page, redirect, domain registry or reputation service was contacted.",
+            "HTTPS protects the connection; it does not prove that a site or offer is legitimate."
+          ],
+          "content_credentials": null,
+          "model_ran": false,
+          "decision_basis": "rules",
+          "actions": [
+            {
+              "title": "Verify through a separate route",
+              "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+            },
+            {
+              "title": "Take time to check the request",
+              "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+            }
+          ],
+          "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+        }
+      },
+      "known_website:inspect": {
+        "status": 200,
+        "response": {
+          "scheme": "https",
+          "scheme_assumed": false,
+          "ascii_host": "example.org",
+          "display_unicode_host": "example.org",
+          "port": 443,
+          "username_present": false,
+          "path_segment_count": 0,
+          "query_parameter_count": 0,
+          "fragment_present": false,
+          "reference_comparison": {
+            "ascii_host": "example.org",
+            "exact_host_match": true,
+            "same_scheme": true,
+            "same_port": true
+          },
+          "notice": "Literal inspection only: no site, DNS or reputation lookup. ASCII host uses nontransitional UTS #46 IDNA normalization; Unicode spelling is a display aid, not the original spelling or browser validation. An omitted port shows the scheme default. Path segments split on literal /; query count is nonempty &-delimited fields, not unique keys. Percent escapes are not decoded. Credentials, paths, query names/values and fragment content are omitted. HTTPS or matching components do not establish safety or ownership."
+        }
+      }
+    }
+  },
+  {
+    "id": "leading-tab",
+    "helpers": {
+      "parse_address": {
+        "accepted": false,
+        "error": "Enter an address without hidden control or formatting characters."
+      },
+      "inspect_url": {
+        "accepted": false,
+        "error": "This address contains hidden control or formatting characters. Type a known address instead."
+      }
+    },
+    "api": {
+      "url:analyze": {
+        "status": 200,
+        "response": {
+          "kind": "url",
+          "risk_index": null,
+          "risk_level": "low",
+          "confidence": "low",
+          "summary": "Check the destination through a source you already trust.",
+          "evidence": [
+            {
+              "id": "url:host",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "The address points to this host",
+              "detail": "example.org",
+              "source": "Parsed address, not a live reputation check",
+              "weight": 0.0
+            }
+          ],
+          "limitations": [
+            "No page, redirect, domain registry or reputation service was contacted.",
+            "HTTPS protects the connection; it does not prove that a site or offer is legitimate."
+          ],
+          "content_credentials": null,
+          "model_ran": false,
+          "decision_basis": "rules",
+          "actions": [
+            {
+              "title": "Verify through a separate route",
+              "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+            },
+            {
+              "title": "Take time to check the request",
+              "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+            }
+          ],
+          "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+        }
+      },
+      "url:inspect": {
+        "status": 200,
+        "response": {
+          "scheme": "https",
+          "scheme_assumed": false,
+          "ascii_host": "example.org",
+          "display_unicode_host": "example.org",
+          "port": 443,
+          "username_present": false,
+          "path_segment_count": 0,
+          "query_parameter_count": 0,
+          "fragment_present": false,
+          "reference_comparison": null,
+          "notice": "Literal inspection only: no site, DNS or reputation lookup. ASCII host uses nontransitional UTS #46 IDNA normalization; Unicode spelling is a display aid, not the original spelling or browser validation. An omitted port shows the scheme default. Path segments split on literal /; query count is nonempty &-delimited fields, not unique keys. Percent escapes are not decoded. Credentials, paths, query names/values and fragment content are omitted. HTTPS or matching components do not establish safety or ownership."
+        }
+      },
+      "known_website:analyze": {
+        "status": 200,
+        "response": {
+          "kind": "url",
+          "risk_index": null,
+          "risk_level": "low",
+          "confidence": "low",
+          "summary": "Check the destination through a source you already trust.",
+          "evidence": [
+            {
+              "id": "url:host",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "The address points to this host",
+              "detail": "example.org",
+              "source": "Parsed address, not a live reputation check",
+              "weight": 0.0
+            },
+            {
+              "id": "url:comparison",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "Exact hostname matches your reference",
+              "detail": "Checked host: example.org. Reference host: example.org. Exact spelling comparison only; sender and safety remain unverified. Legitimate subdomains can differ.",
+              "source": "Local comparison with a user-supplied reference; ownership not verified",
+              "weight": 0.0
+            }
+          ],
+          "limitations": [
+            "No page, redirect, domain registry or reputation service was contacted.",
+            "HTTPS protects the connection; it does not prove that a site or offer is legitimate."
+          ],
+          "content_credentials": null,
+          "model_ran": false,
+          "decision_basis": "rules",
+          "actions": [
+            {
+              "title": "Verify through a separate route",
+              "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+            },
+            {
+              "title": "Take time to check the request",
+              "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+            }
+          ],
+          "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+        }
+      },
+      "known_website:inspect": {
+        "status": 200,
+        "response": {
+          "scheme": "https",
+          "scheme_assumed": false,
+          "ascii_host": "example.org",
+          "display_unicode_host": "example.org",
+          "port": 443,
+          "username_present": false,
+          "path_segment_count": 0,
+          "query_parameter_count": 0,
+          "fragment_present": false,
+          "reference_comparison": {
+            "ascii_host": "example.org",
+            "exact_host_match": true,
+            "same_scheme": true,
+            "same_port": true
+          },
+          "notice": "Literal inspection only: no site, DNS or reputation lookup. ASCII host uses nontransitional UTS #46 IDNA normalization; Unicode spelling is a display aid, not the original spelling or browser validation. An omitted port shows the scheme default. Path segments split on literal /; query count is nonempty &-delimited fields, not unique keys. Percent escapes are not decoded. Credentials, paths, query names/values and fragment content are omitted. HTTPS or matching components do not establish safety or ownership."
+        }
+      }
+    }
+  },
+  {
+    "id": "trailing-newline",
+    "helpers": {
+      "parse_address": {
+        "accepted": false,
+        "error": "Enter an address without hidden control or formatting characters."
+      },
+      "inspect_url": {
+        "accepted": false,
+        "error": "This address contains hidden control or formatting characters. Type a known address instead."
+      }
+    },
+    "api": {
+      "url:analyze": {
+        "status": 200,
+        "response": {
+          "kind": "url",
+          "risk_index": null,
+          "risk_level": "low",
+          "confidence": "low",
+          "summary": "Check the destination through a source you already trust.",
+          "evidence": [
+            {
+              "id": "url:host",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "The address points to this host",
+              "detail": "example.org",
+              "source": "Parsed address, not a live reputation check",
+              "weight": 0.0
+            }
+          ],
+          "limitations": [
+            "No page, redirect, domain registry or reputation service was contacted.",
+            "HTTPS protects the connection; it does not prove that a site or offer is legitimate."
+          ],
+          "content_credentials": null,
+          "model_ran": false,
+          "decision_basis": "rules",
+          "actions": [
+            {
+              "title": "Verify through a separate route",
+              "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+            },
+            {
+              "title": "Take time to check the request",
+              "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+            }
+          ],
+          "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+        }
+      },
+      "url:inspect": {
+        "status": 200,
+        "response": {
+          "scheme": "https",
+          "scheme_assumed": false,
+          "ascii_host": "example.org",
+          "display_unicode_host": "example.org",
+          "port": 443,
+          "username_present": false,
+          "path_segment_count": 0,
+          "query_parameter_count": 0,
+          "fragment_present": false,
+          "reference_comparison": null,
+          "notice": "Literal inspection only: no site, DNS or reputation lookup. ASCII host uses nontransitional UTS #46 IDNA normalization; Unicode spelling is a display aid, not the original spelling or browser validation. An omitted port shows the scheme default. Path segments split on literal /; query count is nonempty &-delimited fields, not unique keys. Percent escapes are not decoded. Credentials, paths, query names/values and fragment content are omitted. HTTPS or matching components do not establish safety or ownership."
+        }
+      },
+      "known_website:analyze": {
+        "status": 200,
+        "response": {
+          "kind": "url",
+          "risk_index": null,
+          "risk_level": "low",
+          "confidence": "low",
+          "summary": "Check the destination through a source you already trust.",
+          "evidence": [
+            {
+              "id": "url:host",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "The address points to this host",
+              "detail": "example.org",
+              "source": "Parsed address, not a live reputation check",
+              "weight": 0.0
+            },
+            {
+              "id": "url:comparison",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "Exact hostname matches your reference",
+              "detail": "Checked host: example.org. Reference host: example.org. Exact spelling comparison only; sender and safety remain unverified. Legitimate subdomains can differ.",
+              "source": "Local comparison with a user-supplied reference; ownership not verified",
+              "weight": 0.0
+            }
+          ],
+          "limitations": [
+            "No page, redirect, domain registry or reputation service was contacted.",
+            "HTTPS protects the connection; it does not prove that a site or offer is legitimate."
+          ],
+          "content_credentials": null,
+          "model_ran": false,
+          "decision_basis": "rules",
+          "actions": [
+            {
+              "title": "Verify through a separate route",
+              "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+            },
+            {
+              "title": "Take time to check the request",
+              "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+            }
+          ],
+          "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+        }
+      },
+      "known_website:inspect": {
+        "status": 200,
+        "response": {
+          "scheme": "https",
+          "scheme_assumed": false,
+          "ascii_host": "example.org",
+          "display_unicode_host": "example.org",
+          "port": 443,
+          "username_present": false,
+          "path_segment_count": 0,
+          "query_parameter_count": 0,
+          "fragment_present": false,
+          "reference_comparison": {
+            "ascii_host": "example.org",
+            "exact_host_match": true,
+            "same_scheme": true,
+            "same_port": true
+          },
+          "notice": "Literal inspection only: no site, DNS or reputation lookup. ASCII host uses nontransitional UTS #46 IDNA normalization; Unicode spelling is a display aid, not the original spelling or browser validation. An omitted port shows the scheme default. Path segments split on literal /; query count is nonempty &-delimited fields, not unique keys. Percent escapes are not decoded. Credentials, paths, query names/values and fragment content are omitted. HTTPS or matching components do not establish safety or ownership."
+        }
+      }
+    }
+  },
+  {
+    "id": "leading-bom",
+    "helpers": {
+      "parse_address": {
+        "accepted": false,
+        "error": "Enter an address without hidden control or formatting characters."
+      },
+      "inspect_url": {
+        "accepted": false,
+        "error": "This address contains hidden control or formatting characters. Type a known address instead."
+      }
+    },
+    "api": {
+      "url:analyze": {
+        "status": 400,
+        "response": {
+          "detail": "Enter an address without hidden control or formatting characters."
+        }
+      },
+      "url:inspect": {
+        "status": 400,
+        "response": {
+          "detail": "This address contains hidden control or formatting characters. Type a known address instead."
+        }
+      },
+      "known_website:analyze": {
+        "status": 400,
+        "response": {
+          "detail": "Enter a known HTTP(S) website without login details or text before @."
+        }
+      },
+      "known_website:inspect": {
+        "status": 400,
+        "response": {
+          "detail": "Enter a known HTTP(S) website without login details, hidden characters or text before @."
+        }
+      }
+    }
+  },
+  {
+    "id": "leading-nbsp",
+    "helpers": {
+      "parse_address": {
+        "accepted": true,
+        "host": "example.org"
+      },
+      "inspect_url": {
+        "accepted": true,
+        "host": "example.org"
+      }
+    },
+    "api": {
+      "url:analyze": {
+        "status": 200,
+        "response": {
+          "kind": "url",
+          "risk_index": null,
+          "risk_level": "low",
+          "confidence": "low",
+          "summary": "Check the destination through a source you already trust.",
+          "evidence": [
+            {
+              "id": "url:host",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "The address points to this host",
+              "detail": "example.org",
+              "source": "Parsed address, not a live reputation check",
+              "weight": 0.0
+            }
+          ],
+          "limitations": [
+            "No page, redirect, domain registry or reputation service was contacted.",
+            "HTTPS protects the connection; it does not prove that a site or offer is legitimate."
+          ],
+          "content_credentials": null,
+          "model_ran": false,
+          "decision_basis": "rules",
+          "actions": [
+            {
+              "title": "Verify through a separate route",
+              "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+            },
+            {
+              "title": "Take time to check the request",
+              "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+            }
+          ],
+          "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+        }
+      },
+      "url:inspect": {
+        "status": 200,
+        "response": {
+          "scheme": "https",
+          "scheme_assumed": false,
+          "ascii_host": "example.org",
+          "display_unicode_host": "example.org",
+          "port": 443,
+          "username_present": false,
+          "path_segment_count": 0,
+          "query_parameter_count": 0,
+          "fragment_present": false,
+          "reference_comparison": null,
+          "notice": "Literal inspection only: no site, DNS or reputation lookup. ASCII host uses nontransitional UTS #46 IDNA normalization; Unicode spelling is a display aid, not the original spelling or browser validation. An omitted port shows the scheme default. Path segments split on literal /; query count is nonempty &-delimited fields, not unique keys. Percent escapes are not decoded. Credentials, paths, query names/values and fragment content are omitted. HTTPS or matching components do not establish safety or ownership."
+        }
+      },
+      "known_website:analyze": {
+        "status": 200,
+        "response": {
+          "kind": "url",
+          "risk_index": null,
+          "risk_level": "low",
+          "confidence": "low",
+          "summary": "Check the destination through a source you already trust.",
+          "evidence": [
+            {
+              "id": "url:host",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "The address points to this host",
+              "detail": "example.org",
+              "source": "Parsed address, not a live reputation check",
+              "weight": 0.0
+            },
+            {
+              "id": "url:comparison",
+              "evidence_class": "verified",
+              "severity": "info",
+              "title": "Exact hostname matches your reference",
+              "detail": "Checked host: example.org. Reference host: example.org. Exact spelling comparison only; sender and safety remain unverified. Legitimate subdomains can differ.",
+              "source": "Local comparison with a user-supplied reference; ownership not verified",
+              "weight": 0.0
+            }
+          ],
+          "limitations": [
+            "No page, redirect, domain registry or reputation service was contacted.",
+            "HTTPS protects the connection; it does not prove that a site or offer is legitimate."
+          ],
+          "content_credentials": null,
+          "model_ran": false,
+          "decision_basis": "rules",
+          "actions": [
+            {
+              "title": "Verify through a separate route",
+              "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+            },
+            {
+              "title": "Take time to check the request",
+              "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+            }
+          ],
+          "share_summary": "TrustLens \u2014 private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nTake time to check the request\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+        }
+      },
+      "known_website:inspect": {
+        "status": 200,
+        "response": {
+          "scheme": "https",
+          "scheme_assumed": false,
+          "ascii_host": "example.org",
+          "display_unicode_host": "example.org",
+          "port": 443,
+          "username_present": false,
+          "path_segment_count": 0,
+          "query_parameter_count": 0,
+          "fragment_present": false,
+          "reference_comparison": {
+            "ascii_host": "example.org",
+            "exact_host_match": true,
+            "same_scheme": true,
+            "same_port": true
+          },
+          "notice": "Literal inspection only: no site, DNS or reputation lookup. ASCII host uses nontransitional UTS #46 IDNA normalization; Unicode spelling is a display aid, not the original spelling or browser validation. An omitted port shows the scheme default. Path segments split on literal /; query count is nonempty &-delimited fields, not unique keys. Percent escapes are not decoded. Credentials, paths, query names/values and fragment content are omitted. HTTPS or matching components do not establish safety or ownership."
+        }
+      }
+    }
+  },
+  {
+    "id": "interior-tab",
+    "helpers": {
+      "parse_address": {
+        "accepted": false,
+        "error": "Enter an address without hidden control or formatting characters."
+      },
+      "inspect_url": {
+        "accepted": false,
+        "error": "This address contains hidden control or formatting characters. Type a known address instead."
+      }
+    },
+    "api": {
+      "url:analyze": {
+        "status": 400,
+        "response": {
+          "detail": "Enter an address without hidden control or formatting characters."
+        }
+      },
+      "url:inspect": {
+        "status": 400,
+        "response": {
+          "detail": "This address contains hidden control or formatting characters. Type a known address instead."
+        }
+      },
+      "known_website:analyze": {
+        "status": 400,
+        "response": {
+          "detail": "Enter a known HTTP(S) website without login details or text before @."
+        }
+      },
+      "known_website:inspect": {
+        "status": 400,
+        "response": {
+          "detail": "Enter a known HTTP(S) website without login details, hidden characters or text before @."
+        }
+      }
+    }
+  },
+  {
+    "id": "interior-bom",
+    "helpers": {
+      "parse_address": {
+        "accepted": false,
+        "error": "Enter an address without hidden control or formatting characters."
+      },
+      "inspect_url": {
+        "accepted": false,
+        "error": "This address contains hidden control or formatting characters. Type a known address instead."
+      }
+    },
+    "api": {
+      "url:analyze": {
+        "status": 400,
+        "response": {
+          "detail": "Enter an address without hidden control or formatting characters."
+        }
+      },
+      "url:inspect": {
+        "status": 400,
+        "response": {
+          "detail": "This address contains hidden control or formatting characters. Type a known address instead."
+        }
+      },
+      "known_website:analyze": {
+        "status": 400,
+        "response": {
+          "detail": "Enter a known HTTP(S) website without login details or text before @."
+        }
+      },
+      "known_website:inspect": {
+        "status": 400,
+        "response": {
+          "detail": "Enter a known HTTP(S) website without login details, hidden characters or text before @."
+        }
+      }
+    }
+  }
+]

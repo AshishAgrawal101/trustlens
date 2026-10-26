@@ -1,0 +1,17 @@
+✔ previous cases retain exact order and bytes while two frozen constructed cases are added to both practice flows (1.7717ms)
+✔ desktop complete ten-case journey includes ads feedback and retry/reset without stale callbacks or I/O (3.5703ms)
+✔ Pocket twelve-case journey reaches both constructed examples and clears on close and Back (2.6617ms)
+✔ new guide card uses native disclosure fixed checks and only passive internal worksheet navigation (0.4797ms)
+✔ malformed reports never expose partial results, exports or private decoder errors (27.5761ms)
+✔ unreadable success and error responses use fixed feedback and can be retried (4.3772ms)
+✔ malformed extraction notice cannot enter editable review or be stringified (16.686ms)
+✔ practice moves focus from a disabled answer to readable feedback (2.2173ms)
+✔ a result without matched concerns leads with unresolved verification (2.234ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 137.8239

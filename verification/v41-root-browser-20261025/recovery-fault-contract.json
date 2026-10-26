@@ -1,0 +1,15 @@
+{
+  "scope": "Real browser fault-injection on isolated loopback8767 using actual frontend with actual fixed plans after first empty200",
+  "steps": [
+    "Open Recovery: firstAPIreturns200plans[]; fixedfallbackshown/nooptions",
+    "Close and reopen: secondrequestreturnsactual4fixedplans, validoptionsshown",
+    "Select paid, focusandfixedsteps; close/reopenresetsselectionwithoutthirdfetch",
+    "Stoptestserverandclosetesttab"
+  ],
+  "not_claimed": [
+    "ProductionAPIactuallyemitsbadplans",
+    "Browserfileuploads",
+    "Phone",
+    "Cloud"
+  ]
+}

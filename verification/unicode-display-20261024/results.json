@@ -1,0 +1,264 @@
+{
+  "label": "Current pure API observations only; no browser rendering or semantic verdict",
+  "source_sha256": {
+    "quote": "0cacbd5a87911090f6f7a9876401914711ff05d94e8ee8f14836e3e3cde30967",
+    "finder": "f5cdb2abc31ff29fc7bef69996784ce64ed4ed1ce8bd5753e3de828b8aea138f"
+  },
+  "probes_sha256": "0326724840912864a65bdd5413baa958df2066acd33582679a49e5697d90542b",
+  "rows": [
+    {
+      "id": "zwsp-inserted",
+      "comparison": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "We "
+          },
+          {
+            "type": "removed",
+            "text": "can"
+          },
+          {
+            "type": "added",
+            "text": "can​"
+          },
+          {
+            "type": "same",
+            "text": " open today."
+          }
+        ],
+        "identical": false
+      },
+      "finder": {
+        "total": 0,
+        "matches": [],
+        "truncated": false
+      }
+    },
+    {
+      "id": "soft-hyphen-inserted",
+      "comparison": {
+        "parts": [
+          {
+            "type": "removed",
+            "text": "verification"
+          },
+          {
+            "type": "added",
+            "text": "veri­fication"
+          },
+          {
+            "type": "same",
+            "text": " code"
+          }
+        ],
+        "identical": false
+      },
+      "finder": {
+        "total": 0,
+        "matches": [],
+        "truncated": false
+      }
+    },
+    {
+      "id": "word-joiner-inserted",
+      "comparison": {
+        "parts": [
+          {
+            "type": "removed",
+            "text": "open"
+          },
+          {
+            "type": "added",
+            "text": "open⁠"
+          },
+          {
+            "type": "same",
+            "text": " today"
+          }
+        ],
+        "identical": false
+      },
+      "finder": {
+        "total": 0,
+        "matches": [],
+        "truncated": false
+      }
+    },
+    {
+      "id": "bidi-override-added",
+      "comparison": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "ABC "
+          },
+          {
+            "type": "removed",
+            "text": "123"
+          },
+          {
+            "type": "added",
+            "text": "‮123‬"
+          }
+        ],
+        "identical": false
+      },
+      "finder": {
+        "total": 0,
+        "matches": [],
+        "truncated": false
+      }
+    },
+    {
+      "id": "bidi-isolate-context",
+      "comparison": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "Report: "
+          },
+          {
+            "type": "removed",
+            "text": "ABC"
+          },
+          {
+            "type": "added",
+            "text": "⁦ABC⁩"
+          }
+        ],
+        "identical": false
+      },
+      "finder": {
+        "total": 0,
+        "matches": [],
+        "truncated": false
+      }
+    },
+    {
+      "id": "direction-mark-added",
+      "comparison": {
+        "parts": [
+          {
+            "type": "removed",
+            "text": "ABC:"
+          },
+          {
+            "type": "added",
+            "text": "ABC:‏"
+          },
+          {
+            "type": "same",
+            "text": " 123"
+          }
+        ],
+        "identical": false
+      },
+      "finder": {
+        "total": 0,
+        "matches": [],
+        "truncated": false
+      }
+    },
+    {
+      "id": "identical-hidden",
+      "comparison": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "co­operate"
+          }
+        ],
+        "identical": true
+      },
+      "finder": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 0,
+            "end": 10,
+            "before": "",
+            "text": "co­operate",
+            "after": ""
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "emoji-zwj-legitimate",
+      "comparison": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "👩‍💻"
+          }
+        ],
+        "identical": true
+      },
+      "finder": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 0,
+            "end": 5,
+            "before": "",
+            "text": "👩‍💻",
+            "after": ""
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "zwnj-legitimate",
+      "comparison": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "می‌روم"
+          }
+        ],
+        "identical": true
+      },
+      "finder": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 0,
+            "end": 6,
+            "before": "",
+            "text": "می‌روم",
+            "after": ""
+          }
+        ],
+        "truncated": false
+      }
+    },
+    {
+      "id": "ordinary-control",
+      "comparison": {
+        "parts": [
+          {
+            "type": "same",
+            "text": "The park opens."
+          }
+        ],
+        "identical": true
+      },
+      "finder": {
+        "total": 1,
+        "matches": [
+          {
+            "start": 0,
+            "end": 15,
+            "before": "",
+            "text": "The park opens.",
+            "after": ""
+          }
+        ],
+        "truncated": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "version": "trustlens-pocket-v13",
+  "developmentServerStopped": true,
+  "scenarios": [
+    {
+      "disabled": true,
+      "feedback": "A useful next check: Call the supplier using an established contact record. Confirm changed payment instructions through a contact route you already trust. A reply stays in the same possibly compromised conversation.",
+      "next": "Next scenario",
+      "progress": "Constructed scenario 1 of 10 · practice, not a real message",
+      "title": "A changed invoice"
+    },
+    {
+      "disabled": true,
+      "feedback": "That is a useful next check. A name or employee number does not establish identity. A security code can grant account access; keep it private.",
+      "next": "Next scenario",
+      "progress": "Constructed scenario 2 of 10 · practice, not a real message",
+      "title": "An unexpected code request"
+    },
+    {
+      "disabled": true,
+      "feedback": "That is a useful next check. The destination hostname is verify.example.test. Text before @ is not the destination, and appearance does not verify a site.",
+      "next": "Next scenario",
+      "progress": "Constructed scenario 3 of 10 · practice, not a real message",
+      "title": "A familiar-looking address"
+    },
+    {
+      "disabled": true,
+      "feedback": "That is a useful next check. Routine wording alone does not prove fraud or authenticity. Verify unexpected changes independently and share only what is needed through a known route.",
+      "next": "Next scenario",
+      "progress": "Constructed scenario 4 of 10 · practice, not a real message",
+      "title": "A routine appointment"
+    },
+    {
+      "disabled": true,
+      "feedback": "That is a useful next check. Remote access can expose your device and accounts. A confident voice is not proof of identity; verify the request before installing anything.",
+      "next": "Next scenario",
+      "progress": "Constructed scenario 5 of 10 · practice, not a real message",
+      "title": "Unexpected remote support"
+    },
+    {
+      "disabled": true,
+      "feedback": "That is a useful next check. Urgency and secrecy make independent checking harder. Verify the situation outside the unexpected conversation before sending money.",
+      "next": "Next scenario",
+      "progress": "Constructed scenario 6 of 10 · practice, not a real message",
+      "title": "Pressure to stay silent"
+    },
+    {
+      "disabled": true,
+      "feedback": "That is a useful next check. Different websites can repeat one underlying account. That does not make the claim true or false. Trace the evidence and look for relevant independent sources.",
+      "next": "Next scenario",
+      "progress": "Constructed scenario 7 of 10 · practice, not a real message",
+      "title": "Two reports, one source"
+    },
+    {
+      "disabled": true,
+      "feedback": "That is a useful next check. An embedded clock, publication date and event date can describe different things. Metadata can be edited or removed; neither a file date nor missing location data settles the caption.",
+      "next": "Next scenario",
+      "progress": "Constructed scenario 8 of 10 · practice, not a real message",
+      "title": "A caption and an editable clock"
+    },
+    {
+      "disabled": true,
+      "feedback": "That is a useful next check. The supplied wording differs. A literal change is something to inspect, not proof of authenticity, intent or factual meaning. Check the fuller account before interpreting the revision.",
+      "next": "Next scenario",
+      "progress": "Constructed scenario 9 of 10 · practice, not a real message",
+      "title": "A quotation loses a qualification"
+    },
+    {
+      "disabled": true,
+      "feedback": "That is a useful next check. 20/100 is 20%; 30/200 is 15%. Group A’s rate is 5 percentage points higher in these supplied counts. This does not establish data quality, statistical significance, comparability or cause.",
+      "next": "Practice again",
+      "progress": "Constructed scenario 10 of 10 · practice, not a real message",
+      "title": "A count needs its total"
+    }
+  ]
+}

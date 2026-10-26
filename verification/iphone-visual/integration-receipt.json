@@ -1,0 +1,50 @@
+{
+  "verified_utc": "2026-10-23T18:40:57.823982+00:00",
+  "python": {
+    "tests": 690,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "javascript": {
+    "tests": 111,
+    "failures": 0,
+    "skips": 0
+  },
+  "pocket_shell": "trustlens-pocket-v11",
+  "browser": {
+    "desktop_1280_visual_review": true,
+    "main_320_and_390_no_horizontal_overflow": true,
+    "keyboard_submission_and_character_count": true,
+    "literal_url_inspector_private_values_omitted": true,
+    "inspector_focus_restored_and_edit_clears": true,
+    "sharp_s_IDNA_matches_browser_hostname": true,
+    "repeated_recovery_and_shortcut_navigation_open_and_focus": true,
+    "pocket_v11_server_stopped_reload": true,
+    "iphone_guide_server_stopped_reload": true,
+    "offline_checklist_and_Clear": true,
+    "offline_practice_feedback": true,
+    "server_restarted": true,
+    "physical_iPhone_install_shortcut_and_native_share_tested": false,
+    "physical_Android_install_share_tested": false,
+    "interactive_file_selection_tested": false,
+    "interactive_print_preview_verified": false,
+    "actual_clipboard_read_performed": false,
+    "actual_native_share_performed": false,
+    "viewport_restored": true,
+    "app_left_open": true
+  },
+  "preservation_receipt": "preservation.json",
+  "earlier_archives_unchanged": 6,
+  "original_source_files_unchanged": 104,
+  "protected_runtime_model_C2PA_files_unchanged": 34,
+  "downloads": 0,
+  "cloud_content_calls": 0,
+  "gpu_jobs": 0,
+  "model_retries": 0,
+  "automation_changes": 0,
+  "external_messages": 0,
+  "publications_or_submissions": 0,
+  "accuracy_claimed": false,
+  "live_smoke_receipt": "live-smoke.json"
+}

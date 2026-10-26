@@ -1,0 +1,65 @@
+✖ malformed successful responses never cache/render/enable copying and corrected reopen actually retries (10.4471ms)
+✖ response admission bounds every record and never displays a valid prefix of an invalid list (2.5264ms)
+✔ valid plans cache once; fixed clipboard summary remains separate from input and normal close resets selection (2.1486ms)
+✖ closed or exited stale response cannot seed cache; reopened dialog fetches current plans (2.6671ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 1
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 94.9621
+
+✖ failing tests:
+
+test at tests\recovery_response.test.cjs:5:1
+✖ malformed successful responses never cache/render/enable copying and corrected reopen actually retries (10.4471ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\recovery_response.test.cjs:5:804)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\recovery_response.test.cjs:6:1
+✖ response admission bounds every record and never displays a valid prefix of an invalid list (2.5264ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  5 !== 0
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\recovery_response.test.cjs:6:498)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 5,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\recovery_response.test.cjs:8:1
+✖ closed or exited stale response cannot seed cache; reopened dialog fetches current plans (2.6671ms)
+  AssertionError [ERR_ASSERTION]: close
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\recovery_response.test.cjs:8:560)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,22 @@
+✔ iPhone paste reads only on click then dispatches the normal invalidation event (2.2068ms)
+✔ unavailable denied empty and oversized clipboard preserve current input and give manual recovery (3.2877ms)
+✔ pending paste cannot overwrite editing clear example submission topic changes or page exit (5.1429ms)
+✔ pending permission times out and a later answer does not paste (1.8242ms)
+✔ setup recipe copy is explicit fixed text and unavailable copy keeps selectable recipe (1.6838ms)
+✔ exact clipboard size bound accepts30000 and does not silently truncate larger text (1.7643ms)
+✔ onboarding works without Pocket controls and copies only its fixed manual recipe (1.819ms)
+✔ iPhone setup keeps message text out of URLs and labels the manual installation boundary (1.8518ms)
+✔ Shortcut navigation opens and focuses its disclosure including a repeated same hash (0.9354ms)
+✔ setup page uses the Pocket manifest start URL and existing Apple touch icon (1.5715ms)
+✔ native sharing needs explicit click and includes only fixed selected guidance (5.8054ms)
+✔ unsupported, cancelled and rejected shares offer actionable alternatives (2.8722ms)
+✔ Clear invalidates a pending device share and newer export invalidates old clipboard status (4.2986ms)
+✔ recovery shares only a selected fixed plan and page exit rejects its late status (2.5924ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 129.9629

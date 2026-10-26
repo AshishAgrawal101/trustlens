@@ -1,0 +1,77 @@
+{
+  "purpose": "Fresh constructed bounded correctness/usefulness probes, not a benchmark. Expectations authored before execution. No source or frozen diagnostic tuning.",
+  "cases": [
+    {
+      "id": "guidance-code-alone",
+      "mode": "text",
+      "input": "Send me your verification code.",
+      "expected": "code action remains present"
+    },
+    {
+      "id": "guidance-payment-code",
+      "mode": "text",
+      "input": "Send $50. Send me your verification code.",
+      "expected": "payment and code actions present"
+    },
+    {
+      "id": "guidance-payment-overpayment-code",
+      "mode": "text",
+      "input": "Send $50. Return the overpayment. Send me your verification code.",
+      "expected": "code action not lost solely because two payment topics matched"
+    },
+    {
+      "id": "guidance-payment-overpayment-remote",
+      "mode": "call",
+      "input": "Send $50. Return the overpayment. Install TeamViewer.",
+      "expected": "device action not lost solely because two payment topics matched; call-back action retained"
+    },
+    {
+      "id": "html-absolute-mismatch",
+      "mode": "email",
+      "input": "Content-Type: text/html\n\n<a href=\"https://other.example/pay\">https://bank.example</a>",
+      "expected": "literal different hosts compared"
+    },
+    {
+      "id": "html-relative-scheme-mismatch",
+      "mode": "email",
+      "input": "Content-Type: text/html\n\n<a href=\"//other.example/pay\">https://bank.example</a>",
+      "expected": "different literal host compared or destination explicitly unchecked; do not assume base scheme"
+    },
+    {
+      "id": "html-relative-path",
+      "mode": "email",
+      "input": "Content-Type: text/html\n\n<a href=\"/pay\">https://bank.example</a>",
+      "expected": "unknown base prevents destination check; explicitly partial not fabricated mismatch"
+    },
+    {
+      "id": "html-unsupported-link",
+      "mode": "email",
+      "input": "Content-Type: text/html\n\n<a href=\"javascript:void(0)\">Open statement</a>",
+      "expected": "unsupported destination not silently treated as inspected; no execution"
+    },
+    {
+      "id": "link-valid",
+      "mode": "text",
+      "input": "Review https://example.org/notes",
+      "expected": "no parse failure/incomplete notice required"
+    },
+    {
+      "id": "link-malformed",
+      "mode": "text",
+      "input": "Review https://example.org:bad/notes",
+      "expected": "parse failure remains unknown not fraud; coverage incomplete reflected in summary/action/export"
+    },
+    {
+      "id": "link-malformed-live",
+      "mode": "text",
+      "input": "Send me your verification code. Review https://[broken/notes",
+      "expected": "live code concern retained plus explicit incomplete link coverage"
+    },
+    {
+      "id": "link-malformed-call",
+      "mode": "call",
+      "input": "Review https://example.org:bad/notes",
+      "expected": "parse failure incomplete propagated to call guidance; callback preserved"
+    }
+  ]
+}

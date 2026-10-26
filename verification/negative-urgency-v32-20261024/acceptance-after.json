@@ -1,0 +1,302 @@
+{
+  "purpose": "Newpostfixacceptanceevidence",
+  "rows": [
+    {
+      "id": "direct-negative",
+      "evidence": [
+        {
+          "id": "context:negative_urgency",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Explicit wording: not urgent",
+          "detail": "This complete clause explicitly says it is not urgent: “This is not urgent”. That wording does not verify the sender or establish safety.",
+          "source": "Local wording and context rules",
+          "weight": 0.0
+        }
+      ]
+    },
+    {
+      "id": "negative-eof",
+      "evidence": [
+        {
+          "id": "context:negative_urgency",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Explicit wording: not urgent",
+          "detail": "This complete clause explicitly says it is not urgent: “This is not urgent”. That wording does not verify the sender or establish safety.",
+          "source": "Local wording and context rules",
+          "weight": 0.0
+        }
+      ]
+    },
+    {
+      "id": "positive",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “This is urgent”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "not-only",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “This is not only urgent”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "later-act-now",
+      "evidence": [
+        {
+          "id": "context:negative_urgency",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Explicit wording: not urgent",
+          "detail": "This complete clause explicitly says it is not urgent: “This is not urgent”. That wording does not verify the sender or establish safety.",
+          "source": "Local wording and context rules",
+          "weight": 0.0
+        },
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “This is not urgent, act now”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "later-urgency",
+      "evidence": [
+        {
+          "id": "context:negative_urgency",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Explicit wording: not urgent",
+          "detail": "This complete clause explicitly says it is not urgent: “This is not urgent”. That wording does not verify the sender or establish safety.",
+          "source": "Local wording and context rules",
+          "weight": 0.0
+        },
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “This is urgent”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "later-code",
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: “This is not urgent; send me your verification code”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        },
+        {
+          "id": "context:negative_urgency",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Explicit wording: not urgent",
+          "detail": "This complete clause explicitly says it is not urgent: “This is not urgent”. That wording does not verify the sender or establish safety.",
+          "source": "Local wording and context rules",
+          "weight": 0.0
+        }
+      ]
+    },
+    {
+      "id": "embedded-double-negative",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “is not true that this is not urgent”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "quoted",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “She wrote \"This is not urgent\"”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "question",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “This is not urgent”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "mixed-question-punctuation",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “This is not urgent”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "comma-question",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “This is not urgent, right”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "nonadjacent",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “The appointment is not an urgent matter”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "extra-qualifier",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “This is not urgent for the group”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "hardbreak-prefix",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “urgent”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "hardbreak-later",
+      "evidence": [
+        {
+          "id": "context:negative_urgency",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Explicit wording: not urgent",
+          "detail": "This complete clause explicitly says it is not urgent: “This is not urgent”. That wording does not verify the sender or establish safety.",
+          "source": "Local wording and context rules",
+          "weight": 0.0
+        },
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “Act now”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "shy-excerpt",
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: “This is not ur­gent; send me your verification code”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        },
+        {
+          "id": "context:negative_urgency",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Explicit wording: not urgent",
+          "detail": "This complete clause explicitly says it is not urgent: “This is not ur­gent”. That wording does not verify the sender or establish safety.",
+          "source": "Local wording and context rules",
+          "weight": 0.0
+        }
+      ]
+    },
+    {
+      "id": "shy-question",
+      "evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “This is not ur­gent”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    }
+  ]
+}

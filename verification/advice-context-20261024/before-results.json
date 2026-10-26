@@ -1,0 +1,336 @@
+{
+  "label": "Constructed read-only context audit, not fraud classification accuracy",
+  "cases_sha256": "bc19f071b85e5b32fb61329c85cc90b5b03e761f2f6079c30b606f9c66965931",
+  "source_sha256": "b64db071b30e6a72023d75d5babeea6413c74842c0463dff0f0c405dce8f41eb",
+  "rows": [
+    {
+      "id": "secrecy-base",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ],
+      "actual_weighted_ids": [
+        "request:secrecy"
+      ],
+      "evidence": [
+        {
+          "id": "request:secrecy",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to keep this secret",
+          "detail": "Matched wording: \u201cDo not tell anyone about this transfer\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": true
+    },
+    {
+      "id": "secrecy-nbsp",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ],
+      "actual_weighted_ids": [],
+      "evidence": [],
+      "expectation_met": false
+    },
+    {
+      "id": "secrecy-double-space",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ],
+      "actual_weighted_ids": [],
+      "evidence": [],
+      "expectation_met": false
+    },
+    {
+      "id": "secrecy-modal",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ],
+      "actual_weighted_ids": [],
+      "evidence": [],
+      "expectation_met": false
+    },
+    {
+      "id": "secrecy-should-modal",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ],
+      "actual_weighted_ids": [],
+      "evidence": [],
+      "expectation_met": false
+    },
+    {
+      "id": "secrecy-positive",
+      "expected_weighted_ids": [],
+      "actual_weighted_ids": [],
+      "evidence": [],
+      "expectation_met": true
+    },
+    {
+      "id": "privacy-never",
+      "expected_weighted_ids": [],
+      "actual_weighted_ids": [
+        "request:secrecy"
+      ],
+      "evidence": [
+        {
+          "id": "request:secrecy",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to keep this secret",
+          "detail": "Matched wording: \u201cNever tell anyone your password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": false
+    },
+    {
+      "id": "privacy-do-not",
+      "expected_weighted_ids": [],
+      "actual_weighted_ids": [
+        "request:secrecy"
+      ],
+      "evidence": [
+        {
+          "id": "request:secrecy",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to keep this secret",
+          "detail": "Matched wording: \u201cDo not tell anyone your verification code\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": false
+    },
+    {
+      "id": "privacy-next-live",
+      "expected_weighted_ids": [
+        "request:code"
+      ],
+      "actual_weighted_ids": [
+        "request:code",
+        "request:secrecy"
+      ],
+      "evidence": [
+        {
+          "id": "request:secrecy",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to keep this secret",
+          "detail": "Matched wording: \u201cNever tell anyone your password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        },
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cSend me your verification code\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": false
+    },
+    {
+      "id": "privacy-direct",
+      "expected_weighted_ids": [
+        "request:code"
+      ],
+      "actual_weighted_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cTell me your password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": true
+    },
+    {
+      "id": "contact-safe-route",
+      "expected_weighted_ids": [],
+      "actual_weighted_ids": [
+        "request:secrecy"
+      ],
+      "evidence": [
+        {
+          "id": "request:secrecy",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to keep this secret",
+          "detail": "Matched wording: \u201cDo not call your bank using the number in this message\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": false
+    },
+    {
+      "id": "contact-ban",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ],
+      "actual_weighted_ids": [
+        "request:secrecy"
+      ],
+      "evidence": [
+        {
+          "id": "request:secrecy",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to keep this secret",
+          "detail": "Matched wording: \u201cDo not call your bank about this payment\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": true
+    },
+    {
+      "id": "refusal-will-not",
+      "expected_weighted_ids": [],
+      "actual_weighted_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cI will not share my password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": false
+    },
+    {
+      "id": "refusal-wont",
+      "expected_weighted_ids": [],
+      "actual_weighted_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cI won't share my password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": false
+    },
+    {
+      "id": "refusal-refuse",
+      "expected_weighted_ids": [],
+      "actual_weighted_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cI refuse to share my password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": false
+    },
+    {
+      "id": "refusal-no-need",
+      "expected_weighted_ids": [],
+      "actual_weighted_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cYou do not need to share your password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": false
+    },
+    {
+      "id": "refusal-direct-control",
+      "expected_weighted_ids": [
+        "request:code"
+      ],
+      "actual_weighted_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cPlease share your password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": true
+    },
+    {
+      "id": "refusal-next-live",
+      "expected_weighted_ids": [
+        "request:remote"
+      ],
+      "actual_weighted_ids": [
+        "request:code",
+        "request:remote"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cI will not share my password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        },
+        {
+          "id": "request:remote",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request for remote access",
+          "detail": "Matched wording: \u201cInstall TeamViewer\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "expectation_met": false
+    },
+    {
+      "id": "known-prohibition-control",
+      "expected_weighted_ids": [],
+      "actual_weighted_ids": [],
+      "evidence": [],
+      "expectation_met": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+✔ known-site comparison uses exact normalized hosts, not brand text or suffixes (2.5745ms)
+✔ invalid known routes never become trusted comparisons (0.3899ms)
+✔ comparison invalidates on edits and erases its known route on Clear and page exit (1.6675ms)
+✔ literal topics are bounded, deduplicated and retain matched evidence (3.3333ms)
+✔ negation advice and completed history do not suggest current requests (0.3898ms)
+✔ suggest is opt-in; apply is a separate explicit topic action (3.0208ms)
+✔ private snippets clear on edits clear examples guide submission and page lifecycle (1.2558ms)
+✔ manual topic changes update apply controls; empty matches preserve uncertainty (0.9581ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 146.9546

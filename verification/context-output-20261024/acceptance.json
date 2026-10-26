@@ -1,0 +1,12 @@
+{
+  "frozen_before_probes":true,
+  "cases":[
+    {"id":"tiny-nonzero","percentageA":"1.00000000000000000000000000000000000000000000000000000000000001","percentageB":"1.00000000000000000000000000000000000000000000000000000000000002","expect":"positive nonzero exact point difference despite equal rounded group rates; rounding caveat visible"},
+    {"id":"positive-near-zero","percentageA":"1","percentageB":"0.000000000001","expect":"B remains positive; relative decline is close to but not exactly -100percent; rendered rounding must not silently imply exact cessation"},
+    {"id":"undefined-relative","percentageA":"0","percentageB":"0","expect":"relative undefined/null, no invented relative zero"},
+    {"id":"publication-order","claim":"Constructed future event","eventDate":"2024-02-29","aDate":"2024-02-28","aQuote":"An announcement","expect":"one calendar day before is supplied chronology only, not contradiction/truth/credibility"},
+    {"id":"quote-change","original":"The site may close.","revised":"The site will close.","expect":"literal changes, not semantic intent/truth inference"},
+    {"id":"privacy","expect":"numbers/claim/quote displayed via text nodes; private fields omitted from fixed exports; Clear/edit/exit invalidates stale outputs"}
+  ],
+  "oracle":"exact decimal rationals; no app edits or source normalization, model/network/private data/browserupload"
+}

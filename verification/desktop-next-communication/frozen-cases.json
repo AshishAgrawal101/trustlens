@@ -1,0 +1,190 @@
+{
+  "purpose": "Independent copied-text formatting audit, not retuning prior CAC cases.",
+  "cases": [
+    {
+      "id": "lf-ordinary",
+      "text": "Please send the meeting notes\nYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "lf-direct",
+      "text": "Read me your verification code.\nThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "lf-independent-live",
+      "text": "Never buy gift cards\nInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "lf-advice",
+      "text": "Do not read anyone your verification code.\nUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "cr-ordinary",
+      "text": "Please send the meeting notes\rYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "cr-direct",
+      "text": "Read me your verification code.\rThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "cr-independent-live",
+      "text": "Never buy gift cards\rInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "cr-advice",
+      "text": "Do not read anyone your verification code.\rUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "crlf-ordinary",
+      "text": "Please send the meeting notes\r\nYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "crlf-direct",
+      "text": "Read me your verification code.\r\nThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "crlf-independent-live",
+      "text": "Never buy gift cards\r\nInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "crlf-advice",
+      "text": "Do not read anyone your verification code.\r\nUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "formfeed-ordinary",
+      "text": "Please send the meeting notes\fYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "formfeed-direct",
+      "text": "Read me your verification code.\fThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "formfeed-independent-live",
+      "text": "Never buy gift cards\fInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "formfeed-advice",
+      "text": "Do not read anyone your verification code.\fUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "nel-ordinary",
+      "text": "Please send the meeting notes\u0085Your verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "nel-direct",
+      "text": "Read me your verification code.\u0085The meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "nel-independent-live",
+      "text": "Never buy gift cards\u0085Install TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "nel-advice",
+      "text": "Do not read anyone your verification code.\u0085Use a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "line-separator-ordinary",
+      "text": "Please send the meeting notes\u2028Your verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "line-separator-direct",
+      "text": "Read me your verification code.\u2028The meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "line-separator-independent-live",
+      "text": "Never buy gift cards\u2028Install TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "line-separator-advice",
+      "text": "Do not read anyone your verification code.\u2028Use a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "paragraph-separator-ordinary",
+      "text": "Please send the meeting notes\u2029Your verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "paragraph-separator-direct",
+      "text": "Read me your verification code.\u2029The meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "paragraph-separator-independent-live",
+      "text": "Never buy gift cards\u2029Install TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "paragraph-separator-advice",
+      "text": "Do not read anyone your verification code.\u2029Use a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "soft-hyphen-direct",
+      "text": "Send me your veri\u00adfication code.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "soft-hyphen-advice",
+      "text": "Do n\u00adot share your password.",
+      "expected_requests": []
+    },
+    {
+      "id": "soft-hyphen-ordinary",
+      "text": "Please share the source co\u00adde.",
+      "expected_requests": []
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "archive_sha256": "04c8998161f19219df4557226995c7ba9637c72ce20f83110741a4348fdac1ef",
+  "controllers": {
+    "static/claim-review.js": "byte-identical to v36",
+    "static/numbers-context.js": "byte-identical to v36",
+    "static/quote-context.js": "byte-identical to v36",
+    "static/source-context.js": "byte-identical to v36",
+    "static/media-context.js": "byte-identical to v36"
+  },
+  "pages": {
+    "static/claim-review.html": {
+      "new_tab": "<a class=\"secondary\" href=\"/static/tools.html\" target=\"_blank\" rel=\"noopener\">Open other tools (new tab)</a>",
+      "header_text_unchanged": true,
+      "footer_text_unchanged": true
+    },
+    "static/numbers-context.html": {
+      "new_tab": "<a class=\"secondary\" href=\"/static/claim-review.html\" target=\"_blank\" rel=\"noopener\">Open Claim &amp; context (new tab)</a>",
+      "header_text_unchanged": true,
+      "footer_text_unchanged": true
+    },
+    "static/quote-context.html": {
+      "new_tab": "<a class=\"secondary\" href=\"/static/claim-review.html\" target=\"_blank\" rel=\"noopener\">Open Claim &amp; context (new tab)</a>",
+      "header_text_unchanged": true,
+      "footer_text_unchanged": true
+    },
+    "static/media-context.html": {
+      "new_tab": "<a class=\"secondary\" href=\"/static/claim-review.html\" target=\"_blank\" rel=\"noopener\">Open Claim &amp; context (new tab)</a>",
+      "header_text_unchanged": true,
+      "footer_text_unchanged": true
+    }
+  },
+  "renderer_only_one_added_label_mapping_after_lineending_normalization": true
+}

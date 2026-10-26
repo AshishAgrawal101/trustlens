@@ -1,0 +1,24 @@
+{
+  "view": "jpeg60",
+  "definition": "Pillow JPEG re-encoding, quality 60; no resizing",
+  "threshold": 0.35,
+  "pipeline_metadata_sha256": "b2edf1191d09e6fd27fe97187f100de9e1f2cb6158495ceb127435b86d0f3860",
+  "no_retuning_after_clean_test": true,
+  "same_670_sources_not_additional_independent_images": true,
+  "metrics": {
+    "n": 670,
+    "accuracy": 0.9044776119402985,
+    "balanced_accuracy": 0.9047084402623324,
+    "auc": 0.9753172226974622,
+    "false_positive_rate": 0.017964071856287425,
+    "ai_recall": 0.8273809523809523,
+    "tn": 328,
+    "fp": 6,
+    "fn": 58,
+    "tp": 278,
+    "accuracy_wilson_95_interval": [
+      0.8798590442384093,
+      0.9244844595711768
+    ]
+  }
+}

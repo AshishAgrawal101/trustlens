@@ -1,0 +1,407 @@
+✔ unchanged 16-branch Fraction oracle and digest are intact (1.258ms)
+✖ reported-percentages frozen acceptance: typical (0.9066ms)
+✖ reported-percentages frozen acceptance: decline (0.1682ms)
+✖ reported-percentages frozen acceptance: swapped (0.1611ms)
+✖ reported-percentages frozen acceptance: both-zero (0.1409ms)
+✖ reported-percentages frozen acceptance: zero-baseline (0.1343ms)
+✖ reported-percentages frozen acceptance: to-zero (0.7496ms)
+✖ reported-percentages frozen acceptance: full-equal (0.1227ms)
+✖ reported-percentages frozen acceptance: decimal-edge (0.1381ms)
+✖ reported-percentages frozen acceptance: near-equal-64 (0.2111ms)
+✖ reported-percentages frozen acceptance: smallest-64-to100 (0.1341ms)
+✖ reported-percentages frozen acceptance: ascii-edge-space (0.1111ms)
+✖ reported-percentages frozen acceptance: equivalent-decimals (0.1376ms)
+✖ reported-percentages frozen acceptance: invalid-syntax (0.1228ms)
+✖ reported-percentages frozen acceptance: invalid-range (0.0966ms)
+✖ reported-percentages frozen acceptance: invalid-length (0.0934ms)
+✖ reported-percentages frozen acceptance: invalid-types (0.1125ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 1
+ℹ fail 16
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 89.6041
+
+✖ failing tests:
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: typical (0.9066ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: decline (0.1682ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: swapped (0.1611ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: both-zero (0.1409ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: zero-baseline (0.1343ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: to-zero (0.7496ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: full-equal (0.1227ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: decimal-edge (0.1381ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: near-equal-64 (0.2111ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: smallest-64-to100 (0.1341ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: ascii-edge-space (0.1111ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: equivalent-decimals (0.1376ms)
+  AssertionError [ERR_ASSERTION]: reported-percentage API must exist
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at compare (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:8:32)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:25:17)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: invalid-syntax (0.1228ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:32:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: invalid-range (0.0966ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:32:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: invalid-length (0.0934ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:32:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\reported_percentages_acceptance.test.cjs:23:2
+✖ reported-percentages frozen acceptance: invalid-types (0.1125ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\reported_percentages_acceptance.test.cjs:32:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

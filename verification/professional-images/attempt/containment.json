@@ -1,0 +1,11 @@
+{
+  "worker_private_and_hard_ws_cap": 1476395008,
+  "supervisor_private_and_hard_ws_cap": 201326592,
+  "nominal_inclusive_cap": 1677721600,
+  "soft_abort": 1879048192,
+  "declared_inclusive_ceiling": 2147483648,
+  "overshoot_headroom": 469762048,
+  "active_process_limit_each": 1,
+  "affinity_mask": 15,
+  "verified": true
+}

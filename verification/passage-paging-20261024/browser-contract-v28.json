@@ -1,0 +1,13 @@
+{
+  "constructed_only": true,
+  "checks": [
+    "Eleven literal matches: explicit Find shows1–5, Next6–10, Next11, Previous6–10, correct original offsets and bounded five windows.",
+    "Next/Previous endpoints and keyboard focus/range announcements remain usable at390/320px without horizontal document overflow.",
+    "Editing Original or passage invalidates all paging; revised-only edit preserves independent finder.",
+    "Clear source preserves quote versions but empties finder; main Clear and lifecycle erase all private fields/results.",
+    "New Find restarts first page, no automatic Find or page content transfer.",
+    "Invisible formatting notice stays accurate through page changes and clears on dependency edits.",
+    "Fresh static Pocket export repeats explicit paging/Clear/reload with its local server stopped."
+  ],
+  "not_claimed": ["source authenticity", "quote meaning or truth", "independent evidence", "physical phone", "human usability study", "image upload", "clipboard/share", "public deployment"]
+}

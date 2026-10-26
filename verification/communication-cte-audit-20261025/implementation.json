@@ -1,0 +1,11 @@
+{
+  "before_sha256": "986c3783874ae760c14042ab204ca9bcbe491826bc77689e50fc7fd4a0c2d1bf",
+  "after_sha256": "004d3a8c3c1c58696bd52765f176e87b846fa6e9ff81dd686008dede5594ba62",
+  "frozen_contract_sha256": "6a9fc593a3a0aa65df922117a23d06c21d872cbacd5ea5ba860d296e06b5f0c0",
+  "source_changes": "body_parts optional incomplete accumulator, supported declared CTE check before yielding or multipart recursion; shared caller passes accumulator",
+  "new_tests": 50,
+  "red": "24 failed,18 passed",
+  "focused_green": "53 passed",
+  "broader_green": "1098 passed,zero skips,38 modules",
+  "nonascii_red": "4failed46passed; ASCII-only trimming repair"
+}

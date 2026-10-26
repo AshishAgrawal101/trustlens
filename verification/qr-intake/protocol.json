@@ -1,0 +1,177 @@
+{
+  "at_utc": "2026-10-23T17:23:23.114221+00:00",
+  "purpose": "Native QR intake robustness only; no scam/origin accuracy or selection",
+  "payloads": [
+    "https://example.org/qr-review-only",
+    "Library meeting: bring your notes."
+  ],
+  "cv2_version": "5.0.0",
+  "cases": [
+    {
+      "id": "clean",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\clean.png",
+      "sha256": "76766544cc38c54889d71c3b2d0cb24a089af416b4354f752a9158e8623593db",
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "transform": "QR encoder default; 10x nearest scale; 60px white padding"
+    },
+    {
+      "id": "rotate90",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\rotate90.png",
+      "sha256": "a725e8d852b386af53535af1d7e470b4c07d32a59bbe734350a013a81f619068",
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "transform": "90 degree rotation"
+    },
+    {
+      "id": "rotate17",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\rotate17.png",
+      "sha256": "2624fc3375baab993bc1337419666c3e3bccdfa6299de48b0688527887342b9a",
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "transform": "17 degree bicubic rotation"
+    },
+    {
+      "id": "halfsize",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\halfsize.png",
+      "sha256": "91805cf0fef542d4edead18c8d060faba25247bf2c22d450cd54837a39ed20d3",
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "transform": "0.5 nearest scale"
+    },
+    {
+      "id": "doublesize",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\doublesize.png",
+      "sha256": "cab5fa86f055c53321a82292098da73fe8edf5e657bc1e3bb75f65fb10dbd6a4",
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "transform": "2.0 nearest scale"
+    },
+    {
+      "id": "blur1",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\blur1.png",
+      "sha256": "68b73045dc6af2c7b30b3df939389d5fb157c586e6aaf8b6d393712d33f79f3a",
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "transform": "Gaussian blur radius1"
+    },
+    {
+      "id": "blur3",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\blur3.png",
+      "sha256": "fb04e765fc5108f9de84743d0d68d01e920f1ecbf8d643e84d1b1e29b36bc077",
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "transform": "Gaussian blur radius3"
+    },
+    {
+      "id": "perspective",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\perspective.png",
+      "sha256": "4d24808bb91b843a0e6f5a67050b0a6360dd9e626a5a96961673849147a07ea2",
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "transform": "Corners(40,10),(w-45,35),(w-1,h-20),(5,h-1); linear warp, white border"
+    },
+    {
+      "id": "jpeg45",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\jpeg45.jpg",
+      "sha256": "eec52231f372526828e7ef5d3f4a5b696fa1f22a7f8fb9e9f1cc172aced6be67",
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "transform": "JPEG quality45"
+    },
+    {
+      "id": "center_occlusion",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\center_occlusion.png",
+      "sha256": "c13165c9e7b3a0d521ffc2062d707ca2cad1f7a4c33faaf124061a8cc570c107",
+      "expected_codes": [
+        "https://example.org/qr-review-only"
+      ],
+      "transform": "White rectangle covering central20% of image width/height"
+    },
+    {
+      "id": "multiple",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\multiple.png",
+      "sha256": "6f61dfdce103c501a87bba04e1d2193f8dd54b3ad2d4562699d17fa2b8d619b1",
+      "expected_codes": [
+        "https://example.org/qr-review-only",
+        "Library meeting: bring your notes."
+      ],
+      "transform": "Two independently encoded QR payloads on white canvas"
+    },
+    {
+      "id": "blank",
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\fixtures\\blank.png",
+      "sha256": "62bab7d2e1d977f4112b662968e5695c31d6705adb180ea80b2c87cad49610ed",
+      "expected_codes": [],
+      "transform": "White blank negative fixture"
+    },
+    {
+      "id": "coco2017:100202",
+      "path": "D:\\TrustLensData\\images\\25\\25049cc76fad218a900e30686ff522ca396f5d61d4931f75d7af3887d3e0ff98.jpg",
+      "sha256": "25049cc76fad218a900e30686ff522ca396f5d61d4931f75d7af3887d3e0ff98",
+      "expected_codes": null,
+      "transform": "Original admitted photograph; incidental QR presence not manually annotated",
+      "role": "validation",
+      "license": "http://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "id": "coco2017:100331",
+      "path": "D:\\TrustLensData\\images\\83\\83924cad55f6b7ad33a222e759357a7f14b154b67790d8ef17b7713db9fc56c6.jpg",
+      "sha256": "83924cad55f6b7ad33a222e759357a7f14b154b67790d8ef17b7713db9fc56c6",
+      "expected_codes": null,
+      "transform": "Original admitted photograph; incidental QR presence not manually annotated",
+      "role": "validation",
+      "license": "http://creativecommons.org/licenses/by/2.0/"
+    }
+  ],
+  "code_pins": [
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\intake.py",
+      "sha256": "1b43981a0b3edbc4367b88d9fd5390d4bfaaa0b166d30442b60205f38e746c78"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\qr.py",
+      "sha256": "d9b4a44c2c371b4ea31bc1caa147744823d09ecdaed4afe6cac875b49593bf6c"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\qr_worker.py",
+      "sha256": "5d9cce287b7641ea6883083b8aa104933719f0a81773e671617a6fb1ae46a1f5"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\requirements-qr.txt",
+      "sha256": "472c3ff4310d918d427372e12e05896ce17ece7c62d945ad619102597e4b19c5"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\qr-intake\\diagnostic.py",
+      "sha256": "8f76d7bb417df1952edaa0eec11af75ce98fc37db0e50366060abb711d88c534"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\venv\\Lib\\site-packages\\cv2\\cv2.pyd",
+      "sha256": "eefedf6ee006a84bbc7d3df5ec66046429b8c95dbfd5f8f8f98c5772b91d6d48"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\venv\\Lib\\site-packages\\opencv_python_headless-5.0.0.93.dist-info\\METADATA",
+      "sha256": "5e8fb8a066deaddf9337c649463dd7657920f64567ce23ded4b82b3a23ae1bae"
+    }
+  ],
+  "limits": {
+    "timeout_seconds_each": 15,
+    "native_threads": 1,
+    "longest_side": 3000,
+    "codes": 16,
+    "text_chars": 30000,
+    "GPU": false,
+    "network": false,
+    "serial": true
+  },
+  "selection": "Transforms frozen before native results; retain failures, do not tune on them"
+}

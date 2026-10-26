@@ -1,0 +1,60 @@
+{
+  "transparent": {
+    "bytes": 972,
+    "dimensions": [
+      264,
+      264
+    ],
+    "decoded_extrema": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "qr": {
+      "text": "TRUSTLENS SAFE LOCAL TEST",
+      "codes": [
+        "TRUSTLENS SAFE LOCAL TEST"
+      ],
+      "review_required": true,
+      "notice": "Transparent images are read against white. Review each decoded value before checking it. QR decoding can miss codes. No address was opened and this does not verify who created the code."
+    }
+  },
+  "white_reference": {
+    "bytes": 1073,
+    "dimensions": [
+      264,
+      264
+    ],
+    "decoded_extrema": [
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ]
+    ],
+    "qr": {
+      "text": "TRUSTLENS SAFE LOCAL TEST",
+      "codes": [
+        "TRUSTLENS SAFE LOCAL TEST"
+      ],
+      "review_required": true,
+      "notice": "Transparent images are read against white. Review each decoded value before checking it. QR decoding can miss codes. No address was opened and this does not verify who created the code."
+    }
+  }
+}

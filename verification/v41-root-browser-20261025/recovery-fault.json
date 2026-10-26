@@ -1,0 +1,27 @@
+{
+  "injectedEmpty200": {
+    "open": true,
+    "options": 0,
+    "planHidden": true,
+    "status": "The checklist could not load. Use the FTC guide below, or reopen this panel to retry."
+  },
+  "correctedReopen": {
+    "options": 4,
+    "planHidden": true,
+    "status": ""
+  },
+  "selection": {
+    "focus": "recovery-heading",
+    "heading": "Contact the payment provider promptly",
+    "steps": 2,
+    "visible": true
+  },
+  "cachedReopen": {
+    "options": 4,
+    "planHidden": true,
+    "status": ""
+  },
+  "realBrowser": true,
+  "isolatedFixtureServer": true,
+  "productionMalformedResponseClaim": false
+}

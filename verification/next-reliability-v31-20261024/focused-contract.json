@@ -1,0 +1,1 @@
+{"checks":["Current case data exact versus immutable v30; focused queue uses two existing cases in same order","Full desktop10/Pocket12 flows retained","Restart/retry labels match actual selected queue","Old callbacks inert after queue change/close; correct opener focus","No new inputs,persistence,network,exports; noJS launchers disabled"]}

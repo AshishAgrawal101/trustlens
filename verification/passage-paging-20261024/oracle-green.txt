@@ -1,0 +1,91 @@
+✔ independent frozen UTF16 oracle has immutable lineage and unique rows (3.7848ms)
+✔ independent exact page oracle zero (0.9199ms)
+✔ independent exact page oracle one (0.1456ms)
+✔ independent exact page oracle 5-matches-page-0 (0.1664ms)
+✔ independent exact page oracle 6-matches-page-0 (0.2064ms)
+✔ independent exact page oracle 6-matches-page-1 (0.1361ms)
+✔ independent exact page oracle 10-matches-page-0 (0.1733ms)
+✔ independent exact page oracle 10-matches-page-1 (0.1332ms)
+✔ independent exact page oracle 11-matches-page-0 (0.1409ms)
+✔ independent exact page oracle 11-matches-page-1 (0.2531ms)
+✔ independent exact page oracle 11-matches-page-2 (0.1109ms)
+✔ independent exact page oracle nonoverlap (0.1152ms)
+✔ independent exact page oracle case-sensitive (0.0734ms)
+✔ independent exact page oracle whitespace-sensitive (0.0867ms)
+✔ independent exact page oracle markup-literal-page-1 (0.0949ms)
+✔ independent exact page oracle unicode-canonical-not-normalized (0.074ms)
+✔ independent exact page oracle astral-utf16-offsets (0.0597ms)
+✔ independent exact page oracle surrogate-context-page-1 (0.1421ms)
+✔ independent exact page oracle maximum-first (1.4757ms)
+✔ independent exact page oracle maximum-last (0.5528ms)
+✔ all invalid and nonexistent pages reject one fixed private error (0.9121ms)
+✔ old twoargument outputs remain exactly equal to actual v27 module (4.6978ms)
+✔ maximum lastpage calculation stays bounded without output inflation (2.1741ms)
+✔ frozen source locator: ordinary (1.6264ms)
+✔ frozen source locator: repeat-capped (0.1137ms)
+✔ frozen source locator: overlap-not-counted (0.0942ms)
+✔ frozen source locator: case-sensitive (0.1209ms)
+✔ frozen source locator: whitespace-sensitive (0.1146ms)
+✔ frozen source locator: punctuation-sensitive (0.0927ms)
+✔ frozen source locator: literal-ellipsis (0.1147ms)
+✔ frozen source locator: literal-html (0.0883ms)
+✔ frozen source locator: unicode-offsets (0.107ms)
+✔ frozen source locator: at-source-edges (0.1615ms)
+✔ frozen source locator: before-surrogate-boundary (0.0913ms)
+✔ frozen source locator: after-surrogate-boundary (0.1331ms)
+✔ frozen lineage, complete rows and no network (0.1537ms)
+✔ strict string and nonblank validation uses private-input-free errors (0.8307ms)
+✔ UTF16 quote/source limits inclusive, with either side separately enforced (0.402ms)
+✔ leading/trailing whitespace is preserved rather than trimmed for matching (0.1483ms)
+✔ all occurrences counted after first five, with exact truncation boundary (2.2411ms)
+✔ context limits extend only enough to retain boundary surrogate pairs (0.2336ms)
+✔ source finding is explicit, literal text including markup and never sends or exports input (7.5355ms)
+✔ editing either dependency removes old matches; revised wording is independent of source finding (5.3545ms)
+✔ source-only Clear preserves supplied versions while main Clear erases every private field/result (1.8397ms)
+✔ constructed example replacement clears old source text and its result (1.5937ms)
+✔ exit and persisted Back cannot restore long passage or source match context (4.3911ms)
+✔ errors cannot leave old or partial output, echo inputs or destroy drafts (4.9203ms)
+✖ no-match remains unresolved and long repetitive passage renders only five windows with the full count (4.3134ms)
+✔ cropped context windows visibly disclose omissions at their edges (1.3055ms)
+✔ two-argument results and default page remain exactly compatible with frozen outputs (4.0965ms)
+✔ all pages retain exact offsets and literal windows with at most five matches (0.6327ms)
+✔ later-page surrogate boundaries and the maximum final page preserve existing window limits (1.6227ms)
+✔ page validation is bounded integer-only and missing pages reject with input-free errors (0.8814ms)
+✔ explicit navigation shows true ranges and ordinals with focus and disabled ends, retaining authenticity caveats (8.595ms)
+✔ every invalidation erases paging and formatting while next Find starts at first match (16.9194ms)
+✔ finite controls are counted/named without returning original text (1.8084ms)
+✔ legitimate emoji and shaping joiners get factual counts, never normalization (0.9465ms)
+✔ bounded strict UTF16 input with fixed errors (4.7956ms)
+✔ only explicit successful submissions show fixed presence details (2.026ms)
+✔ source notice scans all source text, including controls outside returned windows (1.2136ms)
+✔ absence hides notice and never produces reassurance (0.9724ms)
+✔ input, all clears/examples and exit reset correct notices (7.1034ms)
+✔ both failed and native-invalid submissions clear a previous notice (2.9732ms)
+✔ root markup provides hidden polite status regions and correct controller order (1.7726ms)
+ℹ tests 64
+ℹ suites 0
+ℹ pass 63
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 145.4113
+
+✖ failing tests:
+
+test at tests\source_controller.test.cjs:36:1
+✖ no-match remains unresolved and long repetitive passage renders only five windows with the full count (4.3134ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Showing the first 5/. Input:
+  
+  '30000 non-overlapping exact matches found in the supplied passage. A wording match does not authenticate the source or establish meaning or truth.Match 1 of 30000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…Match 2 of 30000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…Match 3 of 30000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…Match 4 of 30000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…Match 5 of 30000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\source_controller.test.cjs:37:365)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '30000 non-overlapping exact matches found in the supplied passage. A wording match does not authenticate the source or establish meaning or truth.Match 1 of 30000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…Match 2 of 30000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…Match 3 of 30000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…Match 4 of 30000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…Match 5 of 30000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…',
+    expected: /Showing the first 5/,
+    operator: 'match',
+    diff: 'simple'
+  }

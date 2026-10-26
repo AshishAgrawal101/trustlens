@@ -1,0 +1,81 @@
+{
+  "label": "Published educational excerpts; not a representative benchmark",
+  "manifest_sha256": "1a20943215977476f11c71df256abd210ceb98ea68ce78828226e82256f9da17",
+  "source_sha256": "b64db071b30e6a72023d75d5babeea6413c74842c0463dff0f0c405dce8f41eb",
+  "model_ran": false,
+  "rows": [
+    {
+      "id": "ftc-loan-reply",
+      "hand_label": "warning",
+      "expected_warning": true,
+      "actual_warning": false,
+      "expectation_met": false,
+      "elapsed_ms": 4.956299904733896,
+      "request_evidence": []
+    },
+    {
+      "id": "ftc-loan-fragment",
+      "hand_label": "ambiguous",
+      "expected_warning": null,
+      "actual_warning": false,
+      "expectation_met": null,
+      "elapsed_ms": 0.031800009310245514,
+      "request_evidence": []
+    },
+    {
+      "id": "microsoft-security-subject",
+      "hand_label": "warning",
+      "expected_warning": true,
+      "actual_warning": false,
+      "expectation_met": false,
+      "elapsed_ms": 0.04279997665435076,
+      "request_evidence": []
+    },
+    {
+      "id": "microsoft-invoice-subject",
+      "hand_label": "warning",
+      "expected_warning": true,
+      "actual_warning": true,
+      "expectation_met": true,
+      "elapsed_ms": 0.8916000369936228,
+      "request_evidence": [
+        {
+          "id": "request:urgency",
+          "evidence_class": "inferred",
+          "severity": "medium",
+          "title": "Pressure to act quickly",
+          "detail": "Matched wording: “e #38491 Attached—Payment Due Immediately”. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.35
+        }
+      ]
+    },
+    {
+      "id": "ftc-gift-advice",
+      "hand_label": "advice",
+      "expected_warning": false,
+      "actual_warning": false,
+      "expectation_met": true,
+      "elapsed_ms": 0.6758999079465866,
+      "request_evidence": []
+    },
+    {
+      "id": "uspis-delivery-advice",
+      "hand_label": "advice",
+      "expected_warning": false,
+      "actual_warning": false,
+      "expectation_met": true,
+      "elapsed_ms": 0.07509998977184296,
+      "request_evidence": []
+    },
+    {
+      "id": "microsoft-support-policy",
+      "hand_label": "advice",
+      "expected_warning": false,
+      "actual_warning": false,
+      "expectation_met": true,
+      "elapsed_ms": 0.054200063459575176,
+      "request_evidence": []
+    }
+  ]
+}

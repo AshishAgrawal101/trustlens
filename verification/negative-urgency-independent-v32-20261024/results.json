@@ -1,0 +1,140 @@
+[
+  {
+    "text": "This is not urgent.",
+    "current": [
+      {
+        "id": "context:negative_urgency",
+        "evidence_class": "unknown",
+        "severity": "info",
+        "title": "Explicit wording: not urgent",
+        "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not urgent\u201d. That wording does not verify the sender or establish safety.",
+        "source": "Local wording and context rules",
+        "weight": 0.0
+      }
+    ],
+    "changed": true
+  },
+  {
+    "text": "This is not urgent?",
+    "current": [
+      {
+        "id": "request:urgency",
+        "evidence_class": "inferred",
+        "severity": "medium",
+        "title": "Pressure to act quickly",
+        "detail": "Matched wording: \u201cThis is not urgent\u201d. Context may change its meaning.",
+        "source": "Local request-pattern rules",
+        "weight": 0.35
+      }
+    ],
+    "changed": false
+  },
+  {
+    "text": "He said: This is not urgent.",
+    "current": [
+      {
+        "id": "request:urgency",
+        "evidence_class": "inferred",
+        "severity": "medium",
+        "title": "Pressure to act quickly",
+        "detail": "Matched wording: \u201cHe said: This is not urgent\u201d. Context may change its meaning.",
+        "source": "Local request-pattern rules",
+        "weight": 0.35
+      }
+    ],
+    "changed": false
+  },
+  {
+    "text": "This is not not urgent.",
+    "current": [
+      {
+        "id": "request:urgency",
+        "evidence_class": "inferred",
+        "severity": "medium",
+        "title": "Pressure to act quickly",
+        "detail": "Matched wording: \u201cThis is not not urgent\u201d. Context may change its meaning.",
+        "source": "Local request-pattern rules",
+        "weight": 0.35
+      }
+    ],
+    "changed": false
+  },
+  {
+    "text": "This is not urgent. Act now and send me your verification code.",
+    "current": [
+      {
+        "id": "context:negative_urgency",
+        "evidence_class": "unknown",
+        "severity": "info",
+        "title": "Explicit wording: not urgent",
+        "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not urgent\u201d. That wording does not verify the sender or establish safety.",
+        "source": "Local wording and context rules",
+        "weight": 0.0
+      },
+      {
+        "id": "request:code",
+        "evidence_class": "inferred",
+        "severity": "high",
+        "title": "Request to share a security code",
+        "detail": "Matched wording: \u201cAct now and send me your verification code\u201d. Context may change its meaning.",
+        "source": "Local request-pattern rules",
+        "weight": 0.8
+      },
+      {
+        "id": "request:urgency",
+        "evidence_class": "inferred",
+        "severity": "medium",
+        "title": "Pressure to act quickly",
+        "detail": "Matched wording: \u201cAct now and send me your verification code\u201d. Context may change its meaning.",
+        "source": "Local request-pattern rules",
+        "weight": 0.35
+      }
+    ],
+    "changed": true
+  },
+  {
+    "text": "This is not\nurgent.",
+    "current": [
+      {
+        "id": "request:urgency",
+        "evidence_class": "inferred",
+        "severity": "medium",
+        "title": "Pressure to act quickly",
+        "detail": "Matched wording: \u201curgent\u201d. Context may change its meaning.",
+        "source": "Local request-pattern rules",
+        "weight": 0.35
+      }
+    ],
+    "changed": false
+  },
+  {
+    "text": "This is not\u00a0urgent.",
+    "current": [
+      {
+        "id": "context:negative_urgency",
+        "evidence_class": "unknown",
+        "severity": "info",
+        "title": "Explicit wording: not urgent",
+        "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not\u00a0urgent\u201d. That wording does not verify the sender or establish safety.",
+        "source": "Local wording and context rules",
+        "weight": 0.0
+      }
+    ],
+    "changed": true
+  },
+  {
+    "text": "This is not ur\u00adgent.",
+    "current": [
+      {
+        "id": "context:negative_urgency",
+        "evidence_class": "unknown",
+        "severity": "info",
+        "title": "Explicit wording: not urgent",
+        "detail": "This complete clause explicitly says it is not urgent: \u201cThis is not ur\u00adgent\u201d. That wording does not verify the sender or establish safety.",
+        "source": "Local wording and context rules",
+        "weight": 0.0
+      }
+    ],
+    "changed": true
+  }
+]

@@ -1,0 +1,1 @@
+{"cases":["pure function prefix unchanged from v28","swap active raw pairs only and preserve inactive drafts","incomplete native badInput preserves every field and does not compare","double swap restores exact raw strings including zero and spaces","swap invalidates old facts without auto calculation; reset and hidden inactive state safe"]}

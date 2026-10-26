@@ -1,0 +1,17 @@
+{
+  "submission/DEMO.md": {
+    "beforeSHA256": "523d1a06da0c6ccb79a75162c424b5911b8da067b197751533518430bd2123c7",
+    "afterSHA256": "56406c336e1e2e250f183fb52c6c6e28e85f96e46c8e5f10bf113979291e44b4",
+    "priorBodyExactAfterRemovingOnlyAuthorizedChanges": true
+  },
+  "submission/CAC-DEMO-3MIN.md": {
+    "beforeSHA256": "e7052430ada5be029fd1498d2a2429b7db3744b367689f0d1bb40657c1c86e62",
+    "afterSHA256": "80030fc841fdc42c15dd00ec8ee368236334fdc7e752b276043ea01d83dbce6c",
+    "priorBodyExactAfterRemovingOnlyAuthorizedChanges": true
+  },
+  "submission/CAC-2026.md": {
+    "beforeSHA256": "ccd0e27669a1f10a3926b21ff4431f7b91377657899d594a9e9831293e0a0ee2",
+    "afterSHA256": "bb7759ec887c48c13ee4a4f8ddf49e3d152e126b5ea336a5a36e180b0ac91d3f",
+    "priorBodyExactAfterRemovingOnlyAuthorizedChanges": true
+  }
+}

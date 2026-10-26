@@ -1,0 +1,5 @@
+# First four-hour continuation live checkpoint
+
+Only known dev8766parent75364/child48596 stopped; newparent45968 serves refreshedsource. Original8765child48848 remainsuntouched. ActualEdge root1793492838 at390x844 submittedconstructedpayment+overpayment+code+invalidportURL. CHECKINCOMPLETE shown; summaryexplicit1failedparse plusPause; allthree payment/overpayment/credential actions retained followedbyknownroute andunreadable-addressguidance. This verifiesintegratedfrontend/backend, notfraudaccuracy. Screenshotcombined-coverage-live-390.png. No share/copy/download/fileupload invoked. Clear removedconstructedinput/result; normalviewportrestored.
+
+Rootindependentlyreran8intaketransportregressions and10revocation/malformedUI regressions; allpass. AgentfullNode435passes; backendnewmalformed26tests/combined311targetedpasses; guidance16tests/combined256targetedpasses. FullPythonwave/extractedpackaging remainsfuturestablecheckpoint, notclaimedhere. Newemailprotocolrelative designonly; noimplementationyet. Four-hourgoalactive (start05:15:34UTC, minimum09:15:34UTC).

@@ -1,0 +1,958 @@
+{
+  "label": "Frozen illustrative metadata semantic acceptance; no image file execution or factual accuracy",
+  "contract_sha256": "fbb7e5aa404186c5fa39a5bb50a7c99bc2a72591f413af67b71634ebe84a9877",
+  "source_sha256": "8c497436de51c4a6d364d48d3c4cc0c8f91871bf1d59da18c24154eeb758d52f",
+  "adapter_defaults": {
+    "bytes": 1024,
+    "capture_time": null,
+    "software": null,
+    "camera_make": null,
+    "camera_model": null,
+    "gps_present": false,
+    "notice": "Local fixture metadata; not authenticated.",
+    "orientation": "6 swaps display dimensions; otherwise encoded dimensions"
+  },
+  "network_calls": 0,
+  "rows": [
+    {
+      "id": "no-exif",
+      "adapter_input": {
+        "format": "PNG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "PNG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "800 × 600 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded software label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "GPS-related tag",
+            "Not reported; this does not establish location privacy."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "camera-present",
+      "adapter_input": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": "Example Camera",
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate",
+        "camera:unverified"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "JPEG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "800 × 600 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded software label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Example Camera"
+          ],
+          [
+            "GPS-related tag",
+            "Not reported; this does not establish location privacy."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          },
+          {
+            "id": "camera:unverified",
+            "text": "A camera label does not establish that this is a camera original or that the depicted scene is authentic."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "camera-absent",
+      "adapter_input": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "JPEG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "800 × 600 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded software label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "GPS-related tag",
+            "Not reported; this does not establish location privacy."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "editor-software",
+      "adapter_input": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": null,
+        "software": "Example Image Editor",
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate",
+        "software:unverified"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "JPEG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "800 × 600 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded software label · unverified",
+            "Example Image Editor"
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "GPS-related tag",
+            "Not reported; this does not establish location privacy."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          },
+          {
+            "id": "software:unverified",
+            "text": "An editable software label does not establish which tool was used or whether an image was generated by AI."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "capture-software",
+      "adapter_input": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": null,
+        "software": "Example Camera Firmware",
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate",
+        "software:unverified"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "JPEG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "800 × 600 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded software label · unverified",
+            "Example Camera Firmware"
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "GPS-related tag",
+            "Not reported; this does not establish location privacy."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          },
+          {
+            "id": "software:unverified",
+            "text": "An editable software label does not establish which tool was used or whether an image was generated by AI."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "date-past",
+      "adapter_input": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": "2020:06:15 12:30:00",
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "JPEG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "800 × 600 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "2020:06:15 12:30:00"
+          ],
+          [
+            "Embedded software label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "GPS-related tag",
+            "Not reported; this does not establish location privacy."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "date-future",
+      "adapter_input": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": "2027:06:15 12:30:00",
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate",
+        "date:future"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "JPEG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "800 × 600 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "2027:06:15 12:30:00"
+          ],
+          [
+            "Embedded software label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "GPS-related tag",
+            "Not reported; this does not establish location privacy."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          },
+          {
+            "id": "date:future",
+            "text": "The embedded date is later than this computer’s date. Check camera-clock, timezone or editing context; this does not disprove the caption."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "date-invalid",
+      "adapter_input": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": "2026:02:30 12:30:00",
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "fixed_invalid_clock_error",
+      "required_question_ids": [],
+      "result": null,
+      "error": "Invalid embedded clock value.",
+      "failures": []
+    },
+    {
+      "id": "gps-present",
+      "adapter_input": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": true,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate",
+        "gps:privacy"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "JPEG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "800 × 600 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded software label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "GPS-related tag",
+            "Present; coordinates were not inspected or returned."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          },
+          {
+            "id": "gps:privacy",
+            "text": "A GPS-related tag was present, but no coordinates or location were inspected. Review the original file’s privacy before sharing it; no scene location is established."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "gps-absent",
+      "adapter_input": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "JPEG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "800 × 600 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded software label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "GPS-related tag",
+            "Not reported; this does not establish location privacy."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "orientation",
+      "adapter_input": {
+        "format": "JPEG",
+        "width": 800,
+        "height": 600,
+        "display_width": 600,
+        "display_height": 800,
+        "bytes": 1024,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "JPEG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "600 × 800 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded software label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "GPS-related tag",
+            "Not reported; this does not establish location privacy."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "caption-not-analyzed",
+      "adapter_input": {
+        "format": "PNG",
+        "width": 800,
+        "height": 600,
+        "display_width": 800,
+        "display_height": 600,
+        "bytes": 1024,
+        "capture_time": null,
+        "software": null,
+        "camera_make": null,
+        "camera_model": null,
+        "gps_present": false,
+        "notice": "Local fixture metadata; not authenticated."
+      },
+      "caption_omitted": true,
+      "expected_outcome": "review",
+      "required_question_ids": [
+        "metadata:mutable",
+        "story:context",
+        "dates:separate",
+        "origin:separate"
+      ],
+      "result": {
+        "facts": [
+          [
+            "File format",
+            "PNG"
+          ],
+          [
+            "Encoded dimensions",
+            "800 × 600 pixels"
+          ],
+          [
+            "Display dimensions",
+            "800 × 600 pixels (orientation applied)"
+          ],
+          [
+            "File size",
+            "1,024 bytes"
+          ],
+          [
+            "Embedded capture clock · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded software label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "Embedded camera label · unverified",
+            "Not reported; missing or unreadable metadata proves neither origin nor authenticity."
+          ],
+          [
+            "GPS-related tag",
+            "Not reported; this does not establish location privacy."
+          ]
+        ],
+        "questions": [
+          {
+            "id": "metadata:mutable",
+            "text": "Metadata can be edited, removed or copied. None of these fields authenticates the file, its origin or its caption."
+          },
+          {
+            "id": "story:context",
+            "text": "Find the earliest original account and full caption. Check the claimed place, event and surrounding context independently."
+          },
+          {
+            "id": "dates:separate",
+            "text": "Compare capture-clock, publication and event dates separately. The embedded clock and its timezone have not been verified."
+          },
+          {
+            "id": "origin:separate",
+            "text": "No origin model, signed-provenance verification, reverse image search or location lookup ran in this inspection. Check each question separately."
+          }
+        ]
+      },
+      "error": null,
+      "failures": []
+    }
+  ],
+  "failures": 0
+}

@@ -1,0 +1,27 @@
+✔ claim workspace exposes unique labelled constrained fields and initially hidden accessible output (1.3316ms)
+✔ page states no verdict or source verification and export omission, with local script only (0.315ms)
+✔ print cannot expose private workspace and sizing supports narrow layouts (0.1657ms)
+✔ script failure cannot submit named private fields through native GET fallback (0.2782ms)
+✔ media page exposes required controller hooks, named labels and no native private GET fields (1.6387ms)
+✔ original preview is single full aspect with disclosure and keyboard scroll region (0.3587ms)
+✔ privacy and interpretation limits remain visible, controller is external and print hides private content (0.3423ms)
+✔ numeric fields are neutral, labelled, integer-bounded, required and unnamed (1.3301ms)
+✔ controller hooks preserve disabled no-script fallback and accessible errors/results (0.3188ms)
+✔ limits state descriptive-only purpose and private input never needs remote resources (0.2249ms)
+✔ two labelled unnamed bounded versions and disabled controller safeguard (1.366ms)
+✔ result and error are accessible and every requested hook exists (0.2985ms)
+✔ literal limits and private print rule do not imply factual verification (0.245ms)
+✔ method choice is labelled unnamed disabled and defaults explicitly to counts inside the form (1.1697ms)
+✔ inactive percentage controls are disabled in static markup and describe reported rates without denominators (0.5655ms)
+✔ count contracts result-first caveat and private fallback remain while select is mobile sized (0.5518ms)
+✔ optional finder is separate from comparison and keeps no-script private-form safeguards (1.0984ms)
+✔ shared original hint, exact-match limits and scoped clear behavior are explicit (0.2443ms)
+✔ context snippet styling preserves whitespace and contrast-labelled highlights without source links (0.2342ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 130.1018

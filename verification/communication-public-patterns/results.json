@@ -1,0 +1,599 @@
+{
+  "contract_sha256": "6d2457f412ff2f44631b0f879e646d6a386320633ddf69c9e27e4f498d80fff5",
+  "source_sha256": {
+    "app/analyzers/text.py": "21ed81205df71da08f22eacab23eb7eaa7b5fb3a88c81fdd0bb92bb0ef7916bc",
+    "app/analyzers/email.py": "7b6be6eab3c96b63e69c03fcc5cace3076ff15bd6f67de9a1abceae7a3c5789a",
+    "app/analyzers/url.py": "6002957d3e98922b2d8ae18c07358580e4c635454eefb98b7a2d2de1ed065ac1",
+    "app/guidance.py": "56c2973effa092662cd0805dcf347de1dea048f91f2e3bdfd54033db21f911fa",
+    "app/models.py": "6a33a9420b7d515d5da3631221739dcc2836208cd9509dc696e0c3b35da0429a"
+  },
+  "source_unchanged_during_run": true,
+  "import_ms": 353.2401999691501,
+  "timing_scope": "One sequential in-process call per constructed case, including add_guidance, excluding module import; no HTTP/browser latency. Not a performance benchmark.",
+  "median_ms": 0.12245000107213855,
+  "max_ms": 10.77150006312877,
+  "rows": [
+    {
+      "id": "delivery-fee",
+      "mode": "text",
+      "expected_warning": true,
+      "warning": false,
+      "expectation_met": false,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "url:host:0"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 10.77150006312877
+    },
+    {
+      "id": "delivery-details",
+      "mode": "email",
+      "expected_warning": true,
+      "warning": false,
+      "expectation_met": false,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "url:host:0"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.4912000149488449
+    },
+    {
+      "id": "toll-urgent",
+      "mode": "text",
+      "expected_warning": true,
+      "warning": true,
+      "expectation_met": true,
+      "risk_level": "guarded",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence_ids": [
+        "request:urgency",
+        "url:host:0"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.4653000505641103
+    },
+    {
+      "id": "toll-balance",
+      "mode": "email",
+      "expected_warning": true,
+      "warning": true,
+      "expectation_met": true,
+      "risk_level": "guarded",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence_ids": [
+        "request:balance",
+        "url:host:0"
+      ],
+      "actions": [
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.3369000041857362
+    },
+    {
+      "id": "bank-protection",
+      "mode": "call",
+      "expected_warning": true,
+      "warning": true,
+      "expectation_met": true,
+      "risk_level": "high",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:payment"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.12770004104822874
+    },
+    {
+      "id": "bank-code",
+      "mode": "call",
+      "expected_warning": true,
+      "warning": true,
+      "expectation_met": true,
+      "risk_level": "high",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:code"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Keep security codes and passwords private",
+          "detail": "Open your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.12630003038793802
+    },
+    {
+      "id": "job-onward-check",
+      "mode": "email",
+      "expected_warning": true,
+      "warning": false,
+      "expectation_met": false,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.2204999327659607
+    },
+    {
+      "id": "job-entry-fee",
+      "mode": "text",
+      "expected_warning": true,
+      "warning": false,
+      "expectation_met": false,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.11479994282126427
+    },
+    {
+      "id": "task-deposit",
+      "mode": "text",
+      "expected_warning": true,
+      "warning": true,
+      "expectation_met": true,
+      "risk_level": "high",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:payment"
+      ],
+      "actions": [
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.11719996109604836
+    },
+    {
+      "id": "task-topup",
+      "mode": "email",
+      "expected_warning": true,
+      "warning": false,
+      "expectation_met": false,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.2204999327659607
+    },
+    {
+      "id": "gift-demand",
+      "mode": "call",
+      "expected_warning": true,
+      "warning": true,
+      "expectation_met": true,
+      "risk_level": "high",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:payment"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.11859997175633907
+    },
+    {
+      "id": "gift-number-only",
+      "mode": "text",
+      "expected_warning": true,
+      "warning": false,
+      "expectation_met": false,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.11769996490329504
+    },
+    {
+      "id": "family-wire",
+      "mode": "call",
+      "expected_warning": true,
+      "warning": true,
+      "expectation_met": true,
+      "risk_level": "high",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:payment",
+        "request:secrecy",
+        "request:urgency"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Bring in someone you trust",
+          "detail": "Pause the conversation and talk privately with a trusted person. A request to hide a payment or account problem deserves independent checking."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.14030002057552338
+    },
+    {
+      "id": "family-courier",
+      "mode": "call",
+      "expected_warning": true,
+      "warning": true,
+      "expectation_met": true,
+      "risk_level": "high",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:secrecy"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Bring in someone you trust",
+          "detail": "Pause the conversation and talk privately with a trusted person. A request to hide a payment or account problem deserves independent checking."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.11669995728880167
+    },
+    {
+      "id": "control-code-notification",
+      "mode": "text",
+      "expected_warning": false,
+      "warning": false,
+      "expectation_met": true,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.09549991227686405
+    },
+    {
+      "id": "control-bank-advice",
+      "mode": "email",
+      "expected_warning": false,
+      "warning": false,
+      "expectation_met": true,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.24850002955645323
+    },
+    {
+      "id": "control-toll-check",
+      "mode": "text",
+      "expected_warning": false,
+      "warning": false,
+      "expectation_met": true,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.09190000128000975
+    },
+    {
+      "id": "control-delivery-tracking",
+      "mode": "email",
+      "expected_warning": false,
+      "warning": false,
+      "expectation_met": true,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.1873000292107463
+    },
+    {
+      "id": "control-task-advice",
+      "mode": "text",
+      "expected_warning": false,
+      "warning": false,
+      "expectation_met": true,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.10000006295740604
+    },
+    {
+      "id": "control-gift-birthday",
+      "mode": "text",
+      "expected_warning": false,
+      "warning": true,
+      "expectation_met": false,
+      "risk_level": "high",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:payment"
+      ],
+      "actions": [
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.08370005525648594
+    },
+    {
+      "id": "control-family-check",
+      "mode": "call",
+      "expected_warning": false,
+      "warning": false,
+      "expectation_met": true,
+      "risk_level": "low",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "actions": [
+        {
+          "title": "End the call and call back independently",
+          "detail": "Hang up, then use a phone number you already know. Caller ID and a familiar-sounding voice do not establish identity."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Take time to check the request",
+          "detail": "If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety."
+        }
+      ],
+      "latency_ms": 0.09020010475069284
+    },
+    {
+      "id": "legitimate-sensitive-lunch",
+      "mode": "text",
+      "expected_warning": true,
+      "warning": true,
+      "expectation_met": true,
+      "risk_level": "high",
+      "risk_index": null,
+      "confidence": "low",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:payment"
+      ],
+      "actions": [
+        {
+          "title": "Pause the payment",
+          "detail": "Pause before paying. Confirm the amount, reason and payment instructions with the person or organization through a route you already trust. Do not use contact details supplied in the message."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "latency_ms": 0.1047999830916524
+    }
+  ]
+}

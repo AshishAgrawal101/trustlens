@@ -1,0 +1,7 @@
+# Cross-check matrix implementation
+
+Files: static/app.js, static/index.template.html, static/styles.css, tests/frontend_cross_checks.test.cjs. Backend, pipeline, model weights, summaries/exports and archives unchanged.
+
+Frozen semantics: image-only matrix; credential statuses are separate signature/history results; CLIP and Community rows require actual exact branch evidence IDs; combined score is explicitly derived when both branches are reported, otherwise component breakdown is unknown. No numeric score parsing or new verdict. Only explicit image:disagreement says components disagree. Its absence explicitly does not establish agreement. model_ran false states no detector result, without inventing failure/skip reason. Fixed text through textContent only, no private evidence details interpolated.
+
+Five new controller tests cover actual branches versus legacy model-only output, all six credential statuses, signed generated/edited declarations, explicit disagreement, private-detail exclusion, original summary/print behavior, communication hiding, edit/mode/Clear/lifecycle resets and late dismissed responses. Combined targeted run: 33 pass, zero failures/skips (frontend_cross_checks, frontend_scope, frontend_state, frontend_response). First run had an overly broad negative test regex matching the phrase 'No component-disagreement finding'; assertion was narrowed to actual affirmative disagreement wording, then passed. Browser layout/screen-reader behavior and actual model inference were not tested here. Root owns browser/full integration.

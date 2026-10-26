@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "status": "frozen_before_module_exists_and_predictions",
+  "purpose": "Exact supplied-text location acceptance, not source authenticity or semantic evaluation.",
+  "limits": {
+    "quote_utf16": 4000,
+    "source_utf16": 30000,
+    "returned_matches": 5,
+    "context_utf16_each_side": 160,
+    "surrogate_adjustment": "May extend context by one UTF16 unit to avoid cutting a pair."
+  },
+  "invariants": [
+    "Exact case/whitespace/punctuation matching; no normalization or ellipsis interpretation.",
+    "Nonoverlapping occurrences: advance indexOf search by quote.length after each match.",
+    "Count all occurrences but return first five; truncated exactly total>5.",
+    "Offsets are actual JavaScript UTF16 start/end; text equals source.slice(start,end) and unchanged quote.",
+    "before/after are exact adjacent source slices, up to160units or161if needed to keep surrogate pair intact.",
+    "Strict strings, nonblank trimmed checks only; original content never trimmed or rewritten.",
+    "Fixed errors never echo private content. No network/storage.",
+    "Not found does not prove fake quotation; found does not authenticate source, identify author or interpret meaning."
+  ],
+  "cases": [
+    {
+      "id": "ordinary",
+      "quote": "opens",
+      "source": "The park opens today.",
+      "expected_total": 1,
+      "expected_starts": [
+        9
+      ],
+      "expected_truncated": false
+    },
+    {
+      "id": "repeat-capped",
+      "quote": "x",
+      "source": "x x x x x x",
+      "expected_total": 6,
+      "expected_starts": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "expected_truncated": true
+    },
+    {
+      "id": "overlap-not-counted",
+      "quote": "aa",
+      "source": "aaa",
+      "expected_total": 1,
+      "expected_starts": [
+        0
+      ],
+      "expected_truncated": false
+    },
+    {
+      "id": "case-sensitive",
+      "quote": "Open",
+      "source": "open",
+      "expected_total": 0,
+      "expected_starts": [],
+      "expected_truncated": false
+    },
+    {
+      "id": "whitespace-sensitive",
+      "quote": "a b",
+      "source": "a\tb a b",
+      "expected_total": 1,
+      "expected_starts": [
+        4
+      ],
+      "expected_truncated": false
+    },
+    {
+      "id": "punctuation-sensitive",
+      "quote": "open.",
+      "source": "open, then open.",
+      "expected_total": 1,
+      "expected_starts": [
+        11
+      ],
+      "expected_truncated": false
+    },
+    {
+      "id": "literal-ellipsis",
+      "quote": "a\u2026b",
+      "source": "a b; a\u2026b",
+      "expected_total": 1,
+      "expected_starts": [
+        5
+      ],
+      "expected_truncated": false
+    },
+    {
+      "id": "literal-html",
+      "quote": "<b>",
+      "source": "<b>text</b>",
+      "expected_total": 1,
+      "expected_starts": [
+        0
+      ],
+      "expected_truncated": false
+    },
+    {
+      "id": "unicode-offsets",
+      "quote": "\ud83d\ude00",
+      "source": "A\ud83d\ude00B \ud83d\ude00",
+      "expected_total": 2,
+      "expected_starts": [
+        1,
+        5
+      ],
+      "expected_truncated": false
+    },
+    {
+      "id": "at-source-edges",
+      "quote": "Edge",
+      "source": "Edge middle Edge",
+      "expected_total": 2,
+      "expected_starts": [
+        0,
+        12
+      ],
+      "expected_truncated": false
+    },
+    {
+      "id": "before-surrogate-boundary",
+      "quote": "Q",
+      "source": "A\ud83d\ude00xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxQ",
+      "expected_total": 1,
+      "expected_starts": [
+        162
+      ],
+      "expected_truncated": false
+    },
+    {
+      "id": "after-surrogate-boundary",
+      "quote": "Q",
+      "source": "Qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\ud83d\ude00B",
+      "expected_total": 1,
+      "expected_starts": [
+        0
+      ],
+      "expected_truncated": false
+    }
+  ]
+}

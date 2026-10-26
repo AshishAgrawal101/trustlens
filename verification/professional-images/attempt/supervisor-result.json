@@ -1,0 +1,14 @@
+{
+  "outcome": "resource_stopped",
+  "error": "2 GiB reservation exceeds half available RAM",
+  "peak": {
+    "private": 1483489280,
+    "ws": 1414127616,
+    "peak_ws_sum": 1489846272,
+    "peak_private_sum": 1594400768,
+    "worker_peak_job_commit": 1505710080
+  },
+  "worker_returncode": 125,
+  "worker_reaped": true,
+  "ended_at": 1792771230.1802413
+}

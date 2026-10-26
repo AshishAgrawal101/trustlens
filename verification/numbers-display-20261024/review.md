@@ -1,0 +1,9 @@
+# Independent Numbers presentation review
+
+Read current Numbers pure functions, formatter, all four calculated facts, adjacent format note and new display tests. No source edits. Independently ran numbers_rounded_display.test.cjs, numbers_controller.test.cjs and reported_percentages_controller.test.cjs: **21 passed,0 failed/skipped**.
+
+No concrete new correctness/privacy regression found. All defined calculated rates, percentage-point differences and relative changes use the same “About” qualifier. The adjacent note explicitly ties this to rounded presentation, not confidence intervals or measurement uncertainty. Count-mode parenthetical counts/totals remain the exact supplied safe integers. Undefined zero-baseline text remains unchanged and does not receive an approximate number. Both pure-function body hashes pass unchanged.
+
+Constructed independent probes: A=1,B=1e-12 yields positiveB and relative -99.9999999999 displayed “About -100%”; A=1,B=1e-63 keeps positiveB while Number conversion already rounds the relative result to -100, likewise qualified. A=1,B=0 also displays “About -100%”. The display therefore does not assert that a positiveB was removed completely or distinguish these as exact equal arithmetic outcomes. This is an honest bounded presentation fix, not an arbitrary-precision output upgrade. Existing finite Number conversion/six-significant-digit information loss remains, and the supplied rates plus comparability/unknown-denominator caveats remain necessary.
+
+Method switching, validation, empty/result focus, Clear/lifecycle and no-I/O controller regressions passed. Added fixed text does not enter input-free exports (this workspace has none) or weaken private print omission. Root reports actual390px browser evidence showing qualified -100 alongside positiveB; this reviewer performed no separate browser or phone test. Native offline/Pocket integration and final packaging remain root-owned.

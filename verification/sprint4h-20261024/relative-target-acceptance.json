@@ -1,0 +1,22 @@
+{
+  "scope": "Scheme-relative neutral label host checks using existing URL rules; no transport inference",
+  "allowed_rule_ids": [
+    "url:host",
+    "url:userinfo",
+    "url:idn",
+    "url:subdomains",
+    "url:ip",
+    "url:short"
+  ],
+  "cap": "First8uniquevalidatedscheme-relativehrefs globally peremail; duplicates do notconsume slots",
+  "overflow": "email:links_incomplete unknown0 count-only; syntax and bound reasons accurately generic",
+  "invariants": [
+    "no synthetic scheme/URL in evidence",
+    "no privateuserinfo/path/query in detail/source/export",
+    "actualdestination host retained",
+    "existingurluserinfo guidance prefix works",
+    "literalHTTPbudget distinct",
+    "invalidrawformatting untouched",
+    "existingliteralhostlabel comparisons unchanged"
+  ]
+}

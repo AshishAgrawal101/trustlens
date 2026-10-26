@@ -1,0 +1,12 @@
+{
+  "purpose": "Paired mechanism regressions authored after the candidate audit; not a blind or population evaluation. Baseline always comes from immutable v28.",
+  "cases": [
+    {"id":"later-same-code-semicolon","text":"If you are asked to send your verification code, refuse; send your verification code to me now.","expected_positive_ids":["request:code"]},
+    {"id":"later-same-payment","text":"If you are asked to transfer money to a safe account, refuse; transfer money to a safe account now.","expected_positive_ids":["request:payment"]},
+    {"id":"nonterminal-refuse-nothing","text":"If you are asked to send your verification code, refuse nothing.","expected_positive_ids":["request:code"]},
+    {"id":"later-same-remote-comma","text":"If you are asked to install TeamViewer, refuse, install TeamViewer anyway.","expected_positive_ids":["request:remote"]},
+    {"id":"nonterminal-refuse-to-refuse","text":"If you are asked to provide your card number, refuse to refuse.","expected_positive_ids":["request:personal"]},
+    {"id":"protective-remote-only","text":"If you are asked to install TeamViewer, refuse.","expected_positive_ids":[]},
+    {"id":"active-remote-without-if","text":"You are asked to install TeamViewer; please do it.","expected_positive_ids":["request:remote"]}
+  ]
+}

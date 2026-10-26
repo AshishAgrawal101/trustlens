@@ -1,0 +1,13 @@
+{
+  "constructed_only": true,
+  "checks": [
+    "Main default Message shows the English wording limit before any mode change.",
+    "Main onboarding link opens constructed photo claim fields, consumes exact fragment and leaves Review explicit.",
+    "Claim Clear followed by reload stays blank; unrelated fragment cannot fill fields.",
+    "Claim route at 390 and 320 pixels has no horizontal document overflow.",
+    "Email result has English scope and its fixed summary contains the scope without supplied content.",
+    "Link structure preserves leading BOM or TAB for strict server rejection in input and reference; no destination is opened.",
+    "Standalone Pocket export prepares the new cache and loads constructed claim choice with server stopped; Clear/reload remain blank."
+  ],
+  "excluded": ["physical phone", "image upload", "native share", "clipboard", "download interaction", "accuracy claim", "public deployment"]
+}

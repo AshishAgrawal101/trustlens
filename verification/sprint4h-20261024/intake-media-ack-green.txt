@@ -1,0 +1,22 @@
+✔ Cancel acknowledges stopped waiting while preserving file preview caption and focus (5.2201ms)
+✔ late cancelled failure cannot replace acknowledgment or focus an error (1.6414ms)
+✔ edit replacement Clear retry exit and persisted Back erase the old acknowledgment (22.2664ms)
+✔ metadata yields file facts and explicit limits, not origin or scene conclusions (17.1745ms)
+✔ consumed fields and display orientation are validated before rendering (0.7049ms)
+✔ file selection only previews; explicit inspection posts file only and never uploads caption (4.1753ms)
+✔ invalid selection clears prior image pixels and rejects unsupported files before fetch (1.8422ms)
+✔ Clear, replacement, exit and Back cannot restore old previews or late results (3.9773ms)
+✔ Cancel preserves draft while rejecting late results; caption edit also invalidates pending review (2.1999ms)
+✔ malformed success and unreadable JSON preserve the draft without showing a partial result (2.8048ms)
+✔ server failures preserve drafts and give retry guidance instead of blaming the image (1.9345ms)
+✔ timeout aborts actual request signal, preserves local draft and restores controls with fixed feedback (5.1038ms)
+✔ Clear or caption replacement aborts signal and late failure cannot focus or repaint an error (2.5712ms)
+✔ unknown/missing schema fields and HTML-like metadata cannot execute markup or produce partial output (17.2019ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 120.9912

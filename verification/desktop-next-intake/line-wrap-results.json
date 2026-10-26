@@ -1,0 +1,43 @@
+{
+  "verified_utc": "2026-10-23T21:57:22.936738+00:00",
+  "protocol_sha256": "534638307c824bbbe11be3af8e84877d6de9f6e3a51906543fc1fe19f8815dba",
+  "records": [
+    {
+      "id": "single_line",
+      "elapsed_seconds": 0.6526362999575213,
+      "extracted": {
+        "text": "Send us the verification code.",
+        "language": "en-US",
+        "review_required": true,
+        "notice": "Review and correct the text before checking it. OCR may miss words, punctuation or links. This does not check image origin."
+      },
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "evidence_ids": [
+        "request:code"
+      ],
+      "request_warning": true
+    },
+    {
+      "id": "wrapped_line",
+      "elapsed_seconds": 0.5778579999459907,
+      "extracted": {
+        "text": "Send us the\nverification code.",
+        "language": "en-US",
+        "review_required": true,
+        "notice": "Review and correct the text before checking it. OCR may miss words, punctuation or links. This does not check image origin."
+      },
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "evidence_ids": [
+        "text:none"
+      ],
+      "request_warning": false
+    }
+  ],
+  "source_pins_unchanged": true,
+  "source_edits": false,
+  "visual_model_calls": false,
+  "GPU": false,
+  "downloads": false
+}

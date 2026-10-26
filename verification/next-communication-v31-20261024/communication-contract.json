@@ -1,0 +1,65 @@
+{
+  "purpose": "Fresh authored polarity/context probes motivated by retained urgency-in-advice falsewarnings; no external/private/final/modeldata. Freeze beforeexecution.",
+  "interpretation": "Positiveweightedpressure/requestexpectations are activewording judgments, not intent/safetytruth. Unmatchedscope remainsunknown.",
+  "cases": [
+    {
+      "id": "direct-nonurgent",
+      "category": "ordinary-nonpressure",
+      "text": "This is not urgent; please reply tomorrow.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "affirmative-urgent",
+      "category": "active-pressure",
+      "text": "This is urgent; please reply today.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ]
+    },
+    {
+      "id": "nonurgent-plus-code",
+      "category": "active-mixed",
+      "text": "This is not urgent. Send me your verification code.",
+      "expected_positive_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "not-only-urgent",
+      "category": "active-mixed",
+      "text": "This is not only urgent; send me your verification code.",
+      "expected_positive_ids": [
+        "request:urgency",
+        "request:code"
+      ]
+    },
+    {
+      "id": "later-positive-pressure",
+      "category": "active-mixed",
+      "text": "This is not urgent for the group. This is urgent for you; act now.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ]
+    },
+    {
+      "id": "reported-pressure-advice",
+      "category": "protective-advice",
+      "text": "Ignore anyone calling this urgent; verify through a known number.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "nonadjacent-nonurgent",
+      "category": "ordinary-nonpressure",
+      "text": "The appointment is not an urgent matter; reply next week.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "quoted-negative-plus-active",
+      "category": "active-mixed",
+      "text": "Do not call this 'not urgent'; act now.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ]
+    }
+  ]
+}

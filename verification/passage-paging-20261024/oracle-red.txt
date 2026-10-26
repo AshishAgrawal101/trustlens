@@ -1,0 +1,829 @@
+✔ independent frozen UTF16 oracle has immutable lineage and unique rows (2.401ms)
+✔ independent exact page oracle zero (1.6791ms)
+✔ independent exact page oracle one (0.1272ms)
+✔ independent exact page oracle 5-matches-page-0 (0.1292ms)
+✔ independent exact page oracle 6-matches-page-0 (0.1507ms)
+✖ independent exact page oracle 6-matches-page-1 (1.7373ms)
+✔ independent exact page oracle 10-matches-page-0 (0.146ms)
+✖ independent exact page oracle 10-matches-page-1 (0.7238ms)
+✔ independent exact page oracle 11-matches-page-0 (0.1048ms)
+✖ independent exact page oracle 11-matches-page-1 (0.6878ms)
+✖ independent exact page oracle 11-matches-page-2 (0.5416ms)
+✔ independent exact page oracle nonoverlap (0.0841ms)
+✔ independent exact page oracle case-sensitive (0.108ms)
+✔ independent exact page oracle whitespace-sensitive (0.0663ms)
+✖ independent exact page oracle markup-literal-page-1 (0.2481ms)
+✔ independent exact page oracle unicode-canonical-not-normalized (0.0905ms)
+✖ independent exact page oracle astral-utf16-offsets (0.3233ms)
+✖ independent exact page oracle surrogate-context-page-1 (0.2885ms)
+✔ independent exact page oracle maximum-first (0.8929ms)
+✖ independent exact page oracle maximum-last (0.8071ms)
+✖ all invalid and nonexistent pages reject one fixed private error (0.4973ms)
+✔ old twoargument outputs remain exactly equal to actual v27 module (5.0082ms)
+✖ maximum lastpage calculation stays bounded without output inflation (1.5535ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 13
+ℹ fail 10
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 106.7615
+
+✖ failing tests:
+
+test at tests\passage_paging_oracle.test.cjs:6:31
+✖ independent exact page oracle 6-matches-page-1 (1.7373ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      matches: [
+        {
+  +       after: ' :suffix0\n' +
+  -       after: ' :suffix5',
+  -       before: 'prefix0: hit :suffix0\n' +
+            'prefix1: hit :suffix1\n' +
+            'prefix2: hit :suffix2\n' +
+            'prefix3: hit :suffix3\n' +
+            'prefix4: hit :suffix4\n' +
+  +         'prefix5: hit :suffix5',
+  +       before: 'prefix0: ',
+  +       end: 12,
+  +       start: 9,
+  -         'prefix5: ',
+  -       end: 122,
+  -       start: 119,
+          text: 'hit'
+        },
+  +     {
+  +       after: ' :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: hit :suffix3\n' +
+  +         'prefix4: hit :suffix4\n' +
+  +         'prefix5: hit :suffix5',
+  +       before: 'prefix0: hit :suffix0\nprefix1: ',
+  +       end: 34,
+  +       start: 31,
+  +       text: 'hit'
+  +     },
+  +     {
+  +       after: ' :suffix2\n' +
+  +         'prefix3: hit :suffix3\n' +
+  +         'prefix4: hit :suffix4\n' +
+  +         'prefix5: hit :suffix5',
+  +       before: 'prefix0: hit :suffix0\nprefix1: hit :suffix1\nprefix2: ',
+  +       end: 56,
+  +       start: 53,
+  +       text: 'hit'
+  +     },
+  +     {
+  +       after: ' :suffix3\nprefix4: hit :suffix4\nprefix5: hit :suffix5',
+  +       before: 'prefix0: hit :suffix0\n' +
+  +         'prefix1: hit :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: ',
+  +       end: 78,
+  +       start: 75,
+  +       text: 'hit'
+  +     },
+  +     {
+  +       after: ' :suffix4\nprefix5: hit :suffix5',
+  +       before: 'prefix0: hit :suffix0\n' +
+  +         'prefix1: hit :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: hit :suffix3\n' +
+  +         'prefix4: ',
+  +       end: 100,
+  +       start: 97,
+  +       text: 'hit'
+  +     }
+      ],
+      total: 6,
+      truncated: true
+    }
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\passage_paging_oracle.test.cjs:6:129)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { total: 6, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    expected: { total: 6, matches: [ [Object] ], truncated: true },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\passage_paging_oracle.test.cjs:6:31
+✖ independent exact page oracle 10-matches-page-1 (0.7238ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      matches: [
+        {
+  +       after: ' :suffix0\n' +
+  -       after: ' :suffix5\n' +
+  -         'prefix6: hit :suffix6\n' +
+  -         'prefix7: hit :suffix7\n' +
+  -         'prefix8: hit :suffix8\n' +
+  -         'prefix9: hit :suffix9',
+  -       before: 'prefix0: hit :suffix0\n' +
+            'prefix1: hit :suffix1\n' +
+            'prefix2: hit :suffix2\n' +
+            'prefix3: hit :suffix3\n' +
+            'prefix4: hit :suffix4\n' +
+  +         'prefix5: hit :suffix5\n' +
+  +         'prefix6: hit :suffix6\n' +
+  +         'prefix7: hit :suff',
+  +       before: 'prefix0: ',
+  +       end: 12,
+  +       start: 9,
+  -         'prefix5: ',
+  -       end: 122,
+  -       start: 119,
+          text: 'hit'
+        },
+        {
+  +       after: ' :suffix1\n' +
+  -       after: ' :suffix6\n' +
+  -         'prefix7: hit :suffix7\n' +
+  -         'prefix8: hit :suffix8\n' +
+  -         'prefix9: hit :suffix9',
+  -       before: 'prefix0: hit :suffix0\n' +
+  -         'prefix1: hit :suffix1\n' +
+            'prefix2: hit :suffix2\n' +
+            'prefix3: hit :suffix3\n' +
+            'prefix4: hit :suffix4\n' +
+            'prefix5: hit :suffix5\n' +
+  +         'prefix6: hit :suffix6\n' +
+  +         'prefix7: hit :suffix7\n' +
+  +         'prefix8: hit :suff',
+  +       before: 'prefix0: hit :suffix0\nprefix1: ',
+  +       end: 34,
+  +       start: 31,
+  -         'prefix6: ',
+  -       end: 144,
+  -       start: 141,
+          text: 'hit'
+        },
+        {
+  +       after: ' :suffix2\n' +
+  -       after: ' :suffix7\nprefix8: hit :suffix8\nprefix9: hit :suffix9',
+  -       before: 'fix0: hit :suffix0\n' +
+  -         'prefix1: hit :suffix1\n' +
+  -         'prefix2: hit :suffix2\n' +
+            'prefix3: hit :suffix3\n' +
+            'prefix4: hit :suffix4\n' +
+            'prefix5: hit :suffix5\n' +
+            'prefix6: hit :suffix6\n' +
+  +         'prefix7: hit :suffix7\n' +
+  +         'prefix8: hit :suffix8\n' +
+  +         'prefix9: hit :suff',
+  +       before: 'prefix0: hit :suffix0\nprefix1: hit :suffix1\nprefix2: ',
+  +       end: 56,
+  +       start: 53,
+  -         'prefix7: ',
+  -       end: 166,
+  -       start: 163,
+          text: 'hit'
+        },
+        {
+  +       after: ' :suffix3\n' +
+  -       after: ' :suffix8\nprefix9: hit :suffix9',
+  -       before: 'fix1: hit :suffix1\n' +
+  -         'prefix2: hit :suffix2\n' +
+  -         'prefix3: hit :suffix3\n' +
+            'prefix4: hit :suffix4\n' +
+            'prefix5: hit :suffix5\n' +
+            'prefix6: hit :suffix6\n' +
+            'prefix7: hit :suffix7\n' +
+  +         'prefix8: hit :suffix8\n' +
+  +         'prefix9: hit :suffix9',
+  +       before: 'prefix0: hit :suffix0\n' +
+  +         'prefix1: hit :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: ',
+  +       end: 78,
+  +       start: 75,
+  -         'prefix8: ',
+  -       end: 188,
+  -       start: 185,
+          text: 'hit'
+        },
+        {
+  +       after: ' :suffix4\n' +
+  -       after: ' :suffix9',
+  -       before: 'fix2: hit :suffix2\n' +
+  -         'prefix3: hit :suffix3\n' +
+  -         'prefix4: hit :suffix4\n' +
+            'prefix5: hit :suffix5\n' +
+            'prefix6: hit :suffix6\n' +
+            'prefix7: hit :suffix7\n' +
+            'prefix8: hit :suffix8\n' +
+  +         'prefix9: hit :suffix9',
+  +       before: 'prefix0: hit :suffix0\n' +
+  +         'prefix1: hit :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: hit :suffix3\n' +
+  +         'prefix4: ',
+  +       end: 100,
+  +       start: 97,
+  -         'prefix9: ',
+  -       end: 210,
+  -       start: 207,
+          text: 'hit'
+        }
+      ],
+      total: 10,
+      truncated: true
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\passage_paging_oracle.test.cjs:6:129)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { total: 10, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    expected: { total: 10, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\passage_paging_oracle.test.cjs:6:31
+✖ independent exact page oracle 11-matches-page-1 (0.6878ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      matches: [
+        {
+  +       after: ' :suffix0\n' +
+  -       after: ' :suffix5\n' +
+  -         'prefix6: hit :suffix6\n' +
+  -         'prefix7: hit :suffix7\n' +
+  -         'prefix8: hit :suffix8\n' +
+  -         'prefix9: hit :suffix9\n' +
+  -         'prefix10: hit :suffix10',
+  -       before: 'prefix0: hit :suffix0\n' +
+            'prefix1: hit :suffix1\n' +
+            'prefix2: hit :suffix2\n' +
+            'prefix3: hit :suffix3\n' +
+            'prefix4: hit :suffix4\n' +
+  +         'prefix5: hit :suffix5\n' +
+  +         'prefix6: hit :suffix6\n' +
+  +         'prefix7: hit :suff',
+  +       before: 'prefix0: ',
+  +       end: 12,
+  +       start: 9,
+  -         'prefix5: ',
+  -       end: 122,
+  -       start: 119,
+          text: 'hit'
+        },
+        {
+  +       after: ' :suffix1\n' +
+  -       after: ' :suffix6\n' +
+  -         'prefix7: hit :suffix7\n' +
+  -         'prefix8: hit :suffix8\n' +
+  -         'prefix9: hit :suffix9\n' +
+  -         'prefix10: hit :suffix10',
+  -       before: 'prefix0: hit :suffix0\n' +
+  -         'prefix1: hit :suffix1\n' +
+            'prefix2: hit :suffix2\n' +
+            'prefix3: hit :suffix3\n' +
+            'prefix4: hit :suffix4\n' +
+            'prefix5: hit :suffix5\n' +
+  +         'prefix6: hit :suffix6\n' +
+  +         'prefix7: hit :suffix7\n' +
+  +         'prefix8: hit :suff',
+  +       before: 'prefix0: hit :suffix0\nprefix1: ',
+  +       end: 34,
+  +       start: 31,
+  -         'prefix6: ',
+  -       end: 144,
+  -       start: 141,
+          text: 'hit'
+        },
+        {
+  +       after: ' :suffix2\n' +
+  -       after: ' :suffix7\n' +
+  -         'prefix8: hit :suffix8\n' +
+  -         'prefix9: hit :suffix9\n' +
+  -         'prefix10: hit :suffix10',
+  -       before: 'fix0: hit :suffix0\n' +
+  -         'prefix1: hit :suffix1\n' +
+  -         'prefix2: hit :suffix2\n' +
+            'prefix3: hit :suffix3\n' +
+            'prefix4: hit :suffix4\n' +
+            'prefix5: hit :suffix5\n' +
+            'prefix6: hit :suffix6\n' +
+  +         'prefix7: hit :suffix7\n' +
+  +         'prefix8: hit :suffix8\n' +
+  +         'prefix9: hit :suff',
+  +       before: 'prefix0: hit :suffix0\nprefix1: hit :suffix1\nprefix2: ',
+  +       end: 56,
+  +       start: 53,
+  -         'prefix7: ',
+  -       end: 166,
+  -       start: 163,
+          text: 'hit'
+        },
+        {
+  +       after: ' :suffix3\n' +
+  -       after: ' :suffix8\nprefix9: hit :suffix9\nprefix10: hit :suffix10',
+  -       before: 'fix1: hit :suffix1\n' +
+  -         'prefix2: hit :suffix2\n' +
+  -         'prefix3: hit :suffix3\n' +
+            'prefix4: hit :suffix4\n' +
+            'prefix5: hit :suffix5\n' +
+            'prefix6: hit :suffix6\n' +
+            'prefix7: hit :suffix7\n' +
+  +         'prefix8: hit :suffix8\n' +
+  +         'prefix9: hit :suffix9\n' +
+  +         'prefix10: hit :suf',
+  +       before: 'prefix0: hit :suffix0\n' +
+  +         'prefix1: hit :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: ',
+  +       end: 78,
+  +       start: 75,
+  -         'prefix8: ',
+  -       end: 188,
+  -       start: 185,
+          text: 'hit'
+        },
+        {
+  +       after: ' :suffix4\n' +
+  -       after: ' :suffix9\nprefix10: hit :suffix10',
+  -       before: 'fix2: hit :suffix2\n' +
+  -         'prefix3: hit :suffix3\n' +
+  -         'prefix4: hit :suffix4\n' +
+            'prefix5: hit :suffix5\n' +
+            'prefix6: hit :suffix6\n' +
+            'prefix7: hit :suffix7\n' +
+            'prefix8: hit :suffix8\n' +
+  +         'prefix9: hit :suffix9\n' +
+  +         'prefix10: hit :suffix10',
+  +       before: 'prefix0: hit :suffix0\n' +
+  +         'prefix1: hit :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: hit :suffix3\n' +
+  +         'prefix4: ',
+  +       end: 100,
+  +       start: 97,
+  -         'prefix9: ',
+  -       end: 210,
+  -       start: 207,
+          text: 'hit'
+        }
+      ],
+      total: 11,
+      truncated: true
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\passage_paging_oracle.test.cjs:6:129)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { total: 11, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    expected: { total: 11, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\passage_paging_oracle.test.cjs:6:31
+✖ independent exact page oracle 11-matches-page-2 (0.5416ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      matches: [
+        {
+  +       after: ' :suffix0\n' +
+  +         'prefix1: hit :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: hit :suffix3\n' +
+  -       after: ' :suffix10',
+  -       before: 'ix3: hit :suffix3\n' +
+            'prefix4: hit :suffix4\n' +
+            'prefix5: hit :suffix5\n' +
+            'prefix6: hit :suffix6\n' +
+  +         'prefix7: hit :suff',
+  +       before: 'prefix0: ',
+  +       end: 12,
+  +       start: 9,
+  +       text: 'hit'
+  +     },
+  +     {
+  +       after: ' :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: hit :suffix3\n' +
+  +         'prefix4: hit :suffix4\n' +
+  +         'prefix5: hit :suffix5\n' +
+  +         'prefix6: hit :suffix6\n' +
+            'prefix7: hit :suffix7\n' +
+  +         'prefix8: hit :suff',
+  +       before: 'prefix0: hit :suffix0\nprefix1: ',
+  +       end: 34,
+  +       start: 31,
+  +       text: 'hit'
+  +     },
+  +     {
+  +       after: ' :suffix2\n' +
+  +         'prefix3: hit :suffix3\n' +
+  +         'prefix4: hit :suffix4\n' +
+  +         'prefix5: hit :suffix5\n' +
+  +         'prefix6: hit :suffix6\n' +
+  +         'prefix7: hit :suffix7\n' +
+            'prefix8: hit :suffix8\n' +
+  +         'prefix9: hit :suff',
+  +       before: 'prefix0: hit :suffix0\nprefix1: hit :suffix1\nprefix2: ',
+  +       end: 56,
+  +       start: 53,
+  +       text: 'hit'
+  +     },
+  +     {
+  +       after: ' :suffix3\n' +
+  +         'prefix4: hit :suffix4\n' +
+  +         'prefix5: hit :suffix5\n' +
+  +         'prefix6: hit :suffix6\n' +
+  +         'prefix7: hit :suffix7\n' +
+  +         'prefix8: hit :suffix8\n' +
+            'prefix9: hit :suffix9\n' +
+  +         'prefix10: hit :suf',
+  +       before: 'prefix0: hit :suffix0\n' +
+  +         'prefix1: hit :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: ',
+  +       end: 78,
+  +       start: 75,
+  -         'prefix10: ',
+  -       end: 233,
+  -       start: 230,
+          text: 'hit'
+        },
+  +     {
+  +       after: ' :suffix4\n' +
+  +         'prefix5: hit :suffix5\n' +
+  +         'prefix6: hit :suffix6\n' +
+  +         'prefix7: hit :suffix7\n' +
+  +         'prefix8: hit :suffix8\n' +
+  +         'prefix9: hit :suffix9\n' +
+  +         'prefix10: hit :suffix10',
+  +       before: 'prefix0: hit :suffix0\n' +
+  +         'prefix1: hit :suffix1\n' +
+  +         'prefix2: hit :suffix2\n' +
+  +         'prefix3: hit :suffix3\n' +
+  +         'prefix4: ',
+  +       end: 100,
+  +       start: 97,
+  +       text: 'hit'
+  +     }
+      ],
+      total: 11,
+      truncated: true
+    }
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\passage_paging_oracle.test.cjs:6:129)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { total: 11, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    expected: { total: 11, matches: [ [Object] ], truncated: true },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\passage_paging_oracle.test.cjs:6:31
+✖ independent exact page oracle markup-literal-page-1 (0.2481ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      matches: [
+        {
+  +       after: ' y  x <b> y  x <b> y  x <b> y  x <b> y  x <b> y ',
+  +       before: ' x ',
+  +       end: 6,
+  +       start: 3,
+  -       after: ' y ',
+  -       before: ' x <b> y  x <b> y  x <b> y  x <b> y  x <b> y  x ',
+  -       end: 51,
+  -       start: 48,
+          text: '<b>'
+        },
+  +     {
+  +       after: ' y  x <b> y  x <b> y  x <b> y  x <b> y ',
+  +       before: ' x <b> y  x ',
+  +       end: 15,
+  +       start: 12,
+  +       text: '<b>'
+  +     },
+  +     {
+  +       after: ' y  x <b> y  x <b> y  x <b> y ',
+  +       before: ' x <b> y  x <b> y  x ',
+  +       end: 24,
+  +       start: 21,
+  +       text: '<b>'
+  +     },
+  +     {
+  +       after: ' y  x <b> y  x <b> y ',
+  +       before: ' x <b> y  x <b> y  x <b> y  x ',
+  +       end: 33,
+  +       start: 30,
+  +       text: '<b>'
+  +     },
+  +     {
+  +       after: ' y  x <b> y ',
+  +       before: ' x <b> y  x <b> y  x <b> y  x <b> y  x ',
+  +       end: 42,
+  +       start: 39,
+  +       text: '<b>'
+  +     }
+      ],
+      total: 6,
+      truncated: true
+    }
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\passage_paging_oracle.test.cjs:6:129)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { total: 6, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    expected: { total: 6, matches: [ [Object] ], truncated: true },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\passage_paging_oracle.test.cjs:6:31
+✖ independent exact page oracle astral-utf16-offsets (0.3233ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      matches: [
+        {
+  +       after: 'y😀z😀w😀v😀u😀t',
+  +       before: 'x',
+  +       end: 3,
+  +       start: 1,
+  -       after: 't',
+  -       before: 'x😀y😀z😀w😀v😀u',
+  -       end: 18,
+  -       start: 16,
+          text: '😀'
+        },
+  +     {
+  +       after: 'z😀w😀v😀u😀t',
+  +       before: 'x😀y',
+  +       end: 6,
+  +       start: 4,
+  +       text: '😀'
+  +     },
+  +     {
+  +       after: 'w😀v😀u😀t',
+  +       before: 'x😀y😀z',
+  +       end: 9,
+  +       start: 7,
+  +       text: '😀'
+  +     },
+  +     {
+  +       after: 'v😀u😀t',
+  +       before: 'x😀y😀z😀w',
+  +       end: 12,
+  +       start: 10,
+  +       text: '😀'
+  +     },
+  +     {
+  +       after: 'u😀t',
+  +       before: 'x😀y😀z😀w😀v',
+  +       end: 15,
+  +       start: 13,
+  +       text: '😀'
+  +     }
+      ],
+      total: 6,
+      truncated: true
+    }
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\passage_paging_oracle.test.cjs:6:129)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { total: 6, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    expected: { total: 6, matches: [ [Object] ], truncated: true },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\passage_paging_oracle.test.cjs:6:31
+✖ independent exact page oracle surrogate-context-page-1 (0.2885ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      matches: [
+        {
+  +       after: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+  +       before: '',
+  +       end: 1,
+  +       start: 0,
+  -       after: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc😀',
+  -       before: '😀bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
+  -       end: 2167,
+  -       start: 2166,
+          text: 'Q'
+        },
+  +     {
+  +       after: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+  +       before: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+  +       end: 402,
+  +       start: 401,
+  +       text: 'Q'
+  +     },
+  +     {
+  +       after: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+  +       before: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+  +       end: 803,
+  +       start: 802,
+  +       text: 'Q'
+  +     },
+  +     {
+  +       after: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+  +       before: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+  +       end: 1204,
+  +       start: 1203,
+  +       text: 'Q'
+  +     },
+  +     {
+  +       after: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+  +       before: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+  +       end: 1605,
+  +       start: 1604,
+  +       text: 'Q'
+  +     }
+      ],
+      total: 6,
+      truncated: true
+    }
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\passage_paging_oracle.test.cjs:6:129)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { total: 6, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    expected: { total: 6, matches: [ [Object] ], truncated: true },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\passage_paging_oracle.test.cjs:6:31
+✖ independent exact page oracle maximum-last (0.8071ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      matches: [
+        {
+  +       after: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  +       before: '',
+  +       end: 1,
+  +       start: 0,
+  -       after: 'xxxx',
+  -       before: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  -       end: 29996,
+  -       start: 29995,
+          text: 'x'
+        },
+        {
+  +       after: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  +       before: 'x',
+  +       end: 2,
+  +       start: 1,
+  -       after: 'xxx',
+  -       before: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  -       end: 29997,
+  -       start: 29996,
+          text: 'x'
+        },
+        {
+  +       after: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  +       before: 'xx',
+  +       end: 3,
+  +       start: 2,
+  -       after: 'xx',
+  -       before: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  -       end: 29998,
+  -       start: 29997,
+          text: 'x'
+        },
+        {
+  +       after: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  +       before: 'xxx',
+  +       end: 4,
+  +       start: 3,
+  -       after: 'x',
+  -       before: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  -       end: 29999,
+  -       start: 29998,
+          text: 'x'
+        },
+        {
+  +       after: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  +       before: 'xxxx',
+  +       end: 5,
+  +       start: 4,
+  -       after: '',
+  -       before: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  -       end: 30000,
+  -       start: 29999,
+          text: 'x'
+        }
+      ],
+      total: 30000,
+      truncated: true
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\passage_paging_oracle.test.cjs:6:129)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { total: 30000, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    expected: { total: 30000, matches: [ [Object], [Object], [Object], [Object], [Object] ], truncated: true },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\passage_paging_oracle.test.cjs:7:1
+✖ all invalid and nonexistent pages reject one fixed private error (0.4973ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\passage_paging_oracle.test.cjs:7:134)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\passage_paging_oracle.test.cjs:9:1
+✖ maximum lastpage calculation stays bounded without output inflation (1.5535ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 29995
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\passage_paging_oracle.test.cjs:9:235)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 29995,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

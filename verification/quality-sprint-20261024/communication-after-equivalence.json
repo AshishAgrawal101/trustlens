@@ -1,0 +1,319 @@
+{
+  "label": "Post-fix parser regression replay, not fresh accuracy evaluation",
+  "contract_sha256": "43d6ef849261caef86af23719cca3bb5b569a2cfebbcea894b35254f72403c0e",
+  "source_sha256": "b64db071b30e6a72023d75d5babeea6413c74842c0463dff0f0c405dce8f41eb",
+  "rows": [
+    {
+      "id": "space-negation-base",
+      "expected_ids": [],
+      "actual_ids": [],
+      "evidence": [],
+      "matches_expectation": true
+    },
+    {
+      "id": "nbsp-negation",
+      "expected_ids": [],
+      "actual_ids": [],
+      "evidence": [],
+      "matches_expectation": true
+    },
+    {
+      "id": "double-space-negation",
+      "expected_ids": [],
+      "actual_ids": [],
+      "evidence": [],
+      "matches_expectation": true
+    },
+    {
+      "id": "tab-negation",
+      "expected_ids": [],
+      "actual_ids": [],
+      "evidence": [],
+      "matches_expectation": true
+    },
+    {
+      "id": "space-direct",
+      "expected_ids": [
+        "request:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cPlease share your password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "matches_expectation": true
+    },
+    {
+      "id": "personal-base",
+      "expected_ids": [
+        "request:personal"
+      ],
+      "actual_ids": [
+        "request:personal"
+      ],
+      "evidence": [
+        {
+          "id": "request:personal",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request for sensitive personal details",
+          "detail": "Matched wording: \u201cSend your bank account number\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "matches_expectation": true
+    },
+    {
+      "id": "personal-nbsp",
+      "expected_ids": [
+        "request:personal"
+      ],
+      "actual_ids": [
+        "request:personal"
+      ],
+      "evidence": [
+        {
+          "id": "request:personal",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request for sensitive personal details",
+          "detail": "Matched wording: \u201cSend your bank\u00a0account\u00a0number\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "matches_expectation": true
+    },
+    {
+      "id": "personal-nbsp-advice",
+      "expected_ids": [],
+      "actual_ids": [],
+      "evidence": [],
+      "matches_expectation": true
+    },
+    {
+      "id": "personal-ordinary",
+      "expected_ids": [],
+      "actual_ids": [],
+      "evidence": [],
+      "matches_expectation": true
+    },
+    {
+      "id": "sixdigit-base",
+      "expected_ids": [
+        "request:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cRead me the six-digit code\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "matches_expectation": true
+    },
+    {
+      "id": "sixdigit-nonbreaking",
+      "expected_ids": [
+        "request:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cRead me the six\u2011digit code\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "matches_expectation": true
+    },
+    {
+      "id": "sixdigit-nonbreaking-advice",
+      "expected_ids": [],
+      "actual_ids": [],
+      "evidence": [],
+      "matches_expectation": true
+    },
+    {
+      "id": "sixdigit-order-ordinary",
+      "expected_ids": [],
+      "actual_ids": [],
+      "evidence": [],
+      "matches_expectation": true
+    },
+    {
+      "id": "aux-direct",
+      "expected_ids": [
+        "request:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cYou should share your password\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "matches_expectation": true
+    },
+    {
+      "id": "aux-should-not",
+      "expected_ids": [],
+      "actual_ids": [],
+      "evidence": [],
+      "matches_expectation": true
+    },
+    {
+      "id": "aux-must-not",
+      "expected_ids": [],
+      "actual_ids": [],
+      "evidence": [],
+      "matches_expectation": true
+    },
+    {
+      "id": "aux-next-live",
+      "expected_ids": [
+        "request:remote"
+      ],
+      "actual_ids": [
+        "request:remote"
+      ],
+      "evidence": [
+        {
+          "id": "request:remote",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request for remote access",
+          "detail": "Matched wording: \u201cInstall TeamViewer\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "matches_expectation": true
+    },
+    {
+      "id": "conditional-stop-base",
+      "expected_ids": [
+        "context:code"
+      ],
+      "actual_ids": [
+        "context:code"
+      ],
+      "evidence": [
+        {
+          "id": "context:code",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Conditional safety advice",
+          "detail": "This wording gives advice to stop or hang up: \u201cIf someone asks you to share your password, stop\u201d. Whether a current request exists is unknown.",
+          "source": "Local wording and context rules",
+          "weight": 0.0
+        }
+      ],
+      "matches_expectation": true
+    },
+    {
+      "id": "conditional-no-reply",
+      "expected_ids": [
+        "context:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cIf someone asks you to share your password, do not reply\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "matches_expectation": false
+    },
+    {
+      "id": "conditional-direct",
+      "expected_ids": [
+        "request:code"
+      ],
+      "actual_ids": [
+        "request:code"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cShare your password so I can help\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "matches_expectation": true
+    },
+    {
+      "id": "conditional-next-live",
+      "expected_ids": [
+        "context:code",
+        "request:remote"
+      ],
+      "actual_ids": [
+        "request:code",
+        "request:remote"
+      ],
+      "evidence": [
+        {
+          "id": "request:code",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request to share a security code",
+          "detail": "Matched wording: \u201cIf someone asks you to share your password, do not reply\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        },
+        {
+          "id": "request:remote",
+          "evidence_class": "inferred",
+          "severity": "high",
+          "title": "Request for remote access",
+          "detail": "Matched wording: \u201cInstall TeamViewer\u201d. Context may change its meaning.",
+          "source": "Local request-pattern rules",
+          "weight": 0.8
+        }
+      ],
+      "matches_expectation": false
+    }
+  ]
+}

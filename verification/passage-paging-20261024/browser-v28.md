@@ -1,0 +1,13 @@
+# Actual passage-navigation browser checks
+
+Constructed text only; existing Edge main tab1793492838, development8766. No source fetching, file upload, clipboard, native Share, public submission or real-phone action. Viewport reset after checks.
+
+Before implementation, an eleven-match passage produced the full count but only headings1–5 and “Showing the first5”; browser-before.json preserves the observed output. The constructed sixth section includes a different qualification, beyond the first page's windows.
+
+After implementation at390px, explicit Find produced Matches1–5of11, five articles, Previous disabled and Next enabled. Next exposed exactly headings6–10 and the sixth section's “inspection must finish first” qualification. Both controls measured49.09375px high. Client/scroll375/375; focus stayed on enabled Next. Enter on focused Next produced Matches11–11of11, one article, disabled Next and focus on source-page-status. Previous restored6–10. Screenshot matches-six-390.png was inspected.
+
+At320px client/scroll305/305. Editing Revised preserved the independent source result/range. Clear source passage removed passage/result/range/navigation while retaining Original and Revised. A new explicit Find restarted from page1, then Next reached6–10. A supplied U+200B notice remained visible and accurate through paging, and editing Original erased the result, notice and range and disabled Next without auto-finding. All-tools navigation followed by Back returned all three textareas empty, result hidden, range empty.
+
+Standalone Pocketv28:31manifest entries verified after extraction;29shell paths returned200 before stop. Explicit Prepare reported ready with DOM version trustlens-pocket-v24. Owned temporary server parent58284/child34416 stopped, no listener verified; nonzero socket10035 is not labelled connection-refused. With server stopped, cached `/phone/workspace/quotes.html` loaded at320px. Six constructed Q occurrences plus astral characters and U+200B: explicit Find then Next displayed Match6of6, one article, disabled Next, range-focused endpoint and retained formatting notice, client/scroll305/305. Previous restored1–5. Main Clear and reload left all fields empty, result/navigation hidden and range empty. Temporary tab1793492925 closed; viewport reset. This is desktop-browser cache evidence, not phone installation or whole-device network-off evidence.
+
+Independent controller tests cover invalidation/native-invalid capture and other edge cases; an actual browser native-invalid stale-result reproduction was not performed. Screen-reader announcement behavior has not been tested with assistive technology; live status/focus and keyboard behavior were checked directly.

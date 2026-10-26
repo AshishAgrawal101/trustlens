@@ -1,0 +1,81 @@
+{
+  "scope": "Independent constructed parser/context audit only, not retuning prior FTC diagnostics or measuring scam accuracy. No current app edits.",
+  "cases": [
+    {
+      "id": "code-inline-scoped",
+      "raw": "Content-Type: text/html\n\n<p>Send me your verifi<strong>cation</strong> code.</p>",
+      "visible": "Send me your verification code.",
+      "expected": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "code-plain-pair",
+      "raw": "Content-Type: text/plain\n\nSend me your verification code.",
+      "visible": "Send me your verification code.",
+      "expected": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "advice-inline-negation",
+      "raw": "Content-Type: text/html\n\n<p>Do <span>n</span>ot send me your password.</p>",
+      "visible": "Do not send me your password.",
+      "expected": []
+    },
+    {
+      "id": "advice-plain-negation",
+      "raw": "Content-Type: text/plain\n\nDo not send me your password.",
+      "visible": "Do not send me your password.",
+      "expected": []
+    },
+    {
+      "id": "gift-inline-negation",
+      "raw": "Content-Type: text/html\n\n<p>Ne<span>ver</span> buy gift cards.</p>",
+      "visible": "Never buy gift cards.",
+      "expected": []
+    },
+    {
+      "id": "gift-plain-negation",
+      "raw": "Content-Type: text/plain\n\nNever buy gift cards.",
+      "visible": "Never buy gift cards.",
+      "expected": []
+    },
+    {
+      "id": "inline-created-word",
+      "raw": "Content-Type: text/html\n\n<p>Se<span>nd</span> me your password.</p>",
+      "visible": "Send me your password.",
+      "expected": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "duplicate-subject-late-request",
+      "raw": "Subject: Reminder\nSubject: Send me your verification code.\n\nHello.",
+      "visible": "Subject display depends on mail client; two incompatible subjects",
+      "expected_incomplete": true
+    },
+    {
+      "id": "duplicate-subject-first-request",
+      "raw": "Subject: Send me your verification code.\nSubject: Reminder\n\nHello.",
+      "visible": "Subject display depends on mail client; two incompatible subjects",
+      "expected_incomplete": true
+    },
+    {
+      "id": "single-subject-request",
+      "raw": "Subject: Send me your verification code.\n\nHello.",
+      "visible": "Single sensitive subject",
+      "expected": [
+        "request:code"
+      ],
+      "expected_incomplete": false
+    },
+    {
+      "id": "single-subject-advice",
+      "raw": "Subject: Never send me your verification code.\n\nHello.",
+      "visible": "Single safety-advice subject",
+      "expected": [],
+      "expected_incomplete": false
+    }
+  ]
+}

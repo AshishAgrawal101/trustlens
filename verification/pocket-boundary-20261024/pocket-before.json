@@ -1,0 +1,516 @@
+{
+  "cases_sha256": "31d805f9c310e3c625e7573825ea980ef9b3a393f3743deabf3aa1a4500f3693",
+  "source_sha256": "8d7d38bf0955e61c2f4c1e091674b0d33bab7eb086cfb16947b0d0b42ffa4bc3",
+  "rows": [
+    {
+      "id": "canonical-control",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "missing-slash-known",
+      "comparison": {
+        "known": "https",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": false
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "extra-slash-known",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "extra-slashes-known",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "missing-host-known",
+      "comparison": {
+        "known": "https",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "https",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "https",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "soft-hyphen-host",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "zero-width-host",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "bidi-path-known",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "leading-tab-known",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "empty-userinfo-known",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "short-ip-known",
+      "comparison": {
+        "known": "127.0.0.1",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "127.0.0.1",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "127.0.0.1",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "hex-ip-known",
+      "comparison": {
+        "known": "127.0.0.1",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "127.0.0.1",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "127.0.0.1",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "octal-ip-known",
+      "comparison": {
+        "known": "127.0.0.1",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "127.0.0.1",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "127.0.0.1",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "escaped-host-known",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "soft-hyphen-message",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "zero-width-message",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "bidi-path-message",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "example.com",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "short-ip-message",
+      "comparison": {
+        "known": "127.0.0.1",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "127.0.0.1",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "127.0.0.1",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "userinfo-destination-control",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "other.test",
+            "match": false
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "other.test",
+            "notes": [
+              "Text before @ is not the destination."
+            ]
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "numeric-canonical-control",
+      "comparison": {
+        "known": "127.0.0.1",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "127.0.0.1",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "127.0.0.1",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "idna-control",
+      "comparison": {
+        "known": "xn--fa-hia.de",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "xn--fa-hia.de",
+            "match": true
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "xn--fa-hia.de",
+            "notes": [
+              "Internationalized hostname; check its exact spelling independently."
+            ]
+          }
+        ],
+        "remaining": 0
+      }
+    },
+    {
+      "id": "subdomain-control",
+      "comparison": {
+        "known": "example.com",
+        "remaining": 0,
+        "rows": [
+          {
+            "host": "sub.example.com",
+            "match": false
+          }
+        ]
+      },
+      "error": null,
+      "coverage": {
+        "items": [
+          {
+            "host": "sub.example.com",
+            "notes": []
+          }
+        ],
+        "remaining": 0
+      }
+    }
+  ]
+}

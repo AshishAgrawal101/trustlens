@@ -1,0 +1,9 @@
+TRUSTLENS — CURRENT PROJECT FILES
+
+Extract this ZIP, then read README.md for setup. Includes desktop source, Pocket web source, tests, documentation, submission drafts and verification evidence.
+
+Requires Python and installing requirements.txt; this is not a standalone executable. Optional frozen image-model weights, installed OCR/components, Python environments and machine-specific configuration are not bundled. No API key is needed for the core communication tools and browser worksheets.
+
+The current runtime remains the v42 checkpoint. Later changes update the judge guide/rehearsal and add bounded audit evidence. The connected browser rehearsal was interrupted after Quote and Numbers results; its saved captures are not proof that the full sequence or a narrated video was completed. Physical-phone tests remain deferred.
+
+SOURCE_MANIFEST.json lists SHA-256 checksums for all included source files. Earlier release archives are unchanged.

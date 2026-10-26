@@ -1,0 +1,37 @@
+{
+  "runtime_or_STOP_edits": false,
+  "gpu": false,
+  "accuracy": null,
+  "external_network": false,
+  "protocol_sha256": "9bc51f2adcfe7adc17e4c6b556d7f5d3d8c83b3b73d9414863980b663e87d277",
+  "attempt_receipts": [
+    {
+      "sha256": "bb1d551a412c5a4c689d0eb7cbe31251bbb800da3744e58f3a02b8502ac8752e",
+      "file": "attempt/prelaunch.json"
+    },
+    {
+      "sha256": "a8c911bc9d99ffa990c0de467ce2cd11abdd8abb10e0f96cc17e2d89f64e4d17",
+      "file": "attempt/containment.json"
+    },
+    {
+      "sha256": "352710a561500c297225f912832d8f475bb0cb326780dc77e620b5821a6170aa",
+      "file": "attempt/worker-memory.json"
+    },
+    {
+      "sha256": "fdda473c23c0bab0749ce1d9e9c7f3a773b2ecda7e7ca68536602994ad0184aa",
+      "file": "attempt/supervisor-result.json"
+    }
+  ],
+  "jpeg60_views_scored": 0,
+  "release_eligibility": false,
+  "native_results": null,
+  "original_views_scored": 0,
+  "stop_sha256": "c19c82e1d90a42542c305e1cc984e7ce16151e0e0925f1f65f4d1d822b212ada",
+  "worker_reaped": true,
+  "attempts": 1,
+  "at_utc": "2026-10-23T16:01:18.0558361Z",
+  "sealed_final_arena_user_inputs_read": false,
+  "four_original_hashes_verified": true,
+  "actual_failed_gate": "2 GiB reservation exceeds half available RAM",
+  "status": "resource_stopped_no_retry"
+}

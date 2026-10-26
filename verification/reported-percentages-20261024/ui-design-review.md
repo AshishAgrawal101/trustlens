@@ -1,0 +1,31 @@
+# Reported percentages: UI design review
+
+Read-only review of the frozen spec and current Numbers HTML/CSS/controller. The proposed extension addresses a concrete input gap without inventing sample sizes or requiring another page. No blocking UX issue in the spec; implement the following small explicit contract.
+
+## Minimal DOM contract
+
+- Inside `numbers-form`, add labelled native `select#numbers-method`, initially `disabled`, with exact values `counts` (selected) and `percentages`. Label “What numbers do you have?” Options “Counts and totals” / “Reported percentages”. Adjacent fixed hint: “Changing method clears every entered number and the previous result.” No `name`.
+- Preserve all existing count input IDs, bounds and Group A/B legends. Put the two existing count fieldsets plus `numbers-limits` in `div#numbers-counts`. Toggle the four count inputs' `disabled` properties individually; a div has no native disabled behavior. `numbers-help` is outside the form today: either keep it as method-neutral context or include its visibility/text in method sync; do not leave “whole-number counts” advice visible for percentage entry.
+- Add `fieldset#numbers-percentages` initially `hidden disabled`, legend “Reported percentages”. Add `input#percentage-a` / `#percentage-b`, labels “Group A reported percentage” / “Group B reported percentage”, type text, inputmode decimal, maxlength 64, required, no names, spellcheck false. Add `p#percentage-help` and aria-describedby on both fields. Hint must say 0–100, decimal point, enter numbers without a percent sign, totals not required and not inferred. The percent sign belongs in the label/help, not the input value.
+- Add `id="numbers-result-caveat"` to the existing fixed paragraph directly below the result h3. Keep its initial count wording unchanged. Controller changes it to fixed percentage/unknown-total wording only for a percentage result, then restores appropriate active-method wording on reset. Never derive this text from input.
+- Reuse `numbers-example`, `numbers-empty`, submit, Clear, error, result/facts/questions and existing heading. Avoid another button/result/summary panel. Example label can remain constructed, but its action must load the current method's explicitly constructed values (existing counts unchanged; percentage 1.2 / 1.8) and never submit.
+
+## State/controller contract
+
+Initialization installs handlers first, resets to counts with percentage controls hidden+disabled and counts enabled, then enables method select and submit. No-JS markup already safely defaults to counts with disabled submission and unnamed fields; retain that notice and autocomplete-off form. Hidden required percentage controls must be disabled in markup itself, not only after initialization.
+
+On method change: wipe all six values, error/result/facts/questions, sync active/disabled/hidden fields, update active guidance and empty-state instructions, and do not calculate. Keep focus on the select after its change event so keyboard users can finish choosing; the next Tab reaches the active method's first input. On Clear: wipe all six fields/result but retain the chosen method and focus count-a or percentage-a. On pagehide and persisted pageshow: wipe all values/results **and reset select plus UI to counts**. This differs intentionally from Clear; do not bind lifecycle to a retain-method Clear helper without its explicit default reset. Ordinary typing invalidates only result/error while retaining active method and drafts.
+
+Use native reportValidity after disabled-state sync and before pure comparison. Percentage arithmetic receives the original bounded strings, never Number-converted rates or synthesized counts. Catch errors with fixed private messages. No method changes, examples or input events submit or request anything. Native select `change` is necessary; input-only binding is insufficient.
+
+## Result and wording checks
+
+Percentage facts must omit all “N of total” parentheticals. Add a fixed fact/notice that counts and totals were not supplied, retain original-data/sample-size/comparability questions, and explicitly distinguish percentage points from relative rate change. The existing question “These calculations describe supplied counts only” and zero-baseline “use actual counts” guidance must be method-specific: for percentages, ask the user to obtain the underlying counts rather than suggesting counts were supplied. Also explain that reported percentages may already be rounded; precise arithmetic on their strings cannot recover lost reporting precision.
+
+The current hero “A count needs its denominator” is compatible as a principle but the lede and input heading currently promise only counts. A minimal copy adjustment should mention reported percentages without implying denominators cease to matter. The empty state must describe the active method rather than always instructing users to enter count and total. Preserve complete result-before-expanded-limits order, short caveat adjacency, h3 focus plus block-start scrolling and private print omission. Full limits already say supplied values and need no new collapsed disclaimer.
+
+## CSS / mobile acceptance
+
+Shared claim CSS does not style selects alongside inputs. Add scoped select styling in numbers-context.css: inherited 16px font, width 100%, minimum 48px height, existing input-like border/background/padding, min-width 0 and visible focus outline. One column is sufficient; no new tab row or side-by-side percentage controls. Existing narrow facts layout can remain.
+
+Acceptance: all old count contracts unchanged; initial disabled-hidden fields and no named controls; method switch clears all values/results without I/O; inactive required fields never block submission; active example then explicit submit; Clear retains method and focuses active first field; exit/Back resets default; 1.2/1.8, zero baseline and invalid syntax produce appropriate fixed wording without invented denominators. At 320/390, keyboard-select both methods, Tab through only active fields, verify heading/caveat/first fact alignment and no overflow. Exercise the shared-rendered Pocket alias after fresh cache preparation/export; this source review makes no physical-phone or browser verification claim.

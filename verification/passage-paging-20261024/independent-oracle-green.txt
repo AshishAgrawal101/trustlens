@@ -1,0 +1,31 @@
+✔ independent frozen UTF16 oracle has immutable lineage and unique rows (2.215ms)
+✔ independent exact page oracle zero (0.8685ms)
+✔ independent exact page oracle one (0.1187ms)
+✔ independent exact page oracle 5-matches-page-0 (0.1332ms)
+✔ independent exact page oracle 6-matches-page-0 (0.1637ms)
+✔ independent exact page oracle 6-matches-page-1 (0.1149ms)
+✔ independent exact page oracle 10-matches-page-0 (0.138ms)
+✔ independent exact page oracle 10-matches-page-1 (0.1079ms)
+✔ independent exact page oracle 11-matches-page-0 (0.1097ms)
+✔ independent exact page oracle 11-matches-page-1 (0.1657ms)
+✔ independent exact page oracle 11-matches-page-2 (0.0849ms)
+✔ independent exact page oracle nonoverlap (0.0691ms)
+✔ independent exact page oracle case-sensitive (0.0722ms)
+✔ independent exact page oracle whitespace-sensitive (0.0808ms)
+✔ independent exact page oracle markup-literal-page-1 (0.1015ms)
+✔ independent exact page oracle unicode-canonical-not-normalized (0.0606ms)
+✔ independent exact page oracle astral-utf16-offsets (0.0509ms)
+✔ independent exact page oracle surrogate-context-page-1 (0.1155ms)
+✔ independent exact page oracle maximum-first (1.4492ms)
+✔ independent exact page oracle maximum-last (0.786ms)
+✔ all invalid and nonexistent pages reject one fixed private error (0.7446ms)
+✔ old twoargument outputs remain exactly equal to actual v27 module (3.6381ms)
+✔ maximum lastpage calculation stays bounded without output inflation (1.2608ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 96.6203

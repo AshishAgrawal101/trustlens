@@ -1,0 +1,12 @@
+# Actual browser verification
+
+Existing Edge1793492838/development8766. Desktop Practice launched10cases; traversedfirst8supportedchoices, intentionallychosepaidmeansfalseoncase9, neutralfeedbackaskedcomparisonmethod. At390documentclient/scroll375/375anddialog326/326. practice-ads-390.png inspectedshowsfeedback/Next. Initiallongbatchtooltimedoutafter8answers; authoritativeAX8of10confirmedliveprogress, no workflowrestart/failureclaim. ReboundsameEdge/tabafterREPLresetandcontinuedcase9/10. Completed10of10, Revisitreturnedonlysponsoredcase0of1;closedclearspractice.
+
+StandalonePocketv25SHA c270625ae74a05cfebeddc9c3453db904ab69f5d06f8c3a4f14a1bbeb3c3112f,32ZIP/31manifestfiles. Fresh8825tab1793492913preparedcachev21;29canonicalpathsHTTP200/propermimes. Stoppedownedparent75120/child59016; no8825listener, socketnonzero10035recorded(notclaimedconnection-refused). OfflinecontextandAdscardloaded; passiveClaimlinkopenedemptyclaim/event/hiddenresult. OfflinePracticeall12supportedchoicesreachedbothAdsitems, wrapped1of12thenpanelcloseerasedfeedback/options/session. No inputtransferred.
+
+Firstguideimagewasnormal2537pxdesktopandrenamedoffline-ads-guide-desktop.png; explicitlyset390afternewtabbeforeclaimingmobilemetrics. Newguide390client/scroll375/375andreadablelowerconstructedexample/handoffcapturedin offline-ads-guide-390.png. DesktopmainoldPocketcachelaterreproduced4guide/noAdsondirect/phone/context.html#ads; desktopaliascorrectiontrackedseparately, notclaimedpassingyet.
+
+Afterknown8766refreshparent47424, actualEmailheader-freeconstructedNBSPadvice returnedunverified/no weightedwarning; SHYcoderequestreturnedDon'tactandmatchedliteralverifi[SOFTHYPHEN]cationexcerpt. Clearedafterchecks. Original8765child48848untouched. No nativeShare/copy/download/upload/browserpermissions/physicalphone/humanstudy/modelaccuracy claim.
+
+
+Desktop alias follow-up: after refreshing only owned development8766 (new parent53396), returned to Tools in the same Edge1793492838 origin that had just shown the stale four-card Pocket page. Ads link now opened /context-guide.html#ads, showing five cards, LOCAL GUIDE, desktop-launcher wording and static worksheet destinations. Expanded Ads; all fixed content present. Its Claim link opened /static/claim-review.html with current event field, empty claim/date and hidden result. No cache was cleared, worker unregistered, permission changed or alternate browser used. The stale canonical copy remains a retained observation; desktop alias success does not claim all old Pocket installations were updated.

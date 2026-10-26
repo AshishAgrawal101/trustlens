@@ -1,0 +1,85 @@
+✖ raw count and precise percentage drafts survive both method roundtrips without conversion or Compare (12.3473ms)
+✖ method change clears result errors and status, keeps selection focus and validates only active fields (51.7011ms)
+✖ Swap acts only on active draft and does not change retained other-method values (2.0166ms)
+✔ Clear and lifecycle wipe both drafts; constructed examples replace all rather than retaining inactive values (7.1946ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 1
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 207.6876
+
+✖ failing tests:
+
+test at tests\numbers_method_drafts.test.cjs:4:1
+✖ raw count and precise percentage drafts survive both method roundtrips without conversion or Compare (12.3473ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+  +   '',
+  +   '',
+  +   '',
+  +   ''
+  -   '00020',
+  -   '00100',
+  -   '0030',
+  -   '00200'
+    ]
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_method_drafts.test.cjs:4:338)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ '', '', '', '' ],
+    expected: [ '00020', '00100', '0030', '00200' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\numbers_method_drafts.test.cjs:5:1
+✖ method change clears result errors and status, keeps selection focus and validates only active fields (51.7011ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_method_drafts.test.cjs:5:950)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\numbers_method_drafts.test.cjs:6:1
+✖ Swap acts only on active draft and does not change retained other-method values (2.0166ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+  +   '',
+  +   '',
+  +   '',
+  +   ''
+  -   '20',
+  -   '100',
+  -   '30',
+  -   '200'
+    ]
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_method_drafts.test.cjs:6:338)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ '', '', '', '' ],
+    expected: [ '20', '100', '30', '200' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

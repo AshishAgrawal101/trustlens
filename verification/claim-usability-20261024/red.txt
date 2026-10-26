@@ -1,0 +1,66 @@
+✖ one initially closed native disclosure keeps enabled optional fields and unchanged pure code PLAN and print privacy (8.0279ms)
+✖ closing sources retains every draft role and date and includes them in explicit review (1.117ms)
+✖ date-only and role-only presence is descriptive and edits invalidate without counting a source (3.1617ms)
+✖ native invalid source opens before default focus and custom source rejection also reveals correction fields (1.4155ms)
+✖ examples reveal populated sources while Clear exit and persisted Back collapse and erase (1.735ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 0
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 95.7678
+
+✖ failing tests:
+
+test at tests\claim_sources_disclosure.test.cjs:8:1
+✖ one initially closed native disclosure keeps enabled optional fields and unchanged pure code PLAN and print privacy (8.0279ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(x.ids['claim-sources'])
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_sources_disclosure.test.cjs:9:106)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\claim_sources_disclosure.test.cjs:14:1
+✖ closing sources retains every draft role and date and includes them in explicit review (1.117ms)
+  TypeError: Cannot set properties of undefined (setting 'open')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_sources_disclosure.test.cjs:15:54)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at tests\claim_sources_disclosure.test.cjs:20:1
+✖ date-only and role-only presence is descriptive and edits invalidate without counting a source (3.1617ms)
+  TypeError: Cannot read properties of undefined (reading 'hidden')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_sources_disclosure.test.cjs:22:185)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests\claim_sources_disclosure.test.cjs:26:1
+✖ native invalid source opens before default focus and custom source rejection also reveals correction fields (1.4155ms)
+  TypeError: Cannot read properties of undefined (reading 'open')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_sources_disclosure.test.cjs:27:79)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests\claim_sources_disclosure.test.cjs:31:1
+✖ examples reveal populated sources while Clear exit and persisted Back collapse and erase (1.735ms)
+  TypeError: Cannot read properties of undefined (reading 'open')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_sources_disclosure.test.cjs:33:202)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

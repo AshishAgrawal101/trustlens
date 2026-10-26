@@ -1,0 +1,48 @@
+✖ caption planning preserves completed file facts questions preview and status without reinspection (22.8661ms)
+✖ caption planning keeps pending file-only request and accepts its independent result (2.1628ms)
+✔ file replacement Clear Cancel native invalid and lifecycle still reject late reports after caption edit (6.2018ms)
+✔ caption edit clears Cancel acknowledgment without restarting or admitting the canceled response (1.6012ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 140.528
+
+✖ failing tests:
+
+test at tests\media_caption_notes.test.cjs:3:1
+✖ caption planning preserves completed file facts questions preview and status without reinspection (22.8661ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\media_caption_notes.test.cjs:3:494)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\media_caption_notes.test.cjs:4:1
+✖ caption planning keeps pending file-only request and accepts its independent result (2.1628ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\media_caption_notes.test.cjs:4:346)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

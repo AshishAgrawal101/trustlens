@@ -1,0 +1,489 @@
+{
+  "version": 1,
+  "preregistered_at_stage": "Before any current-analyzer predictions on these36cases",
+  "purpose": "Competition-readiness development diagnostic, not population accuracy, field validation or user study.",
+  "constraints": [
+    "No app/rule tuning on this diagnostic",
+    "No private content, spam-as-fraud labels or actual received-message claims",
+    "No model/download/content API use",
+    "All outcomes including misses and extra concerns retained",
+    "Prior frozen diagnostics remain unchanged"
+  ],
+  "source_access_date": "2026-10-23",
+  "sources": {
+    "bank": "https://consumer.ftc.gov/consumer-alerts/2024/06/got-call-about-fraud-activity-your-bank-account-it-could-be-scammer",
+    "codes": "https://consumer.ftc.gov/consumer-alerts/2024/03/whats-verification-code-why-would-someone-ask-me-it",
+    "gift": "https://consumer.ftc.gov/articles/avoiding-and-reporting-gift-card-scams",
+    "job": "https://consumer.ftc.gov/articles/job-scams",
+    "task": "https://consumer.ftc.gov/consumer-alerts/2025/08/how-spot-avoid-task-scams",
+    "delivery": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+    "toll": "https://consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+    "family": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money"
+  },
+  "metrics": {
+    "warning": "Any weighted evidence item (>0). Alignment scored only for Boolean expectations; null ambiguous labels remain unscored.",
+    "specific_actions": "Presence of preregistered action themes in fixed action titles. Generic separate-route verification is reported separately and cannot count as a specific match.",
+    "uncertainty": "risk_index null, confidence low, model_ran false and decision_basis rules; does not establish correct calibration or contextual understanding.",
+    "action_usefulness": "Every row reports present/missing desired themes and a fixed interpretation: all desired themes present, partial, or generic-only. This is a proxy plus case-specific rationale, not a user rating.",
+    "timing": "One local sequential in-process analysis+guidance call per case, imports excluded. Descriptive, not a performance guarantee."
+  },
+  "action_title_map": {
+    "payment": "Pause the payment",
+    "code": "Keep security codes and passwords private",
+    "remote": "Keep control of your device",
+    "personal": "Hold back sensitive details",
+    "overpayment": "Do not return the difference yet",
+    "secrecy": "Bring in someone you trust",
+    "callback": "End the call and call back independently"
+  },
+  "cases": [
+    {
+      "id": "cac-ordinary-01",
+      "group": "ordinary",
+      "mode": "text",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "gift",
+      "text": "Please buy a bookstore gift card for the retiring teacher.",
+      "expected_warning": false,
+      "expected_specific_actions": [],
+      "expectation_rationale": "Ordinary gift context; an extra warning is verification friction, not proof of misclassification as fraud."
+    },
+    {
+      "id": "cac-ordinary-02",
+      "group": "ordinary",
+      "mode": "email",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "codes",
+      "text": "Your sign-in code is 482701. Keep it to yourself.",
+      "expected_warning": false,
+      "expected_specific_actions": [],
+      "expectation_rationale": "A notification is not a disclosure request."
+    },
+    {
+      "id": "cac-ordinary-03",
+      "group": "ordinary",
+      "mode": "call",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "bank",
+      "text": "Please transfer $18 for the lunch we agreed to share.",
+      "expected_warning": false,
+      "expected_specific_actions": [],
+      "expectation_rationale": "Legitimate reimbursement; existing broad payment caution may still trigger."
+    },
+    {
+      "id": "cac-ordinary-04",
+      "group": "ordinary",
+      "mode": "text",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "job",
+      "text": "Your first payroll statement is available in the employee portal you normally use.",
+      "expected_warning": false,
+      "expected_specific_actions": [],
+      "expectation_rationale": "Routine employment account notice."
+    },
+    {
+      "id": "cac-ordinary-05",
+      "group": "ordinary",
+      "mode": "email",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "delivery",
+      "text": "The tracking history is in the retailer account where you placed the order.",
+      "expected_warning": false,
+      "expected_specific_actions": [],
+      "expectation_rationale": "No link or payment instruction supplied."
+    },
+    {
+      "id": "cac-ordinary-06",
+      "group": "ordinary",
+      "mode": "call",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "family",
+      "text": "Urgent: the family picnic venue changed because of rain. Check our saved group calendar.",
+      "expected_warning": false,
+      "expected_specific_actions": [],
+      "expectation_rationale": "Urgent wording can be ordinary coordination."
+    },
+    {
+      "id": "cac-ordinary-07",
+      "group": "ordinary",
+      "mode": "text",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "codes",
+      "text": "Please share the source code for the timetable project.",
+      "expected_warning": false,
+      "expected_specific_actions": [],
+      "expectation_rationale": "Software source code is not account access."
+    },
+    {
+      "id": "cac-ordinary-08",
+      "group": "ordinary",
+      "mode": "email",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "job",
+      "text": "The community center hosts a legal action information session for tenants next month.",
+      "expected_warning": false,
+      "expected_specific_actions": [],
+      "expectation_rationale": "Legal terminology is an event topic, not a threat to the reader."
+    },
+    {
+      "id": "cac-ordinary-09",
+      "group": "ordinary",
+      "mode": "call",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "bank",
+      "text": "Your account was suspended at your own request after you closed the service. This is a record copy.",
+      "expected_warning": false,
+      "expected_specific_actions": [],
+      "expectation_rationale": "Stated routine closure context; no present demand is made."
+    },
+    {
+      "id": "cac-advice-01",
+      "group": "advice",
+      "mode": "text",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "codes",
+      "text": "Never give an unexpected caller your login password.",
+      "expected_warning": false,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "expectation_rationale": "Preserve code/privacy advice without treating it as a current request."
+    },
+    {
+      "id": "cac-advice-02",
+      "group": "advice",
+      "mode": "email",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "gift",
+      "text": "Do not purchase gift cards or send their numbers to someone claiming to collect a fine.",
+      "expected_warning": false,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "Protective advice about gift-card payment demands."
+    },
+    {
+      "id": "cac-advice-03",
+      "group": "advice",
+      "mode": "call",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "bank",
+      "text": "Never download TeamViewer for someone who calls without warning.",
+      "expected_warning": false,
+      "expected_specific_actions": [
+        "remote"
+      ],
+      "expectation_rationale": "Protective remote-access advice."
+    },
+    {
+      "id": "cac-advice-04",
+      "group": "advice",
+      "mode": "text",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "codes",
+      "text": "If a caller asks you to read your verification code, hang up.",
+      "expected_warning": false,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "expectation_rationale": "Conditional refusal should not become a request accusation."
+    },
+    {
+      "id": "cac-advice-05",
+      "group": "advice",
+      "mode": "email",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "bank",
+      "text": "Do not move your savings to a safe account for a caller.",
+      "expected_warning": false,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "Keep the transfer-protection warning intact."
+    },
+    {
+      "id": "cac-advice-06",
+      "group": "advice",
+      "mode": "call",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "delivery",
+      "text": "Do not open a parcel text link. Check your original order through the retailer account instead.",
+      "expected_warning": false,
+      "expected_specific_actions": [],
+      "expectation_rationale": "The separate route is already supplied as advice."
+    },
+    {
+      "id": "cac-advice-07",
+      "group": "advice",
+      "mode": "text",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "job",
+      "text": "An employer should not require your money before hiring you. Check the offer with someone you trust.",
+      "expected_warning": false,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "Advice, not a present fee demand."
+    },
+    {
+      "id": "cac-advice-08",
+      "group": "advice",
+      "mode": "email",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "codes",
+      "text": "Our completed handout includes the fake example \"Send me your security code.\"",
+      "expected_warning": false,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "expectation_rationale": "Explicit completed teaching material, not a current disclosure request."
+    },
+    {
+      "id": "cac-advice-09",
+      "group": "advice",
+      "mode": "call",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "gift",
+      "text": "Do not send $3.50 or buy gift cards for this unexpected contact.",
+      "expected_warning": false,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "Decimal punctuation must not detach negation."
+    },
+    {
+      "id": "cac-scam_pattern-01",
+      "group": "scam_pattern",
+      "mode": "text",
+      "origin": "newly authored adaptation",
+      "source_key": "codes",
+      "text": "I am the fraud agent. Tell me your verification code to cancel the new login.",
+      "expected_warning": true,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "expectation_rationale": "Adapted account-access demand."
+    },
+    {
+      "id": "cac-scam_pattern-02",
+      "group": "scam_pattern",
+      "mode": "email",
+      "origin": "newly authored adaptation",
+      "source_key": "bank",
+      "text": "Our fraud team needs you to transfer your savings to a secure account.",
+      "expected_warning": true,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "Adapted protection-transfer demand."
+    },
+    {
+      "id": "cac-scam_pattern-03",
+      "group": "scam_pattern",
+      "mode": "call",
+      "origin": "newly authored adaptation",
+      "source_key": "gift",
+      "text": "The gift cards are loaded. Use your camera to capture the digits beneath the scratch panels, then attach those photos here.",
+      "expected_warning": true,
+      "expected_specific_actions": [
+        "personal"
+      ],
+      "expectation_rationale": "Unfamiliar indirect request for gift-card credentials; no card brand or payment keyword."
+    },
+    {
+      "id": "cac-scam_pattern-04",
+      "group": "scam_pattern",
+      "mode": "text",
+      "origin": "newly authored adaptation",
+      "source_key": "family",
+      "text": "This is your cousin in trouble. A courier needs the cash now, and keep it secret.",
+      "expected_warning": true,
+      "expected_specific_actions": [
+        "payment",
+        "secrecy"
+      ],
+      "expectation_rationale": "Adapted emergency/cash-collection demand."
+    },
+    {
+      "id": "cac-scam_pattern-05",
+      "group": "scam_pattern",
+      "mode": "email",
+      "origin": "newly authored adaptation",
+      "source_key": "job",
+      "text": "Bank our equipment cheque, retain your wage, and route what remains to the purchasing assistant.",
+      "expected_warning": true,
+      "expected_specific_actions": [
+        "overpayment"
+      ],
+      "expectation_rationale": "Unfamiliar indirect onward-check instruction."
+    },
+    {
+      "id": "cac-scam_pattern-06",
+      "group": "scam_pattern",
+      "mode": "call",
+      "origin": "newly authored adaptation",
+      "source_key": "task",
+      "text": "Your commissions are frozen until you replenish the task wallet from personal funds.",
+      "expected_warning": true,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "Unfamiliar indirect pay-to-release-earnings demand."
+    },
+    {
+      "id": "cac-scam_pattern-07",
+      "group": "scam_pattern",
+      "mode": "text",
+      "origin": "newly authored adaptation",
+      "source_key": "toll",
+      "text": "Resolve the road charge using https://road-record.example/resolve or an extra charge will be added.",
+      "expected_warning": true,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "Adapted toll-payment pressure with an ordinary-looking address."
+    },
+    {
+      "id": "cac-scam_pattern-08",
+      "group": "scam_pattern",
+      "mode": "email",
+      "origin": "newly authored adaptation",
+      "source_key": "delivery",
+      "text": "Confirm the expiry date and the payment-card digits on https://parcel-record.example/confirm to reschedule the parcel.",
+      "expected_warning": true,
+      "expected_specific_actions": [
+        "personal"
+      ],
+      "expectation_rationale": "Adapted delivery-details collection; indirect sensitive-data wording."
+    },
+    {
+      "id": "cac-scam_pattern-09",
+      "group": "scam_pattern",
+      "mode": "call",
+      "origin": "newly authored adaptation",
+      "source_key": "bank",
+      "text": "Let me control your computer for a few minutes while I remove the banking alert.",
+      "expected_warning": true,
+      "expected_specific_actions": [
+        "remote",
+        "callback"
+      ],
+      "expectation_rationale": "Unfamiliar indirect remote-control request."
+    },
+    {
+      "id": "cac-ambiguous-01",
+      "group": "ambiguous",
+      "mode": "text",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "codes",
+      "text": "A notebook contains this line: \"Reply with your password.\" I do not know whether it is an old example or a current message.",
+      "expected_warning": null,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "expectation_rationale": "Currentness and quotation intent are unresolved."
+    },
+    {
+      "id": "cac-ambiguous-02",
+      "group": "ambiguous",
+      "mode": "email",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "gift",
+      "text": "Can you get gift cards for the office? No further context is available.",
+      "expected_warning": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "Could be an ordinary gift errand or an impersonation demand."
+    },
+    {
+      "id": "cac-ambiguous-03",
+      "group": "ambiguous",
+      "mode": "call",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "bank",
+      "text": "The notice says the account could be suspended. I have not opened the original message.",
+      "expected_warning": null,
+      "expected_specific_actions": [],
+      "expectation_rationale": "Threat wording alone does not settle authenticity or present action."
+    },
+    {
+      "id": "cac-ambiguous-04",
+      "group": "ambiguous",
+      "mode": "text",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "bank",
+      "text": "A colleague mentioned shifting funds after a bank alert, but I did not hear the actual request.",
+      "expected_warning": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "Indirect report has insufficient current-request detail."
+    },
+    {
+      "id": "cac-ambiguous-05",
+      "group": "ambiguous",
+      "mode": "email",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "codes",
+      "text": "Please tell me those six digits. They might refer to a booking reference or an account login.",
+      "expected_warning": null,
+      "expected_specific_actions": [
+        "code"
+      ],
+      "expectation_rationale": "The referent is unresolved."
+    },
+    {
+      "id": "cac-ambiguous-06",
+      "group": "ambiguous",
+      "mode": "call",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "job",
+      "text": "The invoice has different bank details, but I cannot tell whether this is an authorized change.",
+      "expected_warning": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "A genuine change and account compromise remain possible."
+    },
+    {
+      "id": "cac-ambiguous-07",
+      "group": "ambiguous",
+      "mode": "text",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "family",
+      "text": "A relative mentioned a driver collecting cash. I do not know who arranged it or why.",
+      "expected_warning": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "Purpose, identity and currentness remain unresolved."
+    },
+    {
+      "id": "cac-ambiguous-08",
+      "group": "ambiguous",
+      "mode": "email",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "gift",
+      "text": "The rehearsal script says \"Buy gift cards.\" A new caller later used similar wording.",
+      "expected_warning": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "History/live boundary cannot be inferred from similarity alone."
+    },
+    {
+      "id": "cac-ambiguous-09",
+      "group": "ambiguous",
+      "mode": "call",
+      "origin": "newly authored constructed control or unresolved scenario",
+      "source_key": "task",
+      "text": "A task platform shows a negative wallet amount. I am unsure whether topping it up is required to receive my pay.",
+      "expected_warning": null,
+      "expected_specific_actions": [
+        "payment"
+      ],
+      "expectation_rationale": "The platform story is uncertain, with a potentially risky next step."
+    }
+  ]
+}

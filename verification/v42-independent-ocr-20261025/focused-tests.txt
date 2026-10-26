@@ -1,0 +1,26 @@
+✔ QR extraction requires separate review and checks all edited text without opening destinations (34.8065ms)
+✔ QR clear or mode change rejects stale extraction and malformed success cannot bypass review (7.9688ms)
+✔ email file selection waits for explicit analysis, preserves paste alternative, and uses multipart (6.829ms)
+✔ invalid email files fail locally and file clear or mode replacement rejects stale reports (7.6695ms)
+✔ print checklist uses only safe summary, clears on edits, and cannot print a stale report (6.2243ms)
+✔ print stylesheet hides every body child except the dedicated input-free checklist (0.8289ms)
+✔ optional known website stays scoped to Link and clears private comparison drafts (8.0559ms)
+✔ QR capability shows configuration only and treats older responses as unknown (4.7528ms)
+✔ constructed fixture links remain passive downloads scoped to their intake modes (5.1553ms)
+✔ malformed reports never expose partial results, exports or private decoder errors (48.1483ms)
+✔ unreadable success and error responses use fixed feedback and can be retried (10.3495ms)
+✔ malformed extraction notice cannot enter editable review or be stringified (28.0844ms)
+✔ practice moves focus from a disabled answer to readable feedback (3.0497ms)
+✔ a result without matched concerns leads with unresolved verification (2.7537ms)
+✔ blank Screenshot extraction offers contrast recovery without changing text or running analysis (35.6601ms)
+✔ manual transparency advice stays in Screenshot help and preserves existing wrap advice (0.8443ms)
+✔ readable Screenshot notice and QR blank fallback remain separate (9.6482ms)
+✔ screenshot-only help explains faithful manual wrap correction without changing shared QR review (1.7889ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 213.2255

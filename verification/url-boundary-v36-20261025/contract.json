@@ -1,0 +1,45 @@
+{
+  "purpose": "Predeclared boundary diagnostic: compare acceptance without assume every whitespace trim is a security defect; unchanged hostname when accepted matters. Raw helper documented Cc/Cf rejection should survive or transformations disclosed.",
+  "cases": [
+    {
+      "id": "ascii-space",
+      "value": " https://example.org/ "
+    },
+    {
+      "id": "leading-tab",
+      "value": "\thttps://example.org/"
+    },
+    {
+      "id": "trailing-newline",
+      "value": "https://example.org/\n"
+    },
+    {
+      "id": "leading-bom",
+      "value": "\ufeffhttps://example.org/"
+    },
+    {
+      "id": "leading-nbsp",
+      "value": "\u00a0https://example.org/"
+    },
+    {
+      "id": "interior-tab",
+      "value": "https://exam\tple.org/"
+    },
+    {
+      "id": "interior-bom",
+      "value": "https://exam\ufeffple.org/"
+    }
+  ],
+  "paths": [
+    "raw parse_address",
+    "raw inspect_url",
+    "analyzeAPI",
+    "inspectAPI",
+    "main controller payload",
+    "anatomy controller payload"
+  ],
+  "fields": [
+    "url",
+    "known_website"
+  ]
+}

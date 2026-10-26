@@ -1,0 +1,7 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');const testDir=path.join(process.cwd(),'tests');
+let harness=fs.readFileSync(path.join(testDir,'frontend_state.test.cjs'),'utf8').split("test('screenshot requires")[0].replace('static/index.template.html','static/quote-context.html').replace('static/app.js','static/quote-context.js');
+harness=harness.replace('vm.runInContext(source,context);',"vm.runInContext(source,context);vm.runInContext(fs.readFileSync(path.join(root,'static/source-context.js'),'utf8'),context);vm.runInContext(fs.readFileSync(path.join(root,'static/unicode-notice.js'),'utf8'),context);");
+const fixture={require,__dirname:testDir,AbortController,AbortSignal,Blob};vm.runInNewContext(harness+'\nthis.setup=setup;',fixture);
+(async()=>{for(const target of ['quote-original','quote-revised']){const x=fixture.setup();x.ids['quote-original'].value='PRIVATE\u200b';x.ids['quote-revised'].value='revised';x.ids['source-passage'].value='Before PRIVATE\u200b after';await x.ids['source-form'].fire('submit');
+x.ids[target].value='';for(const fn of x.ids['quote-form'].events.invalid||[])await fn({target:x.ids[target],preventDefault(){}});
+console.log(JSON.stringify({target,sourceResultVisible:!x.ids['source-result'].hidden,sourceContextRetained:x.ids['source-matches'].textContent.includes('PRIVATE'),sourceNoticeVisible:!x.ids['source-formatting'].hidden,quoteHidden:x.ids['quote-result'].hidden,requests:x.requests.length}));}})();

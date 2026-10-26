@@ -1,0 +1,43 @@
+✔ user choices give fixed actions without copying private input (3.2039ms)
+✔ host inspection exposes userinfo without visiting or exporting addresses (0.9339ms)
+✔ shared form accepts bounded text and rejects duplicates, empty, files and oversize (39.5379ms)
+✔ shared payload cannot escape textarea or interpret replacement tokens (1.0184ms)
+✔ service worker handles shares without network or caching any shared text (6.8098ms)
+✔ every declared offline shell asset exists and manifest uses body sharing (0.8667ms)
+✔ phone edits and page exit remove private text, topics and stale results (4.111ms)
+✔ pending clipboard permission times out with download fallback and respects Clear (1.8583ms)
+✔ new offline worker must activate even when ready already points to an older worker (2.4495ms)
+✔ failed worker update does not claim readiness from old active worker and permits retry (3.0888ms)
+✔ registration timeout releases controls and ignores late resolution (1.7171ms)
+✔ worker activation timeout removes state listeners and does not overwrite a retry (1.669ms)
+✔ clipboard success or failure from a prior result cannot label a rebuilt result (2.6987ms)
+✔ offline readiness requires exact shell version and a complete cache (3.2991ms)
+✔ offline status handshake is bounded and a missing reply never claims readiness (1.6251ms)
+✔ Prepare explicitly checks for updates and retains a verified cached shell when offline (2.7912ms)
+✔ four offline recovery choices show only selected fixed steps and focus their heading (6.8256ms)
+✔ recovery exports fixed input-free guidance and releases its download URL (6.1192ms)
+✔ recovery clipboard timeout is actionable and stale completion cannot label a new selection (6.5032ms)
+✔ Clear and page exit erase recovery selection and invalidate pending status and exports (3.6812ms)
+✔ recovery markup keeps limits and explicit external FTC guide visible (0.6798ms)
+✔ known-site comparison uses exact normalized hosts, not brand text or suffixes (2.7212ms)
+✔ invalid known routes never become trusted comparisons (0.7717ms)
+✔ comparison invalidates on edits and erases its known route on Clear and page exit (2.3688ms)
+✔ practice uses six fixed scenarios with one supported choice and explicit reasoning (0.951ms)
+✔ practice feedback, progression and reset do not touch private message text (2.6278ms)
+✔ literal IPv6 hosts survive sentence and bracket punctuation (1.8352ms)
+✔ worker readiness requires every asset in the current cache (30.2325ms)
+✔ constructed handoff declares bounded body sharing and cannot auto-submit (0.7655ms)
+✔ literal topics are bounded, deduplicated and retain matched evidence (3.2638ms)
+✔ negation advice and completed history do not suggest current requests (0.4793ms)
+✔ suggest is opt-in; apply is a separate explicit topic action (3.2047ms)
+✔ private snippets clear on edits clear examples guide submission and page lifecycle (1.4369ms)
+✔ manual topic changes update apply controls; empty matches preserve uncertainty (1.2038ms)
+✔ dots in amounts domains and abbreviations cannot erase advice context (0.2818ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 198.7528

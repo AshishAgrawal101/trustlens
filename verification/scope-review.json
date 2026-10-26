@@ -1,0 +1,19 @@
+{
+  "changed_frozen_files": [
+    "app/guidance.py",
+    "README.md",
+    "scripts/package.py",
+    "static/index.template.html",
+    "submission/DEMO.md",
+    "submission/DEVPOST.md",
+    "submission/EVALUATION.md",
+    "submission/JUDGE-GUIDE.md",
+    "tasks/todo.md"
+  ],
+  "original_live_manifest_files_unchanged": 104,
+  "models_and_C2PA_code_unchanged": true,
+  "new_application_logic": false,
+  "new_tests": "tests/test_guidance_context.py",
+  "new_diagnostic": "verification/evaluate_continuation.py",
+  "frozen_entry_unchanged": true
+}

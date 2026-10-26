@@ -1,0 +1,13 @@
+# Independent Numbers and context acceptance
+
+All twelve frozen arithmetic cases pass. Contract SHA256 28bb0edad81dcd514759998d08860d0b22f91dcb3970ad57fbd584260fa7c4bb remains unchanged. Evaluated static/numbers-context.js SHA256 fe0309262a0302ed63453622e8b2dd60c3b729852353f3d6d80663db86e55a0a. Results retain every input, expected value, actual raw result and failure list. The CLI refuses to overwrite retained results.
+
+The contract was frozen before the module existed. Its cases distinguish zero baseline (null relative change), both zero, equal rates with different counts, growing counts with falling rate, shrinking counts with rising rate, one-half to three-quarters, one to two percent, complete decrease, thirds, rare rates and maximum safe integers. Numeric comparison tolerance is 1e-10 percent units; raw values are not rounded into display strings. The pure-function isolated run attempted no fetch/XHR and did not mutate inputs.
+
+Twenty-one tests pass in 112.7 ms process duration: twelve frozen rows, lineage/network, strict safe-integer/noncoercion checks for every input, independent numerator/denominator bounds, zero rates, swapped-group relative denominators and a separately labelled nearly-equal-safe-max numerical regression. The latter was added after implementation review and is not represented as preregistered: its exact integer cross-product difference is -1 even when separately rounded displayed rates coincide. BigInt cross-products preserve that tiny nonzero difference. Raw Number outputs still have normal floating-point approximation; the UI explicitly says rates/changes are rounded to six significant digits.
+
+No concrete arithmetic defect found. The zero baseline is undefined rather than infinity or an invented zero. Percentage points and relative percent have different denominators and are labelled separately. Source review finds fixed questions denying statistical significance, causation, data quality and claim truth, and asking about compatible outcome definitions/groups/time periods. Group A is a comparison baseline without an assumed temporal order.
+
+Only static/index.template.html changed for app integration: Numbers & context links in main navigation and hero, with local arithmetic/no significance/cause wording. All seven checker modes remain unchanged. Arithmetic module/page/controller are root-owned; no module edit was made by this review.
+
+These are arithmetic/software acceptance checks, not factual accuracy, sampling analysis or a user study. Pure results do not prove browser privacy, rendering, lifecycle erasure or accessibility; root's controller/browser tests remain separate evidence. The UI currently has no copy/export feature, so none is claimed by this report.

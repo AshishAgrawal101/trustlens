@@ -1,0 +1,12 @@
+# Final independent v17 Pocket review
+
+No concrete new finding. Current10case PocketPractice and scriptfreecontextguide reviewed read-only. Original4case acceptance.json remains unchanged; all4criteria still pass. No browser/upload/model/network work or app edits by this reviewer.
+
+The first6communication situations remain present in their original order; the4newcases cover sharedsourceindependence, editablecaptureclock/caption, literalquotationqualification and20/100versus30/200. Numeric explanation is correct:20%versus15%,A5percentagepointshigher, without inferring significance, cause, dataquality or comparablegroups. Sharedsources do not prove falsehood; dates do not settlecaptiontruth; literalquotechanges do not proveintent/factualmeaning. Bestanswers are proceduralnextchecks, not detectedfact/AIverdicts. Existing signedprovenancehint in the scriptfreeguide separates filebounddeclaration fromcaption/eventtruth.
+
+Practice show() increments epoch, everychoice references practice-text viaaria-describedby, and answer callbacks require currentepoch/unanswered/openpanel/visiblesession. Buttons disable afteronechoice; feedbackfocus is explicit. Next requires answeredcurrentvisiblecase, wraps aftercase10withPracticeagain, and Restartstart resets. Closingdetails resets without retaining answers; pagehide/persistedpageshow eraseprogress/options/feedback. Tests include stale detachedbutton activation afterrestart/close and all10case traversal. Progress is scenariocount, not accuracy. No input/history/storage/export/network dependency was added.
+
+Actual serviceworker/cacheversion is trustlens-pocket-v13; index/share-demo expectedversion references match. ExactSHELL retains /phone/context.html, guideassets and practice.js; readinessincludesallassets. Query/externalorigin/privatePOST exclusion remains. Contextdiscoverylink is in actualPocketintro, with successfulpreparation/offlinetest/storageeviction/untestedphysicalphonecaveats. This is code/test acceptance, not a physicalphone executionclaim.
+
+16focused practice/contextmarkup/cache/nativeshare tests passed,zero skips. Root separately reports desktopbrowserofflineall10walkthrough,narrowlayout,restart/closechecks; those are root's evidence, not independently repeatedhere. MinimalDOM/cache simulations do not establish realdeviceaccessibility, educationaleffectiveness or installation acrossphones. Allfrozenacceptance andearlierreviewreceipts preserved.
+

@@ -1,0 +1,15 @@
+# Independent frozen worksheet acceptance result
+
+The unchanged frozen contract SHA256 36f3edc43e31e6e476ee6e13d5e4d420ceb1e546c42879da09fea5b166b18e65 was evaluated against static/claim-review.js using evaluate.cjs. Source SHA256: 54dce62b1f9e3a201d1b06bc186da3c1ff2ad911a29628a826d4e4d29fc134e1. The explicit adapter maps the contract's two nested source records to aUrl/aQuote/aDate and bUrl/bQuote/bDate without rewriting inputs or expectations.
+
+All 25 cases meet their preregistered required IDs/error outcomes: 17 worksheet results and 8 fixed validation errors. Zero attempted fetch/XMLHttpRequest calls occurred in the isolated pure-function evaluation. results.json retains every case ID, expected IDs, actual output/error and failure list. The CLI refuses to overwrite retained results. Repeated tests evaluate in memory against the same frozen contract.
+
+Semantic source review found no concrete actionable defect. Same and different parsed hostname observations both explicitly deny independent reporting. Different ports do not change hostname comparison; literal trailing-dot spelling can count as a different parsed hostname without inferring ownership or independence. A quotes:compare question explicitly leaves agreement, contradiction and factual meaning unchecked; the identical-quote observation denies truth corroboration. Supplied date metadata is distinguished from verified event dates; a future date does not disprove the claim. The function does not parse a fact or event date from the freeform claim.
+
+Unsafe protocols, userinfo and relative addresses throw fixed errors. Impossible calendar dates and blank claims also fail with fixed errors. The input object is unchanged in every case. Output contains only fixed structural statements/questions/steps, rather than original claims, context, source URL credentials/queries, quotations or dates. The fixed PLAN denies a truth verdict and says no source was visited/verified. There is no credibility/risk/confidence field or semantic verdict.
+
+Validation: new tests/claim_contract.test.cjs has 28 passing tests (25 case rows and three integrity/semantic checks). Combined with existing tests/claim_review.test.cjs, 33 pass in 119.9 ms process duration. No application code changed. Frozen contract bytes remain unchanged.
+
+The four interaction scenarios are not established by this pure-function run. Source inspection shows textContent list rendering, input-change invalidation, Clear/page lifecycle erasure, generation-guarded copy completion, fixed PLAN downloads and no content storage or external API. Root's separate controller/browser checks remain necessary for actual focus, rendering, reset and pending clipboard behavior. No physical device, accessibility or source-content verification claim follows from these tests.
+
+These are constructed structural acceptance results, not fact-checking accuracy, independent-source validation or a user study. The worksheet helps organize missing checks; users still must inspect original accounts and underlying evidence themselves.

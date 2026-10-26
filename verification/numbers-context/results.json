@@ -1,0 +1,285 @@
+{
+  "label": "Frozen exact-arithmetic acceptance, not significance or truth evaluation",
+  "contract_sha256": "28bb0edad81dcd514759998d08860d0b22f91dcb3970ad57fbd584260fa7c4bb",
+  "source_sha256": "fe0309262a0302ed63453622e8b2dd60c3b729852353f3d6d80663db86e55a0a",
+  "network_calls": 0,
+  "rows": [
+    {
+      "id": "half-to-three-quarters",
+      "input": {
+        "countA": 1,
+        "totalA": 2,
+        "countB": 3,
+        "totalB": 4
+      },
+      "expected": {
+        "rateA": 50,
+        "rateB": 75,
+        "percentagePoints": 25,
+        "relativePercent": 50
+      },
+      "result": {
+        "rateA": 50,
+        "rateB": 75,
+        "percentagePoints": 25,
+        "relativePercent": 50
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "zero-base",
+      "input": {
+        "countA": 0,
+        "totalA": 10,
+        "countB": 1,
+        "totalB": 2
+      },
+      "expected": {
+        "rateA": 0,
+        "rateB": 50,
+        "percentagePoints": 50,
+        "relativePercent": null
+      },
+      "result": {
+        "rateA": 0,
+        "rateB": 50,
+        "percentagePoints": 50,
+        "relativePercent": null
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "both-zero",
+      "input": {
+        "countA": 0,
+        "totalA": 10,
+        "countB": 0,
+        "totalB": 100
+      },
+      "expected": {
+        "rateA": 0,
+        "rateB": 0,
+        "percentagePoints": 0,
+        "relativePercent": null
+      },
+      "result": {
+        "rateA": 0,
+        "rateB": 0,
+        "percentagePoints": 0,
+        "relativePercent": null
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "same-rate-different-counts",
+      "input": {
+        "countA": 10,
+        "totalA": 20,
+        "countB": 100,
+        "totalB": 200
+      },
+      "expected": {
+        "rateA": 50,
+        "rateB": 50,
+        "percentagePoints": 0,
+        "relativePercent": 0
+      },
+      "result": {
+        "rateA": 50,
+        "rateB": 50,
+        "percentagePoints": 0,
+        "relativePercent": 0
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "growing-count-falling-rate",
+      "input": {
+        "countA": 10,
+        "totalA": 20,
+        "countB": 15,
+        "totalB": 100
+      },
+      "expected": {
+        "rateA": 50,
+        "rateB": 15,
+        "percentagePoints": -35,
+        "relativePercent": -70
+      },
+      "result": {
+        "rateA": 50,
+        "rateB": 15,
+        "percentagePoints": -35,
+        "relativePercent": -70
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "shrinking-count-rising-rate",
+      "input": {
+        "countA": 100,
+        "totalA": 1000,
+        "countB": 50,
+        "totalB": 100
+      },
+      "expected": {
+        "rateA": 10,
+        "rateB": 50,
+        "percentagePoints": 40,
+        "relativePercent": 400
+      },
+      "result": {
+        "rateA": 10,
+        "rateB": 50,
+        "percentagePoints": 40,
+        "relativePercent": 400
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "one-to-two-percent",
+      "input": {
+        "countA": 1,
+        "totalA": 100,
+        "countB": 2,
+        "totalB": 100
+      },
+      "expected": {
+        "rateA": 1,
+        "rateB": 2,
+        "percentagePoints": 1,
+        "relativePercent": 100
+      },
+      "result": {
+        "rateA": 1,
+        "rateB": 2,
+        "percentagePoints": 1,
+        "relativePercent": 100
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "full-to-zero",
+      "input": {
+        "countA": 5,
+        "totalA": 5,
+        "countB": 0,
+        "totalB": 10
+      },
+      "expected": {
+        "rateA": 100,
+        "rateB": 0,
+        "percentagePoints": -100,
+        "relativePercent": -100
+      },
+      "result": {
+        "rateA": 100,
+        "rateB": 0,
+        "percentagePoints": -100,
+        "relativePercent": -100
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "third-to-two-thirds",
+      "input": {
+        "countA": 1,
+        "totalA": 3,
+        "countB": 2,
+        "totalB": 3
+      },
+      "expected": {
+        "rateA": 33.333333333333336,
+        "rateB": 66.66666666666667,
+        "percentagePoints": 33.333333333333336,
+        "relativePercent": 100
+      },
+      "result": {
+        "rateA": 33.33333333333333,
+        "rateB": 66.66666666666666,
+        "percentagePoints": 33.33333333333333,
+        "relativePercent": 100
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "rare-small-rate",
+      "input": {
+        "countA": 1,
+        "totalA": 1000,
+        "countB": 2,
+        "totalB": 1000
+      },
+      "expected": {
+        "rateA": 0.1,
+        "rateB": 0.2,
+        "percentagePoints": 0.1,
+        "relativePercent": 100
+      },
+      "result": {
+        "rateA": 0.1,
+        "rateB": 0.2,
+        "percentagePoints": 0.1,
+        "relativePercent": 100
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "same-count-denominator-growth",
+      "input": {
+        "countA": 1,
+        "totalA": 2,
+        "countB": 1,
+        "totalB": 4
+      },
+      "expected": {
+        "rateA": 50,
+        "rateB": 25,
+        "percentagePoints": -25,
+        "relativePercent": -50
+      },
+      "result": {
+        "rateA": 50,
+        "rateB": 25,
+        "percentagePoints": -25,
+        "relativePercent": -50
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "maximum-safe-integer",
+      "input": {
+        "countA": 9007199254740991,
+        "totalA": 9007199254740991,
+        "countB": 9007199254740991,
+        "totalB": 9007199254740991
+      },
+      "expected": {
+        "rateA": 100,
+        "rateB": 100,
+        "percentagePoints": 0,
+        "relativePercent": 0
+      },
+      "result": {
+        "rateA": 100,
+        "rateB": 100,
+        "percentagePoints": 0,
+        "relativePercent": 0
+      },
+      "error": null,
+      "failures": []
+    }
+  ],
+  "failures": 0
+}

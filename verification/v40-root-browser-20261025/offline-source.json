@@ -1,0 +1,26 @@
+{
+  "serverStopped": true,
+  "cache": "trustlens-pocket-v34",
+  "last": {
+    "focus": "source-page-status",
+    "page": "Matches 11–11 of 11"
+  },
+  "first": {
+    "focus": "source-page-status",
+    "page": "Matches 1–5 of 11",
+    "passage": "Offline Q. Offline Q. Offline Q. Offline Q. Offline Q. Offline Q. Offline Q. Offline Q. Offline Q. Offline Q. Offline Q. ",
+    "quote": "Offline Q"
+  },
+  "edited": {
+    "hidden": true,
+    "matches": ""
+  },
+  "clearReload": {
+    "findEnabled": true,
+    "hidden": true,
+    "passage": "",
+    "quote": ""
+  },
+  "constructed": true,
+  "physicalDevice": false
+}

@@ -1,0 +1,15 @@
+{
+  "legacyHasFirst": false,
+  "legacyHasLast": false,
+  "legacyFindInitiallyDisabled": true,
+  "error": {
+    "name": "TypeError",
+    "message": "Cannot read properties of null (reading 'addEventListener')",
+    "stack": [
+      "evalmachine.<anonymous>:58",
+      "  for(const id of ['source-first','source-last'])get(id).addEventListener('click',()=>{if(get('source-result').hidden||get(id).disabled)return;renderPage(id==='source-first'?0:lastPage,get(id));});",
+      "                                                        ^",
+      ""
+    ]
+  }
+}

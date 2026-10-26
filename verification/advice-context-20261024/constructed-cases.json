@@ -1,0 +1,159 @@
+{
+  "status": "frozen_before_current_predictions",
+  "purpose": "Fresh read-only contextual/formatting probes; no fraud truth or population performance labels",
+  "cases": [
+    {
+      "id": "secrecy-base",
+      "family": "secrecy-spacing",
+      "text": "Do not tell anyone about this transfer.",
+      "hand_context": "instruction",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ]
+    },
+    {
+      "id": "secrecy-nbsp",
+      "family": "secrecy-spacing",
+      "text": "Do\u00a0not tell anyone about this transfer.",
+      "hand_context": "instruction",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ]
+    },
+    {
+      "id": "secrecy-double-space",
+      "family": "secrecy-spacing",
+      "text": "Do  not tell anyone about this transfer.",
+      "hand_context": "instruction",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ]
+    },
+    {
+      "id": "secrecy-modal",
+      "family": "secrecy-modal",
+      "text": "You must not tell anyone about this transfer.",
+      "hand_context": "instruction",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ]
+    },
+    {
+      "id": "secrecy-should-modal",
+      "family": "secrecy-modal",
+      "text": "You should not tell anyone about this transfer.",
+      "hand_context": "instruction",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ]
+    },
+    {
+      "id": "secrecy-positive",
+      "family": "secrecy-modal",
+      "text": "Tell your bank about this transfer.",
+      "hand_context": "ordinary",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "privacy-never",
+      "family": "privacy-advice",
+      "text": "Never tell anyone your password.",
+      "hand_context": "advice",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "privacy-do-not",
+      "family": "privacy-advice",
+      "text": "Do not tell anyone your verification code.",
+      "hand_context": "advice",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "privacy-next-live",
+      "family": "privacy-advice",
+      "text": "Never tell anyone your password. Send me your verification code.",
+      "hand_context": "advice-then-live",
+      "expected_weighted_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "privacy-direct",
+      "family": "privacy-advice",
+      "text": "Tell me your password.",
+      "hand_context": "instruction",
+      "expected_weighted_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "contact-safe-route",
+      "family": "contact-route",
+      "text": "Do not call your bank using the number in this message.",
+      "hand_context": "advice",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "contact-ban",
+      "family": "contact-route",
+      "text": "Do not call your bank about this payment.",
+      "hand_context": "instruction",
+      "expected_weighted_ids": [
+        "request:secrecy"
+      ]
+    },
+    {
+      "id": "refusal-will-not",
+      "family": "direct-refusal",
+      "text": "I will not share my password.",
+      "hand_context": "refusal",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "refusal-wont",
+      "family": "direct-refusal",
+      "text": "I won't share my password.",
+      "hand_context": "refusal",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "refusal-refuse",
+      "family": "direct-refusal",
+      "text": "I refuse to share my password.",
+      "hand_context": "refusal",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "refusal-no-need",
+      "family": "direct-refusal",
+      "text": "You do not need to share your password.",
+      "hand_context": "advice",
+      "expected_weighted_ids": []
+    },
+    {
+      "id": "refusal-direct-control",
+      "family": "direct-refusal",
+      "text": "Please share your password.",
+      "hand_context": "instruction",
+      "expected_weighted_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "refusal-next-live",
+      "family": "direct-refusal",
+      "text": "I will not share my password. Install TeamViewer.",
+      "hand_context": "refusal-then-live",
+      "expected_weighted_ids": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "known-prohibition-control",
+      "family": "direct-refusal",
+      "text": "You must not share your password.",
+      "hand_context": "advice",
+      "expected_weighted_ids": []
+    }
+  ]
+}

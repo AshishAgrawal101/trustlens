@@ -1,0 +1,9 @@
+# Pocket context practice expansion
+
+Edited only static/phone/practice.js and new tests/pocket_context_practice.test.cjs, plus this report. Existing six case values were preserved exactly (SHA256 of their JSON data:fd26ec824f34897905fd72d82d32ae0fdbe5af414df24d2170c11d1c0e18e414). Added four authored constructed cases on source independence, editable image clocks/captions, quotation qualifications and count denominators. The last uses20/100=20% versus30/200=15%,5percentage points apart, without significance/causal/data-quality claims. Feedback uses neutral useful-next-check language for all ten.
+
+Regression first:5new tests failed on the old controller. Minimal lifecycle guard now requires an answered/open/visible active session for Next; options capture an epoch and reject duplicate/stale callbacks after restart/close/exit. Closed-panel callbacks are rejected even before the native toggle event fires. Reset clears scenario/progress/title/feedback/options, hides Next/session, restores the static Next label and runs on close, pagehide and persisted pageshow. Choices describe practice-text for assistive technology. No private message DOM, storage, fetch, model, export or dependencies added.
+
+Five dedicated tests now pass. Combined new practice + context markup run:8passed. Original pocket_practice.test.cjs intentionally remains untouched per scope; root notified that its six-case/count/safer-feedback assertions and nonstandard DOM double lacking setAttribute must be updated for the new contract.
+
+Root owns Pocket index text count10, worker cachev13 and package/export integration. No index/worker/CSS/archive edits by this agent. DOM regressions do not prove actual mobile announcements, offline cache delivery, native device practice or human learning. Browser upload permissions were not touched or bypassed.

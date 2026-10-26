@@ -1,0 +1,7 @@
+{
+  "purePrefixByteExact": true,
+  "pureSHA256": "0ed042bc431f853ca8e0a80a02844cfe212c81ad99197c3089bd314936bb2ca2",
+  "sharedFixtureOnlyStandardMethodAdded": true,
+  "digitsParserLineByteExact": true,
+  "SwapBlockExactAfterRemovingNecessaryClearCall": true
+}

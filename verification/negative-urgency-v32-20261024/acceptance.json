@@ -1,0 +1,147 @@
+{
+  "scope": "OnlysentenceanchoredcompleteThis-is-not-urgent clause; exactliteralurgent match;hspace+comma/semicolon/sentenceend; rejectquestiontermination includingcontiguouspunctuationrun",
+  "marker": "context:negative_urgency unknown/info/0 withoriginalclauseexcerpt; no authenticity/safety inference",
+  "rules_sha256": "ee1f276c34181864a14a3528c1533ff627bca2ba95f01704571b9ba123e22ace",
+  "cases": [
+    {
+      "id": "direct-negative",
+      "text": "This is not urgent.",
+      "expected_positive_ids": [],
+      "context": true
+    },
+    {
+      "id": "negative-eof",
+      "text": "This is not urgent",
+      "expected_positive_ids": [],
+      "context": true
+    },
+    {
+      "id": "positive",
+      "text": "This is urgent.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    },
+    {
+      "id": "not-only",
+      "text": "This is not only urgent.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    },
+    {
+      "id": "later-act-now",
+      "text": "This is not urgent, act now.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": true
+    },
+    {
+      "id": "later-urgency",
+      "text": "This is not urgent. This is urgent.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": true
+    },
+    {
+      "id": "later-code",
+      "text": "This is not urgent; send me your verification code.",
+      "expected_positive_ids": [
+        "request:code"
+      ],
+      "context": true
+    },
+    {
+      "id": "embedded-double-negative",
+      "text": "It is not true that this is not urgent.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    },
+    {
+      "id": "quoted",
+      "text": "She wrote \"This is not urgent\".",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    },
+    {
+      "id": "question",
+      "text": "This is not urgent?",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    },
+    {
+      "id": "mixed-question-punctuation",
+      "text": "This is not urgent!?",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    },
+    {
+      "id": "comma-question",
+      "text": "This is not urgent, right?",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    },
+    {
+      "id": "nonadjacent",
+      "text": "The appointment is not an urgent matter.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    },
+    {
+      "id": "extra-qualifier",
+      "text": "This is not urgent for the group.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    },
+    {
+      "id": "hardbreak-prefix",
+      "text": "This is not\nurgent.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    },
+    {
+      "id": "hardbreak-later",
+      "text": "This is not urgent\nAct now.",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": true
+    },
+    {
+      "id": "shy-excerpt",
+      "text": "This is not ur­gent; send me your verification code.",
+      "expected_positive_ids": [
+        "request:code"
+      ],
+      "context": true
+    },
+    {
+      "id": "shy-question",
+      "text": "This is not ur­gent?",
+      "expected_positive_ids": [
+        "request:urgency"
+      ],
+      "context": false
+    }
+  ]
+}

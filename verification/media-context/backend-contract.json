@@ -1,0 +1,8 @@
+{
+  "endpoint": "POST /api/inspect/media",
+  "input": "multipart file; JPEG/PNG/WebP; shared 64MiB and 20 million pixel policy",
+  "schema": {"format":"JPEG|PNG|WEBP","width":"original integer pixels","height":"original integer pixels","display_width":"EXIF-transposed integer pixels","display_height":"EXIF-transposed integer pixels","bytes":"integer original file bytes","capture_time":"null or validated DateTimeOriginal YYYY:MM:DD HH:MM:SS; timezone unspecified","software":"null or printable string <=120 characters","camera_make":"null or printable string <=80 characters","camera_model":"null or printable string <=80 characters","gps_present":"boolean GPS IFD tag presence only; no coordinates accessed","notice":"fixed caution"},
+  "prohibited": ["model loads","credentials verifier","network","filenames","paths","raw metadata","coordinates","author/owner/serial tags","thumbnails"],
+  "paired_cases": ["valid/invalid leap day","120/121 character software","printable/control software","original/orientation6 dimensions","no EXIF/allowlisted EXIF","DateTimeOriginal/generic DateTime","valid image/malformed file"],
+  "scope": "implementation contract; pairs documented after first implementation run, not a pretended historical failing-test receipt"
+}

@@ -1,0 +1,63 @@
+{
+  "purpose": "Fresh8authored balanced contexts; not fraud/sendertruth or populationaccuracy. No oldfinal/publiccase tuning. Freeze beforeexecution.",
+  "labels": "Fourprotective/completedcontexts and4active/mixedrequests; unknown context markers may remain, onlypositiveweighted IDs compared.",
+  "cases": [
+    {
+      "id": "passive-device-advice",
+      "category": "protective-advice",
+      "text": "If you are asked to install TeamViewer, refuse.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "passive-device-active",
+      "category": "active-request",
+      "text": "You are asked to install TeamViewer; please do it.",
+      "expected_positive_ids": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "completed-quote-report",
+      "category": "completed-report",
+      "text": "I received a text saying 'give me your password', which I reported without replying.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "quoted-plus-current",
+      "category": "active-mixed",
+      "text": "I received a text saying 'give me your password'. Now give me your password.",
+      "expected_positive_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "reported-pressure-advice",
+      "category": "protective-advice",
+      "text": "Ignore a caller who says it is urgent; never share your passcode.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "current-pressure-code",
+      "category": "active-request",
+      "text": "This is urgent; give me your passcode.",
+      "expected_positive_ids": [
+        "request:urgency",
+        "request:code"
+      ]
+    },
+    {
+      "id": "passive-personal-advice",
+      "category": "protective-advice",
+      "text": "If you are asked to provide your card number, refuse.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "passive-advice-plus-current",
+      "category": "active-mixed",
+      "text": "If you are asked to provide your card number, refuse. Send me your verification code.",
+      "expected_positive_ids": [
+        "request:code"
+      ]
+    }
+  ]
+}

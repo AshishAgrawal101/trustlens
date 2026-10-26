@@ -1,0 +1,627 @@
+.FFFFFFFFFFFFFF.FFFF.FFFF.FF.FF.FF.....FFFFFFFFFFFFF                     [100%]
+================================== FAILURES ===================================
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[Do-  ] _
+
+space = '  ', negative = 'Do'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('Do  not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[Do-\t] _
+
+space = '\t', negative = 'Do'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('Do\tnot share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[Do-\xa0] _
+
+space = '\xa0', negative = 'Do'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('Do\xa0not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[Do-\u2009] _
+
+space = '\u2009', negative = 'Do'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('Do\u2009not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[You should- ] _
+
+space = ' ', negative = 'You should'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('You should not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[You should-  ] _
+
+space = '  ', negative = 'You should'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('You should  not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[You should-\t] _
+
+space = '\t', negative = 'You should'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('You should\tnot share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[You should-\xa0] _
+
+space = '\xa0', negative = 'You should'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('You should\xa0not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[You should-\u2009] _
+
+space = '\u2009', negative = 'You should'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('You should\u2009not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[You must- ] _
+
+space = ' ', negative = 'You must'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('You must not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[You must-  ] _
+
+space = '  ', negative = 'You must'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('You must  not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[You must-\t] _
+
+space = '\t', negative = 'You must'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('You must\tnot share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[You must-\xa0] _
+
+space = '\xa0', negative = 'You must'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('You must\xa0not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_horizontal_negative_advice_does_not_hide_independent_live_request[You must-\u2009] _
+
+space = '\u2009', negative = 'You must'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    @pytest.mark.parametrize('negative',['Do','You should','You must'])
+    def test_horizontal_negative_advice_does_not_hide_independent_live_request(space,negative):
+        advice=negative+space+'not share your password.'
+>       assert not ids(advice)
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids('You must\u2009not share your password.')
+
+tests\test_wording_equivalence.py:13: AssertionError
+_ test_original_offset_negative_clause_guard_uses_same_horizontal_phrases[  ] _
+
+space = '  '
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    def test_original_offset_negative_clause_guard_uses_same_horizontal_phrases(space):
+>       assert not ids('Do'+space+'not send $1.00 or buy gift cards.')
+E       AssertionError: assert not {'request:payment'}
+E        +  where {'request:payment'} = ids((('Do' + '  ') + 'not send $1.00 or buy gift cards.'))
+
+tests\test_wording_equivalence.py:18: AssertionError
+_ test_original_offset_negative_clause_guard_uses_same_horizontal_phrases[\t] _
+
+space = '\t'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    def test_original_offset_negative_clause_guard_uses_same_horizontal_phrases(space):
+>       assert not ids('Do'+space+'not send $1.00 or buy gift cards.')
+E       AssertionError: assert not {'request:payment'}
+E        +  where {'request:payment'} = ids((('Do' + '\t') + 'not send $1.00 or buy gift cards.'))
+
+tests\test_wording_equivalence.py:18: AssertionError
+_ test_original_offset_negative_clause_guard_uses_same_horizontal_phrases[\xa0] _
+
+space = '\xa0'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    def test_original_offset_negative_clause_guard_uses_same_horizontal_phrases(space):
+>       assert not ids('Do'+space+'not send $1.00 or buy gift cards.')
+E       AssertionError: assert not {'request:payment'}
+E        +  where {'request:payment'} = ids((('Do' + '\xa0') + 'not send $1.00 or buy gift cards.'))
+
+tests\test_wording_equivalence.py:18: AssertionError
+_ test_original_offset_negative_clause_guard_uses_same_horizontal_phrases[\u2009] _
+
+space = '\u2009'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    def test_original_offset_negative_clause_guard_uses_same_horizontal_phrases(space):
+>       assert not ids('Do'+space+'not send $1.00 or buy gift cards.')
+E       AssertionError: assert not {'request:payment'}
+E        +  where {'request:payment'} = ids((('Do' + '\u2009') + 'not send $1.00 or buy gift cards.'))
+
+tests\test_wording_equivalence.py:18: AssertionError
+_________ test_existing_sensitive_noun_phrases_keep_their_meaning[  ] _________
+
+space = '  '
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    def test_existing_sensitive_noun_phrases_keep_their_meaning(space):
+        for phrase in ['social security number','bank account number','card number']:
+            sensitive=phrase.replace(' ',space)
+>           assert ids('Send your '+sensitive+'.')=={'request:personal'}
+E           AssertionError: assert set() == {'request:personal'}
+E             
+E             Extra items in the right set:
+E             'request:personal'
+E             Use -v to get more diff
+
+tests\test_wording_equivalence.py:25: AssertionError
+_________ test_existing_sensitive_noun_phrases_keep_their_meaning[\t] _________
+
+space = '\t'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    def test_existing_sensitive_noun_phrases_keep_their_meaning(space):
+        for phrase in ['social security number','bank account number','card number']:
+            sensitive=phrase.replace(' ',space)
+>           assert ids('Send your '+sensitive+'.')=={'request:personal'}
+E           AssertionError: assert set() == {'request:personal'}
+E             
+E             Extra items in the right set:
+E             'request:personal'
+E             Use -v to get more diff
+
+tests\test_wording_equivalence.py:25: AssertionError
+________ test_existing_sensitive_noun_phrases_keep_their_meaning[\xa0] ________
+
+space = '\xa0'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    def test_existing_sensitive_noun_phrases_keep_their_meaning(space):
+        for phrase in ['social security number','bank account number','card number']:
+            sensitive=phrase.replace(' ',space)
+>           assert ids('Send your '+sensitive+'.')=={'request:personal'}
+E           AssertionError: assert set() == {'request:personal'}
+E             
+E             Extra items in the right set:
+E             'request:personal'
+E             Use -v to get more diff
+
+tests\test_wording_equivalence.py:25: AssertionError
+_______ test_existing_sensitive_noun_phrases_keep_their_meaning[\u2009] _______
+
+space = '\u2009'
+
+    @pytest.mark.parametrize('space',HORIZONTAL)
+    def test_existing_sensitive_noun_phrases_keep_their_meaning(space):
+        for phrase in ['social security number','bank account number','card number']:
+            sensitive=phrase.replace(' ',space)
+>           assert ids('Send your '+sensitive+'.')=={'request:personal'}
+E           AssertionError: assert set() == {'request:personal'}
+E             
+E             Extra items in the right set:
+E             'request:personal'
+E             Use -v to get more diff
+
+tests\test_wording_equivalence.py:25: AssertionError
+_ test_existing_compound_code_phrases_accept_typographic_hyphens[six{h}digit-\u2010] _
+
+hyphen = '‐', compound = 'six{h}digit'
+
+    @pytest.mark.parametrize('hyphen',['-','\u2010','\u2011'])
+    @pytest.mark.parametrize('compound',['six{h}digit','6{h}digit','one{h}time'])
+    def test_existing_compound_code_phrases_accept_typographic_hyphens(hyphen,compound):
+        phrase=compound.format(h=hyphen)+' code'
+>       assert ids('Read me the '+phrase+'.')=={'request:code'}
+E       AssertionError: assert set() == {'request:code'}
+E         
+E         Extra items in the right set:
+E         'request:code'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:33: AssertionError
+_ test_existing_compound_code_phrases_accept_typographic_hyphens[six{h}digit-\u2011] _
+
+hyphen = '‑', compound = 'six{h}digit'
+
+    @pytest.mark.parametrize('hyphen',['-','\u2010','\u2011'])
+    @pytest.mark.parametrize('compound',['six{h}digit','6{h}digit','one{h}time'])
+    def test_existing_compound_code_phrases_accept_typographic_hyphens(hyphen,compound):
+        phrase=compound.format(h=hyphen)+' code'
+>       assert ids('Read me the '+phrase+'.')=={'request:code'}
+E       AssertionError: assert set() == {'request:code'}
+E         
+E         Extra items in the right set:
+E         'request:code'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:33: AssertionError
+_ test_existing_compound_code_phrases_accept_typographic_hyphens[6{h}digit-\u2010] _
+
+hyphen = '‐', compound = '6{h}digit'
+
+    @pytest.mark.parametrize('hyphen',['-','\u2010','\u2011'])
+    @pytest.mark.parametrize('compound',['six{h}digit','6{h}digit','one{h}time'])
+    def test_existing_compound_code_phrases_accept_typographic_hyphens(hyphen,compound):
+        phrase=compound.format(h=hyphen)+' code'
+>       assert ids('Read me the '+phrase+'.')=={'request:code'}
+E       AssertionError: assert set() == {'request:code'}
+E         
+E         Extra items in the right set:
+E         'request:code'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:33: AssertionError
+_ test_existing_compound_code_phrases_accept_typographic_hyphens[6{h}digit-\u2011] _
+
+hyphen = '‑', compound = '6{h}digit'
+
+    @pytest.mark.parametrize('hyphen',['-','\u2010','\u2011'])
+    @pytest.mark.parametrize('compound',['six{h}digit','6{h}digit','one{h}time'])
+    def test_existing_compound_code_phrases_accept_typographic_hyphens(hyphen,compound):
+        phrase=compound.format(h=hyphen)+' code'
+>       assert ids('Read me the '+phrase+'.')=={'request:code'}
+E       AssertionError: assert set() == {'request:code'}
+E         
+E         Extra items in the right set:
+E         'request:code'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:33: AssertionError
+_ test_existing_compound_code_phrases_accept_typographic_hyphens[one{h}time-\u2010] _
+
+hyphen = '‐', compound = 'one{h}time'
+
+    @pytest.mark.parametrize('hyphen',['-','\u2010','\u2011'])
+    @pytest.mark.parametrize('compound',['six{h}digit','6{h}digit','one{h}time'])
+    def test_existing_compound_code_phrases_accept_typographic_hyphens(hyphen,compound):
+        phrase=compound.format(h=hyphen)+' code'
+>       assert ids('Read me the '+phrase+'.')=={'request:code'}
+E       AssertionError: assert set() == {'request:code'}
+E         
+E         Extra items in the right set:
+E         'request:code'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:33: AssertionError
+_ test_existing_compound_code_phrases_accept_typographic_hyphens[one{h}time-\u2011] _
+
+hyphen = '‑', compound = 'one{h}time'
+
+    @pytest.mark.parametrize('hyphen',['-','\u2010','\u2011'])
+    @pytest.mark.parametrize('compound',['six{h}digit','6{h}digit','one{h}time'])
+    def test_existing_compound_code_phrases_accept_typographic_hyphens(hyphen,compound):
+        phrase=compound.format(h=hyphen)+' code'
+>       assert ids('Read me the '+phrase+'.')=={'request:code'}
+E       AssertionError: assert set() == {'request:code'}
+E         
+E         Extra items in the right set:
+E         'request:code'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:33: AssertionError
+_________ test_horizontal_repair_never_joins_hard_line_boundaries[\n] _________
+
+boundary = '\n'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+_________ test_horizontal_repair_never_joins_hard_line_boundaries[\r] _________
+
+boundary = '\r'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+________ test_horizontal_repair_never_joins_hard_line_boundaries[\r\n] ________
+
+boundary = '\r\n'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+________ test_horizontal_repair_never_joins_hard_line_boundaries[\x0b] ________
+
+boundary = '\x0b'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+________ test_horizontal_repair_never_joins_hard_line_boundaries[\x0c] ________
+
+boundary = '\x0c'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+________ test_horizontal_repair_never_joins_hard_line_boundaries[\x1c] ________
+
+boundary = '\x1c'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+________ test_horizontal_repair_never_joins_hard_line_boundaries[\x1d] ________
+
+boundary = '\x1d'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+________ test_horizontal_repair_never_joins_hard_line_boundaries[\x1e] ________
+
+boundary = '\x1e'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+________ test_horizontal_repair_never_joins_hard_line_boundaries[\x85] ________
+
+boundary = '\x85'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+_______ test_horizontal_repair_never_joins_hard_line_boundaries[\u2028] _______
+
+boundary = '\u2028'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+_______ test_horizontal_repair_never_joins_hard_line_boundaries[\u2029] _______
+
+boundary = '\u2029'
+
+    @pytest.mark.parametrize('boundary',['\n','\r','\r\n','\v','\f','\x1c','\x1d','\x1e','\x85','\u2028','\u2029'])
+    def test_horizontal_repair_never_joins_hard_line_boundaries(boundary):
+        assert ids('Do'+boundary+'not share your password.')=={'request:code'}
+        assert not ids('Send your bank'+boundary+'account number.')
+>       assert ids('Do not'+boundary+'buy gift cards and install TeamViewer.')=={'request:payment','request:remote'}
+E       AssertionError: assert {'request:payment'} == {'request:pay...quest:remote'}
+E         
+E         Extra items in the right set:
+E         'request:remote'
+E         Use -v to get more diff
+
+tests\test_wording_equivalence.py:51: AssertionError
+________________ test_sensitive_excerpt_keeps_original_spacing ________________
+
+    def test_sensitive_excerpt_keeps_original_spacing():
+        text='Send your bank\u00a0account\u00a0number.'
+        evidence=request_evidence(text)
+>       assert len(evidence)==1 and 'bank\u00a0account\u00a0number' in evidence[0].detail
+E       assert (0 == 1)
+E        +  where 0 = len([])
+
+tests\test_wording_equivalence.py:56: AssertionError
+_____________ test_max_input_horizontal_negation_has_bounded_work _____________
+
+    def test_max_input_horizontal_negation_has_bounded_work():
+        text=('Do\u00a0not send $1.00 or buy gift cards.\n'*900)[:30000]
+        start=time.perf_counter()
+>       assert not ids(text)
+E       AssertionError: assert not {'request:payment'}
+E        +  where {'request:payment'} = ids('Do\xa0not send $1.00 or buy gift cards.\nDo\xa0not send $1.00 or buy gift cards.\nDo\xa0not send $1.00 or buy gift ca....\nDo\xa0not send $1.00 or buy gift cards.\nDo\xa0not send $1.00 or buy gift cards.\nDo\xa0not send $1.00 or buy gift ')
+
+tests\test_wording_equivalence.py:61: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[Do-  ]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[Do-\t]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[Do-\xa0]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[Do-\u2009]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[You should- ]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[You should-  ]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[You should-\t]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[You should-\xa0]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[You should-\u2009]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[You must- ]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[You must-  ]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[You must-\t]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[You must-\xa0]
+FAILED tests/test_wording_equivalence.py::test_horizontal_negative_advice_does_not_hide_independent_live_request[You must-\u2009]
+FAILED tests/test_wording_equivalence.py::test_original_offset_negative_clause_guard_uses_same_horizontal_phrases[  ]
+FAILED tests/test_wording_equivalence.py::test_original_offset_negative_clause_guard_uses_same_horizontal_phrases[\t]
+FAILED tests/test_wording_equivalence.py::test_original_offset_negative_clause_guard_uses_same_horizontal_phrases[\xa0]
+FAILED tests/test_wording_equivalence.py::test_original_offset_negative_clause_guard_uses_same_horizontal_phrases[\u2009]
+FAILED tests/test_wording_equivalence.py::test_existing_sensitive_noun_phrases_keep_their_meaning[  ]
+FAILED tests/test_wording_equivalence.py::test_existing_sensitive_noun_phrases_keep_their_meaning[\t]
+FAILED tests/test_wording_equivalence.py::test_existing_sensitive_noun_phrases_keep_their_meaning[\xa0]
+FAILED tests/test_wording_equivalence.py::test_existing_sensitive_noun_phrases_keep_their_meaning[\u2009]
+FAILED tests/test_wording_equivalence.py::test_existing_compound_code_phrases_accept_typographic_hyphens[six{h}digit-\u2010]
+FAILED tests/test_wording_equivalence.py::test_existing_compound_code_phrases_accept_typographic_hyphens[six{h}digit-\u2011]
+FAILED tests/test_wording_equivalence.py::test_existing_compound_code_phrases_accept_typographic_hyphens[6{h}digit-\u2010]
+FAILED tests/test_wording_equivalence.py::test_existing_compound_code_phrases_accept_typographic_hyphens[6{h}digit-\u2011]
+FAILED tests/test_wording_equivalence.py::test_existing_compound_code_phrases_accept_typographic_hyphens[one{h}time-\u2010]
+FAILED tests/test_wording_equivalence.py::test_existing_compound_code_phrases_accept_typographic_hyphens[one{h}time-\u2011]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\n]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\r]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\r\n]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\x0b]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\x0c]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\x1c]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\x1d]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\x1e]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\x85]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\u2028]
+FAILED tests/test_wording_equivalence.py::test_horizontal_repair_never_joins_hard_line_boundaries[\u2029]
+FAILED tests/test_wording_equivalence.py::test_sensitive_excerpt_keeps_original_spacing
+FAILED tests/test_wording_equivalence.py::test_max_input_horizontal_negation_has_bounded_work
+41 failed, 11 passed in 0.60s

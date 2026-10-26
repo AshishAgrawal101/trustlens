@@ -1,0 +1,12 @@
+{
+  "pure_prefix_exact_v39": true,
+  "pure_prefix_sha256": "bd1691a2a781b0dbf3656b92695536171c3e0adca0dc7bf8e301111b224ff606",
+  "legacy_fixture_exact_v32_zip": true,
+  "legacy_fixture_sha256": "c7fbfbfbca5cd874630b7f3f1280a9b4b7ef02904ad91dd0b03626efe9d30ae9",
+  "harness_substitution_occurrences": {
+    "const html=fs.readFileSync(path.join(root,'static/quote-context.html'),'utf8');": 1,
+    "getElementById(id){assert.ok(ids[id],`Missing element ${id}`);return ids[id];}": 1,
+    "e.hidden=/\\bhidden\\b/.test(attrs);": 1,
+    "vm.runInContext(source,context);": 1
+  }
+}

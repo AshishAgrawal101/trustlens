@@ -1,0 +1,35 @@
+{
+  "scope": "Constructed local API checks; no destination visited. ftp:80 is HTTPS barehost/port convenience, not FTP support.",
+  "rows": [
+    {
+      "input": "ftp:/example.org/PRIVATE",
+      "status": 400,
+      "host": null,
+      "error": "Enter a complete HTTP(S) address or a bare hostname with a decimal port; other scheme syntax is not supported."
+    },
+    {
+      "input": "mailto:user@example.org",
+      "status": 400,
+      "host": null,
+      "error": "Enter a complete HTTP(S) address or a bare hostname with a decimal port; other scheme syntax is not supported."
+    },
+    {
+      "input": "file:/PRIVATE",
+      "status": 400,
+      "host": null,
+      "error": "Enter a complete HTTP(S) address or a bare hostname with a decimal port; other scheme syntax is not supported."
+    },
+    {
+      "input": "intranet:8080/path",
+      "status": 200,
+      "host": "intranet",
+      "error": null
+    },
+    {
+      "input": "ftp:80",
+      "status": 200,
+      "host": "ftp",
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "status": "frozen_before_predictions_new_constructed_audit",
+  "purpose": "Independent parser/context probes, not retuning any prior diagnostic or population accuracy",
+  "cases": [
+    {
+      "id": "space-negation-base",
+      "family": "horizontal-negation",
+      "text": "Do not share your password.",
+      "expected_ids": []
+    },
+    {
+      "id": "nbsp-negation",
+      "family": "horizontal-negation",
+      "text": "Do\u00a0not share your password.",
+      "expected_ids": []
+    },
+    {
+      "id": "double-space-negation",
+      "family": "horizontal-negation",
+      "text": "Do  not share your password.",
+      "expected_ids": []
+    },
+    {
+      "id": "tab-negation",
+      "family": "horizontal-negation",
+      "text": "Do\tnot share your password.",
+      "expected_ids": []
+    },
+    {
+      "id": "space-direct",
+      "family": "horizontal-negation",
+      "text": "Please share your password.",
+      "expected_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "personal-base",
+      "family": "sensitive-phrase-space",
+      "text": "Send your bank account number.",
+      "expected_ids": [
+        "request:personal"
+      ]
+    },
+    {
+      "id": "personal-nbsp",
+      "family": "sensitive-phrase-space",
+      "text": "Send your bank\u00a0account\u00a0number.",
+      "expected_ids": [
+        "request:personal"
+      ]
+    },
+    {
+      "id": "personal-nbsp-advice",
+      "family": "sensitive-phrase-space",
+      "text": "Do not send your bank\u00a0account\u00a0number.",
+      "expected_ids": []
+    },
+    {
+      "id": "personal-ordinary",
+      "family": "sensitive-phrase-space",
+      "text": "Send the meeting agenda.",
+      "expected_ids": []
+    },
+    {
+      "id": "sixdigit-base",
+      "family": "typographic-hyphen",
+      "text": "Read me the six-digit code.",
+      "expected_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "sixdigit-nonbreaking",
+      "family": "typographic-hyphen",
+      "text": "Read me the six\u2011digit code.",
+      "expected_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "sixdigit-nonbreaking-advice",
+      "family": "typographic-hyphen",
+      "text": "Never read anyone the six\u2011digit code.",
+      "expected_ids": []
+    },
+    {
+      "id": "sixdigit-order-ordinary",
+      "family": "typographic-hyphen",
+      "text": "The six\u2011digit order number is on the receipt.",
+      "expected_ids": []
+    },
+    {
+      "id": "aux-direct",
+      "family": "negative-auxiliary",
+      "text": "You should share your password.",
+      "expected_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "aux-should-not",
+      "family": "negative-auxiliary",
+      "text": "You should not share your password.",
+      "expected_ids": []
+    },
+    {
+      "id": "aux-must-not",
+      "family": "negative-auxiliary",
+      "text": "You must not share your password.",
+      "expected_ids": []
+    },
+    {
+      "id": "aux-next-live",
+      "family": "negative-auxiliary",
+      "text": "You should not share your password. Install TeamViewer.",
+      "expected_ids": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "conditional-stop-base",
+      "family": "conditional-refusal",
+      "text": "If someone asks you to share your password, stop.",
+      "expected_ids": [
+        "context:code"
+      ]
+    },
+    {
+      "id": "conditional-no-reply",
+      "family": "conditional-refusal",
+      "text": "If someone asks you to share your password, do not reply.",
+      "expected_ids": [
+        "context:code"
+      ]
+    },
+    {
+      "id": "conditional-direct",
+      "family": "conditional-refusal",
+      "text": "Share your password so I can help.",
+      "expected_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "conditional-next-live",
+      "family": "conditional-refusal",
+      "text": "If someone asks you to share your password, do not reply. Install TeamViewer.",
+      "expected_ids": [
+        "context:code",
+        "request:remote"
+      ]
+    }
+  ]
+}

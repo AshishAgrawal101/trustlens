@@ -1,0 +1,55 @@
+{
+  "scope": "Actual Edge320px using extracted Pocket v35/cachev30 after own8835serverstopped. Constructed counts/percentages only, no physicalphone.",
+  "offlineCount35": {
+    "facts": "Group A rateAbout 20% (20 of 100)Group B rateAbout 15% (30 of 200)Rate difference · B minus AAbout -5 percentage pointsRelative rate change · compared with AAbout -25%",
+    "visible": true
+  },
+  "offlinePercent35": {
+    "facts": "Group A rateAbout 1.2%Group B rateAbout 1.8%Rate difference · B minus AAbout 0.6 percentage pointsRelative rate change · compared with AAbout 50%Underlying counts and totalsNot supplied; not inferred from reported percentages.",
+    "visible": true
+  },
+  "offlineReturnCount35": {
+    "facts": "",
+    "resultHidden": true,
+    "values": [
+      "20",
+      "100",
+      "30",
+      "200"
+    ]
+  },
+  "offlineReturnPercent35": {
+    "clientWidth": 305,
+    "facts": "",
+    "resultHidden": true,
+    "scrollWidth": 305,
+    "values": [
+      "1.20",
+      "1.80"
+    ]
+  },
+  "offlineClear35": {
+    "all": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "resultHidden": true
+  },
+  "offlineReload35": {
+    "all": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "title": "Numbers & context — TrustLens Pocket"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "purpose": "Authored ordinary MIME/HTML coverage boundary expectations frozen before execution; not fraud accuracy",
+  "cases": [
+    {
+      "id": "html-entity-target",
+      "raw": "Content-Type: text/html\n\n<a href=\"https://other.example/?x=1&amp;y=2\">https://known.example</a>",
+      "required": [
+        "email:link_mismatch:0"
+      ],
+      "forbidden": [
+        "email:links_incomplete",
+        "email:incomplete"
+      ]
+    },
+    {
+      "id": "html-relative-with-base",
+      "raw": "Content-Type: text/html\n\n<base href=\"https://known.example/\"><a href=\"account\">Review account</a>",
+      "required": [
+        "email:links_incomplete"
+      ],
+      "forbidden": [
+        "email:link_mismatch:0"
+      ]
+    },
+    {
+      "id": "html-scheme-relative-neutral",
+      "raw": "Content-Type: text/html\n\n<a href=\"//other.example/account\">Review account</a>",
+      "required": [
+        "email:relative_host:0"
+      ],
+      "forbidden": [
+        "email:links_incomplete",
+        "url:http:relative:0"
+      ]
+    },
+    {
+      "id": "html-fragment-only",
+      "raw": "Content-Type: text/html\n\n<a href=\"#section\">Read section</a>",
+      "required": [],
+      "forbidden": [
+        "email:links_incomplete",
+        "email:incomplete"
+      ]
+    },
+    {
+      "id": "mailto-primary-mismatch",
+      "raw": "Content-Type: text/html\n\n<a href=\"mailto:contact@other.example?subject=Appointment\">contact@known.example</a>",
+      "required": [
+        "email:link_mismatch:0"
+      ],
+      "forbidden": [
+        "email:links_incomplete"
+      ]
+    },
+    {
+      "id": "multipart-inline-and-attachment",
+      "raw": "Content-Type: multipart/mixed; boundary=p\n\n--p\nContent-Type: text/plain\nContent-Disposition: inline\n\nSend me your verification code.\n--p\nContent-Type: text/plain\nContent-Disposition: attachment\nContent-Transfer-Encoding: x-private\n\nSend money by wire.\n--p--\n",
+      "required": [
+        "request:code",
+        "email:unscanned"
+      ],
+      "forbidden": [
+        "request:payment",
+        "email:incomplete"
+      ]
+    },
+    {
+      "id": "html-br-advice",
+      "raw": "Content-Type: text/html\n\n<p>Do not share your password.</p><p>Meeting is tomorrow.<br>Bring your notes.</p>",
+      "required": [],
+      "forbidden": [
+        "request:code",
+        "email:incomplete"
+      ]
+    },
+    {
+      "id": "html-unsupported-target",
+      "raw": "Content-Type: text/html\n\n<a href=\"javascript:void(0)\">Account page</a>",
+      "required": [
+        "email:links_incomplete"
+      ],
+      "forbidden": [
+        "email:link_mismatch:0"
+      ]
+    }
+  ]
+}

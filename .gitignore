@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.credentials-venv/
+local-runtime.json
+local-python.cmd
+static/index.html
+*.log
+artifacts/

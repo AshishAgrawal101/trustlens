@@ -1,0 +1,98 @@
+✖ A-only B-only and both attach fixed count messages before native reporting; invalid capture preserves them (7.1871ms)
+✖ fixing A leaves B for next Compare; editing totals clears stale errors without calculating (3.7927ms)
+✔ native overflow and existing digits-only errors precede relationship messages (2.8677ms)
+✖ method retention percentage comparison Swap Clear examples and lifecycle clear stale count validity (22.4885ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 1
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 152.2657
+
+✖ failing tests:
+
+test at tests\numbers_crossfield_validation.test.cjs:8:1
+✖ A-only B-only and both attach fixed count messages before native reporting; invalid capture preserves them (7.1871ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_crossfield_validation.test.cjs:8:407)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\numbers_crossfield_validation.test.cjs:9:1
+✖ fixing A leaves B for next Compare; editing totals clears stale errors without calculating (3.7927ms)
+  AssertionError [ERR_ASSERTION]: Expected "actual" to be reference-equal to "expected":
+  + actual - expected
+  
+    Element {
+  +   _text: 'Use whole-number counts from 0 to their group total, with totals from 1 to 9,007,199,254,740,991.',
+  -   _text: '',
+      attributes: {
+  +     class: 'error',
+  +     id: 'numbers-error',
+  +     role: 'alert',
+  +     tabindex: '-1'
+  -     'aria-describedby': 'numbers-help numbers-limits',
+  -     id: 'count-b',
+  -     inputmode: 'numeric',
+  -     max: '9007199254740991',
+  -     min: '0',
+  -     placeholder: 'For example, 30',
+  -     step: '1',
+  -     type: 'number'
+      },
+      checked: false,
+      children: [],
+      dataset: {},
+  +   events: {},
+  -   disabled: false,
+  -   events: {
+  -     input: [
+  -       [Function: invalidate]
+  -     ]
+  -   },
+      files: [],
+      hidden: false,
+      open: false,
+  +   required: false,
+  +   tagName: 'div',
+  +   value: ''
+  -   required: true,
+  -   tagName: 'input',
+  -   value: '201'
+    }
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_crossfield_validation.test.cjs:9:451)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [Element],
+    expected: [Element],
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\numbers_crossfield_validation.test.cjs:11:1
+✖ method retention percentage comparison Swap Clear examples and lifecycle clear stale count validity (22.4885ms)
+  TypeError: Cannot read properties of undefined (reading 'badInput')
+      at evalmachine.<anonymous>:88:50
+      at Array.some (<anonymous>)
+      at evalmachine.<anonymous>:88:23
+      at evalmachine.<anonymous>:20:80
+      at Array.map (<anonymous>)
+      at Element.fire (evalmachine.<anonymous>:20:72)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_crossfield_validation.test.cjs:11:745)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

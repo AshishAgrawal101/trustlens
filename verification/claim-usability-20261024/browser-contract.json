@@ -1,0 +1,20 @@
+{
+  "constructed_only": true,
+  "viewport_widths": [
+    390,
+    320
+  ],
+  "checks": [
+    "Blank claim form initially collapses optional source accounts and retains visible claim/context/event inputs.",
+    "Required-only claim review works without opening optional sources; no source is invented.",
+    "Open sources, enter constructed URL/quote/date/role, close; fields stay included and status indicates entries without echoing values.",
+    "Review collapsed populated sources includes their existing labels/date observations; closing after result does not discard it.",
+    "Native invalid source URL opens disclosure for correction rather than leaving hidden invalid fields.",
+    "Native-valid unsupported source scheme opens sources and fixed error rather than hiding correction fields.",
+    "Examples open supplied source fields; Clear collapses/erases all inputs/status/result.",
+    "Page exit and persisted Back collapse and erase source entries.",
+    "Collapsed source group is keyboard reachable as one native summary and Review follows without tabbing through hidden controls.",
+    "Prepared new Pocket export repeats closed/open/review/error/reset with server stopped; no upload/share/clipboard/browsersetting change."
+  ],
+  "baseline_file": "browser-before.json"
+}

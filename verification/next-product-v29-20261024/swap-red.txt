@@ -1,0 +1,62 @@
+✖ swap is initially disabled native button and preserves pure math bytes and mobile target layout (8.3171ms)
+✖ count reversal swaps pairs clears old result and recalculates asymmetric baseline only on explicit Compare (16.0604ms)
+✖ double swap preserves raw count strings and partial invalid drafts without silently validating (1.3457ms)
+✖ percentage swap preserves exact strings active method and hidden inactive fields without denominator invention (1.2653ms)
+✖ status readiness and stale results reset on every normal boundary without changing lifecycle defaults (1.3149ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 0
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 124.533
+
+✖ failing tests:
+
+test at tests\numbers_swap.test.cjs:8:1
+✖ swap is initially disabled native button and preserves pure math bytes and mobile target layout (8.3171ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(x.ids['numbers-swap'])
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_swap.test.cjs:9:34)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\numbers_swap.test.cjs:14:1
+✖ count reversal swaps pairs clears old result and recalculates asymmetric baseline only on explicit Compare (16.0604ms)
+  TypeError: Cannot read properties of undefined (reading 'focus')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_swap.test.cjs:16:25)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests\numbers_swap.test.cjs:19:1
+✖ double swap preserves raw count strings and partial invalid drafts without silently validating (1.3457ms)
+  TypeError: Cannot read properties of undefined (reading 'fire')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_swap.test.cjs:21:85)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests\numbers_swap.test.cjs:25:1
+✖ percentage swap preserves exact strings active method and hidden inactive fields without denominator invention (1.2653ms)
+  TypeError: Cannot read properties of undefined (reading 'fire')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_swap.test.cjs:26:232)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests\numbers_swap.test.cjs:29:1
+✖ status readiness and stale results reset on every normal boundary without changing lifecycle defaults (1.3149ms)
+  TypeError: Cannot read properties of undefined (reading 'fire')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_swap.test.cjs:31:120)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

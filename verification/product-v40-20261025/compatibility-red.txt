@@ -1,0 +1,66 @@
+✖ frozen v32 missing jump controls return real null and initially disabled Find enables (5.1357ms)
+✖ legacy explicit Find and Previous/Next navigate true pages and endpoint focus without I/O (1.3488ms)
+✖ legacy edits native invalid Clear and lifecycle reset pages and stale navigation stays inert (1.2489ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 98.0179
+
+✖ failing tests:
+
+test at tests\source_legacy_dom.test.cjs:8:1
+✖ frozen v32 missing jump controls return real null and initially disabled Find enables (5.1357ms)
+  evalmachine.<anonymous>:58
+    for(const id of ['source-first','source-last'])get(id).addEventListener('click',()=>{if(get('source-result').hidden||get(id).disabled)return;renderPage(id==='source-first'?0:lastPage,get(id));});
+                                                          ^
+  
+  TypeError: Cannot read properties of null (reading 'addEventListener')
+      at evalmachine.<anonymous>:58:57
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at setup (evalmachine.<anonymous>:53:94)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\source_legacy_dom.test.cjs:8:168)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at tests\source_legacy_dom.test.cjs:9:1
+✖ legacy explicit Find and Previous/Next navigate true pages and endpoint focus without I/O (1.3488ms)
+  evalmachine.<anonymous>:58
+    for(const id of ['source-first','source-last'])get(id).addEventListener('click',()=>{if(get('source-result').hidden||get(id).disabled)return;renderPage(id==='source-first'?0:lastPage,get(id));});
+                                                          ^
+  
+  TypeError: Cannot read properties of null (reading 'addEventListener')
+      at evalmachine.<anonymous>:58:57
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at setup (evalmachine.<anonymous>:53:94)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\source_legacy_dom.test.cjs:9:116)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+
+test at tests\source_legacy_dom.test.cjs:10:1
+✖ legacy edits native invalid Clear and lifecycle reset pages and stale navigation stays inert (1.2489ms)
+  evalmachine.<anonymous>:58
+    for(const id of ['source-first','source-last'])get(id).addEventListener('click',()=>{if(get('source-result').hidden||get(id).disabled)return;renderPage(id==='source-first'?0:lastPage,get(id));});
+                                                          ^
+  
+  TypeError: Cannot read properties of null (reading 'addEventListener')
+      at evalmachine.<anonymous>:58:57
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at setup (evalmachine.<anonymous>:53:94)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\source_legacy_dom.test.cjs:10:240)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)

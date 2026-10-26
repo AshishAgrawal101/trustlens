@@ -1,0 +1,28 @@
+{
+  "verified_assets": [
+    {
+      "id": "coco2017:100202",
+      "sha256": "25049cc76fad218a900e30686ff522ca396f5d61d4931f75d7af3887d3e0ff98",
+      "verified": true
+    },
+    {
+      "id": "coco2017:100331",
+      "sha256": "83924cad55f6b7ad33a222e759357a7f14b154b67790d8ef17b7713db9fc56c6",
+      "verified": true
+    },
+    {
+      "id": "core/train-00001-of-00032-00014.parquet:openfake-00abb50acfb1f09e80ed6d6d2203d68e",
+      "sha256": "64615e8239bafe5ac65f147ccc860101f5d3b0bd9b98bc6abd48c29e4f3e2afe",
+      "verified": true
+    },
+    {
+      "id": "core/train-00001-of-00032-00014.parquet:openfake-05b2417ac63c4a0213fa683edaf4c2e9",
+      "sha256": "ef274205aa44259c9b2309affd75a3057fcb9d37493bcb9852737dad1ddcb680",
+      "verified": true
+    }
+  ],
+  "locks_acquired": 24,
+  "STOP_preserved": "c19c82e1d90a42542c305e1cc984e7ce16151e0e0925f1f65f4d1d822b212ada",
+  "attempt_script_sha256": "aaf65f0ebf598ff679c339aac915842297ea8a3dd7c296554df5b424e1bdb177",
+  "supervisor_sha256": "a1ae6608ed8b829a6941f2e7e372ab18d4ca3dcca3f50a5e5304d0c52bc8902b"
+}

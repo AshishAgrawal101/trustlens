@@ -1,0 +1,87 @@
+{
+  "purpose": "New authored diagnostic, not populationaccuracy or sendertruth; no formerfinal/benchmark/source adaptation",
+  "frozen_before_rule_read": "2026-10-24 fresh wave; no current source re-read until this file/hash saved",
+  "expectation_policy": "Active requests should expose existing sensitive-request topic, never establishfraud. Advice/ordinary/completedreport expectations have no positiveweightedrequest/pressure concern; contextunknown can remain. NonEnglishcase unscored and English-only limit required.",
+  "cases": [
+    {
+      "id": "active-code",
+      "label": "active-sensitive-request",
+      "text": "Before the meeting, please send me your six-digit code.",
+      "expected_positive_ids": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "active-device",
+      "label": "active-sensitive-request",
+      "text": "Please enable remote desktop so I can fix the account problem.",
+      "expected_positive_ids": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "active-personal",
+      "label": "active-sensitive-request",
+      "text": "Please provide your bank account number for the refund.",
+      "expected_positive_ids": [
+        "request:personal"
+      ]
+    },
+    {
+      "id": "active-payment",
+      "label": "active-sensitive-request",
+      "text": "Can you buy two gift cards and send me the numbers?",
+      "expected_positive_ids": [
+        "request:payment"
+      ]
+    },
+    {
+      "id": "reminder-privacy",
+      "label": "protective-advice",
+      "text": "Please remember not to share your password with anyone.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "conditional-device",
+      "label": "protective-advice",
+      "text": "If you're asked to install AnyDesk, refuse and call support.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "advice-urgent",
+      "label": "protective-advice",
+      "text": "Do not send your password, even if the caller says it is urgent.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "reported-warning",
+      "label": "completed-thirdparty-warning",
+      "text": "The email said 'send your password'; I ignored it and reported it.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "ordinary-agenda",
+      "label": "ordinary",
+      "text": "Send me the meeting agenda before noon.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "ordinary-field",
+      "label": "ordinary",
+      "text": "The verification code field is empty.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "ordinary-completed-work",
+      "label": "ordinary",
+      "text": "We enabled remote desktop on the office lab last week.",
+      "expected_positive_ids": []
+    },
+    {
+      "id": "outside-english",
+      "label": "out-of-scope-language",
+      "text": "Bitte sende mir dein Passwort.",
+      "expected_positive_ids": null
+    }
+  ]
+}

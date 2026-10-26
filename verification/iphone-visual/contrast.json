@@ -1,0 +1,1069 @@
+{
+  "audited_utc": "2026-10-23T18:43:12.647659+00:00",
+  "scope": "Bounded numerical audit of declared main redesign and Pocket/iPhone core text, active buttons and selected focus colors. Not a rendered-page or full WCAG audit.",
+  "method": {
+    "formula": "WCAG sRGB relative luminance; channel <=0.04045 -> channel/12.92, else ((channel+0.055)/1.055)^2.4; L=0.2126R+0.7152G+0.0722B; ratio=(lighter+0.05)/(darker+0.05)",
+    "normal_text_threshold": 4.5,
+    "focus_nontext_threshold": 3,
+    "large_text": "Conservatively tested at 4.5:1 too.",
+    "backgrounds": "Declared solid endpoints sampled; main shell upper glow represented by alpha composition #123b3d70 over #09191f. Pocket transparent navbar conservatively composited over white.",
+    "excluded": "Disabled/inactive controls (contrast exemption), decorative aria-hidden lens art, all state/selector combinations, computed layout, font rasterization, browser forced colors, focus occlusion and assistive technology."
+  },
+  "sources": [
+    {
+      "path": "static\\styles.css",
+      "sha256": "6ac9da856b717c1bfa589fc6f00d5433bd04d9ec240ceea6a6911ee8d7e3c365"
+    },
+    {
+      "path": "static\\phone\\phone.css",
+      "sha256": "217326e55843a12e6540bb5b6c4cd0f473c26ec7e9b543e3723959ebc3240f8b"
+    },
+    {
+      "path": "static\\phone\\ios.css",
+      "sha256": "373de0e307f284452f9113f2880db997cfd3b786308a9d1ac9aac5ae2c3f7b01"
+    }
+  ],
+  "prior_finding": {
+    "foreground": "#6daf53",
+    "background": "#fbfcf7",
+    "ratio": 2.576,
+    "required_ratio": 3,
+    "status": "resolved by root before final audit",
+    "resolution": "Root changed light-workstation focus to #397c61 and included footer in lime-on-dark exceptions. Original failed focus color is retained here as historical evidence."
+  },
+  "summary": {
+    "cases": 58,
+    "passing": 58,
+    "failures": 0,
+    "minimum_text_ratio": 4.5464,
+    "status": "passed bounded sample"
+  },
+  "cases": [
+    {
+      "area": "main shell",
+      "usage": "body",
+      "foreground": "#edf4ed",
+      "background_checks": [
+        {
+          "background": "#09191f",
+          "ratio": 16.0314
+        },
+        {
+          "background": "#0d282c",
+          "ratio": 13.8276
+        }
+      ],
+      "minimum_ratio": 13.8276,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main shell",
+      "usage": "hero lede",
+      "foreground": "#b8cbc4",
+      "background_checks": [
+        {
+          "background": "#09191f",
+          "ratio": 10.575
+        },
+        {
+          "background": "#0d282c",
+          "ratio": 9.1213
+        }
+      ],
+      "minimum_ratio": 9.1213,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main shell",
+      "usage": "header controls",
+      "foreground": "#c4d7d1",
+      "background_checks": [
+        {
+          "background": "#09191f",
+          "ratio": 11.9509
+        },
+        {
+          "background": "#0d282c",
+          "ratio": 10.308
+        }
+      ],
+      "minimum_ratio": 10.308,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main shell",
+      "usage": "brand edition",
+      "foreground": "#a2b8b4",
+      "background_checks": [
+        {
+          "background": "#09191f",
+          "ratio": 8.5877
+        },
+        {
+          "background": "#0d282c",
+          "ratio": 7.4072
+        }
+      ],
+      "minimum_ratio": 7.4072,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main shell",
+      "usage": "hero eyebrow",
+      "foreground": "#a5c7bd",
+      "background_checks": [
+        {
+          "background": "#09191f",
+          "ratio": 9.8287
+        },
+        {
+          "background": "#0d282c",
+          "ratio": 8.4776
+        }
+      ],
+      "minimum_ratio": 8.4776,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main shell",
+      "usage": "hero accent",
+      "foreground": "#b5ee96",
+      "background_checks": [
+        {
+          "background": "#09191f",
+          "ratio": 13.358
+        },
+        {
+          "background": "#0d282c",
+          "ratio": 11.5217
+        }
+      ],
+      "minimum_ratio": 11.5217,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main support",
+      "usage": "support body",
+      "foreground": "#dcece0",
+      "background_checks": [
+        {
+          "background": "#102a2d",
+          "ratio": 12.305
+        }
+      ],
+      "minimum_ratio": 12.305,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main support",
+      "usage": "support secondary text",
+      "foreground": "#9cbcad",
+      "background_checks": [
+        {
+          "background": "#102a2d",
+          "ratio": 7.3397
+        }
+      ],
+      "minimum_ratio": 7.3397,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main support",
+      "usage": "buttons",
+      "foreground": "#c8e7bb",
+      "background_checks": [
+        {
+          "background": "#18392f",
+          "ratio": 9.3709
+        },
+        {
+          "background": "#214a3a",
+          "ratio": 7.4118
+        }
+      ],
+      "minimum_ratio": 7.4118,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "body",
+      "foreground": "#163039",
+      "background_checks": [
+        {
+          "background": "#fbfcf7",
+          "ratio": 13.4363
+        },
+        {
+          "background": "#f2f6ee",
+          "ratio": 12.6601
+        },
+        {
+          "background": "#eaf1e8",
+          "ratio": 12.0357
+        }
+      ],
+      "minimum_ratio": 12.0357,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "secondary text",
+      "foreground": "#566970",
+      "background_checks": [
+        {
+          "background": "#fbfcf7",
+          "ratio": 5.5801
+        },
+        {
+          "background": "#eaf1e8",
+          "ratio": 4.9985
+        }
+      ],
+      "minimum_ratio": 4.9985,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "local status",
+      "foreground": "#526c5f",
+      "background_checks": [
+        {
+          "background": "#f2f6ee",
+          "ratio": 5.2309
+        }
+      ],
+      "minimum_ratio": 5.2309,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "stage labels",
+      "foreground": "#546c5e",
+      "background_checks": [
+        {
+          "background": "#fbfcf7",
+          "ratio": 5.5296
+        },
+        {
+          "background": "#eaf1e8",
+          "ratio": 4.9532
+        }
+      ],
+      "minimum_ratio": 4.9532,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "inactive modes",
+      "foreground": "#567063",
+      "background_checks": [
+        {
+          "background": "#edf2e8",
+          "ratio": 4.743
+        },
+        {
+          "background": "#f2f5ec",
+          "ratio": 4.8921
+        }
+      ],
+      "minimum_ratio": 4.743,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "hover modes",
+      "foreground": "#214f40",
+      "background_checks": [
+        {
+          "background": "#dce9d8",
+          "ratio": 7.3946
+        }
+      ],
+      "minimum_ratio": 7.3946,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "active modes/primary",
+      "foreground": "#fffef5",
+      "background_checks": [
+        {
+          "background": "#125c50",
+          "ratio": 7.7635
+        }
+      ],
+      "minimum_ratio": 7.7635,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "image disclosure",
+      "foreground": "#527465",
+      "background_checks": [
+        {
+          "background": "#fbfcf7",
+          "ratio": 5.0358
+        }
+      ],
+      "minimum_ratio": 5.0358,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "input placeholder",
+      "foreground": "#62766a",
+      "background_checks": [
+        {
+          "background": "#fffef9",
+          "ratio": 4.8153
+        }
+      ],
+      "minimum_ratio": 4.8153,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "character count",
+      "foreground": "#5b7364",
+      "background_checks": [
+        {
+          "background": "#fbfcf7",
+          "ratio": 4.991
+        }
+      ],
+      "minimum_ratio": 4.991,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "keyboard hint",
+      "foreground": "#4d6b5c",
+      "background_checks": [
+        {
+          "background": "#f1f5eb",
+          "ratio": 5.3176
+        }
+      ],
+      "minimum_ratio": 5.3176,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "privacy note",
+      "foreground": "#5c7365",
+      "background_checks": [
+        {
+          "background": "#fbfcf7",
+          "ratio": 4.9738
+        }
+      ],
+      "minimum_ratio": 4.9738,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "result summary",
+      "foreground": "#566e5c",
+      "background_checks": [
+        {
+          "background": "#eaf1e8",
+          "ratio": 4.8262
+        }
+      ],
+      "minimum_ratio": 4.8262,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "result caveat",
+      "foreground": "#536b56",
+      "background_checks": [
+        {
+          "background": "#eaf1e8",
+          "ratio": 5.0609
+        }
+      ],
+      "minimum_ratio": 5.0609,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "action subheading",
+      "foreground": "#58734c",
+      "background_checks": [
+        {
+          "background": "#fcfdf6",
+          "ratio": 5.1667
+        }
+      ],
+      "minimum_ratio": 5.1667,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "action body",
+      "foreground": "#61715d",
+      "background_checks": [
+        {
+          "background": "#fcfdf6",
+          "ratio": 5.0938
+        }
+      ],
+      "minimum_ratio": 5.0938,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "evidence body",
+      "foreground": "#586a55",
+      "background_checks": [
+        {
+          "background": "#eaf1e8",
+          "ratio": 5.0574
+        }
+      ],
+      "minimum_ratio": 5.0574,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "inference label",
+      "foreground": "#8b661a",
+      "background_checks": [
+        {
+          "background": "#eaf1e8",
+          "ratio": 4.5464
+        }
+      ],
+      "minimum_ratio": 4.5464,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "observed label",
+      "foreground": "#556d57",
+      "background_checks": [
+        {
+          "background": "#eaf1e8",
+          "ratio": 4.9162
+        }
+      ],
+      "minimum_ratio": 4.9162,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "manual disclosure",
+      "foreground": "#527248",
+      "background_checks": [
+        {
+          "background": "#f3f9ed",
+          "ratio": 5.0746
+        }
+      ],
+      "minimum_ratio": 5.0746,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "manual heading",
+      "foreground": "#54714a",
+      "background_checks": [
+        {
+          "background": "#f3f9ed",
+          "ratio": 5.1028
+        }
+      ],
+      "minimum_ratio": 5.1028,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "legend",
+      "foreground": "#5b7654",
+      "background_checks": [
+        {
+          "background": "#f0f6e8",
+          "ratio": 4.5753
+        }
+      ],
+      "minimum_ratio": 4.5753,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "definition terms",
+      "foreground": "#5c7566",
+      "background_checks": [
+        {
+          "background": "#fbfcf7",
+          "ratio": 4.8597
+        }
+      ],
+      "minimum_ratio": 4.8597,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "error",
+      "foreground": "#8a3726",
+      "background_checks": [
+        {
+          "background": "#ffede1",
+          "ratio": 6.9499
+        }
+      ],
+      "minimum_ratio": 6.9499,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "guarded badge",
+      "foreground": "#80580e",
+      "background_checks": [
+        {
+          "background": "#ffedc4",
+          "ratio": 5.4706
+        }
+      ],
+      "minimum_ratio": 5.4706,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main workstation",
+      "usage": "high badge",
+      "foreground": "#8a3f27",
+      "background_checks": [
+        {
+          "background": "#ffe3d5",
+          "ratio": 6.0974
+        }
+      ],
+      "minimum_ratio": 6.0974,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "body/headings",
+      "foreground": "#eaf8ee",
+      "background_checks": [
+        {
+          "background": "#071f25",
+          "ratio": 15.5552
+        },
+        {
+          "background": "#164b4c",
+          "ratio": 8.9328
+        },
+        {
+          "background": "#15383f",
+          "ratio": 11.4777
+        },
+        {
+          "background": "#103139",
+          "ratio": 12.6017
+        },
+        {
+          "background": "#203f35",
+          "ratio": 10.5054
+        },
+        {
+          "background": "#102f34",
+          "ratio": 12.9615
+        }
+      ],
+      "minimum_ratio": 8.9328,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "secondary/hints",
+      "foreground": "#a9c2bc",
+      "background_checks": [
+        {
+          "background": "#071f25",
+          "ratio": 9.0359
+        },
+        {
+          "background": "#164b4c",
+          "ratio": 5.189
+        },
+        {
+          "background": "#15383f",
+          "ratio": 6.6673
+        },
+        {
+          "background": "#103139",
+          "ratio": 7.3202
+        },
+        {
+          "background": "#203f35",
+          "ratio": 6.1025
+        },
+        {
+          "background": "#102f34",
+          "ratio": 7.5292
+        }
+      ],
+      "minimum_ratio": 5.189,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "links/accent",
+      "foreground": "#c6f27c",
+      "background_checks": [
+        {
+          "background": "#071f25",
+          "ratio": 13.3088
+        },
+        {
+          "background": "#164b4c",
+          "ratio": 7.6428
+        },
+        {
+          "background": "#15383f",
+          "ratio": 9.8201
+        },
+        {
+          "background": "#103139",
+          "ratio": 10.7818
+        },
+        {
+          "background": "#203f35",
+          "ratio": 8.9883
+        },
+        {
+          "background": "#102f34",
+          "ratio": 11.0897
+        }
+      ],
+      "minimum_ratio": 7.6428,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "input placeholder",
+      "foreground": "#92aaa8",
+      "background_checks": [
+        {
+          "background": "#08252c",
+          "ratio": 6.5106
+        }
+      ],
+      "minimum_ratio": 6.5106,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "default button",
+      "foreground": "#eaf8ee",
+      "background_checks": [
+        {
+          "background": "#173d44",
+          "ratio": 10.7195
+        },
+        {
+          "background": "#24515a",
+          "ratio": 7.9846
+        }
+      ],
+      "minimum_ratio": 7.9846,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "primary button",
+      "foreground": "#163027",
+      "background_checks": [
+        {
+          "background": "#c6f27c",
+          "ratio": 11.0302
+        },
+        {
+          "background": "#d9ff9a",
+          "ratio": 12.5966
+        }
+      ],
+      "minimum_ratio": 11.0302,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "paste button",
+      "foreground": "#c6f27c",
+      "background_checks": [
+        {
+          "background": "#264938",
+          "ratio": 7.8341
+        }
+      ],
+      "minimum_ratio": 7.8341,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "topic labels",
+      "foreground": "#eaf8ee",
+      "background_checks": [
+        {
+          "background": "#0b2930",
+          "ratio": 13.9439
+        },
+        {
+          "background": "#294932",
+          "ratio": 9.1528
+        }
+      ],
+      "minimum_ratio": 9.1528,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "topic descriptions",
+      "foreground": "#a9c2bc",
+      "background_checks": [
+        {
+          "background": "#0b2930",
+          "ratio": 8.0999
+        },
+        {
+          "background": "#294932",
+          "ratio": 5.3168
+        }
+      ],
+      "minimum_ratio": 5.3168,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "result action headings",
+      "foreground": "#d1f4a0",
+      "background_checks": [
+        {
+          "background": "#203f35",
+          "ratio": 9.4082
+        },
+        {
+          "background": "#102f34",
+          "ratio": 11.6078
+        }
+      ],
+      "minimum_ratio": 9.4082,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "offline detail",
+      "foreground": "#c2d6c9",
+      "background_checks": [
+        {
+          "background": "#193b35",
+          "ratio": 8.0054
+        }
+      ],
+      "minimum_ratio": 8.0054,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "bottom navigation",
+      "foreground": "#c1d4cc",
+      "background_checks": [
+        {
+          "background": "#25434b",
+          "ratio": 6.8361
+        }
+      ],
+      "minimum_ratio": 6.8361,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "Pocket",
+      "usage": "bottom nav hover",
+      "foreground": "#c6f27c",
+      "background_checks": [
+        {
+          "background": "#2b4f42",
+          "ratio": 7.1281
+        }
+      ],
+      "minimum_ratio": 7.1281,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "iPhone guide",
+      "usage": "body",
+      "foreground": "#edf7f5",
+      "background_checks": [
+        {
+          "background": "#081e28",
+          "ratio": 15.6714
+        },
+        {
+          "background": "#10303a",
+          "ratio": 12.7655
+        }
+      ],
+      "minimum_ratio": 12.7655,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "iPhone guide",
+      "usage": "secondary",
+      "foreground": "#adc5c6",
+      "background_checks": [
+        {
+          "background": "#081e28",
+          "ratio": 9.4392
+        },
+        {
+          "background": "#10303a",
+          "ratio": 7.6889
+        }
+      ],
+      "minimum_ratio": 7.6889,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "iPhone guide",
+      "usage": "action button",
+      "foreground": "#102c28",
+      "background_checks": [
+        {
+          "background": "#bce97b",
+          "ratio": 10.6726
+        }
+      ],
+      "minimum_ratio": 10.6726,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "iPhone guide",
+      "usage": "recipe-copy button",
+      "foreground": "#d9f4df",
+      "background_checks": [
+        {
+          "background": "#173f47",
+          "ratio": 9.7672
+        },
+        {
+          "background": "#204e53",
+          "ratio": 7.8891
+        }
+      ],
+      "minimum_ratio": 7.8891,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "iPhone guide",
+      "usage": "recipe text",
+      "foreground": "#c9e0dc",
+      "background_checks": [
+        {
+          "background": "#071d25",
+          "ratio": 12.5293
+        }
+      ],
+      "minimum_ratio": 12.5293,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "iPhone guide",
+      "usage": "setup links",
+      "foreground": "#c2eee5",
+      "background_checks": [
+        {
+          "background": "#081e28",
+          "ratio": 13.5775
+        },
+        {
+          "background": "#10303a",
+          "ratio": 11.0598
+        }
+      ],
+      "minimum_ratio": 11.0598,
+      "required_ratio": 4.5,
+      "passes": true
+    },
+    {
+      "area": "main focus",
+      "usage": "workstation indicator after root fix",
+      "foreground": "#397c61",
+      "background_checks": [
+        {
+          "background": "#fbfcf7",
+          "ratio": 4.8158
+        },
+        {
+          "background": "#eaf1e8",
+          "ratio": 4.3138
+        },
+        {
+          "background": "#f2f6ee",
+          "ratio": 4.5376
+        }
+      ],
+      "minimum_ratio": 4.3138,
+      "required_ratio": 3,
+      "passes": true
+    },
+    {
+      "area": "main focus",
+      "usage": "dark shell/header/demo/support/footer indicator",
+      "foreground": "#b5ee96",
+      "background_checks": [
+        {
+          "background": "#09191f",
+          "ratio": 13.358
+        },
+        {
+          "background": "#102a2d",
+          "ratio": 11.2392
+        },
+        {
+          "background": "#102a30",
+          "ratio": 11.2007
+        }
+      ],
+      "minimum_ratio": 11.2007,
+      "required_ratio": 3,
+      "passes": true
+    },
+    {
+      "area": "Pocket focus",
+      "usage": "indicator",
+      "foreground": "#e5c36d",
+      "background_checks": [
+        {
+          "background": "#071f25",
+          "ratio": 10.0333
+        },
+        {
+          "background": "#164b4c",
+          "ratio": 5.7618
+        },
+        {
+          "background": "#15383f",
+          "ratio": 7.4032
+        },
+        {
+          "background": "#103139",
+          "ratio": 8.1282
+        },
+        {
+          "background": "#203f35",
+          "ratio": 6.7761
+        },
+        {
+          "background": "#102f34",
+          "ratio": 8.3603
+        }
+      ],
+      "minimum_ratio": 5.7618,
+      "required_ratio": 3,
+      "passes": true
+    },
+    {
+      "area": "iPhone guide focus",
+      "usage": "indicator",
+      "foreground": "#c7f48f",
+      "background_checks": [
+        {
+          "background": "#081e28",
+          "ratio": 13.6673
+        },
+        {
+          "background": "#10303a",
+          "ratio": 11.133
+        }
+      ],
+      "minimum_ratio": 11.133,
+      "required_ratio": 3,
+      "passes": true
+    }
+  ],
+  "failures": [],
+  "resolved_text_findings": [
+    {
+      "area": "main workstation",
+      "usage": "stage labels",
+      "prior_foreground": "#5c7466",
+      "prior_minimum_ratio": 4.4018,
+      "required_ratio": 4.5,
+      "resolution_foreground": "#546c5e",
+      "status": "resolved by root before refreshed final audit"
+    },
+    {
+      "area": "main workstation",
+      "usage": "result caveat",
+      "prior_foreground": "#5b735e",
+      "prior_minimum_ratio": 4.4954,
+      "required_ratio": 4.5,
+      "resolution_foreground": "#536b56",
+      "status": "resolved by root before refreshed final audit"
+    },
+    {
+      "area": "main workstation",
+      "usage": "evidence body",
+      "prior_foreground": "#60725d",
+      "prior_minimum_ratio": 4.4915,
+      "required_ratio": 4.5,
+      "resolution_foreground": "#586a55",
+      "status": "resolved by root before refreshed final audit"
+    }
+  ]
+}

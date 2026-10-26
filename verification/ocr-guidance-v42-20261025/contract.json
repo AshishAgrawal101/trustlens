@@ -1,0 +1,13 @@
+{
+  "basis": "Four native OCR controls in ocr-transparency-v42 show both blank-black-transparent and already-readable-white-transparent inputs. No automatic compositing justified.",
+  "change": "Fixed Screenshot-only transparency/contrasting opaque export guidance, also in blank extraction fallback. No decoder/extraction/background policy/review gates changed.",
+  "acceptance": [
+    "Blank Screenshot extraction keeps manual editor and explicit review; fixed contrast guidance; no analysis",
+    "Guidance scoped to Screenshot help; other modes help unchanged",
+    "Existing recognized text/review confirmation unchanged"
+  ],
+  "before": {
+    "static/app.js": "8b47d2374173ce7f636299cab60cbc89d6812324908ba65d084c015cacc1937f",
+    "static/index.template.html": "770c6dafa839d616f1839c8f3304820bebe474470094ac351f8de9f6a6983f53"
+  }
+}

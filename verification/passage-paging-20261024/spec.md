@@ -1,0 +1,9 @@
+# Passage match paging: frozen implementation contract
+
+Architecture: extend existing find(quote,source,pageIndex=0), same3keys total/matches/truncated, exactold2argresults. Integer page0..5999; undefineddefaults0; invalid or nonexistentnonzero page rejects fixedprivateerror afterboundedscan. Atmost5windows captured percall; retain current literalcase/whitespace/nonoverlap/UTF16/surrogateedge behavior. truncated stays total>matches.length (some windows omitted, including previous pages).
+
+Controller stores only page index/total, reads current DOM on explicit Prev/Next, no all-window cache/private snapshots. IDs source-paging hidden nav, source-prev/source-next typebutton initiallydisabled, source-page-status live focusable range. Show controls only for>5matches; range for anypositive count. FirstFind page0; original initialresult focus retained; page navigation focusesrange andscrollsstart. Correctglobalordinals and ranges. Existingstatus retains unverified/meaning notices; contextellipsis unchanged.
+
+Invalidate resets page0/total0, clearswindows/range/formatnotice, hidesnav/disablesbuttons for edits/clear/example/lifecycle/nativeinvalid. Revisedversion remains independent. ExplicitNext/Prev guards hidden/disabled states; noautorun/network/storage/history/export. Existing2oldUIassertions updated only for true paging copy, oldpurefrozenoutputtestsunchanged.
+
+Cases:0/1/5/6/10/11matches; first/last exactwindows andordinals; overlap/case/whitespace/HTMLliteral; astraledge onlaterpage; maximum30000matches page5999; invalidpage types/range/nonexistent; next/previous bounds+no duplicates; edit/Clear/example/exit/Back/nativeinvalid erasecontrols+formatnotice; lastpagekeyboardrangefocus; no I/O. Rootowns browser/cache/export/docs. Independentoracle and interactionaudits requested before code.

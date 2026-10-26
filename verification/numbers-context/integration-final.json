@@ -1,0 +1,23 @@
+{
+  "source_tests": {
+    "python": 860,
+    "javascript": 289,
+    "skips": 0
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8766/static/numbers-context.html",
+    "constructed_example": "loaded without auto-calculation; explicit compare observed0.1% /0.2%,0.1points,100%relative",
+    "keyboard": "Tab from count A to total A",
+    "edit": "old result removed",
+    "error": "count1001 above total1000 focused fixed error",
+    "clear": "all4fields erased, result/error hidden, countA focused",
+    "narrow": {
+      "viewport": 320,
+      "body": 305,
+      "document": 305
+    },
+    "viewport_restored": true
+  },
+  "review_closure": "Root added numbers-empty lifecycle toggle and regression after independent review; no arithmetic changes.",
+  "scope": "descriptive rates only; no significance/causal/truth conclusion; no model changes"
+}

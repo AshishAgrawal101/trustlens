@@ -1,0 +1,66 @@
+[
+  {
+    "id": "wrapped-direct",
+    "text": "Send us the\nverification code.",
+    "expected_requests": [
+      "request:code"
+    ],
+    "actual": []
+  },
+  {
+    "id": "wrapped-advice",
+    "text": "Do not send us the\nverification code.",
+    "expected_requests": [],
+    "actual": []
+  },
+  {
+    "id": "wrapped-ordinary",
+    "text": "Please send the meeting notes\nYour verification code is 847261.",
+    "expected_requests": [],
+    "actual": []
+  },
+  {
+    "id": "paragraph-direct",
+    "text": "Send us the\n\nverification code.",
+    "expected_requests": null,
+    "actual": []
+  },
+  {
+    "id": "wrapped-sensitive",
+    "text": "Share your verification\ncode.",
+    "expected_requests": [
+      "request:code"
+    ],
+    "actual": []
+  },
+  {
+    "id": "wrapped-sensitive-advice",
+    "text": "Never share your verification\ncode.",
+    "expected_requests": [],
+    "actual": []
+  },
+  {
+    "id": "wrapped-independent",
+    "text": "Do not send the meeting notes.\nSend us the verification code.",
+    "expected_requests": [
+      "request:code"
+    ],
+    "actual": [
+      "request:code"
+    ]
+  },
+  {
+    "id": "wrapped-remote",
+    "text": "Install the\nTeamViewer application.",
+    "expected_requests": [
+      "request:remote"
+    ],
+    "actual": []
+  },
+  {
+    "id": "wrapped-remote-advice",
+    "text": "Do not install the\nTeamViewer application.",
+    "expected_requests": [],
+    "actual": []
+  }
+]

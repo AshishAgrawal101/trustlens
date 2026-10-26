@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "status": "frozen_before_implementation_and_predictions",
+  "purpose": "Exact arithmetic acceptance only; no sampling, significance, causality, reliability or truth conclusions.",
+  "units": "rateA/rateB and percentagePoints are percent units; relativePercent is percent change relative to A.",
+  "tolerance": 1e-10,
+  "global_invariants": [
+    "rateA=100*countA/totalA and rateB=100*countB/totalB.",
+    "percentagePoints=rateB-rateA; relativePercent=100*(rateB-rateA)/rateA, null exactly when countA is zero.",
+    "Inputs are safe integer numbers, not coerced strings/booleans; counts>=0, totals>=1, counts<=corresponding total.",
+    "Returned data is limited to arithmetic; no significance/causality/truth/credibility/confidence claim.",
+    "Counts and totals can refer to incomparable populations or periods; arithmetic alone does not establish valid comparison.",
+    "Pure comparison does not fetch, store or transmit inputs."
+  ],
+  "cases": [
+    {
+      "id": "half-to-three-quarters",
+      "input": {
+        "countA": 1,
+        "totalA": 2,
+        "countB": 3,
+        "totalB": 4
+      },
+      "expected": {
+        "rateA": 50,
+        "rateB": 75,
+        "percentagePoints": 25,
+        "relativePercent": 50
+      }
+    },
+    {
+      "id": "zero-base",
+      "input": {
+        "countA": 0,
+        "totalA": 10,
+        "countB": 1,
+        "totalB": 2
+      },
+      "expected": {
+        "rateA": 0,
+        "rateB": 50,
+        "percentagePoints": 50,
+        "relativePercent": null
+      }
+    },
+    {
+      "id": "both-zero",
+      "input": {
+        "countA": 0,
+        "totalA": 10,
+        "countB": 0,
+        "totalB": 100
+      },
+      "expected": {
+        "rateA": 0,
+        "rateB": 0,
+        "percentagePoints": 0,
+        "relativePercent": null
+      }
+    },
+    {
+      "id": "same-rate-different-counts",
+      "input": {
+        "countA": 10,
+        "totalA": 20,
+        "countB": 100,
+        "totalB": 200
+      },
+      "expected": {
+        "rateA": 50,
+        "rateB": 50,
+        "percentagePoints": 0,
+        "relativePercent": 0
+      }
+    },
+    {
+      "id": "growing-count-falling-rate",
+      "input": {
+        "countA": 10,
+        "totalA": 20,
+        "countB": 15,
+        "totalB": 100
+      },
+      "expected": {
+        "rateA": 50,
+        "rateB": 15,
+        "percentagePoints": -35,
+        "relativePercent": -70
+      }
+    },
+    {
+      "id": "shrinking-count-rising-rate",
+      "input": {
+        "countA": 100,
+        "totalA": 1000,
+        "countB": 50,
+        "totalB": 100
+      },
+      "expected": {
+        "rateA": 10,
+        "rateB": 50,
+        "percentagePoints": 40,
+        "relativePercent": 400
+      }
+    },
+    {
+      "id": "one-to-two-percent",
+      "input": {
+        "countA": 1,
+        "totalA": 100,
+        "countB": 2,
+        "totalB": 100
+      },
+      "expected": {
+        "rateA": 1,
+        "rateB": 2,
+        "percentagePoints": 1,
+        "relativePercent": 100
+      }
+    },
+    {
+      "id": "full-to-zero",
+      "input": {
+        "countA": 5,
+        "totalA": 5,
+        "countB": 0,
+        "totalB": 10
+      },
+      "expected": {
+        "rateA": 100,
+        "rateB": 0,
+        "percentagePoints": -100,
+        "relativePercent": -100
+      }
+    },
+    {
+      "id": "third-to-two-thirds",
+      "input": {
+        "countA": 1,
+        "totalA": 3,
+        "countB": 2,
+        "totalB": 3
+      },
+      "expected": {
+        "rateA": 33.333333333333336,
+        "rateB": 66.66666666666667,
+        "percentagePoints": 33.333333333333336,
+        "relativePercent": 100
+      }
+    },
+    {
+      "id": "rare-small-rate",
+      "input": {
+        "countA": 1,
+        "totalA": 1000,
+        "countB": 2,
+        "totalB": 1000
+      },
+      "expected": {
+        "rateA": 0.1,
+        "rateB": 0.2,
+        "percentagePoints": 0.1,
+        "relativePercent": 100
+      }
+    },
+    {
+      "id": "same-count-denominator-growth",
+      "input": {
+        "countA": 1,
+        "totalA": 2,
+        "countB": 1,
+        "totalB": 4
+      },
+      "expected": {
+        "rateA": 50,
+        "rateB": 25,
+        "percentagePoints": -25,
+        "relativePercent": -50
+      }
+    },
+    {
+      "id": "maximum-safe-integer",
+      "input": {
+        "countA": 9007199254740991,
+        "totalA": 9007199254740991,
+        "countB": 9007199254740991,
+        "totalB": 9007199254740991
+      },
+      "expected": {
+        "rateA": 100,
+        "rateB": 100,
+        "percentagePoints": 0,
+        "relativePercent": 0
+      }
+    }
+  ]
+}

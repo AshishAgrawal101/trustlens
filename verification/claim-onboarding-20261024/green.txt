@@ -1,0 +1,25 @@
+✔ review is explicit, fixed output receives focus, and no network request occurs (8.7047ms)
+✔ every input change invalidates prior output and disables exports (11.7973ms)
+✔ validation preserves drafts, suppresses private error text and cannot export a completed review (1.8849ms)
+✔ Clear, page exit and persisted Back erase all private fields and prior output (4.7362ms)
+✔ copy and download export a fixed plan; late copy completion cannot revive cleared output (1.9465ms)
+✔ clipboard timeout offers download without exposing input (1.5652ms)
+✔ main has one ordinary constructed-claim link with explicit separate Review and replacement wording (20.4451ms)
+✔ static initial Message help exactly matches the current configured English scope (0.7505ms)
+✔ both exact startup choices load existing constructed fields open Sources focus claim and consume the fragment without Review (10.3211ms)
+✔ same-document choices reuse replacement and invalidation while preserving current path/query without including fields (4.5995ms)
+✔ unknown encoded partial private and newline-bearing fragments do not touch drafts result focus or history (19.7221ms)
+✔ Clear and persisted Back stay blank and closed after a consumed example; pure code and PLAN remain unchanged (4.7932ms)
+✔ one initially closed native disclosure keeps enabled optional fields and unchanged pure code PLAN and print privacy (7.9876ms)
+✔ closing sources retains every draft role and date and includes them in explicit review (4.7049ms)
+✔ date-only and role-only presence is descriptive and edits invalidate without counting a source (3.3368ms)
+✔ native invalid source opens before default focus and custom source rejection also reveals correction fields (2.3435ms)
+✔ examples reveal populated sources while Clear exit and persisted Back collapse and erase (3.8853ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 159.5271

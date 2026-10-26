@@ -1,0 +1,65 @@
+{
+  "scope": "Actual Edge320 standalone Pocketv37/cachev31 after own8837serverstopped. Nativekeyboard newtab Numbers→Claim→guide; no physicalphone/foregroundselection/discard guarantee.",
+  "pocketPrepared37": {
+    "status": "Offline shell prepared. Installation and receiving shares still depend on this browser and device. No message is cached.",
+    "version": "trustlens-pocket-v31"
+  },
+  "offlineNumbersHeld37": {
+    "clientWidth": 305,
+    "facts": "Group A rateAbout 20% (20 of 100)Group B rateAbout 15% (30 of 200)Rate difference · B minus AAbout -5 percentage pointsRelative rate change · compared with AAbout -25%",
+    "scrollWidth": 305,
+    "values": [
+      "20",
+      "100",
+      "30",
+      "200"
+    ],
+    "visible": true
+  },
+  "offlineClaimBlank37": {
+    "fields": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "hidden": true
+  },
+  "offlineClaimHeld37": {
+    "claim": "The larger count must be the larger share.",
+    "clientWidth": 305,
+    "scrollWidth": 305,
+    "status": "Next: locate an original source account before interpreting the claim.",
+    "visible": true
+  },
+  "offlineClaimReset37": {
+    "fields": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "hidden": true
+  },
+  "offlineNumbersReset37": {
+    "hidden": true,
+    "values": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
+}

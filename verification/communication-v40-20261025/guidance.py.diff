@@ -1,0 +1,10 @@
+--- before/app/guidance.py
++++ app/guidance.py
+@@ -66,6 +66,7 @@
+         if malformed_links: outcome=f'Link review was incomplete. {malformed_links} link address(es) could not be parsed. '+outcome
+         if links_incomplete: outcome='Link review was incomplete. Only the first 8 unique literal links were inspected. '+outcome
+         if html_links_incomplete: outcome='HTML link review was incomplete; some supplied HTML link targets were not inspected. '+outcome
++        if any(e.id=='email:label_limit' for e in report.evidence): outcome='Only the first 8 distinct HTML address differences were displayed; additional differences were omitted. '+outcome
+     wording_scope='\nWording rules cover English; other-language warning signs may be missed.' if report.kind in ('text','call','email') else ''
+     report.share_summary='TrustLens — private-input-free summary\n'+outcome+wording_scope+'\n\n'+'\n\n'.join(a.title+'\n'+a.detail for a in report.actions)+'\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'
+     return report

@@ -1,0 +1,1 @@
+{"case":"Actual screenshot reviewed-text report then native-invalid event without submit/change","expected":"Old report/export eligibility invalidated without losing OCR draft; no new network","scope":"constructed controller; no actual image/native OCR/browser upload; no ordinary keyboard bug claim"}

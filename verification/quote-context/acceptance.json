@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "status": "frozen_before_module_exists_and_predictions",
+  "purpose": "Literal segment diff acceptance, not quotation authenticity or semantic evaluation.",
+  "tokenizer": "/\\s+|[^\\s]+/gu",
+  "limits": {
+    "max_utf16_code_units_each": 4000,
+    "max_segments_each": 800,
+    "trimmed_nonempty_required": true
+  },
+  "invariants": [
+    "Reconstruct original by concatenating every part except added.",
+    "Reconstruct revised by concatenating every part except removed.",
+    "Every part type is same/removed/added, every text is a nonempty string; no source characters are dropped or normalized.",
+    "identical is exactly original===revised, including case, Unicode representation and whitespace.",
+    "LCS uses exact segment equality; ties prefer removal deterministically.",
+    "Do not require one particular alignment for ambiguous repeated segments.",
+    "HTML is literal text; no semantic, truth, attribution, context-completeness or credibility conclusion.",
+    "No network or storage in pure comparison."
+  ],
+  "cases": [
+    {
+      "id": "identical",
+      "original": "The library opens at nine.",
+      "revised": "The library opens at nine.",
+      "expected_identical": true
+    },
+    {
+      "id": "case-sensitive",
+      "original": "Open",
+      "revised": "open",
+      "expected_identical": false,
+      "expected_compacted_parts": [
+        {
+          "type": "removed",
+          "text": "Open"
+        },
+        {
+          "type": "added",
+          "text": "open"
+        }
+      ]
+    },
+    {
+      "id": "space-versus-tab",
+      "original": "A B",
+      "revised": "A\tB",
+      "expected_identical": false
+    },
+    {
+      "id": "html-literal",
+      "original": "<b>Open</b>",
+      "revised": "<script>Open</script>",
+      "expected_identical": false,
+      "expected_compacted_parts": [
+        {
+          "type": "removed",
+          "text": "<b>Open</b>"
+        },
+        {
+          "type": "added",
+          "text": "<script>Open</script>"
+        }
+      ]
+    },
+    {
+      "id": "duplicate-alignment",
+      "original": "one one two",
+      "revised": "one two one",
+      "expected_identical": false
+    },
+    {
+      "id": "qualifier-change",
+      "original": "It may open.",
+      "revised": "It will open.",
+      "expected_identical": false
+    },
+    {
+      "id": "negation-removed",
+      "original": "It will not open.",
+      "revised": "It will open.",
+      "expected_identical": false
+    },
+    {
+      "id": "word-added",
+      "original": "Open now",
+      "revised": "Open right now",
+      "expected_identical": false
+    },
+    {
+      "id": "all-replaced",
+      "original": "alpha",
+      "revised": "beta",
+      "expected_identical": false,
+      "expected_compacted_parts": [
+        {
+          "type": "removed",
+          "text": "alpha"
+        },
+        {
+          "type": "added",
+          "text": "beta"
+        }
+      ]
+    },
+    {
+      "id": "unicode-exact",
+      "original": "caf\u00e9 \ud83d\ude00",
+      "revised": "cafe\u0301 \ud83d\ude00",
+      "expected_identical": false
+    },
+    {
+      "id": "newline-versus-space",
+      "original": "First\nsecond",
+      "revised": "First second",
+      "expected_identical": false
+    },
+    {
+      "id": "outer-whitespace",
+      "original": "  Open\t",
+      "revised": " Open\n",
+      "expected_identical": false
+    }
+  ]
+}

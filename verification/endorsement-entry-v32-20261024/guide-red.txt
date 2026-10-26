@@ -1,0 +1,16 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+______ test_endorsement_guide_link_stays_in_the_correct_workspace_scope _______
+
+    def test_endorsement_guide_link_stays_in_the_correct_workspace_scope():
+        pocket=(ROOT/'static/phone/context.html').read_text(encoding='utf-8')
+        desktop=render_desktop_context()
+        for html,prefix in [(pocket,'/phone/workspace/claims.html'),(desktop,'/static/claim-review.html')]:
+            card=html.split('<details id="ads" class="card">',1)[1].split('</details>',1)[0]
+>           assert f'href="{prefix}#example=endorsement"' in card
+E           assert 'href="/phone/workspace/claims.html#example=endorsement"' in '<summary>Ads: what supports the endorsement?</summary><h2>Look beyond the recommendation.</h2><ol><li><strong>Identif...">Open the claim worksheet →</a> Record the claim and source accounts there. Nothing is transferred automatically.</p>'
+
+tests\test_endorsement_guide.py:13: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_endorsement_guide.py::test_endorsement_guide_link_stays_in_the_correct_workspace_scope
+1 failed in 0.23s

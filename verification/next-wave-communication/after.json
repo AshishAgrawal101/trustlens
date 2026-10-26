@@ -1,0 +1,141 @@
+{
+  "source_sha256": {
+    "app/analyzers/email.py": "da155ad87db8a8a1d03e339a017f6de9295035ce948a9df264a8b69215d7e945",
+    "app/analyzers/text.py": "3464346b23390c330fcc7beb51dcb9d25be9a0f771d19b90f085cb5ba8b14795"
+  },
+  "rows": [
+    {
+      "id": "code-inline-scoped",
+      "weighted_ids": [
+        "request:code"
+      ],
+      "incomplete": false,
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "byte_intake_same_findings": true,
+      "expected": [
+        "request:code"
+      ],
+      "reconstructed": "\nSend me your verification code.\n",
+      "plain_visible_weighted": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "code-plain-pair",
+      "weighted_ids": [
+        "request:code"
+      ],
+      "incomplete": false,
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "byte_intake_same_findings": true,
+      "expected": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "advice-inline-negation",
+      "weighted_ids": [],
+      "incomplete": false,
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "byte_intake_same_findings": true,
+      "expected": [],
+      "reconstructed": "\nDo not send me your password.\n",
+      "plain_visible_weighted": []
+    },
+    {
+      "id": "advice-plain-negation",
+      "weighted_ids": [],
+      "incomplete": false,
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "byte_intake_same_findings": true,
+      "expected": []
+    },
+    {
+      "id": "gift-inline-negation",
+      "weighted_ids": [],
+      "incomplete": false,
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "byte_intake_same_findings": true,
+      "expected": [],
+      "reconstructed": "\nNever buy gift cards.\n",
+      "plain_visible_weighted": []
+    },
+    {
+      "id": "gift-plain-negation",
+      "weighted_ids": [],
+      "incomplete": false,
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "byte_intake_same_findings": true,
+      "expected": []
+    },
+    {
+      "id": "inline-created-word",
+      "weighted_ids": [
+        "request:code"
+      ],
+      "incomplete": false,
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "byte_intake_same_findings": true,
+      "expected": [
+        "request:code"
+      ],
+      "reconstructed": "\nSend me your password.\n",
+      "plain_visible_weighted": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "duplicate-subject-late-request",
+      "weighted_ids": [
+        "request:code"
+      ],
+      "incomplete": true,
+      "risk_level": "high",
+      "summary": "This email could not be fully interpreted. Review the original message through a trusted mail app. Any readable warning signs are shown below.",
+      "byte_intake_same_findings": true,
+      "expected_incomplete": true
+    },
+    {
+      "id": "duplicate-subject-first-request",
+      "weighted_ids": [
+        "request:code"
+      ],
+      "incomplete": true,
+      "risk_level": "high",
+      "summary": "This email could not be fully interpreted. Review the original message through a trusted mail app. Any readable warning signs are shown below.",
+      "byte_intake_same_findings": true,
+      "expected_incomplete": true
+    },
+    {
+      "id": "single-subject-request",
+      "weighted_ids": [
+        "request:code"
+      ],
+      "incomplete": false,
+      "risk_level": "high",
+      "summary": "Pause before responding. This contains a request worth verifying independently.",
+      "byte_intake_same_findings": true,
+      "expected": [
+        "request:code"
+      ],
+      "expected_incomplete": false
+    },
+    {
+      "id": "single-subject-advice",
+      "weighted_ids": [],
+      "incomplete": false,
+      "risk_level": "low",
+      "summary": "No strong warning signs matched. That does not verify who sent this or make it safe.",
+      "byte_intake_same_findings": true,
+      "expected": [],
+      "expected_incomplete": false
+    }
+  ]
+}

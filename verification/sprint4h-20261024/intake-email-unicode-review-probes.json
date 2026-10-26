@@ -1,0 +1,14 @@
+{
+  "frozen_before_patch_source_read":true,
+  "scope":"read-only small Unicode paste/MIME/privacy review",
+  "probes":[
+    {"id":"plain-unicode","input":"Résumé 東京 😀\nRead me your verification code.","expect":"body-only string paste retains literal text warning behavior; no invented encoding/header"},
+    {"id":"literal-formatting","input":"Read me your verifi​cation code. Café","expect":"no Unicode normalization or hidden-format deletion; warning behavior matches literal direct text analysis"},
+    {"id":"body-only-url","input":"Café: https://straße.example/path","expect":"do not manufacture body by removing recognized headers; documented header/body classification governs"},
+    {"id":"headerful-mime","expect":"explicit Content-Type/charset/CTE headers keep existing strict decoding/incomplete states; no encoding override"},
+    {"id":"byte-input","expect":"same raw bytes continue BytesParser strict declared encoding validation; string-only convenience does not relabel bytes"},
+    {"id":"malformed-structure","expect":"malformed headers/deep MIME remain controlled errors/incomplete, not body fabricated through repair"},
+    {"id":"lone-surrogate","expect":"fixed private controlled error; no source or raw content echo"}
+  ],
+  "limits":"no app edits, normalization, model/network/remote/private-file work"
+}

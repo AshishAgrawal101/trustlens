@@ -1,0 +1,9 @@
+{
+  "archive": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-focused-practice-v31-review.zip",
+  "archive_sha256": "653c9cb44e0dc9946a4bac5384b64c1d0f7b96743fd3aef753d0dd306497f591",
+  "old_text_sha256": "4b1d845c1b324ed39c544b35743a55dc45e41900bb612c7888de70904e8e4805",
+  "current_text_sha256": "a24fedbb87efdcd60c56e82287ec88cf826caa8258052152acdba9b69d720dd0",
+  "remove_only_added_guard_restores_entire_v31_text_module": true,
+  "old_v31_contract_hash_before_results_byte_preserved": true,
+  "simplification_preserves_all_18_saved_acceptance_evidence_outputs": true
+}

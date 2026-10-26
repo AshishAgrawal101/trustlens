@@ -1,0 +1,20 @@
+{
+  "purpose": "Supplementary proper encoding controls frozen before any execution",
+  "charsets": [
+    "utf-8",
+    "iso-8859-1",
+    "us-ascii"
+  ],
+  "ctes": [
+    "base64",
+    "quoted-printable",
+    "8bit"
+  ],
+  "bodies": [
+    "Send me your verification code.",
+    "You must not share your password.",
+    "Send me your verifi­cation code.",
+    "<a href=\"//bücher.example/pay\">Open statement</a>"
+  ],
+  "expectation": "Representable body roundtrip exact; unrepresentable charset construction is not a valid wire reference; record it explicitly"
+}

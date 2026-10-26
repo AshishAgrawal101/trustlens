@@ -1,0 +1,9 @@
+{
+  "port": 8767,
+  "child": 60724,
+  "parent": 69624,
+  "stopped": true,
+  "listener_absent": true,
+  "actual_recovery_requests": 2,
+  "cache_reopen_no_third_request": true
+}

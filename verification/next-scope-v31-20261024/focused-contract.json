@@ -1,0 +1,69 @@
+{
+  "scope": "Focused practice reuses the two frozen advertising situations; no new scenario or detector.",
+  "desktop": {
+    "count": 10,
+    "sha256": "795d3a23b7d2b7c5242d487d76b631af1e479a51e338348fc6bf293303b01167",
+    "ads": [
+      {
+        "id": "sponsored-comparison",
+        "topic": "Ads · examine the comparison",
+        "text": "Constructed sponsored post: “These headphones last twice as long.” The post names no comparison model or test settings. What is the useful next check?",
+        "choices": [
+          "Treat the claim as false because the creator was paid.",
+          "Find the comparison models, test conditions and relevant independent results.",
+          "Accept the claim because the post says sponsored."
+        ],
+        "answer": 1,
+        "why": "The comparison lacks a stated baseline and test conditions. Identify which models and settings were compared; a payment label alone cannot answer that measurement question."
+      },
+      {
+        "id": "selected-testimonial",
+        "topic": "Endorsements · separate opinion and measurement",
+        "text": "A constructed product page highlights one customer saying “Best value anywhere.” No price comparison or selection method is supplied. What should you check?",
+        "choices": [
+          "Treat one enthusiastic quotation as a representative price comparison.",
+          "Decide whether the customer is genuine from the writing style alone.",
+          "Check value criteria, comparable prices and how the quoted accounts were selected."
+        ],
+        "answer": 2,
+        "why": "“Best value” needs criteria: price, included features and what was compared. One selected quotation does not supply those measurements or a defined sample."
+      }
+    ]
+  },
+  "pocket": {
+    "count": 12,
+    "sha256": "4d476b7b1f06888be13f6192bd52ca0534124ff0f3a03723b3d0d7636221c852",
+    "ads": [
+      {
+        "title": "A paid comparison without its method",
+        "text": "Constructed sponsored post: “These headphones last twice as long.” The post names no comparison model or test settings. What is the useful next check?",
+        "best": 1,
+        "choices": [
+          "Treat the claim as false because the creator was paid.",
+          "Find the comparison models, test conditions and relevant independent results.",
+          "Accept the claim because the post says sponsored."
+        ],
+        "why": "The comparison lacks a stated baseline and test conditions. Identify which models and settings were compared; a payment label alone cannot answer that measurement question."
+      },
+      {
+        "title": "A selected customer quotation",
+        "text": "A constructed product page highlights one customer saying “Best value anywhere.” No price comparison or selection method is supplied. What should you check?",
+        "best": 2,
+        "choices": [
+          "Treat one enthusiastic quotation as a representative price comparison.",
+          "Decide whether the customer is genuine from the writing style alone.",
+          "Check value criteria, comparable prices and how the quoted accounts were selected."
+        ],
+        "why": "“Best value” needs criteria: price, included features and what was compared. One selected quotation does not supply those measurements or a defined sample."
+      }
+    ]
+  },
+  "acceptance": [
+    "explicit focused start; two existing cases in current order",
+    "full session still available",
+    "restart/repeat uses its visible label",
+    "close/exit/Back invalidate old option callbacks and erase session",
+    "no input access, persistence, fetching or export",
+    "keyboard and 320px layout; cached Pocket session after server stopped"
+  ]
+}

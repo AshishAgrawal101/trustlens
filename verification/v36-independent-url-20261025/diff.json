@@ -1,0 +1,19 @@
+{
+  "app/models.py": {
+    "unchanged": false,
+    "diff": "--- \n+++ \n@@ -1,6 +1,6 @@\n from __future__ import annotations\n \n-from typing import Literal\n-from pydantic import BaseModel, Field, ConfigDict\n+from typing import Annotated, Literal\n+from pydantic import BaseModel, Field, ConfigDict, StringConstraints\n \n EvidenceClass = Literal[\"verified\", \"inferred\", \"unknown\"]\n@@ -59,7 +59,7 @@\n \n class UrlRequest(InputRequest):\n-    url: str = Field(min_length=1, max_length=4096)\n+    url: Annotated[str, StringConstraints(strip_whitespace=False)] = Field(min_length=1, max_length=4096)\n     claimed_brand: str | None = Field(default=None, max_length=100)\n-    known_website: str | None = Field(default=None, min_length=1, max_length=4096)\n+    known_website: Annotated[str, StringConstraints(strip_whitespace=False)] | None = Field(default=None, min_length=1, max_length=4096)\n \n \n"
+  },
+  "static/app.js": {
+    "unchanged": false,
+    "diff": "--- \n+++ \n@@ -134,5 +134,5 @@\n     if(emailFile){body=new FormData();body.append('file',emailFile);}\n     else if(mode==='image'||extracting){if(!$('file').files[0])throw new Error('Choose an image first.');body=new FormData();body.append('file',$('file').files[0]);}\n-    else {const key=({text:'text',url:'url',email:'raw_email',call:'transcript'})[selectedMode];body=JSON.stringify({[key]:$('content').value.trim(),...(selectedMode==='url'&&$('known-website').value.trim()?{known_website:$('known-website').value.trim()}:{})});headers={'Content-Type':'application/json'};}\n+    else {const key=({text:'text',url:'url',email:'raw_email',call:'transcript'})[selectedMode];body=JSON.stringify({[key]:selectedMode==='url'?$('content').value:$('content').value.trim(),...(selectedMode==='url'&&!/^ *$/.test($('known-website').value)?{known_website:$('known-website').value}:{})});headers={'Content-Type':'application/json'};}\n     const response=await fetch(emailFile?'/api/analyze/email-file':extracting?'/api/extract/'+mode:'/api/analyze/'+selectedMode,{method:'POST',headers,body,signal:controller.signal});\n     const data=await response.json().catch(()=>{throw new Error('The local server returned an unreadable response. Your input was kept. Retry with the launcher open.');});if(!response.ok)throw new Error(typeof data?.detail==='string'?data.detail:'Please check the input length and format, then try again.');\n"
+  },
+  "app/analyzers/url.py": {
+    "unchanged": true
+  },
+  "app/analyzers/url_details.py": {
+    "unchanged": true
+  },
+  "static/link-details.js": {
+    "unchanged": true
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "purpose": "Preregistered OCR layout continuation investigation. Null expectation is ambiguous and unscored. No prior diagnostic tuning.",
+  "cases": [
+    {
+      "id": "wrapped-direct",
+      "text": "Send us the\nverification code.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "wrapped-advice",
+      "text": "Do not send us the\nverification code.",
+      "expected_requests": []
+    },
+    {
+      "id": "wrapped-ordinary",
+      "text": "Please send the meeting notes\nYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "paragraph-direct",
+      "text": "Send us the\n\nverification code.",
+      "expected_requests": null
+    },
+    {
+      "id": "wrapped-sensitive",
+      "text": "Share your verification\ncode.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "wrapped-sensitive-advice",
+      "text": "Never share your verification\ncode.",
+      "expected_requests": []
+    },
+    {
+      "id": "wrapped-independent",
+      "text": "Do not send the meeting notes.\nSend us the verification code.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "wrapped-remote",
+      "text": "Install the\nTeamViewer application.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "wrapped-remote-advice",
+      "text": "Do not install the\nTeamViewer application.",
+      "expected_requests": []
+    }
+  ]
+}

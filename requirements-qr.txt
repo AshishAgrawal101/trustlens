@@ -1,0 +1,2 @@
+# Optional local CPU QR extraction; install into the Python environment running TrustLens.
+opencv-python-headless==5.0.0.93

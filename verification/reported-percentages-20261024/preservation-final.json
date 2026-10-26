@@ -1,0 +1,4070 @@
+{
+  "artifacts": [
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-entry-freeze-20261023T0840Z\\TrustLens-Neighborhood-Hacks-entry.zip",
+      "sha256": "18cfcb73f3691deeb3c81fff3aea4b9bf593ed57ed4f2870800283f5e73fb105",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023-review.zip",
+      "sha256": "7c6870b4ed2abecd871708b93fb75d28ac1591a138e784eb4360fb6b48a35cee",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-review.zip",
+      "sha256": "b30b94d9bb3d0e15c6261b7fbc09ad40f87359030cd69602196622e0737975ac",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-pocket-v2-review.zip",
+      "sha256": "89781c1a818646ae844ff718b85a47543c072eaa04dc302b7e94d15d695446cd",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-pocket-v3-review.zip",
+      "sha256": "5e39e91cd80a5a87b15d81c71952892ab5095ee727adfed6a0964ed1e14ec04d",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-intake-v4-review.zip",
+      "sha256": "11bcb1f1a611f2305b4643566c0337e962a0ca0642a582c441d5a5b6458f5be7",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-iphone-v5-review.zip",
+      "sha256": "d3a3f383be5bacaf271278b3495efcf582f94da9c7e05df2c907ce0fcbec95ae",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-reliability-v6-review.zip",
+      "sha256": "8a03946510c6e900e6c5d05600dde91f069b716a0d34d48cdbd55cb6e162da8f",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-cac-v7-review.zip",
+      "sha256": "e9c6cfc857e78fba5971ec54e9300fbaf442eb6aabe873870662a643b1aadb61",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-desktop-v8-review.zip",
+      "sha256": "4046c4cb806756e91cbe6c74099a5643e10b09c4acf073dab112a57242e1d4ec",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v7.zip",
+      "sha256": "415a91178e3699022be15b11a9d0d1ace4fe236fdcd433c59a645b1773662635",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-crosschecks-v9-review.zip",
+      "sha256": "a115e2ce57a578eb13eab61f90a4cefaeb74f7997e07f247e549a368a789207a",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-context-v10-review.zip",
+      "sha256": "acfe23d42014b5d85917de7c575c716686bb47c908e8732942ae57999abfc57e",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-evidence-v11-review.zip",
+      "sha256": "bbbed87964b1390bec3ed83cb3fb5cde99f589097049bc6b26bc4fa5c77f0133",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-media-v12-review.zip",
+      "sha256": "cec82cae9049406d9022d50a83a77cca7bd8a760682a134a5149fd70acc5c622",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-numbers-v13-review.zip",
+      "sha256": "f0d09d062d772bb0c8e6042f06c1ef689e3188f577b5dfd455911caf7a5a6c37",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-quotes-v14-review.zip",
+      "sha256": "93da147d2e8409dac5ad6692e15dbd5a9992e2064fb7da37a16aed33c79530f5",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-quality-v15-review.zip",
+      "sha256": "6ce00a8b6b801a4489c23e921bd9363863e63e6192c5f245155421646f1db8b3",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-source-v16-review.zip",
+      "sha256": "b3ba0745eaf47b5df05c7a70e1e704da66349f074ffe13a04cae4aca45a4e97d",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v17.zip",
+      "sha256": "b507755101ae54c23ec1571373d1e8dd761a6628c679d3389005a003238157c3",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-pocket-v17-review.zip",
+      "sha256": "1669aa08f4506301298ec9e3fed6ce18b416c18e1b1a9a8460c0e27e62b3040c",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v18.zip",
+      "sha256": "e1e137b6de1e952aadd9a03cec697e522f78942a966fe159be18b0e25bf64656",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-offline-v18-final-review.zip",
+      "sha256": "e1eaeca9805c2004cf70d99151b9e6a91263e302c4f5111c4db3c20e25b1b0f0",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-offline-v18-review.zip",
+      "sha256": "c40d96a916d6a55fd146eb250b6a7baef30ce121e536dacfde7fcd51f409562b",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v19.zip",
+      "sha256": "0104930915857aac9853b7838cc3f07980086dedbbb47ea2ef1d5f96a8040bcd",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v20.zip",
+      "sha256": "84221cc6d9c825130cc6b91ba5da0a394f90a955fadcb92732698fe6f41fc8e2",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v21.zip",
+      "sha256": "e78d0451cb151468f2e6f04a4905786d557c6ea2899d9ffac4e0a76fc0c10e0d",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-polish-v21-review.zip",
+      "sha256": "6bcb843e6f5bc71b5cbf26462c99b384c986ce99643a619dd9a66c5f8beb61b1",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-coverage-v22-review.zip",
+      "sha256": "2ad373a1a1ee9f6360e892181d3165cb43d8e5655c7985fbe8eb0600e65c8947",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-Pocket-iphone-test-v23.zip",
+      "sha256": "b22bb416b590d5a448b1f0a4c0d3acd342ba68cffb3f2acba8af5b00ec075cdf",
+      "matches": true
+    }
+  ],
+  "original_source": [
+    {
+      "path": ".gitignore",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/__init__.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/adaptation.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/bfree.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/community.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/decision_policy.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/evaluate.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/features.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/frozen_vision.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/image_ensemble.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/predict.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/prepare_cf_subset.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/README.md",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/REAL_BENCHMARK.md",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/REAL_BENCHMARK_FOLDS.csv",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/REAL_BENCHMARK_SUMMARY.csv",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/ROBUST_BENCHMARK_FOLDS.csv",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/ROBUST_BENCHMARK_SUMMARY.csv",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/round3_runtime.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/SELECTIVE_BENCHMARK.csv",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/test_features.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/test_thresholds.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/train.py",
+      "matches": true
+    },
+    {
+      "path": "app/__init__.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/__init__.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/common.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/content_credentials_worker.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/email.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/image.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/provenance.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/screenshot.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/text.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/url.py",
+      "matches": true
+    },
+    {
+      "path": "app/guidance.py",
+      "matches": true
+    },
+    {
+      "path": "app/main.py",
+      "matches": true
+    },
+    {
+      "path": "app/models.py",
+      "matches": true
+    },
+    {
+      "path": "app/ocr_worker.ps1",
+      "matches": true
+    },
+    {
+      "path": "app/trust/c2pa-trust-list.pem",
+      "matches": true
+    },
+    {
+      "path": "app/trust/interim-allowed.txt",
+      "matches": true
+    },
+    {
+      "path": "app/trust/interim-anchors.pem",
+      "matches": true
+    },
+    {
+      "path": "app/trust/interim-config.txt",
+      "matches": true
+    },
+    {
+      "path": "app/trust/snapshot.json",
+      "matches": true
+    },
+    {
+      "path": "docs/baseline-manifest.json",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-CALLBACK-WAVE.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-CONTEXT-WAVE.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-FIRST-WAVE.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-HISTORY-WAVE.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-MODEL-COMPARISON.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-REFERENCE-WAVE.md",
+      "matches": true
+    },
+    {
+      "path": "docs/tested-environment.json",
+      "matches": true
+    },
+    {
+      "path": "docs/UPGRADE-V3-VERIFICATION.md",
+      "matches": true
+    },
+    {
+      "path": "docs/UPGRADE-VERIFICATION.md",
+      "matches": true
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "matches": true
+    },
+    {
+      "path": "experiments/results/external_cf1006/robustness_jpeg60.json",
+      "matches": true
+    },
+    {
+      "path": "experiments/results/external_cf1006/test_results.json",
+      "matches": true
+    },
+    {
+      "path": "frontend.py",
+      "matches": true
+    },
+    {
+      "path": "models/clip_external_probe.joblib",
+      "matches": true
+    },
+    {
+      "path": "models/clip_l14_demo.joblib",
+      "matches": true
+    },
+    {
+      "path": "models/clip_l14_demo.json",
+      "matches": true
+    },
+    {
+      "path": "models/image_pipeline.json",
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "matches": true
+    },
+    {
+      "path": "requirements-ai.txt",
+      "matches": true
+    },
+    {
+      "path": "requirements-credentials.txt",
+      "matches": true
+    },
+    {
+      "path": "requirements.txt",
+      "matches": true
+    },
+    {
+      "path": "scripts/check_requests.py",
+      "matches": true
+    },
+    {
+      "path": "scripts/package.py",
+      "matches": true
+    },
+    {
+      "path": "serve.py",
+      "matches": true
+    },
+    {
+      "path": "Start-TrustLens.cmd",
+      "matches": true
+    },
+    {
+      "path": "static/app.js",
+      "matches": true
+    },
+    {
+      "path": "static/demo-message.png",
+      "matches": true
+    },
+    {
+      "path": "static/index.template.html",
+      "matches": true
+    },
+    {
+      "path": "static/styles.css",
+      "matches": true
+    },
+    {
+      "path": "submission/COMMUNITY.md",
+      "matches": true
+    },
+    {
+      "path": "submission/DEMO.md",
+      "matches": true
+    },
+    {
+      "path": "submission/DEVPOST.md",
+      "matches": true
+    },
+    {
+      "path": "submission/DISCLOSURE.md",
+      "matches": true
+    },
+    {
+      "path": "submission/EVALUATION.md",
+      "matches": true
+    },
+    {
+      "path": "submission/JUDGE-GUIDE.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/plan.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/sprint48-plan.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/todo.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/upgrade-v3.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/upgrade.md",
+      "matches": true
+    },
+    {
+      "path": "tests/conftest.py",
+      "matches": true
+    },
+    {
+      "path": "tests/credentials_crypto_check.py",
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/request_cases.json",
+      "matches": true
+    },
+    {
+      "path": "tests/frontend_state.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/test_community.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_content_credentials.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_context_history.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_decision_basis.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_decision_policy.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_end_call_advice.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_image_disagreement.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_launcher.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_link_evidence.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_reference_context.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_request_context.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sprint_availability.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sprint_context.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sprint_email.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sprint_mailto.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sprint_requests.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_upgrade.py",
+      "matches": true
+    }
+  ],
+  "protected_files": [
+    {
+      "path": "ai_detector/__init__.py",
+      "sha256": "de6128dca775412da9a9bff20221af52904560aea3633b1f7bb2ce5752c77948",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/adaptation.py",
+      "sha256": "f69f9ba342262463963f7b6416a70d5520f4aacbd0f5ad32f5a2fb188f0d884a",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/bfree.py",
+      "sha256": "c5a28e11dd93c423a94802fd39fd15b5f55cb83ab74bd1008ebefa1c3f9a13f9",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/community.py",
+      "sha256": "d1c5c8c3996b537c8216207defc36525db62a6785e21127c203e99803d2b7841",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/decision_policy.py",
+      "sha256": "b116da00dca29b5cff7315b693ff15f229077e2d32ec7bafc021a870cad1b8bd",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/evaluate.py",
+      "sha256": "286a6e0197b71c851aba0073d72c90b75a640aa1b271f3410670511d4de82256",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/features.py",
+      "sha256": "5b72eb45482d1be2919eae7394ae291c22246f7792cb4e48513a7abc770834e5",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/frozen_vision.py",
+      "sha256": "332761d470c723e7206ede62f1d918d6abd6fa609473859a28fc9991f8eeb7e6",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/image_ensemble.py",
+      "sha256": "04e555d999c7a0f1761fade2327210331a81f708f50233a4b6f886cf29983734",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/predict.py",
+      "sha256": "3e58b8d415826e04325da96386835f688f8535577d5a20bc4a7a34c55f2f918c",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/prepare_cf_subset.py",
+      "sha256": "e7dc9180442d9279b042ca68a49a1422b9c120d3232f288b3f05f92926e49794",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/README.md",
+      "sha256": "6729c0f9aee1ada2eb58b22d3d37581007ff6a98c98abe71b64e837684e668fd",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/REAL_BENCHMARK.md",
+      "sha256": "043ee161d4cafc14614fda05b0f94b841dd014a93776aaeb4ec98e723572ff20",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/REAL_BENCHMARK_FOLDS.csv",
+      "sha256": "678f4ca7e634b8603cd3be3bb4b923c928d0c9d66eef77b313d0a3b74840aa9a",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/REAL_BENCHMARK_SUMMARY.csv",
+      "sha256": "103c5aa3167dd6d6e0328b62f64bfd81e64267ef7df10dcff8bee636330672dd",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/ROBUST_BENCHMARK_FOLDS.csv",
+      "sha256": "59b89e1e6e99e2b0ec6d14a2e9f4fc8ac7bd9b5399bab40c0ca9fb8bea478805",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/ROBUST_BENCHMARK_SUMMARY.csv",
+      "sha256": "4e772ca6749a7c936c49f259f45d21a4d64a239b6e1002cce4acf2d0cdfde0d1",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/round3_runtime.py",
+      "sha256": "e2950be507f8909bf6e312a741a343219fdc125dc8f5b18a660de51b14ea82af",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/SELECTIVE_BENCHMARK.csv",
+      "sha256": "6549a3d3bd69654723a3c4336b676e767542672657bee7c935f226ebafc7b9c2",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/test_features.py",
+      "sha256": "c17a7d7cd33a55600cbe7a81dd298992b190a45a878c9212dad5a4aeffab96d9",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/test_thresholds.py",
+      "sha256": "8f0dced1e5ecd19100cc1cce781802f31a199727c251fc0c4195c6b036dc4f69",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/train.py",
+      "sha256": "c68bb312ac30b556cbf639cf18518a1ed024ca2b79c6ecff7a17a52f68cdb510",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/content_credentials_worker.py",
+      "sha256": "441d369c8ea135bce4bbf78dddb55034c2cbbaec536dea90f6e5d830900033e0",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/image.py",
+      "sha256": "19ba25ed5e3b1ba331c90b9d4f2ef776336bc8da4810115998ce0bc0c6a8fe1f",
+      "baseline_sha256": "414bd4a004bbc5c5d78fcd6e1a111259dc0e3695bf7b65d69c425c22da2574b6",
+      "reviewed_exception": "Explicit pixel closing only; pinned source fixture and complete AST reversal/report equivalence checked by tests/test_image_lifecycle.py.",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/provenance.py",
+      "sha256": "d2c4769e67c48a772a39d4b221d3a32ba3d665880594a1c7cbdca5cbf44e4903",
+      "matches": true
+    },
+    {
+      "path": "app/trust/c2pa-trust-list.pem",
+      "sha256": "75cacc98b79ecac33713c7ecfb58d4a0ef383f3c1f886e7409f9e37e8664aea5",
+      "matches": true
+    },
+    {
+      "path": "app/trust/interim-allowed.txt",
+      "sha256": "3597b20c9c20a0daadc7fab0d8c63534bd333ec6a715ef7117c7a4588caa15bb",
+      "matches": true
+    },
+    {
+      "path": "app/trust/interim-anchors.pem",
+      "sha256": "db57e50b9bd4e4c786cbb91f38fd85e2af6a9d5412438a8cddcc42688df07ae5",
+      "matches": true
+    },
+    {
+      "path": "app/trust/interim-config.txt",
+      "sha256": "1044c30a906b0c9cbe28b4a4c0002ca56a718f0ae22b9af83238543a07d0e718",
+      "matches": true
+    },
+    {
+      "path": "app/trust/snapshot.json",
+      "sha256": "cae78f2d243611a9eb7e02946d7173fd57f9398dbbcc89bd94fd94474cde5905",
+      "matches": true
+    },
+    {
+      "path": "models/clip_external_probe.joblib",
+      "sha256": "3b23eb9e67933115136ba62e3bc445ead3165c0587416dc772e716211b791ed8",
+      "matches": true
+    },
+    {
+      "path": "models/clip_l14_demo.joblib",
+      "sha256": "29d2733d4ccc114396be9941901584c2fd546a55293a64d94c2ac8a0f004f1b2",
+      "matches": true
+    },
+    {
+      "path": "models/clip_l14_demo.json",
+      "sha256": "3fca01b6879d9716878405883513940b2a8fb4f5a82106018ced6992578fb67f",
+      "matches": true
+    },
+    {
+      "path": "models/image_pipeline.json",
+      "sha256": "b2edf1191d09e6fd27fe97187f100de9e1f2cb6158495ceb127435b86d0f3860",
+      "matches": true
+    }
+  ],
+  "v22_other_source": [
+    {
+      "path": ".gitignore",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/__init__.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/adaptation.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/bfree.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/community.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/decision_policy.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/evaluate.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/features.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/frozen_vision.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/image_ensemble.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/predict.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/prepare_cf_subset.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/README.md",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/REAL_BENCHMARK.md",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/REAL_BENCHMARK_FOLDS.csv",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/REAL_BENCHMARK_SUMMARY.csv",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/ROBUST_BENCHMARK_FOLDS.csv",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/ROBUST_BENCHMARK_SUMMARY.csv",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/round3_runtime.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/SELECTIVE_BENCHMARK.csv",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/test_features.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/test_thresholds.py",
+      "matches": true
+    },
+    {
+      "path": "ai_detector/train.py",
+      "matches": true
+    },
+    {
+      "path": "app/__init__.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/__init__.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/common.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/content_credentials_worker.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/email.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/image.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/media_context.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/provenance.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/qr.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/qr_worker.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/screenshot.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/text.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/url.py",
+      "matches": true
+    },
+    {
+      "path": "app/analyzers/url_details.py",
+      "matches": true
+    },
+    {
+      "path": "app/capabilities.py",
+      "matches": true
+    },
+    {
+      "path": "app/guidance.py",
+      "matches": true
+    },
+    {
+      "path": "app/intake.py",
+      "matches": true
+    },
+    {
+      "path": "app/main.py",
+      "matches": true
+    },
+    {
+      "path": "app/models.py",
+      "matches": true
+    },
+    {
+      "path": "app/ocr_worker.ps1",
+      "matches": true
+    },
+    {
+      "path": "app/pocket_workspaces.py",
+      "matches": true
+    },
+    {
+      "path": "app/trust/c2pa-trust-list.pem",
+      "matches": true
+    },
+    {
+      "path": "app/trust/interim-allowed.txt",
+      "matches": true
+    },
+    {
+      "path": "app/trust/interim-anchors.pem",
+      "matches": true
+    },
+    {
+      "path": "app/trust/interim-config.txt",
+      "matches": true
+    },
+    {
+      "path": "app/trust/snapshot.json",
+      "matches": true
+    },
+    {
+      "path": "app/upload_limits.py",
+      "matches": true
+    },
+    {
+      "path": "docs/ANDROID-COMPANION.md",
+      "matches": true
+    },
+    {
+      "path": "docs/baseline-manifest.json",
+      "matches": true
+    },
+    {
+      "path": "docs/CAC-READINESS-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/CONTEXT-V10-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/CONTINUATION-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/CROSSCHECKS-V9-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/DESKTOP-V8-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/DEVICE-AND-USABILITY-TEST.md",
+      "matches": true
+    },
+    {
+      "path": "docs/EVIDENCE-V11-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/INTAKE-RELIABILITY-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/IPHONE-COMPANION.md",
+      "matches": true
+    },
+    {
+      "path": "docs/IPHONE-VISUAL-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/MEDIA-V12-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/NUMBERS-V13-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/POCKET-CONTEXT-V17-20261024.md",
+      "matches": true
+    },
+    {
+      "path": "docs/POCKET-OFFLINE-V18-20261024.md",
+      "matches": true
+    },
+    {
+      "path": "docs/POCKET-POLISH-V21-20261024.md",
+      "matches": true
+    },
+    {
+      "path": "docs/POCKET-RELIABILITY-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/PROFESSIONAL-UPGRADE-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/QUALITY-V15-20261024.md",
+      "matches": true
+    },
+    {
+      "path": "docs/QUOTES-V14-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/RELIABILITY-NEXT-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/RELIABILITY-V22-20261024.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SOURCE-V16-20261024.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-CALLBACK-WAVE.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-CONTEXT-WAVE.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-FIRST-WAVE.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-HISTORY-WAVE.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-MODEL-COMPARISON.md",
+      "matches": true
+    },
+    {
+      "path": "docs/SPRINT48-REFERENCE-WAVE.md",
+      "matches": true
+    },
+    {
+      "path": "docs/tested-environment.json",
+      "matches": true
+    },
+    {
+      "path": "docs/UPGRADE-V3-VERIFICATION.md",
+      "matches": true
+    },
+    {
+      "path": "docs/UPGRADE-VERIFICATION.md",
+      "matches": true
+    },
+    {
+      "path": "docs/USEFULNESS-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "matches": true
+    },
+    {
+      "path": "experiments/results/external_cf1006/robustness_jpeg60.json",
+      "matches": true
+    },
+    {
+      "path": "experiments/results/external_cf1006/test_results.json",
+      "matches": true
+    },
+    {
+      "path": "frontend.py",
+      "matches": true
+    },
+    {
+      "path": "models/clip_external_probe.joblib",
+      "matches": true
+    },
+    {
+      "path": "models/clip_l14_demo.joblib",
+      "matches": true
+    },
+    {
+      "path": "models/clip_l14_demo.json",
+      "matches": true
+    },
+    {
+      "path": "models/image_pipeline.json",
+      "matches": true
+    },
+    {
+      "path": "requirements-ai.txt",
+      "matches": true
+    },
+    {
+      "path": "requirements-credentials.txt",
+      "matches": true
+    },
+    {
+      "path": "requirements-qr.txt",
+      "matches": true
+    },
+    {
+      "path": "requirements.txt",
+      "matches": true
+    },
+    {
+      "path": "scripts/check_requests.py",
+      "matches": true
+    },
+    {
+      "path": "serve.py",
+      "matches": true
+    },
+    {
+      "path": "Start-TrustLens.cmd",
+      "matches": true
+    },
+    {
+      "path": "static/app.js",
+      "matches": true
+    },
+    {
+      "path": "static/claim-review.css",
+      "matches": true
+    },
+    {
+      "path": "static/claim-review.html",
+      "matches": true
+    },
+    {
+      "path": "static/claim-review.js",
+      "matches": true
+    },
+    {
+      "path": "static/communication-evaluation.html",
+      "matches": true
+    },
+    {
+      "path": "static/demo-email.eml",
+      "matches": true
+    },
+    {
+      "path": "static/demo-message.png",
+      "matches": true
+    },
+    {
+      "path": "static/demo-qr.png",
+      "matches": true
+    },
+    {
+      "path": "static/draft-transfer.js",
+      "matches": true
+    },
+    {
+      "path": "static/index.template.html",
+      "matches": true
+    },
+    {
+      "path": "static/learning-practice.css",
+      "matches": true
+    },
+    {
+      "path": "static/learning-practice.js",
+      "matches": true
+    },
+    {
+      "path": "static/link-details.js",
+      "matches": true
+    },
+    {
+      "path": "static/media-context.css",
+      "matches": true
+    },
+    {
+      "path": "static/media-context.html",
+      "matches": true
+    },
+    {
+      "path": "static/media-context.js",
+      "matches": true
+    },
+    {
+      "path": "static/mode-route.js",
+      "matches": true
+    },
+    {
+      "path": "static/original-preview.js",
+      "matches": true
+    },
+    {
+      "path": "static/phone/compare.js",
+      "matches": true
+    },
+    {
+      "path": "static/phone/guide.js",
+      "matches": true
+    },
+    {
+      "path": "static/phone/icon-192.png",
+      "matches": true
+    },
+    {
+      "path": "static/phone/icon-512.png",
+      "matches": true
+    },
+    {
+      "path": "static/phone/icon.svg",
+      "matches": true
+    },
+    {
+      "path": "static/phone/ios.css",
+      "matches": true
+    },
+    {
+      "path": "static/phone/ios.html",
+      "matches": true
+    },
+    {
+      "path": "static/phone/ios.js",
+      "matches": true
+    },
+    {
+      "path": "static/phone/manifest.webmanifest",
+      "matches": true
+    },
+    {
+      "path": "static/phone/phone.css",
+      "matches": true
+    },
+    {
+      "path": "static/phone/phone.js",
+      "matches": true
+    },
+    {
+      "path": "static/phone/practice.js",
+      "matches": true
+    },
+    {
+      "path": "static/phone/share-demo.js",
+      "matches": true
+    },
+    {
+      "path": "static/phone/share.js",
+      "matches": true
+    },
+    {
+      "path": "static/phone/suggestions.js",
+      "matches": true
+    },
+    {
+      "path": "static/primary-flow.js",
+      "matches": true
+    },
+    {
+      "path": "static/public-examples.html",
+      "matches": true
+    },
+    {
+      "path": "static/quote-context.css",
+      "matches": true
+    },
+    {
+      "path": "static/quote-context.html",
+      "matches": true
+    },
+    {
+      "path": "static/quote-context.js",
+      "matches": true
+    },
+    {
+      "path": "static/source-context.js",
+      "matches": true
+    },
+    {
+      "path": "static/styles.css",
+      "matches": true
+    },
+    {
+      "path": "static/tools.css",
+      "matches": true
+    },
+    {
+      "path": "static/unicode-notice.js",
+      "matches": true
+    },
+    {
+      "path": "static/verification-plan.js",
+      "matches": true
+    },
+    {
+      "path": "submission/CAC-2026.md",
+      "matches": true
+    },
+    {
+      "path": "submission/CAC-BROADER-STORY-DRAFT.md",
+      "matches": true
+    },
+    {
+      "path": "submission/CAC-DEMO-3MIN.md",
+      "matches": true
+    },
+    {
+      "path": "submission/COMMUNITY.md",
+      "matches": true
+    },
+    {
+      "path": "submission/CONTEXT-DEMO-V10.md",
+      "matches": true
+    },
+    {
+      "path": "submission/DEMO.md",
+      "matches": true
+    },
+    {
+      "path": "submission/DEVPOST.md",
+      "matches": true
+    },
+    {
+      "path": "submission/DISCLOSURE.md",
+      "matches": true
+    },
+    {
+      "path": "submission/EVALUATION.md",
+      "matches": true
+    },
+    {
+      "path": "submission/JUDGE-GUIDE.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/cac-readiness-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/desktop-next-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/evidence-roles-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/iphone-visual-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/media-context-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/model-quality-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/numbers-context-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/plan.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/professional-upgrade-plan.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/quote-context-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/reliability-next-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/scope-expansion-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/sprint48-plan.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/two-hour-plan-20261023.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/upgrade-v3.md",
+      "matches": true
+    },
+    {
+      "path": "tasks/upgrade.md",
+      "matches": true
+    },
+    {
+      "path": "tests/check_cancel_status.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/claim_contract.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/claim_controller.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/claim_evidence_roles.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/claim_markup.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/claim_review.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/claim_roles_contract.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/claim_roles_controller.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/claim_roles_markup.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/conftest.py",
+      "matches": true
+    },
+    {
+      "path": "tests/credentials_crypto_check.py",
+      "matches": true
+    },
+    {
+      "path": "tests/draft_transfer.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/email_href_coverage_ui.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/frozen_v14_image.py.txt",
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/request_cases.json",
+      "matches": true
+    },
+    {
+      "path": "tests/frontend_cross_checks.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/frontend_dashboard.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/frontend_intake.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/frontend_lifecycle.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/frontend_manual_guidance.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/frontend_professional.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/frontend_response.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/frontend_scope.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/frontend_state.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/ios_companion.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/learning_practice.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/link_details.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/main_privacy.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/malformed_link_coverage_ui.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/media_context.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/media_controller_extra.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/media_markup.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/media_semantics.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/mode_route.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/mode_route_navigation.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/numbers_context.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/numbers_controller.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/numbers_markup.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/original_preview.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/phone_context_markup.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/phone_recovery.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/pocket_compare.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/pocket_context_practice.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/pocket_coverage.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/pocket_host_boundaries.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/pocket_native_share.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/pocket_practice.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/pocket_scheme_boundaries.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/pocket_share_flow.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/pocket_startup_fallback.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/pocket_suggestions.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/primary_flow.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/public_examples.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/quote_context.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/quote_controller.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/quote_markup.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/review_revocation.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/source_context.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/source_controller.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/source_markup.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/test_cac_evaluation_contract.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_capabilities.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_community.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_content_credentials.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_context_history.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_decision_basis.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_decision_policy.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_demo_intake.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_email_coverage.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_email_coverage_export.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_email_duplicate_mime_headers.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_email_href_coverage.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_email_href_edge_spaces.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_email_href_guidance.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_email_incomplete_context.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_email_malformed_addresses.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_email_text_boundaries.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_end_call_advice.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_file_intake.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_guidance_all_topics.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_guidance_context.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_hard_line_boundaries.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_idna_hosts.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_image_disagreement.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_image_inference_failure.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_image_lifecycle.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_inspect_url_api.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_intake_transport_boundaries.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_known_website.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_launcher.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_link_coverage.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_link_coverage_export.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_link_evidence.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_malformed_link_coverage.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_media_context.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_media_upload_limit.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_negation_boundaries.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_phone_bundle.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_phone_offline_manifest.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_png_metadata_limits.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_pocket_workspaces.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_privacy_refusal_context.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_professional_requests.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_provenance_wording.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_qr_lifecycle.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_reference_context.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_request_context.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_screenshot_lifecycle.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_soft_hyphen_wording.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sprint_availability.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sprint_context.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sprint_email.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sprint_mailto.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_sprint_requests.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_upgrade.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_upload_limits.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_url_details.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_url_numeric_boundaries.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_url_scheme_boundaries.py",
+      "matches": true
+    },
+    {
+      "path": "tests/test_wording_equivalence.py",
+      "matches": true
+    },
+    {
+      "path": "tests/tool_navigation.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/tools_markup.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/unicode_notice.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/verification_plan.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "tests/workspace_result_order.test.cjs",
+      "matches": true
+    },
+    {
+      "path": "verification/advice-context-20261024/after-narrow-fixes.json",
+      "matches": true
+    },
+    {
+      "path": "verification/advice-context-20261024/audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/advice-context-20261024/before-results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/advice-context-20261024/browser-independent-request.png",
+      "matches": true
+    },
+    {
+      "path": "verification/advice-context-20261024/constructed-cases.json",
+      "matches": true
+    },
+    {
+      "path": "verification/advice-context-20261024/green-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/advice-context-20261024/implementation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/advice-context-20261024/red-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/browser-desktop.png",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-evaluation/case-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-evaluation/evaluate.py",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-evaluation/frozen-contract.json",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-evaluation/frozen-contract.sha256",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-evaluation/manual-review.json",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-evaluation/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-evaluation/results.html",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-evaluation/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-evaluation/summary.json",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-integration/independent-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-integration/integration-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-integration/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-integration/preservation.json",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-integration/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-integration/screenshot-native-smoke.json",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-integration/screenshot-primary-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-integration/verification-plan-1280.png",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-integration/verification-plan-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/cac-readiness/official-sources.json",
+      "matches": true
+    },
+    {
+      "path": "verification/communication-public-patterns/demo-candidates.json",
+      "matches": true
+    },
+    {
+      "path": "verification/communication-public-patterns/desktop-negation-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/communication-public-patterns/evaluate.py",
+      "matches": true
+    },
+    {
+      "path": "verification/communication-public-patterns/frozen-contract.json",
+      "matches": true
+    },
+    {
+      "path": "verification/communication-public-patterns/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/communication-public-patterns/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/continuation-contract.json",
+      "matches": true
+    },
+    {
+      "path": "verification/continuation-results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/continuation-review/desktop-findings.md",
+      "matches": true
+    },
+    {
+      "path": "verification/continuation-review/provenance-fix.md",
+      "matches": true
+    },
+    {
+      "path": "verification/continuation-review/provenance-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-negation/after.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-negation/baseline.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-negation/evaluate.py",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-negation/frozen-acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-negation/performance-and-residuals.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-negation/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-negation/tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-communication/after-hard-separators.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-communication/baseline.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-communication/evaluate.py",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-communication/frozen-cases.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-communication/hard-separator-acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-communication/hard-separator-report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-communication/layout-baseline.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-communication/layout-cases.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-communication/proposal.md",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-intake/AUDIT.md",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-intake/line-wrap-protocol.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-intake/line-wrap-results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-intake/line_wrap_audit.py",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-intake/preservation.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-intake/single_line.png",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-intake/wrapped_line.png",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-integration/browser-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-integration/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-integration/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-integration/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-integration/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-integration/scope-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-integration/scope-desktop.png",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-product/audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/desktop-next-product/implementation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/draft-transfer/HANDOFF.md",
+      "matches": true
+    },
+    {
+      "path": "verification/email-context-20261024/audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/email-context-20261024/closure.md",
+      "matches": true
+    },
+    {
+      "path": "verification/email-context-20261024/live-routes.json",
+      "matches": true
+    },
+    {
+      "path": "verification/email-context-20261024/post-fix-results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/email-context-20261024/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/email-context-20261024/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/email-context-20261024/robustness-contract.json",
+      "matches": true
+    },
+    {
+      "path": "verification/email-context-20261024/run_contract.py",
+      "matches": true
+    },
+    {
+      "path": "verification/email-coverage/REPORT.md",
+      "matches": true
+    },
+    {
+      "path": "verification/email-coverage/tests-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/evaluate_continuation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/browser-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/controller-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/evaluate.cjs",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/input-audit-closure.md",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/input-audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/roles-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/evidence-roles/roles-desktop.png",
+      "matches": true
+    },
+    {
+      "path": "verification/frozen-to-development.patch",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/baseline-results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/baseline_budget.py",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/contract.json",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/email-headers-5000.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/email-nested-120.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/email-parts-1000.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/email-parts-6000.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/email-plain-240k.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/profile-focus-results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/profile-results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/profile_budget.py",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/profile_focus.py",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/run_budget.py",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/source-identities.json",
+      "matches": true
+    },
+    {
+      "path": "verification/input-budget-20261024/text-30k.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-companion/contrast.json",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-companion/integration-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-companion/navigation-fix.md",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-companion/navigation-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-companion/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-companion/tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/browser-report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/contrast.json",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/desktop-1280.png",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/final-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/integration-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/iphone-390.png",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/iphone-shortcut-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/link-result-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/live-smoke.json",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/message-result-390.png",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/node-current.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/pocket-390.png",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/pocket-offline-result-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/preservation.json",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/pytest-current.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/iphone-visual/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/learning-practice-20261024/browser-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/learning-practice-20261024/browser-complete.png",
+      "matches": true
+    },
+    {
+      "path": "verification/learning-practice-20261024/browser-run.json",
+      "matches": true
+    },
+    {
+      "path": "verification/learning-practice-20261024/design.md",
+      "matches": true
+    },
+    {
+      "path": "verification/learning-practice-20261024/review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/link-coverage/final-pocket-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/link-coverage/integration-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/link-coverage/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/media-boundary-20261024/audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/media-boundary-20261024/protocol.json",
+      "matches": true
+    },
+    {
+      "path": "verification/media-boundary-20261024/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/media-boundary-20261024/run.py",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/backend-contract.json",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/backend-report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/backend-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/browser-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/browser-desktop.png",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/controller-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/evaluate.cjs",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/integration-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/media-context/review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-communication/cross-check-ui-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-communication/eligibility-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-communication/green-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-communication/implementation-report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-communication/proposal.md",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-communication/red-corrected-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-communication/red-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-communication/soft-hyphen-acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-communication/soft-hyphen-after.json",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-image/admission-followup.json",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-image/admission-followup.md",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-image/admission-followup.py",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-image/audit.py",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-image/receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-image/REPORT.md",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-integration/browser-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-integration/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-integration/model-error-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-integration/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-integration/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-integration/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-integration/soft-hyphen-browser.png",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-product/audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-product/implementation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/model-next-product/inference-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-communication/after.json",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-communication/evaluate.py",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-communication/frozen-cases.json",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-communication/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-communication/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-communication/tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-intake/AUDIT.md",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-intake/decoder-fix-preservation.json",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-intake/fix-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-intake/png-metadata-reproduction.json",
+      "matches": true
+    },
+    {
+      "path": "verification/next-wave-intake/reproduce_png_metadata.py",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/acceptance.sha256",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/browser-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/browser-comparison.png",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/controller-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/evaluate.cjs",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/integration-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/numbers-context/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/browser-portable.md",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/claims-offline-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/closure-audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/contract-green-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/contract-green.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/contract-red.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/contract-report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/export-http.json",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/implementation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/package-note.md",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/offline-workspaces-20261024/spec.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/after-boundary-fix.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/desktop-before.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/frozen-cases.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/green-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/implementation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/independent-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/live-scheme-closure.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/pocket-before.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/red-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/scheme-green-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-boundary-20261024/scheme-red-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/browser-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/browser-closure.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/browser-v13-practice-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/browser-v13-practice.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/browser-v14-portable-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/final-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/node-checkpoint.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/phone-export-http.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/phone-export-server-off.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/portable-browser-closure.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/practice-report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/product-report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/pytest-final-with-export.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/server-off.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/source-final-summary.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/v13-browser-closure.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-context-20261024/v13-server-off.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-fallback-20261024/audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-fallback-20261024/probes.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-recovery/browser-mobile.png",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-recovery/browser-recovery.png",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-recovery/HANDOFF.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-recovery/integration-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-recovery/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-recovery/pytest.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-recovery/source-diff.patch",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-reliability/browser-shared-review.png",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-reliability/HANDOFF.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-reliability/integration-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-reliability/node-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-reliability/pytest.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-reliability/source-diff.patch",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/after-segmentation.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/all-pocket-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/evaluate-segmentation.cjs",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/evaluate.cjs",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/frozen-cases.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/integration-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/segmentation-after.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/segmentation-baseline.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/segmentation-cases.json",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/segmentation-fix.md",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/segmentation-tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/pocket-suggestions/tests.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-communication/after.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-communication/baseline.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-communication/evaluate.py",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-communication/frozen-cases.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-communication/phone-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-communication/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/attempt/containment.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/attempt/prelaunch.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/attempt/stderr.log",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/attempt/stdout.log",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/attempt/supervisor-result.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/attempt/worker-memory.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/attempt.py",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/audit-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/c2pa-attempt/containment.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/c2pa-attempt/prelaunch.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/c2pa-attempt/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/c2pa-attempt/stderr.log",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/c2pa-attempt/stdout.log",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/c2pa-attempt/supervisor-result.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/c2pa-completion.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/c2pa-protocol.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/c2pa_attempt.py",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/completion.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/current-resource-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/freeze_audit.py",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/protocol.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/REPORT.md",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-images/root-authorization-amendment.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-product/HANDOFF.md",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-product/integration-diff.patch",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-product/integration-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-product/main-desktop.png",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-product/main-mobile.png",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-product/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-product/phone-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-product/pocket-mobile.png",
+      "matches": true
+    },
+    {
+      "path": "verification/professional-product/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/public-examples-20261024/browser-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/public-examples-20261024/evaluate.py",
+      "matches": true
+    },
+    {
+      "path": "verification/public-examples-20261024/frozen-manifest.json",
+      "matches": true
+    },
+    {
+      "path": "verification/public-examples-20261024/frozen-manifest.sha256",
+      "matches": true
+    },
+    {
+      "path": "verification/public-examples-20261024/render_page.py",
+      "matches": true
+    },
+    {
+      "path": "verification/public-examples-20261024/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/public-examples-20261024/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/diagnostic.py",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/blank.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/blur1.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/blur3.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/center_occlusion.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/clean.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/doublesize.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/halfsize.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/jpeg45.jpg",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/multiple.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/perspective.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/rotate17.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/fixtures/rotate90.png",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/protocol.json",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/REPORT.md",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/qr-intake/tests-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/browser-directory-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/browser-screenshot-entry.png",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/browser-wording.png",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/communication-after-equivalence.json",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/communication-audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/communication-results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/constructed-cases.json",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/equivalence-green-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/equivalence-green.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/equivalence-implementation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/equivalence-red.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/final-intake-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/image-cleanup-fix.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/image-cleanup-proposal.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/intake-audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/intake-fix.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/intake-qr-fix.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/integration-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/mode-route-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/node-checkpoint.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/product-audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/pytest-checkpoint.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/wording-equivalence-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quality-sprint-20261024/wording-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/acceptance.sha256",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/browser-quote-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/browser-quote-both.png",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/browser-quote.png",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/browser-tools-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/browser-tools.png",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/evaluate.cjs",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/integration-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/quote-context/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/reliability-next/draft-transfer-390.png",
+      "matches": true
+    },
+    {
+      "path": "verification/reliability-next/duplicate-subject-390.png",
+      "matches": true
+    },
+    {
+      "path": "verification/reliability-next/integration-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/reliability-next/live-smoke.json",
+      "matches": true
+    },
+    {
+      "path": "verification/reliability-next/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/reliability-next/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/reliability-next/response-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/reported-percentages-20261024/acceptance-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/reported-percentages-20261024/acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/reported-percentages-20261024/acceptance.sha256",
+      "matches": true
+    },
+    {
+      "path": "verification/reported-percentages-20261024/math-design-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/reported-percentages-20261024/spec-before-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/reported-percentages-20261024/ui-design-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/browser.md",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/claim-final-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/claim-focus-fixed-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/export-http-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/export-http.json",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/focus-red.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/numbers-final-390.png",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/numbers-offline-390.png",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/quotes-offline-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/result-first-20261024/scroll-red.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/browser-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/claim-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/claim-desktop.png",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/controller-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/evaluate.cjs",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/product-scope.md",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-expansion/review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/scope-review.json",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/acceptance.sha256",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/browser-320.png",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/browser-match.png",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/browser-navigation-closure.md",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/combined-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/evaluate.cjs",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/final-product-review.md",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/integration-closure.md",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/live-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/node-checkpoint.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/node-with-formatting.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/pytest-checkpoint.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/pytest-final.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/pytest-parser-checkpoint.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/report.md",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/source-final-summary.json",
+      "matches": true
+    },
+    {
+      "path": "verification/source-context-20261024/workflow-audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/before-results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/check_preservation.py",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/combined-coverage-live-390.png",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/communication-audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/constructed-contract.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/constructed-contract.sha256",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/email-coverage-live-390.png",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/email-edge-space-contract.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/email-href-consumer-contract.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/email-href-consumer-green.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/email-href-guidance-green.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/email-href-guidance-implementation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/email-href-guidance-red.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/email-link-design.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/guidance-acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/guidance-acceptance.sha256",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/guidance-after-regression.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/guidance-green.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/guidance-implementation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/guidance-red.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/intake-acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/intake-audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/intake-email-edge-space-fix.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/intake-email-href-fix.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/intake-fix.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/live-checkpoint.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/live-edge-space.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/malformed-acceptance.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/malformed-acceptance.sha256",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/malformed-after-regression.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/malformed-green.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/malformed-implementation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/malformed-red.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/node-checkpoint-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/node-checkpoint.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/node-wave1.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/preservation-final.json",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/product-audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/pytest-checkpoint.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/pytest-wave1.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/review-green.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/review-node-full.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/review-red.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/sprint4h-20261024/review-revocation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/two-hour/desktop-comparison.png",
+      "matches": true
+    },
+    {
+      "path": "verification/two-hour/extracted-checks.json",
+      "matches": true
+    },
+    {
+      "path": "verification/two-hour/integration-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/two-hour/live-api.json",
+      "matches": true
+    },
+    {
+      "path": "verification/two-hour/node-final.txt",
+      "matches": true
+    },
+    {
+      "path": "verification/two-hour/pocket-offline-guidance.png",
+      "matches": true
+    },
+    {
+      "path": "verification/two-hour/pocket-offline-practice.png",
+      "matches": true
+    },
+    {
+      "path": "verification/two-hour/preservation.json",
+      "matches": true
+    },
+    {
+      "path": "verification/two-hour/pytest.xml",
+      "matches": true
+    },
+    {
+      "path": "verification/unicode-display-20261024/audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/unicode-display-20261024/browser-notice.png",
+      "matches": true
+    },
+    {
+      "path": "verification/unicode-display-20261024/constructed-probes.json",
+      "matches": true
+    },
+    {
+      "path": "verification/unicode-display-20261024/implementation.md",
+      "matches": true
+    },
+    {
+      "path": "verification/unicode-display-20261024/results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/upload-limits/REPORT.md",
+      "matches": true
+    },
+    {
+      "path": "verification/upload-limits/tests-receipt.json",
+      "matches": true
+    },
+    {
+      "path": "verification/url-boundary-20261024/audit.md",
+      "matches": true
+    },
+    {
+      "path": "verification/url-boundary-20261024/closure.md",
+      "matches": true
+    },
+    {
+      "path": "verification/url-boundary-20261024/constructed-results.json",
+      "matches": true
+    },
+    {
+      "path": "verification/url-boundary-20261024/root-parser-crosscheck.json",
+      "matches": true
+    }
+  ],
+  "counts": {
+    "previous_source_archives": 23,
+    "phone_artifacts": 7,
+    "original_files": 104,
+    "protected_unchanged_relative_v22": 34,
+    "historical_protected_unchanged": 33,
+    "historical_reviewed_resource_change": 1,
+    "other_v22_entries": 824
+  },
+  "intentional_existing_file_changes": [
+    "README.md",
+    "scripts/export_phone.py",
+    "scripts/package.py",
+    "static/numbers-context.css",
+    "static/numbers-context.html",
+    "static/numbers-context.js",
+    "static/phone/context.html",
+    "static/phone/index.html",
+    "static/phone/share-demo.html",
+    "static/phone/sw.js",
+    "static/tools.html",
+    "tasks/todo.md",
+    "tests/phone_companion.test.cjs",
+    "tests/pocket_context_cache.test.cjs",
+    "verification/reported-percentages-20261024/spec.md"
+  ]
+}

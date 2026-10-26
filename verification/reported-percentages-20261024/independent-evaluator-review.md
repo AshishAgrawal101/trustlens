@@ -1,0 +1,12 @@
+# Independent reported-percentage evaluation
+
+New evaluator tests/reported_percentages_acceptance.test.cjs reads unchanged acceptance.json and its literalSHA256 c2b357b4a089d9180530467d7883a6443965578429b05cecd80f3a2e409fbfdc. PythonFraction expectationstrings are the oracle; no implementation arithmetic is copied. It asserts finite numeric outputs, exactzero/notnegativezero, nullrelativeatzerobaseline, correctnonzerosign and relativeerror<=10^-12 with NOabsoluteepsilonfloor. Tiny10^-62point changes cannot disappear behind a conventionalabsolute1e-12tolerance. Bothfields are independently exercised forinvalidbranches; missingAPIcannotmake rejectiontestsfalselypass.
+
+Beforeimplementation, actualREDrun recorded16fail/1digestpass inacceptance-red.txt. Implementationowner notified afterRED. Independentcurrentrerun ofalloldcounttests,newmath/controller/markup and17oraclechecks passed:69tests,zero skips; fulloutput acceptance-green-review.txt. Original16cases/digest remainunchanged. Existingcomparefunction exactbytes hash remains2a9d755f7cc70e97ffa8e277918ed238ec2d773e6b21ab14699807590533ceb1.
+
+Read actualnewJS/HTML afterownerready. Exactdecimalcoefficients/rangechecks precedeNumberconversion anddifference usesBigIntcrossproducts; precision/zero/finitebounds satisfyoracle. Rawlength64includesASCIIedgespaces perclarification; trimonlyASCIIspace andASCIIdecimalgrammar rejects exponent,sign,%/comma,hiddenwhitespace. Unknowncounts/totals are explicitlynotinferred andnotrenderedassynthetic1of100. Sourcepercentages mayalreadyberounded; fullcomparability/originaldata/uncertainty/no-significance-or-causalityquestions remain.
+
+Methodselectorstartsdisabled; percentagesfieldset+inputsinitiallyhidden/disabled, existingcountIDspreserved. Methodchange clearsallfields/results withoutcalculation. Clearretainstheactivemethod/focusesitsfirstfield; exit/persistedBackresetdefaultcounts. Input/nativeinvalidretryinvalidatesstaleresult. Percentagezero-baselinequestiondoesnotclaimactualcountsavailable. TextContentfacts/noinputsinnetwork/storage/exports, unnamedfields andexistingno-scriptguard remain. Result-firstheadingfocus/nativeblockstart andexpandedlimits arepreserved.
+
+No concreteimplementationdefect found in this boundedreview. Newcontroller/markup tests address lifecycle/unknownsamples; actual320/390longrelativevaluewrapping, browsernativevalidation and preparedregeneratedPocketexport/offlinechecks remain root's requiredacceptance, notestablishedbyNode. No newapp/source/browser/API/modelcalloreditbythisreviewer.
+

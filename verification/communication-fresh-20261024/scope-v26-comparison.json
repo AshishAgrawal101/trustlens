@@ -1,0 +1,537 @@
+{
+  "archive": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261024-context-polish-v26-review.zip",
+  "archive_sha256": "515449ba37997ca65bf0d181d568eb588ba401be684d1675c9527bc3263e0a28",
+  "baseline_member": "verification/communication-fresh-20261024/reminder-after-regression.json",
+  "baseline_sha256": "b3a192379f004fd0a394e2b42799f63eed52f3ca56df4ff98adbcd01ba33bc42",
+  "rows": [
+    {
+      "id": "active-code",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-code",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-code",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-code",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-device",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-device",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-device",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-device",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-personal",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-personal",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-personal",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-personal",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-payment",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-payment",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-payment",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "active-payment",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "reminder-privacy",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "reminder-privacy",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "reminder-privacy",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "reminder-privacy",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "conditional-device",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "conditional-device",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "conditional-device",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "conditional-device",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "advice-urgent",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "advice-urgent",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "advice-urgent",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "advice-urgent",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "reported-warning",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "reported-warning",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "reported-warning",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "reported-warning",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-agenda",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-agenda",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-agenda",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-agenda",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-field",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-field",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-field",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-field",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-completed-work",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-completed-work",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-completed-work",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "ordinary-completed-work",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "outside-english",
+      "mode": "text",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "outside-english",
+      "mode": "call",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": false,
+      "share_summary_changed": true
+    },
+    {
+      "id": "outside-english",
+      "mode": "email-body-paste",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    },
+    {
+      "id": "outside-english",
+      "mode": "email-eml",
+      "excluded_keys": [
+        "limitations",
+        "share_summary"
+      ],
+      "unexpected_differences": [],
+      "limitation_changed": true,
+      "share_summary_changed": true
+    }
+  ],
+  "unexpected_difference_count": 0
+}

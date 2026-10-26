@@ -1,0 +1,12 @@
+{
+  "oldHtmlSha256": "6cb0edec8364b86ab0f4d01ea4e467838eb7670a26d40c78861f6e7453ab4e3a",
+  "initialDisabledAsserted": true,
+  "missingNodeRemainedAbsent": true,
+  "reviewEnabled": true,
+  "validReview": true,
+  "privateCustomError": true,
+  "editRepair": true,
+  "clearAndLifecycle": true,
+  "requests": 0,
+  "browserRaceGuaranteed": false
+}

@@ -1,0 +1,8 @@
+{
+  "scope": "Source identities recorded at audit completion; no application edits by this task",
+  "sha256": {
+    "app\\analyzers\\email.py": "72f85867e981a0477b5fabf548728dfefe5e5d280bf52e85a9d1acdbb9ac97d8",
+    "app\\analyzers\\text.py": "3b11c2cdfa5dd8e80d833dbf6327bbfce8e697e289db98a6c0015d19a142942b",
+    "verification\\input-budget-20261024\\contract.json": "4307095811a81ec222e12bbfcb2b837b4a96b10bd702e7ae2a1bc1ff14dc44c7"
+  }
+}

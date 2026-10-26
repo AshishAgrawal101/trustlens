@@ -1,0 +1,37 @@
+✔ numbers require explicit submit; construction and typing send nothing (25.0636ms)
+✔ all four edits remove old facts/questions and errors while retaining drafts (7.5739ms)
+✔ Clear, exit and persisted Back remove every supplied number and result (5.576ms)
+✔ loading constructed example clears previous output and waits for submit (2.5772ms)
+✔ bad or native-invalid values cannot retain a previous calculation (10.4328ms)
+✔ zero baseline is an undefined relative change rather than an infinity or causal claim (1.7184ms)
+✔ empty guidance follows the explicit comparison lifecycle (1.6547ms)
+✔ raw count and precise percentage drafts survive both method roundtrips without conversion or Compare (7.4404ms)
+✔ method change clears result errors and status, keeps selection focus and validates only active fields (21.9158ms)
+✔ Swap acts only on active draft and does not change retained other-method values (1.9595ms)
+✔ Clear and lifecycle wipe both drafts; constructed examples replace all rather than retaining inactive values (6.8677ms)
+✔ swap is initially disabled native button and preserves pure math bytes and mobile target layout (8.4361ms)
+✔ count reversal swaps pairs clears old result and recalculates asymmetric baseline only on explicit Compare (21.5592ms)
+✔ double swap preserves raw count strings and partial invalid drafts without silently validating (4.404ms)
+✔ percentage swap preserves exact strings active method and hidden inactive fields without denominator invention (2.7312ms)
+✔ browser unparsed numeric entry is kept in place rather than assigning an unreadable empty value over it (1.9909ms)
+✔ swapping the zero baseline changes orientation without changing Undefined arithmetic policy (3.6425ms)
+✔ status readiness and stale results reset on every normal boundary without changing lifecycle defaults (10.4789ms)
+✔ defaults enable counts and disable every hidden percentage input (7.5989ms)
+✔ method change keeps drafts invalidates result and leaves select focus without calculating (22.2669ms)
+✔ reported rates show no invented counts and preserve heading scroll/fixed limits (2.4678ms)
+✔ active methods use explicit examples without auto comparison (3.0605ms)
+✔ Clear keeps percentage mode; lifecycle resets default and erases all (4.835ms)
+✔ edits invalidate output, keep drafts and active mode (3.985ms)
+✔ zero and invalid/native-invalid results do not retain stale/private output (2.1981ms)
+✔ mode copy follows input/empty/caveat with count caveat restored (1.7759ms)
+✔ method choice is labelled unnamed disabled and defaults explicitly to counts inside the form (1.3101ms)
+✔ inactive percentage controls are disabled in static markup and describe reported rates without denominators (0.605ms)
+✔ count contracts result-first caveat and private fallback remain while select is mobile sized (0.6057ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 177.3859

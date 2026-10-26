@@ -1,0 +1,209 @@
+FFFFFFFFFFFF.                                                            [100%]
+================================== FAILURES ===================================
+_ test_neutral_labels_retain_existing_scheme_independent_rules[//bank.example@other.example/pay-other.example-userinfo-high] _
+
+href = '//bank.example@other.example/pay', host = 'other.example'
+key = 'userinfo', level = 'high'
+
+    @pytest.mark.parametrize('href,host,key,level',[
+        ('//bank.example@other.example/pay','other.example','userinfo','high'),
+        ('//127.0.0.1/pay','127.0.0.1','ip','guarded'),
+        ('//bücher.example/pay','xn--bcher-kva.example','idn','guarded'),
+        ('//bit.ly/PRIVATE','bit.ly','short','guarded'),
+        ('//a.b.c.d.example/path','a.b.c.d.example','subdomains','guarded')])
+    def test_neutral_labels_retain_existing_scheme_independent_rules(href,host,key,level):
+        r=add_guidance(report(f'<a href="{href}">Open statement</a>'))
+>       assert hosts(r)==[host]
+E       AssertionError: assert [] == ['other.example']
+E         
+E         Right contains one more item: 'other.example'
+E         Use -v to get more diff
+
+tests\test_email_relative_targets.py:22: AssertionError
+_ test_neutral_labels_retain_existing_scheme_independent_rules[//127.0.0.1/pay-127.0.0.1-ip-guarded] _
+
+href = '//127.0.0.1/pay', host = '127.0.0.1', key = 'ip', level = 'guarded'
+
+    @pytest.mark.parametrize('href,host,key,level',[
+        ('//bank.example@other.example/pay','other.example','userinfo','high'),
+        ('//127.0.0.1/pay','127.0.0.1','ip','guarded'),
+        ('//bücher.example/pay','xn--bcher-kva.example','idn','guarded'),
+        ('//bit.ly/PRIVATE','bit.ly','short','guarded'),
+        ('//a.b.c.d.example/path','a.b.c.d.example','subdomains','guarded')])
+    def test_neutral_labels_retain_existing_scheme_independent_rules(href,host,key,level):
+        r=add_guidance(report(f'<a href="{href}">Open statement</a>'))
+>       assert hosts(r)==[host]
+E       AssertionError: assert [] == ['127.0.0.1']
+E         
+E         Right contains one more item: '127.0.0.1'
+E         Use -v to get more diff
+
+tests\test_email_relative_targets.py:22: AssertionError
+_ test_neutral_labels_retain_existing_scheme_independent_rules[//b\xfccher.example/pay-xn--bcher-kva.example-idn-guarded] _
+
+href = '//bücher.example/pay', host = 'xn--bcher-kva.example', key = 'idn'
+level = 'guarded'
+
+    @pytest.mark.parametrize('href,host,key,level',[
+        ('//bank.example@other.example/pay','other.example','userinfo','high'),
+        ('//127.0.0.1/pay','127.0.0.1','ip','guarded'),
+        ('//bücher.example/pay','xn--bcher-kva.example','idn','guarded'),
+        ('//bit.ly/PRIVATE','bit.ly','short','guarded'),
+        ('//a.b.c.d.example/path','a.b.c.d.example','subdomains','guarded')])
+    def test_neutral_labels_retain_existing_scheme_independent_rules(href,host,key,level):
+        r=add_guidance(report(f'<a href="{href}">Open statement</a>'))
+>       assert hosts(r)==[host]
+E       AssertionError: assert [] == ['xn--bcher-kva.example']
+E         
+E         Right contains one more item: 'xn--bcher-kva.example'
+E         Use -v to get more diff
+
+tests\test_email_relative_targets.py:22: AssertionError
+_ test_neutral_labels_retain_existing_scheme_independent_rules[//bit.ly/PRIVATE-bit.ly-short-guarded] _
+
+href = '//bit.ly/PRIVATE', host = 'bit.ly', key = 'short', level = 'guarded'
+
+    @pytest.mark.parametrize('href,host,key,level',[
+        ('//bank.example@other.example/pay','other.example','userinfo','high'),
+        ('//127.0.0.1/pay','127.0.0.1','ip','guarded'),
+        ('//bücher.example/pay','xn--bcher-kva.example','idn','guarded'),
+        ('//bit.ly/PRIVATE','bit.ly','short','guarded'),
+        ('//a.b.c.d.example/path','a.b.c.d.example','subdomains','guarded')])
+    def test_neutral_labels_retain_existing_scheme_independent_rules(href,host,key,level):
+        r=add_guidance(report(f'<a href="{href}">Open statement</a>'))
+>       assert hosts(r)==[host]
+E       AssertionError: assert [] == ['bit.ly']
+E         
+E         Right contains one more item: 'bit.ly'
+E         Use -v to get more diff
+
+tests\test_email_relative_targets.py:22: AssertionError
+_ test_neutral_labels_retain_existing_scheme_independent_rules[//a.b.c.d.example/path-a.b.c.d.example-subdomains-guarded] _
+
+href = '//a.b.c.d.example/path', host = 'a.b.c.d.example', key = 'subdomains'
+level = 'guarded'
+
+    @pytest.mark.parametrize('href,host,key,level',[
+        ('//bank.example@other.example/pay','other.example','userinfo','high'),
+        ('//127.0.0.1/pay','127.0.0.1','ip','guarded'),
+        ('//bücher.example/pay','xn--bcher-kva.example','idn','guarded'),
+        ('//bit.ly/PRIVATE','bit.ly','short','guarded'),
+        ('//a.b.c.d.example/path','a.b.c.d.example','subdomains','guarded')])
+    def test_neutral_labels_retain_existing_scheme_independent_rules(href,host,key,level):
+        r=add_guidance(report(f'<a href="{href}">Open statement</a>'))
+>       assert hosts(r)==[host]
+E       AssertionError: assert [] == ['a.b.c.d.example']
+E         
+E         Right contains one more item: 'a.b.c.d.example'
+E         Use -v to get more diff
+
+tests\test_email_relative_targets.py:22: AssertionError
+_ test_userinfo_path_and_query_private_values_never_echo_in_evidence_or_export _
+
+    def test_userinfo_path_and_query_private_values_never_echo_in_evidence_or_export():
+        r=add_guidance(report('<a href="//PRIVATE-USER:PRIVATE-PASS@other.example/PRIVATE-PATH?SECRET=1">Open statement</a>'))
+>       assert hosts(r)==['other.example']
+E       AssertionError: assert [] == ['other.example']
+E         
+E         Right contains one more item: 'other.example'
+E         Use -v to get more diff
+
+tests\test_email_relative_targets.py:34: AssertionError
+______ test_bounded_valid_targets_are_observed_without_partial_notice[1] ______
+
+count = 1
+
+    @pytest.mark.parametrize('count',[1,8])
+    def test_bounded_valid_targets_are_observed_without_partial_notice(count):
+        r=report(''.join(f'<a href="//site{i}.example/p">Open</a>' for i in range(count)))
+>       assert hosts(r)==[f'site{i}.example' for i in range(count)]
+E       AssertionError: assert [] == ['site0.example']
+E         
+E         Right contains one more item: 'site0.example'
+E         Use -v to get more diff
+
+tests\test_email_relative_targets.py:43: AssertionError
+______ test_bounded_valid_targets_are_observed_without_partial_notice[8] ______
+
+count = 8
+
+    @pytest.mark.parametrize('count',[1,8])
+    def test_bounded_valid_targets_are_observed_without_partial_notice(count):
+        r=report(''.join(f'<a href="//site{i}.example/p">Open</a>' for i in range(count)))
+>       assert hosts(r)==[f'site{i}.example' for i in range(count)]
+E       AssertionError: assert [] == ['site0.examp...example', ...]
+E         
+E         Right contains 8 more items, first extra item: 'site0.example'
+E         Use -v to get more diff
+
+tests\test_email_relative_targets.py:43: AssertionError
+________ test_ninth_target_is_partial_and_never_passed_to_shared_rules ________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000029CC58116A0>
+
+    def test_ninth_target_is_partial_and_never_passed_to_shared_rules(monkeypatch):
+        seen=[]
+        def track(value):seen.append(value);return analyze_url(value)
+        monkeypatch.setattr(analyzer,'analyze_url',track,raising=False)
+        r=add_guidance(report(''.join(f'<a href="//site{i}.example/PRIVATE">Open</a>' for i in range(8))+'<a href="//PRIVATE@unexamined.example/SECRET">Open</a>'))
+>       assert len(seen)==8 and not any('unexamined' in s for s in seen)
+E       assert (0 == 8)
+E        +  where 0 = len([])
+
+tests\test_email_relative_targets.py:53: AssertionError
+_________ test_duplicate_targets_across_mime_parts_do_not_spend_slots _________
+
+    def test_duplicate_targets_across_mime_parts_do_not_spend_slots():
+        message=EmailMessage();message.make_mixed()
+        for body in ['<a href="//site0.example/p">Open</a>'*12,''.join(f'<a href="//site{i}.example/p">Open</a>' for i in range(8))]:
+            part=EmailMessage();part.set_content(body,subtype='html');message.attach(part)
+        r=analyzer.analyze_email_bytes(message.as_bytes())
+>       assert hosts(r)==[f'site{i}.example' for i in range(8)] and not partial(r)
+E       AssertionError: assert ([] == ['site0.examp...example', ...]
+E         
+E         Right contains 8 more items, first extra item: 'site0.example'
+E         Use -v to get more diff)
+
+tests\test_email_relative_targets.py:66: AssertionError
+____________ test_overflow_and_literal_http_budget_remain_distinct ____________
+
+    def test_overflow_and_literal_http_budget_remain_distinct():
+        body=' '.join(f'https://literal{i}.example/p' for i in range(9))+''.join(f'<a href="//relative{i}.example/p">Open</a>' for i in range(10))
+>       r=add_guidance(report(body));assert len(hosts(r))==8
+                                     ^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert 0 == 8
+E        +  where 0 = len([])
+E        +    where [] = hosts(AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='Link review is incomplete. ...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_relative_targets.py:71: AssertionError
+________ test_adapter_is_allowlist_not_future_transport_or_other_rules ________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000029CC58FC170>
+
+    def test_adapter_is_allowlist_not_future_transport_or_other_rules(monkeypatch):
+        from app.models import Evidence
+        original=analyze_url('https://example.org')
+        original.evidence.extend([Evidence(id='url:future_transport',evidence_class='verified',severity='info',title='PRIVATE HTTPS assertion',detail='PRIVATE synthetic scheme',source='test'),Evidence(id='url:http',evidence_class='inferred',severity='medium',title='Unencrypted transport',detail='PRIVATE',source='test',weight=.3)])
+        monkeypatch.setattr(analyzer,'analyze_url',lambda value:original,raising=False)
+        r=report('<a href="//example.org/PRIVATE">Open</a>')
+>       assert hosts(r)==['example.org']
+E       AssertionError: assert [] == ['example.org']
+E         
+E         Right contains one more item: 'example.org'
+E         Use -v to get more diff
+
+tests\test_email_relative_targets.py:83: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_email_relative_targets.py::test_neutral_labels_retain_existing_scheme_independent_rules[//bank.example@other.example/pay-other.example-userinfo-high]
+FAILED tests/test_email_relative_targets.py::test_neutral_labels_retain_existing_scheme_independent_rules[//127.0.0.1/pay-127.0.0.1-ip-guarded]
+FAILED tests/test_email_relative_targets.py::test_neutral_labels_retain_existing_scheme_independent_rules[//b\xfccher.example/pay-xn--bcher-kva.example-idn-guarded]
+FAILED tests/test_email_relative_targets.py::test_neutral_labels_retain_existing_scheme_independent_rules[//bit.ly/PRIVATE-bit.ly-short-guarded]
+FAILED tests/test_email_relative_targets.py::test_neutral_labels_retain_existing_scheme_independent_rules[//a.b.c.d.example/path-a.b.c.d.example-subdomains-guarded]
+FAILED tests/test_email_relative_targets.py::test_userinfo_path_and_query_private_values_never_echo_in_evidence_or_export
+FAILED tests/test_email_relative_targets.py::test_bounded_valid_targets_are_observed_without_partial_notice[1]
+FAILED tests/test_email_relative_targets.py::test_bounded_valid_targets_are_observed_without_partial_notice[8]
+FAILED tests/test_email_relative_targets.py::test_ninth_target_is_partial_and_never_passed_to_shared_rules
+FAILED tests/test_email_relative_targets.py::test_duplicate_targets_across_mime_parts_do_not_spend_slots
+FAILED tests/test_email_relative_targets.py::test_overflow_and_literal_http_budget_remain_distinct
+FAILED tests/test_email_relative_targets.py::test_adapter_is_allowlist_not_future_transport_or_other_rules
+12 failed, 1 passed in 0.41s

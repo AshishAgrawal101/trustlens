@@ -1,0 +1,199 @@
+{
+  "at_utc": "2026-10-23T15:58:16.541826+00:00",
+  "locks": [
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\openfake-round3-20261007\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\openfake-round3-20261007\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-20261011\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-20261011\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-ten-hour-20261012\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-ten-hour-20261012\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-foundation-repair-20261012\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-foundation-repair-20261012\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-queue-20261013\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-queue-20261013\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-generalization-20261013\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-generalization-20261013\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-local-detail-20261017\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-local-detail-20261017\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-robust-local-20261018\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-robust-local-20261018\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-head-20261018\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-head-20261018\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-semantic-head-20261018\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-semantic-head-20261018\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-complement-20261018\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-complement-20261018\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-adaptation-20261018\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-adaptation-20261018\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    }
+  ],
+  "stops": [
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-20261011\\STOP",
+      "sha256": "c19c82e1d90a42542c305e1cc984e7ce16151e0e0925f1f65f4d1d822b212ada",
+      "bytes": 381
+    }
+  ],
+  "payloads_read": false,
+  "scientific_imports": false,
+  "inference": false,
+  "new_downloads": false,
+  "model_or_STOP_edits": false,
+  "historical_import_failure": {
+    "outcome": "worker_failed",
+    "error": null,
+    "peak": {
+      "private": 1245167616,
+      "ws": 670638080,
+      "peak_ws_sum": 670679040,
+      "peak_private_sum": 1246474240,
+      "worker_peak_job_commit": 1232060416
+    },
+    "worker_returncode": 1,
+    "worker_reaped": true,
+    "ended_at": 1792731175.8056304
+  }
+}

@@ -1,0 +1,20 @@
+--- 
++++ 
+@@ -123,6 +123,17 @@
+                 if key in found:
+                     break
+                 prefix = sentence[max(0, match.start()-45):match.start()]
++                if (key == 'urgency' and match.group().lower() == 'urgent'
++                        and re.fullmatch(_HORIZONTAL_SPACE + r'*this' + _HORIZONTAL_SPACE + r'+is' + _HORIZONTAL_SPACE + r'+not' + _HORIZONTAL_SPACE + r'+', sentence[:match.start()], re.I)
++                        and re.match(_HORIZONTAL_SPACE + r'*(?:[,;]|$)', sentence[match.end():])):
++                    boundary = (len(original) if sentence_match.end() == len(text) else
++                                source_indices[sentence_match.end()] if source_indices is not None else sentence_match.end())
++                    if '?' not in re.match(r'[.!?]*', original[boundary:]).group():
++                        found['context:negative_urgency'] = Evidence(id='context:negative_urgency', evidence_class='unknown', severity='info',
++                            title='Explicit wording: not urgent',
++                            detail='This complete clause explicitly says it is not urgent: “'+_source_excerpt(original, source_indices, sentence_match.start(), sentence_match.start()+match.end())+'”. That wording does not verify the sender or establish safety.',
++                            source='Local wording and context rules')
++                        continue
+                 if key == 'secrecy' and _credential_privacy_advice(sentence, match):
+                     continue
+                 if (key in ('code', 'payment', 'balance', 'overpayment', 'advance_fee', 'personal', 'remote')

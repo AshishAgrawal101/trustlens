@@ -1,0 +1,11 @@
+# Independent Pocket boundary review
+
+No new concrete defect found. Read-only current guide.js/module/controller-test review; no app edits, browser/network activity or frozencontract retuning. Replayed all22original frozen cases directly and asserted exact comparison/error/coverage equality against saved post-fix output. Original cases SHA matches the saved receipt; all22replays identical.
+
+20focused host-boundary/knowncomparison/coverage tests passed,zero skips. Valid Unicode IDNA(sharp-s), punycode, astralpathpairs and ordinary domains remain supported. RawCc/Cf/Cs rejection precedes knownreference trimming/URLnormalization, and malformed explicitHTTPschemes cannot silently repair into a reference. Rawauthority@ checking rejects empty/nonemptyuserinfo even when URL.username/password are empty. Privatepath/query/fragment/credentialvalues do not appear in output or fixedsummaries; independently exercised3private/Unicode URLstrings.
+
+Message literal tokens containing format/control/surrogate characters produce an unreadable-address row with nullcomparison rather than a normalized match; subsequent validlinks remain inspected. Delimiters stop on visiblemarkup/quotes/whitespace, strip the documented trailingpunctuation and preserve bracketedIPv6 hosts. The12cap counts literal occurrences, including malformed/duplicate tokens, not12uniquehosts; remaining count is uninspected occurrences and omitted URLcomponents are not leaked. This differs intentionally from desktop8unique-link policy. Browsernumeric canonicalization remains deliberate Pocket behavior, not silentlychanged to the desktop conservative rejectionpolicy.
+
+Knownhostcomparison is exact normalizedhostname only, not ownership or safety; trailingDNSdot normalization is consistent on both sides. Messageuserinfo returns actualhost plus genericwarning without credentialecho. Caller controller invalidates results on edits/Clear/exit and fixed topic-only exports remain independent of comparison inputs. No false semantic/truth/AIverdict was added.
+
+Limits: bounded directhelper andminimalDOMtests, not actualdevice/browser navigation,network reputation or userstudy. Cappedtext extraction is not a completebrowserURL lexer and exacthostmatch cannotverifya sender/source. Original red/before/frozen receipts remain unchanged.

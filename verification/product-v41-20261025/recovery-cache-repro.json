@@ -1,0 +1,32 @@
+[
+  {
+    "payload": {
+      "plans": {}
+    },
+    "first": {
+      "requests": 1,
+      "status": "The checklist could not load. Use the FTC guide below, or reopen this panel to retry.",
+      "options": 0
+    },
+    "reopened": {
+      "requests": 1,
+      "status": "The checklist could not load. Use the FTC guide below, or reopen this panel to retry.",
+      "options": 0
+    }
+  },
+  {
+    "payload": {
+      "plans": []
+    },
+    "first": {
+      "requests": 1,
+      "status": "",
+      "options": 0
+    },
+    "reopened": {
+      "requests": 1,
+      "status": "",
+      "options": 0
+    }
+  }
+]

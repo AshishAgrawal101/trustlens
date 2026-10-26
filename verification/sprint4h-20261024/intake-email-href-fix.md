@@ -1,0 +1,11 @@
+# HTML href producer implementation
+
+Root approved email.py-only producer plus new tests/test_email_href_coverage.py after the frozen16case design. Existingcoowners control text/guidance/frontend; no edits there. No URLfetch,basehref,CSSlayout,redirect,model,score or weight change.
+
+Initial34newregressions:25failed,9passed beforecode. Addedonefurther failing preservationcheck for existingmalformedabsoluteweb-linkunknown evidence beforefixing that path. Final35newtests pass. One initialoverbroad assertion was refined: a visible literalHTTPSlabel may legitimately produce itsownbodyURLobservation; the forbidden output is the syntheticprotocolrelativedestination. Tests now directly assert parser.links stays empty for //targets and no invented destination/transport observation appears.
+
+href_target validatesrawCc/Cf/Cs beforestrip, ignores missing/empty/ordinaryspace/fragmentonlyanchors, classifies validHTTP(S), primarymailto andexact//authority. Protocolrelativehost extraction uses existingstrictparse_address with aninternalhttps:prefix only; it neverentersbodylinks/renderedURLs, and limitations make noHTTPSclaim. Userinfo still produces the actualdestinationhost comparison, never the prefix; IDNA/numeric/format validation unchanged. Unsupportednonempty/malformedtargets are counted acrossreadableHTMLparts asone email:links_incomplete unknown/info/weight0, count-onlydetail with nohref/query/label leakage. Validmailto withnon-addresslabel is not a targetfailure; malformedprimarycountsunsupported, queryrecipientlimitationremains.
+
+ExistingHTTPbodychecks, includingunknownmalformedabsoluteweb-link evidence, remain without turninghiddencharacters into trustedaddresses. Existing8detailedmismatchcap/duplicates, inlinevsblocklabels, script/styleexclusion and attachment/MIME handling remain. No unsupportedhref increasesfraudweight; readablewarningsremain. Empty/localfragmentpolicy is a coveragechoice, notsafetyverification.
+
+Combined producer/header/HTML/coverage/guidance/fileintake tests:171passed,zero skips in4.70seconds. Bothpasted/.eml APIs showtheexactnewweight0ID. Communicationcoowner's consumer10tests included; independentcoownerrun requested. FrontendnewIDacceptance belongs toproductowner andisnotclaimedbythisreceipt. No nativeOCR/model/privateasset/networkdestination/download/browserupload work occurred.

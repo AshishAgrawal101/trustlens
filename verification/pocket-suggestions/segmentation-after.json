@@ -1,0 +1,58 @@
+[
+  {
+    "id": "decimal-advice",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "decimal-direct",
+    "expected": [
+      "money"
+    ],
+    "actual": [
+      "money"
+    ]
+  },
+  {
+    "id": "domain-advice",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "domain-direct",
+    "expected": [
+      "device"
+    ],
+    "actual": []
+  },
+  {
+    "id": "abbreviation-advice",
+    "expected": [],
+    "actual": []
+  },
+  {
+    "id": "abbreviation-direct",
+    "expected": [
+      "code"
+    ],
+    "actual": [
+      "code"
+    ]
+  },
+  {
+    "id": "same-line-independent",
+    "expected": [
+      "device"
+    ],
+    "actual": []
+  },
+  {
+    "id": "new-line-independent",
+    "expected": [
+      "device"
+    ],
+    "actual": [
+      "device"
+    ]
+  }
+]

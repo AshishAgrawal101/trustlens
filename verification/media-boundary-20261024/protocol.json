@@ -1,0 +1,8 @@
+{
+  "scope":"constructed in-memory 2x3 PNG/JPEG metadata only; no model, real assets, network or browser upload",
+  "frozen_before_execution":true,
+  "cases":["plain_png","truncated_png_12bytes","software_120","software_121","software_bidi","valid_leap_time","invalid_leap_time","empty_GPS_IFD","orientation6_GPS","raw_EXIF_orientation_ASCII","raw_EXIF_orientation_rational","raw_EXIF_orientation_short_tuple","raw_EXIF_GPS_invalid_offset","raw_EXIF_ExifIFD_invalid_offset","raw_EXIF_make_invalid_offset"],
+  "raw_exif":"one-entry little-endian TIFF embedded in PNG EXIF; offsets deliberately invalid only in named cases",
+  "budget":{"cases":15,"max_pixels":6,"max_case_bytes":10000,"model_calls":0,"network_calls":0},
+  "expected_policy":"valid supported image -> bounded allowlist or optional fields null; invalid image -> fixed InvalidImage; unexpected exceptions/500 must be recorded, not fixed"
+}

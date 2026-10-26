@@ -1,0 +1,29 @@
+{
+  "scope": "Three constructed pasted MIME UI cases. No file upload or population-accuracy inference.",
+  "results": [
+    {
+      "id": "supported-base64",
+      "actions": "Keep security codes and passwords privateOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.Verify through a separate routeUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.",
+      "error": "",
+      "evidence": "Warning signs to reviewInferenceRequest to share a security codeMatched wording: “Send me your verification code”. Context may change its meaning.Local request-pattern rules",
+      "focus": "verdict",
+      "tag": "PAUSE & VERIFY"
+    },
+    {
+      "id": "unknown-body-known-subject",
+      "actions": "Keep security codes and passwords privateOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.Review the original emailOpen the original message in a trusted mail app. Parts of this pasted email could not be interpreted reliably; do not treat missing findings as reassurance.Verify through a separate routeUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.",
+      "error": "",
+      "evidence": "Warning signs to reviewInferenceRequest to share a security codeMatched wording: “Send me your verification code”. Context may change its meaning.Local request-pattern rulesStill unknownNot verifiedThis email check is incompleteA message body uses an unsupported Content-Transfer-Encoding and was not interpreted; its content remains unknown. No readable message body was available. The subject, if present, does not establish the content or safety of the missing or unreadable body.Local MIME/header validation; unreadable or ambiguous content is not evidence of safety",
+      "focus": "verdict",
+      "tag": "CHECK INCOMPLETE"
+    },
+    {
+      "id": "nonascii-encoding-token",
+      "actions": "Review the original emailOpen the original message in a trusted mail app. Parts of this pasted email could not be interpreted reliably; do not treat missing findings as reassurance.Verify through a separate routeUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.",
+      "error": "",
+      "evidence": "Still unknownNot verifiedSender and intent are unverifiedNo strong wording patterns matched this input.Local rulesNot verifiedThis email check is incompleteA message body uses an unsupported Content-Transfer-Encoding and was not interpreted; its content remains unknown. No readable message body was available. The subject, if present, does not establish the content or safety of the missing or unreadable body.Local MIME/header validation; unreadable or ambiguous content is not evidence of safety",
+      "focus": "verdict",
+      "tag": "CHECK INCOMPLETE"
+    }
+  ]
+}

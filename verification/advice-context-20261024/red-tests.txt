@@ -1,0 +1,583 @@
+FFF..FFF..FFF..FFF..FFF..FFFFFFFFFFFF.....FFFFFFFFFFFF...............F   [100%]
+================================== FAILURES ===================================
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your password-Do not] _
+
+prefix = 'Do not', credential = 'your password'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Do not tell anyone your password.')
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your password-Never] _
+
+prefix = 'Never', credential = 'your password'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Never tell anyone your password.')
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your password-Don't] _
+
+prefix = "Don't", credential = 'your password'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids("Don't tell anyone your password.")
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your verification code-Do not] _
+
+prefix = 'Do not', credential = 'your verification code'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Do not tell anyone your verification code.')
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your verification code-Never] _
+
+prefix = 'Never', credential = 'your verification code'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Never tell anyone your verification code.')
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your verification code-Don't] _
+
+prefix = "Don't", credential = 'your verification code'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids("Don't tell anyone your verification code.")
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your security code-Do not] _
+
+prefix = 'Do not', credential = 'your security code'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Do not tell anyone your security code.')
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your security code-Never] _
+
+prefix = 'Never', credential = 'your security code'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Never tell anyone your security code.')
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your security code-Don't] _
+
+prefix = "Don't", credential = 'your security code'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids("Don't tell anyone your security code.")
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your passcode-Do not] _
+
+prefix = 'Do not', credential = 'your passcode'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Do not tell anyone your passcode.')
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your passcode-Never] _
+
+prefix = 'Never', credential = 'your passcode'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Never tell anyone your passcode.')
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your passcode-Don't] _
+
+prefix = "Don't", credential = 'your passcode'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids("Don't tell anyone your passcode.")
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your PIN-Do not] _
+
+prefix = 'Do not', credential = 'your PIN'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Do not tell anyone your PIN.')
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your PIN-Never] _
+
+prefix = 'Never', credential = 'your PIN'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Never tell anyone your PIN.')
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your PIN-Don't] _
+
+prefix = "Don't", credential = 'your PIN'
+
+    @pytest.mark.parametrize('prefix',['Do not','Never',"Don't",'You must not','You should not'])
+    @pytest.mark.parametrize('credential',['your password','your verification code','your security code','your passcode','your PIN'])
+    def test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure(prefix,credential):
+        text=prefix+' tell anyone '+credential+'.'
+>       assert not ids(text)
+E       assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids("Don't tell anyone your PIN.")
+
+tests\test_privacy_refusal_context.py:14: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[Do{h}not- ] _
+
+space = ' ', prefix = 'Do{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+        assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+>       assert not ids(prohibition+' tell anyone your password.')
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids(('Do not' + ' tell anyone your password.'))
+
+tests\test_privacy_refusal_context.py:23: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[Do{h}not-  ] _
+
+space = '  ', prefix = 'Do{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[Do{h}not-\t] _
+
+space = '\t', prefix = 'Do{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[Do{h}not-\xa0] _
+
+space = '\xa0', prefix = 'Do{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You must{h}not- ] _
+
+space = ' ', prefix = 'You must{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You must{h}not-  ] _
+
+space = '  ', prefix = 'You must{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You must{h}not-\t] _
+
+space = '\t', prefix = 'You must{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You must{h}not-\xa0] _
+
+space = '\xa0', prefix = 'You must{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You should{h}not- ] _
+
+space = ' ', prefix = 'You should{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You should{h}not-  ] _
+
+space = '  ', prefix = 'You should{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You should{h}not-\t] _
+
+space = '\t', prefix = 'You should{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You should{h}not-\xa0] _
+
+space = '\xa0', prefix = 'You should{h}not'
+
+    @pytest.mark.parametrize('space',[' ','  ','\t','\u00a0'])
+    @pytest.mark.parametrize('prefix',['Do{h}not','You must{h}not','You should{h}not'])
+    def test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy(space,prefix):
+        prohibition=prefix.format(h=space)
+>       assert ids(prohibition+' tell anyone about this transfer.')=={'request:secrecy'}
+E       AssertionError: assert set() == {'request:secrecy'}
+E         
+E         Extra items in the right set:
+E         'request:secrecy'
+E         Use -v to get more diff
+
+tests\test_privacy_refusal_context.py:22: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[share my password-code-I will not] _
+
+prefix = 'I will not', action = 'share my password', key = 'code'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids(((('I will not' + ' ') + 'share my password') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[share my password-code-I won't] _
+
+prefix = "I won't", action = 'share my password', key = 'code'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       assert not {'request:code'}
+E        +  where {'request:code'} = ids(((("I won't" + ' ') + 'share my password') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[share my password-code-I won\u2019t] _
+
+prefix = 'I won’t', action = 'share my password', key = 'code'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       AssertionError: assert not {'request:code'}
+E        +  where {'request:code'} = ids(((('I won’t' + ' ') + 'share my password') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[buy gift cards-payment-I will not] _
+
+prefix = 'I will not', action = 'buy gift cards', key = 'payment'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       AssertionError: assert not {'request:payment'}
+E        +  where {'request:payment'} = ids(((('I will not' + ' ') + 'buy gift cards') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[buy gift cards-payment-I won't] _
+
+prefix = "I won't", action = 'buy gift cards', key = 'payment'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       assert not {'request:payment'}
+E        +  where {'request:payment'} = ids(((("I won't" + ' ') + 'buy gift cards') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[buy gift cards-payment-I won\u2019t] _
+
+prefix = 'I won’t', action = 'buy gift cards', key = 'payment'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       AssertionError: assert not {'request:payment'}
+E        +  where {'request:payment'} = ids(((('I won’t' + ' ') + 'buy gift cards') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[install TeamViewer-remote-I will not] _
+
+prefix = 'I will not', action = 'install TeamViewer', key = 'remote'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       AssertionError: assert not {'request:remote'}
+E        +  where {'request:remote'} = ids(((('I will not' + ' ') + 'install TeamViewer') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[install TeamViewer-remote-I won't] _
+
+prefix = "I won't", action = 'install TeamViewer', key = 'remote'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       assert not {'request:remote'}
+E        +  where {'request:remote'} = ids(((("I won't" + ' ') + 'install TeamViewer') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[install TeamViewer-remote-I won\u2019t] _
+
+prefix = 'I won’t', action = 'install TeamViewer', key = 'remote'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       AssertionError: assert not {'request:remote'}
+E        +  where {'request:remote'} = ids(((('I won’t' + ' ') + 'install TeamViewer') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[send my card number-personal-I will not] _
+
+prefix = 'I will not', action = 'send my card number', key = 'personal'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       AssertionError: assert not {'request:personal'}
+E        +  where {'request:personal'} = ids(((('I will not' + ' ') + 'send my card number') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[send my card number-personal-I won't] _
+
+prefix = "I won't", action = 'send my card number', key = 'personal'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       assert not {'request:personal'}
+E        +  where {'request:personal'} = ids(((("I won't" + ' ') + 'send my card number') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+_ test_adjacent_first_person_refusal_is_not_a_live_request[send my card number-personal-I won\u2019t] _
+
+prefix = 'I won’t', action = 'send my card number', key = 'personal'
+
+    @pytest.mark.parametrize('prefix',['I will not',"I won't",'I won’t'])
+    @pytest.mark.parametrize('action,key',[('share my password','code'),('buy gift cards','payment'),('install TeamViewer','remote'),('send my card number','personal')])
+    def test_adjacent_first_person_refusal_is_not_a_live_request(prefix,action,key):
+>       assert not ids(prefix+' '+action+'.')
+E       AssertionError: assert not {'request:personal'}
+E        +  where {'request:personal'} = ids(((('I won’t' + ' ') + 'send my card number') + '.'))
+
+tests\test_privacy_refusal_context.py:38: AssertionError
+________________ test_maximum_privacy_advice_input_is_bounded _________________
+
+    def test_maximum_privacy_advice_input_is_bounded():
+        text=('Never tell anyone your password.\n'*1000)[:30000]
+>       start=time.perf_counter();assert not ids(text);assert time.perf_counter()-start<5
+                                  ^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert not {'request:secrecy'}
+E        +  where {'request:secrecy'} = ids('Never tell anyone your password.\nNever tell anyone your password.\nNever tell anyone your password.\nNever tell anyo...r password.\nNever tell anyone your password.\nNever tell anyone your password.\nNever tell anyone your password.\nNev')
+
+tests\test_privacy_refusal_context.py:71: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your password-Do not]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your password-Never]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your password-Don't]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your verification code-Do not]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your verification code-Never]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your verification code-Don't]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your security code-Do not]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your security code-Never]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your security code-Don't]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your passcode-Do not]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your passcode-Never]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your passcode-Don't]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your PIN-Do not]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your PIN-Never]
+FAILED tests/test_privacy_refusal_context.py::test_explicit_tell_anyone_credential_privacy_is_not_secret_pressure[your PIN-Don't]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[Do{h}not- ]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[Do{h}not-  ]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[Do{h}not-\t]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[Do{h}not-\xa0]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You must{h}not- ]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You must{h}not-  ]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You must{h}not-\t]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You must{h}not-\xa0]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You should{h}not- ]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You should{h}not-  ]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You should{h}not-\t]
+FAILED tests/test_privacy_refusal_context.py::test_consistent_secrecy_spacing_and_modal_forms_preserve_privacy[You should{h}not-\xa0]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[share my password-code-I will not]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[share my password-code-I won't]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[share my password-code-I won\u2019t]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[buy gift cards-payment-I will not]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[buy gift cards-payment-I won't]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[buy gift cards-payment-I won\u2019t]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[install TeamViewer-remote-I will not]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[install TeamViewer-remote-I won't]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[install TeamViewer-remote-I won\u2019t]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[send my card number-personal-I will not]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[send my card number-personal-I won't]
+FAILED tests/test_privacy_refusal_context.py::test_adjacent_first_person_refusal_is_not_a_live_request[send my card number-personal-I won\u2019t]
+FAILED tests/test_privacy_refusal_context.py::test_maximum_privacy_advice_input_is_bounded
+40 failed, 30 passed in 2.64s

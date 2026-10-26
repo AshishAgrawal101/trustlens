@@ -1,0 +1,23 @@
+# Email display coverage and older finder markup v40
+
+Email now distinguishes **additional differences found but not displayed** from targets that were never inspected. The local HTML-label comparison examines supplied comparable anchors throughout the bounded message, retains the same first eight weighted difference rows, and adds one count-only unknown/info/zero-weight `email:label_limit` notice for distinct further pairs. Repeated pairs do not inflate the count. The fixed limitation and input-free export explain the display omission without calling those already-compared labels uninspected.
+
+Risk scoring, action selection and the eight weighted rows are unchanged. Unsupported targets, literal-link budgets and scheme-relative inspection budgets retain their separate coverage limits. This does not visit destinations, interpret page content/CSS, authenticate a sender or establish that different hosts are fraudulent. No additional hostname/private URL is exposed by the omission count. Independent review compared complete control reports and the original weighted evidence with immutable v39; see `verification/v40-independent-email-20261025/review.md`.
+
+Actual desktop Email checks showed the before/after omission notice, corresponding export sentence, appropriate unchanged risk headline, and Clear/reload. The browser bridge redacted textarea content as `<redacted>`; an initial raw-draft equality assertion failed and was narrowed honestly without changing the application. That browser observation therefore does **not** prove byte-for-byte draft equality. Raw failures and the narrowed observations remain in `verification/v40-root-browser-20261025/`.
+
+## Source finder compatibility
+
+Current Source finder initialization formerly assumed First/Last controls introduced in v33. Exact immutable v32 Quote markup lacks them, so current script setup threw before enabling Find. This is a reproduced old-markup/current-controller pairing, not a demonstrated browser timing race.
+
+First/Last are now bound once and guarded during setup, reset and disabled-state rendering. Essential Previous/Next/form/result controls remain required. Frozen v32 DOM tests return real null for missing controls, honour initial disabled Find, then verify initialization, explicit finding, Previous/Next endpoint focus and all privacy resets. Current desktop eleven-match First/Last/Previous/Clear behavior also passed. Pure SourceContext helper/export prefix, literal semantics, windows and frozen oracle outputs remain byte-identical. See `verification/product-v40-20261025/` and `verification/v40-independent-source-20261025/`.
+
+## Verification and handoff
+
+Final source suites: **1,603 Python and 607 JavaScript passes, zero skips**. Independent reviews of both changes pass. These software checks and constructed observations establish neither population accuracy nor human outcomes.
+
+Pocket v40 uses cache **trustlens-pocket-v34**. Static archive SHA-256: **048eb7ddc9068e9d05fc4073d011a45d86f241f37266654c2bde2d105735444a**. The ordinary prepared-browser cache33→34 update retained the open draft until explicit keyboard Reload, then loaded ready cache34 with empty input. Root then stopped its owned static server and verified actual cached34 Home → guide → Quote: explicit eleven-match Find, keyboard Last to 11–11 and First to 1–5 with endpoint range focus and retained drafts; editing the passage removed the old result; main Clear/reload left blank inputs, hidden output and enabled Find. See `verification/v40-root-browser-20261025/offline-source.json`, `server-off.json` and `upgrade33-to34.json`. These are normal desktop-browser observations, with no new 320px measurement, demonstrated timing race or physical-phone test.
+
+The v39 external receipt closes its historical pending release row: **1,420 manifest files**, source/extracted **1,594 Python / 604 JavaScript passes**, zero skips. Its prior source/phone artifacts and earlier candidate failures remain immutable. The new source archive destination is `TrustLens-professional-20261025-email-coverage-v40-review.zip`; packaging, extracted suites, preservation and external receipt remain pending here. This note did not create an archive.
+
+All broader worksheets, source-error recovery, independent in-page drafts and explicit separate-tab workflow remain. No storage/automatic input transfer, parser/model promotion, source fetch or cloud service was introduced. Physical phone, browser file uploads, consented usability, timed/recorded presentation, student contribution/eligibility, publication and submission remain unverified/deferred. The existing broader park-post rehearsal remains a draft.

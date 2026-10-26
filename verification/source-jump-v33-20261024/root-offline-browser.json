@@ -1,0 +1,40 @@
+{
+  "cache": "trustlens-pocket-v29",
+  "serverStopped": true,
+  "last": {
+    "client": 305,
+    "focus": "source-page-status",
+    "qualification": true,
+    "range": "Matches 6–6 of 6",
+    "scroll": 305
+  },
+  "first": "Matches 1–5 of 6",
+  "afterClearReload": {
+    "buttons": [
+      {
+        "disabled": true,
+        "id": "source-first"
+      },
+      {
+        "disabled": true,
+        "id": "source-prev"
+      },
+      {
+        "disabled": true,
+        "id": "source-next"
+      },
+      {
+        "disabled": true,
+        "id": "source-last"
+      }
+    ],
+    "hidden": true,
+    "range": "",
+    "values": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "physicalPhoneTested": false
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "Actualexistingorigin8837Pocket31→32 by ordinary versionnotice and keyboardreload; draftkeptbeforeexplicitreload thenempty. No cachepurge/CDP/serverexposure. This doesnotexercise proposed mid-document race.",
+  "upgradeBefore38": {
+    "message": "Constructed update check: keep this draft until explicit reload.",
+    "reloadHidden": false,
+    "status": "A different companion version is prepared. Reload to use it; this clears the message in this page. Copy anything you need first.",
+    "version": "trustlens-pocket-v31"
+  },
+  "upgradeAfter38": {
+    "message": "",
+    "reloadHidden": true,
+    "status": "Offline shell prepared. Installation and receiving shares still depend on this browser and device. No message is cached.",
+    "version": "trustlens-pocket-v32"
+  }
+}

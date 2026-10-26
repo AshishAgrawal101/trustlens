@@ -1,0 +1,17 @@
+{
+  "scope": "Actual local-server interruption and retry using constructed text only",
+  "steps": [
+    "Load currentmainpage andconstructedcode message",
+    "Stop owneddevelopment8766listener leaving original8765alone",
+    "ExplicitCheck must show explanatory error with actionable retry; no result or inventedanalysis",
+    "Restartdevelopmentserver; explicitretry must work with sameinput",
+    "Clear/reload empty"
+  ],
+  "excluded": [
+    "Fileuploads",
+    "Cloudcontent",
+    "Models",
+    "Physicalphone",
+    "Networkemulationorsecuritychanges"
+  ]
+}

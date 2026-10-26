@@ -1,0 +1,12 @@
+{
+  "purpose":"Native browser regression for the shared dependency; direct no-input mutation edge remains controller-tested only.",
+  "constructed_only":true,
+  "checks":[
+    "Original is populated, Revised blank, passage finder page two visible: clicking Compare triggers native Revised invalid/focus while Source page/range/format notice remain visible.",
+    "Editing Original blank immediately clears dependent Source windows/range/notice/navigation; native Quote invalid focuses Original and keeps passage draft.",
+    "Refill Original then explicit Find starts first page; no automatic Find or cross-tool transfer.",
+    "Clear and Back/reload remove private text and result states;390/320 layout has no horizontal document overflow.",
+    "Prepared new Pocket export repeats Revised-invalid independence and Original edit invalidation with only its server stopped."
+  ],
+  "not_claimed":["native mutation without input reproduced in browser","physical phone","screen-reader trial","human timed recording","source authentication or quote truth","image upload"]
+}

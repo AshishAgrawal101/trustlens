@@ -1,0 +1,103 @@
+{
+  "purpose": "Small authored pure-logic reliability probes frozen before execution; no independent accuracy claim",
+  "cases": [
+    {
+      "id": "century-leap-valid",
+      "api": "claim",
+      "input": {
+        "claim": "Archive opened after restoration.",
+        "eventDate": "2000-02-28",
+        "aQuote": "Opening notice.",
+        "aDate": "2000-03-01"
+      },
+      "today": "2026-10-25",
+      "expect": {
+        "observation": "dates:a:after",
+        "text": "2 calendar days after"
+      }
+    },
+    {
+      "id": "century-common-year",
+      "api": "claim",
+      "input": {
+        "claim": "Archive opened after restoration.",
+        "eventDate": "1900-02-28",
+        "aQuote": "Opening notice.",
+        "aDate": "1900-03-01"
+      },
+      "today": "2026-10-25",
+      "expect": {
+        "observation": "dates:a:after",
+        "text": "1 calendar day after"
+      }
+    },
+    {
+      "id": "role-with-date-only",
+      "api": "claim",
+      "input": {
+        "claim": "The garden opens next week.",
+        "aDate": "2026-10-25",
+        "aRole": "supports",
+        "bQuote": "The full notice describes opening hours.",
+        "bRole": "context"
+      },
+      "today": "2026-10-25",
+      "expect": {
+        "missing_label": "labels:a:missing",
+        "question": "labels:unresolved",
+        "absent": "coverage:no_challenge"
+      }
+    },
+    {
+      "id": "same-rate-scaled-groups",
+      "api": "counts",
+      "input": {
+        "countA": 37,
+        "totalA": 100,
+        "countB": 37000,
+        "totalB": 100000
+      },
+      "expect": {
+        "rateA": 37,
+        "rateB": 37,
+        "percentagePoints": 0,
+        "relativePercent": 0
+      }
+    },
+    {
+      "id": "rounded-input-near-tie",
+      "api": "percentages",
+      "input": {
+        "percentageA": "49.999999999999999999",
+        "percentageB": "50.000000000000000001"
+      },
+      "expect": {
+        "positive_difference": true,
+        "finite": true
+      }
+    },
+    {
+      "id": "quote-whitespace-reconstruction",
+      "api": "quote",
+      "original": "The library opens\nSaturday. <b>Most rooms remain open.</b>",
+      "revised": "The library opens Saturday. Most rooms remain open.",
+      "expect": {
+        "identical": false,
+        "reconstruct": true
+      }
+    },
+    {
+      "id": "literal-overlap-omission",
+      "api": "source",
+      "quote": "aba",
+      "source": "ababa aba",
+      "expect": {
+        "total": 2,
+        "starts": [
+          0,
+          6
+        ]
+      }
+    }
+  ]
+}

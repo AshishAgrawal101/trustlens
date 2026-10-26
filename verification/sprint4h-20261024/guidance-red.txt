@@ -1,0 +1,341 @@
+.FFFFFFFFFFFFFFF                                                         [100%]
+================================== FAILURES ===================================
+_________ test_all_detected_action_domains_survive[text-matched-code] _________
+
+case = {'id': 'matched-code', 'input': 'Send $50. Return the overpayment. Send me your verification code.', 'expected_action_keys': ['payment', 'overpayment', 'code']}
+kind = 'text'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...parate route']
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Keep security codes and passwords private'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+________ test_all_detected_action_domains_survive[text-matched-remote] ________
+
+case = {'id': 'matched-remote', 'input': 'Send $50. Return the overpayment. Install TeamViewer.', 'expected_action_keys': ['payment', 'overpayment', 'remote']}
+kind = 'text'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...parate route']
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Keep control of your device'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+_______ test_all_detected_action_domains_survive[text-matched-personal] _______
+
+case = {'id': 'matched-personal', 'input': 'Send $50. Return the overpayment. Send your card number.', 'expected_action_keys': ['payment', 'overpayment', 'personal']}
+kind = 'text'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...parate route']
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Hold back sensitive details'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+_______ test_all_detected_action_domains_survive[text-matched-secrecy] ________
+
+case = {'id': 'matched-secrecy', 'input': 'Send $50. Return the overpayment. Do not tell your family.', 'expected_action_keys': ['payment', 'overpayment', 'secrecy']}
+kind = 'text'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...parate route']
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Bring in someone you trust'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+________ test_all_detected_action_domains_survive[email-matched-code] _________
+
+case = {'id': 'matched-code', 'input': 'Send $50. Return the overpayment. Send me your verification code.', 'expected_action_keys': ['payment', 'overpayment', 'code']}
+kind = 'email'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...parate route']
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Keep security codes and passwords private'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+_______ test_all_detected_action_domains_survive[email-matched-remote] ________
+
+case = {'id': 'matched-remote', 'input': 'Send $50. Return the overpayment. Install TeamViewer.', 'expected_action_keys': ['payment', 'overpayment', 'remote']}
+kind = 'email'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...parate route']
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Keep control of your device'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+______ test_all_detected_action_domains_survive[email-matched-personal] _______
+
+case = {'id': 'matched-personal', 'input': 'Send $50. Return the overpayment. Send your card number.', 'expected_action_keys': ['payment', 'overpayment', 'personal']}
+kind = 'email'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...parate route']
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Hold back sensitive details'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+_______ test_all_detected_action_domains_survive[email-matched-secrecy] _______
+
+case = {'id': 'matched-secrecy', 'input': 'Send $50. Return the overpayment. Do not tell your family.', 'expected_action_keys': ['payment', 'overpayment', 'secrecy']}
+kind = 'email'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...parate route']
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Bring in someone you trust'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+_________ test_all_detected_action_domains_survive[call-matched-code] _________
+
+case = {'id': 'matched-code', 'input': 'Send $50. Return the overpayment. Send me your verification code.', 'expected_action_keys': ['payment', 'overpayment', 'code']}
+kind = 'call'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['End the cal...parate route'] == ['End the cal...parate route']
+E         
+E         At index 3 diff: 'Verify through a separate route' != 'Keep security codes and passwords private'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+________ test_all_detected_action_domains_survive[call-matched-remote] ________
+
+case = {'id': 'matched-remote', 'input': 'Send $50. Return the overpayment. Install TeamViewer.', 'expected_action_keys': ['payment', 'overpayment', 'remote']}
+kind = 'call'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['End the cal...parate route'] == ['End the cal...parate route']
+E         
+E         At index 3 diff: 'Verify through a separate route' != 'Keep control of your device'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+_______ test_all_detected_action_domains_survive[call-matched-personal] _______
+
+case = {'id': 'matched-personal', 'input': 'Send $50. Return the overpayment. Send your card number.', 'expected_action_keys': ['payment', 'overpayment', 'personal']}
+kind = 'call'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['End the cal...parate route'] == ['End the cal...parate route']
+E         
+E         At index 3 diff: 'Verify through a separate route' != 'Hold back sensitive details'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+_______ test_all_detected_action_domains_survive[call-matched-secrecy] ________
+
+case = {'id': 'matched-secrecy', 'input': 'Send $50. Return the overpayment. Do not tell your family.', 'expected_action_keys': ['payment', 'overpayment', 'secrecy']}
+kind = 'call'
+
+    @pytest.mark.parametrize('case',CASES,ids=lambda c:c['id'])
+    @pytest.mark.parametrize('kind',['text','email','call'])
+    def test_all_detected_action_domains_survive(case,kind):
+        text=case['input']+' PRIVATE-INCIDENT https://private.example/SECRET'
+        report=analyze_email('Subject: PRIVATE-SUBJECT\n\n'+text) if kind=='email' else analyze_text(text,kind)
+        before=snapshot(report)
+        result=add_guidance(report)
+        expected=[REQUEST_ACTIONS[k].title for k in case['expected_action_keys']]+[VERIFY.title]
+        if kind=='call':
+            expected.insert(0,'End the call and call back independently')
+>       assert [a.title for a in result.actions]==expected
+E       AssertionError: assert ['End the cal...parate route'] == ['End the cal...parate route']
+E         
+E         At index 3 diff: 'Verify through a separate route' != 'Bring in someone you trust'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:34: AssertionError
+__________ test_incomplete_email_and_link_review_cannot_be_displaced __________
+
+    def test_incomplete_email_and_link_review_cannot_be_displaced():
+        raw=('From: PRIVATE-A@example.org\nFrom: PRIVATE-B@example.org\nContent-Type: text/html\n\n'
+             '<p>Send $50. Return the overpayment. Send me your verification code.</p>'
+             '<a href="https://other.example/PRIVATE">https://bank.example</a>')
+        report=analyze_email(raw);before=snapshot(report);result=add_guidance(report)
+>       assert [a.title for a in result.actions]==[
+            REQUEST_ACTIONS['payment'].title,REQUEST_ACTIONS['overpayment'].title,REQUEST_ACTIONS['code'].title,
+            'Use a known address instead of this link','Review the original email',VERIFY.title]
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...parate route']
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Keep security codes and passwords private'
+E         Right contains 3 more items, first extra item: 'Use a known address instead of this link'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:47: AssertionError
+_____ test_repeated_evidence_and_balance_alias_keep_stable_unique_actions _____
+
+    def test_repeated_evidence_and_balance_alias_keep_stable_unique_actions():
+        evidence=[Evidence(id='request:'+key,evidence_class='inferred',severity='high',title='PRIVATE',detail='PRIVATE',source='test',weight=.8)
+                  for key in ['code','payment','balance','overpayment','code','payment']]
+        result=add_guidance(communication_report('text',evidence))
+>       assert [a.title for a in result.actions]==[REQUEST_ACTIONS[k].title for k in ['payment','overpayment','code']]+[VERIFY.title]
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...parate route']
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Keep security codes and passwords private'
+E         Right contains one more item: 'Verify through a separate route'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:60: AssertionError
+____ test_all_fixed_action_templates_have_a_finite_bound_and_no_duplicates ____
+
+    def test_all_fixed_action_templates_have_a_finite_bound_and_no_duplicates():
+        evidence=[Evidence(id='request:'+key,evidence_class='unknown',severity='info',title='PRIVATE',detail='PRIVATE',source='test') for key in REQUEST_ACTIONS]
+        evidence += [Evidence(id=key,evidence_class='unknown',severity='info',title='PRIVATE',detail='PRIVATE',source='test') for key in ['email:incomplete','email:link_mismatch:0']]
+        result=add_guidance(communication_report('call',evidence));titles=[a.title for a in result.actions]
+        assert titles[0]=='End the call and call back independently'
+>       assert titles[1:8]==[a.title for a in REQUEST_ACTIONS.values()]
+E       AssertionError: assert ['Pause the p...parate route'] == ['Pause the p...details', ...]
+E         
+E         At index 2 diff: 'Verify through a separate route' != 'Verify the offer before paying a fee'
+E         Right contains 4 more items, first extra item: 'Keep security codes and passwords private'
+E         Use -v to get more diff
+
+tests\test_guidance_all_topics.py:69: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[text-matched-code]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[text-matched-remote]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[text-matched-personal]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[text-matched-secrecy]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[email-matched-code]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[email-matched-remote]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[email-matched-personal]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[email-matched-secrecy]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[call-matched-code]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[call-matched-remote]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[call-matched-personal]
+FAILED tests/test_guidance_all_topics.py::test_all_detected_action_domains_survive[call-matched-secrecy]
+FAILED tests/test_guidance_all_topics.py::test_incomplete_email_and_link_review_cannot_be_displaced
+FAILED tests/test_guidance_all_topics.py::test_repeated_evidence_and_balance_alias_keep_stable_unique_actions
+FAILED tests/test_guidance_all_topics.py::test_all_fixed_action_templates_have_a_finite_bound_and_no_duplicates
+15 failed, 1 passed in 0.43s

@@ -1,0 +1,5 @@
+{
+  "archive": "TrustLens-professional-20261024-endorsement-context-v32-review.zip",
+  "htmlSHA256": "c7fbfbfbca5cd874630b7f3f1280a9b4b7ef02904ad91dd0b03626efe9d30ae9",
+  "beforeProbe": "Exact old Quote HTML/current controllers, missing IDs return actual null; no browser race or new behavior asserted"
+}

@@ -1,0 +1,195 @@
+"""Local image demo using the same frozen encoder as the measured experiments."""
+import hashlib
+import io
+import json
+import math
+import os
+from pathlib import Path
+import threading
+import warnings
+
+from app.models import AnalysisReport, Evidence
+from ai_detector.decision_policy import is_inconclusive
+
+ROOT = Path(__file__).resolve().parents[2]
+MAX_UPLOAD_BYTES = 64 * 1024 * 1024
+MAX_PIXELS = 20_000_000
+_lock = threading.Lock()
+_runtime = None
+
+
+class InvalidImage(ValueError):
+    pass
+
+
+class ImageModelUnavailable(RuntimeError):
+    pass
+
+
+def decode_image(content):
+    from PIL import Image, ImageOps, UnidentifiedImageError
+    if not content or len(content) > MAX_UPLOAD_BYTES:
+        raise InvalidImage('Choose an image smaller than 64 MB.')
+    try:
+        with warnings.catch_warnings():
+            warnings.simplefilter('error', Image.DecompressionBombWarning)
+            with Image.open(io.BytesIO(content)) as image:
+                if image.format not in {'JPEG', 'PNG', 'WEBP'}:
+                    raise InvalidImage('Choose a JPEG, PNG, or WebP image.')
+                if image.width * image.height > MAX_PIXELS:
+                    raise InvalidImage('Choose an image with at most 20 million pixels.')
+                image.load()
+                return ImageOps.exif_transpose(image).convert('RGB')
+    except InvalidImage:
+        raise
+    except (UnidentifiedImageError, OSError, ValueError, Image.DecompressionBombError,
+            Image.DecompressionBombWarning) as exc:
+        raise InvalidImage('This file could not be read as an image.') from exc
+
+
+def load_runtime():
+    global _runtime
+    if _runtime is not None:
+        return _runtime
+    model_path = ROOT/'models/clip_l14_demo.joblib'
+    cache = Path(os.environ.get('TRUSTLENS_CLIP_CACHE', str(ROOT.parent.parent/'work/clip-weights')))
+    pipeline_path=ROOT/'models/image_pipeline.json'
+    if not any(cache.rglob('open_clip_model.safetensors')) or (not pipeline_path.is_file() and not model_path.is_file()):
+        raise ImageModelUnavailable('The image model is not installed. Follow the image setup in README.md.')
+    try:
+        import joblib
+        import torch
+        from ai_detector.frozen_vision import load_backbone
+        torch.set_num_threads(6)
+        requested=os.environ.get('TRUSTLENS_DEVICE','auto')
+        device=('cuda' if torch.cuda.is_available() else 'cpu') if requested=='auto' else requested
+        if device not in {'cpu','cuda'}:
+            raise ImageModelUnavailable('TRUSTLENS_DEVICE must be auto, cpu, or cuda.')
+        torch.backends.cuda.matmul.allow_tf32=False
+        torch.backends.cudnn.allow_tf32=False
+        if pipeline_path.is_file():
+            from ai_detector.image_ensemble import ImageEnsemble
+            _runtime=ImageEnsemble(ROOT,cache,device)
+            return _runtime
+        metadata=json.loads(model_path.with_suffix('.json').read_text(encoding='utf-8'))
+        if hashlib.sha256(model_path.read_bytes()).hexdigest()!=metadata['model_sha256']:
+            raise ImageModelUnavailable('The image classifier failed its integrity check.')
+        encoder, preprocess, _ = load_backbone('clip_l14', cache,device)
+        _runtime = (encoder, preprocess, joblib.load(model_path))
+        return _runtime
+    except ImageModelUnavailable:
+        raise
+    except Exception as exc:
+        raise ImageModelUnavailable('The image model could not start. Check requirements-ai.txt and the local weights: '+str(exc)) from exc
+
+
+def _analyze_image(content):
+    image = decode_image(content)
+    component_scores = None
+    decision_policy = None
+    with _lock:
+        runtime=load_runtime()
+        if hasattr(runtime,'score'):
+            if hasattr(runtime,'score_details'):
+                component_scores=runtime.score_details(image)
+                if not isinstance(component_scores, dict):
+                    raise ValueError('Missing component results')
+                if any(isinstance(component_scores.get(key), bool) for key in ('combined', 'clip_probe', 'community')):
+                    raise ValueError('Invalid component results')
+                score=component_scores['combined']
+                # Reuse the frozen policy's score and bounds validation.
+                is_inconclusive(component_scores, runtime.metadata.get('decision_policy'))
+            else:
+                score=runtime.score(image)
+            threshold=runtime.threshold
+            decision_policy=runtime.metadata.get('decision_policy')
+            evaluation=runtime.metadata['evaluation']
+            low,high=evaluation['accuracy_wilson_95_interval']
+            limitations=[f'The underlying binary classifier scored {evaluation["accuracy"]*100:.1f}% accuracy on {evaluation["n"]} held-out clean images across 21 generator groups. That measurement predates the inconclusive display policy.',
+                f'The 95% statistical interval for that accuracy was {low*100:.1f}%–{high*100:.1f}%; performance on other sources can differ.',
+                'Calibration and test images came from the same generator groups. This was not a test of unseen generators.',
+                'The supplied monkey was a release acceptance check, excluded from fitting and reported test accuracy.',
+                'Compression, screenshots, editing, and unfamiliar generators can change the result.',
+                'When the two model scores fall on opposite sides of 50/100, the app reports inconclusive. These results are not counted as correct detections or as improved accuracy. The combined classifier cutoff remains unchanged.']
+            if runtime.robustness:
+                limitations.insert(1,f'After JPEG quality-60 recompression, accuracy fell to {runtime.robustness["metrics"]["accuracy"]*100:.1f}% on those same images.')
+            if runtime.metadata.get('pipeline')=='clip_community_full_v2':
+                full=runtime.metadata
+                display=full['display_policy']['clean']
+                limitations=[
+                    f'All {full["all_dataset_rows_processed"]:,} dataset rows were processed. Both classification layers were retrained on a separate training portion; validation chose the configuration.',
+                    f'The frozen binary candidate scored {evaluation["accuracy"]*100:.1f}% on {evaluation["n"]:,} final clean test images. Its 95% statistical interval is {low*100:.1f}%–{high*100:.1f}%.',
+                    f'JPEG quality-60 accuracy was {full["jpeg60_evaluation"]["accuracy"]*100:.1f}% on the same final sources.',
+                    f'The test held out {", ".join(full["test_families"])} from local training and tuning. Published backbones may have prior exposure to these generator families.',
+                    f'With disagreement reported as inconclusive, {display["correct_decisive_fraction_of_all_sources"]*100:.1f}% of all clean test sources received a correct decisive answer; {display["inconclusive"]:,} remained inconclusive.',
+                    'The supplied monkey and portrait were excluded from fitting, tuning, and reported final accuracy.',
+                    'Compression, screenshots, editing, and unfamiliar generators can change the result. Scores do not prove origin.']
+            if runtime.metadata.get('pipeline') in {'clip_community_full_v3','clip_community_adapted_v4'}:
+                full=runtime.metadata
+                display=full['display_policy']['clean']
+                limitations=[
+                    f'This candidate was evaluated on {evaluation["n"]:,} separate {full["evaluation_dataset"]} images after its classifiers and uncertainty rule were frozen.',
+                    f'Binary accuracy was {evaluation["accuracy"]*100:.1f}% clean and {full["jpeg60_evaluation"]["accuracy"]*100:.1f}% after JPEG quality-60 compression; the clean 95% statistical interval is {low*100:.1f}%–{high*100:.1f}%.',
+                    f'Counting inconclusive results as unresolved, {display["correct_decisive_fraction_of_all_sources"]*100:.1f}% of all clean test sources received a correct definite answer.',
+                    f'Classification layers were fit on {full["training_sources"]:,} training sources; {full["validation_sources"]:,} separate development sources selected the candidate and uncertainty rule.',
+                    'The monkey and portrait were acceptance examples, excluded from training, candidate selection and benchmark accuracy.',
+                    'Component disagreement is shown as evidence. A learned combination can resolve it when its score is outside the validation-selected uncertainty band.',
+                    'This test does not guarantee accuracy on other generators, editing or screenshots. Scores are not calibrated probabilities and cannot prove origin.']
+        else:
+            encoder,preprocess,classifier=runtime
+            import torch
+            with torch.inference_mode():
+                device=next(encoder.parameters()).device
+                features=encoder(preprocess(image).unsqueeze(0).to(device)).float().cpu().numpy()
+            score=float(classifier.predict_proba(features)[0,1])
+            threshold=.5
+            limitations=['Development cross-validation averaged 85.4% accuracy on 115 images.',
+                'This older development model has no separate final benchmark.',
+                'Compression, editing, and unfamiliar image sources can change the result.']
+    if (isinstance(score, bool) or not isinstance(score, (int, float))
+            or not math.isfinite(score) or not 0 <= score <= 1
+            or isinstance(threshold, bool) or not isinstance(threshold, (int, float))
+            or not math.isfinite(threshold) or not 0 < threshold < 1):
+        raise ImageModelUnavailable('The image detector returned invalid scores or configuration. No model conclusion is available.')
+    combined_ai=score>=threshold
+    disagreement=component_scores is not None and ((component_scores['clip_probe']>=.5)!=(component_scores['community']>=.5))
+    uncertain=component_scores is not None and is_inconclusive(component_scores,decision_policy)
+    summary=('Result inconclusive: combined score is near the decision boundary' if uncertain and decision_policy else
+             'Result inconclusive: image models disagree' if uncertain else
+             'AI patterns detected (experimental)' if combined_ai else 'Photograph patterns detected (experimental)')
+    evidence=[
+        Evidence(id='image:decoded', evidence_class='verified', severity='info',
+            title='Image read successfully', detail=f'{image.width} × {image.height} pixels.', source='uploaded-file'),
+        Evidence(id='image:model', evidence_class='inferred', severity='info',
+            title='Combined AI-pattern score', detail=f'{score*100:.1f}/100; AI decision cutoff {threshold*100:.1f}/100. The underlying binary rule classifies this as {"AI-pattern" if combined_ai else "photograph-pattern"}. This score is not a probability or proof of origin.',
+            source='local-image-model'),
+        Evidence(id='image:origin', evidence_class='unknown', severity='info',
+            title='Image origin is unverified', detail='A model score cannot establish who created the image or which tools they used.',
+            source='provenance')]
+    if component_scores is not None:
+        evidence.extend([
+            Evidence(id='image:clip', evidence_class='inferred', severity='info', title='CLIP classifier',
+                detail=f'{component_scores["clip_probe"]*100:.1f}/100. This individual model score is not a calibrated probability.', source='local-clip-probe'),
+            Evidence(id='image:community', evidence_class='inferred', severity='info', title='CommunityForensics classifier',
+                detail=f'{component_scores["community"]*100:.1f}/100. This individual model score is not a calibrated probability.', source='local-community-forensics')])
+    if disagreement:
+        detail=('One classifier score is at least 50/100 and the other is below it. The learned combination uses the image representations and their relationship; this result follows its validation-selected uncertainty rule.' if decision_policy else
+                'One model score is at least 50/100 and the other is below it. The combined score cannot resolve this disagreement; treat the result as inconclusive.')
+        evidence.append(Evidence(id='image:disagreement', evidence_class='inferred' if decision_policy else 'unknown', severity='medium',
+            title='Models disagree', detail=detail, source='model-comparison'))
+    if decision_policy:
+        evidence.append(Evidence(id='image:uncertainty', evidence_class='inferred', severity='info',
+            title='Combined decision rule', detail=f'Scores strictly between {decision_policy["lower"]*100:.1f} and {decision_policy["upper"]*100:.1f}/100 are inconclusive. These bounds were selected on development sources before the separate benchmark was scored.', source='validation-policy'))
+    return AnalysisReport(kind='image', risk_index=round(score*100),
+        risk_level='guarded' if uncertain else 'high' if combined_ai else 'low', confidence='low', summary=summary,
+        evidence=evidence,
+        limitations=limitations)
+
+
+def analyze_image(content):
+    try:
+        return _analyze_image(content)
+    except (InvalidImage, ImageModelUnavailable):
+        raise
+    except (RuntimeError, MemoryError, ValueError, TypeError, LookupError, AttributeError, OSError, ArithmeticError) as exc:
+        raise ImageModelUnavailable('The image detector could not produce a valid result. No model conclusion is available.') from exc

@@ -1,0 +1,19 @@
+{
+  "purpose": "Predeclared navigation/help contract: fixed current tool destinations and local fragments exist; no input sent",
+  "paths": [
+    "/",
+    "/static/tools.html",
+    "/static/claim-review.html",
+    "/static/numbers-context.html",
+    "/static/quote-context.html",
+    "/static/media-context.html",
+    "/context-guide.html",
+    "/phone/context.html"
+  ],
+  "expect_status": 200,
+  "static_checks": [
+    "current README relativelinks resolve",
+    "worksheet label/aria-describedby IDs resolve",
+    "toolscheck fragments handledby mode-route.js"
+  ]
+}

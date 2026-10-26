@@ -1,0 +1,13 @@
+# Source-faithful soft-hyphen repair
+
+Only app/analyzers/text.py and new tests/test_soft_hyphen_wording.py changed. No model was loaded, tuned or installed. The original NLI remains rejected; eligibility-receipt.json pins its retained calibration decision.
+
+The 15-case acceptance contract was saved before implementation: SHA256 e76d58b3fa0c010033c1b7da6a223638c243e9ca38c78891d02e16d478c3fda2. It covers direct/advice/ordinary/history/conditional/independent-live/boundary and unsupported formatting controls. New tests add original-source excerpt fidelity, unchanged literal URL handoff, shared email/call behavior and 30,000-character bounded work. Original diagnostic baselines were not overwritten.
+
+Implementation removes U+00AD only when immediately between two original letter characters. A monotonic kept-character source map preserves the normalized-coordinate match/history/negation pipeline while mapping evidence and conditional-advice excerpts back to exact original source slices. Input, source URLs and all hard line separators remain unchanged. Leading/trailing/punctuation-adjacent soft hyphens and repeated runs are not normalized. Other format characters and NFKC are untouched. The no-soft-hyphen path returns the original string without constructing an index list.
+
+The corrected red run had 11 failures and 11 passes. An initial test fixture incorrectly omitted required AnalysisReport fields; that erroneous receipt is retained separately, and red-corrected-tests.txt isolates the actual 11 behavioral failures. After repair, all 15 frozen acceptance rows agree, and the expanded relevant communication suites pass 463 tests in 1.67 seconds (green-tests.txt). Seven additional source-map probes check monotonicity and every nonempty span against its exact original slice. These test passes establish implementation behavior, not detector accuracy.
+
+No formatting notice was added: the repaired intra-word U+00AD cases now have source-faithful evidence, and a broad notice would introduce new presentation/interpretation policy without resolving other formats. A structural notice remains an optional proposal, not another semantic model or corroborating vote.
+
+OCR line-wrap misses remain unresolved and no line-continuation grammar was added. Repeated U+00AD runs, soft hyphen across physical line breaks and arbitrary zero-width/bidi characters remain unsupported. The prior copied-text two single-intraword soft-hyphen defects are fixed; existing old frozen baseline outputs remain historical. Previous v7/v8 and CAC metrics describe those exact historical sources and cases; they are not new measurements of the current source or evidence of model improvement. No final/user case was used for tuning.

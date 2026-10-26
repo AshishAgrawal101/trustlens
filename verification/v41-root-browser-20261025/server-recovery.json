@@ -1,0 +1,26 @@
+{
+  "unavailable": {
+    "busy": "false",
+    "error": "Could not reach the local server. Keep the TrustLens launcher running, then retry.",
+    "focused": "error",
+    "input": "Constructed request: read me your verification code now.",
+    "loadingHidden": true,
+    "resultHidden": true,
+    "submitEnabled": true
+  },
+  "retried": {
+    "enabled": true,
+    "errorHidden": true,
+    "input": "Constructed request: read me your verification code now.",
+    "summary": "TrustLens — private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nKeep security codes and passwords private\nOpen your account through the app or address you already know. Do not reply with a code or read it to an unexpected caller.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.",
+    "verdict": "Don’t act on this request yet."
+  },
+  "cleared": {
+    "input": "",
+    "resultHidden": true,
+    "summary": ""
+  },
+  "realStoppedListener": true,
+  "original8765Preserved": true,
+  "constructed": true
+}

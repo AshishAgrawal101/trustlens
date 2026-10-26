@@ -1,0 +1,50 @@
+✖ blank Screenshot extraction offers contrast recovery without changing text or running analysis (24.38ms)
+✖ manual transparency advice stays in Screenshot help and preserves existing wrap advice (0.8868ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 118.1384
+
+✖ failing tests:
+
+test at tests\screenshot_transparency_guidance.test.cjs:3:1
+✖ blank Screenshot extraction offers contrast recovery without changing text or running analysis (24.38ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /transparent.*opaque copy.*contrasting background/. Input:
+  
+  'No readable text was found. Type the message below or try a clearer crop. Review it before checking.'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\screenshot_transparency_guidance.test.cjs:3:451)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'No readable text was found. Type the message below or try a clearer crop. Review it before checking.',
+    expected: /transparent.*opaque copy.*contrasting background/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests\screenshot_transparency_guidance.test.cjs:4:1
+✖ manual transparency advice stays in Screenshot help and preserves existing wrap advice (0.8868ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /transparent.*opaque copy.*contrasting background/i. Input:
+  
+  '<a id="screenshot-sample-download" href="/static/demo-message.png" download="trustlens-constructed-screenshot.png">Download a constructed screenshot</a>. Choose the downloaded file above, select Read screenshot, then review and confirm the text before checking. Nothing is checked automatically.<br><strong>Review line breaks.</strong> Compare the recognized text with the screenshot. Replace a line break with a space yourself only when you confirm it is visual wrapping within one sentence. Keep true sentence boundaries, punctuation and negation such as “not”. Nothing is joined automatically. Line breaks can hide wording matches; a check can still miss warnings.'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\screenshot_transparency_guidance.test.cjs:4:269)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '<a id="screenshot-sample-download" href="/static/demo-message.png" download="trustlens-constructed-screenshot.png">Download a constructed screenshot</a>. Choose the downloaded file above, select Read screenshot, then review and confirm the text before checking. Nothing is checked automatically.<br><strong>Review line breaks.</strong> Compare the recognized text with the screenshot. Replace a line break with a space yourself only when you confirm it is visual wrapping within one sentence. Keep true sentence boundaries, punctuation and negation such as “not”. Nothing is joined automatically. Line breaks can hide wording matches; a check can still miss warnings.',
+    expected: /transparent.*opaque copy.*contrasting background/i,
+    operator: 'match',
+    diff: 'simple'
+  }

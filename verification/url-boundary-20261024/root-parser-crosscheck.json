@@ -1,0 +1,714 @@
+{
+  "scope": "Constructed local parser cross-check, no URL visited. Node standard URL parser after same bare-host prefix rule. Initial literal-equality assertion failed on root-dot and IPv4-mapped IPv6 serialization; all eight discrepancies retained/classified using existing root-dot handling or standard-library numeric IP equivalence. Rejections are unresolved, not safety/browser-validity verdicts.",
+  "total": 132,
+  "accepted": 40,
+  "rejected": 92,
+  "literal_discrepancies": [
+    {
+      "value": "https://example.org./p",
+      "app_host": "example.org",
+      "browser_host": "example.org.",
+      "literal_matches": false,
+      "classification": "existing trailing DNS root-dot normalization"
+    },
+    {
+      "value": "http://example.org.:8080/p",
+      "app_host": "example.org",
+      "browser_host": "example.org.",
+      "literal_matches": false,
+      "classification": "existing trailing DNS root-dot normalization"
+    },
+    {
+      "value": "https://user:pass@example.org./p",
+      "app_host": "example.org",
+      "browser_host": "example.org.",
+      "literal_matches": false,
+      "classification": "existing trailing DNS root-dot normalization"
+    },
+    {
+      "value": "example.org.:8080/p",
+      "app_host": "example.org",
+      "browser_host": "example.org.",
+      "literal_matches": false,
+      "classification": "existing trailing DNS root-dot normalization"
+    },
+    {
+      "value": "https://[::ffff:127.0.0.1]/p",
+      "app_host": "::ffff:127.0.0.1",
+      "browser_host": "::ffff:7f00:1",
+      "literal_matches": false,
+      "classification": "equivalent IP serialization"
+    },
+    {
+      "value": "http://[::ffff:127.0.0.1]:8080/p",
+      "app_host": "::ffff:127.0.0.1",
+      "browser_host": "::ffff:7f00:1",
+      "literal_matches": false,
+      "classification": "equivalent IP serialization"
+    },
+    {
+      "value": "https://user:pass@[::ffff:127.0.0.1]/p",
+      "app_host": "::ffff:127.0.0.1",
+      "browser_host": "::ffff:7f00:1",
+      "literal_matches": false,
+      "classification": "equivalent IP serialization"
+    },
+    {
+      "value": "[::ffff:127.0.0.1]:8080/p",
+      "app_host": "::ffff:127.0.0.1",
+      "browser_host": "::ffff:7f00:1",
+      "literal_matches": false,
+      "classification": "equivalent IP serialization"
+    }
+  ],
+  "rows": [
+    {
+      "value": "https://example.org/p",
+      "app_host": "example.org",
+      "browser_host": "example.org",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "http://example.org:8080/p",
+      "app_host": "example.org",
+      "browser_host": "example.org",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https://user:pass@example.org/p",
+      "app_host": "example.org",
+      "browser_host": "example.org",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "example.org:8080/p",
+      "app_host": "example.org",
+      "browser_host": "example.org",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https:/example.org/p",
+      "rejected": true
+    },
+    {
+      "value": "https:example.org/p",
+      "rejected": true
+    },
+    {
+      "value": "https://EXAMPLE.ORG/p",
+      "app_host": "example.org",
+      "browser_host": "example.org",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "http://EXAMPLE.ORG:8080/p",
+      "app_host": "example.org",
+      "browser_host": "example.org",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https://user:pass@EXAMPLE.ORG/p",
+      "app_host": "example.org",
+      "browser_host": "example.org",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "EXAMPLE.ORG:8080/p",
+      "app_host": "example.org",
+      "browser_host": "example.org",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https:/EXAMPLE.ORG/p",
+      "rejected": true
+    },
+    {
+      "value": "https:EXAMPLE.ORG/p",
+      "rejected": true
+    },
+    {
+      "value": "https://example.org./p",
+      "app_host": "example.org",
+      "browser_host": "example.org.",
+      "literal_matches": false,
+      "classification": "existing trailing DNS root-dot normalization"
+    },
+    {
+      "value": "http://example.org.:8080/p",
+      "app_host": "example.org",
+      "browser_host": "example.org.",
+      "literal_matches": false,
+      "classification": "existing trailing DNS root-dot normalization"
+    },
+    {
+      "value": "https://user:pass@example.org./p",
+      "app_host": "example.org",
+      "browser_host": "example.org.",
+      "literal_matches": false,
+      "classification": "existing trailing DNS root-dot normalization"
+    },
+    {
+      "value": "example.org.:8080/p",
+      "app_host": "example.org",
+      "browser_host": "example.org.",
+      "literal_matches": false,
+      "classification": "existing trailing DNS root-dot normalization"
+    },
+    {
+      "value": "https:/example.org./p",
+      "rejected": true
+    },
+    {
+      "value": "https:example.org./p",
+      "rejected": true
+    },
+    {
+      "value": "https://example.org../p",
+      "rejected": true
+    },
+    {
+      "value": "http://example.org..:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@example.org../p",
+      "rejected": true
+    },
+    {
+      "value": "example.org..:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/example.org../p",
+      "rejected": true
+    },
+    {
+      "value": "https:example.org../p",
+      "rejected": true
+    },
+    {
+      "value": "https://0x7f000001/p",
+      "rejected": true
+    },
+    {
+      "value": "http://0x7f000001:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@0x7f000001/p",
+      "rejected": true
+    },
+    {
+      "value": "0x7f000001:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/0x7f000001/p",
+      "rejected": true
+    },
+    {
+      "value": "https:0x7f000001/p",
+      "rejected": true
+    },
+    {
+      "value": "https://0x7f.0.0.1/p",
+      "rejected": true
+    },
+    {
+      "value": "http://0x7f.0.0.1:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@0x7f.0.0.1/p",
+      "rejected": true
+    },
+    {
+      "value": "0x7f.0.0.1:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/0x7f.0.0.1/p",
+      "rejected": true
+    },
+    {
+      "value": "https:0x7f.0.0.1/p",
+      "rejected": true
+    },
+    {
+      "value": "https://127.1/p",
+      "rejected": true
+    },
+    {
+      "value": "http://127.1:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@127.1/p",
+      "rejected": true
+    },
+    {
+      "value": "127.1:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/127.1/p",
+      "rejected": true
+    },
+    {
+      "value": "https:127.1/p",
+      "rejected": true
+    },
+    {
+      "value": "https://0177.0.0.1/p",
+      "rejected": true
+    },
+    {
+      "value": "http://0177.0.0.1:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@0177.0.0.1/p",
+      "rejected": true
+    },
+    {
+      "value": "0177.0.0.1:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/0177.0.0.1/p",
+      "rejected": true
+    },
+    {
+      "value": "https:0177.0.0.1/p",
+      "rejected": true
+    },
+    {
+      "value": "https://127.0.0.1/p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "http://127.0.0.1:8080/p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https://user:pass@127.0.0.1/p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "127.0.0.1:8080/p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https:/127.0.0.1/p",
+      "rejected": true
+    },
+    {
+      "value": "https:127.0.0.1/p",
+      "rejected": true
+    },
+    {
+      "value": "https://127.0.0.1./p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "http://127.0.0.1.:8080/p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https://user:pass@127.0.0.1./p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "127.0.0.1.:8080/p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https:/127.0.0.1./p",
+      "rejected": true
+    },
+    {
+      "value": "https:127.0.0.1./p",
+      "rejected": true
+    },
+    {
+      "value": "https://2130706433/p",
+      "rejected": true
+    },
+    {
+      "value": "http://2130706433:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@2130706433/p",
+      "rejected": true
+    },
+    {
+      "value": "2130706433:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/2130706433/p",
+      "rejected": true
+    },
+    {
+      "value": "https:2130706433/p",
+      "rejected": true
+    },
+    {
+      "value": "https://example.123/p",
+      "rejected": true
+    },
+    {
+      "value": "http://example.123:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@example.123/p",
+      "rejected": true
+    },
+    {
+      "value": "example.123:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/example.123/p",
+      "rejected": true
+    },
+    {
+      "value": "https:example.123/p",
+      "rejected": true
+    },
+    {
+      "value": "https://example.0x1/p",
+      "rejected": true
+    },
+    {
+      "value": "http://example.0x1:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@example.0x1/p",
+      "rejected": true
+    },
+    {
+      "value": "example.0x1:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/example.0x1/p",
+      "rejected": true
+    },
+    {
+      "value": "https:example.0x1/p",
+      "rejected": true
+    },
+    {
+      "value": "https://example.09/p",
+      "rejected": true
+    },
+    {
+      "value": "http://example.09:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@example.09/p",
+      "rejected": true
+    },
+    {
+      "value": "example.09:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/example.09/p",
+      "rejected": true
+    },
+    {
+      "value": "https:example.09/p",
+      "rejected": true
+    },
+    {
+      "value": "https://example.0xgg/p",
+      "app_host": "example.0xgg",
+      "browser_host": "example.0xgg",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "http://example.0xgg:8080/p",
+      "app_host": "example.0xgg",
+      "browser_host": "example.0xgg",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https://user:pass@example.0xgg/p",
+      "app_host": "example.0xgg",
+      "browser_host": "example.0xgg",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "example.0xgg:8080/p",
+      "app_host": "example.0xgg",
+      "browser_host": "example.0xgg",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https:/example.0xgg/p",
+      "rejected": true
+    },
+    {
+      "value": "https:example.0xgg/p",
+      "rejected": true
+    },
+    {
+      "value": "https://[::1]/p",
+      "app_host": "::1",
+      "browser_host": "::1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "http://[::1]:8080/p",
+      "app_host": "::1",
+      "browser_host": "::1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https://user:pass@[::1]/p",
+      "app_host": "::1",
+      "browser_host": "::1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "[::1]:8080/p",
+      "app_host": "::1",
+      "browser_host": "::1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https:/[::1]/p",
+      "rejected": true
+    },
+    {
+      "value": "https:[::1]/p",
+      "rejected": true
+    },
+    {
+      "value": "https://[::ffff:127.0.0.1]/p",
+      "app_host": "::ffff:127.0.0.1",
+      "browser_host": "::ffff:7f00:1",
+      "literal_matches": false,
+      "classification": "equivalent IP serialization"
+    },
+    {
+      "value": "http://[::ffff:127.0.0.1]:8080/p",
+      "app_host": "::ffff:127.0.0.1",
+      "browser_host": "::ffff:7f00:1",
+      "literal_matches": false,
+      "classification": "equivalent IP serialization"
+    },
+    {
+      "value": "https://user:pass@[::ffff:127.0.0.1]/p",
+      "app_host": "::ffff:127.0.0.1",
+      "browser_host": "::ffff:7f00:1",
+      "literal_matches": false,
+      "classification": "equivalent IP serialization"
+    },
+    {
+      "value": "[::ffff:127.0.0.1]:8080/p",
+      "app_host": "::ffff:127.0.0.1",
+      "browser_host": "::ffff:7f00:1",
+      "literal_matches": false,
+      "classification": "equivalent IP serialization"
+    },
+    {
+      "value": "https:/[::ffff:127.0.0.1]/p",
+      "rejected": true
+    },
+    {
+      "value": "https:[::ffff:127.0.0.1]/p",
+      "rejected": true
+    },
+    {
+      "value": "https://[fe80::1%25eth0]/p",
+      "rejected": true
+    },
+    {
+      "value": "http://[fe80::1%25eth0]:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@[fe80::1%25eth0]/p",
+      "rejected": true
+    },
+    {
+      "value": "[fe80::1%25eth0]:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/[fe80::1%25eth0]/p",
+      "rejected": true
+    },
+    {
+      "value": "https:[fe80::1%25eth0]/p",
+      "rejected": true
+    },
+    {
+      "value": "https://stra\u00dfe.example/p",
+      "app_host": "xn--strae-oqa.example",
+      "browser_host": "xn--strae-oqa.example",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "http://stra\u00dfe.example:8080/p",
+      "app_host": "xn--strae-oqa.example",
+      "browser_host": "xn--strae-oqa.example",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https://user:pass@stra\u00dfe.example/p",
+      "app_host": "xn--strae-oqa.example",
+      "browser_host": "xn--strae-oqa.example",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "stra\u00dfe.example:8080/p",
+      "app_host": "xn--strae-oqa.example",
+      "browser_host": "xn--strae-oqa.example",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https:/stra\u00dfe.example/p",
+      "rejected": true
+    },
+    {
+      "value": "https:stra\u00dfe.example/p",
+      "rejected": true
+    },
+    {
+      "value": "https://\uff11\uff12\uff17\uff0e\uff10\uff0e\uff10\uff0e\uff11/p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "http://\uff11\uff12\uff17\uff0e\uff10\uff0e\uff10\uff0e\uff11:8080/p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https://user:pass@\uff11\uff12\uff17\uff0e\uff10\uff0e\uff10\uff0e\uff11/p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "\uff11\uff12\uff17\uff0e\uff10\uff0e\uff10\uff0e\uff11:8080/p",
+      "app_host": "127.0.0.1",
+      "browser_host": "127.0.0.1",
+      "literal_matches": true,
+      "classification": "literal match"
+    },
+    {
+      "value": "https:/\uff11\uff12\uff17\uff0e\uff10\uff0e\uff10\uff0e\uff11/p",
+      "rejected": true
+    },
+    {
+      "value": "https:\uff11\uff12\uff17\uff0e\uff10\uff0e\uff10\uff0e\uff11/p",
+      "rejected": true
+    },
+    {
+      "value": "https://127.0.0.0x1/p",
+      "rejected": true
+    },
+    {
+      "value": "http://127.0.0.0x1:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@127.0.0.0x1/p",
+      "rejected": true
+    },
+    {
+      "value": "127.0.0.0x1:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/127.0.0.0x1/p",
+      "rejected": true
+    },
+    {
+      "value": "https:127.0.0.0x1/p",
+      "rejected": true
+    },
+    {
+      "value": "https://%65xample.org/p",
+      "rejected": true
+    },
+    {
+      "value": "http://%65xample.org:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https://user:pass@%65xample.org/p",
+      "rejected": true
+    },
+    {
+      "value": "%65xample.org:8080/p",
+      "rejected": true
+    },
+    {
+      "value": "https:/%65xample.org/p",
+      "rejected": true
+    },
+    {
+      "value": "https:%65xample.org/p",
+      "rejected": true
+    }
+  ]
+}

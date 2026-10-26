@@ -1,0 +1,173 @@
+✖ reject malformed explicit reference https:/example.com (4.3145ms)
+✖ reject malformed explicit reference http:/example.com (0.5354ms)
+✖ reject malformed explicit reference https:///example.com (2.2361ms)
+✖ reject malformed explicit reference https:////example.com (0.5556ms)
+✔ reject malformed explicit reference https:example.com (0.5139ms)
+✔ reject malformed explicit reference http://?query (0.6067ms)
+✔ reject malformed explicit reference https://#fragment (0.3881ms)
+✖ raw reference Cc/Cf/Cs are rejected before trimming or normalization (6.9518ms)
+✖ known references reject empty and nonempty raw userinfo syntax (0.6207ms)
+✖ formatted/control/surrogate literal tokens stay unreadable and later normal URLs remain inspected (2.1124ms)
+✔ ordinary IDNA, complete schemes, bare references and astral pairs remain supported (0.8488ms)
+✔ browser numeric canonicalization remains deliberate and unchanged (0.3625ms)
+✖ coverage and input bounds remain unchanged including malformed first token (0.8322ms)
+✔ message userinfo shows actual destination without becoming reference syntax (0.9618ms)
+✔ desktop manual fallback and exports keep fixed topic-only contract (2.57ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 7
+ℹ fail 8
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 590.1033
+
+✖ failing tests:
+
+test at tests\pocket_host_boundaries.test.cjs:5:166
+✖ reject malformed explicit reference https:/example.com (4.3145ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\pocket_host_boundaries.test.cjs:6:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\pocket_host_boundaries.test.cjs:5:166
+✖ reject malformed explicit reference http:/example.com (0.5354ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\pocket_host_boundaries.test.cjs:6:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\pocket_host_boundaries.test.cjs:5:166
+✖ reject malformed explicit reference https:///example.com (2.2361ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\pocket_host_boundaries.test.cjs:6:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\pocket_host_boundaries.test.cjs:5:166
+✖ reject malformed explicit reference https:////example.com (0.5556ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\pocket_host_boundaries.test.cjs:6:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\pocket_host_boundaries.test.cjs:8:1
+✖ raw reference Cc/Cf/Cs are rejected before trimming or normalization (6.9518ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\pocket_host_boundaries.test.cjs:9:181)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\pocket_host_boundaries.test.cjs:11:1
+✖ known references reject empty and nonempty raw userinfo syntax (0.6207ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\pocket_host_boundaries.test.cjs:12:143)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\pocket_host_boundaries.test.cjs:14:1
+✖ formatted/control/surrogate literal tokens stay unreadable and later normal URLs remain inspected (2.1124ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'example.com'
+  - 'Unreadable web address'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\pocket_host_boundaries.test.cjs:17:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'example.com',
+    expected: 'Unreadable web address',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\pocket_host_boundaries.test.cjs:29:1
+✖ coverage and input bounds remain unchanged including malformed first token (0.8322ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== null
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\pocket_host_boundaries.test.cjs:31:68)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

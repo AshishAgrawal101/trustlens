@@ -1,0 +1,431 @@
+{
+  "frozen_sha256": "7f0f879ea96f87536f52ccf3249ba6da7ea8abe5e500a8b6beb2093d748fce37",
+  "selected_pipeline": {
+    "n": 670,
+    "accuracy": 0.9507462686567164,
+    "balanced_accuracy": 0.9506879098944967,
+    "auc": 0.9905100513259196,
+    "false_positive_rate": 0.0688622754491018,
+    "ai_recall": 0.9702380952380952,
+    "tn": 311,
+    "fp": 23,
+    "fn": 10,
+    "tp": 326,
+    "accuracy_wilson_95_interval": [
+      0.9316369725040858,
+      0.9647163048040137
+    ]
+  },
+  "current_app_at_original_threshold": {
+    "n": 670,
+    "accuracy": 0.6492537313432836,
+    "balanced_accuracy": 0.6490144710578842,
+    "auc": 0.7394140290846878,
+    "false_positive_rate": 0.4311377245508982,
+    "ai_recall": 0.7291666666666666,
+    "tn": 190,
+    "fp": 144,
+    "fn": 91,
+    "tp": 245,
+    "accuracy_wilson_95_interval": [
+      0.612362091569878,
+      0.6844436293930689
+    ]
+  },
+  "published_community_at_original_threshold": {
+    "n": 670,
+    "accuracy": 0.9074626865671642,
+    "balanced_accuracy": 0.9076133447390933,
+    "auc": 0.963358996293128,
+    "false_positive_rate": 0.041916167664670656,
+    "ai_recall": 0.8571428571428571,
+    "tn": 320,
+    "fp": 14,
+    "fn": 48,
+    "tp": 288,
+    "accuracy_wilson_95_interval": [
+      0.8831371146037035,
+      0.9271425036251415
+    ]
+  },
+  "published_bfree_at_original_threshold": {
+    "n": 670,
+    "accuracy": 0.8895522388059701,
+    "balanced_accuracy": 0.8896492728828058,
+    "auc": 0.9409039064727689,
+    "false_positive_rate": 0.07784431137724551,
+    "ai_recall": 0.8571428571428571,
+    "tn": 308,
+    "fp": 26,
+    "fn": 48,
+    "tp": 288,
+    "accuracy_wilson_95_interval": [
+      0.8635610335565096,
+      0.9111018981567818
+    ]
+  },
+  "accuracy_95_percent_achieved_on_this_sample": true,
+  "source_disjoint": true,
+  "generator_disjoint": false,
+  "not_the_full_published_benchmark": true,
+  "near_duplicate_removal_not_guaranteed": true,
+  "per_generator": [
+    {
+      "generator": "DFGAN",
+      "n": 32,
+      "accuracy": 0.96875,
+      "balanced_accuracy": 0.96875,
+      "auc": 1.0,
+      "false_positive_rate": 0.0625,
+      "ai_recall": 1.0,
+      "tn": 15,
+      "fp": 1,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.8425573617998744,
+        0.9944621398359969
+      ]
+    },
+    {
+      "generator": "Dalle2",
+      "n": 32,
+      "accuracy": 0.96875,
+      "balanced_accuracy": 0.96875,
+      "auc": 0.99609375,
+      "false_positive_rate": 0.0,
+      "ai_recall": 0.9375,
+      "tn": 16,
+      "fp": 0,
+      "fn": 1,
+      "tp": 15,
+      "accuracy_wilson_95_interval": [
+        0.8425573617998744,
+        0.9944621398359969
+      ]
+    },
+    {
+      "generator": "Dalle3",
+      "n": 32,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "auc": 1.0,
+      "false_positive_rate": 0.0,
+      "ai_recall": 1.0,
+      "tn": 16,
+      "fp": 0,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.8928208017449293,
+        1.0
+      ]
+    },
+    {
+      "generator": "DeciDiffusionV2",
+      "n": 32,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "auc": 1.0,
+      "false_positive_rate": 0.0,
+      "ai_recall": 1.0,
+      "tn": 16,
+      "fp": 0,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.8928208017449293,
+        1.0
+      ]
+    },
+    {
+      "generator": "FLUX-dev",
+      "n": 32,
+      "accuracy": 0.90625,
+      "balanced_accuracy": 0.90625,
+      "auc": 0.98046875,
+      "false_positive_rate": 0.1875,
+      "ai_recall": 1.0,
+      "tn": 13,
+      "fp": 3,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.7578184527161212,
+        0.9675984487016337
+      ]
+    },
+    {
+      "generator": "FLUX-schnell",
+      "n": 31,
+      "accuracy": 0.967741935483871,
+      "balanced_accuracy": 0.9666666666666667,
+      "auc": 0.9875,
+      "false_positive_rate": 0.06666666666666667,
+      "ai_recall": 1.0,
+      "tn": 14,
+      "fp": 1,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.838058948352751,
+        0.9942827784745831
+      ]
+    },
+    {
+      "generator": "Firefly_Image2",
+      "n": 32,
+      "accuracy": 0.96875,
+      "balanced_accuracy": 0.96875,
+      "auc": 0.98828125,
+      "false_positive_rate": 0.0625,
+      "ai_recall": 1.0,
+      "tn": 15,
+      "fp": 1,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.8425573617998744,
+        0.9944621398359969
+      ]
+    },
+    {
+      "generator": "Firefly_Image3",
+      "n": 32,
+      "accuracy": 0.875,
+      "balanced_accuracy": 0.875,
+      "auc": 0.984375,
+      "false_positive_rate": 0.0625,
+      "ai_recall": 0.8125,
+      "tn": 15,
+      "fp": 1,
+      "fn": 3,
+      "tp": 13,
+      "accuracy_wilson_95_interval": [
+        0.7193169451834978,
+        0.9502986561251991
+      ]
+    },
+    {
+      "generator": "GALIP",
+      "n": 32,
+      "accuracy": 0.9375,
+      "balanced_accuracy": 0.9375,
+      "auc": 1.0,
+      "false_positive_rate": 0.125,
+      "ai_recall": 1.0,
+      "tn": 14,
+      "fp": 2,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.7985287685584542,
+        0.982689432968359
+      ]
+    },
+    {
+      "generator": "Hourglass",
+      "n": 32,
+      "accuracy": 0.84375,
+      "balanced_accuracy": 0.84375,
+      "auc": 0.9296875,
+      "false_positive_rate": 0.0,
+      "ai_recall": 0.6875,
+      "tn": 16,
+      "fp": 0,
+      "fn": 5,
+      "tp": 11,
+      "accuracy_wilson_95_interval": [
+        0.682458504024696,
+        0.9313557971749429
+      ]
+    },
+    {
+      "generator": "IdeogramV1",
+      "n": 32,
+      "accuracy": 0.90625,
+      "balanced_accuracy": 0.90625,
+      "auc": 1.0,
+      "false_positive_rate": 0.1875,
+      "ai_recall": 1.0,
+      "tn": 13,
+      "fp": 3,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.7578184527161212,
+        0.9675984487016337
+      ]
+    },
+    {
+      "generator": "IdeogramV2",
+      "n": 31,
+      "accuracy": 0.967741935483871,
+      "balanced_accuracy": 0.96875,
+      "auc": 0.9791666666666667,
+      "false_positive_rate": 0.0,
+      "ai_recall": 0.9375,
+      "tn": 15,
+      "fp": 0,
+      "fn": 1,
+      "tp": 15,
+      "accuracy_wilson_95_interval": [
+        0.838058948352751,
+        0.9942827784745831
+      ]
+    },
+    {
+      "generator": "Imagen3",
+      "n": 32,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "auc": 1.0,
+      "false_positive_rate": 0.0,
+      "ai_recall": 1.0,
+      "tn": 16,
+      "fp": 0,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.8928208017449293,
+        1.0
+      ]
+    },
+    {
+      "generator": "LCM_lora_sdv15",
+      "n": 32,
+      "accuracy": 0.90625,
+      "balanced_accuracy": 0.90625,
+      "auc": 1.0,
+      "false_positive_rate": 0.1875,
+      "ai_recall": 1.0,
+      "tn": 13,
+      "fp": 3,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.7578184527161212,
+        0.9675984487016337
+      ]
+    },
+    {
+      "generator": "LCM_lora_sdxl",
+      "n": 32,
+      "accuracy": 0.9375,
+      "balanced_accuracy": 0.9375,
+      "auc": 1.0,
+      "false_positive_rate": 0.125,
+      "ai_recall": 1.0,
+      "tn": 14,
+      "fp": 2,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.7985287685584542,
+        0.982689432968359
+      ]
+    },
+    {
+      "generator": "LCM_lora_ssd1b",
+      "n": 32,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "auc": 1.0,
+      "false_positive_rate": 0.0,
+      "ai_recall": 1.0,
+      "tn": 16,
+      "fp": 0,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.8928208017449293,
+        1.0
+      ]
+    },
+    {
+      "generator": "MidjourneyV5_2",
+      "n": 32,
+      "accuracy": 0.96875,
+      "balanced_accuracy": 0.96875,
+      "auc": 1.0,
+      "false_positive_rate": 0.0625,
+      "ai_recall": 1.0,
+      "tn": 15,
+      "fp": 1,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.8425573617998744,
+        0.9944621398359969
+      ]
+    },
+    {
+      "generator": "MidjourneyV6_1",
+      "n": 32,
+      "accuracy": 0.96875,
+      "balanced_accuracy": 0.96875,
+      "auc": 0.99609375,
+      "false_positive_rate": 0.0625,
+      "ai_recall": 1.0,
+      "tn": 15,
+      "fp": 1,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.8425573617998744,
+        0.9944621398359969
+      ]
+    },
+    {
+      "generator": "kandinsky_2_2",
+      "n": 32,
+      "accuracy": 0.96875,
+      "balanced_accuracy": 0.96875,
+      "auc": 0.99609375,
+      "false_positive_rate": 0.0625,
+      "ai_recall": 1.0,
+      "tn": 15,
+      "fp": 1,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.8425573617998744,
+        0.9944621398359969
+      ]
+    },
+    {
+      "generator": "kvikontent_midjourney_v6",
+      "n": 32,
+      "accuracy": 0.96875,
+      "balanced_accuracy": 0.96875,
+      "auc": 1.0,
+      "false_positive_rate": 0.0625,
+      "ai_recall": 1.0,
+      "tn": 15,
+      "fp": 1,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.8425573617998744,
+        0.9944621398359969
+      ]
+    },
+    {
+      "generator": "stable_cascade",
+      "n": 32,
+      "accuracy": 0.9375,
+      "balanced_accuracy": 0.9375,
+      "auc": 1.0,
+      "false_positive_rate": 0.125,
+      "ai_recall": 1.0,
+      "tn": 14,
+      "fp": 2,
+      "fn": 0,
+      "tp": 16,
+      "accuracy_wilson_95_interval": [
+        0.7985287685584542,
+        0.982689432968359
+      ]
+    }
+  ]
+}

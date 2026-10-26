@@ -1,0 +1,11 @@
+--- before/static/app.js
++++ static/app.js
+@@ -133,7 +133,7 @@
+     if(ocrReady&&!$('reviewed').checked)throw new Error('Review the recognized text and confirm it before checking.');
+     if(emailFile){body=new FormData();body.append('file',emailFile);}
+     else if(mode==='image'||extracting){if(!$('file').files[0])throw new Error('Choose an image first.');body=new FormData();body.append('file',$('file').files[0]);}
+-    else {const key=({text:'text',url:'url',email:'raw_email',call:'transcript'})[selectedMode];body=JSON.stringify({[key]:$('content').value.trim(),...(selectedMode==='url'&&$('known-website').value.trim()?{known_website:$('known-website').value.trim()}:{})});headers={'Content-Type':'application/json'};}
++    else {const key=({text:'text',url:'url',email:'raw_email',call:'transcript'})[selectedMode];body=JSON.stringify({[key]:selectedMode==='url'?$('content').value:$('content').value.trim(),...(selectedMode==='url'&&!/^ *$/.test($('known-website').value)?{known_website:$('known-website').value}:{})});headers={'Content-Type':'application/json'};}
+     const response=await fetch(emailFile?'/api/analyze/email-file':extracting?'/api/extract/'+mode:'/api/analyze/'+selectedMode,{method:'POST',headers,body,signal:controller.signal});
+     const data=await response.json().catch(()=>{throw new Error('The local server returned an unreadable response. Your input was kept. Retry with the launcher open.');});if(!response.ok)throw new Error(typeof data?.detail==='string'?data.detail:'Please check the input length and format, then try again.');
+     if(token===generation){

@@ -1,0 +1,17 @@
+✔ address anatomy is opt-in, local, structured and contains no original private values (4.4026ms)
+✔ edit, mode change, Clear and exit abort stale anatomy and erase its output (6.5243ms)
+✔ failed or malformed inspection never presents stale components and releases controls (1.6672ms)
+✔ inspection restores disabled-button focus without taking it from an edited field (2.0671ms)
+✔ raw URL and reference controls reach strict producer validation unchanged (7.32ms)
+✔ ordinary edge spaces remain raw while empty or space-only optional references are omitted (2.7501ms)
+✔ main URL mode forwards raw address and every nonempty nonASCII-space-only reference (43.519ms)
+✔ only empty or ASCII-space-only optional references are omitted (14.2647ms)
+✔ other communication modes keep existing trimmed submission (7.861ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 179.8722

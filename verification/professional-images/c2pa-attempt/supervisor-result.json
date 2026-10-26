@@ -1,0 +1,14 @@
+{
+  "outcome": "completed",
+  "error": null,
+  "peak": {
+    "private": 308174848,
+    "ws": 325808128,
+    "peak_ws_sum": 608636928,
+    "peak_private_sum": 593309696,
+    "worker_peak_job_commit": 297267200
+  },
+  "worker_returncode": 0,
+  "worker_reaped": true,
+  "ended_at": 1792771738.8294923
+}

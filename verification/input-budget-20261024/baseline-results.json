@@ -1,0 +1,17 @@
+{
+  "same_frozen_workloads": true,
+  "results": [
+    {
+      "id": "email-parts-1000",
+      "method": "perf_counter only; no tracing/profiling",
+      "analysis_wall_seconds": 0.4249422000721097,
+      "status": "report"
+    },
+    {
+      "id": "email-parts-6000",
+      "method": "perf_counter only; no tracing/profiling",
+      "analysis_wall_seconds": 2.6148700999328867,
+      "status": "report"
+    }
+  ]
+}

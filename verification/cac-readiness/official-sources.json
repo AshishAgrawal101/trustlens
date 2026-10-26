@@ -1,0 +1,154 @@
+{
+  "checked_utc": "2026-10-23T21:20:57.986641+00:00",
+  "scope": "Primary official sources read for documentation only; no publication, submission or organizer contact.",
+  "sources": [
+    {
+      "id": "cac_2026_rules_pdf",
+      "url": "https://www.congressionalappchallenge.us/wp-content/uploads/2026/05/2026-CAC-Rules.pdf",
+      "title": "2026 CAC Rules",
+      "type": "official_rulebook_pdf",
+      "pages": 6,
+      "verified_locations": {
+        "eligibility_reuse": "PDF page 1, section 1",
+        "originality_external_tools_AI": "PDF page 2, section 3",
+        "submission_and_video": "PDF pages 2-3, section 4",
+        "deadline": "PDF page 3, section 5",
+        "judging_and_source_access": "PDF page 4, section 7"
+      },
+      "direct_quotes_used": []
+    },
+    {
+      "id": "official_judges",
+      "url": "https://www.congressionalappchallenge.us/get-involved/judges/",
+      "title": "Judges",
+      "type": "official_judges_page",
+      "verified_topics": [
+        "demonstration video cap",
+        "short answers",
+        "office-supplied rubric"
+      ],
+      "direct_quotes_used": []
+    },
+    {
+      "id": "official_student_rules",
+      "url": "https://www.congressionalappchallenge.us/students/rules/",
+      "title": "Rules",
+      "type": "official_student_rules_page",
+      "verified_topics": [
+        "student eligibility",
+        "district/team connection",
+        "U.S. residency",
+        "2026 dates"
+      ],
+      "direct_quotes_used": []
+    },
+    {
+      "id": "participating_districts",
+      "url": "https://www.congressionalappchallenge.us/students/participating-districts/",
+      "title": "Participating Districts",
+      "type": "official_participation_list",
+      "district_lookup_completed": true,
+      "reason": "User confirmed Illinois District 11; national participation list and Foster official App Challenge page identify the office. Entrant membership is not verified."
+    },
+    {
+      "id": "sample_judging_rubric",
+      "url": "https://www.congressionalappchallenge.us/wp-content/uploads/2022/09/CAC-Judging-Rubric.pdf",
+      "title": "CAC Judging Rubric",
+      "type": "officially_linked_illustrative_pdf",
+      "linked_from": "official_judges",
+      "binding_2026_district_rubric_established": false,
+      "note": "2022 URL; example only, not assumed district-specific scoring."
+    },
+    {
+      "id": "foster_il11_app_challenge",
+      "url": "https://foster.house.gov/appchallenge",
+      "title": "Congressional App Challenge and Art Competition \u2014 Congressman Bill Foster",
+      "type": "official_district_office_page",
+      "checked_date": "2026-10-23",
+      "retrieval": "Official-page search extraction; direct open returned HTTP 403. App Challenge section corroborates national rulebook time and IL-11 participation.",
+      "verified_topics": [
+        "IL-11 expert judging panel",
+        "2026 App Challenge deadline"
+      ],
+      "deadline": "2026-10-26T12:00:00-04:00",
+      "local_deadline": "2026-10-26 11:00 CDT",
+      "art_competition_section_used": false,
+      "direct_quotes_used": []
+    }
+  ],
+  "district": {
+    "number": 11,
+    "state": "Illinois",
+    "code": "IL-11",
+    "user_confirmed": true,
+    "office": "Congressman Bill Foster",
+    "participating_office_verified": true,
+    "entrant_residence_or_school_membership_verified": false
+  },
+  "device": {
+    "user_confirmed": "iPhone",
+    "model": null,
+    "OS_version": null,
+    "actual_session_completed": false,
+    "Android_available": null
+  },
+  "student_identity_or_inspiration_invented": false,
+  "student_authorship_and_eligibility_established": false,
+  "baseline_software_evidence": {
+    "version": "reliability-v6",
+    "python_passed": 728,
+    "javascript_passed": 121,
+    "receipt": "verification/reliability-next/integration-receipt.json",
+    "new_wave_totals": "root verification pending; no invented total"
+  },
+  "authored_files": [
+    "submission/CAC-2026.md",
+    "submission/CAC-DEMO-3MIN.md",
+    "docs/DEVICE-AND-USABILITY-TEST.md"
+  ],
+  "updated_utc": "2026-10-23T21:25:58.173944+00:00",
+  "communication_diagnostic": {
+    "report": "verification/cac-evaluation/report.md",
+    "cases": 36,
+    "adapted_scam_pattern_misses": {
+      "count": 6,
+      "group_n": 9
+    },
+    "ordinary_extra_concerns": {
+      "count": 5,
+      "group_n": 9
+    },
+    "ambiguous_unscored": 9,
+    "pooled_accuracy": null,
+    "selected_implementation_aware_authored_cases": true,
+    "population_generalization": false
+  },
+  "static_phone_bundle": {
+    "root_preparing": true,
+    "trusted_HTTPS_deployed": false,
+    "actual_phone_execution": false
+  },
+  "demo_plan": {
+    "target_seconds": 175,
+    "actual_video_recorded": false,
+    "actual_duration_seconds": null,
+    "focus": "Message -> evidence -> user-selected verification plan -> ordinary reminder -> Screenshot review -> Pocket manual scope -> diagnostic uncertainty -> architecture/student contribution disclosure",
+    "primary_modes": [
+      "Message",
+      "Screenshot"
+    ],
+    "secondary_tools": "More tools; optional appendix only",
+    "screenshot_browser_clip_recorded": false,
+    "screenshot_browser_file_selection": "Automated review blocked; ordinary user manual recording remains open",
+    "Pocket_main_action": "Show safer next steps",
+    "Apply_scope": "Separate optional topic-suggestion helper only"
+  },
+  "verification_plan": {
+    "controller_test_file": "tests/verification_plan.test.cjs",
+    "focused_tests_reported_by_root": 5,
+    "Copy_plan": "Fixed input-free selected-route guidance",
+    "Download_plan": "Fixed input-free selected-route guidance",
+    "completed_verification_claim": false,
+    "final_wave_totals": "Pending matching root receipt; not inferred from five tests"
+  }
+}

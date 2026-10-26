@@ -1,0 +1,62 @@
+{
+  "purpose": "Frozen bounded CPU robustness workloads, not a formal bound, load test or accuracy benchmark. No application edits.",
+  "timeout_seconds_per_case": 10,
+  "sequential_only": true,
+  "measurement": "One warm import per isolated process, one tracemalloc-instrumented analysis per case. Excludes imports from timed/peak region.",
+  "cases": [
+    {
+      "id": "email-plain-240k",
+      "file": "email-plain-240k.txt",
+      "kind": "email",
+      "bytes": 239996,
+      "characters": 239996,
+      "sha256": "87da88fdbd686396e2ebd9661e646409f4473329953ddc1bc97c6a71682f7e74",
+      "part_count": null
+    },
+    {
+      "id": "email-parts-1000",
+      "file": "email-parts-1000.txt",
+      "kind": "email",
+      "bytes": 32049,
+      "characters": 32049,
+      "sha256": "10e671ef322ed513e340ee6ecf10932b0f793a10e52ec1b683ca29a7b30929c6",
+      "part_count": 1000
+    },
+    {
+      "id": "email-parts-6000",
+      "file": "email-parts-6000.txt",
+      "kind": "email",
+      "bytes": 192049,
+      "characters": 192049,
+      "sha256": "d703e322566c1fa7da74c5df3ce514b2e0148f38bacf7622af233775cefb0a0b",
+      "part_count": 6000
+    },
+    {
+      "id": "email-headers-5000",
+      "file": "email-headers-5000.txt",
+      "kind": "email",
+      "bytes": 200040,
+      "characters": 200040,
+      "sha256": "e35b3eaa4e58c0a7326a828d231b56b8bd586b071984c8b4e45ba44e96280f7d",
+      "part_count": null
+    },
+    {
+      "id": "email-nested-120",
+      "file": "email-nested-120.txt",
+      "kind": "email",
+      "bytes": 227245,
+      "characters": 227245,
+      "sha256": "b11de09c9d48a339d587e895146a2f2a5a1309f7935d3ff6b9dbfe7de5b976b3",
+      "part_count": null
+    },
+    {
+      "id": "text-30k",
+      "file": "text-30k.txt",
+      "kind": "text",
+      "bytes": 30811,
+      "characters": 30000,
+      "sha256": "f52e383e6baac5da1d108aedb10948221336739969df43ff1833798693c4ae81",
+      "part_count": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),vm=require('node:vm');
+const folder=__dirname,HASH='e55b261b24e56254c25e0b8dae498e230830570fb8b1af80cf2c6cc93f07c55d',sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const compact=parts=>parts.reduce((out,p)=>{if(out.length&&out.at(-1).type===p.type)out.at(-1).text+=p.text;else out.push({...p});return out;},[]);
+function evaluate(){const bytes=fs.readFileSync(path.join(folder,'acceptance.json'));if(sha(bytes)!==HASH)throw Error('Frozen contract changed');const contract=JSON.parse(bytes),source=fs.readFileSync(path.join(folder,'../../static/quote-context.js'));let networkCalls=0;const denied=()=>{networkCalls++;throw Error('Network forbidden');},scope={module:{exports:{}},fetch:denied,XMLHttpRequest:denied};vm.runInNewContext(source.toString(),scope);const api=scope.module.exports;
+ const rows=contract.cases.map(c=>{let result=null,error=null;const failures=[];try{result=JSON.parse(JSON.stringify(api.compare(c.original,c.revised)));}catch(e){error=e.message;}
+ if(error)failures.push('unexpected_error');else if(!Array.isArray(result.parts)||result.parts.some(p=>!['same','removed','added'].includes(p.type)||typeof p.text!=='string'||!p.text.length))failures.push('invalid_parts');else{
+  if(result.parts.filter(p=>p.type!=='added').map(p=>p.text).join('')!==c.original)failures.push('original_reconstruction');if(result.parts.filter(p=>p.type!=='removed').map(p=>p.text).join('')!==c.revised)failures.push('revised_reconstruction');
+  if(result.identical!==c.expected_identical)failures.push('identical_mismatch');if(c.expected_identical&&result.parts.some(p=>p.type!=='same'))failures.push('identical_has_edits');
+  if(c.expected_compacted_parts&&JSON.stringify(compact(result.parts))!==JSON.stringify(c.expected_compacted_parts))failures.push('simple_alignment_or_removal_tie');
+  if(JSON.stringify(result)!==JSON.stringify(api.compare(c.original,c.revised)))failures.push('nondeterministic');
+ }return {id:c.id,result,error,failures};});return {label:'Frozen literal text-comparison acceptance; no semantic or source-verification evaluation',contract_sha256:HASH,source_sha256:sha(source),network_calls:networkCalls,rows,failures:rows.filter(r=>r.failures.length).length};}
+module.exports={evaluate,HASH};if(require.main===module){const dest=path.join(folder,'results.json');if(fs.existsSync(dest))throw Error('Refusing to overwrite retained diff results');const result=evaluate();fs.writeFileSync(dest,JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({cases:result.rows.length,failures:result.failures,network_calls:result.network_calls}));}

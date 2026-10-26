@@ -1,0 +1,14 @@
+{
+  "before": {
+    "draft": "Constructed Pocket update draft.",
+    "status": "A different companion version is prepared. Reload to use it; this clears the message in this page. Copy anything you need first.",
+    "version": "trustlens-pocket-v33"
+  },
+  "after": {
+    "draft": "",
+    "status": "Offline shell prepared. Installation and receiving shares still depend on this browser and device. No message is cached.",
+    "version": "trustlens-pocket-v34"
+  },
+  "normalUpgradeOnly": true,
+  "actualRaceDemonstrated": false
+}

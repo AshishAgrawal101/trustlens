@@ -1,0 +1,102 @@
+[
+  {
+    "id": "advice",
+    "positive": [],
+    "evidence": [
+      {
+        "id": "context:passive_refusal:code",
+        "evidence_class": "unknown",
+        "severity": "info",
+        "title": "Conditional refusal advice",
+        "detail": "This wording advises refusing a conditional request: \u201cIf you are asked to send your verification code, refuse\u201d. Whether a current request exists is unknown.",
+        "source": "Local wording and context rules",
+        "weight": 0.0
+      }
+    ]
+  },
+  {
+    "id": "later-live",
+    "positive": [
+      "request:code"
+    ],
+    "evidence": [
+      {
+        "id": "context:passive_refusal:code",
+        "evidence_class": "unknown",
+        "severity": "info",
+        "title": "Conditional refusal advice",
+        "detail": "This wording advises refusing a conditional request: \u201cIf you are asked to send your verification code, refuse\u201d. Whether a current request exists is unknown.",
+        "source": "Local wording and context rules",
+        "weight": 0.0
+      },
+      {
+        "id": "request:code",
+        "evidence_class": "inferred",
+        "severity": "high",
+        "title": "Request to share a security code",
+        "detail": "Matched wording: \u201cSend me your verification code now\u201d. Context may change its meaning.",
+        "source": "Local request-pattern rules",
+        "weight": 0.8
+      }
+    ]
+  },
+  {
+    "id": "nonterminal",
+    "positive": [
+      "request:code"
+    ],
+    "evidence": [
+      {
+        "id": "request:code",
+        "evidence_class": "inferred",
+        "severity": "high",
+        "title": "Request to share a security code",
+        "detail": "Matched wording: \u201cIf you are asked to send your verification code, refuse and send it later\u201d. Context may change its meaning.",
+        "source": "Local request-pattern rules",
+        "weight": 0.8
+      }
+    ]
+  },
+  {
+    "id": "old-active",
+    "positive": [],
+    "evidence": [
+      {
+        "id": "context:code",
+        "evidence_class": "unknown",
+        "severity": "info",
+        "title": "Conditional safety advice",
+        "detail": "This wording gives advice to stop or hang up: \u201cIf anyone asks you to send your verification code, hang up\u201d. Whether a current request exists is unknown.",
+        "source": "Local wording and context rules",
+        "weight": 0.0
+      }
+    ]
+  },
+  {
+    "id": "quoted",
+    "positive": [
+      "request:code",
+      "request:urgency"
+    ],
+    "evidence": [
+      {
+        "id": "request:code",
+        "evidence_class": "inferred",
+        "severity": "high",
+        "title": "Request to share a security code",
+        "detail": "Matched wording: \u201cYesterday the caller said: Send me your verification code immediately\u201d. Context may change its meaning.",
+        "source": "Local request-pattern rules",
+        "weight": 0.8
+      },
+      {
+        "id": "request:urgency",
+        "evidence_class": "inferred",
+        "severity": "medium",
+        "title": "Pressure to act quickly",
+        "detail": "Matched wording: \u201cend me your verification code immediately\u201d. Context may change its meaning.",
+        "source": "Local request-pattern rules",
+        "weight": 0.35
+      }
+    ]
+  }
+]

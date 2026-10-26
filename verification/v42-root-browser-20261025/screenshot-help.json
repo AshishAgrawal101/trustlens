@@ -1,0 +1,10 @@
+{
+  "observed": {
+    "file": "",
+    "help": "Download a constructed screenshot. Choose the downloaded file above, select Read screenshot, then review and confirm the text before checking. Nothing is checked automatically.Review line breaks. Compare the recognized text with the screenshot. Replace a line break with a space yourself only when you confirm it is visual wrapping within one sentence. Keep true sentence boundaries, punctuation and negation such as “not”. Nothing is joined automatically. Line breaks can hide wording matches; a check can still miss warnings.Transparent images. If a transparent image reads blank, use an opaque copy with a contrasting background or type the wording. A white background can hide white text.",
+    "resultHidden": true,
+    "visible": true
+  },
+  "fileUploadAttempted": false,
+  "normalDesktop": true
+}

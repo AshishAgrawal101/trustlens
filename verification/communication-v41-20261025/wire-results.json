@@ -1,0 +1,32 @@
+[
+  {
+    "id": "text-lone-surrogate",
+    "status": 422,
+    "response": "{\"detail\":\"Check the required fields, input format and length, then try again.\"}"
+  },
+  {
+    "id": "email-lone-surrogate",
+    "status": 422,
+    "response": "{\"detail\":\"Check the required fields, input format and length, then try again.\"}"
+  },
+  {
+    "id": "url-wrong-shape",
+    "status": 422,
+    "response": "{\"detail\":\"Check the required fields, input format and length, then try again.\"}"
+  },
+  {
+    "id": "malformed-json",
+    "status": 422,
+    "response": "{\"detail\":\"Check the required fields, input format and length, then try again.\"}"
+  },
+  {
+    "id": "deep-json",
+    "status": 422,
+    "response": "{\"detail\":\"Check the required fields, input format and length, then try again.\"}"
+  },
+  {
+    "id": "ordinary-readable",
+    "status": 200,
+    "response": "{\"kind\":\"text\",\"risk_index\":null,\"risk_level\":\"low\",\"confidence\":\"low\",\"summary\":\"No strong warning signs matched. That does not verify who sent this or make it safe.\",\"evidence\":[{\"id\":\"text:none\",\"evidence_class\":\"unknown\",\"severity\":\"info\",\"title\":\"Sender and intent are unverified\",\"detail\":\"No strong wording patterns matched this input.\",\"source\":\"Local rules\",\"weight\":0.0}],\"limitations\":[\"English-language rules identify wording and link structure, not intent or sender identity.\",\"A legitimate message can trigger a rule; a scam can avoid every rule. No links were visited.\"],\"content_credentials\":null,\"model_ran\":false,\"decision_basis\":\"rules\",\"actions\":[{\"title\":\"Verify through a separate route\",\"detail\":\"Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\"},{\"title\":\"Take time to check the request\",\"detail\":\"If money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\"}],\"share_summary\":\"TrustLens \u2014 private-input-free summary\\n0 wording or address warning sign(s) matched. This does not prove fraud or safety.\\nWording rules cover English; other-language warning signs may be missed.\\n\\nVerify through a separate route\\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\\n\\nTake time to check the request\\nIf money or account access is involved, ask a trusted person to review it with you. No matched warning signs does not establish safety.\\n\\nGeneral help: https://consumer.ftc.gov/scams\\nOriginal content, contact details and links from the input are omitted.\"}"
+  }
+]

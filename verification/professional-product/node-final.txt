@@ -1,0 +1,39 @@
+✔ availability is explicit, reports configuration only, and sends no private input (5.5405ms)
+✔ failed or malformed availability replaces stale configuration with unknown and permits retry (2.6207ms)
+✔ intake guidance distinguishes screenshot review from image origin (2.2009ms)
+✔ request failure focuses the actionable error and releases busy state (2.0298ms)
+✔ phone companion is a visible normal link with honest scope (0.3893ms)
+✔ availability refresh restores disabled-button focus without taking it from another field (1.7712ms)
+✔ screenshot requires a separate reviewed-text submission and clears safely (7.7696ms)
+✔ blank OCR invites manual text and editing requires review again (1.8873ms)
+✔ response after Clear cannot repopulate private content or results (1.5219ms)
+✔ failed requests and explicit timeout recover controls (2.1593ms)
+✔ clipboard denial is actionable and copies only report summary (3.4512ms)
+✔ recovery is available without analysis and exports a fixed checklist (2.2857ms)
+✔ invalid image selection clears the preview and reports its limit (2.1629ms)
+✔ demo choices change mode but never submit without Check (3.9887ms)
+✔ results distinguish concerns, observations and unknowns without hiding evidence (1.9223ms)
+✔ Clear erases private result nodes as well as input, and disables stale exports (1.518ms)
+✔ download contains only the safe summary and releases its temporary URL (1.9763ms)
+✔ reselecting the active mode preserves drafts, results and active requests (2.2372ms)
+✔ reselecting Screenshot preserves corrected text and its review state (1.2243ms)
+✔ same-mode demo replacement clears results and rejects the earlier response (1.7302ms)
+✔ preview cleanup erases filenames on Clear, mode changes and invalid replacement (1.4344ms)
+✔ image heading distinguishes unavailable checks from usable partial results (1.561ms)
+✔ incomplete email is explicit while retaining detected warnings and actions (1.3236ms)
+✔ user choices give fixed actions without copying private input (1.1983ms)
+✔ host inspection exposes userinfo without visiting or exporting addresses (0.8334ms)
+✔ shared form accepts bounded text and rejects duplicates, empty, files and oversize (37.0552ms)
+✔ shared payload cannot escape textarea or interpret replacement tokens (0.8326ms)
+✔ service worker handles shares without network or caching any shared text (4.2434ms)
+✔ every declared offline shell asset exists and manifest uses body sharing (0.7488ms)
+✔ phone edits and page exit remove private text, topics and stale results (3.1939ms)
+✔ pending clipboard permission times out with download fallback and respects Clear (1.6969ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 165.4378

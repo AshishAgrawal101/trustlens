@@ -1,0 +1,48 @@
+[
+  {
+    "id": "fbi-toll-excerpt",
+    "label": "public_scam_excerpt",
+    "text": "To avoid a late fee of $50.00, visit https://myturnpiketollservices.com to settle your balance.",
+    "source": "https://www.ic3.gov/PSA/2024/PSA240412",
+    "location": "Quoted example, final sentence",
+    "expected_warning": true
+  },
+  {
+    "id": "ftc-usps-excerpt",
+    "label": "public_scam_excerpt",
+    "text": "USPS: Since your package address does not have a house number, we are unable to arrange home delivery for you.",
+    "source": "https://www.ftc.gov/system/files/ftc_gov/pdf/texts-spotlight-final.pdf",
+    "location": "Page 2, screenshot example opening sentence (also accessible search excerpt)",
+    "expected_warning": true
+  },
+  {
+    "id": "ordinary-delivery",
+    "label": "constructed_benign",
+    "text": "Your package is ready for collection at the front desk.",
+    "expected_warning": false
+  },
+  {
+    "id": "ordinary-invoice",
+    "label": "constructed_benign",
+    "text": "Your monthly statement is available in the app you already use.",
+    "expected_warning": false
+  },
+  {
+    "id": "negated-balance",
+    "label": "constructed_benign",
+    "text": "Do not settle your balance through an unexpected text.",
+    "expected_warning": false
+  },
+  {
+    "id": "safety-advice",
+    "label": "constructed_benign",
+    "text": "If someone asks you to settle your balance, hang up.",
+    "expected_warning": false
+  },
+  {
+    "id": "legitimate-payment-request",
+    "label": "constructed_legitimate_sensitive_request",
+    "text": "Please settle your balance in our office when you collect your repaired bike.",
+    "expected_warning": true
+  }
+]

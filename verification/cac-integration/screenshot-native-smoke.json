@@ -1,0 +1,19 @@
+{
+  "fixture": "static/demo-message.png",
+  "constructed": true,
+  "browser_file_upload_claimed": false,
+  "actual_native_OCR": true,
+  "extract_status": 200,
+  "review_required": true,
+  "text": "BANK ALERT\nSend the verification code immediately.\nDo not call your bank.",
+  "extraction_seconds": 0.688,
+  "separate_API_analysis_status": 200,
+  "evidence_ids": [
+    "request:code",
+    "request:urgency",
+    "request:secrecy"
+  ],
+  "risk_level": "high",
+  "human_text_review_performed": false,
+  "accuracy_claimed": false
+}

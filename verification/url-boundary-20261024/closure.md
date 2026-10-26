@@ -1,0 +1,9 @@
+# URL boundary closure
+
+Root authorized only url.py and a new regression test.23newtests ran first:13failed,10passed. After the minimal parser correction all pass; combined IDNA/anatomy/link/email/QR-file-intake suites:190passed,zero skips in6.01seconds.
+
+Explicit HTTP(S) scheme syntax now requires a complete //authority before the existing missing-scheme convenience can run. Ordinary barehostname:port remains supported. Scoped/percent-host syntax is rejected with fixed actionable ValueError. After nontransitional UTS46 mapping and canonical IP acceptance, a final hostname label consisting entirely of ASCII digits or parseable0xhex syntax (including empty0x) is rejected as noncanonical/invalid browser numeric syntax. This follows the [official WHATWG URL ends-in-a-number and IPv4-number parsing rules](https://url.spec.whatwg.org/#ends-in-a-number-checker), read2026-10-24; it deliberately rejects ambiguous literals rather than adding browser numeric canonicalization. No DNS/network lookup occurs.
+
+Canonical dottedIPv4/bracketedIPv6, port0, barehostports, ordinary nonnumeric domains and existing IDNA remain. A nonnumeric lastlabel such as0xgg is still a domain label; malformed numeric endings09/123/0x1 and fullwidth-to-hex mapped forms are covered. Tests also verify known-reference rejection, bothactualAPI400s without privatepath echo, reviewedQR/text becoming malformed-link evidence, and no fabricated email link-label comparison from the ambiguous host. No QR extractor/model/decoder source changed.
+
+Existing numeric/label/port/control validation and report policy are retained. The new rejection can reduce claimed URL coverage on ambiguous inputs; it must not be described as an origin/fraud accuracy improvement or a complete WHATWG browser implementation. No remote/private/model/browserupload work occurred. Only permitted app/test files and this owned audit closure were edited.

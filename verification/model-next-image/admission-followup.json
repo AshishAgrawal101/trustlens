@@ -1,0 +1,134 @@
+{
+  "at_utc": "2026-10-23T22:16:32.063529+00:00",
+  "stream_buffer_bytes": 1048576,
+  "archive": {
+    "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\BFREE_dino2reg4.zip",
+    "bytes": 321653488,
+    "sha256": "8230fd3f0f3a64a6403acb692ce1663718ed16f36a5a4de4a68c0d273781769f",
+    "md5": "f3f53fa647848b16cf81c913f148a198",
+    "seconds": 0.6430187000660226,
+    "unchanged_during_read": true
+  },
+  "published_zip_md5": "f3f53fa647848b16cf81c913f148a198",
+  "published_md5_matches": true,
+  "checkpoint": {
+    "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\weights\\BFREE_dino2reg4\\model_epoch_best.pth",
+    "bytes": 346171370,
+    "sha256": "5948ca78f4d94e820c250d24cdf155035b4a85960443800bfe6bb7f06bffe947",
+    "md5": null,
+    "seconds": 0.3306324000004679,
+    "unchanged_during_read": true
+  },
+  "matches_historical_sprint48_checkpoint_sha256": true,
+  "zip_central_directory": [
+    {
+      "name": "BFREE_dino2reg4/",
+      "bytes": 0,
+      "compressed_bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "BFREE_dino2reg4/config.yaml",
+      "bytes": 153,
+      "compressed_bytes": 125,
+      "crc32": "046149b2"
+    },
+    {
+      "name": "BFREE_dino2reg4/model_epoch_best.pth",
+      "bytes": 346171370,
+      "compressed_bytes": 321652799,
+      "crc32": "53a311a1"
+    }
+  ],
+  "zip_license_entries": [],
+  "local_code_pins": [
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\README.md",
+      "bytes": 2866,
+      "sha256": "81386f0127828890f1a8a4126470b9bc311592dbb9ba7f601eb1806adb8cde5f",
+      "md5": null,
+      "seconds": 0.0006928000366315246,
+      "unchanged_during_read": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\main_bfree.py",
+      "bytes": 5029,
+      "sha256": "eea848f57d1415c2c52804ff013a611435cdb38371c297c2de67fb459e4079ce",
+      "md5": null,
+      "seconds": 0.01179210003465414,
+      "unchanged_during_read": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\main_bfree_single.py",
+      "bytes": 2621,
+      "sha256": "72f43b8999d2b36689dfa77728f2cf51000a1333a62aa2aad65973ef881c24f7",
+      "md5": null,
+      "seconds": 0.008853900013491511,
+      "unchanged_during_read": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\networks_init.py",
+      "bytes": 1290,
+      "sha256": "048638ddd724ebbfbe995c3a735284a0551b8ca5fec74ca6a0ac2a5a4e6dd8cf",
+      "md5": null,
+      "seconds": 0.009598699980415404,
+      "unchanged_during_read": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\normalization.py",
+      "bytes": 3409,
+      "sha256": "12a244d489f001ee7f25aae9bbe2b8fe1b1172f365b1ac0b8d632257f6c2354b",
+      "md5": null,
+      "seconds": 0.008577900007367134,
+      "unchanged_during_read": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\wrapper5crops.py",
+      "bytes": 2688,
+      "sha256": "1f4de65b82b33c3864ab368836bab009a18f9bf0f828335777272645f236d60b",
+      "md5": null,
+      "seconds": 0.009355899994261563,
+      "unchanged_during_read": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\requirements.txt",
+      "bytes": 98,
+      "sha256": "8fd3131b5fbe8e16cdcbd0b022dee6f1213a216e989f52dd39005ca31393a168",
+      "md5": null,
+      "seconds": 0.006896500010043383,
+      "unchanged_during_read": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\external-cf-bfree.json",
+      "bytes": 285,
+      "sha256": "72c43b83af96f97683c2498fa00509928df4d12341e89ba4c48c8d1f3d8207f3",
+      "md5": null,
+      "seconds": 0.0007154999766498804,
+      "unchanged_during_read": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\check_bfree.py",
+      "bytes": 926,
+      "sha256": "3378a88327679ef9e8a1356de4e0cf802bee51cac15be9013a1867b2c45c9a2a",
+      "md5": null,
+      "seconds": 0.000631400034762919,
+      "unchanged_during_read": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\verify_bfree_adapter.py",
+      "bytes": 1318,
+      "sha256": "64604a1bc0163c83f69e03fc942c94bb63ff17d48d60944c19b726ca869495d3",
+      "md5": null,
+      "seconds": 0.009656500071287155,
+      "unchanged_during_read": true
+    }
+  ],
+  "local_git_metadata_present": false,
+  "official_license_url": "https://github.com/grip-unina/B-Free/blob/main/LICENSE.txt",
+  "official_license_verified_via_web": "2026-10-23; informational/nonprofit only; preserve original notices; credit original authors for public results; no other use authorized; warranty disclaimer",
+  "model_deserialized": false,
+  "zip_extracted": false,
+  "image_payloads_read": false,
+  "inference": false,
+  "resource_repolled": false
+}

@@ -1,0 +1,7 @@
+# Independent First / Last source navigation review
+
+No concrete issue found. Pure SourceContext module prefix exactly matches immutable v32 ZIP, SHA256 5316502ee7da8675caeee9435ea0edb9724951d2c027fe83a5a666d6145a582c. Derived lastPage is a bounded integer from total <=30000 and does not retain private strings. It resets alongside pageIndex on every existing invalidation, including native source invalid and target-gated shared Original invalid; Revised remains independent.
+
+First/Previous disable on first page; Next/Last disable on actual final page; zero through five hide navigation and disable all. Six and eleven correctly expose incomplete final groups; 30000 reaches index5999 and ordinals29996–30000 with five bounded windows. Hidden/disabled guards prevent stale callbacks restoring output. Endpoint trigger becoming disabled moves focus to live range status; otherwise existing trigger focus is preserved and range scrolls into view. Context authenticity/meaning/truth caveat remains unchanged. Existing wrapped 115px/48px controls are reused, with no score or new form action.
+
+37 focused jump, shared invalid, paging and independent literal-oracle tests passed, zero failures/skips. No I/O, storage, exports or actual source fetching added; input drafts and formatting notice remain while legitimately navigating. Root separately owns native browser/mobile layout, cache and bundle acceptance. No app changes by this reviewer.

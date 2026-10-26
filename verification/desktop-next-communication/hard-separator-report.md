@@ -1,0 +1,9 @@
+# Hard-separator consistency fix
+
+Changed only app/analyzers/text.py and new tests/test_hard_line_boundaries.py. A shared regex character set now recognizes every Python splitlines separator in both existing sentence segmentation and the original-offset negation clause guard: LF, CR, VT, FF, FS, GS, RS, NEL, Unicode line separator and paragraph separator. CRLF naturally acts as one boundary run. Original text, offsets, history/reference recognizers, fraud patterns, scores and displayed evidence remain unchanged.
+
+The complete 44-case acceptance matrix was frozen before editing, SHA256 c885cbc906d01e27554120c6766b6cb625c95c38999d8b8ef78699dadb4790e9. Paired ordinary, direct, negative-advice and independent-live controls all pass. New tests also cover shared text/email/call propagation, maximum 30,000-character bounded work and original evidence/no line joining. Email propagation uses a correctly UTF-8 encoded MIME message; the Python email parser renders bare non-ASCII unencoded raw payload differently, outside this text-only fix.
+
+Validation: 434 passed in 1.61 seconds across new boundaries, original negation, request/reference/history context, professional request, email boundaries, end-call advice, sprint request/context/email, link coverage and guidance-context suites.
+
+New results are in after-hard-separators.json; original baseline files and frozen diagnostics were not rewritten. All five separator false concerns are fixed. Both soft-hyphen defects remain unresolved. All three OCR/layout direct-request misses remain unresolved deliberately: globally joining lines introduces demonstrated false concerns, and no continuation grammar was added. The blank-line fragment remains ambiguous and unscored. Counts describe constructed regression probes, not accuracy on real traffic or a user study.

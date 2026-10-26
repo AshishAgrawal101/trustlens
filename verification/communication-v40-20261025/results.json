@@ -1,0 +1,812 @@
+[
+  {
+    "id": "eight-distinct",
+    "mode": "paste",
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown0.example. Primary recipient domain: destination0.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:1",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown1.example. Primary recipient domain: destination1.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:2",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown2.example. Primary recipient domain: destination2.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:3",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown3.example. Primary recipient domain: destination3.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:4",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown4.example. Primary recipient domain: destination4.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:5",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown5.example. Primary recipient domain: destination5.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:6",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown6.example. Primary recipient domain: destination6.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:7",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown7.example. Primary recipient domain: destination7.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n8 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "eight-distinct",
+    "mode": "eml",
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown0.example. Primary recipient domain: destination0.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:1",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown1.example. Primary recipient domain: destination1.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:2",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown2.example. Primary recipient domain: destination2.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:3",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown3.example. Primary recipient domain: destination3.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:4",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown4.example. Primary recipient domain: destination4.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:5",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown5.example. Primary recipient domain: destination5.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:6",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown6.example. Primary recipient domain: destination6.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:7",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown7.example. Primary recipient domain: destination7.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n8 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "nine-distinct",
+    "mode": "paste",
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown0.example. Primary recipient domain: destination0.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:1",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown1.example. Primary recipient domain: destination1.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:2",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown2.example. Primary recipient domain: destination2.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:3",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown3.example. Primary recipient domain: destination3.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:4",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown4.example. Primary recipient domain: destination4.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:5",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown5.example. Primary recipient domain: destination5.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:6",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown6.example. Primary recipient domain: destination6.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:7",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown7.example. Primary recipient domain: destination7.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n8 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "nine-distinct",
+    "mode": "eml",
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown0.example. Primary recipient domain: destination0.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:1",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown1.example. Primary recipient domain: destination1.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:2",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown2.example. Primary recipient domain: destination2.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:3",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown3.example. Primary recipient domain: destination3.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:4",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown4.example. Primary recipient domain: destination4.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:5",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown5.example. Primary recipient domain: destination5.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:6",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown6.example. Primary recipient domain: destination6.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:7",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown7.example. Primary recipient domain: destination7.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n8 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "ninth-duplicate",
+    "mode": "paste",
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown0.example. Primary recipient domain: destination0.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:1",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown1.example. Primary recipient domain: destination1.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:2",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown2.example. Primary recipient domain: destination2.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:3",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown3.example. Primary recipient domain: destination3.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:4",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown4.example. Primary recipient domain: destination4.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:5",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown5.example. Primary recipient domain: destination5.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:6",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown6.example. Primary recipient domain: destination6.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:7",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown7.example. Primary recipient domain: destination7.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n8 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "ninth-duplicate",
+    "mode": "eml",
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown0.example. Primary recipient domain: destination0.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:1",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown1.example. Primary recipient domain: destination1.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:2",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown2.example. Primary recipient domain: destination2.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:3",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown3.example. Primary recipient domain: destination3.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:4",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown4.example. Primary recipient domain: destination4.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:5",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown5.example. Primary recipient domain: destination5.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:6",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown6.example. Primary recipient domain: destination6.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        },
+        {
+          "id": "email:link_mismatch:7",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown7.example. Primary recipient domain: destination7.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n8 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "eight-equal-then-different",
+    "mode": "paste",
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown.example. Primary recipient domain: destination.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  },
+  {
+    "id": "eight-equal-then-different",
+    "mode": "eml",
+    "report": {
+      "kind": "email",
+      "risk_index": null,
+      "risk_level": "guarded",
+      "confidence": "low",
+      "summary": "Check the context before you act. Some warning signs need a closer look.",
+      "evidence": [
+        {
+          "id": "text:none",
+          "evidence_class": "unknown",
+          "severity": "info",
+          "title": "Sender and intent are unverified",
+          "detail": "No strong wording patterns matched this input.",
+          "source": "Local rules",
+          "weight": 0.0
+        },
+        {
+          "id": "email:link_mismatch:0",
+          "evidence_class": "verified",
+          "severity": "medium",
+          "title": "The displayed address and link destination differ",
+          "detail": "Displayed mailbox domain: shown.example. Primary recipient domain: destination.example. Different addresses can be legitimate; verify through a known contact before sending.",
+          "source": "Compared text and href in supplied HTML; neither destination was visited",
+          "weight": 0.3
+        }
+      ],
+      "limitations": [
+        "English-language rules identify wording and link structure, not intent or sender identity.",
+        "Pasted headers are supplied text, not a trusted mail-server connection.",
+        "Attachments are not scanned; message links are inspected as text without fetching them.",
+        "Link-label comparisons require HTML. Pasted plain text or screenshots can omit the actual link destination. CSS layout and redirects are not inspected.",
+        "Mailto comparisons cover one literal primary recipient domain, not mailbox ownership, same-domain aliases, or additional query recipients.",
+        "For the first 8 unique scheme-relative // targets, host and scheme-independent address rules are checked; transport remains unknown. Duplicate matching targets are counted once after surrounding ASCII spaces are removed. Remaining targets are not inspected by these rules. Literal hostname-label comparisons are separate; relative paths and unsupported targets are not resolved. Empty and fragment-only anchors are not external target checks.",
+        "A passed mail-authentication check would not establish that a request is safe."
+      ],
+      "content_credentials": null,
+      "model_ran": false,
+      "decision_basis": "rules",
+      "actions": [
+        {
+          "title": "Use a known address instead of this link",
+          "detail": "The displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud."
+        },
+        {
+          "title": "Verify through a separate route",
+          "detail": "Use the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message."
+        }
+      ],
+      "share_summary": "TrustLens \u2014 private-input-free summary\n1 wording or address warning sign(s) matched. This does not prove fraud or safety.\nWording rules cover English; other-language warning signs may be missed.\n\nUse a known address instead of this link\nThe displayed address may differ from the destination. Open the organization\u2019s app or an address you already trust; do not sign in through the supplied link. A mismatch alone does not prove fraud.\n\nVerify through a separate route\nUse the official app or website you already know, or a trusted phone number from your bank card or a previous school, service-provider or organization record. Do not use contact details supplied in the message.\n\nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted."
+    }
+  }
+]

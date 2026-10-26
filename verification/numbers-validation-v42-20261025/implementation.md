@@ -1,0 +1,13 @@
+# Native count/total correction
+
+Changed application code only in the `static/numbers-context.js` controller. Added `tests/numbers_crossfield_validation.test.cjs` and the authorized single standard `Element.setCustomValidity` method in `tests/frontend_state.test.cjs`; existing shared `reportValidity`/assertions are unchanged. No HTML, math/parser, style, cache, export or docs edit.
+
+Count comparison order is native required/min/max/step, existing digits-only conversion, then fixed custom count≤total messages before unchanged pure comparison. Both offending counts are marked before `reportValidity()`; native DOM order reports A first when both fail. The captured `invalid → invalidate` callback deliberately preserves those custom messages. No value or result is automatically changed/calculated.
+
+`clearCountValidity()` is called separately on every input, method selection, actual submit start, active Swap and full Clear (therefore examples/lifecycle). Editing a total clears the old count message; switching to percentages preserves raw drafts while clearing custom count constraints. Swap retains its raw pairing semantics and merely clears obsolete messages first. Native-invalid output clearing remains intact.
+
+`preservation.json` proves raw pure-prefix SHA unchanged; existing digits-parser line is byte-exact to immutable v41. The whole Swap block restores exact old bytes after removing its necessary validity-clear call. Removing only the new shared standard method restores the frozen shared-fixture hash. No optional-chain production workaround or fake missing input was added.
+
+Acceptance/fixture hashes were frozen before edits. `red.txt` preserves the initial red run; the dedicated browser-like fixture was subsequently corrected to expose the normal native validity object for every input, not drive production fallbacks. A separate `red-frozen-controller.txt` replay loads immutable v41 controller bytes with the final test fixture **without changing current app source**: two relationship-feedback failures and two existing precedence/reset controls pass. This is explicitly a frozen-controller replay, not relabelled pre-edit evidence.
+
+`green.txt`: **93/93** related Numbers/reported-percentage tests pass. New four tests cover A/B/both, fixing A then B, total edits, captured-invalid message retention, native overflow/digits precedence, percentage isolation, Swap and all resets. Full `node-checkpoint.txt`: **618/618 pass**, zero failures/skips (includes root’s separate current UI tests). The dedicated form fixture models invalid capture, first-invalid focus and enabled-field/native-range/step precedence; actual browser bubbles/keyboard behavior remain root evidence. No browser upload, source fetch or physical-phone claim.

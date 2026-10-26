@@ -1,0 +1,169 @@
+{
+  "purpose": "Fresh HTML mailbox-label comparison evidence-cap audit, no fraud label or threshold tuning",
+  "cases": [
+    {
+      "id": "eight-distinct",
+      "anchors": [
+        {
+          "href": "mailto:office@destination0.example",
+          "label": "office@shown0.example"
+        },
+        {
+          "href": "mailto:office@destination1.example",
+          "label": "office@shown1.example"
+        },
+        {
+          "href": "mailto:office@destination2.example",
+          "label": "office@shown2.example"
+        },
+        {
+          "href": "mailto:office@destination3.example",
+          "label": "office@shown3.example"
+        },
+        {
+          "href": "mailto:office@destination4.example",
+          "label": "office@shown4.example"
+        },
+        {
+          "href": "mailto:office@destination5.example",
+          "label": "office@shown5.example"
+        },
+        {
+          "href": "mailto:office@destination6.example",
+          "label": "office@shown6.example"
+        },
+        {
+          "href": "mailto:office@destination7.example",
+          "label": "office@shown7.example"
+        }
+      ],
+      "expectation": "If unique mismatches omitted due cap, explicitly declare comparison coverage incomplete; duplicate pairs need no new mismatch."
+    },
+    {
+      "id": "nine-distinct",
+      "anchors": [
+        {
+          "href": "mailto:office@destination0.example",
+          "label": "office@shown0.example"
+        },
+        {
+          "href": "mailto:office@destination1.example",
+          "label": "office@shown1.example"
+        },
+        {
+          "href": "mailto:office@destination2.example",
+          "label": "office@shown2.example"
+        },
+        {
+          "href": "mailto:office@destination3.example",
+          "label": "office@shown3.example"
+        },
+        {
+          "href": "mailto:office@destination4.example",
+          "label": "office@shown4.example"
+        },
+        {
+          "href": "mailto:office@destination5.example",
+          "label": "office@shown5.example"
+        },
+        {
+          "href": "mailto:office@destination6.example",
+          "label": "office@shown6.example"
+        },
+        {
+          "href": "mailto:office@destination7.example",
+          "label": "office@shown7.example"
+        },
+        {
+          "href": "mailto:office@destination8.example",
+          "label": "office@shown8.example"
+        }
+      ],
+      "expectation": "If unique mismatches omitted due cap, explicitly declare comparison coverage incomplete; duplicate pairs need no new mismatch."
+    },
+    {
+      "id": "ninth-duplicate",
+      "anchors": [
+        {
+          "href": "mailto:office@destination0.example",
+          "label": "office@shown0.example"
+        },
+        {
+          "href": "mailto:office@destination1.example",
+          "label": "office@shown1.example"
+        },
+        {
+          "href": "mailto:office@destination2.example",
+          "label": "office@shown2.example"
+        },
+        {
+          "href": "mailto:office@destination3.example",
+          "label": "office@shown3.example"
+        },
+        {
+          "href": "mailto:office@destination4.example",
+          "label": "office@shown4.example"
+        },
+        {
+          "href": "mailto:office@destination5.example",
+          "label": "office@shown5.example"
+        },
+        {
+          "href": "mailto:office@destination6.example",
+          "label": "office@shown6.example"
+        },
+        {
+          "href": "mailto:office@destination7.example",
+          "label": "office@shown7.example"
+        },
+        {
+          "href": "mailto:office@destination0.example",
+          "label": "office@shown0.example"
+        }
+      ],
+      "expectation": "If unique mismatches omitted due cap, explicitly declare comparison coverage incomplete; duplicate pairs need no new mismatch."
+    },
+    {
+      "id": "eight-equal-then-different",
+      "anchors": [
+        {
+          "href": "mailto:office@same0.example",
+          "label": "office@same0.example"
+        },
+        {
+          "href": "mailto:office@same1.example",
+          "label": "office@same1.example"
+        },
+        {
+          "href": "mailto:office@same2.example",
+          "label": "office@same2.example"
+        },
+        {
+          "href": "mailto:office@same3.example",
+          "label": "office@same3.example"
+        },
+        {
+          "href": "mailto:office@same4.example",
+          "label": "office@same4.example"
+        },
+        {
+          "href": "mailto:office@same5.example",
+          "label": "office@same5.example"
+        },
+        {
+          "href": "mailto:office@same6.example",
+          "label": "office@same6.example"
+        },
+        {
+          "href": "mailto:office@same7.example",
+          "label": "office@same7.example"
+        },
+        {
+          "href": "mailto:office@destination.example",
+          "label": "office@shown.example"
+        }
+      ],
+      "expectation": "Matching earlier pairs must not consume mismatch-output budget; ninth mismatch should be reported."
+    }
+  ]
+}

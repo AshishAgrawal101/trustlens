@@ -1,0 +1,19 @@
+# Next desktop workflow recommendation
+
+## 1 — Preserve independent Numbers method drafts during the same visit
+
+Recommended bounded increment: changing **What numbers do you have?** should invalidate the old result and switch enabled fields, while preserving the readable raw values previously typed into each method. Clear, constructed example replacement and page exit should continue wiping all fields. Do not convert counts into reported percentages or infer denominators.
+
+Current `static/numbers-context.js` binds method `change` directly to `clear()`, which erases all six inputs. Ordinary flow: type 20/100 and 30/200, Compare, select Reported percentages to inspect that alternative, then select Counts and totals again. All four count values are gone. `method-roundtrip.json` reproduces this with actual input, submit and change events in the established controller harness: four populated values/visible result before; four empty values/hidden result afterward; zero requests. No eventless or invalid direct-state mutation was used. It is explicitly disclosed current behavior (`numbers-method-help`), so this is an intentional ergonomic contract improvement, not an undisclosed correctness bug.
+
+The methods are two views within the same workspace rather than a page exit. Retaining their existing unnamed DOM input values for that visit needs no new storage, history, navigation mechanism or data transfer. Users can explore the appropriate input method without retyping a collected comparison; old results remain hidden until explicit Compare.
+
+Full scope: `static/numbers-context.js` method-change handler should use existing `invalidate()` plus `syncMethod()` rather than `clear()`; `static/numbers-context.html` method hint should explain separate retained drafts, result invalidation and Clear/exit wiping. Preserve pure functions byte-for-byte. Existing disabled/hidden inactive-field validation and active-only Swap logic already supply the needed boundaries. Dedicated tests: exact raw values roundtrip in both directions; no automatic Compare/normalization/conversion; inactive values never affect current calculations; active-only Swap; invalid/partial readable values retained for ordinary validation; Clear/example/lifecycle wipes both drafts, with lifecycle default Counts unchanged. Browser-inaccessible unfinished number editing buffers are outside a `.value` preservation claim.
+
+Tests/callers requiring audit: `reported_percentages_controller.test.cjs` and `reported_percentages_markup.test.cjs` currently assert the clearing contract; narrowly update only those intended assertions. Retain `numbers_controller.test.cjs`, `numbers_swap.test.cjs`, exact-math/acceptance and rounded-display suites. Shared Pocket rendering reuses the same controller/template, so integration owner would update its normal cache/export version and verify offline; no separate algorithm or Pocket fork is needed. No backend/CSP/API/model change.
+
+## 2 — Lower priority: clarify destructive cross-page navigation
+
+Claim/Numbers/Quote all intentionally erase drafts on pagehide/restored Back. Their links to Tools/Claim generally say only that nothing transfers. A person leaving to examine another aspect cannot recover the first worksheet with Back. This is a valid privacy boundary, so do not add storage, cross-page private URL parameters or silent retention. A consistent brief “Leaving this page clears its inputs” notice by continuation/navigation actions could make that behavior predictable. This is smaller benefit than fixing unnecessary same-page method loss; no new navigation system or confirmation modal is recommended without a demonstrated need.
+
+No runnable parser/math defect was established in this audit. The recommendation is one coherent existing-workspace improvement, not another example, tool or cosmetic patch. No application files changed; no browser uploads, physical-phone checks, external data or network were used.

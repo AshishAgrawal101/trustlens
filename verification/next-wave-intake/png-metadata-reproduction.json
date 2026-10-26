@@ -1,0 +1,63 @@
+{
+  "verified_utc": "2026-10-23T20:58:51.675511+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "Pillow": "12.3.0",
+  "fixture": {
+    "bytes": 1130,
+    "sha256": "27424e7c58d57437d8f31aa3360cef920ced900a687c6ee50c15c14057c0d1f1",
+    "pixels": 1,
+    "compressed_text_expansion_bytes": 1048577,
+    "kind": "locally constructed PNG zTXt, no source/user/final assets"
+  },
+  "records": [
+    {
+      "component": "decode_image",
+      "exception_type": "ValueError",
+      "message": "Decompressed data too large for PngImagePlugin.MAX_TEXT_CHUNK",
+      "is_InvalidImage": false
+    },
+    {
+      "path": "/api/analyze/image",
+      "status": 500,
+      "body": "Internal Server Error"
+    },
+    {
+      "path": "/api/extract/screenshot",
+      "status": 500,
+      "body": "Internal Server Error"
+    },
+    {
+      "path": "/api/extract/qr",
+      "status": 503,
+      "body": "{\"detail\":\"QR reading is unavailable or timed out. Try a clear crop, or paste the printed address instead.\"}"
+    }
+  ],
+  "QR_lock_released": true,
+  "OCR_lock_released": true,
+  "source_pins": [
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\image.py",
+      "sha256": "0e737e47a80e8530b315c6e3d15d87c8518f3d879b7d606e13dff9b7a056ee69"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\qr.py",
+      "sha256": "d9b4a44c2c371b4ea31bc1caa147744823d09ecdaed4afe6cac875b49593bf6c"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\screenshot.py",
+      "sha256": "0c42ca077ed3b04c32e6357f1767969dfb2290654d08e19a4e6bdf12ae1dd0bc"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\intake.py",
+      "sha256": "1b43981a0b3edbc4367b88d9fd5390d4bfaaa0b166d30442b60205f38e746c78"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\main.py",
+      "sha256": "51ea05eea213b1baecb247a39c4ad50aba56b277425ae0e29e6801bcb4d7d836"
+    }
+  ],
+  "model_or_subprocess_calls": false,
+  "GPU": false,
+  "downloads": false,
+  "production_source_edits": false
+}

@@ -1,0 +1,366 @@
+FF.FFFFFFF.FFFFF..............FFFFFFFFFF..                               [100%]
+================================== FAILURES ===================================
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-Send me your verification code.-x-private] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54821E40>
+cte = 'x-private', body = 'Send me your verification code.'
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'request:code'}
+E        +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-Send me your verification code.-] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54BE3560>, cte = ''
+body = 'Send me your verification code.'
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'request:code'}
+E        +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-Send me your verification code.-x-PRIVATE] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2E160>
+cte = 'x-PRIVATE', body = 'Send me your verification code.'
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'request:code'}
+E        +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-x-private] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2E0C0>
+cte = 'x-private', body = 'U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg=='
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'text:none'}
+E        +  where {'text:none'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2E480>, cte = ''
+body = 'U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg=='
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'text:none'}
+E        +  where {'text:none'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-base64; bogus=yes] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2E8E0>
+cte = 'base64; bogus=yes', body = 'U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg=='
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'request:code'}
+E        +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-x-PRIVATE] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2EB60>
+cte = 'x-PRIVATE', body = 'U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg=='
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'text:none'}
+E        +  where {'text:none'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-Send me your verification code.-x-private] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2ED40>
+cte = 'x-private', body = 'Send me your verification code.'
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'request:code'}
+E        +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-Send me your verification code.-] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2F060>, cte = ''
+body = 'Send me your verification code.'
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'request:code'}
+E        +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-Send me your verification code.-x-PRIVATE] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2DF80>
+cte = 'x-PRIVATE', body = 'Send me your verification code.'
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'request:code'}
+E        +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-x-private] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54BE2B60>
+cte = 'x-private', body = 'U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg=='
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'text:none'}
+E        +  where {'text:none'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54BE32E0>, cte = ''
+body = 'U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg=='
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'text:none'}
+E        +  where {'text:none'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-base64; bogus=yes] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54843CE0>
+cte = 'base64; bogus=yes', body = 'U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg=='
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'request:code'}
+E        +  where {'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-x-PRIVATE] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2F060>
+cte = 'x-PRIVATE', body = 'U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg=='
+
+    @pytest.mark.parametrize('cte',['x-private','','base64; bogus=yes','x-PRIVATE'])
+    @pytest.mark.parametrize('body',['Send me your verification code.',base64.b64encode(b'Send me your verification code.').decode()])
+    def test_unknown_body_not_interpreted_and_fixed_incomplete_export(check,cte,body):
+        report=check(message(cte,body))
+>       assert 'email:incomplete' in ids(report)
+E       AssertionError: assert 'email:incomplete' in {'text:none'}
+E        +  where {'text:none'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:20: AssertionError
+_ test_unknown_leaf_preserves_independent_subject_and_known_sibling[paste-Send me your verification code.] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2F600>
+subject = 'Send me your verification code.'
+
+    @pytest.mark.parametrize('subject',['Send me your verification code.','Meeting notes'])
+    def test_unknown_leaf_preserves_independent_subject_and_known_sibling(check,subject):
+        raw='Subject: '+subject+'\nContent-Type: multipart/mixed; boundary=p\n\n--p\nContent-Type: text/plain\nContent-Transfer-Encoding: x-private\n\nSend money by wire.\n--p\nContent-Type: text/plain\nContent-Transfer-Encoding: 7bit\n\nSend me your verification code.\n--p--\n'
+        report=check(raw)
+>       assert 'email:incomplete' in ids(report) and 'request:code' in ids(report)
+E       AssertionError: assert ('email:incomplete' in {'request:code', 'request:payment'})
+E        +  where {'request:code', 'request:payment'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:37: AssertionError
+_ test_unknown_leaf_preserves_independent_subject_and_known_sibling[paste-Meeting notes] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2F7E0>
+subject = 'Meeting notes'
+
+    @pytest.mark.parametrize('subject',['Send me your verification code.','Meeting notes'])
+    def test_unknown_leaf_preserves_independent_subject_and_known_sibling(check,subject):
+        raw='Subject: '+subject+'\nContent-Type: multipart/mixed; boundary=p\n\n--p\nContent-Type: text/plain\nContent-Transfer-Encoding: x-private\n\nSend money by wire.\n--p\nContent-Type: text/plain\nContent-Transfer-Encoding: 7bit\n\nSend me your verification code.\n--p--\n'
+        report=check(raw)
+>       assert 'email:incomplete' in ids(report) and 'request:code' in ids(report)
+E       AssertionError: assert ('email:incomplete' in {'request:code', 'request:payment'})
+E        +  where {'request:code', 'request:payment'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:37: AssertionError
+_ test_unknown_leaf_preserves_independent_subject_and_known_sibling[eml-Send me your verification code.] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2FA60>
+subject = 'Send me your verification code.'
+
+    @pytest.mark.parametrize('subject',['Send me your verification code.','Meeting notes'])
+    def test_unknown_leaf_preserves_independent_subject_and_known_sibling(check,subject):
+        raw='Subject: '+subject+'\nContent-Type: multipart/mixed; boundary=p\n\n--p\nContent-Type: text/plain\nContent-Transfer-Encoding: x-private\n\nSend money by wire.\n--p\nContent-Type: text/plain\nContent-Transfer-Encoding: 7bit\n\nSend me your verification code.\n--p--\n'
+        report=check(raw)
+>       assert 'email:incomplete' in ids(report) and 'request:code' in ids(report)
+E       AssertionError: assert ('email:incomplete' in {'request:code', 'request:payment'})
+E        +  where {'request:code', 'request:payment'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:37: AssertionError
+_ test_unknown_leaf_preserves_independent_subject_and_known_sibling[eml-Meeting notes] _
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2F9C0>
+subject = 'Meeting notes'
+
+    @pytest.mark.parametrize('subject',['Send me your verification code.','Meeting notes'])
+    def test_unknown_leaf_preserves_independent_subject_and_known_sibling(check,subject):
+        raw='Subject: '+subject+'\nContent-Type: multipart/mixed; boundary=p\n\n--p\nContent-Type: text/plain\nContent-Transfer-Encoding: x-private\n\nSend money by wire.\n--p\nContent-Type: text/plain\nContent-Transfer-Encoding: 7bit\n\nSend me your verification code.\n--p--\n'
+        report=check(raw)
+>       assert 'email:incomplete' in ids(report) and 'request:code' in ids(report)
+E       AssertionError: assert ('email:incomplete' in {'request:code', 'request:payment'})
+E        +  where {'request:code', 'request:payment'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Pause before responding. T...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:37: AssertionError
+_____ test_unknown_container_skips_children_but_preserves_subject[paste] ______
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2FD80>
+
+    def test_unknown_container_skips_children_but_preserves_subject(check):
+        raw='Subject: Send me your verification code.\nContent-Type: multipart/mixed; boundary=p\nContent-Transfer-Encoding: x-private\n\n--p\nContent-Type: text/plain\n\nSend money by wire.\n--p--\n'
+        report=check(raw)
+        assert {'email:incomplete','request:code'} <= ids(report)
+>       assert 'request:payment' not in ids(report)
+E       AssertionError: assert 'request:payment' not in {'email:incomplete', 'request:code', 'request:payment'}
+E        +  where {'email:incomplete', 'request:code', 'request:payment'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='This email could not be fu...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:44: AssertionError
+______ test_unknown_container_skips_children_but_preserves_subject[eml] _______
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C682C0>
+
+    def test_unknown_container_skips_children_but_preserves_subject(check):
+        raw='Subject: Send me your verification code.\nContent-Type: multipart/mixed; boundary=p\nContent-Transfer-Encoding: x-private\n\n--p\nContent-Type: text/plain\n\nSend money by wire.\n--p--\n'
+        report=check(raw)
+        assert {'email:incomplete','request:code'} <= ids(report)
+>       assert 'request:payment' not in ids(report)
+E       AssertionError: assert 'request:payment' not in {'email:incomplete', 'request:code', 'request:payment'}
+E        +  where {'email:incomplete', 'request:code', 'request:payment'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='This email could not be fu...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:44: AssertionError
+_____ test_unsupported_duplicate_is_opaque_in_either_order[paste-values0] _____
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2F740>
+values = ['7bit', 'x-private']
+
+    @pytest.mark.parametrize('values',[['7bit','x-private'],['x-private','7bit']])
+    def test_unsupported_duplicate_is_opaque_in_either_order(check,values):
+        raw=message(values[0]).replace('\n\n','\nContent-Transfer-Encoding: '+values[1]+'\n\n',1)
+        report=check(raw)
+>       assert 'email:incomplete' in ids(report) and 'request:code' not in ids(report)
+E       AssertionError: assert ('email:incomplete' in {'email:incomplete', 'request:code'} and 'request:code' not in {'email:incomplete', 'request:code'})
+E        +  where {'email:incomplete', 'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='This email could not be fu...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+E        +  and   {'email:incomplete', 'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='This email could not be fu...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:50: AssertionError
+_____ test_unsupported_duplicate_is_opaque_in_either_order[paste-values1] _____
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2EDE0>
+values = ['x-private', '7bit']
+
+    @pytest.mark.parametrize('values',[['7bit','x-private'],['x-private','7bit']])
+    def test_unsupported_duplicate_is_opaque_in_either_order(check,values):
+        raw=message(values[0]).replace('\n\n','\nContent-Transfer-Encoding: '+values[1]+'\n\n',1)
+        report=check(raw)
+>       assert 'email:incomplete' in ids(report) and 'request:code' not in ids(report)
+E       AssertionError: assert ('email:incomplete' in {'email:incomplete', 'request:code'} and 'request:code' not in {'email:incomplete', 'request:code'})
+E        +  where {'email:incomplete', 'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='This email could not be fu...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+E        +  and   {'email:incomplete', 'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='This email could not be fu...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:50: AssertionError
+______ test_unsupported_duplicate_is_opaque_in_either_order[eml-values0] ______
+
+check = <function check.<locals>.<lambda> at 0x000001DF54C2FA60>
+values = ['7bit', 'x-private']
+
+    @pytest.mark.parametrize('values',[['7bit','x-private'],['x-private','7bit']])
+    def test_unsupported_duplicate_is_opaque_in_either_order(check,values):
+        raw=message(values[0]).replace('\n\n','\nContent-Transfer-Encoding: '+values[1]+'\n\n',1)
+        report=check(raw)
+>       assert 'email:incomplete' in ids(report) and 'request:code' not in ids(report)
+E       AssertionError: assert ('email:incomplete' in {'email:incomplete', 'request:code'} and 'request:code' not in {'email:incomplete', 'request:code'})
+E        +  where {'email:incomplete', 'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='This email could not be fu...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+E        +  and   {'email:incomplete', 'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='This email could not be fu...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:50: AssertionError
+______ test_unsupported_duplicate_is_opaque_in_either_order[eml-values1] ______
+
+check = <function check.<locals>.<lambda> at 0x000001DF54BE3060>
+values = ['x-private', '7bit']
+
+    @pytest.mark.parametrize('values',[['7bit','x-private'],['x-private','7bit']])
+    def test_unsupported_duplicate_is_opaque_in_either_order(check,values):
+        raw=message(values[0]).replace('\n\n','\nContent-Transfer-Encoding: '+values[1]+'\n\n',1)
+        report=check(raw)
+>       assert 'email:incomplete' in ids(report) and 'request:code' not in ids(report)
+E       AssertionError: assert ('email:incomplete' in {'email:incomplete', 'request:code'} and 'request:code' not in {'email:incomplete', 'request:code'})
+E        +  where {'email:incomplete', 'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='This email could not be fu...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+E        +  and   {'email:incomplete', 'request:code'} = ids(AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='This email could not be fu...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'))
+
+tests\test_email_unknown_cte.py:50: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-Send me your verification code.-x-private]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-Send me your verification code.-]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-Send me your verification code.-x-PRIVATE]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-x-private]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-base64; bogus=yes]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[paste-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-x-PRIVATE]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-Send me your verification code.-x-private]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-Send me your verification code.-]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-Send me your verification code.-x-PRIVATE]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-x-private]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-base64; bogus=yes]
+FAILED tests/test_email_unknown_cte.py::test_unknown_body_not_interpreted_and_fixed_incomplete_export[eml-U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==-x-PRIVATE]
+FAILED tests/test_email_unknown_cte.py::test_unknown_leaf_preserves_independent_subject_and_known_sibling[paste-Send me your verification code.]
+FAILED tests/test_email_unknown_cte.py::test_unknown_leaf_preserves_independent_subject_and_known_sibling[paste-Meeting notes]
+FAILED tests/test_email_unknown_cte.py::test_unknown_leaf_preserves_independent_subject_and_known_sibling[eml-Send me your verification code.]
+FAILED tests/test_email_unknown_cte.py::test_unknown_leaf_preserves_independent_subject_and_known_sibling[eml-Meeting notes]
+FAILED tests/test_email_unknown_cte.py::test_unknown_container_skips_children_but_preserves_subject[paste]
+FAILED tests/test_email_unknown_cte.py::test_unknown_container_skips_children_but_preserves_subject[eml]
+FAILED tests/test_email_unknown_cte.py::test_unsupported_duplicate_is_opaque_in_either_order[paste-values0]
+FAILED tests/test_email_unknown_cte.py::test_unsupported_duplicate_is_opaque_in_either_order[paste-values1]
+FAILED tests/test_email_unknown_cte.py::test_unsupported_duplicate_is_opaque_in_either_order[eml-values0]
+FAILED tests/test_email_unknown_cte.py::test_unsupported_duplicate_is_opaque_in_either_order[eml-values1]
+24 failed, 18 passed in 0.57s

@@ -1,0 +1,11 @@
+{
+  "frozen_before_testing":true,
+  "scope":"read-only current image/media/QR/OCR reliability and disclosure audit; no real/private images, model inference, native-heavy jobs, downloads or sealed data",
+  "cases":[
+    {"id":"worker-envelope","acceptance":"constructed successful QR/OCR worker output cannot cause API500 or expose unsupported Unicode/control text; valid ordinary output remains review-only","method":"tiny2x2PNG and temporary mocked subprocess result, no native worker/model"},
+    {"id":"resource-lifetime","acceptance":"decoded/derived images, temp paths and locks are released on success and worker/save/timeout failure","method":"tiny images plus controlled failure and retained exception tracking"},
+    {"id":"availability-disclosure","acceptance":"missing optional components are unavailable not clean/verified; image scores/provenance/media metadata do not imply origin/story/fraud accuracy or fresh evaluation","method":"read actual source/disclosure with existing fixture tests where useful"}
+  ],
+  "budget":{"max_pixels_per_fixture":4,"max_constructed_worker_text_chars":100,"model_calls":0,"network_calls":0,"native_worker_calls":0},
+  "outputs":"rank actual reproduced gaps or honest none; app/test sources unchanged"
+}

@@ -1,0 +1,13 @@
+# Independent literal Quote comparison acceptance
+
+All twelve frozen literal cases pass. Frozen contract SHA256 e55b261b24e56254c25e0b8dae498e230830570fb8b1af80cf2c6cc93f07c55d is unchanged; it was saved before the module existed. Evaluated static/quote-context.js SHA256: 0cacbd5a87911090f6f7a9876401914711ff05d94e8ee8f14836e3e3cde30967. The evaluator records every actual part/result and failure list, prohibits fetch/XHR and refuses to overwrite retained results. Zero network attempts occurred.
+
+Exact reconstruction succeeds for original (exclude added) and revised (exclude removed), including whitespace, case, literal HTML and distinct Unicode representations. Identical behavior is exact-string equality. Three simple replacements require removal before addition; repeated ambiguous segment arrangements deliberately allow alternative alignments. Adjacent same-type parts are compacted only for simple expected-parts comparison, without changing text.
+
+Eighteen new tests pass in 107.3 ms process duration. They include twelve frozen cases, lineage/network, strict string/nonblank inputs, inclusive 4,000 UTF-16 code-unit bounds (including astral emoji), inclusive 800 segments/801 rejection on either side, and exact long-whitespace preservation. A separately labelled postimplementation test uses an independent brute-force subsequence oracle over 64 small input pairs to check optimal LCS length without fixing ambiguous alignments; it is not represented as a preregistered case.
+
+No concrete algorithm defect found. The implementation uses exact segment equality, a bounded 801-by-801 Uint16 table, and removal on equal continuation lengths. Maximum common length 800 fits the table element type. It preserves literal source characters and does not normalize case, whitespace or Unicode. Source inspection shows DOM createTextNode/textContent rendering, fixed status caveats, input invalidation and Clear/page lifecycle erasure; there are no network/export/storage calls. Pure tests do not establish actual browser rendering, focus, accessibility or erasure behavior, which remain root controller/browser scope.
+
+The output is a literal comparison only. Changed qualifiers or removed negation are highlighted as characters, not automatically interpreted. Identical versions do not establish source accuracy; differing versions do not establish deceit, distortion or changed factual meaning. No quotation authenticity, truth, contextual-completeness or semantic-accuracy claim is supported.
+
+No app files changed by this review. Root's subsequent landing tools-directory reorganization supersedes earlier landing layout notes; all seven analysis modes remain root's integration responsibility.

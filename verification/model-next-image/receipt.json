@@ -1,0 +1,374 @@
+{
+  "at_utc": "2026-10-23T22:13:22.172102+00:00",
+  "scope": "metadata only; no model loading, unpickling, image payloads, final/Arena/user examples, training or GPU jobs",
+  "pins": [
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\models\\image_pipeline.json",
+      "bytes": 1305,
+      "sha256": "b2edf1191d09e6fd27fe97187f100de9e1f2cb6158495ceb127435b86d0f3860"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\local-runtime.json",
+      "bytes": 378,
+      "sha256": "40a4427b16d58a1476179b3f6d61c40f0914ff856774570c0e0108e4c1f474b2"
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\ai_detector\\bfree.py",
+      "bytes": 2618,
+      "sha256": "c5a28e11dd93c423a94802fd39fd15b5f55cb83ab74bd1008ebefa1c3f9a13f9"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\README.md",
+      "bytes": 2866,
+      "sha256": "81386f0127828890f1a8a4126470b9bc311592dbb9ba7f601eb1806adb8cde5f"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\weights\\BFREE_dino2reg4\\config.yaml",
+      "bytes": 153,
+      "sha256": "1f0cb4988933de06a4c2427b1b5b015baa18cea7bc5223a9f54ca5e077ec8d40"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\detector-source-research-20261010\\shortlist.json",
+      "bytes": 14930,
+      "sha256": "151669eb3a61f5ba0c65da26bd352386cfb2e56c6d42aebf9645f915d616188a"
+    },
+    {
+      "path": "D:\\TrustLensData\\pe_test_decision_models.json",
+      "bytes": 614,
+      "sha256": "3efa1226aab2fcc8275dd8f8a107cca9e1f4bfcf51c1fa6afed066a7a9c4a6e5"
+    },
+    {
+      "path": "D:\\TrustLensData\\test_allocations.json",
+      "bytes": 2850,
+      "sha256": "b21e2ed06b75d0569d9cd1c331167f07d4c7b1c520bb0dcb103fba0033d5870e"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\openfake-round3-20261007\\test_decision_models.json",
+      "bytes": 1071,
+      "sha256": "ce6f289cdac219688d5c38d1546db46590de0c45e0b871467ef9232cbccc40e5"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-ten-hour-20261012\\test_decision_models.json",
+      "bytes": 210,
+      "sha256": "53c830d0978a8364d87dd43f76b2a50e7ad36f329fdc166a6b35621ed460fd5e"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-generalization-20261013\\data\\admitted.json",
+      "bytes": 76334922,
+      "sha256": "91dc9b6ddca57204b456f0bc2cae8aab1ce1df87e594c593f7b93f2928ca6135"
+    },
+    {
+      "path": "D:\\TrustLensData\\pinned_README.md",
+      "bytes": 15586,
+      "sha256": "eead1cf63953a850e2e0e9b724c6589aea33a75082b24a6ddb4306c385fa26e3"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-local-detail-20261017\\REPORT.md",
+      "bytes": 491,
+      "sha256": "35a743f0f076d5fb6dac224fdbb77e48de888c64b735568eb6096311218b691d"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-robust-local-20261018\\REPORT.md",
+      "bytes": 492,
+      "sha256": "e181a9939fdbf00ec9bf96c1402d771f56571768aeccd347a5f4315aa01344fd"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-adaptation-20261018\\REPORT.md",
+      "bytes": 864,
+      "sha256": "90c7990265eda4933094b8fe122ddee4edd46c4387b5e2dddd798d4b6b59274c"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-complement-20261018\\REPORT.md",
+      "bytes": 570,
+      "sha256": "33c530fc5d119554e5a5407395b9f6036546e0a1e778ac32387f0bcdbc8bfe30"
+    }
+  ],
+  "locks": [
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\openfake-round3-20261007\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\openfake-round3-20261007\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-20261011\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-20261011\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-ten-hour-20261012\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-ten-hour-20261012\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-foundation-repair-20261012\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-foundation-repair-20261012\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-queue-20261013\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-queue-20261013\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-generalization-20261013\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-generalization-20261013\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-local-detail-20261017\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-local-detail-20261017\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-robust-local-20261018\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-robust-local-20261018\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-head-20261018\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-head-20261018\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-semantic-head-20261018\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-semantic-head-20261018\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-complement-20261018\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-complement-20261018\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-adaptation-20261018\\runner.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-adaptation-20261018\\gpu.lock",
+      "exists": true,
+      "acquired": true,
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "unchanged": true
+    }
+  ],
+  "lock_scope": "momentary nonblocking probes, released; not a launch reservation",
+  "stop_checks": [
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\STOP",
+      "exists": false
+    },
+    {
+      "path": "D:\\TrustLensData\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\neighborhood_hacks_20261021\\artifacts\\sprint48\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\neighborhood_hacks_20261021\\artifacts\\sprint48\\image-comparison\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\neighborhood_hacks_20261021\\artifacts\\sprint48\\image-comparison\\v2\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\openfake-round3-20261007\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-20261011\\STOP",
+      "exists": true,
+      "bytes": 381,
+      "sha256": "c19c82e1d90a42542c305e1cc984e7ce16151e0e0925f1f65f4d1d822b212ada"
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-ten-hour-20261012\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-foundation-repair-20261012\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-queue-20261013\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-generalization-20261013\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-local-detail-20261017\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-robust-local-20261018\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-head-20261018\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-semantic-head-20261018\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-complement-20261018\\STOP",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\training-v2-photo-adaptation-20261018\\STOP",
+      "exists": false
+    }
+  ],
+  "ram": {
+    "available_bytes": 2060218368,
+    "total_bytes": 34258804736,
+    "existing_2GiB_reservation_below_half_available_now": false,
+    "import_admission_bytes": 1342177280,
+    "inclusive_abort_bytes": 1879048192,
+    "launch_admitted": false
+  },
+  "gpu_snapshot": "NVIDIA GeForce RTX 3080, 10240 MiB, 2839 MiB, 7 %",
+  "bfree_checkpoint_metadata": {
+    "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\b-free\\weights\\BFREE_dino2reg4\\model_epoch_best.pth",
+    "bytes": 346171370,
+    "weight_hash_verified": false,
+    "required_LICENSE_txt_present": false
+  },
+  "candidate_eligible": null,
+  "scores": null
+}

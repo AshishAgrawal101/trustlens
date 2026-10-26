@@ -1,0 +1,16 @@
+{
+  "scope": "Root-authored constructed diagnostic cases frozen before predictions; rules already inspected. Not independent or population accuracy. No tuning from these results.",
+  "metrics": "Count unexpected positive request evidence on negative cases, missing required request evidence, unresolved risk labels, and required action presence. Record every output and latency; memory is traced Python allocations after imports, not process RSS or image runtime memory.",
+  "cases": [
+    {"id":"school", "text":"The school office asks me to check tomorrow's timetable.", "required":[], "negative":true, "action":"Verify through a separate route"},
+    {"id":"repair", "text":"Send $75 for the repair invoice.", "required":["payment"], "negative":false, "action":"Pause the payment"},
+    {"id":"source", "text":"Please send the source code for the neighborhood website.", "required":[], "negative":true, "action":"Verify through a separate route"},
+    {"id":"notification", "text":"Your verification code is 492016. Never share it with anyone.", "required":[], "negative":true, "action":"Verify through a separate route"},
+    {"id":"code", "text":"Read me the verification code so I can unlock your account.", "required":["code"], "negative":false, "action":"Keep security codes and passwords private"},
+    {"id":"remote", "text":"Install AnyDesk and give me access to your computer.", "required":["remote"], "negative":false, "action":"Keep control of your device"},
+    {"id":"warning", "text":"If a caller asks for a login code, end the call and contact the organization yourself.", "required":[], "negative":true, "action":"Verify through a separate route"},
+    {"id":"safe-account", "text":"Transfer your savings to a safe account immediately.", "required":["payment"], "negative":false, "action":"Pause the payment"},
+    {"id":"appointment", "text":"Your appliance repair appointment is confirmed for Tuesday at noon.", "required":[], "negative":true, "action":"Verify through a separate route"},
+    {"id":"new-request", "text":"Never share codes with strangers. Now send me your login code.", "required":["code"], "negative":false, "action":"Keep security codes and passwords private"}
+  ]
+}

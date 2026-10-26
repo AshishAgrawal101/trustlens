@@ -1,0 +1,10 @@
+{
+  "app/models.py": {
+    "before_sha256": "6a33a9420b7d515d5da3631221739dcc2836208cd9509dc696e0c3b35da0429a",
+    "after_sha256": "05f50883331dfd663e648a56656a31d5568f73a4aa1bdef72dcc10b6f8182a85"
+  },
+  "static/app.js": {
+    "before_sha256": "5b1cd1a3948e12256a915a6a113556a4bd0530e83d44888022a5f3581693815c",
+    "after_sha256": "aaf1d14cf077e9488f2f59aea8f2fa2786480c754a5772f977171eb19ada2859"
+  }
+}

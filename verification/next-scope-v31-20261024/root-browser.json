@@ -1,0 +1,40 @@
+{
+  "constructed": true,
+  "desktop": {
+    "width": 320,
+    "dialogClient": 256,
+    "dialogScroll": 256,
+    "adsButtonWidth": 212,
+    "adsButtonHeight": 60.375,
+    "keyboardStart": true,
+    "completedText": "×\n\nTHE SECOND-LOOK PRACTICE\n\nPractice a second look.\n\nTen constructed scenarios across requests, sources, images, quotations, numbers and advertising claims. Practice the next check; this is not an assessment of your ability or a real-message benchmark.\n\nShort on time? Try the two advertising situations. Starting this replaces your practice choices.\n\nPractice ads & endorsements · 2 situations\n\n2 of 2 situations reviewed\n\nKeep these checks with you.\n\nChoosing an answer does not verify a real situation. Review the original evidence and leave uncertainty visible.\n\nWhen available, Revisit shows scenarios where you chose a different next check. Closing Practice clears your choices.\n\nAds · examine the comparison\nEndorsements · separate opinion and measurement\nRevisit these scenarios\nRestart all scenarios\nBack to the checker",
+    "missedRetryCount": 1,
+    "explicitAllRestart": 10,
+    "close": {
+      "open": false,
+      "choices": 0,
+      "focus": "practice-open"
+    }
+  },
+  "pocket": {
+    "origin": "http://127.0.0.1:8830/phone/",
+    "cache": "trustlens-pocket-v27",
+    "serverStopped": true,
+    "width": 320,
+    "client": 305,
+    "scroll": 305,
+    "keyboardStart": true,
+    "twoCasesInOrder": true,
+    "feedbackFocus": "practice-feedback",
+    "repeat": "Constructed scenario 1 of 2 · practice, not a real message",
+    "allStart": "Constructed scenario 1 of 12 · practice, not a real message",
+    "afterCloseReload": {
+      "sessionHidden": true,
+      "options": 0,
+      "text": "",
+      "feedback": "",
+      "message": ""
+    }
+  },
+  "physicalPhoneTested": false
+}

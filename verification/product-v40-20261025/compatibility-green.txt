@@ -1,0 +1,46 @@
+✔ independent frozen UTF16 oracle has immutable lineage and unique rows (1.9822ms)
+✔ independent exact page oracle zero (0.957ms)
+✔ independent exact page oracle one (1.0779ms)
+✔ independent exact page oracle 5-matches-page-0 (0.1775ms)
+✔ independent exact page oracle 6-matches-page-0 (0.2676ms)
+✔ independent exact page oracle 6-matches-page-1 (0.1571ms)
+✔ independent exact page oracle 10-matches-page-0 (0.2569ms)
+✔ independent exact page oracle 10-matches-page-1 (0.1741ms)
+✔ independent exact page oracle 11-matches-page-0 (0.1575ms)
+✔ independent exact page oracle 11-matches-page-1 (0.2189ms)
+✔ independent exact page oracle 11-matches-page-2 (0.1143ms)
+✔ independent exact page oracle nonoverlap (0.0915ms)
+✔ independent exact page oracle case-sensitive (0.0849ms)
+✔ independent exact page oracle whitespace-sensitive (0.1407ms)
+✔ independent exact page oracle markup-literal-page-1 (0.203ms)
+✔ independent exact page oracle unicode-canonical-not-normalized (0.094ms)
+✔ independent exact page oracle astral-utf16-offsets (0.0829ms)
+✔ independent exact page oracle surrogate-context-page-1 (0.1642ms)
+✔ independent exact page oracle maximum-first (1.461ms)
+✔ independent exact page oracle maximum-last (0.6718ms)
+✔ all invalid and nonexistent pages reject one fixed private error (1.2077ms)
+✔ old twoargument outputs remain exactly equal to actual v27 module (3.3685ms)
+✔ maximum lastpage calculation stays bounded without output inflation (1.5902ms)
+✔ four ordered typed buttons and hint expose jumps; pure matcher stays byte unchanged (2.7588ms)
+✔ eleven matches jump to actual last ordinal then first, preserve drafts and formatting, focus range at ends (8.9928ms)
+✔ maximum passage last5999 renders29996-30000 then Previous and Next remain correct (9.4291ms)
+✔ all invalidation paths disable all four and stale jumps cannot revive output (21.837ms)
+✔ zero and short match sets hide navigation and disable all four (6.3757ms)
+✔ frozen v32 missing jump controls return real null and initially disabled Find enables (7.8639ms)
+✔ legacy explicit Find and Previous/Next navigate true pages and endpoint focus without I/O (3.5981ms)
+✔ legacy edits native invalid Clear and lifecycle reset pages and stale navigation stays inert (16.2681ms)
+✔ two-argument results and default page remain exactly compatible with frozen outputs (3.1808ms)
+✔ all pages retain exact offsets and literal windows with at most five matches (0.8658ms)
+✔ later-page surrogate boundaries and the maximum final page preserve existing window limits (1.8803ms)
+✔ page validation is bounded integer-only and missing pages reject with input-free errors (1.1838ms)
+✔ zero one and five matches do not offer unavailable page navigation (11.4193ms)
+✔ explicit navigation shows true ranges and ordinals with focus and disabled ends, retaining authenticity caveats (3.2122ms)
+✔ every invalidation erases paging and formatting while next Find starts at first match (19.0387ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 163.9093

@@ -1,0 +1,11 @@
+{
+  "body": {
+    "url": "\thttps://example.org/private",
+    "known_website": "﻿https://reference.example/"
+  },
+  "addressKept": true,
+  "referenceKept": true,
+  "errorFocused": true,
+  "resultHidden": true,
+  "error": "Enter an address without hidden control or formatting characters."
+}

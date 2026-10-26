@@ -1,0 +1,225 @@
+{
+  "at_utc": 1792771737.4673338,
+  "root_authorization": "Distinct native C2PA-only check on SAME four hash-verified admitted development originals. Preserve STOPs/locks, 1.75 GiB inclusive/RAM guard, zero visual model/GPU/network/fitting/final data; unavailable on transport errors. Not a model retry.",
+  "cohort": [
+    {
+      "id": "coco2017:100202",
+      "official_split": "train",
+      "label": 0,
+      "prompt": "",
+      "generator": "",
+      "real_source": "coco2017",
+      "image_type": "photograph",
+      "category": "real:coco2017",
+      "dataset_license": "http://creativecommons.org/licenses/by/2.0/",
+      "original_landing_url": "http://farm3.staticflickr.com/2303/2245897841_c68715faae_z.jpg",
+      "collection_role": "whole-source development holdout, never fitting",
+      "original_bytes_sha256": "25049cc76fad218a900e30686ff522ca396f5d61d4931f75d7af3887d3e0ff98",
+      "width": 500,
+      "height": 375,
+      "pixel_sha256": "d0f7ab4248b900037dfafc1d4e2a881749cef7b8cebb8d5023dbf2ae8807bffb",
+      "phash": "3c8a4343ed7ca293",
+      "image_path": "images/25/25049cc76fad218a900e30686ff522ca396f5d61d4931f75d7af3887d3e0ff98.jpg",
+      "group": "34a21d9f01750e34bc2a0f615973afd2d88ead2989f475c3002b36388cee1f4b",
+      "partition": "validation",
+      "sampling_family": "coco2017",
+      "absolute_image_path": "D:\\TrustLensData\\images\\25\\25049cc76fad218a900e30686ff522ca396f5d61d4931f75d7af3887d3e0ff98.jpg",
+      "file_exists_metadata_only": true,
+      "original_digest_verified_now": false,
+      "license_scope": "http://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "id": "coco2017:100331",
+      "official_split": "train",
+      "label": 0,
+      "prompt": "",
+      "generator": "",
+      "real_source": "coco2017",
+      "image_type": "photograph",
+      "category": "real:coco2017",
+      "dataset_license": "http://creativecommons.org/licenses/by/2.0/",
+      "original_landing_url": "http://farm8.staticflickr.com/7442/9240116107_348ab2dbbc_z.jpg",
+      "collection_role": "whole-source development holdout, never fitting",
+      "original_bytes_sha256": "83924cad55f6b7ad33a222e759357a7f14b154b67790d8ef17b7713db9fc56c6",
+      "width": 640,
+      "height": 480,
+      "pixel_sha256": "ef0d76bf830abcfa8d9ca15169d87e5fd9010e773582a66bb366016856229f7d",
+      "phash": "24248cb43d8be2df",
+      "image_path": "images/83/83924cad55f6b7ad33a222e759357a7f14b154b67790d8ef17b7713db9fc56c6.jpg",
+      "group": "df0d66ba43589a52c40640da5aae96c0fbe89d9bfb27896a3146519b4d26c2da",
+      "partition": "validation",
+      "sampling_family": "coco2017",
+      "absolute_image_path": "D:\\TrustLensData\\images\\83\\83924cad55f6b7ad33a222e759357a7f14b154b67790d8ef17b7713db9fc56c6.jpg",
+      "file_exists_metadata_only": true,
+      "original_digest_verified_now": false,
+      "license_scope": "http://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "id": "core/train-00001-of-00032-00014.parquet:openfake-00abb50acfb1f09e80ed6d6d2203d68e",
+      "row": 3250,
+      "official_split": "train",
+      "label": 1,
+      "prompt": "A photograph captures two women walking on a bustling New York City street, one holding a pink shopping bag while the other carries a black one, with a food truck and parked cars in the background.",
+      "generator": "imagen-4.0",
+      "real_source": "",
+      "published_image_sha256": "64615e8239bafe5ac65f147ccc860101f5d3b0bd9b98bc6abd48c29e4f3e2afe",
+      "image_type": "base",
+      "release_date": "2025-05",
+      "category": "ai:imagen-4.0",
+      "original_bytes_sha256": "64615e8239bafe5ac65f147ccc860101f5d3b0bd9b98bc6abd48c29e4f3e2afe",
+      "width": 1280,
+      "height": 896,
+      "pixel_sha256": "7000f4d5363022c00793e52bc1567e40e1e77be982a5b5d60754601e716e4014",
+      "phash": "708bfc06a8f33ac4",
+      "image_path": "images/64/64615e8239bafe5ac65f147ccc860101f5d3b0bd9b98bc6abd48c29e4f3e2afe.png",
+      "group": "6aa0c102a905e62b1888f5f7a9bb74f7179e6326b9c738905c4148540906d271",
+      "partition": "validation",
+      "sampling_family": "imagen",
+      "dataset_license": "existing pinned OpenFake admission",
+      "absolute_image_path": "D:\\TrustLensData\\images\\64\\64615e8239bafe5ac65f147ccc860101f5d3b0bd9b98bc6abd48c29e4f3e2afe.png",
+      "file_exists_metadata_only": true,
+      "original_digest_verified_now": false,
+      "license_scope": "CC-BY-NC-4.0 per locally pinned OpenFake README; underlying image rights not independently reverified"
+    },
+    {
+      "id": "core/train-00001-of-00032-00014.parquet:openfake-05b2417ac63c4a0213fa683edaf4c2e9",
+      "row": 2644,
+      "official_split": "train",
+      "label": 1,
+      "prompt": "This high-contrast black-and-white close-up captures a human eye gazing upward, with long eyelashes and a glossy tear or moisture visible on the lower eyelid. The surrounding skin is textured and shadowed, emphasizing the contours of the nose and cheekbone, while scattered droplets\u2014possibly sweat or water\u2014glisten along the bridge of the nose and cheek. The composition is tightly framed, focusing almost entirely on the facial features, with deep shadows dominating the right side and soft highlights accentuating the eye and moisture. No text or identifiable branding appears; the style evokes dramatic, emotive portraiture through stark chiaroscuro lighting and grainy film-like texture.",
+      "generator": "sd-turbo",
+      "real_source": "",
+      "published_image_sha256": "ef274205aa44259c9b2309affd75a3057fcb9d37493bcb9852737dad1ddcb680",
+      "image_type": "Base",
+      "release_date": "2023-11-27",
+      "category": "ai:sd-turbo",
+      "original_bytes_sha256": "ef274205aa44259c9b2309affd75a3057fcb9d37493bcb9852737dad1ddcb680",
+      "width": 512,
+      "height": 512,
+      "pixel_sha256": "32c672e9a45359b6acaa2642d98e64305d7b09e8c2c5c81e996b7ffe9d6186fc",
+      "phash": "4ff1b0138e1cb0f8",
+      "image_path": "images/ef/ef274205aa44259c9b2309affd75a3057fcb9d37493bcb9852737dad1ddcb680.jpg",
+      "group": "b284feb27ded79c13263b05774ec9cb3b6fbd8b15b0be4ff3191a44adaba3ddc",
+      "partition": "validation",
+      "sampling_family": "sd-turbo",
+      "dataset_license": "existing pinned OpenFake admission",
+      "absolute_image_path": "D:\\TrustLensData\\images\\ef\\ef274205aa44259c9b2309affd75a3057fcb9d37493bcb9852737dad1ddcb680.jpg",
+      "file_exists_metadata_only": true,
+      "original_digest_verified_now": false,
+      "license_scope": "CC-BY-NC-4.0 per locally pinned OpenFake README; underlying image rights not independently reverified"
+    }
+  ],
+  "pins": [
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\provenance.py",
+      "sha256": "d2c4769e67c48a772a39d4b221d3a32ba3d665880594a1c7cbdca5cbf44e4903",
+      "bytes": 5239
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\analyzers\\content_credentials_worker.py",
+      "sha256": "12d4737a9608255d5b4d06b7ca93571cc8c0a28bc1185b8717944ee3b22c2c65",
+      "bytes": 6847
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Scripts\\python.exe",
+      "sha256": "6285074735b3738a051bccbe944679268cf9b988832b4cfd1090752eb082f7e2",
+      "bytes": 276944
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\pyvenv.cfg",
+      "sha256": "354492c0f5f8648203d31aac2c76009d26fa368b08ef3b739a5217f5f55a0d73",
+      "bytes": 395
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\verification\\professional-images\\c2pa_attempt.py",
+      "sha256": "6243cf0d47ee77ea2ad1178c28eb0f10995de754f7f891aaf5558632cb3e2b97",
+      "bytes": 5970
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\trust\\c2pa-trust-list.pem",
+      "sha256": "75cacc98b79ecac33713c7ecfb58d4a0ef383f3c1f886e7409f9e37e8664aea5",
+      "bytes": 37911
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\trust\\interim-allowed.txt",
+      "sha256": "3597b20c9c20a0daadc7fab0d8c63534bd333ec6a715ef7117c7a4588caa15bb",
+      "bytes": 8237
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\trust\\interim-anchors.pem",
+      "sha256": "db57e50b9bd4e4c786cbb91f38fd85e2af6a9d5412438a8cddcc42688df07ae5",
+      "bytes": 44078
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\trust\\interim-config.txt",
+      "sha256": "1044c30a906b0c9cbe28b4a4c0002ca56a718f0ae22b9af83238543a07d0e718",
+      "bytes": 258
+    },
+    {
+      "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-development-20261023\\app\\trust\\snapshot.json",
+      "sha256": "cae78f2d243611a9eb7e02946d7173fd57f9398dbbcc89bd94fd94474cde5905",
+      "bytes": 1042
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Lib\\site-packages\\c2pa\\build.py",
+      "sha256": "dbbbac81a9fde4d19e2a93a4899a81c9177d288c440995b66e6d181754a365b3",
+      "bytes": 4278
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Lib\\site-packages\\c2pa\\c2pa.py",
+      "sha256": "43e0e1276faf612c7962fa8c566c83f25e352ada77f65d49330a128198ecd23e",
+      "bytes": 177438
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Lib\\site-packages\\c2pa\\lib.py",
+      "sha256": "f84778624883bc29edcf60583d4651fd557552f3b8b039afb0ad9b9785ddf233",
+      "bytes": 13343
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Lib\\site-packages\\c2pa\\__init__.py",
+      "sha256": "c85910b58402cf02a3d97ad3ff41bdd1cd740dda6732810e27ebb88f2f1d3dfc",
+      "bytes": 1411
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Lib\\site-packages\\c2pa\\libs\\c2pa_c.d",
+      "sha256": "206120897bd7881b54228f5af1995b75c9430cf8bd2f1f13268b387f09a8b812",
+      "bytes": 9737
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Lib\\site-packages\\c2pa\\libs\\c2pa_c.dll",
+      "sha256": "e40253822e924c7e0735581f0f4c0ee150a9aa8fa98a9eb9c60b94c77a11c66e",
+      "bytes": 23919104
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Lib\\site-packages\\c2pa\\libs\\c2pa_c.dll.exp",
+      "sha256": "ab843c1a9c80e12795d50f5dad04e520edbf32d7b2e0e7b672dbb9179284dc59",
+      "bytes": 12942
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Lib\\site-packages\\c2pa\\libs\\c2pa_c.dll.lib",
+      "sha256": "12985340e65aeaea2a4b882f54dfc6268e95edbfc50b47e89bfae97324b48b2d",
+      "bytes": 21512
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Lib\\site-packages\\c2pa\\libs\\c2pa_c.lib",
+      "sha256": "320507d5df8e0e975fc11c23eb6628a4260a4eba368db934a1649254f3f33847",
+      "bytes": 283223962
+    },
+    {
+      "path": "C:\\Users\\round\\Documents\\Codex\\2026-10-05\\con\\work\\credentials-venv\\Lib\\site-packages\\c2pa\\libs\\c2pa_c.pdb",
+      "sha256": "5f52d67f1ff4aa953ef4f024891348a81b76df34c334e87985386a8dca49611c",
+      "bytes": 9474048
+    }
+  ],
+  "entry": "production content_credentials_worker.main on bytes stdin; exact production verifier and trust snapshots; read_credentials subprocess wrapper not exercised",
+  "limits": {
+    "seconds": 60,
+    "per_asset_production_transport_seconds": 15,
+    "inclusive_abort_bytes": 1879048192,
+    "import_admission_with_reserve_bytes": 1342177280,
+    "reserve_bytes": 268435456,
+    "external_network": false,
+    "gpu": false
+  },
+  "visual_results": null
+}

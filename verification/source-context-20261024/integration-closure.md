@@ -1,0 +1,11 @@
+# Source context integration checkpoint
+
+Exact source finder is integrated in Quote & context with a separate optional form. Revised is required only for comparison. Query/source edits, example, Clear, source-only Clear and page lifecycle invalidate dependent outputs. The stale example result found independently by two reviewers was reproduced by a failing regression and fixed. Context-edge ellipses explain cropped windows; no-hit hides that note. Source text renders through text nodes and mark elements, never source HTML or links.
+
+Native Edge browser observed two exact matches with Revised empty, the scoped labels, a no-hit result, internal anchor keyboard navigation, and example erasure. Fresh tab 1793492838 was used after the prior tab debugger detached. At 320px viewport: document scroll width305, viewport320, result width231, two marks, no horizontal overflow. browser-320.png records the actual result. Viewport restored afterward. Earlier browser-match.png records contextual matches. No upload was attempted.
+
+Unicode presence notice integrated after both controllers in div status regions. Actual native browser supplied one constructed U+200B in Revised, compared, observed the named count and unchanged literal diff, then loaded the constructed example and observed result/notice removal. browser-notice.png records actual paint. Finite character presence is not an intent/safety verdict; exact comparison schemas and input content remain unchanged.
+
+Full source checkpoint:968Python passes with nativeOCR enabled, zero skips (pytest-checkpoint.xml);382JavaScript passes, zero skips (node-with-formatting.txt). The Python run collected the18new malformed-email regressions after their file was created; agent separately reports166focused email tests. Browser live server still requires restart to serve updated Python email module; ASGI route regressions exercised current source directly. No extracted v16 archive has yet been produced. Prior v15 archive remains the last portable checkpoint.
+
+Active2–3hour improvement goal remains open. No model training, promotion, new accuracy claim, phone validation, private-image input, publishing or external content transmission occurred.

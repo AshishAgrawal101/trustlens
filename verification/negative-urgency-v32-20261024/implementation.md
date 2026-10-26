@@ -1,0 +1,15 @@
+# Exact negative-urgency clause closure
+
+Owned only app/analyzers/text.py, new tests/test_negative_urgency_context.py and this newexclusive evidencefolder. Acceptance18pairedcases frozenbeforeedit SHAe27e5cadc70be99a9d65a8bb3ba66b988163d5c7fe5f54ee90d728c6ec0fc425. TDD12failed12passed; new24tests plus targeted existing negation/passive/refusal/context/Unicode/email/guidance/API suites:734passed2.27s, zero skips (red.txt/green.txt).
+
+Guard applies ONLY to literal urgent occurrence whose fullsentenceprefix is existinghorizontalwhitespace + This is not + horizontalwhitespace, and whose remainingclause starts horizontalwhitespace then comma/semicolon/end. Caseinsensitive/previousintra-letterSHYnormalization retained. The normalized wording view retains punctuation; anyquestionmark in its contiguous .!?termination run rejects context (including SHYquestion, !?, comma-endingquestion). No contractions/nonadjacentqualifier/quotation/double-negative/generalgrammar inference. Hardlinefragments are not joined. No RULES/weights/scoring/parser/report/model/language edits.
+
+Selectedclause emits context:negative_urgency unknown/info/defaultweight0 with accurateoriginalclauseexcerpt and explicitnot-senderverification/not-safety wording. It does NOT set a negatedactionstate or suppress laterurgency/code. Existingnormalization helpers preserve originalSHY/Hspace characters; no sanitization/rewriting. Actualtext/call/emailpaste/EML integrations keep livecodehigh/nullrisk/model_ranfalse and inputfreeexports.
+
+Strongmechanicalproof: currenttext.py minus EXACTaddedguard restores ENTIREv31textmodule bytes. Therefore allothermodule source, oldRULES/weights/branches/copy unchanged; mechanical-diff.json pins archive/modulehashes and added-guard.txt. Oldv31contract/SHA/before-results verified byteequal to v31ZIP; archiveunchanged. No otherappsource edited by this worker.
+
+Separate after-v31-probes-regression.json replays fresh8across4modes. Only directnonurgent and nonurgent+livecode reports change asselected; allother6fullreports exactlyequal oldv31currentreports. Sixauthoredexpectationsnowmatch versus4before; reported-pressureadvice and nonadjacentnot-an-urgent stillfalsewarn. This is a targetedregressiondifference afterusingdevelopmentprobes, not populationaccuracy/independentbenchmark. Oldbefore/nulls preserved, not rewritten. acceptance-after.json retains exactnewguard evidence for all18acceptancecases.
+
+Residual: unknownsender/intent/safety remain; unsupported wording/contractions/extraqualifiers/embeddednegation/questions, reportedurgency and completedquotedrequest contexts retain existing behavior. Context marker is one bounded linguisticobservation, not languagedetection/credibility/modelagreement. No browser/package/cache/docs or externalcontent changes.
+
+Root-requested simplification removes redundant original-boundary mapping only. All18saved acceptance evidence outputs remain exact, including question/SHY controls; 734targeted tests rerun green. Existing source-excerpt mapping still restores original characters.

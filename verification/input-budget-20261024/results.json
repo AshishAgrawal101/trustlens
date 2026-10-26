@@ -1,0 +1,63 @@
+{
+  "contract_sha256": "4307095811a81ec222e12bbfcb2b837b4a96b10bd702e7ae2a1bc1ff14dc44c7",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "results": [
+    {
+      "id": "email-plain-240k",
+      "analysis_wall_seconds": 0.08335770003031939,
+      "traced_peak_bytes": 2522790,
+      "status": "report",
+      "risk": "low",
+      "evidence_count": 1,
+      "incomplete": false,
+      "process_wall_seconds": 0.5038942999672145
+    },
+    {
+      "id": "email-parts-1000",
+      "analysis_wall_seconds": 1.4947482999414206,
+      "traced_peak_bytes": 1151557,
+      "status": "report",
+      "risk": "low",
+      "evidence_count": 1,
+      "incomplete": false,
+      "process_wall_seconds": 1.8869216999737546
+    },
+    {
+      "id": "email-parts-6000",
+      "status": "timeout",
+      "limit_seconds": 10,
+      "process_wall_seconds": 10.022388000041246
+    },
+    {
+      "id": "email-headers-5000",
+      "analysis_wall_seconds": 0.1384083000011742,
+      "traced_peak_bytes": 2374005,
+      "status": "report",
+      "risk": "low",
+      "evidence_count": 1,
+      "incomplete": false,
+      "process_wall_seconds": 0.5281668999232352
+    },
+    {
+      "id": "email-nested-120",
+      "analysis_wall_seconds": 0.5173647999763489,
+      "traced_peak_bytes": 2849691,
+      "status": "report",
+      "risk": "guarded",
+      "evidence_count": 2,
+      "incomplete": true,
+      "process_wall_seconds": 0.91202309995424
+    },
+    {
+      "id": "text-30k",
+      "analysis_wall_seconds": 0.22319229994900525,
+      "traced_peak_bytes": 435133,
+      "status": "report",
+      "risk": "low",
+      "evidence_count": 1,
+      "incomplete": false,
+      "process_wall_seconds": 0.5988357000751421
+    }
+  ]
+}

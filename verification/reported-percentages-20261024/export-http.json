@@ -1,0 +1,150 @@
+{
+  "shell_responses": [
+    {
+      "path": "/phone/",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "/phone/phone.css",
+      "status": 200,
+      "content_type": "text/css"
+    },
+    {
+      "path": "/phone/guide.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/phone/phone.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/phone/share.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/phone/manifest.webmanifest",
+      "status": 200,
+      "content_type": "application/manifest+json"
+    },
+    {
+      "path": "/phone/icon.svg",
+      "status": 200,
+      "content_type": "image/svg+xml"
+    },
+    {
+      "path": "/phone/icon-192.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/phone/icon-512.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/phone/share-demo.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "/phone/share-demo.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/phone/compare.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/phone/suggestions.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/phone/practice.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/phone/ios.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/phone/ios.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "/phone/ios.css",
+      "status": 200,
+      "content_type": "text/css"
+    },
+    {
+      "path": "/phone/context.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "/phone/workspace/claims.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "/phone/workspace/numbers.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "/phone/workspace/quotes.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "/static/claim-review.css",
+      "status": 200,
+      "content_type": "text/css"
+    },
+    {
+      "path": "/static/claim-review.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/static/numbers-context.css",
+      "status": 200,
+      "content_type": "text/css"
+    },
+    {
+      "path": "/static/numbers-context.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/static/quote-context.css",
+      "status": 200,
+      "content_type": "text/css"
+    },
+    {
+      "path": "/static/quote-context.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/static/source-context.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/static/unicode-notice.js",
+      "status": 200,
+      "content_type": "application/javascript"
+    }
+  ],
+  "manifest_files_verified": 31
+}

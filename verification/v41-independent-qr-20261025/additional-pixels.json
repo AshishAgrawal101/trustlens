@@ -1,0 +1,36 @@
+[
+  {
+    "format": "PNG",
+    "source_mode": "RGB",
+    "pixels": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "expected_match": true
+  },
+  {
+    "format": "WEBP",
+    "source_mode": "RGBA",
+    "pixels": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "expected_match": true
+  }
+]

@@ -1,0 +1,91 @@
+F...FFFFF.F                                                              [100%]
+================================== FAILURES ===================================
+__________ test_exact_html_coverage_id_is_unknown_not_a_fraud_score ___________
+
+    def test_exact_html_coverage_id_is_unknown_not_a_fraud_score():
+        items=[evidence('email:links_incomplete')]
+        report=communication_report('email',items)
+>       assert report.summary.startswith('HTML link review is incomplete.')
+E       AssertionError: assert False
+E        +  where False = <built-in method startswith of str object at 0x0000020ABB9923B0>('HTML link review is incomplete.')
+E        +    where <built-in method startswith of str object at 0x0000020ABB9923B0> = 'No strong warning signs matched. That does not verify who sent this or make it safe.'.startswith
+E        +      where 'No strong warning signs matched. That does not verify who sent this or make it safe.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_email_href_guidance.py:19: AssertionError
+____________ test_detail_is_not_interpreted_or_echoed_in_export[0] ____________
+
+detail = '0'
+
+    @pytest.mark.parametrize('detail',['0','99999999','PRIVATE https://private.example/SECRET','not a number'])
+    def test_detail_is_not_interpreted_or_echoed_in_export(detail):
+        result=add_guidance(communication_report('email',[evidence('email:links_incomplete',detail)]))
+>       assert HTML_REASON in result.share_summary
+E       AssertionError: assert 'HTML link review was incomplete; some supplied HTML link targets were not inspected.' in 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'
+E        +  where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_email_href_guidance.py:43: AssertionError
+________ test_detail_is_not_interpreted_or_echoed_in_export[99999999] _________
+
+detail = '99999999'
+
+    @pytest.mark.parametrize('detail',['0','99999999','PRIVATE https://private.example/SECRET','not a number'])
+    def test_detail_is_not_interpreted_or_echoed_in_export(detail):
+        result=add_guidance(communication_report('email',[evidence('email:links_incomplete',detail)]))
+>       assert HTML_REASON in result.share_summary
+E       AssertionError: assert 'HTML link review was incomplete; some supplied HTML link targets were not inspected.' in 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'
+E        +  where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_email_href_guidance.py:43: AssertionError
+_ test_detail_is_not_interpreted_or_echoed_in_export[PRIVATE https://private.example/SECRET] _
+
+detail = 'PRIVATE https://private.example/SECRET'
+
+    @pytest.mark.parametrize('detail',['0','99999999','PRIVATE https://private.example/SECRET','not a number'])
+    def test_detail_is_not_interpreted_or_echoed_in_export(detail):
+        result=add_guidance(communication_report('email',[evidence('email:links_incomplete',detail)]))
+>       assert HTML_REASON in result.share_summary
+E       AssertionError: assert 'HTML link review was incomplete; some supplied HTML link targets were not inspected.' in 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'
+E        +  where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_email_href_guidance.py:43: AssertionError
+______ test_detail_is_not_interpreted_or_echoed_in_export[not a number] _______
+
+detail = 'not a number'
+
+    @pytest.mark.parametrize('detail',['0','99999999','PRIVATE https://private.example/SECRET','not a number'])
+    def test_detail_is_not_interpreted_or_echoed_in_export(detail):
+        result=add_guidance(communication_report('email',[evidence('email:links_incomplete',detail)]))
+>       assert HTML_REASON in result.share_summary
+E       AssertionError: assert 'HTML link review was incomplete; some supplied HTML link targets were not inspected.' in 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.'
+E        +  where 'TrustLens — private-input-free summary\n0 wording or address warning sign(s) matched. This does not prove fraud or sa...nGeneral help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.' = AnalysisReport(kind='email', risk_index=None, risk_level='low', confidence='low', summary='No strong warning signs mat...General help: https://consumer.ftc.gov/scams\nOriginal content, contact details and links from the input are omitted.').share_summary
+
+tests\test_email_href_guidance.py:43: AssertionError
+__ test_all_coverage_reasons_remain_distinct_without_displacing_live_advice ___
+
+    def test_all_coverage_reasons_remain_distinct_without_displacing_live_advice():
+        report=analyze_text('Send me your verification code.')
+        report=communication_report('email',report.evidence+[
+            evidence('email:links_incomplete'),evidence('analysis:links_incomplete'),evidence('url:malformed:0'),evidence('email:incomplete')])
+>       assert 'HTML link review is incomplete' in report.summary
+E       AssertionError: assert 'HTML link review is incomplete' in 'Link review is incomplete. 1 link address(es) could not be parsed. Link review is incomplete. Pause before responding. This contains a request worth verifying independently.'
+E        +  where 'Link review is incomplete. 1 link address(es) could not be parsed. Link review is incomplete. Pause before responding. This contains a request worth verifying independently.' = AnalysisReport(kind='email', risk_index=None, risk_level='high', confidence='low', summary='Link review is incomplete....links were visited.'], content_credentials=None, model_ran=False, decision_basis='rules', actions=[], share_summary='').summary
+
+tests\test_email_href_guidance.py:52: AssertionError
+_______ test_actual_unsupported_html_href_propagates_integration_notice _______
+
+    def test_actual_unsupported_html_href_propagates_integration_notice():
+        result=add_guidance(analyze_email('Content-Type: text/html\n\n<a href="/PRIVATE-path">Review statement</a>'))
+>       assert any(e.id=='email:links_incomplete' for e in result.evidence)
+E       assert False
+E        +  where False = any(<generator object test_actual_unsupported_html_href_propagates_integration_notice.<locals>.<genexpr> at 0x0000020ABBA5E190>)
+
+tests\test_email_href_guidance.py:74: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_email_href_guidance.py::test_exact_html_coverage_id_is_unknown_not_a_fraud_score
+FAILED tests/test_email_href_guidance.py::test_detail_is_not_interpreted_or_echoed_in_export[0]
+FAILED tests/test_email_href_guidance.py::test_detail_is_not_interpreted_or_echoed_in_export[99999999]
+FAILED tests/test_email_href_guidance.py::test_detail_is_not_interpreted_or_echoed_in_export[PRIVATE https://private.example/SECRET]
+FAILED tests/test_email_href_guidance.py::test_detail_is_not_interpreted_or_echoed_in_export[not a number]
+FAILED tests/test_email_href_guidance.py::test_all_coverage_reasons_remain_distinct_without_displacing_live_advice
+FAILED tests/test_email_href_guidance.py::test_actual_unsupported_html_href_propagates_integration_notice
+7 failed, 4 passed in 0.39s

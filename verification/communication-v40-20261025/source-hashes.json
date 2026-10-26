@@ -1,0 +1,6 @@
+{
+  "app/analyzers/email.py": "004d3a8c3c1c58696bd52765f176e87b846fa6e9ff81dd686008dede5594ba62",
+  "app/analyzers/url.py": "559afd50228266a7da2f3b9de6626d0ced1cfe3b0084820ae6d64c0ca5844bfe",
+  "app/analyzers/text.py": "a24fedbb87efdcd60c56e82287ec88cf826caa8258052152acdba9b69d720dd0",
+  "app/guidance.py": "ec23edb17ab9431429ca70f13811b4e1b5ca28f759dfd66218422dfc7d288ec6"
+}

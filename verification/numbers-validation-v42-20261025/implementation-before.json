@@ -1,0 +1,10 @@
+{
+  "purePrefixSHA256": "0ed042bc431f853ca8e0a80a02844cfe212c81ad99197c3089bd314936bb2ca2",
+  "sharedFixtureSHA256": "85ac1c03f92764aa63336de2f21aa4d3571859fc7028c414f859c1c2d9a762cd",
+  "standardFixtureAddition": "setCustomValidity only; old reportValidity and assertions untouched",
+  "nativeFixtureOrder": [
+    "built-in required/min/max/step/badInput",
+    "customError"
+  ],
+  "countsBothBeforeReport": true
+}

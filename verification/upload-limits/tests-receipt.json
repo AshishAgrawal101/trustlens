@@ -1,0 +1,27 @@
+{
+  "elapsed_seconds": 5.82,
+  "combined_upload_intake_tests": 61,
+  "starlette": "1.7.0",
+  "dedicated_upload_tests": 27,
+  "forced_disk_spool_rollover_closed_immediately": true,
+  "files": [
+    {
+      "path": "app/upload_limits.py",
+      "sha256": "516d1819bd68d1c843f212f7514c5df1ebcfe62ac0232aab134e686a6b967b4b"
+    },
+    {
+      "path": "tests/test_upload_limits.py",
+      "sha256": "3d543438fe47cf09b299ca17a3891b94230795a7776ce5a281ed894f957cbb6f"
+    },
+    {
+      "path": "verification/upload-limits/REPORT.md",
+      "sha256": "56ebef88bc21482ec58c35b82d30a4b5077ec2d53550852789fbded9ced095bf"
+    }
+  ],
+  "at_utc": "2026-10-23T17:34:22.1310086Z",
+  "truncated_body_analysis": false,
+  "actual_main_middleware_order_verified": true,
+  "fastapi": "0.142.2",
+  "input_logged": false,
+  "failed": 0
+}

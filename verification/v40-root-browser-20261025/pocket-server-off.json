@@ -1,0 +1,7 @@
+{
+  "port": 8837,
+  "owned_child": 4444,
+  "owned_parent": 34380,
+  "stopped": true,
+  "listener_absent": true
+}

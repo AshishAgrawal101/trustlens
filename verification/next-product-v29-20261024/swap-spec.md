@@ -1,0 +1,9 @@
+# Numbers swap: accepted implementation contract before edits
+
+Single #numbers-swap typebutton initiallydisabled, minimum48px; #numbers-input-status fixedrolestatus outsidehiddenresult. Exchange only active raw countA/countB AND totalA/totalB, or percentageA/B. No parse/normalization/coercion/validationrepair, autoCompare, changedmethod/inactivefields, newpuremath/API/I/O/storage/history/export. Existinginvalidate removesoldresult/error; actionfocusretained; fixedstatus explainsreversedbaseline+Compareagain.
+
+Disable when allactivefieldvaluesareempty. Partial/invalidrawstringsstilltransferunchangedfornormalvalidation. Existinginvalidate also clearsstatus/updatesreadiness; method/clear/example/lifecycle resync aftertheirfieldchanges. Clear retainsmethod, lifecycledefaultcount unchanged. Pureprefixhashfrozen in swap-before.json.
+
+Acceptance:20/100vs30/200 resultAbout-25 thenrawswap=>30/200vs20/100, noresultuntilCompare, thenAbout33.3333; double-swap exactidentity; activepercentlongstrings/inactivemethodunchanged; invalid/partialraw not repaired +normalvalidationfails; allblankdisabled; fixedstatusonly/no values; edit/compare/clear/example/method/nativeinvalid/exit/Back clearstatus; hiddenrequiredfieldsdisabled; no requests/clipboard/URLs; mobilewrap/button48/keyboardfocus. Rootownsactualbrowser/newPocketversion/export.
+
+Root-approved native editing-buffer clarification: type=number can retain an unfinished token that JavaScript .value exposes as empty while validity.badInput=true. If any active input reports badInput, Swap leaves every field unchanged and uses fixed finish-entry guidance. This is not a generic validation gate: readable partial/invalid .value strings still exchange unchanged and later normal Compare validates them. All-value-empty remains disabled. No inaccessible editing-buffer preservation claim is made via string copying; the guard avoids writing over it.

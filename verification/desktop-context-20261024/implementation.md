@@ -1,0 +1,11 @@
+# Desktop context guide alias implementation
+
+Added fixed GET `/context-guide.html` outside Pocket service-worker scope. Existing app/pocket_workspaces.py now supplies render_desktop_context(static_dir=STATIC), reading the same canonical static/phone/context.html on each render. No second guide template or cache scope was added.
+
+Bounded replacements adjust title/brand/home/footer, route worksheet links to the existing desktop static pages, and replace the canonical offline-preparation paragraph with an explicit local-launcher desktop-view notice. It links canonical Pocket preparation/guide separately. All five native cards remain byte-identical after the fixed worksheet URL rewrites. Fragments including #ads remain. Guide content is fixed and input-free; no request/query value is interpolated. Early connect-src none/form-action none/base-uri none meta intersects, rather than changes, existing global response CSP. HTML is no-store.
+
+Owned source changes: app/pocket_workspaces.py and app/main.py. New tests/test_desktop_context_guide.py. No canonical phone HTML, worker/cache/export/directory changes. Root owns the directory-link update and live restart/browser check. The canonical source SHA-256 was frozen before edits in canonical-before.json and is independently asserted unchanged by the test.
+
+Accepted cases frozen in spec.md before implementation. Initial RED was ImportError for the missing renderer (red.txt). Final focused evidence: **8 new tests plus25 existing Pocket workspace tests =33 passed in0.85s**, no skips (green.txt). Tests cover exact shared cards/fragment preservation, fixed desktop navigation, honest availability, early policy, trusted-source edit propagation, fixed GET/query omission, no-store/global headers, unknown nearpaths404/POST405, unchanged canonical bytes/hash, and exclusion from worker SHELL. No external network/browser/upload/physical-phone work performed.
+
+The existing stale Pocket-cache observation is not erased or reinterpreted as success. This alias avoids that scope for desktop discovery and desktop follow-through; entering canonical Pocket still uses its own prepared-version/offline contract. Actual stale-worker desktop discovery browser evidence and independent source review are root/team follow-up, not claimed by these ASGI/source tests.

@@ -1,0 +1,16 @@
+
+=================================== ERRORS ====================================
+____________ ERROR collecting tests/test_desktop_context_guide.py _____________
+ImportError while importing test module 'C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\test_desktop_context_guide.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\round\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_desktop_context_guide.py:10: in <module>
+    from app.pocket_workspaces import render_desktop_context
+E   ImportError: cannot import name 'render_desktop_context' from 'app.pocket_workspaces' (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\app\pocket_workspaces.py)
+=========================== short test summary info ===========================
+ERROR tests/test_desktop_context_guide.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.80s

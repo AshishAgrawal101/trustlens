@@ -1,0 +1,269 @@
+{
+  "purpose": "Preregistered complete Python splitlines boundary acceptance; no OCR continuation change",
+  "cases": [
+    {
+      "id": "lf-ordinary",
+      "text": "Please send the meeting notes\nYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "lf-direct",
+      "text": "Read me your verification code.\nThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "lf-advice",
+      "text": "Do not read anyone your verification code.\nUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "lf-live",
+      "text": "Never buy gift cards and\nInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "cr-ordinary",
+      "text": "Please send the meeting notes\rYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "cr-direct",
+      "text": "Read me your verification code.\rThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "cr-advice",
+      "text": "Do not read anyone your verification code.\rUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "cr-live",
+      "text": "Never buy gift cards and\rInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "crlf-ordinary",
+      "text": "Please send the meeting notes\r\nYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "crlf-direct",
+      "text": "Read me your verification code.\r\nThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "crlf-advice",
+      "text": "Do not read anyone your verification code.\r\nUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "crlf-live",
+      "text": "Never buy gift cards and\r\nInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "vt-ordinary",
+      "text": "Please send the meeting notes\u000bYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "vt-direct",
+      "text": "Read me your verification code.\u000bThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "vt-advice",
+      "text": "Do not read anyone your verification code.\u000bUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "vt-live",
+      "text": "Never buy gift cards and\u000bInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "ff-ordinary",
+      "text": "Please send the meeting notes\fYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "ff-direct",
+      "text": "Read me your verification code.\fThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "ff-advice",
+      "text": "Do not read anyone your verification code.\fUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "ff-live",
+      "text": "Never buy gift cards and\fInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "fs-ordinary",
+      "text": "Please send the meeting notes\u001cYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "fs-direct",
+      "text": "Read me your verification code.\u001cThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "fs-advice",
+      "text": "Do not read anyone your verification code.\u001cUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "fs-live",
+      "text": "Never buy gift cards and\u001cInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "gs-ordinary",
+      "text": "Please send the meeting notes\u001dYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "gs-direct",
+      "text": "Read me your verification code.\u001dThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "gs-advice",
+      "text": "Do not read anyone your verification code.\u001dUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "gs-live",
+      "text": "Never buy gift cards and\u001dInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "rs-ordinary",
+      "text": "Please send the meeting notes\u001eYour verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "rs-direct",
+      "text": "Read me your verification code.\u001eThe meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "rs-advice",
+      "text": "Do not read anyone your verification code.\u001eUse a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "rs-live",
+      "text": "Never buy gift cards and\u001eInstall TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "nel-ordinary",
+      "text": "Please send the meeting notes\u0085Your verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "nel-direct",
+      "text": "Read me your verification code.\u0085The meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "nel-advice",
+      "text": "Do not read anyone your verification code.\u0085Use a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "nel-live",
+      "text": "Never buy gift cards and\u0085Install TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "ls-ordinary",
+      "text": "Please send the meeting notes\u2028Your verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "ls-direct",
+      "text": "Read me your verification code.\u2028The meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "ls-advice",
+      "text": "Do not read anyone your verification code.\u2028Use a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "ls-live",
+      "text": "Never buy gift cards and\u2028Install TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    },
+    {
+      "id": "ps-ordinary",
+      "text": "Please send the meeting notes\u2029Your verification code is 847261.",
+      "expected_requests": []
+    },
+    {
+      "id": "ps-direct",
+      "text": "Read me your verification code.\u2029The meeting starts at noon.",
+      "expected_requests": [
+        "request:code"
+      ]
+    },
+    {
+      "id": "ps-advice",
+      "text": "Do not read anyone your verification code.\u2029Use a known bank number instead.",
+      "expected_requests": []
+    },
+    {
+      "id": "ps-live",
+      "text": "Never buy gift cards and\u2029Install TeamViewer.",
+      "expected_requests": [
+        "request:remote"
+      ]
+    }
+  ]
+}

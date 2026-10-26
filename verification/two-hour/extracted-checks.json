@@ -1,0 +1,13 @@
+{
+  "path": "C:\\Users\\round\\OneDrive\\Documents\\ChatGPT\\TrustLens\\TrustLens-professional-20261023-intake-v4-review.zip",
+  "files": 279,
+  "bytes": 1334803,
+  "sha256": "11bcb1f1a611f2305b4643566c0337e962a0ca0642a582c441d5a5b6458f5be7",
+  "verified": true,
+  "extracted_python_tests": 603,
+  "extracted_javascript_tests": 86,
+  "extracted_checks_used_existing_dependencies": true,
+  "clean_machine_install_tested": false,
+  "manifest_entries_verified": 278,
+  "verified_utc": "2026-10-23T17:47:29.574422+00:00"
+}

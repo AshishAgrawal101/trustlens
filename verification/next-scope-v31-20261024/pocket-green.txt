@@ -1,0 +1,49 @@
+✔ focused Pocket session uses both exact frozen ad cases and repeats only that session (4.9813ms)
+✔ switching sessions and close/exit/Back reject old focused callbacks and erase content (8.0838ms)
+✔ both Pocket start actions fail closed until setup and focused practice adds no input or export access (15.1467ms)
+✔ previous cases retain exact order and bytes while two frozen constructed cases are added to both practice flows (2.2521ms)
+✔ desktop complete ten-case journey includes ads feedback and retry/reset without stale callbacks or I/O (4.9582ms)
+✔ Pocket twelve-case journey reaches both constructed examples and clears on close and Back (3.4617ms)
+✔ new guide card uses native disclosure fixed checks and only passive internal worksheet navigation (0.5491ms)
+✔ first six fixed cases remain byte-equivalent in data; six context cases have bounded actions (1.6001ms)
+✔ Next requires an answered open session; duplicate and stale options cannot mutate restarted state (1.8584ms)
+✔ closed panel rejects option activation even before toggle notification; reset wipes all scenario DOM (1.1601ms)
+✔ exit and persisted Back clear session with epoch protection against old callbacks (3.158ms)
+✔ every choice describes its question and feedback is neutral for communication and context (1.6447ms)
+✔ practice uses twelve fixed scenarios with one supported choice and explicit reasoning (1.2358ms)
+✖ practice feedback, progression and reset do not touch private message text (2.9217ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 13
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 132.5927
+
+✖ failing tests:
+
+test at tests\pocket_practice.test.cjs:13:1
+✖ practice feedback, progression and reset do not touch private message text (2.9217ms)
+  node:internal/assert/utils:77
+      throw err;
+      ^
+  
+  AssertionError [ERR_ASSERTION]: Only practice elements may be accessed
+      at Object.getElementById (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\pocket_practice.test.cjs:25:46)
+      at get (evalmachine.<anonymous>:18:32)
+      at evalmachine.<anonymous>:42:5
+      at evalmachine.<anonymous>:48:3
+      at Script.runInContext (node:vm:149:12)
+      at Script.runInNewContext (node:vm:154:17)
+      at Object.runInNewContext (node:vm:310:38)
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\pocket_practice.test.cjs:27:6)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

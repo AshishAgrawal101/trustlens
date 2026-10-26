@@ -1,0 +1,33 @@
+✔ focused launcher is disabled in markup then enabled after setup; cases remain byte-identical (3.5573ms)
+✔ two exact cases, reviewed progress, completion and scoped missed retry (2.6988ms)
+✔ replacement invalidates old answer callbacks; explicit restart all restores ten (1.3001ms)
+✔ close/reopen and exit/Back clear focused session without lifecycle focus theft (3.6059ms)
+✔ focused Pocket session uses both exact frozen ad cases and repeats only that session (5.2829ms)
+✔ switching sessions and close/exit/Back reject old focused callbacks and erase content (8.3299ms)
+✔ both Pocket start actions fail closed until setup and focused practice adds no input or export access (2.9456ms)
+✔ previous cases retain exact order and bytes while two frozen constructed cases are added to both practice flows (2.2536ms)
+✔ desktop complete ten-case journey includes ads feedback and retry/reset without stale callbacks or I/O (5.5593ms)
+✔ Pocket twelve-case journey reaches both constructed examples and clears on close and Back (5.3028ms)
+✔ new guide card uses native disclosure fixed checks and only passive internal worksheet navigation (0.5597ms)
+✔ ten bounded constructed cases retain three existing situations and cover context habits (1.8185ms)
+✔ answer locks, feedback focus and reviewed progress survive duplicate and stale activations (3.6809ms)
+✔ completion is reviewed count not accuracy; retry selects only missed cases then restart resets all (2.1383ms)
+✔ all-best run has no retry prompt and reopening never restores a prior answer (1.7046ms)
+✔ explicit close restores opener; page exit and Back reset without manually stealing focus (4.5992ms)
+✔ module and controller never access checker input, fetch, persistence or export APIs (0.5215ms)
+✔ initially disabled launcher is enabled only after controller setup and answers reference the scenario (1.5621ms)
+✔ first six fixed cases remain byte-equivalent in data; six context cases have bounded actions (1.5249ms)
+✔ Next requires an answered open session; duplicate and stale options cannot mutate restarted state (1.8583ms)
+✔ closed panel rejects option activation even before toggle notification; reset wipes all scenario DOM (1.2642ms)
+✔ exit and persisted Back clear session with epoch protection against old callbacks (3.0446ms)
+✔ every choice describes its question and feedback is neutral for communication and context (1.7793ms)
+✔ practice uses twelve fixed scenarios with one supported choice and explicit reasoning (0.9088ms)
+✔ practice feedback, progression and reset do not touch private message text (1.8993ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 153.271

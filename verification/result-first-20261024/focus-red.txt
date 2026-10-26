@@ -1,0 +1,193 @@
+✖ review is explicit, fixed output receives focus, and no network request occurs (12.0359ms)
+✔ every input change invalidates prior output and disables exports (16.0975ms)
+✔ validation preserves drafts, suppresses private error text and cannot export a completed review (1.7819ms)
+✔ Clear, page exit and persisted Back erase all private fields and prior output (4.7298ms)
+✔ copy and download export a fixed plan; late copy completion cannot revive cleared output (2.2479ms)
+✔ clipboard timeout offers download without exposing input (1.5867ms)
+✔ source relation controls are explicit user labels with neutral default and no submitted name (1.4098ms)
+✔ review labels and live status live inside result after its heading (0.2315ms)
+✖ numbers require explicit submit; construction and typing send nothing (27.8167ms)
+✔ all four edits remove old facts/questions and errors while retaining drafts (7.2337ms)
+✔ Clear, exit and persisted Back remove every supplied number and result (4.1102ms)
+✔ loading constructed example clears previous output and waits for submit (1.9606ms)
+✔ bad or native-invalid values cannot retain a previous calculation (9.5701ms)
+✔ zero baseline is an undefined relative change rather than an infinity or causal claim (2.8416ms)
+✔ empty guidance follows the explicit comparison lifecycle (1.6778ms)
+✖ explicit comparison labels changes with literal text and sends or exports nothing (8.8526ms)
+✔ edits invalidate old diff and Clear/exit/Back remove both versions and output (7.9613ms)
+✔ invalid retry never retains partial or old comparison; fixed error focuses without input echo (6.6365ms)
+✔ constructed example replaces drafts but waits for explicit comparison (1.4492ms)
+✔ identical supplied versions are described without authenticating their source (1.2396ms)
+✖ numbers result leads full expanded limits and keeps a local caveat (2.0016ms)
+✖ quote result leads full expanded limits and keeps a local caveat (0.6082ms)
+✖ claim result leads full expanded limits and keeps a local caveat (0.5122ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 17
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 189.5088
+
+✖ failing tests:
+
+test at tests\claim_controller.test.cjs:12:1
+✖ review is explicit, fixed output receives focus, and no network request occurs (12.0359ms)
+  AssertionError [ERR_ASSERTION]: Expected "actual" to be reference-equal to "expected":
+  + actual - expected
+  ... Skipped lines
+  
+    Element {
+      _text: '',
+      attributes: {
+  +     'aria-labelledby': 'claim-result-title',
+  +     id: 'claim-result',
+  +     tabindex: '-1'
+  -     id: 'claim-result-title'
+      },
+      checked: false,
+      children: [],
+      dataset: {},
+      events: {},
+  ...
+      required: false,
+  +   tagName: 'section',
+  -   tagName: 'h3',
+      value: ''
+    }
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_controller.test.cjs:14:25)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { tagName: 'section', children: [], events: {}, dataset: {}, attributes: { id: 'claim-result', tabindex: '-1', 'aria-labelledby': 'claim-result-title' }, hidden: false, value: '', files: [], checked: false, required: false, open: false, _text: '' },
+    expected: { tagName: 'h3', children: [], events: {}, dataset: {}, attributes: { id: 'claim-result-title' }, hidden: false, value: '', files: [], checked: false, required: false, open: false, _text: '' },
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\numbers_controller.test.cjs:13:1
+✖ numbers require explicit submit; construction and typing send nothing (27.8167ms)
+  AssertionError [ERR_ASSERTION]: Expected "actual" to be reference-equal to "expected":
+  + actual - expected
+  ... Skipped lines
+  
+    Element {
+      _text: '',
+      attributes: {
+  +     'aria-labelledby': 'numbers-result-title',
+  +     id: 'numbers-result',
+  +     tabindex: '-1'
+  -     id: 'numbers-result-title'
+      },
+      checked: false,
+      children: [],
+      dataset: {},
+      events: {},
+  ...
+      required: false,
+  +   tagName: 'section',
+  -   tagName: 'h3',
+      value: ''
+    }
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\numbers_controller.test.cjs:16:103)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { tagName: 'section', children: [], events: {}, dataset: {}, attributes: { id: 'numbers-result', tabindex: '-1', 'aria-labelledby': 'numbers-result-title' }, hidden: false, value: '', files: [], checked: false, required: false, open: false, _text: '' },
+    expected: { tagName: 'h3', children: [], events: {}, dataset: {}, attributes: { id: 'numbers-result-title' }, hidden: false, value: '', files: [], checked: false, required: false, open: false, _text: '' },
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\quote_controller.test.cjs:10:1
+✖ explicit comparison labels changes with literal text and sends or exports nothing (8.8526ms)
+  AssertionError [ERR_ASSERTION]: Expected "actual" to be reference-equal to "expected":
+  + actual - expected
+  ... Skipped lines
+  
+    Element {
+      _text: '',
+      attributes: {
+  +     'aria-labelledby': 'quote-result-title',
+  +     id: 'quote-result',
+  +     tabindex: '-1'
+  -     id: 'quote-result-title'
+      },
+      checked: false,
+      children: [],
+      dataset: {},
+      events: {},
+  ...
+      required: false,
+  +   tagName: 'section',
+  -   tagName: 'h3',
+      value: ''
+    }
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\quote_controller.test.cjs:12:193)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { tagName: 'section', children: [], events: {}, dataset: {}, attributes: { id: 'quote-result', tabindex: '-1', 'aria-labelledby': 'quote-result-title' }, hidden: false, value: '', files: [], checked: false, required: false, open: false, _text: '' },
+    expected: { tagName: 'h3', children: [], events: {}, dataset: {}, attributes: { id: 'quote-result-title' }, hidden: false, value: '', files: [], checked: false, required: false, open: false, _text: '' },
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\workspace_result_order.test.cjs:8:47
+✖ numbers result leads full expanded limits and keeps a local caveat (2.0016ms)
+  AssertionError [ERR_ASSERTION]: result heading supports programmatic focus
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\workspace_result_order.test.cjs:17:121)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '<h3 id="numbers-result-title">',
+    expected: /\stabindex="-1"/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests\workspace_result_order.test.cjs:8:47
+✖ quote result leads full expanded limits and keeps a local caveat (0.6082ms)
+  AssertionError [ERR_ASSERTION]: result heading supports programmatic focus
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\workspace_result_order.test.cjs:17:121)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '<h3 id="quote-result-title">',
+    expected: /\stabindex="-1"/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests\workspace_result_order.test.cjs:8:47
+✖ claim result leads full expanded limits and keeps a local caveat (0.5122ms)
+  AssertionError [ERR_ASSERTION]: result heading supports programmatic focus
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\workspace_result_order.test.cjs:17:121)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '<h3 id="claim-result-title">',
+    expected: /\stabindex="-1"/,
+    operator: 'match',
+    diff: 'simple'
+  }

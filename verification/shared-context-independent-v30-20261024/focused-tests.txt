@@ -1,0 +1,34 @@
+✔ source finding is explicit, literal text including markup and never sends or exports input (6.2757ms)
+✔ editing either dependency removes old matches; revised wording is independent of source finding (4.6303ms)
+✔ source-only Clear preserves supplied versions while main Clear erases every private field/result (1.7499ms)
+✔ constructed example replacement clears old source text and its result (1.4894ms)
+✔ exit and persisted Back cannot restore long passage or source match context (3.2363ms)
+✔ errors cannot leave old or partial output, echo inputs or destroy drafts (4.0597ms)
+✔ no-match remains unresolved and long repetitive passage renders only five windows with the full count (3.4126ms)
+✔ cropped context windows visibly disclose omissions at their edges (1.3712ms)
+✔ two-argument results and default page remain exactly compatible with frozen outputs (2.6255ms)
+✔ all pages retain exact offsets and literal windows with at most five matches (0.5305ms)
+✔ later-page surrogate boundaries and the maximum final page preserve existing window limits (1.3594ms)
+✔ page validation is bounded integer-only and missing pages reject with input-free errors (0.7696ms)
+✔ zero one and five matches do not offer unavailable page navigation (10.1106ms)
+✔ explicit navigation shows true ranges and ordinals with focus and disabled ends, retaining authenticity caveats (2.665ms)
+✔ every invalidation erases paging and formatting while next Find starts at first match (17.388ms)
+✔ shared Original native invalid clears later source windows and pager without erasing drafts or IO (8.6069ms)
+✔ Revised native invalid preserves independent later source page and formatting notice (2.7693ms)
+✔ finite controls are counted/named without returning original text (1.6758ms)
+✔ legitimate emoji and shaping joiners get factual counts, never normalization (0.9928ms)
+✔ bounded strict UTF16 input with fixed errors (4.9219ms)
+✔ only explicit successful submissions show fixed presence details (2.1456ms)
+✔ source notice scans all source text, including controls outside returned windows (1.4065ms)
+✔ absence hides notice and never produces reassurance (0.9771ms)
+✔ input, all clears/examples and exit reset correct notices (7.0154ms)
+✔ both failed and native-invalid submissions clear a previous notice (2.9135ms)
+✔ root markup provides hidden polite status regions and correct controller order (0.7078ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 136.4785

@@ -1,0 +1,12 @@
+✔ pure custom URL errors retain fixed messages and identify only their source URL field (2.8727ms)
+✔ A/B errors announce fixed source and correction opens/focuses matching field without changing any draft or Review (6.9779ms)
+✔ edit repair success and every replacement/lifecycle reset erase correction and ARIA state; stale click inert (8.6797ms)
+✔ native invalid keeps existing opening/focus semantics and clears prior custom action (1.7723ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 133.6556

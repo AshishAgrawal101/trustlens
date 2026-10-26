@@ -1,0 +1,54 @@
+{
+  "python_tests": 474,
+  "python_skips": 0,
+  "node_tests": 31,
+  "protected_runtime_files_unchanged": 34,
+  "original_live_manifest_files_unchanged": 104,
+  "changed_previous_review_files": [
+    "app/analyzers/text.py",
+    "app/guidance.py",
+    "app/main.py",
+    "README.md",
+    "scripts/package.py",
+    "static/app.js",
+    "static/index.template.html",
+    "static/styles.css",
+    "submission/DEMO.md",
+    "submission/DEVPOST.md",
+    "submission/DISCLOSURE.md",
+    "submission/EVALUATION.md",
+    "tasks/todo.md"
+  ],
+  "browser": {
+    "ordinary_edge_control": true,
+    "capability_configuration_response": true,
+    "balance_payment_guidance": true,
+    "direct_checker_focus": true,
+    "primary_constructed_demo": true,
+    "pocket_guide_with_server_stopped": true,
+    "pocket_clipboard_timeout_fallback": true,
+    "pocket_clear": true,
+    "pocket_widths_no_horizontal_overflow": [
+      320,
+      390
+    ],
+    "final_main_width_no_horizontal_overflow": 320,
+    "viewport_restored": true,
+    "physical_android_install_or_share_sheet": false,
+    "interactive_file_uploads": false,
+    "service_worker_POST_tests": "Node simulated standard requests, not Android share sheet"
+  },
+  "real_images": {
+    "admitted_originals": 4,
+    "C2PA_worker_statuses": {
+      "absent": 4
+    },
+    "visual_scores": null,
+    "visual_reason": "resource guard stopped contained imports; no retry"
+  },
+  "production_release": false,
+  "automations_changed": false,
+  "cloud_content_APIs": false,
+  "downloads": 0,
+  "gpu_jobs": 0
+}

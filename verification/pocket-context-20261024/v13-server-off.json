@@ -1,0 +1,11 @@
+{
+  "version": "trustlens-pocket-v13",
+  "8766_connection_failed": true,
+  "8765_http200": true,
+  "stopped_parent": 33392,
+  "stopped_child": 69740,
+  "browser": "Cachedv13Pocketreload, all10practicecases, restart/closereset andftp:/known-referenceerrorobserved while8766off; see v13-browser-closure.md.",
+  "restored_development_parent": 75820,
+  "restored_8766_http200": true,
+  "original_8765_http200_after": true
+}

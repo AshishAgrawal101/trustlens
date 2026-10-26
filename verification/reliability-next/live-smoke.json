@@ -1,0 +1,20 @@
+{
+  "fixture_bytes": 1130,
+  "browser_upload_claimed": false,
+  "/api/analyze/image": 400,
+  "/api/extract/screenshot": 400,
+  "/api/extract/qr": 400,
+  "inline_advice": {
+    "risk_level": "low",
+    "incomplete": false
+  },
+  "inline_request": {
+    "risk_level": "high",
+    "incomplete": false
+  },
+  "duplicate_subject": {
+    "risk_level": "high",
+    "incomplete": true
+  },
+  "health": 200
+}

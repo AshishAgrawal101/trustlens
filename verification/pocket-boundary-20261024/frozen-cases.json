@@ -1,0 +1,116 @@
+{
+  "status": "frozen_before_current_predictions",
+  "purpose": "Pocket/desktop boundary consistency audit; exact parser behavior, not safety/ownership verdicts",
+  "cases": [
+    {
+      "id": "canonical-control",
+      "message": "https://example.com/page",
+      "known": "example.com"
+    },
+    {
+      "id": "missing-slash-known",
+      "message": "https://example.com/page",
+      "known": "https:/example.com"
+    },
+    {
+      "id": "extra-slash-known",
+      "message": "https://example.com/page",
+      "known": "https:///example.com"
+    },
+    {
+      "id": "extra-slashes-known",
+      "message": "https://example.com/page",
+      "known": "https:////example.com"
+    },
+    {
+      "id": "missing-host-known",
+      "message": "https://https/page",
+      "known": "https:/example.com"
+    },
+    {
+      "id": "soft-hyphen-host",
+      "message": "https://example.com/page",
+      "known": "exa\u00admple.com"
+    },
+    {
+      "id": "zero-width-host",
+      "message": "https://example.com/page",
+      "known": "exa\u200bmple.com"
+    },
+    {
+      "id": "bidi-path-known",
+      "message": "https://example.com/page",
+      "known": "https://example.com/\u202epath"
+    },
+    {
+      "id": "leading-tab-known",
+      "message": "https://example.com/page",
+      "known": "\texample.com"
+    },
+    {
+      "id": "empty-userinfo-known",
+      "message": "https://example.com/page",
+      "known": "https://@example.com"
+    },
+    {
+      "id": "short-ip-known",
+      "message": "https://127.0.0.1/page",
+      "known": "127.1"
+    },
+    {
+      "id": "hex-ip-known",
+      "message": "https://127.0.0.1/page",
+      "known": "0x7f000001"
+    },
+    {
+      "id": "octal-ip-known",
+      "message": "https://127.0.0.1/page",
+      "known": "0177.0.0.1"
+    },
+    {
+      "id": "escaped-host-known",
+      "message": "https://example.com/page",
+      "known": "https://%65xample.com"
+    },
+    {
+      "id": "soft-hyphen-message",
+      "message": "https://exa\u00admple.com/page",
+      "known": "example.com"
+    },
+    {
+      "id": "zero-width-message",
+      "message": "https://exa\u200bmple.com/page",
+      "known": "example.com"
+    },
+    {
+      "id": "bidi-path-message",
+      "message": "https://example.com/\u202epath",
+      "known": "example.com"
+    },
+    {
+      "id": "short-ip-message",
+      "message": "https://127.1/page",
+      "known": "127.0.0.1"
+    },
+    {
+      "id": "userinfo-destination-control",
+      "message": "https://example.com@other.test/page",
+      "known": "example.com"
+    },
+    {
+      "id": "numeric-canonical-control",
+      "message": "https://127.0.0.1/page",
+      "known": "127.0.0.1"
+    },
+    {
+      "id": "idna-control",
+      "message": "https://fa\u00df.de/page",
+      "known": "xn--fa-hia.de"
+    },
+    {
+      "id": "subdomain-control",
+      "message": "https://sub.example.com/page",
+      "known": "example.com"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Reported-percentage markup implementation
+
+Owned changes only: `static/numbers-context.html`, `static/numbers-context.css`, new `tests/reported_percentages_markup.test.cjs`, and this report. No controller/math/Pocket/export files edited.
+
+Added the agreed disabled unnamed method select inside the existing form. Counts remains explicitly selected and all four original controls, bounds, required states and initial count guidance remain. `numbers-counts` wraps both existing Group A/B fieldsets and limits. The new `numbers-percentages` fieldset is initially hidden and disabled; both unnamed percentage-a/b text inputs are independently disabled, required, decimal-keyboard eligible and capped at 64 characters. Labels/help describe reported values, no percent sign, no inferred totals and possible prior rounding. `numbers-result-caveat` identifies the existing unchanged count caveat for controller updates.
+
+The description and hero lede now mention counts/totals or reported percentages while retaining denominator/comparability context. Added scoped native-select 16px text, minimum 48px height, full width and visible focus styling. Result-first DOM order, h3 focus target, expanded limits, disabled initial submit, no-script notice, no named private controls and private print omission remain.
+
+Three new markup regressions failed before HTML changes. After implementation and correcting the new test helper to recognize h3 tag names, all three pass. Combined with existing numbers markup and result order checks: **9 passed, 0 failed/skipped**. The controller owner received exact IDs and confirmed method-aware guidance/empty/caveat and Clear/lifecycle contracts. Method switch/calculation behavior is not implemented or claimed by this markup slice; controller and actual mobile browser/Pocket integration evidence remain root/team owned. No physical-phone or no-JS browser-setting change performed.

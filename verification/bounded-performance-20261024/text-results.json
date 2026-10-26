@@ -1,0 +1,68 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": "a24fedbb87efdcd60c56e82287ec88cf826caa8258052152acdba9b69d720dd0",
+  "contract_sha256": "0b73b8880e6870f94b8e16a6ca980caa7381366d0b3b1ff253f030db850c5f86",
+  "cases": [
+    {
+      "id": "plain",
+      "characters": 30000,
+      "sha256": "3c737c105bd1bc75e855576113e4eb69f10045dba532f34edad95edc57cf7744",
+      "seconds": [
+        0.021740399999544024,
+        0.01610319991596043,
+        0.016760500031523407,
+        0.01615359995048493
+      ],
+      "max_seconds": 0.021740399999544024,
+      "median_seconds": 0.01645704999100417,
+      "flag_over_0_5s": false,
+      "positive_ids": []
+    },
+    {
+      "id": "negative-code",
+      "characters": 30000,
+      "sha256": "10f18e1bcec57ac2462e8f94e3f306bf84b15d5278ed34ba02fddc174c5664ae",
+      "seconds": [
+        0.03402970009483397,
+        0.03322660003323108,
+        0.03161790000740439,
+        0.03249320003669709
+      ],
+      "max_seconds": 0.03402970009483397,
+      "median_seconds": 0.032859900034964085,
+      "flag_over_0_5s": false,
+      "positive_ids": []
+    },
+    {
+      "id": "negative-urgency",
+      "characters": 30000,
+      "sha256": "bfecd6bdf7967c2a2a01dd89a8d2fdaa031a14951fb9bb68f323bd962d4a5297",
+      "seconds": [
+        0.03981200000271201,
+        0.040182100026868284,
+        0.03936970001086593,
+        0.039121199981309474
+      ],
+      "max_seconds": 0.040182100026868284,
+      "median_seconds": 0.03959085000678897,
+      "flag_over_0_5s": false,
+      "positive_ids": []
+    },
+    {
+      "id": "soft-hyphen-negative",
+      "characters": 30000,
+      "sha256": "9182dbc0741a728d7be5db619a6180d1c7e499696e702b7d4fe9aa3d2dde4bb6",
+      "seconds": [
+        0.04255409992765635,
+        0.03791239997372031,
+        0.03920310002285987,
+        0.03912179998587817
+      ],
+      "max_seconds": 0.04255409992765635,
+      "median_seconds": 0.03916245000436902,
+      "flag_over_0_5s": false,
+      "positive_ids": []
+    }
+  ]
+}

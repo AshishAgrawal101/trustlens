@@ -1,0 +1,18 @@
+{
+  "purpose": "Bounded 8-minute local API stability sample, not an SLA, capacity benchmark, accuracy measurement or proof of absence of leaks.",
+  "server_pid": 41032,
+  "origin": "http://127.0.0.1:8766",
+  "samples": 17,
+  "interval_seconds": 30,
+  "concurrent_requests_per_sample": 8,
+  "characters_per_request": 30000,
+  "working_set_growth_flag_bytes": 33554432,
+  "response_checks": [
+    "HTTP200",
+    "high code-request warning",
+    "null risk_index/model_ran false",
+    "own constructed marker only in evidence",
+    "input-free summary"
+  ],
+  "result_after_source_freeze": "artifacts/v33-stability-results.json"
+}

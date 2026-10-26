@@ -1,0 +1,18 @@
+{
+  "app/analyzers/image.py": {
+    "byte_equal_v39": true,
+    "sha256": "19ba25ed5e3b1ba331c90b9d4f2ef776336bc8da4810115998ce0bc0c6a8fe1f"
+  },
+  "app/analyzers/screenshot.py": {
+    "byte_equal_v39": true,
+    "sha256": "40c0589ac31a1a7b152185756184e2bccd5bcfb731d74657ce12e5d59adc6062"
+  },
+  "app/analyzers/media_context.py": {
+    "byte_equal_v39": true,
+    "sha256": "daf7a80a7c15b6359eeeb6a72473091f1b6c7b18516e0fa715478a7eeedbfd97"
+  },
+  "app/analyzers/qr_worker.py": {
+    "byte_equal_v39": true,
+    "sha256": "5d9cce287b7641ea6883083b8aa104933719f0a81773e671617a6fb1ae46a1f5"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "purpose": "Authored MIME interpretation boundary probes; unsupported transfer encoding must not claim full interpretation. No rule expectations tuned.",
+  "cases": [
+    {
+      "id": "unknown-cte-encoded",
+      "cte": "x-private",
+      "body": "U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==",
+      "expected_incomplete": true
+    },
+    {
+      "id": "unknown-cte-readable",
+      "cte": "x-private",
+      "body": "Send me your verification code.",
+      "expected_incomplete": true
+    },
+    {
+      "id": "base64-control",
+      "cte": "base64",
+      "body": "U2VuZCBtZSB5b3VyIHZlcmlmaWNhdGlvbiBjb2RlLg==",
+      "expected_incomplete": false
+    },
+    {
+      "id": "7bit-control",
+      "cte": "7bit",
+      "body": "Send me your verification code.",
+      "expected_incomplete": false
+    },
+    {
+      "id": "8bit-control",
+      "cte": "8bit",
+      "body": "Ordinary appointment reminder.",
+      "expected_incomplete": false
+    },
+    {
+      "id": "invalid-base64-control",
+      "cte": "base64",
+      "body": "!!!!",
+      "expected_incomplete": true
+    }
+  ]
+}

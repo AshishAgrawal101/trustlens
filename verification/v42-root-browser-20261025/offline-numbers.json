@@ -1,0 +1,122 @@
+{
+  "serverStopped": true,
+  "cache": "trustlens-pocket-v35",
+  "bad": {
+    "custom": [
+      false,
+      true
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "count-b",
+    "messages": [
+      "",
+      "Group B count cannot be larger than Group B total."
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "1",
+      "2",
+      "3",
+      "2",
+      "",
+      ""
+    ]
+  },
+  "edited": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "total-b",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "",
+      ""
+    ]
+  },
+  "valid": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "Group A rateAbout 50% (1 of 2)Group B rateAbout 75% (3 of 4)Rate difference · B minus AAbout 25 percentage pointsRelative rate change · compared with AAbout 50%",
+    "focus": "numbers-result-title",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "counts",
+    "resultHidden": false,
+    "values": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "",
+      ""
+    ]
+  },
+  "percent": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "Group A rateAbout 1.2%Group B rateAbout 1.8%Rate difference · B minus AAbout 0.6 percentage pointsRelative rate change · compared with AAbout 50%Underlying counts and totalsNot supplied; not inferred from reported percentages.",
+    "focus": "numbers-result-title",
+    "messages": [
+      "",
+      ""
+    ],
+    "method": "percentages",
+    "resultHidden": false,
+    "values": [
+      "1",
+      "2",
+      "5",
+      "4",
+      "1.2",
+      "1.8"
+    ]
+  },
+  "clearReload": {
+    "custom": [
+      false,
+      false
+    ],
+    "error": "",
+    "facts": "",
+    "focus": "",
+    "messages": [
+      "Please fill out this field.",
+      "Please fill out this field."
+    ],
+    "method": "counts",
+    "resultHidden": true,
+    "values": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "constructed": true,
+  "physicalPhone": false,
+  "normalDesktopViewport": true
+}

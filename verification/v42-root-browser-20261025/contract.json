@@ -1,0 +1,19 @@
+{
+  "scope": "Current desktop and final cached Pocket native cross-field validity; screenshot fixed guidance without uploads",
+  "numbers": [
+    "A/B/dual count-over-total identify count field with native validation",
+    "Fix A then B; total edits clearcustommessages withoutautocalculate",
+    "Native overflow and digits-format precedence",
+    "Percentage mode works with invalid retained count drafts; switching back retains drafts",
+    "Swap/Clear/example/reload resetcustommessages, native invalid event preservesmessage",
+    "Pure arithmetic unchanged"
+  ],
+  "phone": "Refresh immutable Pocket42/cache35 after shared Numbers change; HTTP/hash then actual server-off native field validation",
+  "ocr": "Screenshot-only manual opaque contrasting-background advice visible; no automaticwhitecomposite; backendunchanged",
+  "excluded": [
+    "Browserfileuploads",
+    "Physicalphones",
+    "Screenreaderclaims",
+    "Newmodelaccuracy"
+  ]
+}

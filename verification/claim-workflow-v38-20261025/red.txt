@@ -1,0 +1,73 @@
+✖ pure custom URL errors retain fixed messages and identify only their source URL field (2.7821ms)
+✖ A/B errors announce fixed source and correction opens/focuses matching field without changing any draft or Review (4.817ms)
+✖ edit repair success and every replacement/lifecycle reset erase correction and ARIA state; stale click inert (1.8692ms)
+✖ native invalid keeps existing opening/focus semantics and clears prior custom action (1.5282ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 93.7861
+
+✖ failing tests:
+
+test at tests\claim_source_repair.test.cjs:6:1
+✖ pure custom URL errors retain fixed messages and identify only their source URL field (2.7821ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Use a complete HTTP or HTTPS source address. No source was opened.
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_source_repair.test.cjs:6:233)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Use a complete HTTP or HTTPS source address. No source was opened.
+        at review (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\static\claim-review.js:39:55)
+        at C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_source_repair.test.cjs:6:244
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_source_repair.test.cjs:6:233)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1382:25)
+        at Test.start (node:internal/test_runner/test:1242:17)
+        at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17),
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests\claim_source_repair.test.cjs:7:1
+✖ A/B errors announce fixed source and correction opens/focuses matching field without changing any draft or Review (4.817ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /^Source A address: /. Input:
+  
+  'Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.'
+  
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_source_repair.test.cjs:7:322)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'Use an HTTP or HTTPS address without embedded login details or control characters. No source was opened.',
+    expected: /^Source A address: /,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests\claim_source_repair.test.cjs:8:1
+✖ edit repair success and every replacement/lifecycle reset erase correction and ARIA state; stale click inert (1.8692ms)
+  TypeError: Cannot read properties of undefined (reading 'hidden')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_source_repair.test.cjs:8:840)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests\claim_source_repair.test.cjs:9:1
+✖ native invalid keeps existing opening/focus semantics and clears prior custom action (1.5282ms)
+  TypeError: Cannot read properties of undefined (reading 'hidden')
+      at TestContext.<anonymous> (C:\Users\round\OneDrive\Documents\ChatGPT\TrustLens\TrustLens-development-20261023\tests\claim_source_repair.test.cjs:9:298)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)

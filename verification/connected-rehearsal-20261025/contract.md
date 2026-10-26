@@ -1,0 +1,3 @@
+# Connected browser rehearsal contract
+
+Verify existing constructed park story through ordinary browser interaction on the current local server: Home → tools → Quote built-in example → explicit comparison → Clear → directory → Numbers 20/100 versus 30/200 → explicit comparison → Clear → Claim new tab blank → manual exact scripted inputs, sources empty → explicit review → Clear. Observe actual output, fields and navigation; save screenshots and observations. No upload, source visit, model work or external service. Do not treat agent interaction durations as human narration/recording time. No student identity, authorship, eligibility or current official-rules claim. Preserve immutable v42 and prior evidence. Make source changes only for concrete observed mismatch.

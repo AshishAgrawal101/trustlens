@@ -1,0 +1,7 @@
+# Communication scope alignment
+
+Changed only app/analyzers/text.py limitation-list expression and new tests/test_communication_scope.py outside this report directory. The existing Englishscope firstline is now always prepended, followed by a copied customlist or the existing secondfallbackline. Existing default2strings remain exact/inorder. No new constant/helper, classifier/model/evidence/risk/action/parser/URL-only change.
+
+Acceptance scope-acceptance.json/SHA frozen before edits. TDDscope-red.txt:5failed10passed (customemail/report/paste/EML/API branches). New15tests cover defaultNone/emptylist text/call, customorder/nonmutation, equalityofallnonlimitationreportfields and fixedexports, text/call/emailpaste/EMLreport+actualASGIAPI propagation, privateexports and unchanged directURLlimits. Targeted scope/reminder/emailUnicode/relativehref/HTMLcoverage/malformed/guidance/link/API suite:226passed1.50s, zero skips (scope-green.txt).
+
+Only production customlimitationscaller remains email analyze_message; its MIME/link/attachment caveats retain their previousorder after Englishscope. Defaulttext/call and existing partialcoverage details remain. MainUI already disclosed Englishscope; standalone emailAPIreports now do too. Fixedshare_summary is unchanged and remains inputfree, with no new language-detection or multilingual-support claim. Originalfresh12diagnostic/beforeoutputs and priorreports remain historical/immutable. No browser/model/populationaccuracy evidence claimed.

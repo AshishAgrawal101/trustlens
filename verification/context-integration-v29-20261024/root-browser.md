@@ -1,0 +1,15 @@
+# Actual browser integration — v29
+
+Edge main tab1793492838, development loopback8766. Constructed text/numbers only. No image/file upload, native Share, clipboard, print interaction, source fetch, external publication or physical phone. Viewport reset after checks.
+
+At390px, counts20/100 and30/200 explicitly compared to rates20%/15%, points-5 and relative-25%. Swap exchanged raw pairs to30/200 and20/100, hid old result and facts, retained focus on numbers-swap, and announced fixed Compare-again guidance. Button measured49.09375px; client/scroll375/375. No new calculation until explicit Compare, which produced rates15%/20%, points+5 and relativeAbout33.3333%. Screenshot reversed-counts-390.png inspected.
+
+Actual number-editing boundary: entered1, then End/e through browser keys. AX showed Details:1e; DOM value empty/badInputtrue. Swap retained badInputtrue and unchanged other fields200/20/100, hid stale result and showed the fixed finish-entries message. This checks native editing-buffer preservation through the guard, rather than pretending `.value` contains unreadable text.
+
+Changed to Reported percentages (which deliberately cleared counts),320px. Raw ` 0001.200 ` and `.5000` exchanged exactly; a second Swap restored both raw strings including spaces/zeros. Method retained; inactive count fields stayed empty/disabled; no automatic comparison. Client/scroll305/305. Screenshot swap-percentages-320.png inspected. Clear/reload restored Counts/default, all six input values empty, status empty and Swap disabled.
+
+After owned development-server refresh, actual Message check of `If you are asked to install TeamViewer, refuse.` returned STILL UNVERIFIED with one unknown Conditional refusal advice observation, no weighted remote warning and no safe verdict. Adding `; install TeamViewer anyway.` retained PAUSE & VERIFY, a later remote-access concern and specific device-control guidance alongside the conditional context observation. Clear erased input/result. This is a constructed mechanism check, not real-world accuracy.
+
+Standalone Pocketv29:31manifest entries matched extracted bytes;29shell URLs returned200. Explicit Prepare reported ready with DOM version trustlens-pocket-v25. Owned temporary server parent69876/child45492 stopped, no listener verified, nonzero socket10035 (not labelled connection-refused). At320px with server stopped, cached Numbers workspace explicitly compared reported20/15 to-25%, swapped to15/20 with result hidden/fixed status, then explicitly compared toAbout33.3333%; underlying counts remained unknown. Client/scroll305/305. Clear/reload restored blank Counts/default and disabled Swap. Temporary tab1793492929 closed; viewport reset.
+
+Quote/Media native-invalid fixes were tested with direct controller events, not actual browser file uploads. The later shared-Original cross-form invalidation hypothesis remains a separate queued v30 finding; this checkpoint does not claim every programmatic validation edge is resolved. Human study, assistive-technology and phone execution remain unperformed.

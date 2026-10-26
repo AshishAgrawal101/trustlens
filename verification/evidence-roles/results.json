@@ -1,0 +1,1124 @@
+{
+  "label": "Frozen user-selected role structural acceptance; not factual correctness",
+  "contract_sha256": "b09644736bd8bda0c8c7ed14469fd0b027a4174df7a430024f37e842b735e4bd",
+  "source_sha256": "9de2cef081935a830719ca0dc09424bc10ae9dffd466f36e747a05102c5dfcaf",
+  "network_calls": 0,
+  "rows": [
+    {
+      "id": "defaults-omitted",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:unsure",
+        "labels:b:unsure"
+      ],
+      "actual_label_ids": [
+        "labels:a:unsure",
+        "labels:b:unsure"
+      ],
+      "active_role_ids": [
+        "labels:a:unsure",
+        "labels:b:unsure"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "labels:unresolved",
+            "text": "The supplied accounts have no support/challenge labels yet. They may add context or remain uncertain; no conclusion about the claim follows."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:unsure",
+            "text": "Source A: you labelled this account as unsure. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:unsure",
+            "text": "Source B: you labelled this account as unsure. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: compare what the accounts actually establish, keeping the claim unresolved.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "all-unsure",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:unsure",
+        "labels:b:unsure"
+      ],
+      "actual_label_ids": [
+        "labels:a:unsure",
+        "labels:b:unsure"
+      ],
+      "active_role_ids": [
+        "labels:a:unsure",
+        "labels:b:unsure"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "labels:unresolved",
+            "text": "The supplied accounts have no support/challenge labels yet. They may add context or remain uncertain; no conclusion about the claim follows."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:unsure",
+            "text": "Source A: you labelled this account as unsure. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:unsure",
+            "text": "Source B: you labelled this account as unsure. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: compare what the accounts actually establish, keeping the claim unresolved.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "all-context",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:context",
+        "labels:b:context"
+      ],
+      "actual_label_ids": [
+        "labels:a:context",
+        "labels:b:context"
+      ],
+      "active_role_ids": [
+        "labels:a:context",
+        "labels:b:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "labels:unresolved",
+            "text": "The supplied accounts have no support/challenge labels yet. They may add context or remain uncertain; no conclusion about the claim follows."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:context",
+            "text": "Source A: you labelled this account as adding context. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:context",
+            "text": "Source B: you labelled this account as adding context. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: compare what the accounts actually establish, keeping the claim unresolved.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "supports-plus-unsure",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports",
+        "labels:b:unsure"
+      ],
+      "actual_label_ids": [
+        "labels:a:supports",
+        "labels:b:unsure"
+      ],
+      "active_role_ids": [
+        "labels:a:supports",
+        "labels:b:unsure"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "coverage:no_challenge",
+            "text": "You labelled accounts as supporting the claim, but none as challenging it. Look for relevant contrary evidence; different positions do not require equal weight."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:supports",
+            "text": "Source A: you labelled this account as supporting the claim. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:unsure",
+            "text": "Source B: you labelled this account as unsure. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: look for relevant evidence that could challenge your interpretation.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "challenges-plus-unsure",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:challenges",
+        "labels:b:unsure"
+      ],
+      "actual_label_ids": [
+        "labels:a:challenges",
+        "labels:b:unsure"
+      ],
+      "active_role_ids": [
+        "labels:a:challenges",
+        "labels:b:unsure"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "coverage:no_support",
+            "text": "You labelled accounts as challenging the claim, but none as supporting it. Inspect the original claim and its stated evidence; different positions do not require equal weight."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:challenges",
+            "text": "Source A: you labelled this account as challenging the claim. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:unsure",
+            "text": "Source B: you labelled this account as unsure. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: inspect the original claim and the evidence offered for it.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "supports-plus-context",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports",
+        "labels:b:context"
+      ],
+      "actual_label_ids": [
+        "labels:a:supports",
+        "labels:b:context"
+      ],
+      "active_role_ids": [
+        "labels:a:supports",
+        "labels:b:context"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "coverage:no_challenge",
+            "text": "You labelled accounts as supporting the claim, but none as challenging it. Look for relevant contrary evidence; different positions do not require equal weight."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:supports",
+            "text": "Source A: you labelled this account as supporting the claim. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:context",
+            "text": "Source B: you labelled this account as adding context. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: look for relevant evidence that could challenge your interpretation.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "challenges-plus-context",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:context",
+        "labels:b:challenges"
+      ],
+      "actual_label_ids": [
+        "labels:a:context",
+        "labels:b:challenges"
+      ],
+      "active_role_ids": [
+        "labels:a:context",
+        "labels:b:challenges"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "coverage:no_support",
+            "text": "You labelled accounts as challenging the claim, but none as supporting it. Inspect the original claim and its stated evidence; different positions do not require equal weight."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:context",
+            "text": "Source A: you labelled this account as adding context. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:challenges",
+            "text": "Source B: you labelled this account as challenging the claim. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: inspect the original claim and the evidence offered for it.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "support-and-challenge",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports",
+        "labels:b:challenges"
+      ],
+      "actual_label_ids": [
+        "labels:a:supports",
+        "labels:b:challenges"
+      ],
+      "active_role_ids": [
+        "labels:a:supports",
+        "labels:b:challenges"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:supports",
+            "text": "Source A: you labelled this account as supporting the claim. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:challenges",
+            "text": "Source B: you labelled this account as challenging the claim. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: compare what the accounts actually establish, keeping the claim unresolved.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "two-supports",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports",
+        "labels:b:supports"
+      ],
+      "actual_label_ids": [
+        "labels:a:supports",
+        "labels:b:supports"
+      ],
+      "active_role_ids": [
+        "labels:a:supports",
+        "labels:b:supports"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "coverage:no_challenge",
+            "text": "You labelled accounts as supporting the claim, but none as challenging it. Look for relevant contrary evidence; different positions do not require equal weight."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:supports",
+            "text": "Source A: you labelled this account as supporting the claim. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:supports",
+            "text": "Source B: you labelled this account as supporting the claim. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: look for relevant evidence that could challenge your interpretation.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "two-challenges",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:challenges",
+        "labels:b:challenges"
+      ],
+      "actual_label_ids": [
+        "labels:a:challenges",
+        "labels:b:challenges"
+      ],
+      "active_role_ids": [
+        "labels:a:challenges",
+        "labels:b:challenges"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:different",
+            "text": "The supplied addresses have different parsed hostnames. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "coverage:no_support",
+            "text": "You labelled accounts as challenging the claim, but none as supporting it. Inspect the original claim and its stated evidence; different positions do not require equal weight."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:challenges",
+            "text": "Source A: you labelled this account as challenging the claim. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:challenges",
+            "text": "Source B: you labelled this account as challenging the claim. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: inspect the original claim and the evidence offered for it.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "inactive-role-does-not-close-gap",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports"
+      ],
+      "actual_label_ids": [
+        "labels:a:supports",
+        "labels:b:missing"
+      ],
+      "active_role_ids": [
+        "labels:a:supports"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:one",
+            "text": "One source address was supplied; its content was not checked."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_url",
+            "text": "Source B: find the original source address or record where this account came from."
+          },
+          {
+            "id": "coverage:no_challenge",
+            "text": "You labelled accounts as supporting the claim, but none as challenging it. Look for relevant contrary evidence; different positions do not require equal weight."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:supports",
+            "text": "Source A: you labelled this account as supporting the claim. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:missing",
+            "text": "Source B: no address or quotation was supplied. Its selected role is not counted as an account."
+          }
+        ],
+        "nextStep": "Next: look for relevant evidence that could challenge your interpretation.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "both-inactive-roles",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [],
+      "actual_label_ids": [
+        "labels:a:missing",
+        "labels:b:missing"
+      ],
+      "active_role_ids": [],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:zero",
+            "text": "No source addresses were supplied."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_url",
+            "text": "Source A: find the original source address or record where this account came from."
+          },
+          {
+            "id": "source:b:missing_url",
+            "text": "Source B: find the original source address or record where this account came from."
+          },
+          {
+            "id": "labels:unresolved",
+            "text": "The supplied accounts have no support/challenge labels yet. They may add context or remain uncertain; no conclusion about the claim follows."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:missing",
+            "text": "Source A: no address or quotation was supplied. Its selected role is not counted as an account."
+          },
+          {
+            "id": "labels:b:missing",
+            "text": "Source B: no address or quotation was supplied. Its selected role is not counted as an account."
+          }
+        ],
+        "nextStep": "Next: locate an original source account before interpreting the claim.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "date-only-is-not-account",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [],
+      "actual_label_ids": [
+        "labels:a:missing",
+        "labels:b:missing"
+      ],
+      "active_role_ids": [],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:zero",
+            "text": "No source addresses were supplied."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_url",
+            "text": "Source A: find the original source address or record where this account came from."
+          },
+          {
+            "id": "source:b:missing_url",
+            "text": "Source B: find the original source address or record where this account came from."
+          },
+          {
+            "id": "dates:context",
+            "text": "These are supplied publication dates, not verified event dates. Earlier, later or recent publication does not establish whether the claim is true."
+          },
+          {
+            "id": "labels:unresolved",
+            "text": "The supplied accounts have no support/challenge labels yet. They may add context or remain uncertain; no conclusion about the claim follows."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:missing",
+            "text": "Source A: no address or quotation was supplied. Its selected role is not counted as an account."
+          },
+          {
+            "id": "labels:b:missing",
+            "text": "Source B: no address or quotation was supplied. Its selected role is not counted as an account."
+          }
+        ],
+        "nextStep": "Next: locate an original source account before interpreting the claim.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "quote-without-url-is-active-user-label",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports"
+      ],
+      "actual_label_ids": [
+        "labels:a:supports",
+        "labels:b:missing"
+      ],
+      "active_role_ids": [
+        "labels:a:supports"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:zero",
+            "text": "No source addresses were supplied."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_url",
+            "text": "Source A: find the original source address or record where this account came from."
+          },
+          {
+            "id": "source:a:quote_unattributed",
+            "text": "Source A: a supplied quotation without an address cannot be traced here."
+          },
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_url",
+            "text": "Source B: find the original source address or record where this account came from."
+          },
+          {
+            "id": "coverage:no_challenge",
+            "text": "You labelled accounts as supporting the claim, but none as challenging it. Look for relevant contrary evidence; different positions do not require equal weight."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:supports",
+            "text": "Source A: you labelled this account as supporting the claim. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:missing",
+            "text": "Source B: no address or quotation was supplied. Its selected role is not counted as an account."
+          }
+        ],
+        "nextStep": "Next: locate an original source account before interpreting the claim.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "whitespace-account-is-inactive",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports"
+      ],
+      "actual_label_ids": [
+        "labels:a:supports",
+        "labels:b:missing"
+      ],
+      "active_role_ids": [
+        "labels:a:supports"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:one",
+            "text": "One source address was supplied; its content was not checked."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_url",
+            "text": "Source B: find the original source address or record where this account came from."
+          },
+          {
+            "id": "coverage:no_challenge",
+            "text": "You labelled accounts as supporting the claim, but none as challenging it. Look for relevant contrary evidence; different positions do not require equal weight."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:supports",
+            "text": "Source A: you labelled this account as supporting the claim. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:missing",
+            "text": "Source B: no address or quotation was supplied. Its selected role is not counted as an account."
+          }
+        ],
+        "nextStep": "Next: look for relevant evidence that could challenge your interpretation.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "same-host-opposed-roles",
+      "expected_outcome": "worksheet",
+      "expected_label_ids": [
+        "labels:a:supports",
+        "labels:b:challenges"
+      ],
+      "actual_label_ids": [
+        "labels:a:supports",
+        "labels:b:challenges"
+      ],
+      "active_role_ids": [
+        "labels:a:supports",
+        "labels:b:challenges"
+      ],
+      "result": {
+        "observations": [
+          {
+            "id": "sources:two",
+            "text": "Two source addresses were supplied; neither source content was checked."
+          },
+          {
+            "id": "hosts:same",
+            "text": "The supplied addresses have the same parsed hostname. This does not establish independent reporting."
+          }
+        ],
+        "questions": [
+          {
+            "id": "source:a:missing_date",
+            "text": "Source A: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "source:b:missing_date",
+            "text": "Source B: publication date is missing. Check it against the date of the event or image."
+          },
+          {
+            "id": "sources:independence",
+            "text": "Trace whether both accounts rely on the same original report, witness, press release or image. Website count is not independent evidence."
+          },
+          {
+            "id": "quotes:compare",
+            "text": "Compare each supplied quotation with its full source. Agreement, contradiction and factual meaning have not been checked here."
+          },
+          {
+            "id": "labels:human_judgment",
+            "text": "Source roles are your judgments. The app has not checked relevance, reliability, factual support or source independence."
+          }
+        ],
+        "labels": [
+          {
+            "id": "labels:a:supports",
+            "text": "Source A: you labelled this account as supporting the claim. This records your interpretation, not a detected finding."
+          },
+          {
+            "id": "labels:b:challenges",
+            "text": "Source B: you labelled this account as challenging the claim. This records your interpretation, not a detected finding."
+          }
+        ],
+        "nextStep": "Next: compare what the accounts actually establish, keeping the claim unresolved.",
+        "steps": [
+          "Find the earliest original account and read its full context, including qualifications and corrections.",
+          "Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.",
+          "Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.",
+          "Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting."
+        ]
+      },
+      "error": null,
+      "failures": []
+    },
+    {
+      "id": "invalid-role",
+      "expected_outcome": "fixed_validation_error",
+      "expected_label_ids": [],
+      "actual_label_ids": [],
+      "active_role_ids": [],
+      "result": null,
+      "error": "Choose one of the available source labels, then review again.",
+      "failures": []
+    },
+    {
+      "id": "invalid-role-type",
+      "expected_outcome": "fixed_validation_error",
+      "expected_label_ids": [],
+      "actual_label_ids": [],
+      "active_role_ids": [],
+      "result": null,
+      "error": "Choose one of the available source labels, then review again.",
+      "failures": []
+    }
+  ],
+  "failures": 0,
+  "plan": "TrustLens — independent claim-checking plan\nThis is not a truth verdict. No source was visited or verified.\n\n1. Find the earliest original account and read its full context, including qualifications and corrections.\n\n2. Trace each account to its underlying evidence. Different websites may repeat one press release, witness or image.\n\n3. Check publication and event dates separately. For images, check the original caption, place and date; this worksheet does not inspect pixels.\n\n4. Look for evidence that challenges the claim. Keep it unresolved when you cannot establish the context before sharing or acting.\n\nYour claim, context, source addresses, quotations and dates are omitted."
+}
