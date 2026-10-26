@@ -1,5 +1,13 @@
 # Build provenance and assistance disclosure
 
+## Student statement (October 26, 2026)
+
+In my own words: I came up with TrustLens after my mom was scammed out of $83,000, and I built most of the app myself. I used OpenAI Codex as a tutor and coding assistant. It explained machine-learning concepts I hadn't learned yet, helped me improve the image-model training and evaluation, and helped write code, tests and documentation. I reviewed and tested the changes before keeping them. The dated entries below are the development log kept during the project, and I've left them unchanged.
+
+## October 26 interface redesign (Claude)
+
+Anthropic Claude (Claude Code) helped redesign the interface on October 26: a unified indigo color palette across all pages, a self-hosted Inter font (SIL OFL, from `@fontsource-variable/inter`), one Lucide icon (ISC, from `lucide-static`), motion and pointer effects in `static/fx.js`, result-screen and phone-layout styling, and plainer home-page wording. Design guidance came from a public Linear `DESIGN.md` in [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) and the Taste and Unslop skills listed in [maxbogo/awesome-ai-tools-for-ui](https://github.com/maxbogo/awesome-ai-tools-for-ui). These are visual and wording changes only. No analyzer, rule, model, threshold or trust material changed, and the existing test suites pass as before.
+
 This folder was planned and implemented on October 21–22, 2026 (America/Chicago). OpenAI Codex assisted with planning, code, tests, interface design, technical research and submission drafts. The owner directs the project and must review final claims and eligibility.
 
 ## Earlier work reused
