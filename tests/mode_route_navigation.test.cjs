@@ -12,7 +12,7 @@ const current=x=>x.document.querySelectorAll('[data-mode]').find(b=>b.getAttribu
 test('same-document tool fragments select all seven modes through the normal controller without requests',async()=>{
   const x=setup();for(const mode of ['email','url','call','screenshot','qr','image','text']){
     await x.route('#check='+mode);assert.equal(current(x),mode);assert.equal(x.requests.length,0);assert.equal(x.ids.content.value,'');assert.equal(x.document.activeElement,x.ids.workspace);assert.equal(x.ids.workspace.scrollOptions.block,'start');
-    assert.equal(x.ids['visual-modes'].open,['url','email','call','qr','image'].includes(mode));
+    assert.equal(x.ids['visual-modes'].open,['url','email','call','qr'].includes(mode));
   }
 });
 test('same-mode explicit route retains a completed result draft and exports without resubmitting or clicking',async()=>{

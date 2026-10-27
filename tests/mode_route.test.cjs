@@ -8,7 +8,7 @@ function setup(hash){let harness=base.replace('setAttribute(k,v){this.attributes
  const fixture={require,__dirname,AbortController,AbortSignal,Blob};vm.runInNewContext(harness+'\nthis.setup=setup;',fixture);return fixture.setup();
 }
 for(const mode of ['text','url','email','call','screenshot','qr','image'])test('directory entry selects '+mode+' without submitting or importing text',()=>{
- const x=setup('#check='+mode);assert.equal(x.requests.length,0);assert.equal(x.ids.content.value,'');assert.equal(x.ids.file.value,'');assert.equal(x.document.activeElement,x.ids.workspace);assert.equal(x.ids['visual-modes'].open,['url','email','call','qr','image'].includes(mode));
+ const x=setup('#check='+mode);assert.equal(x.requests.length,0);assert.equal(x.ids.content.value,'');assert.equal(x.ids.file.value,'');assert.equal(x.document.activeElement,x.ids.workspace);assert.equal(x.ids['visual-modes'].open,['url','email','call','qr'].includes(mode));
  const label={text:'Paste the message',url:'Paste a web address',email:'Paste the email',call:'What did the caller say?',screenshot:'Choose a message screenshot',qr:'Choose an image with a QR code',image:'Upload the original file'}[mode];if(mode!=='text')assert.equal(x.ids['input-label'].textContent,label);else assert.equal(x.document.querySelectorAll('[data-mode]').find(b=>b.dataset.mode==='text').getAttribute('aria-pressed'),'true');
  assert.equal(x.ids.file.required,['screenshot','qr','image'].includes(mode));assert.equal(x.ids.reviewed.checked,false);assert.equal(x.ids.result.hidden,true);
 });

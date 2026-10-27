@@ -10,12 +10,12 @@ harness=harness.replace('AbortController,AbortSignal,Blob,','AbortController,Abo
 harness=harness.replace('vm.runInContext(source,context);', "vm.runInContext(source,context);for(const script of ['draft-transfer.js','primary-flow.js'])vm.runInContext(fs.readFileSync(path.join(root,'static',script),'utf8'),context);");
 const fixture={require,__dirname,AbortController,AbortSignal,Blob,Event};
 vm.runInNewContext(harness+'\nthis.setup=setup;this.report=report;',fixture);
-test('Message and Screenshot are primary while all seven unique modes remain reachable',()=>{
+test('AI image, Message and Screenshot are primary while all seven unique modes remain reachable',()=>{
   const html=fs.readFileSync(path.join(__dirname,'../static/index.template.html'),'utf8');
   const primary=html.slice(html.indexOf('class="communication-modes primary-modes"'),html.indexOf('<details id="visual-modes"'));
-  assert.deepEqual([...primary.matchAll(/data-mode="([^"]+)"/g)].map(m=>m[1]),['text','screenshot']);
+  assert.deepEqual([...primary.matchAll(/data-mode="([^"]+)"/g)].map(m=>m[1]),['image','text','screenshot']);
   const modes=[...html.matchAll(/data-mode="([^"]+)"/g)].map(m=>m[1]);assert.equal(modes.length,7);assert.equal(new Set(modes).size,7);
-  assert.match(html,/More tools: link, email, call, QR &amp; image origin/);
+  assert.match(html,/More tools: link, email, call &amp; QR code/);
   const x=fixture.setup();assert.equal(x.ids['visual-modes'].open,false);assert.equal(x.requests.length,0);
 });
 test('the screenshot path stays primary and requires read, edit/review, then a separate check',async()=>{
@@ -27,7 +27,7 @@ test('the screenshot path stays primary and requires read, edit/review, then a s
   x.ids.reviewed.checked=true;x.state.fetch=async()=>({ok:true,json:async()=>fixture.report()});await x.submit();assert.equal(x.requests[1].url,'/api/analyze/text');assert.equal(x.ids.result.hidden,false);assert.ok(x.ids.actions.textContent);
 });
 test('More tools follows selected modes without triggering a request or trapping the primary path',async()=>{
-  const x=fixture.setup();for(const mode of ['url','email','call','qr','image']){await x.mode(mode);assert.equal(x.ids['visual-modes'].open,true);assert.equal(x.ids['screenshot-sample-help'].hidden,true);}
+  const x=fixture.setup();for(const mode of ['url','email','call','qr']){await x.mode(mode);assert.equal(x.ids['visual-modes'].open,true);assert.equal(x.ids['screenshot-sample-help'].hidden,true);}
   await x.mode('text');assert.equal(x.ids['visual-modes'].open,false);assert.match(x.ids['mode-guide'].textContent,/review the evidence/);assert.equal(x.requests.length,0);
 });
 test('demo replacement and explicit draft transfer select the appropriate disclosure with no analysis',async()=>{
