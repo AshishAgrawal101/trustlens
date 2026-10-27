@@ -10,10 +10,10 @@ harness=harness.replace('AbortController,AbortSignal,Blob,','AbortController,Abo
 harness=harness.replace('vm.runInContext(source,context);', "vm.runInContext(source,context);for(const script of ['draft-transfer.js','primary-flow.js'])vm.runInContext(fs.readFileSync(path.join(root,'static',script),'utf8'),context);");
 const fixture={require,__dirname,AbortController,AbortSignal,Blob,Event};
 vm.runInNewContext(harness+'\nthis.setup=setup;this.report=report;',fixture);
-test('AI image, Message and Screenshot are primary while all seven unique modes remain reachable',()=>{
+test('Message, Screenshot and AI image are primary while all seven unique modes remain reachable',()=>{
   const html=fs.readFileSync(path.join(__dirname,'../static/index.template.html'),'utf8');
   const primary=html.slice(html.indexOf('class="communication-modes primary-modes"'),html.indexOf('<details id="visual-modes"'));
-  assert.deepEqual([...primary.matchAll(/data-mode="([^"]+)"/g)].map(m=>m[1]),['image','text','screenshot']);
+  assert.deepEqual([...primary.matchAll(/data-mode="([^"]+)"/g)].map(m=>m[1]),['text','screenshot','image']);
   const modes=[...html.matchAll(/data-mode="([^"]+)"/g)].map(m=>m[1]);assert.equal(modes.length,7);assert.equal(new Set(modes).size,7);
   assert.match(html,/More tools: link, email, call &amp; QR code/);
   const x=fixture.setup();assert.equal(x.ids['visual-modes'].open,false);assert.equal(x.requests.length,0);
