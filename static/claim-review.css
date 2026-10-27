@@ -15,3 +15,6 @@ h1 em{font-family:inherit;font-style:normal;font-weight:600;color:#a5b4fc;backgr
 .workspace-bar{background:linear-gradient(90deg,#f7f8fd,#eef0fc)}
 
 .brand-note,.step{display:none}
+
+/* match home page: no decorative labels */
+.eyebrow,.edition,.step,.section-top>span{display:none}
