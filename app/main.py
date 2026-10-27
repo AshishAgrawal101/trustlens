@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
@@ -47,7 +48,9 @@ async def privacy_headers(request, call_next):
     response.headers['Cache-Control'] = 'no-store'
     response.headers['X-Content-Type-Options'] = 'nosniff'
     response.headers['Referrer-Policy'] = 'no-referrer'
-    response.headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'"
+    # Demo recording only: TRUSTLENS_DEMO_FRAME=1 lets this app's own phone-frame page embed it.
+    ancestors = "'self'" if os.environ.get('TRUSTLENS_DEMO_FRAME') == '1' else "'none'"
+    response.headers['Content-Security-Policy'] = f"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; connect-src 'self'; frame-ancestors {ancestors}; base-uri 'none'"
     return response
 
 

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrustLens — phone demo frame</title>
+<style>
+@font-face{font-family:Inter;font-style:normal;font-display:swap;font-weight:100 900;src:url(/static/fonts/inter-var.woff2) format('woff2-variations')}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:#010102;background-image:radial-gradient(ellipse 60% 50% at 50% 40%,#4f46e540,transparent 70%);display:grid;place-items:center;font-family:Inter,'Segoe UI',Arial,sans-serif;overflow:hidden}
+.stage{display:flex;flex-direction:column;align-items:center;gap:18px;transform:scale(var(--fit,1));transform-origin:center}
+.phone{position:relative;width:425px;height:884px;border-radius:68px;padding:16px;background:linear-gradient(145deg,#3a3a3f,#1b1b1f 40%,#2b2b30);box-shadow:0 0 0 2px #55555d,0 0 0 4px #121214,0 50px 120px #000000cc,0 0 120px #6366f133}
+.phone:before,.phone:after{content:'';position:absolute;width:4px;border-radius:2px;background:#2a2a2e}
+.phone:before{left:-6px;top:180px;height:64px;box-shadow:0 84px 0 #2a2a2e}
+.phone:after{right:-6px;top:230px;height:100px}
+.screen{position:relative;width:393px;height:852px;border-radius:54px;overflow:hidden;background:#010102}
+.status{position:absolute;inset:0 0 auto;height:54px;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:6px 34px 0 46px;color:#fff;font-weight:600;font-size:16px;pointer-events:none;background:linear-gradient(#010102,#010102ee 70%,#01010200)}
+.island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:124px;height:36px;border-radius:20px;background:#000;z-index:4}
+.icons{display:flex;gap:6px;align-items:center}
+.bars{display:flex;gap:2px;align-items:flex-end;height:12px}.bars i{display:block;width:3px;border-radius:1px;background:#fff}
+.bars i:nth-child(1){height:4px}.bars i:nth-child(2){height:6px}.bars i:nth-child(3){height:9px}.bars i:nth-child(4){height:12px}
+.battery{width:25px;height:12px;border:1.5px solid #ffffffaa;border-radius:4px;padding:1.5px;position:relative}.battery i{display:block;height:100%;width:80%;background:#fff;border-radius:1.5px}
+.battery:after{content:'';position:absolute;right:-4px;top:3px;width:2px;height:4px;border-radius:0 1px 1px 0;background:#ffffffaa}
+iframe{position:absolute;inset:54px 0 0;width:393px;height:798px;border:0;background:#010102}
+.home{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:134px;height:5px;border-radius:3px;background:#ffffffcc;z-index:3;pointer-events:none}
+.caption{color:#9aa0c8;font-size:13px;letter-spacing:.01em}
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+  <div class="phone">
+    <div class="screen">
+      <div class="island"></div>
+      <div class="status"><span>9:41</span><span class="icons"><span class="bars"><i></i><i></i><i></i><i></i></span><span class="battery"><i></i></span></span></div>
+      <iframe src="/" title="TrustLens"></iframe>
+      <div class="home"></div>
+    </div>
+  </div>
+  <div class="caption">TrustLens phone layout, shown in a phone frame</div>
+</div>
+<script>
+function fit(){var s=Math.min(1,(innerHeight-24)/940,(innerWidth-24)/470);document.getElementById('stage').style.setProperty('--fit',s);}
+addEventListener('resize',fit);fit();
+var frame=document.querySelector('iframe');
+frame.addEventListener('load',function(){try{var s=frame.contentDocument.createElement('style');s.textContent='html{scrollbar-width:none}::-webkit-scrollbar{display:none}';frame.contentDocument.head.appendChild(s);}catch(e){}});
+</script>
+</body>
+</html>
