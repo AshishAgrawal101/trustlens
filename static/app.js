@@ -98,16 +98,16 @@ function showReport(report){
   }[scope];
   $('coverage-checked').textContent=coverage[0];
   $('coverage-unverified').textContent=coverage[1]+(incompleteLinks?' Some links remain unchecked.':'');
-  $('verdict-tag').textContent=image?'IMAGE ORIGIN · NOT A SCAM VERDICT':incompleteEmail||incompleteLinks?'CHECK INCOMPLETE':report.risk_level==='high'?'PAUSE & VERIFY':concerns?'TAKE A CLOSER LOOK':'STILL UNVERIFIED';
-  $('verdict-tag').className='verdict-tag '+(image?'':report.risk_level);
+  $('verdict-tag').textContent=image?(report.risk_level==='high'&&(report.model_ran||report.content_credentials?.status==='verified')?'LIKELY AI-GENERATED · NOT A SCAM VERDICT':report.risk_level==='guarded'?'INCONCLUSIVE · NOT A SCAM VERDICT':'IMAGE CHECK · NOT A SCAM VERDICT'):incompleteEmail||incompleteLinks?'CHECK INCOMPLETE':report.risk_level==='high'?'PAUSE & VERIFY':concerns?'TAKE A CLOSER LOOK':'STILL UNVERIFIED';
+  $('verdict-tag').className='verdict-tag '+(image?(report.risk_level==='high'?'high':report.risk_level==='guarded'?'guarded':''):report.risk_level);
   if(image){
-    $('verdict').textContent=report.model_ran?'Image evidence is ready'
+    $('verdict').textContent=report.risk_level==='high'&&(report.model_ran||report.content_credentials?.status==='verified')?'This image looks AI-generated':report.model_ran?(report.risk_level==='guarded'?'Can\'t tell if this image is real':'No AI patterns found')
       :report.content_credentials?.status==='verified'?'Signed provenance found'
       :report.content_credentials?.status==='unavailable'?'Image checks unavailable':'Credentials check complete';
   }else $('verdict').textContent=incompleteEmail?'This email needs a manual check.':incompleteLinks?(report.risk_level==='high'?'Pause; some links remain unchecked.':'Some links still need review.'):report.risk_level==='high'?'Don’t act on this request yet.':concerns?'There’s more to check.':'This request is still unverified.';
-  $('result-summary').textContent=report.summary;
+  $('result-summary').textContent=image?String(report.summary).replace(' (experimental)',''):report.summary;
   $('result-safety').hidden=image&&!report.model_ran;
-  $('result-safety').textContent=image?'AI image detection can be wrong or inconclusive, and this model has not passed release requirements yet, so check the evidence below and look for the original source before you share or act on an image. Image origin does not establish whether a message, sale or person is trustworthy.':'This reviews content, not a person’s honesty. A warning does not prove fraud; no warning does not prove safety.';
+  $('result-safety').textContent=image?''+(report.risk_level==='high'?'If this image is being used to sell something, ask for money, or announce a prize or emergency, treat that as a scam warning sign and verify through a source you already trust. ':'')+'AI image detection can be wrong, and this model has not passed release requirements yet, so check the evidence below and look for the original source before you share or act on an image. Image origin does not establish whether a message, sale or person is trustworthy.':'This reviews content, not a person’s honesty. A warning does not prove fraud; no warning does not prove safety.';
   $('credentials').replaceChildren();$('credentials').hidden=!report.content_credentials;
   if(report.content_credentials){const c=report.content_credentials;$('credentials').append(node('strong','Content Credentials: '+c.status),node('div',c.detail));if(c.signer)$('credentials').append(node('div','Signer: '+c.signer));if(c.declaration)$('credentials').append(node('div','Signed declaration: '+c.declaration));}
   $('evidence').replaceChildren();$('evidence-count').textContent=report.evidence.length+' observation'+(report.evidence.length===1?'':'s');

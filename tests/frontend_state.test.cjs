@@ -187,8 +187,8 @@ test('image heading distinguishes unavailable checks from usable partial results
   for(const [status,modelRan,title] of [
     ['unavailable',false,'Image checks unavailable'],
     ['absent',false,'Credentials check complete'],
-    ['unavailable',true,'Image evidence is ready'],
-    ['verified',false,'Signed provenance found']]){
+    ['unavailable',true,'This image looks AI-generated'],
+    ['verified',false,'This image looks AI-generated']]){
     const data=report();data.kind='image';data.model_ran=modelRan;data.content_credentials={status,detail:'Fixture status'};
     x.state.fetch=async()=>({ok:true,json:async()=>data});await x.submit();
     assert.equal(x.ids.verdict.textContent,title);assert.match(x.ids['verdict-tag'].textContent,/NOT A SCAM VERDICT/);
